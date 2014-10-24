@@ -70,7 +70,7 @@ header{
 
 .mainContent
 {
-	height: 400px;
+	height: 100%;
 	width: 100%;
 	margin-top: 200px;
 	overflow: auto;
@@ -408,17 +408,17 @@ th {
 
 .profileNav
 {
-	margin-top: 20px;
+	margin-top: 15px;
 }
 .profileNav2
 {
-	margin-top: 5px;
+	margin-top: 15px;
 	margin-left: -10px;
 }
 
 .profileNav3
 {
-	margin-top: 20px;
+	margin-top: 15rapx;
 	margin-left: -10px;
 }
 
@@ -959,7 +959,7 @@ input[type="file"]{
 .accordionScroll{
 	width:625px;
 	height: 400px;
-	overflow: scroll;
+	overflow: auto;
 }
 .labelPush{
 	margin-left:15px;

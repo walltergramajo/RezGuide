@@ -1,80 +1,82 @@
-<section class="mainContent">
-    <form>
-        <div class="row">
-            <div class="small-4 small-centered columns text-center">
-                <p id="noticeTitle" class="header"><span class="kern">G</span><span class="kern">e</span><span class="kern">n</span><span class="kern">e</span><span class="kern">r</span><span class="kern">a</span><span class="kern">l</span></p>
+<section>
+    <div class="mainContent">
+        <form>
+            <div class="row">
+                <div class="small-4 small-centered columns text-center">
+                    <p id="noticeTitle" class="header"><span class="kern">G</span><span class="kern">e</span><span class="kern">n</span><span class="kern">e</span><span class="kern">r</span><span class="kern">a</span><span class="kern">l</span></p>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="small-8 small-centered columns">
-                <label class="sectionLabel">Your Information</label>
+            <div class="row">
+                <div class="small-8 small-centered columns">
+                    <label class="sectionLabel">Your Information</label>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="small-8 small-centered columns accountLine"></div>
-        </div>
-        <div class="row">
-            <div class="small-8 small-centered columns">
-                <div class="row">
-                    <div class="small-3 columns">
-                        <label class="labelInfo"> Student Name</label>
-                    </div>
-                    <div class="small-9 columns">
-                        <input type="text" placeholder="First, Last Name"/>
+            <div class="row">
+                <div class="small-8 small-centered columns accountLine"></div>
+            </div>
+            <div class="row">
+                <div class="small-8 small-centered columns">
+                    <div class="row">
+                        <div class="small-3 columns">
+                            <label class="labelInfo"> Student Name</label>
+                        </div>
+                        <div class="small-9 columns">
+                            <input type="text" placeholder="First, Last Name"/>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="small-8 small-centered columns">
-                <div class="row">
-                    <div class="small-3 columns">
-                        <label class="labelInfo"> Student Number</label>
-                    </div>
-                    <div class="small-9 columns">
-                        <input type="text" placeholder="05500445"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="small-8 small-centered columns">
-                <div class="row">
-                    <div class="small-3 columns">
-                        <label class="labelInfo"> Contact Number</label>
-                    </div>
-                    <div class="small-9 columns">
-                        <input type="text" placeholder="(519) 666-5545"/>
+            <div class="row">
+                <div class="small-8 small-centered columns">
+                    <div class="row">
+                        <div class="small-3 columns">
+                            <label class="labelInfo"> Student Number</label>
+                        </div>
+                        <div class="small-9 columns">
+                            <input type="text" placeholder="05500445"/>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="small-8 small-centered columns">
-                <label class="sectionLabelWithdraw">Add A Message</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="small-8 small-centered columns accountLine"></div>
-        </div>
-        <div class="row">
-            <div class="small-8 small-centered columns">
-                <div class="row">
-                    <div class="small-3 columns">
-                        <label class="labelInfo"> Message </label>
-                    </div>
-                    <div class="small-9 columns">
-                        <textarea placeholder="Your message goes here"></textarea>
+            <div class="row">
+                <div class="small-8 small-centered columns">
+                    <div class="row">
+                        <div class="small-3 columns">
+                            <label class="labelInfo"> Contact Number</label>
+                        </div>
+                        <div class="small-9 columns">
+                            <input type="text" placeholder="(519) 666-5545"/>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class=" small-6 small-centered columns text-center">
-                <input type="image" src="<?php echo base_url(); ?>img/send.png" alt="Submit!">
+            <div class="row">
+                <div class="small-8 small-centered columns">
+                    <label class="sectionLabelWithdraw">Add A Message</label>
+                </div>
             </div>
-        </div>
-    </form>
+            <div class="row">
+                <div class="small-8 small-centered columns accountLine"></div>
+            </div>
+            <div class="row">
+                <div class="small-8 small-centered columns">
+                    <div class="row">
+                        <div class="small-3 columns">
+                            <label class="labelInfo"> Message </label>
+                        </div>
+                        <div class="small-9 columns">
+                            <textarea placeholder="Your message goes here"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" small-6 small-centered columns text-center">
+                    <input type="image" src="<?php echo base_url(); ?>img/send.png" alt="Submit!">
+                </div>
+            </div>
+        </form>
+    </div>
     <div class="row">
     	<div class="small-5 small-push-4 columns">
         	<div class="profileNav2">
@@ -88,5 +90,4 @@
             </div>
         </div>
     </div>  
-    <div class="filler"> </div>
 </section>
