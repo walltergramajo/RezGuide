@@ -34,7 +34,7 @@ class Dashboard extends CI_Controller {
 
 			$data['pgTitle'] = "RezGuide - Personal Dashboard - My Points";
 			$data['section'] = "Account";
-			$data['results'] = $this->Account_model->getPoints(2);
+			$data['results'] = $this->Account_model->getPoints($this->session->userdata('sId'));
 			$data['scrollTarget'] = "#pointsScroll";
 			$this->load->view('templates/head',$data);
 			$this->load->view('personal/pd_header');
