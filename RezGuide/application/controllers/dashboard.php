@@ -136,7 +136,7 @@ class Dashboard extends CI_Controller {
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
 
-		}if($page == "withdraw"){
+		}elseif($page == "withdraw"){
 			$data['pgTitle'] = "RezGuide - Personal Dashboard - Requests - Withdraw";
 			$data['section'] = "Requests";
 			$this->load->view('templates/head',$data);
