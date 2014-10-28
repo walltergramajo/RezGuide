@@ -319,16 +319,16 @@ button.ui-button::-moz-focus-inner {
 	top: 1px;
 }
 .ui-datepicker .ui-datepicker-prev {
-	left: 2px;
+	left: 20px;
 }
 .ui-datepicker .ui-datepicker-next {
-	right: 2px;
+	left: 300px;
 }
 .ui-datepicker .ui-datepicker-prev-hover {
-	left: 1px;
+	left: 20px;
 }
 .ui-datepicker .ui-datepicker-next-hover {
-	right: 1px;
+	left: 300px;
 }
 .ui-datepicker .ui-datepicker-prev span,
 .ui-datepicker .ui-datepicker-next span {
@@ -343,6 +343,7 @@ button.ui-button::-moz-focus-inner {
 	margin: 0 2.3em;
 	line-height: 1.8em;
 	text-align: center;
+	position: absolute;
 }
 .ui-datepicker .ui-datepicker-title select {
 	font-size: 1em;
@@ -353,10 +354,10 @@ button.ui-button::-moz-focus-inner {
 	width: 49%;
 }
 .ui-datepicker table {
-	width: 100%;
+	width: 620px;
 	font-size: .9em;
 	border-collapse: collapse;
-	margin: 0 0 .4em;
+	margin: 0 0 .8em;
 }
 .ui-datepicker th {
 	padding: .7em .3em;
@@ -808,14 +809,15 @@ body .ui-tooltip {
 	color: #333333;
 }
 .ui-widget-header {
-	background: #FFF 50% 50% repeat-x;
+	
 	color: #74cabd;
-	font-size: 2em;
+	font-size: 1.7em;
 	
 }
 .ui-widget-header a {
 	color: #ffffff;
 	font-size: 0.5em;
+	margin-top: 20px;
 }
 
 /* Interaction states
