@@ -2157,6 +2157,15 @@ input[type='file'] {
 		margin-top: 40px;
 	}
 
+	#guideScroll
+	{
+		height: 312px;
+		overflow: auto;
+		padding-top: 3px;
+		-webkit-overflow-scrolling: touch;
+	}
+
+
 	/*Schedule*/
 
 	.f-dropdown {

@@ -44,104 +44,89 @@
             </div>
         </div>
     </header>
-    <section class="mainContent">
-    <div class="row">
-    <div class="small-12 columns">
-    	<div class="small-4 columns" id="eventList">
-        <div class="row">
-        	
-          <div class="small-2 columns">
-               <img class="monthSelector" src="img/leftArrow.png" alt="Previous Month">
-            </div>
-            <div class="small-8 columns text-center">
-                <h3 id="calendarMonth" class="ui-datepicker-month">November</h3>
-                <p id="calendarYear">2013</p>
-                
-            </div>
-            <div class="small-2 columns">
-            	 <a class="ui-datepicker-next"><img class="monthSelector " src="img/rightArrow.png" alt="Next Month"></a>
-            </div>
-          </div>
-          	<div id="calendarAccordion">
-    		<dl class="accordion" data-accordion>
-                <dd>
-                    <a href="#panel1" class="accordionLink" onClick="highlightLink(this);">Content 1 <span class="right"><img src="img/accordionArrowDownHover.png" alt="Click For more Information."></span></a>
-                    <div id="panel1" class="content">
-                    	<div class="dividerAccordionTop">
-                            </div>
-                        <div class="row eventInfo">
-                            <div class=" small-7 columns text-center" >
-                                <img src="img/eventNumber.png">
-                            </div>
-                            <div class=" small-5 columns" >
-                                <p class="eventStart"> 5:00 pm</p>
-                                <p class="eventEnd"> 5:30 pm </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                    	<div class="small-12 columns">
-                        	<div class="dividerAccordion">
-                            </div>
-                        </div>
-                    </div>
-                </dd>
-                <dd>
-                	
-                    <a href="#panel2" class="accordionLink" onClick="highlightLink(this);">Content 2 <span class="right"><img src="img/accordionArrowDownHover.png" alt="Click For more Information."></span></a>
+<section class="mainContent">
+    <div class="row" id="calendarPage">
+        <div class="small-12 columns">
+    	
+            <div class="small-4 columns text-center">
+                <div id="calendarAccordion">
+                    <dl class="accordion" data-accordion>
+                        <dd>
+                            <a href="#panel1" class="accordionLink" onClick="highlightLink(this);">Content 1 <span class="right"><img src="img/accordionArrowDownHover.png" alt="Click For more Information."></span></a>
+                                <div id="panel1" class="content">
+                                    <div class="dividerAccordionTop">
+                                    </div>
+                                    <div class="row eventInfo">
+                                        <div class=" small-7 columns text-center" >
+                                        <img src="img/eventNumber.png">
+                                        </div>
+                                        <div class=" small-5 columns" >
+                                            <p class="eventStart"> 5:00 pm</p>
+                                            <p class="eventEnd"> 5:30 pm </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <div class="dividerAccordion">
+                                        </div>
+                                    </div>
+                                </div>
+                        </dd>
+                        <dd>
                     
-                    <div id="panel2" class="content">
-                    <div class="dividerAccordionTop">
-                            </div>
-                    <div class="row eventInfo">
-                            <div class=" small-7 columns text-center" >
-                                <img src="img/eventNumber.png">
-                            </div>
-                            <div class=" small-5 columns" >
-                                <p class="eventStart"> 5:00 pm</p>
-                                <p class="eventEnd"> 5:30 pm </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                    	<div class="small-12 columns">
-                        	<div class="dividerAccordion">
-                            </div>
-                        </div>
-                    </div>
+                            <a href="#panel2" class="accordionLink" onClick="highlightLink(this);">Content 2 <span class="right"><img src="img/accordionArrowDownHover.png" alt="Click For more Information."></span></a>
                     
-                </dd>
-                <dd>
-                    <a href="#panel3" class="accordionLink" onClick="highlightLink(this);">Content 3 <span class="right"><img src="img/accordionArrowDownHover.png" alt="Click For more Information."></span></a>
-                    <div id="panel3" class="content">
-                    <div class="dividerAccordionTop">
-                            </div>
-                    <div class="row eventInfo">
-                            <div class=" small-7 columns text-center" >
-                                <img src="img/eventNumber.png">
-                            </div>
-                            <div class=" small-5 columns" >
-                                <p class="eventStart"> 5:00 pm</p>
-                                <p class="eventEnd"> 5:30 pm </p>
+                        <div id="panel2" class="content">
+                                <div class="dividerAccordionTop">
+                                </div>
+                            <div class="row eventInfo">
+                                <div class=" small-7 columns text-center" >
+                                    <img src="img/eventNumber.png">
+                                </div>
+                                 <div class=" small-5 columns" >
+                                    <p class="eventStart"> 5:00 pm</p>
+                                    <p class="eventEnd"> 5:30 pm </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                    	<div class="small-12 columns">
-                        	<div class="dividerAccordion">
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <div class="dividerAccordion">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </dd>
-            </dl>
+                    
+                        </dd>
+                        <dd>
+                            <a href="#panel3" class="accordionLink" onClick="highlightLink(this);">Content 3 <span class="right"><img src="img/accordionArrowDownHover.png" alt="Click For more Information."></span></a>
+                            <div id="panel3" class="content">
+                            <div class="dividerAccordionTop">
+                                    </div>
+                            <div class="row eventInfo">
+                                    <div class=" small-7 columns text-center" >
+                                        <img src="img/eventNumber.png">
+                                    </div>
+                                    <div class=" small-5 columns" >
+                                        <p class="eventStart"> 5:00 pm</p>
+                                        <p class="eventEnd"> 5:30 pm </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="small-12 columns">
+                                    <div class="dividerAccordion">
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
             </div>
-            </div>
-        <div class="small-8 columns text-center">
             <div id="datepicker">  
             </div>
-        </div>
     </div>
-    </div>
+</div>
     <div class="filler"> </div>
     </section>
         <footer>

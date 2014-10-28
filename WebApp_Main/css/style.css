@@ -254,7 +254,7 @@ header{
 }
 #calendarAccordion{
 	height:405px;
-
+	margin-top: 100px;
 }
 
 .dividerAccordion
@@ -340,9 +340,7 @@ header{
 .event:hover{
 	cursor:pointer;
 }
-.ui-datepicker-title, .ui-datepicker-header, .ui-widget-header,.ui-datepicker-prev{
-	display:none;
-}
+
 .ui-datepicker-inline{
 	width:100%;
 	height:300px;
@@ -352,6 +350,15 @@ th {
 	background-color:#FFF;
 }
 
+#calendarPage
+{
+	position: relative;
+}
+
+.ui-datepicker-header, .ui-widget-header, .ui-helper-clearfix, .ui-corner-all{
+	
+
+}
 .ui-datepicker td span, .ui-datepicker td a {
     display: inline-block;
     text-align: center;
