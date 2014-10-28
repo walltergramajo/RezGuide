@@ -27,7 +27,7 @@
                     </a>
                 </div>
                 <div class="small-4 columns">
-                	<a class="botAnchor" href="calendarJquery.php">
+                	<a class="botAnchor" href="<?php echo base_url(); ?>index.php/calendar">
                     	<img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="<?php echo base_url(); ?>img/calenderIcon.png" alt="Calender">
                     	<p class="iconText text-center header">Calendar</p>
                     </a>
