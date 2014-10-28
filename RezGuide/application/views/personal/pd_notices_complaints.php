@@ -9,14 +9,16 @@
             <div class="small-8 small-centered columns">
             	<div class="accordionScroll">
                 	<dl class="accordion" data-accordion>
-                    	<dd class="accordionBottom">
-                            <a href="#panel1" class="accordionLink accordionTitle" onClick="highlightLink2(this);">Excessive Noise<span class="right accordionDropDownIcon"><img class="imgswap" src="img/accordionArrowDown.png" alt="Click For more Information."></span> </a>
-                            <div id="panel1" class="content">
-                                <p class="complaintDate">September 12, 2014</p>
-                                <p>Noise levels exceeded allowed levels past 11pm. Was given warning to keep it down but neglected to do so.</p>
-                            </div>
-                        </dd>
-                        <dd class="accordionBottom">
+                        <?php foreach ($results as $row): ?>
+                        	<dd class="accordionBottom">
+                                <a href="#panel<?php $row->notices_id ?>" class="accordionLink accordionTitle" onClick="highlightLink2(this);"><?php $row->notices_title ?><span class="right accordionDropDownIcon"><img class="imgswap" src="<?php echo base_url(); ?>img/accordionArrowDown.png" alt="Click For more Information."></span></a>
+                                <div id="panel<?php $row->notices_id ?>" class="content">
+                                    <p class="complaintDate"><?php $row->notices_date ?></p>
+                                    <p><?php $row->notices_description ?></p>
+                                </div>
+                            </dd>
+                        <?php endforeach; ?>
+                        <!-- <dd class="accordionBottom">
                             <a href="#panel2" class="accordionLink accordionTitle" onClick="highlightLink2(this);">Exceeded Alcohol Limit <span class="right accordionDropDownIcon"><img class="imgswap" src="img/accordionArrowDown.png" alt="Click For more Information."></span> </a>
                             <div id="panel2" class="content"> 
                                 <p class="complaintDate">September 16, 2014</p>
@@ -36,7 +38,7 @@
                                 <p class="complaintDate">September 12, 2014</p>
                                 <p>Student has failed to follow several rules put in place by Fanshawe Residence. The next violation might result in being removed from Residence all-together.</p>
                             </div>
-                        </dd>
+                        </dd> -->
                     </dl>
                 </div>
             </div>
