@@ -7,7 +7,9 @@ class Fsu extends CI_Controller {
 	}
 
 	public function index(){
+		$this->load->model('FSU_model');
 		$data['pgTitle'] = "RezGuide - FSU";
+		$data['results'] = $this->FSU_model->getFSUInfo();
 		$data['scrollTarget'] = ".accordionScroll";
 		$this->load->view('templates/head',$data);
 		$this->load->view('fsu/fsu_header');
@@ -20,7 +22,9 @@ class Fsu extends CI_Controller {
 	}
 
 	public function events(){
+		$this->load->model('Events_model');
 		$data['pgTitle'] = "RezGuide - FSU - Events";
+		$data['results'] = $this->Events_model->getEvents(1);
 		$data['scrollTarget'] = "#classifiedSection";
 		$this->load->view('templates/head',$data);
 		$this->load->view('fsu/fsu_header');
@@ -33,7 +37,9 @@ class Fsu extends CI_Controller {
 	}
 
 	public function contests(){
+		$this->load->model('Contests_model');
 		$data['pgTitle'] = "RezGuide - FSU - Contests";
+		$data['results'] = $this->Contests_model->getContests(1);
 		$data['scrollTarget'] = ".accordionScroll";
 		$this->load->view('templates/head',$data);
 		$this->load->view('fsu/fsu_header');
