@@ -70,11 +70,12 @@ class Dashboard extends CI_Controller {
 	}
 
 	public function notices($page = null){
-
+		$this->load->model('Notices_model');
 		if($page == "warnings"){
 			$data['pgTitle'] = "RezGuide - Personal Dashboard - Notices - Warnings";
 			$data['section'] = "Notices";
-			$data['scrollTarget'] = ".accordionScroll";
+			$data['results'] = $this->Notices_model->getWarnings($this->session->userdata('sId'));
+			//$data['scrollTarget'] = ".accordionScroll";
 			$this->load->view('templates/head',$data);
 			$this->load->view('personal/pd_header');
 
@@ -90,7 +91,7 @@ class Dashboard extends CI_Controller {
 			$this->load->view('templates/head',$data);
 			$this->load->view('personal/pd_header');
 
-			$this->load->view('personal/pd_notices_maintenance');
+			$this->load->view('personal/pd_notices_balance');
 
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
@@ -98,7 +99,8 @@ class Dashboard extends CI_Controller {
 		}elseif($page == "maintenance"){
 			$data['pgTitle'] = "RezGuide - Personal Dashboard - Notices - Maintenance";
 			$data['section'] = "Notices";
-			$data['scrollTarget'] = ".accordionScroll";
+			$data['results'] = $this->Notices_model->getMaintenance($this->session->userdata('sId'));
+			//$data['scrollTarget'] = ".accordionScroll";
 			$this->load->view('templates/head',$data);
 			$this->load->view('personal/pd_header');
 
@@ -111,7 +113,8 @@ class Dashboard extends CI_Controller {
 		}else{
 			$data['pgTitle'] = "RezGuide - Personal Dashboard - Notices - Complaints";
 			$data['section'] = "Notices";
-			$data['scrollTarget'] = ".accordionScroll";
+			$data['results'] = $this->Notices_model->getComplaints($this->session->userdata('sId'));
+			//$data['scrollTarget'] = ".accordionScroll";
 			$this->load->view('templates/head',$data);
 			$this->load->view('personal/pd_header');
 
