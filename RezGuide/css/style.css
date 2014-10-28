@@ -25,6 +25,12 @@
 body{
 	font-family: Helvetica, Arial, sans-serif;
 }
+
+.doesntexist
+{
+	margin: 0px;
+}
+
 /* Header */
 #pageTitle{
 	padding-right: 10px;
