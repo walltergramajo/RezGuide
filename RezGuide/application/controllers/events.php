@@ -27,7 +27,7 @@ class Events extends CI_Controller {
 	public function contests(){
 		$data['pgTitle'] = "RezGuide - Events - Contests";
 		$data['section'] = "Contests";
-		$data['results'] = $this->Contests_model->getContests();
+		$data['results'] = $this->Contests_model->getContests(2);
 		$data['scrollTarget'] = ".accordionScroll";
 		$this->load->view('templates/head',$data);
 		$this->load->view('building/bd_header');

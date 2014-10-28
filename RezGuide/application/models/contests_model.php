@@ -6,8 +6,8 @@ class Contests_model extends CI_Model {
 		parent::__construct();
 	}
 
-	public function getContests(){
-		$eventsQuery = $this->db->get('tbl_contests');
-		return $eventsQuery->result();
+	public function getContests($cat){
+		$contestsQuery = $this->db->get_where('tbl_contests', array('contestCat_id' => $cat));
+        return $contestsQuery->result();
 	}
 }
