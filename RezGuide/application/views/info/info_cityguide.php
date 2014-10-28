@@ -9,7 +9,19 @@
             <div class="small-8 small-centered columns">
             	<div class="accordionScroll">
                 	<dl class="accordion" data-accordion>
-                    	<dd class="accordionBottom">
+                        <?php foreach ($results as $row): ?>
+                            <dd class="accordionBottom">
+                                <a href="#panel<?php echo $row->events_id ?>" class="accordionLink accordionTitle" onClick="highlightLink2(this);"><?php echo $row->events_title ?><span class="right accordionDropDownIcon"><img src="<?php echo base_url(); ?>img/accordionArrowDown.png" alt="Click For more Information."></span> </a>
+                                <div id="panel<?php echo $row->events_id ?>" class="content"> 
+                                    <p class="complaintDate"><?php echo $row->events_startdate ?></p>
+                                    <p class="location"><?php echo $row->events_location ?></p>
+                                    <div><?php echo $row->events_description ?></div>
+                                    <img src="<?php echo base_url(); ?>img/nightout.jpg" alt="nightOut">
+                                    <p><a href="<?php echo $row->events_link ?>" target="_blank">More Information</a></p>
+                                </div>
+                            </dd>
+                        <?php endforeach; ?>
+                    	<!-- <dd class="accordionBottom">
                             <a href="#panel1" class="accordionLink accordionTitle" onClick="highlightLink2(this);">Tuesday is movie night <span class="right accordionDropDownIcon"><img src="<?php echo base_url(); ?>img/accordionArrowDown.png" alt="Click For more Information."></span> </a>
                             <div id="panel1" class="content"> 
                                 <p class="complaintDate">Every Tuesday - All Day</p>
@@ -68,7 +80,7 @@
                                 <img src="<?php echo base_url(); ?>img/nightout.jpg" alt="nightOut">
                                 <a href="http://www.cineplex.com"><p>www.cineplex.com</p></a>
                             </div>
-                        </dd>
+                        </dd> -->
                     </dl>
                 </div>
             </div>
