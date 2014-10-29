@@ -24,7 +24,9 @@
                                             <!-- <p class="pointsDate">date<?php //echo $row->points_date ?></p> -->
                                         </div>
                                         <div class="small-4 columns">
-                                            <div><?php echo $row->points_number ?></div>
+                                            <div class="smallCircle">
+                                             <div class="smallPoints"><?php echo $row->points_number ?></div>
+                                            </div>
                                         	<!-- <img class="right pointsMiniImage" src="<?php echo base_url(); ?>img/pointsMini.png" alt="2"> -->
                                         </div>
                                     </div>
