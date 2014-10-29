@@ -354,10 +354,12 @@ button.ui-button::-moz-focus-inner {
 	width: 49%;
 }
 .ui-datepicker table {
-	width: 620px;
+	width: 610px;
 	font-size: .9em;
 	border-collapse: collapse;
 	margin: 0 0 .8em;
+	position: absolute;
+	right: 0px;
 }
 .ui-datepicker th {
 	padding: .7em .3em;
@@ -811,7 +813,7 @@ body .ui-tooltip {
 .ui-widget-header {
 	
 	color: #74cabd;
-	font-size: 1.7em;
+	font-size: 1.75em;
 	
 }
 .ui-widget-header a {
