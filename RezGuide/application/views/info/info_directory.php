@@ -8,156 +8,17 @@
        <div class="small-8 small-centered columns">
         	<div class="accordionScroll">
         		<dl class="accordion2" data-accordion>
-            		<dd class="accordionBottom">
-        				<a href="#" class="accordionLink accordionTitle" onClick="highlightLink2(this)">
-                    		<div class="row">
-                       			<div class=" small-6 columns">
-                    				<p class="directoryTitle">David Krent</p>
-                        		</div>
-                        		<div class=" small-6 columns directoryInfo">
-                        	 		<div class="directoryContact fadeout">
-                                    	<div class="row">
-                                        	<div class="small-3 columns">
-                                				<img class="phoneIcon" src="<?php echo base_url(); ?>img/phoneIcon.png" class="directoryImg" alt="Phone Information">
-                                			</div>
-                                            <div id="phoneNumber" class="small-4 small-pull-5 columns">
-                                				<p class="directoryText">(519)555-5555 </p>
-                                            </div>
-                                        </div>
-                                        <div class="directoryDivider"></div>
-                                		<div class="row">
-                                        	<div class="small-3 columns">
-                                				<img class="emailIcon" src="<?php echo base_url(); ?>img/emailIcon.png" class="directoryImg" alt="Email Information" height="25" width="35">
-                               				</div>
-                                            <div class="small-4 small-pull-5 columns">	
-                                				<p class="directoryText2"> loremipsum@fake.com </p>
-                                            </div>
-                                		</div>		
-                             		</div> 
-                         		</div>
-                    		</div>
-                    	</a>
-      				</dd>
-                	<dd class="accordionBottom">
-        				<a href="#" class="accordionLink accordionTitle" onClick="highlightLink2(this)">
-                    		<div class="row">
-                       			<div class=" small-6 columns">
-                    				<p class="directoryTitle">David Krent</p>
-                        		</div>
-                        		<div class=" small-6 columns directoryInfo">
-                        	 		<div class="directoryContact fadeout">
-                                    	<div class="row">
-                                        	<div class="small-3 columns">
-                                				<img class="phoneIcon" src="<?php echo base_url(); ?>img/phoneIcon.png" class="directoryImg" alt="Phone Information">
-                                			</div>
-                                            <div id="phoneNumber" class="small-4 small-pull-5 columns">
-                                				<p class="directoryText">(519)555-5555 </p>
-                                            </div>
-                                        </div>
-                                        <div class="directoryDivider"></div>
-                                		<div class="row">
-                                        	<div class="small-3 columns">
-                                				<img class="emailIcon" src="<?php echo base_url(); ?>img/emailIcon.png" class="directoryImg" alt="Email Information" height="25" width="35">
-                               				</div>
-                                            <div class="small-4 small-pull-5 columns">	
-                                				<p class="directoryText2"> loremipsum@fake.com </p>
-                                            </div>
-                                		</div>		
-                             		</div> 
-                         		</div>
-                    		</div>
-                    	</a>
-      				</dd>
-                    <dd class="accordionBottom">
-        				<a href="#" class="accordionLink accordionTitle" onClick="highlightLink2(this)">
-                    		<div class="row">
-                       			<div class=" small-6 columns">
-                    				<p class="directoryTitle">David Krent</p>
-                        		</div>
-                        		<div class=" small-6 columns directoryInfo">
-                        	 		<div class="directoryContact fadeout">
-                                    	<div class="row">
-                                        	<div class="small-3 columns">
-                                				<img class="phoneIcon" src="<?php echo base_url(); ?>img/phoneIcon.png" class="directoryImg" alt="Phone Information">
-                                			</div>
-                                            <div id="phoneNumber" class="small-4 small-pull-5 columns">
-                                				<p class="directoryText">(519)555-5555 </p>
-                                            </div>
-                                        </div>
-                                        <div class="directoryDivider"></div>
-                                		<div class="row">
-                                        	<div class="small-3 columns">
-                                				<img class="emailIcon" src="<?php echo base_url(); ?>img/emailIcon.png" class="directoryImg" alt="Email Information" height="25" width="35">
-                               				</div>
-                                            <div class="small-4 small-pull-5 columns">	
-                                			    <p class="directoryText2"> loremipsum@fake.com </p>
-                                            </div>
-                                		</div>		
-                             		</div> 
-                         		</div>
-                    		</div>
-                    	</a>
-      				</dd>
-                    <dd class="accordionBottom">
-        				<a href="#" class="accordionLink accordionTitle" onClick="highlightLink2(this)">
-                    		<div class="row">
-                       			<div class=" small-6 columns">
-                    				<p class="directoryTitle">David Krent</p>
-                        		</div>
-                        		<div class=" small-6 columns directoryInfo">
-                        	 		<div class="directoryContact fadeout">
-                                    	<div class="row">
-                                        	<div class="small-3 columns">
-                                				<img class="phoneIcon" src="<?php echo base_url(); ?>img/phoneIcon.png" class="directoryImg" alt="Phone Information">
-                                			</div>
-                                            <div id="phoneNumber" class="small-4 small-pull-5 columns">
-                                				<p class="directoryText">(519)555-5555 </p>
-                                            </div>
-                                        </div>
-                                        <div class="directoryDivider"></div>
-                                		<div class="row">
-                                        	<div class="small-3 columns">
-                                				<img class="emailIcon" src="<?php echo base_url(); ?>img/emailIcon.png" class="directoryImg" alt="Email Information" height="25" width="35">
-                               				</div>
-                                            <div class="small-4 small-pull-5 columns">	
-                                				<p class="directoryText2"> loremipsum@fake.com </p>
-                                            </div>
-                                		</div>			
-                             		</div> 
-                         		</div>
-                    		</div>
-                    	</a>
-      				</dd>
-                    <dd class="accordionBottom">
-        				<a href="#" class="accordionLink accordionTitle" onClick="highlightLink2(this)">
-                    		<div class="row">
-                       			<div class=" small-6 columns">
-                    				<p class="directoryTitle">David Krent</p>
-                        		</div>
-                        		<div class=" small-6 columns directoryInfo">
-                        	 		<div class="directoryContact fadeout">
-                                    	<div class="row">
-                                        	<div class="small-3 columns">
-                                				<img class="phoneIcon" src="<?php echo base_url(); ?>img/phoneIcon.png" class="directoryImg" alt="Phone Information">
-                                			</div>
-                                            <div id="phoneNumber" class="small-4 small-pull-5 columns">
-                                				<p class="directoryText">(519)555-5555 </p>
-                                            </div>
-                                        </div>
-                                        <div class="directoryDivider"></div>
-                                		<div class="row">
-                                        	<div class="small-3 columns">
-                                				<img class="emailIcon" src="<?php echo base_url(); ?>img/emailIcon.png" class="directoryImg" alt="Email Information" height="25" width="35">
-                               				</div>
-                                            <div class="small-4 small-pull-5 columns">	
-                                				<p class="directoryText2"> loremipsum@fake.com </p>
-                                            </div>
-                                		</div>			
-                             		</div> 
-                         		</div>
-                    		</div>
-                    	</a>
-      				</dd>
+                    <?php foreach ($results as $row): ?>
+                        <dd class="accordionBottom">
+                            <a href="#panel<?php echo $row->directory_id ?>" class="accordionLink accordionTitle" onClick="highlightLink2(this);"><?php echo $row->directory_firstname . " " . $row->directory_lastname ?><span class="right accordionDropDownIcon"><img src="<?php echo base_url() ?>img/accordionArrowDown.png" alt="Click For more Information."></span></a>
+                            <div id="panel<?php echo $row->directory_id ?>" class="content"> 
+                                <p class="complaintDate"><?php echo $row->directory_position ?></p>
+                                <p>Office: <?php echo $row->directory_officenumber ?></p>
+                                <p>Phone: <a href="tel:+1<?php echo str_replace("-", "", $row->directory_phone) ?>"><?php echo $row->directory_phone ?></a><br></p>
+                                <p>Email: <a href="#"><?php echo $row->directory_email ?></a></p>
+                            </div>
+                        </dd>
+                    <?php endforeach; ?>
                 </dl>
             </div>
         </div>
