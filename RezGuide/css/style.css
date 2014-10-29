@@ -25,43 +25,37 @@
 body{
 	font-family: Helvetica, Arial, sans-serif;
 }
-
-.doesntexist
-{
-	margin: 0px;
-}
-
 /* Header */
 #pageTitle{
 	padding-right: 10px;
-	margin:0px;
+	margin:0;
 }
 #titleDirectory{
-	color: #518d84;
+	color: #65666a;
 	font-size: 4.28em;
 	margin-top:-22px;
 	margin-bottom:-32px;
 	}
 #titleHeader
 {
-	color:#FFF;
+	color:#e31d1a;
 	font-size:3.46em;
 	margin-top: 78px;
-	padding-top: 0px;
-	margin-bottom: 0px;
+	padding-top: 0;
+	margin-bottom: 0;
 }
 #mainLogo img{
 	padding:20px 0;
 }
 header{
 	height:180px;
-	background-color:#74cabd;
+	background-color:#ebebeb;
 	position: fixed;
 	width: 100%;
-	top: 0px;
+	top: 0;
 }
 #titleHeaderSolo{
-	color:#FFF;
+	color:#65666a;
 	font-size:4.28em;
 	margin-top: 35px;
 	margin-bottom: 10px;
@@ -76,7 +70,7 @@ header{
 
 .mainContent
 {
-	height: 100%;
+	position: fixed;
 	width: 100%;
 	margin-top: 200px;
 	overflow: auto;
