@@ -945,10 +945,13 @@ input[type="file"]{
 }
 
 /* Global */
+.filler{
+	margin-top:100px;
+}
 .line{
 	height:4px;
 	width:100%;
-	background-color: rgba(102,204,204,.4);
+	background-color:#ebebeb;
 	margin: 5px 0;
 }
 .header{
@@ -963,6 +966,8 @@ input[type="file"]{
 .headerInfo{
 	font-family: Helvetica, sans-serif;
 	text-transform:uppercase;
+	color: #65666a;
+	line-height:1.6em;
 }
 
 .testClass
@@ -972,18 +977,17 @@ input[type="file"]{
 
 .accordionLink{
 	color:#F00;
-	background-color: #fff;
+	background-color: #65666a;
 }
 
 .accordionTitle a{
-	color: #74cabd;
+	color: #65666a;
 	font-size:1.15em;
 	padding-top: 20px;
 	font-family: Helvetica, sans-serif;
 }
 .accordionBottom{
-	border-bottom: 2px solid #999999;
-	border-bottom: 2px solid rgba(102,204,204,.4);
+	border-bottom: 2px solid #999;
 	z-index:2;
 }
 .inputRow{
@@ -992,16 +996,11 @@ input[type="file"]{
 .labelInfo{
 	font-size:1.075em;
 	margin-top:8px;
-	color :#647673;
+	color :#65666a;
 }
-
-
-
-
-
 #noticeTitle{
 	margin-top:30px;
-	color: #74cabd;
+	color: #65666a;
 	font-size:2.5em;
 	text-transform:uppercase;
 	letter-spacing:4px;
@@ -1010,20 +1009,19 @@ input[type="file"]{
 }
 .accordionScroll{
 	width:625px;
-	height: 400px;
+	height: 300px;
 	overflow: auto;
 }
 .labelPush{
 	margin-left:15px;
 }
 #requestHeader{
-	color:#FFF;
+	color:#e31d1a;
 	font-size:3.46em;
 	margin-top: 70px;
 	padding-top: 0px;
 	margin-bottom: 0px;
 }
-
 .phoneIcon
 {
 	height: 40px;
@@ -1032,26 +1030,26 @@ input[type="file"]{
 	position: relative;
 	bottom: 10px;
 }
-
 .emailIcon
 {
 	height: 40px;
 	width: 60px;
 	margin-right: 10px;
 }
+
 /* Footer */
 footer{
 	position:fixed;
    	bottom:0;
 	left:0;
    	width:100%;
-	background-color:#74cabd;
+	background-color:#ebebeb;
 	height:70px;
 	z-index:100;
 }
 .menuText{
 	margin-top:-10px;
-	color: #fff;
+	color: #65666a;
 	text-transform:uppercase;
 	font-size: .6em;
 }
@@ -1060,7 +1058,7 @@ footer{
 	transition: color 2s;
 }
 .botAnchor:hover p{
-	color: #518d84;
+	color: #65666a;
 }
 .botImg{
 	-webkit-transition: opacity .3s; /* For Safari 3.1 to 6.0 */
@@ -1072,19 +1070,17 @@ footer{
 .botImg:active{
 	opacity:0;
 }
-
-
-
 .botAnchor1{
 	-webkit-transition: color 2s; /* For Safari 3.1 to 6.0 */
 	transition: color 2s;
 }
 .botAnchor1:hover p{
-	color: #518d84;
+	color: #65666a;
 }
 .botImg1{
 	-webkit-transition: opacity .3s; /* For Safari 3.1 to 6.0 */
 	transition: opacity .3s;
+	margin: 7px 0 10px 0;
 }
 .botImg1:hover{
 	opacity:.8;
@@ -1092,5 +1088,3 @@ footer{
 .botImg1:active{
 	opacity:0;
 }
-
-
