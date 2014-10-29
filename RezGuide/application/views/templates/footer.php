@@ -21,7 +21,7 @@
                     </a>
                 </div>
                 <div class="small-3 columns">
-                	<a class="botAnchor" href="<?php echo base_url(); ?>index.php/">
+                	<a class="botAnchor" href="<?php echo base_url(); ?>index.php/login/logout">
                 	<img onMouseOver="swapDark1('3')" onMouseOut="swapLight1('3')" class="botImg1" src="<?php echo base_url(); ?>img/logoutIcon.png" alt="Logout">
                     <p class="menuText header">Logout</p>
                     </a>
