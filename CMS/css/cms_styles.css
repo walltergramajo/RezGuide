@@ -1,0 +1,353 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'caviar_dreamsbold';
+    src: url(../assets/caviar_dreams_bold-webfont.eot);
+    src: url(../assets/caviar_dreams_bold-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../assets/caviar_dreams_bold-webfont.woff) format('woff'),
+         url(../assets/caviar_dreams_bold-webfont.ttf) format('truetype'),
+         url(../assets/caviar_dreams_bold-webfont.svg#caviar_dreamsbold) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url(../assets/caviardreams-webfont.eot);
+    src: url(../assets/caviardreams-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../assets/caviardreams-webfont.woff) format('woff'),
+         url(../assets/caviardreams-webfont.ttf) format('truetype'),
+         url(../assets/caviardreams-webfont.svg#caviar_dreamsregular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/*   Login
+========================================*/
+
+	#school {
+		font-size: 2.75em;
+		margin-top: 10px;
+		margin-bottom: -35px;
+		padding: 0;
+		color: #FFF;
+	}
+	
+	#rezTitle {
+		font-size: 4.3em;
+		padding-top: 0px;
+		margin-bottom: 0px;
+		color: #FFF;
+	}
+		
+	.loginField {
+		font-family: 'caviar_dreamsregular';
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		margin-top: 20px;
+	}
+	
+	#loginGo {
+		margin-top: 10px;
+	}
+
+
+
+/*   Header
+========================================*/
+
+
+	#pageTitle {
+		padding-right: 10px;
+		margin: 0px;
+	}
+	
+	#titleDirectory {
+		color: #518d84;
+		font-size: 4.28em;
+		margin-left: 75px;
+		margin-top: 60px;
+		width: 800px;
+	}
+	
+	#titleHeader {
+		color: #FFF;
+		font-size: 3.46em;
+		margin-top: -35px;
+	}
+	
+	#mainLogo img {
+		padding: 20px 0;
+	}
+	
+	header {
+		height: 180px;
+		background-color: #74cabd;
+	}
+	
+	.menu {
+		margin-bottom: 20px;
+	}
+	
+	.menu-icons {
+		display: block;
+		margin: 0 auto;
+		margin-left: 70px;
+	}
+	
+	.menu-icons li {
+		float: left;
+		list-style-type: none;
+		margin-top: 20px;
+	}
+	
+	.menu-icons li img {
+		width: 250px;
+	}
+	
+	.menu-icons li p {
+		font-size: 3em;
+	}
+	
+	#usersIcon {
+		width: 220px;
+	}
+	
+	#titleHeaderSolo {
+		color: #FFF;
+		font-size: 4.28em;
+		margin-top: 35px;
+		margin-bottom: 10px;
+	}
+	
+	#headerContainerSolo {
+		margin-top: 106px;
+	}
+	
+	#headerContainer {
+		margin-bottom: -13px;
+	}
+	
+	
+	/*   Main Page
+	========================================*/
+	
+	
+	.iconRow {
+		margin-top: 15px;
+	}
+	
+	.iconText {
+		color: #74cabd;
+		text-transform: uppercase;
+	}
+	
+	/*   Dashboard
+	========================================*/
+	
+	
+	.dashboardText {
+		margin-top: 15px;
+		color: #74cabd;
+		font-size: 2.5em;
+		text-transform: uppercase;
+	}
+	
+	.dashboardRow {
+		margin-bottom: 40px;
+	}
+	
+	#whiteSpace {
+		margin: 85px 0 125px 0;
+	}
+	
+	
+	/*   Login
+	========================================*/
+
+
+	#loginLogo {
+		margin: 1% auto;
+	}
+	
+	#loginArea {
+		background-color: #74cabd;
+		padding-bottom: 3%;
+	}
+	
+	#schoolName, #appTitle, #loginArea label {
+		color: #fff;
+		text-transform: uppercase;
+	}
+	
+	#schoolName {
+		font-size: 2.75em;
+		margin-top: 10px;
+		margin-bottom: -35px;
+		padding: 0;
+	}
+	
+	#appTitle {
+		font-size: 4em;
+		padding-top: 0px;
+		margin-bottom: 0px;
+	}
+	
+	#loginArea label {
+		font-size: 1.25em;
+	}
+	#loginGoLogin
+	{
+		background-image: url(../img/login.png);
+	}
+	
+	input[type="submit"] {
+        border: 0;
+        background: url('../img/login.png') no-repeat left;
+        margin-top: 10px;
+        width: 100px;
+        height: 100px;
+    }
+	
+	
+	/*   Global
+	========================================*/
+	
+	
+	.filler {
+		margin-top: 100px;
+	}
+	
+	.line {
+		height: 4px;
+		width: 100%;
+		background-color: rgba(102,204,204,.4);
+		margin: 5px 0;
+	}
+	
+	.header {
+		font-family: 'caviar_dreamsregular';
+		text-transform: uppercase;
+	}
+	
+	.accordionLink {
+		color: #74cabd;
+		background-color: #fff;
+	}
+	
+	.accordionLink:hover {
+		color: #fff;
+		background-color: #74cabd;
+	}
+	
+	.accordionTitle a {
+		color: #518d84;
+		font-size: 1.15em;
+	}
+	
+	.accordionBottom {
+		border-bottom: 2px solid #999999;
+		border-bottom: 2px solid rgba(102,204,204,.4);
+		z-index: 2;
+	}
+	
+	.inputRow {
+		padding-bottom: 0px;
+	}
+	
+	.labelInfo {
+		font-size: 1.075em;
+		margin-top: 8px;
+		color: #647673;
+	}
+	
+	#noticeTitle {
+		margin-top: 30px;
+		color: #74cabd;
+		font-size: 2.5em;
+		text-transform: uppercase;
+		font-weight: 800;
+	}
+	
+	.accordionScroll {
+		width: 625px;
+		height: 315px;
+		overflow: hidden;
+	}
+	
+	.labelPush {
+		margin-left: 15px;
+	}
+	
+	#requestHeader {
+		color: #FFF;
+		font-size: 3.46em;
+		margin-top: 70px;
+		padding-top: 0px;
+		margin-bottom: 0px;
+	}
+	
+	
+	/*   Footer
+	========================================*/
+	
+	
+	footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: #74cabd;
+		height: 70px;
+		z-index: 100;
+	}
+	
+	.menuText {
+		margin-top: -10px;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: .6em;
+	}
+	
+	#footerNav {
+		width: 600px;
+		margin-left: -80px;
+	}
+	
+	#footerNav li {
+		float: left;
+		margin-left: 50px;
+		list-style-type: none;
+	}
+	
+	#footerNav li img {
+		width: 60px;
+	}
+	
+	.botAnchor {
+		-webkit-transition: color 2s; /* For Safari 3.1 to 6.0 */
+		transition: color 2s;
+	}
+	
+	.botAnchor:hover p {
+		color: #518d84;
+	}
+	
+	.botImg {
+		-webkit-transition: opacity .3s; /* For Safari 3.1 to 6.0 */
+		transition: opacity .3s;
+	}
+	
+	.botImg:hover {
+		opacity: .8;
+	}
+	
+	.botImg:active {
+		opacity: 0;
+	}
