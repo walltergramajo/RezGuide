@@ -25,6 +25,7 @@
 body{
 	font-family: Helvetica, Arial, sans-serif;
 }
+
 /* Header */
 #pageTitle{
 	padding-right: 10px;
@@ -75,6 +76,7 @@ header{
 	margin-top: 200px;
 	overflow: auto;
 }
+
 /* Main Page */
 .iconRow{
 	margin-top:20px;
@@ -89,6 +91,7 @@ header{
 	font-size: 0.9em;
 	text-transform:uppercase;
 }
+
 /* Dashboard */
 .dashboardText{
 	margin-top:15px;
@@ -111,6 +114,7 @@ header{
 	font-family: 'caviar_dreamsregular';
 	font-size: 0.8em;
 }
+
 /* Chat */
 #chat{
 	margin-top:25px;
@@ -118,7 +122,7 @@ header{
 #chatConversation{
 	height: 280px;
 	overflow:hidden;
-	border-bottom: 2px solid #74cabd;
+	border-bottom: 2px solid #ebebeb;
 	margin-bottom:20px;
 	
 }
@@ -143,13 +147,12 @@ header{
 	margin-bottom: 20px;
 }
 
-
 .chatScroll::-webkit-scrollbar {
       width: 12px;
 } /* this targets the default scrollbar (compulsory) */
 
 .chatScroll::-webkit-scrollbar-track {
-      background-color: #FFF;
+      background-color: #65666a;
 } /* the new scrollbar will have a flat appearance with the set background color */
  
 .chatScroll::-webkit-scrollbar-thumb {
@@ -158,7 +161,7 @@ header{
 } /* this will style the thumb, ignoring the track */
  
 .chatScroll::-webkit-scrollbar-button {
-      background-color: #FFF;
+      background-color: #65666a;
 } /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
  
 .chatScroll::-webkit-scrollbar-corner {
@@ -180,19 +183,20 @@ header{
 }
 .userResponse, .operatorResponse{
 	padding:5px;
-	border-bottom: 2px solid #74cabd;
+	border-bottom: 2px solid #ebebeb;
 }
 .userResponse p, .operatorResponse p{
 	font-size:.95em;
 	margin-top:18px;
 }
 .chatUsersName{
-	color: #74cabd;
+	color: #ebebeb;
 	text-transform:uppercase;
 }
 #inputArea textarea{
 	margin-top:5px;
 }
+
 /* Calendar */
 #calendarMonth, #calendarYear, .monthSelector{
 	color:#74cabd;
@@ -262,8 +266,6 @@ header{
 	width: 100%x;
 	background-color: #b9e4de;
 }
-
-
 
 .dividerAccordionTop
 {
