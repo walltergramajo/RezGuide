@@ -303,7 +303,8 @@ button.ui-button::-moz-focus-inner {
 	display: none;
 }
 .ui-datepicker .ui-datepicker-header {
-	position: relative;
+	position: absolute;
+	left: 0px;
 	padding: .2em 0;
 }
 .ui-datepicker .ui-datepicker-prev,
@@ -318,16 +319,16 @@ button.ui-button::-moz-focus-inner {
 	top: 1px;
 }
 .ui-datepicker .ui-datepicker-prev {
-	left: 2px;
+	left: 20px;
 }
 .ui-datepicker .ui-datepicker-next {
-	right: 2px;
+	left: 300px;
 }
 .ui-datepicker .ui-datepicker-prev-hover {
-	left: 1px;
+	left: 20px;
 }
 .ui-datepicker .ui-datepicker-next-hover {
-	right: 1px;
+	left: 300px;
 }
 .ui-datepicker .ui-datepicker-prev span,
 .ui-datepicker .ui-datepicker-next span {
@@ -342,6 +343,7 @@ button.ui-button::-moz-focus-inner {
 	margin: 0 2.3em;
 	line-height: 1.8em;
 	text-align: center;
+	position: absolute;
 }
 .ui-datepicker .ui-datepicker-title select {
 	font-size: 1em;
@@ -352,10 +354,12 @@ button.ui-button::-moz-focus-inner {
 	width: 49%;
 }
 .ui-datepicker table {
-	width: 100%;
+	width: 610px;
 	font-size: .9em;
 	border-collapse: collapse;
-	margin: 0 0 .4em;
+	margin: 0 0 .8em;
+	position: absolute;
+	right: 0px;
 }
 .ui-datepicker th {
 	padding: .7em .3em;
@@ -807,13 +811,15 @@ body .ui-tooltip {
 	color: #333333;
 }
 .ui-widget-header {
-	border: 1px solid #e78f08;
-	background: #f6a828 url(images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x;
-	color: #ffffff;
-	font-weight: bold;
+	
+	color: #74cabd;
+	font-size: 1.75em;
+	
 }
 .ui-widget-header a {
 	color: #ffffff;
+	font-size: 0.5em;
+	margin-top: 20px;
 }
 
 /* Interaction states
@@ -943,14 +949,14 @@ body .ui-tooltip {
 	background-image: url(images/ui-icons_222222_256x240.png);
 }
 .ui-widget-header .ui-icon {
-	background-image: url(images/ui-icons_ffffff_256x240.png);
+	background-image: url(images/ui-icons_74cabd_256x240.png);
 }
 .ui-state-default .ui-icon {
 	background-image: url(images/ui-icons_ef8c08_256x240.png);
 }
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon {
-	background-image: url(images/ui-icons_ef8c08_256x240.png);
+	background-image: url(images/ui-icons_ffffff_256x240.png);
 }
 .ui-state-active .ui-icon {
 	background-image: url(images/ui-icons_ef8c08_256x240.png);
