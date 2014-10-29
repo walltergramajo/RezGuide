@@ -22,7 +22,7 @@ meta.foundation-mq-xxlarge {
 *:before,
 *:after {
   -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
   box-sizing: border-box; }
 
 html,
@@ -116,7 +116,7 @@ img {
 
 textarea {
   height: auto;
-  min-height: 50px; }
+  min-height: 52px; }
 
 select {
   width: 100%; }
@@ -1599,14 +1599,14 @@ button, .button {
   text-align: center;
   display: inline-block;
   padding-top: 1rem;
-  padding-right: 2rem;
+  padding-right: 1.9rem;
   padding-bottom: 1.0625rem;
-  padding-left: 2rem;
+  padding-left: 1.9rem;
   font-size: 1rem;
   /*     @else                            { font-size: $padding - rem-calc(2); } */
   background-color: #FFF;
   border-color: #647673;
-  color: #647673;
+  color: #74cabd;
   -webkit-transition: background-color 300ms ease-out;
   -moz-transition: background-color 300ms ease-out;
   transition: background-color 300ms ease-out;
@@ -1615,13 +1615,14 @@ button, .button {
   -webkit-appearance: none;
   border: 1px solid;
   border-radius: 10px;
-  font-weight: normal !important;
+  font-weight: normal !important; 
   box-shadow: 2px 2px 1px #888888;
   -webkit-box-shadow: 2px 2px 1px #888888;
-  -moz-box-shadow: 2px 2px 1px #888888; }
+  -moz-box-shadow: 2px 2px 1px #888888;
+  }
   button:hover, button:focus, .button:hover, .button:focus {
-   background-color: #74cabd;
-	border-color: #74cabd;  }
+    background-color: #74cabd;
+	border-color: #74cabd; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: white; }
   button.secondary, .button.secondary {
@@ -1656,10 +1657,10 @@ button, .button {
     font-size: 1.25rem;
     /*     @else                            { font-size: $padding - rem-calc(2); } */ }
   button.small, .button.small {
-    padding-top: 0.875rem;
-    padding-right: 1.75rem;
-    padding-bottom: 0.9375rem;
-    padding-left: 1.75rem;
+    padding-top: 0.175rem;
+    padding-right: 1.25rem;
+    padding-bottom: 0.175rem;
+    padding-left: 1.25rem;
     font-size: 0.8125rem;
     /*     @else                            { font-size: $padding - rem-calc(2); } */ }
   button.tiny, .button.tiny {
@@ -1976,7 +1977,7 @@ div.switch {
   border-width: 1px;
   margin-bottom: 1.25rem;
   height: 2.25rem;
-  background: white;
+  background: #74cabd;
   border-color: #cccccc; }
   div.switch label {
     position: relative;
@@ -2046,20 +2047,21 @@ div.switch {
     font-size: 0.875rem; }
   div.switch input:first-of-type:checked ~ span:last-child {
     left: 100%;
-    margin-left: -2.1875rem; }
+    margin-left: -2.1875rem;
+	 }
   div.switch span:last-child {
     width: 2.25rem;
     height: 2.25rem; }
   div.switch span:last-child {
     border-color: #b3b3b3;
-    background: white;
-    background: -moz-linear-gradient(top, white 0%, #f2f2f2 100%);
+    background: #74cabd;
+    /*background: -moz-linear-gradient(top, white 0%, #f2f2f2 100%);
     background: -webkit-linear-gradient(top, white 0%, #f2f2f2 100%);
-    background: linear-gradient(to bottom, white 0%, #f2f2f2 100%);
+    background: linear-gradient(to bottom, white 0%, #f2f2f2 100%);*/
     -webkit-box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.07), 1000px 0 0 1000px #f3faf6, -2px 0 10px 0 rgba(0, 0, 0, 0.07), -1000px 0 0 1000px whitesmoke;
     box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.07), 1000px 0 0 980px #f3faf6, -2px 0 10px 0 rgba(0, 0, 0, 0.07), -1000px 0 0 1000px whitesmoke; }
   div.switch:hover span:last-child, div.switch:focus span:last-child {
-    background: white;
+    background: #74cabd;
     background: -moz-linear-gradient(top, white 0%, #e6e6e6 100%);
     background: -webkit-linear-gradient(top, white 0%, #e6e6e6 100%);
     background: linear-gradient(to bottom, white 0%, #e6e6e6 100%); }
@@ -2537,7 +2539,7 @@ ul.pagination {
       border-radius: 3px; }
     ul.pagination li:hover a,
     ul.pagination li a:focus {
-      background: #e6e6e6; }
+      background: #FFF; }
     ul.pagination li.unavailable a {
       cursor: default;
       color: #999999; }
@@ -2585,6 +2587,51 @@ ul.pagination {
       list-style: none;
       border-top-color: white; }
 
+.accordion2 {
+  *zoom: 1;
+  margin-bottom: 0; }
+  .accordion2:before, .accordion:after {
+    content: " ";
+    display: table; }
+  .accordion2:after {
+    clear: both; }
+  .accordion2 dd {
+    display: block;
+    margin-bottom: 0 !important; }
+    .accordion2 dd.active a {
+		border-left: 15px solid #518d84;
+		background: url(../img/accordionArrow.png) no-repeat center left;
+      background-color: #74cabd;
+	  background-image:url('img/accordionArrow.png');
+	  color:#FFF;
+	   }
+    .accordion2 dd > a {
+      background: #FFF;
+	  border-left: 15px solid #74cabd;
+      color: #518d84;
+	  font-size:1.15em;;
+      padding:4px 1rem;
+      display: block;
+      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      }
+	  .accordion2 dd span {
+		  margin-right: 10px;
+		  margin-top: -10px;
+		  font-size:1.45em;
+	  }
+      .accordion2 dd > a:hover {
+		border-left: 15px solid #518d84;
+		background: url(../img/accordionArrow.png)no-repeat center left;
+       }
+  .accordion2 .content {
+	border-left: 15px solid #518d84;
+    display: none;
+    padding: 0.9375rem;
+	 }
+    .accordion2 .content.active {
+      display: block;
+      background: white; }
+
 .accordion {
   *zoom: 1;
   margin-bottom: 0; }
@@ -2598,7 +2645,7 @@ ul.pagination {
     margin-bottom: 0 !important; }
     .accordion dd.active a {
 		border-left: 15px solid #518d84;
-		background: url(../img/accordionArrow.png) #74cabd no-repeat center left;
+		background: url(../img/accordionArrow.png) no-repeat center left;
       background-color: #74cabd;
 	  background-image:url('img/accordionArrow.png');
 	  color:#FFF;
@@ -2608,7 +2655,7 @@ ul.pagination {
 	  border-left: 15px solid #74cabd;
       color: #518d84;
 	  font-size:1.15em;;
-      padding:10px 1rem;
+      padding:20px 1rem;
       display: block;
       font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
       }
@@ -2619,7 +2666,7 @@ ul.pagination {
 	  }
       .accordion dd > a:hover {
 		border-left: 15px solid #518d84;
-		background: url(../img/accordionArrow.png) #74cabd no-repeat center left;
+		background: url(../img/accordionArrow.png)no-repeat center left;
        }
   .accordion .content {
 	border-left: 15px solid #518d84;
@@ -4172,9 +4219,9 @@ input[type="time"],
 input[type="url"],
 textarea {
   -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  background-color: white;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ebebeb;
   font-family: inherit;
   border: 1px solid #cccccc;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);

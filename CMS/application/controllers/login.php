@@ -21,9 +21,9 @@ class Login extends CI_Controller {
 		$result = $this->login_model->verify($user,$pass);
 
 		if($result == "confirmed"){
-			$data['pgTitle'] = "Welcome - Rezguide Main Menu";
+			$data['pgTitle'] = "RezGuide Content Management System Home";
 			$this->load->view('templates/head',$data);
-			$this->load->view('main_menu');
+			$this->load->view('admin_menu');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
 		}

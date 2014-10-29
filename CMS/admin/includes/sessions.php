@@ -6,7 +6,7 @@
 	
 	function confirm_logged_in() {
 		if (!isset($_SESSION['admins_id'])) {
-			redirect_to("admin/cms_main.php");
+			// redirect_to("admin/cms_main.php");
 		}
 	}
 	
