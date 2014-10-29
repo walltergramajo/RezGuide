@@ -9,7 +9,17 @@
             <div class="small-8 small-centered columns">
             	<div class="accordionScroll">
                 	<dl class="accordion" data-accordion>
-                    	<dd class="accordionBottom">
+                        <?php foreach ($results as $row): ?>
+                            <dd class="accordionBottom">
+                                <a href="#panel<?php echo $row->news_id ?>" class="accordionLink accordionTitle" onClick="highlightLink2(this);"><?php echo $row->news_title ?><span class="right accordionDropDownIcon"><img class="imgswap" src="<?php echo base_url(); ?>img/accordionArrowDown.png" alt="Click For more Information."></span> </a>
+                                <div id="panel<?php echo $row->news_id ?>" class="content"> 
+                                    <p class="complaintDate"><?php echo $row->news_date ?></p>
+                                    <p>Location: <?php echo $row->news_location ?></p>
+                                    <p><?php echo $row->news_description ?></p>
+                                </div>
+                            </dd>
+                        <?php endforeach; ?>
+                    	<!-- <dd class="accordionBottom">
                             <a href="#panel1" class="accordionLink accordionTitle" onClick="highlightLink2(this);">Thanksgiving Bash<span class="right accordionDropDownIcon"><img class="imgswap" src="<?php echo base_url(); ?>img/accordionArrowDown.png" alt="Click For more Information."></span> </a>
                             <div id="panel1" class="content">
                                 <p class="complaintDate">October 10, 2014</p>
@@ -40,7 +50,7 @@
                                 <p>Location: Outback Shack</p>
                                 <p>It's that time of year again. Wear your amazing costumes whether purchased or hand made. Show off your wild side for the night at our Halloween Night.</p>
                             </div>
-                        </dd>
+                        </dd> -->
                     </dl>
                 </div>
             </div>

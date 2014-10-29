@@ -9,15 +9,17 @@
             <div class="small-8 small-centered columns">
             	<div class="accordionScroll">
                 	<dl class="accordion" data-accordion>
-                    	<dd class="accordionBottom">
-                            <a href="#panel1" class="accordionLink accordionTitle" onClick="highlightLink2(this);">Last Day To Withdraw From Courses<span class="right accordionDropDownIcon"><img class="imgswap" src="<?php echo base_url(); ?>img/accordionArrowDown.png" alt="Click For more Information."></span> </a>
-                            <div id="panel1" class="content"> 
-                                <p class="complaintDate">September 14, 2014</p>
-                                <p>Location: Office of the Registrar</p>
-                                <p>This is the date for the last day to withdraw from your program and receive tuition back. After this if you choose to withdraw you will not receive any tuition back.</p>
-                            </div>
-                        </dd>
-                        <dd class="accordionBottom">
+                        <?php foreach ($results as $row): ?>
+                        	<dd class="accordionBottom">
+                                <a href="#panel<?php echo $row->news_id ?>" class="accordionLink accordionTitle" onClick="highlightLink2(this);"><?php echo $row->news_title ?><span class="right accordionDropDownIcon"><img class="imgswap" src="<?php echo base_url(); ?>img/accordionArrowDown.png" alt="Click For more Information."></span> </a>
+                                <div id="panel<?php echo $row->news_id ?>" class="content"> 
+                                    <p class="complaintDate"><?php echo $row->news_date ?></p>
+                                    <p>Location: <?php echo $row->news_location ?></p>
+                                    <p><?php echo $row->news_description ?></p>
+                                </div>
+                            </dd>
+                        <?php endforeach; ?>
+                        <!-- <dd class="accordionBottom">
                             <a href="#panel2" class="accordionLink accordionTitle" onClick="highlightLink2(this);">Sign for Electives <span class="right accordionDropDownIcon"><img class="imgswap" src="<?php echo base_url(); ?>img/accordionArrowDown.png" alt="Click For more Information."></span> </a>
                             <div id="panel2" class="content">
                                 <p class="complaintDate">September 16, 2014</p>
@@ -40,7 +42,7 @@
                                 <p>Location: M Building</p>
                                 <p>Celebrate with the radio broadcast team at Fanshawe with being named the top radio station in the province. Meet the team and enjoy fun games.</p>
                             </div>
-                        </dd>
+                        </dd> -->
                     </dl>
                 </div>
             </div>

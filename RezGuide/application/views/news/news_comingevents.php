@@ -9,15 +9,17 @@
             <div class="small-8 small-centered columns">
             	<div class="accordionScroll">
                 	<dl class="accordion" data-accordion>
-                    	<dd class="accordionBottom">
-                            <a href="#panel1" class="accordionLink accordionTitle" onClick="highlightLink2(this);">Remembrance Day <span class="right accordionDropDownIcon"><img class="imgswap" src="<?php echo base_url(); ?>img/accordionArrowDown.png" alt="Click For more Information."></span> </a>
-                            <div id="panel1" class="content">
-                                <p class="complaintDate">November 11, 2014</p>
-                                <p>Location: All Campuses</p>
-                                <p>Be sure to take a moment to thank our veterans.</p>
-                            </div>
-                        </dd>
-                        <dd class="accordionBottom">
+                        <?php foreach ($results as $row): ?>
+                        	<dd class="accordionBottom">
+                                <a href="#panel<?php echo $row->news_id ?>" class="accordionLink accordionTitle" onClick="highlightLink2(this);"><?php echo $row->news_title ?> <span class="right accordionDropDownIcon"><img class="imgswap" src="<?php echo base_url(); ?>img/accordionArrowDown.png" alt="Click For more Information."></span></a>
+                                <div id="panel<?php echo $row->news_id ?>" class="content">
+                                    <p class="complaintDate"><?php echo $row->news_date ?></p>
+                                    <p>Location: <?php echo $row->news_location ?></p>
+                                    <p><?php echo $row->news_description ?></p>
+                                </div>
+                            </dd>
+                        <?php endforeach; ?>
+                        <!-- <dd class="accordionBottom">
                             <a href="#panel2" class="accordionLink accordionTitle" onClick="highlightLink2(this);">Run for a Cure <span class="right accordionDropDownIcon"><img class="imgswap" src="<?php echo base_url(); ?>img/accordionArrowDown.png" alt="Click For more Information."></span> </a>
                             <div id="panel2" class="content"> 
                                 <p class="complaintDate">November 13, 2014</p>
@@ -40,7 +42,7 @@
                                 <p>Location: n/a</p>
                                 <p>Exams are over and now we say farewell to our fellow students for a couple of weeks. See you all in the New Year. Happy Holidays.</p>
                             </div>
-                        </dd>
+                        </dd> -->
                     </dl>
                 </div>
             </div>
