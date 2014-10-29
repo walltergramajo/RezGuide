@@ -76,27 +76,27 @@ header{
 	overflow: auto;
 }
 /* Main Page */
-
 .iconRow{
 	margin-top:20px;
 	margin-bottom:15px;
 }
 .iconText{
-	color:#74cabd;
+	color:#65666a;
 	text-transform:uppercase;
 }
 .iconTextChat{
-	color:#74cabd;
+	color:#ebebeb;
 	font-size: 0.9em;
 	text-transform:uppercase;
 }
 /* Dashboard */
 .dashboardText{
 	margin-top:15px;
-	color:#74cabd;
+	color:#65666a;
 	font-size:2.5em;
 	text-transform:uppercase;
 }
+
 .dashboardRow{
 	margin-bottom:40px;
 }
