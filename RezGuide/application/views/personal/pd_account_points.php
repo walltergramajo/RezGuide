@@ -8,7 +8,9 @@
         <div class="small-12 columns">
         	<div class="small-6 columns text-center">
                 <!-- <div><?php echo $pointsTotal; ?></div> -->
-            	<img src="<?php echo base_url(); ?>img/pointsTotal.png" id="pointsImage">
+            	<div class="pointsCircle">
+                    <p class="pointsNumber">1</p>
+                </div>
             </div>
     	    <div class="small-6 columns">
                 <div id="pointsScroll">
