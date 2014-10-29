@@ -28,4 +28,13 @@ class Login extends CI_Controller {
 			$this->load->view('templates/close');
 		}
 	}
+
+	public function logout(){
+		$this->load->model('login_model');
+		$this->login_model->logout();
+		$data['pgTitle'] = "RezGuide - Login";
+		$this->load->view('templates/head',$data);
+		$this->load->view('login');
+		$this->load->view('templates/close');
+	}
 }
