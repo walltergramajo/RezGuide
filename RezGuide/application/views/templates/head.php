@@ -8,5 +8,6 @@
     <script src="<?php echo base_url(); ?>js/vendor/modernizr.js"></script>
     <link href="<?php echo base_url(); ?>css/style.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="<?php echo base_url(); ?>img/favicon.ico" />
+    <link href="<?php echo base_url(); ?>css/jquery-ui-1.10.4.custom.css" rel="stylesheet">
 </head>
 <body>
