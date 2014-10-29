@@ -46,7 +46,7 @@
             		<li><a href="<?php echo base_url(); ?>index.php/dashboard/account"><img id="prevArrow" src="<?php echo base_url(); ?>img/profilePrevArrow.png" height="20" width="20" alt="previous"></a></li> 
                 	<li><a href="<?php echo base_url(); ?>index.php/dashboard/account"><img src="<?php echo base_url(); ?>img/profilePageIcon.png" height="20" width="20" alt="emptyPage"></a></li> 
                 	<li><a href="<?php echo base_url(); ?>index.php/dashboard/account/edit_p2"><img src="<?php echo base_url(); ?>img/profileCurrentPage.png" height="20" width="20" alt="currentPage"></a></li> 
-                	<li><a href="<?php echo base_url(); ?>index.php/dashboard/account/balance"><img id="nextArrow" src="<?php echo base_url(); ?>img/profileNextArrow.png" height="20" width="20" alt="previous"></a></li> 
+                	<li class="arrow unavailable"><a href=""><img id="nextArrow" src="<?php echo base_url(); ?>img/profileNextArrow.png" height="20" width="20" alt="previous"></a></li> 
              	</ul>
             </div>
         </div>
