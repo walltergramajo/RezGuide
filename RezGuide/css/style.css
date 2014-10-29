@@ -653,10 +653,14 @@ th {
 	padding:0;
 	margin: 0  0 -5px 0;
 	font-size: 1.4em;
-	color:#518d84;
+	color:#65666a;
 }
 #classifiedDescription{
 	height:112px;
+	color:#65666a;
+	-webkit-border-radius:5px;
+	width:100%;
+	background-color:#f8f8f8;
 }
 
 #imageInputs
@@ -690,11 +694,12 @@ input[type="file"]{
 }
 #moneyInput{
 	margin-right:20px;
-	width:40%;
+	width:75%;
 	float:right;
+	margin-bottom:35px;
 }
 .classifiedListItem:hover{
-	color:#fff;
+	color:#65666a;
 }
 .ul
 {
@@ -706,12 +711,12 @@ input[type="file"]{
 }
 #listingTitle{
 	font-size:1.35em;
-	color: #74cabd;
+	color: #ebebeb;
 	margin-bottom:-5px;
 }
 #listingTitleCreate{
 	font-size:2.3em;
-	color: #74cabd;
+	color: #ebebeb;
 	margin-bottom: 10px;
 }
 #classifiedRow{
@@ -722,8 +727,8 @@ input[type="file"]{
 	height:317px;
 	overflow: auto;
 	padding:0;
-	border-top: solid 2px #74cabd;
-	border-bottom: solid 2px #74cabd;;
+	border-top: solid 2px #ebebeb;
+	border-bottom: solid 2px #ebebeb;;
 }
 .classifiedRow{
 	margin-top:5px;
@@ -758,27 +763,29 @@ input[type="file"]{
 	font-size: 0.65em;
 }
 
-.newUsed
-{
+.newUsed{
 	font-size: 0.65em;
-	color: #74cabd;
+	color: #e31d1a;
+}
+.setIcon1{
+	padding:50px 15px 60px 15px;
+	display:block;
+	margin:0 auto;
 }
 .itemFullDesc{
 	font-size:.85em;
-	color:#518d84;
+	color:#65666a;
 	padding-left:120px;
 	
 	border-right: 2px solid #CCC;
-	border-right: 2px solid rgba(102,204,204,.4);
 	
 }
 .itemFullDescSell{
 	font-size:.80em;
-	color:#518d84;
-	padding:40px 0 40px 0;
+	color:#65666a;
+	padding:40px 20px 40px 0;
 	
-	border-right: 2px solid #CCC;
-	border-right: 2px solid rgba(102,204,204,.4);
+	border-right: 2px solid #ebebeb;
 }
 .contactSellUser{
 	margin-top: 25px;
@@ -787,7 +794,7 @@ input[type="file"]{
 	margin-top:10px;
 }
 .userContactInfo{
-	color:#518d84;
+	color:#65666a;
 	font-size: .70em;
 	padding-top: 3px;
 	margin-left:-10px;
@@ -847,8 +854,12 @@ input[type="file"]{
 
 #freeOption
 {
-	font-size: 1.4em;
-	color: #647673;
+	font-size: 1.1em;
+	color: #65666a;
+	margin:0;
+	padding-top:5px;
+	line-height:1.35em;
+	font-weight:300;
 }
 #createRow1
 {
@@ -877,7 +888,7 @@ input[type="file"]{
 }
 .directoryContact
 {
-	background-color: #FFF;
+	background-color: #65666a;
 	margin-top: -2px;
 }
 .fadeout {
@@ -918,13 +929,13 @@ input[type="file"]{
 }
 .changeColor
 {
-	color: #74cabd;
+	color: #ebebeb;
 }
 .directoryDivider
 {
 	height: 2px;
 	width: 100%;
-	background-color: #74cabd;
+	background-color: #ebebeb;
 	margin-bottom: 8px;
 }
 .directoryText2
@@ -932,8 +943,8 @@ input[type="file"]{
 	font-size: 1em;
 	margin-bottom: 10px;
 }
-/* Global */
 
+/* Global */
 .line{
 	height:4px;
 	width:100%;
