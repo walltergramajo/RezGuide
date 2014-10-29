@@ -199,7 +199,7 @@ header{
 
 /* Calendar */
 #calendarMonth, #calendarYear, .monthSelector{
-	color:#74cabd;
+	color:#e31d1a;
 	font-family: Helvetica, sans-serif;
 }
 .monthSelector{
@@ -218,11 +218,11 @@ header{
 #calendarDays{
 	padding-bottom:0px;
 	margin-top:10px;
-	border-bottom: #74cabd solid 3px;
+	border-bottom: #ebebeb solid 3px;
 }
 #calendarDays li, .calendarWeek li {
 	display:inline;
-	color:#518d84;
+	color:#65666a;
 	font-size:1.25em;
 	margin: 0 22.5px;
 	padding: 0 10px;
@@ -234,7 +234,7 @@ header{
 .calendarWeek li {
 	height:50px;
 	width:50px;
-	color:#518d84;
+	color:#65666a;
 	font-size:1.25em;
 	margin: 0 20px;
 	padding: 10px;
@@ -250,7 +250,7 @@ header{
 	padding-left:15px;
 }
 .calendarWeeks ul li{
-	color: #74cabd;
+	color: #ebebeb;
 }
 .calendarWeeks ul .nextLastMonth{
 	color: #CCC;
@@ -264,8 +264,10 @@ header{
 {
 	height: 2px;
 	width: 100%x;
-	background-color: #b9e4de;
+	background-color: #999;
 }
+
+
 
 .dividerAccordionTop
 {
@@ -273,7 +275,7 @@ header{
 	width: 100%;
 	margin-top: -5px;
 	margin-bottom: 15px;
-	background-color: #b9e4de;
+	background-color: #e31d1a;
 }
 
 #calendarAccordion .accordion {
@@ -288,36 +290,36 @@ header{
     display: block;
     margin-bottom: 0 !important; }
     #calendarAccordion .accordion dd.active a {
-	 border-left: 10px solid #74cabd;
-     background: #518d84; }
+	 border-left: 10px solid #ebebeb;
+     background: #65666a; }
     #calendarAccordion .accordion dd > a {
-      background: #FFF;
+      background: #65666a;
 	  
-	  border-left: 10px solid #518d84;
-      color: #fff;
-	  background: #74cabd;
+	  border-left: 10px solid #65666a;
+      color: #65666a;
+	  background: #ebebeb;
       padding:20px 1rem;
       display: block;
       font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
       font-size: 1.15rem; }
       #calendarAccordion .accordion dd > a:hover {
-		border-left: 10px solid #74cabd;
-        background: #518d84;
-		background: url(../img/accordionArrowCalendar.png) #518d84 no-repeat center left;
-		color: #fff }
+		border-left: 10px solid #e31d1a;
+        background: #65666a;
+		background: url(../img/WA_accentArrow.png) #fff no-repeat center left;
+		color: #65666a }
   #calendarAccordion .accordion .content {
-	background: #518d84;
+	background: #65666a;
     display: none;
-	color: color:#fff;
-	border-left: 10px solid #74cabd;
+	color: color:#65666a;
+	border-left: 10px solid #ebebeb;
     padding: 0.3375rem; }
     #calendarAccordion .accordion .content.active {
-	 color:#fff;
+	 color:#65666a;
      display: block;
-     background: #518d84;
-	 border-left: 10px solid #74cabd; }
+     background: #65666a;
+	 border-left: 10px solid #e31d1a; }
 #calendarAccordion  dd:hover{
-	background-color:#518d84;
+	background-color:#65666a;
 }
 #calendarAccordion span{
 	font-size:1.75em;
@@ -325,6 +327,7 @@ header{
 }
 .eventStart, .eventEnd{
 	font-size:1.35em;
+	color:#ebebeb;
 }
 .eventStart{
 	margin-top:10px;
@@ -336,7 +339,7 @@ header{
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius:50%;
-	border: solid 2px #74cabd;
+	border: solid 2px #ebebeb;
 }
 .event:hover{
 	cursor:pointer;
@@ -347,8 +350,8 @@ header{
 	height:300px;
 }
 th {
-	border-bottom: solid 2px #74cabd;
-	background-color:#FFF;
+	border-bottom: solid 2px #ebebeb;
+	background-color:#ebebeb;
 }
 
 .ui-datepicker td span, .ui-datepicker td a {
@@ -367,11 +370,11 @@ th {
 	margin: 1% auto;
 }
 #loginArea{
-	background-color:#74cabd;
+	background-color:#ebebeb;
 	padding-bottom:3%;
 }
 #schoolName, #appTitle, #loginArea label{
-	color:#fff;
+	color:#65666a;
 	text-transform:uppercase;
 }
 #schoolName{
@@ -388,6 +391,7 @@ th {
 #loginArea label{
 	font-size:1.25em;
 }
+
 /* Requests */
 .sectionLabel{
 	font-size:1.075em;
