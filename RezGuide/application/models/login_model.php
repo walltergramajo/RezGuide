@@ -29,4 +29,8 @@ class Login_model extends CI_Model {
 
 		$this->session->set_userdata($userArray);
 	}
+
+	public function logout(){
+		$this->session->sess_destroy();
+	}
 }
