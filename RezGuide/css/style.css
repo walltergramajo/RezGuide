@@ -479,7 +479,7 @@ th {
 	text-transform:uppercase;
 	font-size:1.3em;
 	margin-bottom:-8px;
-	color: #74cabd;
+	color: #e31d1a;
 }
 .pointsDate{
 	font-size:1em;
@@ -491,7 +491,7 @@ th {
 {
 	height: 2px;
 	width: 100%;
-	background-color: #74cabd;
+	background-color: #ebebeb;
 }
 
 .pointsNumber
@@ -527,9 +527,9 @@ th {
 #pointsScroll{
 	margin-top:35px;
 	margin-bottom:0px;
-	height:280px; /*was 250px*/
+	height:300px; /*was 250px*/
 	overflow-y:scroll;
-	width:475px;
+	width:625px;
 
 }
 #pointsImage{
@@ -537,8 +537,9 @@ th {
 }
 .pointsWhiteSpace{
 	height:150px;
-	border-left:15px solid #74cabd;
+	border-left:15px solid #ebebeb;
 }
+
 /* Edit Account */
 #editAccountContent, #createAccountContent{
 	margin-top:10px;
@@ -550,16 +551,16 @@ th {
 	margin-top:-15px;
 }
 #programName{
-	color:#74cabd;
+	color:#e31d1a;
 	font-size:1.3em;
 }
 .accountLine{
 	width:100%;
 	height:7px;
-	background-color: #b9e4de;
-	background-color: rgba(116,202,189,.5);
+	background-color: #ebebeb;
 	margin:5px 0 15px 0;
 }
+
 /* Balance */
 #balanceItems{
 	padding-right: 5px;
@@ -575,26 +576,26 @@ th {
 	padding:20px 0px;
 	
 	margin-right: 34px;
-	color:#518d84;
+	color:#65666a;
 	font-size:1.75em;
 }
 .chartItem{
 	padding:20px 0px;
 	margin-left: 20px;
-	color:#518d84;
+	color:#65666a;
 	font-size:1.75em;
 }
 
 .chartItemTotal{
 	margin-top: 20px;
 	margin-left: 40px;
-	color:#518d84;
+	color:#65666a;
 	font-size:1.9em;
 }
 
 .chartPriceTotalNum{
 	margin-top: 20px;
-	color:#74cabd;
+	color:#ebebeb;
 	font-size:1.9em;
 }
 
@@ -605,8 +606,8 @@ th {
 	height: 3px;
 	width: 100%;
 	background-color:rgba(57,112,54,.2);
-	
-}
+	}
+
 /*Building Pages */
 #buildingRow{
 	margin-top:10px;
