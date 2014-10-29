@@ -13,7 +13,7 @@
 </header>
 <div class="row">
 	<div class="small-7 small-centered columns">
-    	<h1 class="welcomeHeader">WELCOME</h1>
+    	<h1 class="welcomeHeader"><?php echo $greetings; ?> WELCOME</h1>
     </div>
 </div>
 <div class="row iconRow">
@@ -22,7 +22,7 @@
         	<div class=" menu">
                 <ul class="menu-icons">
                     <li>
-                        <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add_main.php">
+                        <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add_main">
                         <div class="small-4 columns">
                             <img src="<?php echo base_url(); ?>img/cms-create.png" onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" alt="Add">
                         </div>
