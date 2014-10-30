@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
@@ -22,7 +22,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
 <section class="mainContent">
     <div class="row" id="calendarPage">
         <div class="small-12 columns">
