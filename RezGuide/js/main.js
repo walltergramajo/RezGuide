@@ -175,7 +175,7 @@ $('#addInput').click(function(){
 });
 
 var highlightLink = function () {
-        var active = null, colour = '#518d84', backgroundImage2 = "url('img/selectionArrowGreen.png')";
+        var active = null, colour = '#ebebeb', backgroundImage2 = "url('img/selectionArrowGreen.png')";
         if (this.attachEvent) this.attachEvent('onunload', function () {
             active = null;
         });
