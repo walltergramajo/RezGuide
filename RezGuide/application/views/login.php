@@ -3,7 +3,7 @@
 </header>
 <div id="loginLogo" class="row">
 	<div class="small-6 small-centered columns text-center">
-    	<img src="<?php echo base_url(); ?>img/FINAL_LOGO.png" alt="RezGuide">
+    	<img src="<?php echo base_url(); ?>img/WA_rglogo.png" alt="RezGuide">
     </div>
 </div>
 <section id="loginArea">

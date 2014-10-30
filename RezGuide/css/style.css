@@ -512,16 +512,16 @@ th {
 .smallCircle
 {
 	border: solid 3px #74cabd;
-	height: 30px;
-	width: 30px;
+	height: 40px;
+	width: 40px;
 	border-radius: 100px;
-	padding: 3px;
 }
 
 .smallPoints
 {
 	font-size: 1.2em;
 	color: #74cabd;
+	text-align: center;
 }
 
 #pointsScroll{

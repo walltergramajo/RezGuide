@@ -25,7 +25,7 @@
                                         </div>
                                         <div class="small-4 columns">
                                             <div class="smallCircle">
-                                             <div class="smallPoints"><?php echo $row->points_number ?></div>
+                                             <p class="smallPoints"><?php echo $row->points_number ?></p>
                                             </div>
                                         	<!-- <img class="right pointsMiniImage" src="<?php echo base_url(); ?>img/pointsMini.png" alt="2"> -->
                                         </div>
