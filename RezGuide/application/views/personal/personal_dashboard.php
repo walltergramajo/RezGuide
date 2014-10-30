@@ -16,25 +16,25 @@
             <div class="small-12 columns">
                <div class="small-3 columns text-center">
                     <a class="botAnchor" href="<?php echo base_url(); ?>index.php/dashboard/account">
-                        <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="<?php echo base_url(); ?>img/dashboardIcon.png" alt="Account">
+                        <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="<?php echo base_url(); ?>img/WA_userMed.png" alt="Account">
                         <p class="dashboardText"> Account </p>
                     </a>
                 </div>
                 <div class="small-3 columns text-center">
                     <a class="botAnchor" href="<?php echo base_url(); ?>index.php/dashboard/account/points">
-                        <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="<?php echo base_url(); ?>img/pointsIcon.png" alt="Requests">
+                        <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="<?php echo base_url(); ?>img/WA_points.png" alt="Requests">
                         <p class="dashboardText"> Points </p>
                     </a>
                 </div> 
                 <div class="small-3 columns text-center">
                     <a class="botAnchor" href="<?php echo base_url(); ?>index.php/dashboard/notices">
-                        <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="<?php echo base_url(); ?>img/buildDashbboardIcon.png" alt="Notices">
+                        <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="<?php echo base_url(); ?>img/WA_building.png" alt="Notices">
                         <p class="dashboardText"> Notices </p>
                     </a>
                 </div>
                 <div class="small-3 columns text-center">
                     <a class="botAnchor" href="<?php echo base_url(); ?>index.php/dashboard/requests">
-                        <img onMouseOver="swapDark('3')" onMouseOut="swapLight('3')" class="botImg" src="<?php echo base_url(); ?>img/calenderIcon.png" alt="Requests">
+                        <img onMouseOver="swapDark('3')" onMouseOut="swapLight('3')" class="botImg" src="<?php echo base_url(); ?>img/WA_requests.png" alt="Requests">
                         <p class="dashboardText"> Requests </p>
                     </a>
                 </div>
