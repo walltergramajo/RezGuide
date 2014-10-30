@@ -37,7 +37,7 @@
                                     </div>
                                     <div class="row eventInfo">
                                         <div class=" small-7 columns text-center" >
-                                        <img src="img/eventNumber.png">
+                                        <img src="<?php echo base_url(); ?>img/eventNumber.png">
                                         </div>
                                         <div class=" small-5 columns" >
                                             <p class="eventStart"> 5:00 pm</p>
@@ -61,7 +61,7 @@
                                 </div>
                             <div class="row eventInfo">
                                 <div class=" small-7 columns text-center" >
-                                    <img src="img/eventNumber.png">
+                                    <img src="<?php echo base_url(); ?>img/eventNumber.png">
                                 </div>
                                  <div class=" small-5 columns" >
                                     <p class="eventStart"> 5:00 pm</p>
@@ -84,7 +84,7 @@
                                     </div>
                             <div class="row eventInfo">
                                     <div class=" small-7 columns text-center" >
-                                        <img src="img/eventNumber.png">
+                                        <img src="<?php echo base_url(); ?>img/eventNumber.png">
                                     </div>
                                     <div class=" small-5 columns" >
                                         <p class="eventStart"> 5:00 pm</p>
