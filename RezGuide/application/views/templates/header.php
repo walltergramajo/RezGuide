@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/foundation.css" />
 	<script src="js/vendor/modernizr.js"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="shortcut icon" href="img/fanFavicon.ico" />
   </head>
   <body>
     <header>
