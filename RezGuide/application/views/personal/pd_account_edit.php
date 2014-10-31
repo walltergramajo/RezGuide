@@ -93,10 +93,10 @@
     	<div class="small-5 small-centered columns">
         	<div class="profileNav">
         		<ul class="pagination"> 
-            		<li class="arrow unavailable"><a href=""><img id="prevArrow" src="<?php echo base_url(); ?>img/profilePrevArrow.png" height="20px" width="20px" alt="previous"></a></li> 
-                	<li><a href="<?php echo base_url(); ?>index.php/dashboard/account"><img src="<?php echo base_url(); ?>img/profileCurrentPage.png" height="20px" width="20px" alt="currentPage"></a></li> 
-                	<li><a href="<?php echo base_url(); ?>index.php/dashboard/account/edit_p2"><img src="<?php echo base_url(); ?>img/profilePageIcon.png" height="20px" width="20px" alt="emptyPage"></a></li> 
-                	<li><a href="<?php echo base_url(); ?>index.php/dashboard/account/edit_p2"><img id="nextArrow" src="<?php echo base_url(); ?>img/profileNextArrow.png" height="20px" width="20px" alt="previous"></a></li> 
+            		<li class="arrow unavailable"><a href=""><img id="prevArrow" src="<?php echo base_url(); ?>img/WA_larrow.png" height="20px" width="20px" alt="previous"></a></li> 
+                	<li><a href="<?php echo base_url(); ?>index.php/dashboard/account"><img src="<?php echo base_url(); ?>img/WA_dotFull.png" height="20px" width="20px" alt="currentPage"></a></li> 
+                	<li><a href="<?php echo base_url(); ?>index.php/dashboard/account/edit_p2"><img src="<?php echo base_url(); ?>img/WA_dotEmpty.png" height="20px" width="20px" alt="emptyPage"></a></li> 
+                	<li><a href="<?php echo base_url(); ?>index.php/dashboard/account/edit_p2"><img id="nextArrow" src="<?php echo base_url(); ?>img/WA_rArrow.png" height="20px" width="20px" alt="previous"></a></li> 
              	</ul>
             </div>
         </div>

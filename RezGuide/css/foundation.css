@@ -1587,7 +1587,7 @@ meta.foundation-mq-topbar {
       display: block; }
 
 button, .button {
-  border-style: solid;
+  border-style: none;
   border-width: 0px;
   cursor: pointer;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -1599,32 +1599,33 @@ button, .button {
   text-align: center;
   display: inline-block;
   padding-top: 1rem;
-  padding-right: 1.9rem;
+  padding-right: 0px;
   padding-bottom: 1.0625rem;
-  padding-left: 1.9rem;
+  padding-left: 0px;
   font-size: 1rem;
   /*     @else                            { font-size: $padding - rem-calc(2); } */
   background-color: #FFF;
-  border-color: #647673;
-  color: #74cabd;
+  border-color: #666;
+  color: #65666a;
   -webkit-transition: background-color 300ms ease-out;
   -moz-transition: background-color 300ms ease-out;
   transition: background-color 300ms ease-out;
   padding-top: 1.0625rem;
   padding-bottom: 1rem;
-  -webkit-appearance: none;
-  border: 1px solid;
+  border: none;
   border-radius: 10px;
   font-weight: normal !important; 
-  box-shadow: 2px 2px 1px #888888;
-  -webkit-box-shadow: 2px 2px 1px #888888;
-  -moz-box-shadow: 2px 2px 1px #888888;
   }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #74cabd;
-	border-color: #74cabd; }
+    background-color: #e31d1a;
+  border-color: none;
+  cursor:pointer; 
+  box-shadow: 2px 2px 1px #d4d4d4;
+    -webkit-box-shadow: 2px 2px 1px #d4d4d4;
+    -moz-box-shadow: 2px 2px 1px #d4d4d4;}
   button:hover, button:focus, .button:hover, .button:focus {
-    color: white; }
+    color: white;
+  cursor:pointer; }
   button.secondary, .button.secondary {
     background-color: #e7e7e7;
     border-color: #b9b9b9;
