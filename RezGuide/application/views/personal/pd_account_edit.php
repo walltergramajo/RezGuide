@@ -3,7 +3,7 @@
         <div class="row" id="editAccountContent">
         	<div class="small-4 columns">
         		<div class="small-12 columns text-center">
-            		<img id="profilePicEdit" src="<?php echo base_url(); ?>img/cms-users.png" width="250" alt="Account Picture">
+            		<img id="profilePicEdit" src="<?php echo base_url(); ?>img/WA_user.png" width="250" alt="Account Picture">
            		</div>
             	<div class="small-12 columns text-center">
             		<h3 class="headerInfo" id="firstName">First Name </h3>
