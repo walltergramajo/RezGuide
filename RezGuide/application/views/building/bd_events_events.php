@@ -31,11 +31,11 @@
     	<div class="small-5 small-push-4 columns">
         	<div class="profileNav2">
         		<ul class="pagination">
-            		<li><a href="<?php echo base_url(); ?>index.php/building"><img id="prevArrow" src="<?php echo base_url(); ?>img/profilePrevArrow.png" height="20px" width="20px" alt="previous"></a></li>
-                	<li><a href="<?php echo base_url(); ?>index.php/events"><img src="<?php echo base_url(); ?>img/profileCurrentPage.png" height="20px" width="20px" alt="currentPage"></a></li>
-                	<li><a href="<?php echo base_url(); ?>index.php/events/contests"><img src="<?php echo base_url(); ?>img/profilePageIcon.png" height="20px" width="20px" alt="emptyPage"></a></li>
-                    <li><a href="<?php echo base_url(); ?>index.php/events/programs"><img src="<?php echo base_url(); ?>img/profilePageIcon.png" height="20px" width="20px" alt="emptyPage"></a></li>
-                	<li><a href="<?php echo base_url(); ?>index.php/events/contests"><img id="nextArrow" src="<?php echo base_url(); ?>img/profileNextArrow.png" height="20px" width="20px" alt="previous"></a></li>
+            		<li><a href="<?php echo base_url(); ?>index.php/building"><img id="prevArrow" src="<?php echo base_url(); ?>img/WA_larrow.png" height="20px" width="20px" alt="previous"></a></li>
+                	<li><a href="<?php echo base_url(); ?>index.php/events"><img src="<?php echo base_url(); ?>img/WA_dotFull.png" height="20px" width="20px" alt="currentPage"></a></li>
+                	<li><a href="<?php echo base_url(); ?>index.php/events/contests"><img src="<?php echo base_url(); ?>img/WA_dotEmpty.png" height="20px" width="20px" alt="emptyPage"></a></li>
+                    <li><a href="<?php echo base_url(); ?>index.php/events/programs"><img src="<?php echo base_url(); ?>img/WA_dotEmpty.png" height="20px" width="20px" alt="emptyPage"></a></li>
+                	<li><a href="<?php echo base_url(); ?>index.php/events/contests"><img id="nextArrow" src="<?php echo base_url(); ?>img/WA_rArrow.png" height="20px" width="20px" alt="previous"></a></li>
              	</ul>
             </div>
         </div>
