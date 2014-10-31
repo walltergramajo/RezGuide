@@ -67,6 +67,12 @@ class Classifieds extends CI_Controller {
 		$this->load->view('templates/close');
 	}
 
+	public function create_classified(){
+		if($this->input->post('submit')){
+			$this->Classifieds_model->createClassified();
+		}
+	}
+
 	public function buy($cat = null){
 		switch ($cat) {
 			case 'books':
