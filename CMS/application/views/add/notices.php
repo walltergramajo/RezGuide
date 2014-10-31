@@ -16,7 +16,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="botAnchor" href="<?php echo base_url(); ?>cms_add_notice_fine.php">
+                        <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add/notice/fine">
                         	<div class="row">
                                 <div class="small-5 columns">
                                     <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="<?php echo base_url(); ?>img/cms-fine.png" alt="Fine">
@@ -28,7 +28,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="botAnchor" href="<?php echo base_url(); ?>cms_add_notice_warning.php">
+                        <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add/notice/warning">
                             <div class="row">
                             	<div class="small-5 columns">
                                     <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="<?php echo base_url(); ?>img/cms-warning.png" alt="Warning">

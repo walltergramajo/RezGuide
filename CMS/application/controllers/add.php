@@ -23,7 +23,25 @@ class Add extends CI_Controller {
 			$data['subSection'] = "Complaint";
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
-			$this->load->view('add/complaint');
+			$this->load->view('add/notices/complaint');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}elseif($page == "fine"){
+			$data['pgTitle'] = "RezGuide Add A Notice";
+			$data['section'] = "Notices";
+			$data['subSection'] = "Fine";
+			$this->load->view('templates/head',$data);
+			$this->load->view('add/add_header');
+			$this->load->view('add/notices/fine');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}elseif($page == "warning"){
+			$data['pgTitle'] = "RezGuide Add A Notice";
+			$data['section'] = "Notices";
+			$data['subSection'] = "Warning";
+			$this->load->view('templates/head',$data);
+			$this->load->view('add/add_header');
+			$this->load->view('add/notices/warning');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
 		}else{
@@ -36,11 +54,6 @@ class Add extends CI_Controller {
 			$this->load->view('templates/close');
 		}
 
-		// elseif($page == "fine"){
-
-		// }elseif($page == "warning"){
-
-		// }
 	}
 
 }
