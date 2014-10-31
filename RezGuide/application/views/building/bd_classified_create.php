@@ -92,10 +92,6 @@
                     <input type="file">
                 </div>
                 <div class="small-7 columns">
-<<<<<<< HEAD
-
-=======
->>>>>>> fc6104803197394d23c5893620ef0a2dcbac3609
                     <textarea placeholder="Description"></textarea>
                 </div>
             </div>
@@ -127,11 +123,8 @@
                 </div>
             </div>
             </div>
-<<<<<<< HEAD
-=======
             
             
->>>>>>> fc6104803197394d23c5893620ef0a2dcbac3609
         </div>
         
         <div class="row">
@@ -143,15 +136,15 @@
     </div><!--End mainContent-->
      
     <div class="row">
-    	<div class="small-5 small-push-4 columns">
-        	<div class="profileNav3">
-        		<ul class="pagination"> 
-            		<li><a href="<?php echo base_url(); ?>index.php/classifieds/buy"><img id="prevArrow" src="<?php echo base_url(); ?>img/profilePrevArrow.png" height="20px" width="20px" alt="previous"></a></li> 
-                	<li><a href="<?php echo base_url(); ?>index.php/classifieds"><img src="<?php echo base_url(); ?>img/profilePageIcon.png" height="20px" width="20px" alt="currentPage"></a></li> 
-                	<li><a href="<?php echo base_url(); ?>index.php/classifieds/buy"><img src="<?php echo base_url(); ?>img/profilePageIcon.png" height="20px" width="20px" alt="emptyPage"></a></li> 
+        <div class="small-5 small-push-4 columns">
+            <div class="profileNav3">
+                <ul class="pagination"> 
+                    <li><a href="<?php echo base_url(); ?>index.php/classifieds/buy"><img id="prevArrow" src="<?php echo base_url(); ?>img/profilePrevArrow.png" height="20px" width="20px" alt="previous"></a></li> 
+                    <li><a href="<?php echo base_url(); ?>index.php/classifieds"><img src="<?php echo base_url(); ?>img/profilePageIcon.png" height="20px" width="20px" alt="currentPage"></a></li> 
+                    <li><a href="<?php echo base_url(); ?>index.php/classifieds/buy"><img src="<?php echo base_url(); ?>img/profilePageIcon.png" height="20px" width="20px" alt="emptyPage"></a></li> 
                     <li><a href="<?php echo base_url(); ?>index.php/classifieds/create"><img src="<?php echo base_url(); ?>img/profileCurrentPage.png" height="20px" width="20px" alt="emptyPage"></a></li>
-                	<li class="arrow unavailable"><a href="#"><img id="nextArrow" src="<?php echo base_url(); ?>img/profileNextArrow.png" height="20px" width="20px" alt="previous"></a></li>
-             	</ul>
+                    <li class="arrow unavailable"><a href="#"><img id="nextArrow" src="<?php echo base_url(); ?>img/profileNextArrow.png" height="20px" width="20px" alt="previous"></a></li>
+                </ul>
             </div>
         </div>
     </div> 
