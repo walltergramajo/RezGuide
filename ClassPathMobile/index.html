@@ -1,0 +1,4256 @@
+<!doctype html>
+<html class="no-js" lang="en" ><head>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--For Android Full Screen-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Class Path Main</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css"/>  
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="js/jquery-ui-1.10.4.custom/css/custom-theme/jquery-ui-1.10.4.custom.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="stylesheet" href="jqueryMobile/jquery.mobile.structure-1.4.2.css" />
+   	<!--<link rel="apple-touch-startup-image" href="img/Default-568h@2x.png">-->
+    <link rel="apple-touch-icon" href="ios/icon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/ios/Icon-72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/ios/icon@2x.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="img/ios/icon-72@2x.png" />
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="jqueryMobile/jquery.mobile-1.4.2.js"></script>
+    
+  </head>
+<body>
+<div data-role="page" id="logIn">
+	<div class="logInContainer">
+    	<div id="logoWhiteSpace" class="row">
+        	<div class="small-5 small-centered columns">
+       	    	<img id="logInLogo" src="img/logInLogo.png" alt="logo"> 
+            </div>
+         </div>
+         <div class="row">
+         	<div class="small-8 small-centered columns">
+            	<h2 class="loginHeader"><span class="fanshaweSmall">FANSHAWE</span> REZGUIDE</h2>
+            </div>
+         </div>
+         <div class="row">
+         	<div class="small-5 small-centered columns">
+       	    	<h3 class="pleaseLogIn">PLEASE LOG IN</h3>
+            </div>
+         </div>
+         <div class="row">
+         	<div class="small-8 small-centered columns">
+            	<input type="text" data-role="none" placeholder="username">
+            </div>
+         </div>
+         <div class="row">
+         	<div class="small-8 small-centered columns">
+            	<input class="logIn" data-role="none" type="password" placeholder="password">
+            </div>
+         </div>
+         <div class="row">
+         	<div class="small-4 small-centered columns">
+       	    	<a href="#mainMenu"><img class="logInStart" src="img/largeStartIcon.png" alt="start"></a>
+            </div>
+         </div>
+         <div class="row">
+         	<div class="small-6 small-centered columns">
+            	<a href="#"><p class="forgotPassword">FORGOT PASSWORD?</p></a>
+            </div>
+        </div>
+    </div><!--logInContainer End-->
+</div><!--logIn Page End-->
+
+<div data-role="page" id="mainMenu"> <!--Main Menu Page Container Start-->
+	<div id="mainContainer">
+		<div class="row">
+    		<div class="small-6 columns">
+        		<div class="mainSections">
+            		<a href="#main">
+   	    			<div class="small-8 small-centered columns">
+            			<img class="smallIcons" src="img/classPathThumb.png" alt="classPath"> 
+                    </div>
+            			<h2 class="mainMenuHeader2">CLASS PATH</h2>
+            		</a>
+           		</div>
+        	</div>
+        	<div class="small-6 columns">
+        		<div class="mainSections2">
+            		<a id="calendarLink" href="#calendarPage">
+   	    				<div class="small-8 small-centered columns">
+            				<img class="smallIcons" src="img/calendarThumb.png" alt="classPath"> 
+            			</div>
+            			<h2 class="mainMenuHeader2">CALENDAR</h2>
+            		</a>
+        		</div>
+    		</div>
+  		</div><!--End Row-->      
+  		<div class="row">
+    		<div class="small-6 columns">
+        		<div class="mainSections">
+            		<a href="#personalDashboard">
+   	    				<div class="small-8 small-centered columns">
+            				<img src="img/personalDashboardThumb.png" alt="classPath"> 
+            			</div>
+            			<h2 class="mainMenuHeader">PERSONAL<br> DASHBOARD</h2>
+            		</a>
+        		</div>
+    		</div>
+        	<div class="small-6 columns">
+        		<div class="mainSections2">
+            		<a href="#buildingIntro">
+            			<div class="small-8 small-centered columns">
+   	    					<img src="img/buildingThumb.png" alt="classPath"> 
+            			</div>
+            			<h2 class="mainMenuHeader">BUILDING <br>DASHBOARD</h2>
+            		</a>
+        		</div>
+    		</div>
+  		</div><!--End Row-->
+  		<div class="row">
+    		<div class="small-6 columns">
+        		<div class="mainSections">
+            		<a href="#newsIntro">
+            			<div class="small-8 small-centered columns">
+   	    					<img class="smallIcons" src="img/newsThumb.png" alt="classPath"> 
+            			</div>
+            			<h2 class="mainMenuHeader2">NEWS</h2>
+            			</a>
+        		</div>
+    		</div>
+        	<div class="small-6 columns">
+        		<div class="mainSections2">
+            		<a href="#chatIntro">
+            			<div class="small-8 small-centered columns">
+   	    					<img class="smallIcons" src="img/chatThumb.png" alt="classPath">
+            			</div> 
+            			<h2 class="mainMenuHeader2">CHAT</h2>
+            		</a>
+        		</div>
+    		</div>
+  		</div><!--End Row-->
+  		<div class="row">
+    		<div class="small-6 columns">
+        		<div class="mainSections">
+            		<a href="#fsuIntro">
+            			<div class="small-8 small-centered columns">
+   	    					<img src="img/fsuThumb.png" alt="classPath"> 
+            			</div>
+            			<h2 class="mainMenuHeader">FANSHAWE STUDENT UNION</h2>
+            		</a>
+        		</div>
+    		</div>
+        	<div class="small-6 columns">
+        		<div class="mainSections2">
+            		<a href="#generalInfoIntro">
+            			<div class="small-8 small-centered columns">
+   	    					<img src="img/genInfoThumb.png" alt="classPath">
+            			</div> 
+            			<h2 class="mainMenuHeader">GENERAL<br> INFORMATION</h2>
+            		</a>
+        		</div>
+    		</div>
+ 		 </div><!--End Row-->
+	</div><!--mainContainer end-->  
+</div> <!--Main Menu Page Container End-->
+
+
+
+<!--Main Class Path Page-->
+
+
+<div data-role="page" id="main"> <!--Main Page Container Start-->
+	<div> <!--Main Start-->
+ 		<div id="container"><!--Container Start-->
+			<div class="topSection">
+				<div class="row"> 
+        			<div class="small-2 columns">
+            			<a href="#mainMenu">
+       	    			<img id="mainMenuButton" src="img/mainMenuButton.png" alt="mainMenu"> 
+            			</a>
+            		</div>
+    				<div class="small-9 small-push-2 columns">
+        				<h2 id="classPath" class="topHeader">CLASS PATH</h2>
+       	    		</div> 
+   		 		</div> 
+			</div>
+			<div class="contentClassPath">
+				<div class="row">
+    				<div class="small-8 small-centered columns">
+   	    				<img id="pathImage" src="img/path.png" alt="path"> 
+        			</div>
+    			</div>
+        		<div class="row">
+    				<div class="small-11 small-centered columns">
+        				<p class="welcomeHeader">WELCOME TO CLASS PATH</p>
+        				<p class="welcomeStartingPoint">PLEASE SELECT STARTING POINT</p>
+        				<input class="classInputHome" type="search" name="classroomStart" placeholder="#B2002" id="startPoint">
+             			
+        			</div>
+    			</div>
+			</div><!--End contentClassPath-->
+			<div class="row">
+            	<div class="small-4 small-centered columns">
+           	    	<a href="#scheduleSection"><img id="classPathStart2" src="img/startButton.png" alt="classpath_start"></a> 
+                </div>
+            </div>	
+		</div><!--Container End-->
+	</div> <!--Main End-->
+</div> <!--Main Page Container End-->
+
+
+<!--Schedule Section End-->
+
+<div data-role="page" id="scheduleSection">
+	<div class="section">
+		<div class="topSection">
+			<div class="row"> 
+        		<div class="small-2 columns">
+          			<a href="#main"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         		</div>
+    			<div class="small-9 small-push-3 columns">
+        			<h2 class="topHeader">SCHEDULE</h2>
+       	   		</div> 
+    		</div> 
+		</div>
+		<div class="contentClassPath">
+			<div class="row">
+    			<div id="days">
+       				<div class="small-push-1">
+        				<div class="small-1 column">
+            			</div>
+        				<div class="small-2 columns">
+       	    				<a href="#" data-dropdown="drop2"><img id ="monday"  src="img/days_M.png" alt="Monday"></a>
+               	 			<div id="drop2" data-dropdown-content class="small f-dropdown content">
+                    			<div class="dailyClasses">
+  									<p id="paraGraph" onClick="highlightLinkSchedule(this);">ARTS - Arts and Crafts</p>
+  									<p onClick="highlightLinkSchedule(this);">MATH - Multiplication Table</p>
+  									<p onClick="highlightLinkSchedule(this);">DRIV - Driver G1 Training</p>
+                        		</div>
+							</div>
+            			</div>
+           				<div class="small-2 columns">
+            				<a href="#" data-dropdown="drop3"><img src="img/days_T.png" alt="Tuesday"></a>
+                				<div class="eventContainer">
+                					<div id="drop3" data-dropdown-content class="small f-dropdown content">
+                        				<div class="dailyClasses">
+  											<p onClick="highlightLinkSchedule(this);">PSYC - Culture of Addiction</p>
+  											<p onClick="highlightLinkSchedule(this);">MATH - Algebra</p>
+  											<p onClick="highlightLinkSchedule(this);">DRIV - Parallel Parking</p>
+                            			</div>
+									</div>
+								</div>
+            			</div>
+            			<div class="small-2 columns">	
+            				<a href="#" data-dropdown="drop4"><img src="img/days_W.png" alt="Wednesday"></a>
+                				<div id="drop4" data-dropdown-content class="small f-dropdown content">
+                    				<div class="dailyClasses">
+ 						 				<p onClick="highlightLinkSchedule(this);">ARTS - Pottery Level 1</p>
+ 						 				<p onClick="highlightLinkSchedule(this);">MATH - Mathematics Fundamentals</p>
+  										<p onClick="highlightLinkSchedule(this);">DRIV - Driver G2 Training</p>
+                        			</div>
+                                </div>
+            			</div>
+            			<div class="small-2 columns">
+            				<a href="#" data-dropdown="drop5"><img src="img/days_T.png" alt="Thursday"></a>
+                				<div id="drop5" data-dropdown-content class="f-dropdown content">
+                   	    			<div class="dailyClasses">
+                						<p onClick="highlightLinkSchedule(this);">PHYS - Core Training</p>
+  										<p onClick="highlightLinkSchedule(this);">MATH - Mathematics Fundamentals</p>
+ 					    				<p onClick="highlightLinkSchedule(this);">DRIV - Driver G2 Training</p>
+                        			</div>
+                				</div>
+            			</div>
+            			<div class="small-2 columns">
+            				<a href="#" data-dropdown="drop6"><img src="img/days_F.png" alt="Friday"></a>
+                				<div id="drop6" data-dropdown-content class="f-dropdown content">
+                    				<div class="dailyClasses">
+                						<p onClick="highlightLinkSchedule(this);">HIST - Civil War</p>
+  										<p onClick="highlightLinkSchedule(this);">GEOG - Minerals and Rocks</p>
+  										<p onClick="highlightLinkSchedule(this);">AUTO - Tire Changing</p>
+                        			</div>
+                				</div>
+            			</div>
+            			<div class="small-1 column">
+            			</div>
+         			</div>
+       			</div>
+   			</div>
+    
+    		<div class="row">
+    			<div class="small-4 small-centered columns">
+   	    			<a href="#selectorSection"><img class="startButton" src="img/startButton.png" alt="start button"></a> 
+        		</div>
+   			 </div>
+		</div><!--End contentClassPath-->
+		<div class="bottomSection">
+			<div class="row">
+    			<div class="small-4 columns">
+        			<div class="currentPage">
+   	    			<a href="#scheduleSection"><img src="img/schedule.png" alt="schedule"></a> 
+            		</div>
+            		<h3 class="iconLabel">SCHEDULE</h3>
+            
+        		</div>
+        		<div class="small-4 columns">
+        			<a href="#classroomSection"><img src="img/classroom.png" alt="classroom"></a>
+            		<h3 class="iconLabel">CLASSROOM NUMBER</h3>
+        		</div>
+        		<div class="small-4 columns">
+        			<a href="#3dmapSection"><img src="img/3dMap.png" alt="3dMap"></a>
+            		<h3 class="iconLabel">3D MAP</h3>
+        		</div>
+    		</div>
+		</div>
+	</div> <!--Schedule Section End-->
+</div><!--Schedule Section Page Container End-->
+
+
+<!--ClassRoomSection Page-->
+
+<div data-role="page" id="classroomSection"><!--ClassroomSection Page Container Start-->
+	<div class="section">
+		<div class="topSection">
+			<div class="row"> 
+        		<div class="small-2 columns">
+          			<a href="#main"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         		</div>
+    			<div class="small-9 small-push-1 columns">
+        			<h2 id="classRoom" class="topHeader">CLASSROOM</h2>
+        		</div> 
+    		</div> 
+		</div>
+		<div class="contentClassPath">
+			<div class="row">
+    			<div id="whiteBar">
+        		</div>
+    		</div>
+			<div class="row"> 
+    			<div id="pleaseEnter" class="small-10 small-centered columns">
+                	PLEASE ENTER THE CLASSROOM NUMBER INCLUDING THE BUILDING.
+                </div>  
+        	</div>
+    		<div class="row">
+    			<div class="small-10 small-centered columns">
+        			<div class="destinationInput">
+            			<h3>START POINT:</h3>
+        					<input class="classInput" type="search" name="classroomStart" placeholder="#B2002" id="start">
+        				<h3>DESTINATION:</h3>
+            				<input class="classInput" type="search" name="classroomDestination" placeholder="#B2020" id="end">
+        			</div>
+        		</div>
+    		</div>
+			<div class="row">
+				<div id="buttonWhite">
+					<div class="small-4 small-centered columns">
+   	    				<a href="#selectorSection" id="classPathStart"><img id="startButton2" src="img/startButton.png" alt="start button"></a> 
+       				</div>
+      			</div>
+  			</div>
+		</div><!--End Content ClassPath-->
+		<div class="bottomSection">
+			<div class="row">
+    			<div class="small-4 columns">
+   	    			<a href="#scheduleSection"><img src="img/schedule.png" alt="schedule"></a> 
+            		<h3 class="iconLabel">SCHEDULE</h3>
+        		</div>
+        		<div class="small-4 columns">
+          			<div class="currentPage">
+        				<a href="#classroomSection"><img src="img/classroom.png" alt="classroom"></a>
+          			</div>
+            			<h3 class="iconLabel">CLASSROOM NUMBER</h3>
+        		</div>
+        		<div class="small-4 columns">
+        			<a href="#3dmapSection"><img src="img/3dMap.png" alt="3dMap"></a>
+            		<h3 class="iconLabel">3D MAP</h3>
+        		</div>
+    		</div>
+		</div><!--Bottom Section End-->
+	</div><!--Classroom Section End-->
+</div><!--ClassroomSection Page Container End-->
+
+
+<!--3D Map Section Page-->
+<div data-role="page" id="3dmapSection"> <!--3D Map Section Page Container Start-->
+	<div class="section">
+		<div class="topSection">
+			<div class="row"> 
+    			<div class="small-2 columns">
+          			<a href="#main"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         		</div>
+    			<div class="small-9 small-push-4 columns">
+        			<h2 class="topHeader">3D MAP</h2>
+        		</div> 
+    		</div> 
+		</div>
+		<div class="contentClassPath">
+			<div class="content3">
+            	<div class="highlightBox1">
+                </div>
+                <div class="highlightBox2">
+                </div>
+                <div class="highlightBox3">
+                </div>
+                <div class="highlightBox4">
+                </div>
+                <div class="highlightBox5">
+                </div>
+                <div class="highlightBox6">
+                </div>
+                <div class="highlightBox7">
+                </div>
+                <div class="highlightBox8">
+                </div>
+				<div class="iconScroll">
+    				<div class="row">
+        				<div class="small-3 columns">
+                			<div id='cssmenu'>
+								<ul>
+   									<li class='has-sub last'>
+                                    	<a href='#'>
+                                        <span><img id="buildingIcon" class="sideIcons" src="img/buildingIcon.png" alt="building"></span>
+                                         </a>
+      									<ul>
+         									<li class='last'><a href='#'><span class="iconLabeL">BUILDING</span></a></li>
+      									</ul>
+  					 				</li>
+                            		<li class='has-sub last'>
+                                    	<a href='#'>
+                                        <span><img id="classroomIcon" class="sideIcons" src="img/classroomIcon.png" alt="classroom2"></span>
+                                        </a>
+      									<ul>
+         									<li class='last'><a href='#'><span>CLASSROOM</span></a></li>
+      									</ul>
+  					 				</li>
+                            		<li class='has-sub last'>
+                                    	<a href='#'>
+                                        <span><img id="labsIcon" class="sideIcons" src="img/labIcon.png" alt="lab"></span>
+                                        </a>
+      									<ul>
+         								<li class='last'><a href='#'><span>LABS</span></a></li>
+      									</ul>
+  					 				</li>
+                            		<li class='has-sub last'>
+                                    	<a href='#'>
+                                        <span><img id="bathroomIcon" class="sideIcons" src="img/bathroomIcon.png" alt="washroom"></span>
+                                        </a>
+      									<ul>
+         								<li class='last'><a href='#'><span>WASHROOM</span></a></li>
+      									</ul>
+  					 				</li>
+                            		<li class='has-sub last'>
+                                    	<a href='#'>
+                                        <span><img id="shoppingIcon" class="sideIcons" src="img/shoppingIcon.png" alt="shopping"></span>
+                                        </a>
+      									<ul>
+         								<li class='last'><a href='#'><span>SHOPPING</span></a></li>
+      									</ul>
+  					 				</li>
+                            		<li class='has-sub last'>
+                                    	<a href='#'>
+                                        <span><img id="restaurantIcon" class="sideIcons" src="img/restaurantIcon.png" alt="restaurant"></span>
+                                        </a>
+      									<ul>
+         									<li class='last'><a href='#'><span>RESTAURANT</span></a></li>
+      									</ul>
+  					 				</li>
+                            		<li class='has-sub last'>
+                                    	<a href='#'>
+                                        <span><img id="servicesIcon" class="sideIcons" src="img/servicesIcon.png" alt="services"></span>
+                                        </a>
+      									<ul>
+         								<li class='last'><a href='#'><span>SERVICES</span></a></li>
+      									</ul>
+  					 				</li>
+                            		<li class='has-sub last'>
+                                    	<a href='#'>
+                                        <span><img id="officesIcon" class="sideIcons" src="img/officesIcon.png" alt="offices"></span>
+                                        </a>
+      									<ul>
+         								<li class='last'><a href='#'><span>OFFICES</span></a></li>
+      									</ul>
+  					 				</li>
+                           	 		<li class='has-sub last'>
+                                    	<a href='#'>
+                                        <span><img id="transportationIcon" class="sideIcons" src="img/transportationIcon.png" alt="transportation"></span>
+                                        </a>
+      									<ul>
+         								<li class='last'><a href='#'><span class="iconLabeL">TRANSPORTATION</span></a></li>
+      									</ul>
+  					 				</li>
+								</ul>
+							</div><!--End CSSMENU-->
+            			</div>
+         			</div>
+    			</div><!--End IconScroll-->
+			</div>
+		</div><!--End Content ClassPath-->
+		<div class="bottomSection">
+			<div class="row">
+    			<div class="small-4 columns">
+   	    			<a href="#scheduleSection"><img src="img/schedule.png" alt="schedule"></a> 
+            		<h3 class="iconLabel">SCHEDULE</h3>
+        		</div>
+        		<div class="small-4 columns">
+        			<a href="#classroomSection"><img src="img/classroom.png" alt="classroom"></a>
+            		<h3 class="iconLabel">CLASSROOM NUMBER</h3>
+        		</div>
+        		<div class="small-4 columns">
+        			<div class="currentPage">
+        				<a href="#3dmapSection"><img src="img/3dMap.png" alt="3dMap"></a>
+            		</div>
+            		<h3 class="iconLabel">3D MAP</h3>
+        		</div>
+    		</div>
+		</div>
+	</div><!--End 3dmapSection-->
+</div><!--End 3DMapSection Page Container-->
+
+
+<!--Selector Page-->
+<div data-role="page" id="selectorSection">
+	<div class="section">
+		<div class="topSection">
+			<div class="row"> 
+   				<div class="small-2 columns">
+          			<a href="#main"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         		</div>
+    			<div class="small-9 small-push-3 columns">
+        			<h2 id="selectorHeader" class="topHeader">SELECTOR</h2>
+        		</div> 
+    		</div> 
+		</div>
+		<div class="content">
+			<div class="row">
+    			<div class="small-10 small-centered columns">
+        			<h3 class="pleaseSelectMethod">PLEASE SELECT THE<br> METHOD YOU WANT TO USE:</h3>
+        		</div>
+    		</div>
+    		<div class="row">
+    			<label for="link1">
+    				<input type="radio" name="goTo" id="link1" class="hidden" value="textGuide" data-role="none">
+    					<div id="textGuideBg" class="arrowSelection" onClick="highlightLinkPath(this);">
+    						<div class="small-2 columns">
+    							<img class="methodIcon" src="img/textGuideIcon.png" alt="textGuideIcon">
+        					</div>
+        					<div class="small-9 columns">
+        						<h3 id="textGuide">TEXT GUIDE</h3>
+        					</div> 
+    					</div>
+    			</label>
+    			<label for="link2">
+    				<input type="radio" name="goTo" id="link2" class="hidden" value="pathGuide" data-role="none">
+    					<div id="pathGuideBg" class="arrowSelection" onClick="highlightLinkPath(this);">
+    						<div class="small-2 columns">
+    							<img class="methodIcon" src="img/pathGuideIcon.png" alt="pathGuideIcon">
+        					</div>
+        					<div class="small-9 columns">
+        						<h3 id="pathGuide">PATH GUIDE</h3>
+        					</div>
+    					</div>
+    			</label>
+    		</div><!--End Row-->
+    		<div class="row">
+    			<div class="small-4 small-centered columns">
+   	    			<a href="#textGuideSection" id="goButton"><img id="startButtonSelector" src="img/startButton.png" alt="start button"></a>
+        		</div>
+    		</div>
+		</div><!--Content End-->
+		<div class="bottomSection">
+			<div class="row">
+    			<div class="small-4 columns">
+   	    			<a href="#scheduleSection"><img src="img/schedule.png" alt="schedule"></a> 
+            			<h3 class="iconLabel">SCHEDULE</h3>
+        		</div>
+        		<div class="small-4 columns">
+        			<a href="#classroomSection"><img src="img/classroom.png" alt="classroom"></a>
+            		<h3 class="iconLabel">CLASSROOM NUMBER</h3>
+        		</div>
+        		<div class="small-4 columns">
+        			<a href="#3dmapSection"><img src="img/3dMap.png" alt="3dMap"></a>
+            		<h3 class="iconLabel">3D MAP</h3>
+        		</div>
+    		</div>
+		</div><!--End BottomSection-->
+	</div><!--End Section-->
+</div><!--SelectionSection Page Container End--> 
+
+
+<!--TextGuide Page-->
+<div data-role="page" id="textGuideSection">
+	<div class="section">
+		<div class="topSection">
+			<div class="row"> 
+    			<div class="small-2 columns">
+          			<a href="#main"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         		</div>
+    			<div class="small-9 small-push-2 columns">
+        		<h2 id="textGuideHeader" class="topHeader">TEXT GUIDE</h2>
+        		</div> 
+    		</div> 
+		</div>
+		<div class="content">
+			<div class="row">
+    			<div class="small-10 small-centered columns">
+        			<h3 class="pleaseFollow">YOU ARE GOING TO <span id="destinationRoom"></span><br> FOLLOW THE GUIDE:</h3>
+       			</div>
+    		</div>
+    		<div id="guideScroll">
+    			<div class="row">
+    				<!--<div class="textGuideBg" onClick="highlightLink(this);">
+    				<div class="small-10 columns">
+        				<h3 class="directionText">TURN RIGHT ON B2004</h3>
+       						 <div class="checkboxFive">
+  								<input type="checkbox" value="1" id="checkboxFiveInput" name="" />
+	  								<label for="checkboxFiveInput"></label>
+  							 </div>
+    				</div>
+    			</div>
+    
+    <div class="textGuideBg" onClick="highlightLink(this);">
+        <div class="small-10 columns">
+        <h3 class="directionText">TURN RIGHT ON </h3>
+        <div class="checkboxFive">
+  		<input type="checkbox" value="2" id="checkboxFiveInput" name="" />
+	  	<label for="checkboxFiveInput"></label>
+  		</div>
+        </div>
+    </div>
+    
+    <div class="textGuideBg" onClick="highlightLink(this);">
+        <div class="small-10 columns">
+        <h3 class="directionText">PATH GUIDE</h3>
+        <div class="checkboxFive">
+  		<input type="checkbox" value="3" id="checkboxFiveInput" name="" />
+	  	<label for="checkboxFiveInput"></label>
+  		</div>
+        </div>
+    </div>
+    
+    <div class="textGuideBg" onClick="highlightLink(this);">
+        <div class="small-10 columns">
+        <h3 class="directionText">STRAIGHT AHEAD</h3>
+        <div class="checkboxFive">
+  		<input type="checkbox" value="4" id="checkboxFiveInput" name="" />
+	  	<label for="checkboxFiveInput"></label>
+  		</div>
+        </div>
+    </div>
+    
+    <div class="textGuideBg" onClick="highlightLink(this);">
+        <div class="small-10 columns">
+        <h3 class="directionText">TURN LEFT</h3>
+        <div class="checkboxFive">
+  		<input type="checkbox" value="1" id="checkboxFiveInput" name="" />
+	  	<label for="checkboxFiveInput"></label>
+  		</div>
+        </div>
+    </div>
+    
+    <div class="textGuideBg" onClick="highlightLink(this);">
+        <div class="small-10 columns">
+        <h3 class="directionText">KEEP LEFT</h3>
+        <div class="checkboxFive">
+  		<input type="checkbox" value="1" id="checkboxFiveInput" name="" />
+	  	<label for="checkboxFiveInput"></label>
+  		</div>
+        </div>
+    </div>
+     <div class="textGuideBg" onClick="highlightLink(this);">
+        <div class="small-10 columns">
+        <h3 class="directionText">TURN RIGHT</h3>
+        <div class="checkboxFive">
+  		<input type="checkbox" value="1" id="checkboxFiveInput" name="" />
+	  	<label for="checkboxFiveInput"></label>
+  		</div>
+        </div>
+    </div>-->
+  				</div>
+			</div>
+		</div><!--Content End-->
+    	<div class="bottomSection">
+			<div class="row">
+    			<div class="small-4 columns">
+   	    			<a href="#scheduleSection"><img src="img/schedule.png" alt="schedule"></a> 
+            		<h3 class="iconLabel">SCHEDULE</h3>
+        		</div>
+        		<div class="small-4 columns">
+        			<a href="#classroomSection"><img src="img/classroom.png" alt="classroom"></a>
+            		<h3 class="iconLabel">CLASSROOM NUMBER</h3>
+        		</div>
+        		<div class="small-4 columns">
+        			<a href="#3dmapSection"><img src="img/3dMap.png" alt="3dMap"></a>
+            		<h3 class="iconLabel">3D MAP</h3>
+        		</div>
+    		</div>
+		</div>
+     </div>
+</div><!--textGuideSection End-->
+
+
+<!--PathGuide Section-->
+<div data-role="page" id="pathGuideSection">
+
+<div class="section">
+<div class="topSection">
+	<div class="row"> 
+    <div class="small-2 columns">
+          <a href="#main"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         </div>
+    	<div class="small-9 small-push-2 columns">
+        	<h2 id="pathGuideHeader" class="topHeader">PATH GUIDE</h2>
+        </div> 
+    </div> 
+</div>
+
+<div class="content">
+	<div class="row">
+    	<div class="small-9 small-centered columns">
+   	    	<img id="rightArrow" src="img/rightArrow.png" alt="turn right"> 
+        </div>
+    </div>
+    <div class="row">
+    	<div class="slideBg">
+        	<div class="small-8 small-centered columns">
+        		<h3 class="nextStep">slide to next step</h3>
+        	</div>
+    	</div>
+    </div>
+</div>
+
+<div id="bottomSectionDiv1">
+	<div class="row">
+    	<div class="small-4 columns">
+   	    	<a href="#"><img src="img/photoHelpIcon.png" alt="schedule"></a> 
+            <h3 class="iconLabel">PHOTO HELP</h3>
+        </div>
+        <div class="small-4 columns">
+        	<a href="#textGuideSection"><img src="img/textGuideIcon.png" alt="classroom"></a>
+            <h3 class="iconLabel">TEXT<br> GUIDE</h3>
+        </div>
+        <div class="small-4 columns">
+        	<a href="#classroomSection"><img src="img/startOverIcon.png" alt="3dMap"></a>
+            <h3 class="iconLabel">START<br> OVER</h3>
+        </div>
+    </div>
+</div>
+</div>
+</div><!--End data-page-->
+
+
+<div data-role="page" id="calendarPage">
+
+<div class="section">
+	<div class="topSection">
+		<div class="row"> 
+    		<div class="small-2 columns">
+          		<a id="backButton" href="#mainMenu"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+            </div>
+    	<div class="small-9 small-push-2 columns">
+        	<h2 id="calendarHeader" class="topHeader">CALENDAR</h2>
+        </div> 
+    </div> 
+  </div>
+</div>
+<div class="row">
+	<div class="small-12 small-centered columns">
+		<div id="calendarDisplay">
+			<div id="datePicker"></div>
+		</div>
+  </div>
+</div>
+<div class="row">
+  <div class="bottomSectionCalendar1">
+	    <div class="dateSelected">
+        <img class="dateShown" src="img/4Points.png" alt="four"> 
+      </div>
+      <div class="dateDividerVerticle">
+      </div>
+      <div class="dateDividerHorizontal">
+      </div>
+      <div class="dateDividerHorizontalSmall">
+      </div>
+      <div class="row">
+    	   <div class="dayDescriptionContainer">
+    		    <div class="small-4 small-push-3 columns">
+    			     <h4 class="calendarDescription">Residence<br>Meeting</h4>
+    		    </div>
+    		    <div class="small-4 columns">
+    			     <h4 class="calendarDescription">5:00pm<br>5:30pm</h4>
+    		    </div>
+     	   </div>
+      </div>   
+      <div class="row">
+    	   <div class="dayDescriptionContainer">
+    		    <div class="small-4 small-push-3 columns">
+    			     <h4 class="calendarDescriptionLower">Community<br>Check-In</h4>
+    		    </div>
+    		    <div class="small-4 columns">
+    			     <h4 class="calendarDescriptionLower">5:00pm<br>5:30pm</h4>
+    		    </div>
+     	   </div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+<div data-role="page" id="personalDashboard">
+    <div class="section">
+	     <div class="row">
+    	    <div class="small-2 columns">
+        	<a href="#mainMenu">
+   	    	<img class="colorMenu" src="img/mainMenuButtonColor.png" alt="menu">
+            </a>
+         </div>
+       </div>
+    
+		    <div class="row">
+    		    <div class="small-11 small-centered columns">
+   	    		  <img class="dashBoardDummy" src="img/dashBoardDummy.png" alt="dashBoard">
+         	  </div>
+    	  </div>
+    	   <div class="row">
+    		      <div class="small-10 small-centered columns">
+   	    		  <h2 class="dashBoardHeader">PERSONAL DASHBOARD</h2>
+        	    </div>
+   		   </div>
+    </div>
+
+    <div class="bottomSection">
+	     <div class="row">
+    	   <div class="small-4 columns">
+   	    	   <a href="#profileSection"><img src="img/profileIcon.png" alt="profile"></a> 
+            <h3 class="iconLabel">ACCOUNT</h3>
+          </div>
+          <div class="small-4 columns">
+        	   <a href="#noticesComplaints"><img src="img/noticesIcon.png" alt="notices"></a>
+              <h3 class="iconLabel">NOTICES</h3>
+          </div>
+          <div class="small-4 columns">
+        	   <a href="#requestsGeneral"><img src="img/requestsIcon.png" alt="requests"></a>
+            <h3 class="iconLabel">REQUESTS</h3>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+<div data-role="page" id="profileSection">
+<div class="section">
+<div class="topSection">
+	<div class="row"> 
+    <div class="small-2 columns">
+          <a href="#personalDashboard"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         </div>
+    	<div class="small-9 small-push-2 columns">
+        	<h2 id="accountHeader" class="topHeader">ACCOUNT</h2>
+        </div> 
+    </div> 
+</div>
+
+<div class="contentNews">
+	<div class="row">
+    	<div class="small-5 small-push-1 columns">
+   	    <img id="colouredDummy" src="img/colouredDummyIcon.png" alt="coloured_dummy"> 
+        </div>
+        	<div class="small-7 columns">
+            	<div id="profileInfo">
+        		<input type="text" class="profileName" placeholder="FIRST NAME" name="first_name" />
+                <input type="text" class="profileName" placeholder="LAST NAME" name="last_name" />
+                <input type="text" id="programHeader" placeholder="PROGRAM" name="program" />
+                </div>
+            </div>
+            
+    </div>
+    <div class="row">
+    	<div class="small-10 small-push-2 columns">
+        	<h4 id="contactInfo">CONTACT INFORMATION</h4>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="small-12 small-pull-1 columns">
+        	<div class="greyBar">
+            </div>
+        </div>
+    </div>
+    <div class="infoDiv">
+    	<div class="row">
+    		<div class="small-11 small-push-1 columns">
+        		<div>
+            		<input type="text" class="cellphone" placeholder="Cellphone#:                    519-777-7777" name="cell_phone"/>
+            	</div>
+           </div>
+        </div>   
+   
+   	    <div class="row">
+    		<div class="small-11 small-push-1 columns">
+            	<div>
+            		<input type="text" class="address" placeholder="Address:               123 Fake St, London" name="address"/>
+           	    </div>
+           </div>
+        </div>   
+    </div>
+  
+
+    <div class="row">
+    	<div class="small-10 small-push-2 columns">
+        	<h4 id="socialInfo">SOCIAL MEDIA</h4>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="small-12 small-pull-1 columns">
+        	<div class="greyBar">
+            </div>
+        </div>
+    </div>
+    <div class="infoDiv">
+    	<div class="row">
+    		  <div class="small-11 small-push-1 columns">
+        		  <div class="infoContainerTop">
+            		  <input type="text" class="facebook" placeholder="Facebook:               www.facebook.com" name="facebook"/>
+            	</div>
+           </div>
+      </div>   
+   
+   	    <div class="row">
+    		    <div class="small-11 small-push-1 columns">
+            	   <div class="infoContainer">
+            		    <input type="text" class="twitter" placeholder="Twitter:                          www.twitter.com" name="twitter"/>
+           	      </div>
+            </div>
+        </div>   
+    </div>
+    <div class="row">
+            <div class="small-4 small-centered columns">
+                <a href="#"><img src="img/sendButton.png" alt="sendButton" value="submit"></a>
+            </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="bottomSection">
+	<div class="row">
+    	<div class="small-4 columns">
+        <div class="currentPage">
+   	    	<a href="#profileSection"><img src="img/profileIcon.png" alt="profile"></a> 
+            </div>
+            <h3 class="iconLabel">PROFILE</h3>
+        </div>
+        <div class="small-4 columns">
+        	<a href="#pointsPage"><img src="img/pointsIcon.png" alt="points"></a>
+            <h3 class="iconLabel">POINTS</h3>
+        </div>
+        <div class="small-4 columns">
+        	<a href="#accountBalance"><img src="img/balanceIcon.png" alt="balance"></a>
+            <h3 class="iconLabel">BALANCE</h3>
+        </div>
+    </div>
+</div>
+</div>
+
+<div data-role="page" id="pointsPage">
+
+<div class="section">
+	<div class="topSection">
+		<div class="row"> 
+    		<div class="small-2 columns">
+          		<a href="#personalDashboard"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+            </div>
+    	<div class="small-9 small-push-2 columns">
+        	<h2 id="accountPointsHeader" class="topHeader">ACCOUNT</h2>
+        </div> 
+    </div> 
+  </div>
+</div>
+<div class="contentDashboard">
+	  <div class="row">
+    	  <div class="small-7 small-centered columns">
+        	<h2 id="pointsHeader">POINTS</h2>
+        </div>
+    </div>
+    	<div class="row">
+        	<div id="pointsBg">
+        		<div class="small-12 columns">
+                	<div class="small-5 small-centered columns">
+   	    				<img src="img/4Points.png" alt="4 points">
+                    </div>
+                </div>
+         	</div>
+    	</div>
+  <div class="pointsContainer">
+    <div class="pointsSelectionArrow pointsViolation">
+	     <div class="row">
+    	     <div class="sideSelectionBar">
+    		        <div class="selectionDiv" onClick="highlightLinkPoints(this);">
+				
+        
+        		      <div class="small-8 columns">
+        			       <div class="violationInfo">
+        				        <h3 class="pointsTitle">UNDERAGE DRINKING</h3>
+            			       <p class="pointsDate">DECEMBER 1, 2013</p>
+            		     </div>
+        		      </div>
+       			      <div class="small-2 columns">
+        			       <img class="pointsSmall" src="img/2points.png" alt="2points"> 
+        		      </div>
+                </div>
+           </div>    
+      </div>
+    </div>
+    <div class="pointsSelectionArrow pointsViolation">
+      <div class="row">
+          <div class="sideSelectionBar">
+            <div class="selectionDiv" onClick="highlightLinkPoints(this);">
+        
+        
+              <div class="small-8 columns">
+                  <div class="violationInfo">
+                    <h3 class="pointsTitle">UNDERAGE DRINKING</h3>
+                    <p class="pointsDate">DECEMBER 1, 2013</p>
+                  </div>
+              </div>
+              <div class="small-2 columns">
+                <img class="pointsSmall" src="img/2points.png" alt="2points"> 
+              </div>
+            </div>
+          </div>    
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+ <div class="bottomSection">
+	<div class="row">
+    	<div class="small-4 columns">
+   	    	<a href="#profileSection"><img src="img/profileIcon.png" alt="profile"></a> 
+            <h3 class="iconLabel">PROFILE</h3>
+        </div>
+        <div class="small-4 columns">
+        <div class="currentPage">
+        	<a href="#pointsPage"><img src="img/pointsIcon.png" alt="points"></a>
+            </div>
+            <h3 class="iconLabel">POINTS</h3>
+        </div>
+        <div class="small-4 columns">
+        	<a href="#accountBalance"><img src="img/balanceIcon.png" alt="balance"></a>
+            <h3 class="iconLabel">BALANCE</h3>
+        </div>
+    </div>
+</div>    
+</div>
+
+<div data-role="page" id="accountBalance">
+
+<div class="section" id="page13">
+	<div class="topSection">
+		<div class="row"> 
+    		<div class="small-2 columns">
+          		<a href="#personalDashboard"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+            </div>
+    	<div class="small-9 small-push-2 columns">
+        	<h2 id="accountBalanceHeader" class="topHeader">ACCOUNT</h2>
+        </div> 
+    </div> 
+  </div>
+</div>
+
+
+<div class="section">
+	<div class="contentDashboard">
+	<div class="row">
+    	<div class="small-7 small-centered columns">
+        	<h2 id="balanceHeader">BALANCE</h2>
+        </div>
+    </div>
+    	<div id="pointsBg2">
+    		<div class="row">
+        		<div class="small-8 columns">
+                   <p>Furniture Replacement</p>
+                </div>
+                <div class="small-1 column">
+                	<div class="whiteDivider">
+                    </div>
+                </div>
+                <div class="small-2 columns">
+                	<p class="moneyAmounts">$250</p>
+                </div>
+         	</div>
+            <div id="horizontalDivider">
+            </div>
+            <div class="row">
+        		<div class="small-8 columns">
+                   <p>Payment</p>
+                </div>
+                <div class="small-1 column">
+                	<div class="whiteDivider">
+                    </div>
+                </div>
+                <div class="small-2 columns">
+                	<p class="moneyAmounts">$50</p>
+                </div>
+         	</div>
+    	</div>
+        <div class="row">
+        	<div class="amountDue">
+            	<div class="small-8 columns">
+                	<p>Total Amount Due:</p>
+                </div>
+                <div class="small-2 columns">	
+                	<p class="moneyAmounts">$300</p>
+                </div>
+            </div>
+        </div>    
+</div>
+<div class="bottomSection">
+	<div class="row">
+    	<div class="small-4 columns">
+   	    	<a href="#profileSection"><img src="img/profileIcon.png" alt="profile"></a> 
+            <h3 class="iconLabel">PROFILE</h3>
+        </div>
+        <div class="small-4 columns">
+        	<a href="#pointsPage"><img src="img/pointsIcon.png" alt="points"></a>
+            <h3 class="iconLabel">POINTS</h3>
+        </div>
+        <div class="small-4 columns">
+        <div class="currentPage">
+        	<a href="#accountBalance"><img src="img/balanceIcon.png" alt="balance"></a>
+            </div>
+            <h3 class="iconLabel">BALANCE</h3>
+        </div>
+    </div>
+</div> 
+</div>
+</div>
+
+
+<div data-role="page" id="noticesComplaints">
+
+<div class="section">
+<div class="topSection">
+	<div class="row"> 
+    <div class="small-2 columns">
+          <a href="#personalDashboard"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         </div>
+    	<div class="small-9 small-push-4 columns">
+        	<h2 id="complaintsHeader" class="topHeader">NOTICES</h2>
+        </div> 
+    </div> 
+</div>
+
+<div class="contentNews">
+	<div class="row">
+    	<div class="small-10 small-centered columns">
+        	<h3 class="noticesSubHeader">COMPLAINTS</h3>
+        </div>
+    </div>
+    <div class="complaintsContentNotices">
+    	<div class="row">
+    		<dl class="accordion" data-accordion>
+  				
+        			<dd>
+                    <span class="selectionArrowRules"><div class="activeSelectionAccordion"></div><img src="img/rightArrowIcon.png" alt="right_arrow"></span>
+    					<a href="#panel0" onClick="highlightLink(this);"><span class="complaintText">Noise Complaint</span> </a>
+    			
+    			<div id="panel0" class="content">
+      				<p class="dateColor">September 9, 2014</p>
+              <p>Resident has failed to follow noise level procedures after 11pm. Several warnings were given to keep it down but resident has failed to do so.</p>
+    			</div>
+                
+  					</dd>
+  					<dd>
+   						 <a href="#panel33" onClick="highlightLink(this);"><span class="complaintText">Housing Violation</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel33" class="content">
+                  <p class="dateColor">October 2, 2014</p>
+                  <p>Number of guests exceeds number allowed per resident. Only 1 guest allowed to sign in per student.</p>
+    						</div>
+ 					 </dd>
+        			<dd>
+    					<a href="#panel34" onClick="highlightLink(this);"><span class="complaintText">Housing Violation</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel34" class="content">
+                  <p class="dateColor">October 12, 2014</p>
+                  <p>Resident has been acting very aggressively towards others causing them all to file a complaint.</p>
+    						</div>
+  					</dd>
+ 				 	<dd>
+    					<a href="#panel35" onClick="highlightLink(this);"><span class="complaintText">Housing Violation</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel35" class="content">
+                  <p class="dateColor">October 23, 2014</p>
+                  <p>Indecent exposure around dorm, student has been walking around without appropriate amount of clothing.</p>
+    						</div>
+        			</dd>
+   				</dl>
+  			</div>
+		</div>
+</div>
+    
+
+<div class="bottomSection">
+	<div class="row">
+    	<div class="small-4 columns">
+        <div class="currentPage">
+   	    	<a href="#noticesComplaints"><img src="img/complaintsIcon.png" alt="complaints"></a> 
+            </div>
+            <h3 class="iconLabel">COMPLAINTS</h3>
+        </div>
+        <div class="small-4 columns">
+        	<a href="#noticesWarnings"><img src="img/warningIcon.png" alt="warnings"></a>
+            <h3 class="iconLabel">WARNINGS</h3>
+        </div>
+        <div class="small-4 columns">
+        	<a href="#noticesMaintenance"><img src="img/maintenanceIcon.png" alt="maintenance"></a>
+            <h3 class="iconLabel">MAINTENANCE</h3>
+        </div>
+    </div>
+</div>
+</div><!--ComplaintsSection End-->
+</div>
+
+
+<div data-role="page" id="noticesWarnings">
+	<div class="section">
+		<div class="topSection">
+			<div class="row"> 
+    			<div class="small-2 columns">
+          			<a href="#personalDashboard"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+        		</div>
+    			<div class="small-9 small-push-1 columns">
+        				<h2  class="topHeader">NOTICES</h2>
+        		</div> 
+    		</div> 
+		</div>
+		<div class="contentNews">
+			<div class="row">
+    			<div class="small-10 small-centered columns">
+        			<h3 class="noticesSubHeader">WARNINGS</h3>
+        		</div>
+    		</div>
+    			<div class="complaintsContent">
+    				<div class="row">
+    					<dl class="accordion" data-accordion>
+  							<dd>
+    							<a href="#panel5" onClick="highlightLink(this);"><span class="complaintText">Housing Violation</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    							<div id="panel5" class="content">
+                    <p class="dateColor">September 9, 2014</p>
+                    <p>Second warning for excessive amounts of liquor allowed into dorms per student.</p>
+    							</div>
+                			</dd>
+  							<dd>
+   						 		<a href="#panel6" onClick="highlightLink(this);"><span class="complaintText">Offensive Language</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    							<div id="panel6" class="content">
+                    <p class="dateColor">September 9, 2014</p>
+              <p>Student refuses to acknowledge or respect his residence leaders so the resident has been given the First warning for talking back to residence leaders.</p>
+    							</div>
+ 					 		</dd>
+        					<dd>
+    							<a href="#panel7" onClick="highlightLink(this);"><span class="complaintText">Housing Violation</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    							<div id="panel7" class="content">
+                    <p class="dateColor">September 9, 2014</p>
+              <p>Final warning for excessive music volume. Resident was warned several times about the volume level of their music and refused to comply.</p>
+    							</div>
+  							</dd>
+ 				 			<dd>
+    							<a href="#panel8" onClick="highlightLink(this);"><span class="complaintText">Campus Violation</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    							<div id="panel8" class="content">
+                    <p class="dateColor">September 9, 2014</p>
+                    <p>Student refuses to find appropriate parking. Second warning for non-designated parking.</p>
+    							</div>
+        					</dd>
+   						</dl>
+  					</div>
+				</div><!--Complaints Content End-->
+			</div><!--content End-->
+    			<div class="bottomSection">
+					<div class="row">
+    					<div class="small-4 columns">
+   	    					<a href="#noticesComplaints"><img src="img/complaintsIcon.png" alt="complaints"></a> 
+            				<h3 class="iconLabel">COMPLAINTS</h3>
+        				</div>
+        				<div class="small-4 columns">
+        					<div class="currentPage">
+        						<a href="#noticesWarnings"><img src="img/warningIcon.png" alt="warnings"></a>
+            				</div>
+            				<h3 class="iconLabel">WARNINGS</h3>
+        				</div>
+        				<div class="small-4 columns">
+        					<a href="#noticesMaintenance"><img src="img/maintenanceIcon.png" alt="maintenance"></a>
+            				<h3 class="iconLabel">MAINTENANCE</h3>
+        				</div>
+    				</div>
+				</div>
+	</div><!--Section End-->
+</div> <!--Notices Warning Page Container End-->
+
+
+<div data-role="page" id="noticesMaintenance">
+	<div class="section">
+		<div class="topSection">
+			<div class="row"> 
+    			<div class="small-2 columns">
+         			<a href="#personalDashboard"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         		</div>
+    			<div class="small-9 small-push-1 columns">
+        			<h2  class="topHeader">NOTICES</h2>
+        		</div> 
+    		</div> 
+		</div>
+		<div class="contentNews">
+			<div class="row">
+    			<div class="small-10 small-centered columns">
+        			<h3 class="noticesSubHeader">MAINTENANCE</h3>
+        		</div>
+    		</div>
+    		<div class="complaintsContent">
+    			<div class="row">
+    				<dl class="accordion" data-accordion>
+  						<dd>
+    						<a href="#panel9" onClick="highlightLink(this);"><span class="complaintText">Routine Maintenance</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel9" class="content">
+                    <p class="dateColor">September 9, 2014</p>
+                    <p>Every single light bulb that has been reported as needing a change or residence leaders that have noticed a light that should be changed will be undergoing a light bulb swap.</p>
+    						</div>
+                
+  						</dd>
+  						<dd>
+   							<a href="#panel10" onClick="highlightLink(this);"><span class="complaintText">Routine Maintenance</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel10" class="content">
+                    <p class="dateColor">September 9, 2014</p>
+                    <p>There will be some hallways around residence that will be undergoing a repainting process, windows surrounding those hallways will be left open but if the fumes are excessive please notify a residence leader.</p>
+    						</div>
+ 					 	</dd>
+        				<dd>
+    						<a href="#panel11" onClick="highlightLink(this);"><span class="complaintText">Routine Maintenace</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    							<div id="panel11" class="content">
+                    <p class="dateColor">September 9, 2014</p>
+                    <p>There may be some loud noises coming from outside your windows as the building will undergo window cleaning for the day.</p>
+    							</div>
+  						</dd>
+ 				 		<dd>
+    						<a href="#panel12" onClick="highlightLink(this);"><span class="complaintText">Routine Maintenance</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    							<div id="panel12" class="content">
+                    <p class="dateColor">September 9, 2014</p>
+                    <p>Hot Water Pipe Maintenance. There have been some issues with the hot water so we will be inspecting the hot water pipe system. Water may be temporarily down but you will be given notice.</p>
+    							</div>
+        				</dd>
+   					</dl>
+  				</div>
+			</div><!--Complaints Content End-->
+		</div><!--End Content-->
+    	<div class="bottomSection">
+			<div class="row">
+    			<div class="small-4 columns">
+   	    			<a href="#noticesComplaints"><img src="img/complaintsIcon.png" alt="complaints"></a> 
+            		<h3 class="iconLabel">COMPLAINTS</h3>
+        		</div>
+        		<div class="small-4 columns">
+        			<a href="#noticesWarnings"><img src="img/warningIcon.png" alt="warnings"></a>
+            		<h3 class="iconLabel">WARNINGS</h3>
+       			</div>
+        		<div class="small-4 columns">
+        			<div class="currentPage">
+        				<a href="#noticesMaintenance"><img src="img/maintenanceIcon.png" alt="maintenance"></a>
+            		</div>
+            		<h3 class="iconLabel">MAINTENANCE</h3>
+        		</div>
+    		</div>
+		</div>
+	</div><!--Section End-->
+</div><!--Maintenance Notices End-->
+
+
+
+<div data-role="page" id="requestsGeneral">
+	<div class="section">
+		<div class="topSection">
+			<div class="row"> 
+    			<div class="small-2 columns">
+          			<a href="#personalDashboard"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         		</div>
+    			<div class="small-9 small-push-2 columns">
+        			<h2  class="topHeader">REQUESTS</h2>
+        		</div> 
+    		</div> 
+		</div>
+		<div class="content">
+			<div class="contentNews">
+				<div class="row">
+    				<div class="small-10 small-centered columns">
+        				<h3 class="requestsSubHeader">GENERAL</h3>
+        			</div>
+    			</div>
+    			<div class="requestsContent">
+    				<div class="row">
+        				<div class="small-8 small-centered columns">
+    						<h4 class="requestsSubHeaderTop">YOUR INFORMATION</h4>
+            			</div>
+  					</div>
+        			<div class="row">	
+        				<div class="small-12 columns">
+            				<div class="requestsBarTop">
+                			</div>
+            			</div>
+        			</div>
+        			<div class="row">
+    					<div class="small-11 small-push-1 columns">
+                        	
+            				<div>
+            					<input type="text" class="generalRequests" placeholder="Full Name:                   First, Last Name" />
+           	    			</div>
+           				</div>
+        			</div>
+       				<div class="row">
+    					<div class="small-11 small-push-1 columns">
+            				<div>
+            					<input type="text" class="generalRequests" placeholder="Your Student #:                        000000" />
+           	    			</div>
+           				</div>
+        			</div>
+                    <div class="row">
+    					<div class="small-11 small-push-1 columns">
+            				<div>
+            					<input type="text" class="generalRequests" placeholder="Contact #:                       519-777-7777" />
+           	    			</div>
+           				</div>
+        			</div>
+        			<div class="row">
+        				<div class="small-8 small-centered columns">
+    						<h4 class="requestsSubHeaderBottom">YOUR MESSAGE</h4>
+            			</div>
+  					</div>
+        			<div class="row">	
+        				<div class="small-12 columns">
+            				<div class="requestsBarBottom">
+                			</div>
+            			</div>
+        			</div>
+        			<div class="row">
+        				<div class="small-10 small-centered columns">
+            				<div class="requestsTextArea">
+            					<textarea placeholder="Your Message Here:">
+                				</textarea>
+                			</div>
+            			</div>
+        			</div>
+				</div><!--Requests Content End-->
+    				<div class="row">
+        				<div class="small-4 small-centered columns">
+       	    				<a href="#"><img class="sendButton" src="img/sendButton.png" alt="send"></a>
+            			</div>
+        			</div>
+    				
+			</div><!--End IconScroll2-->
+		</div><!--End Content-->
+    	<div class="bottomSection">
+			<div class="row">
+    			<div class="small-4 columns">
+        			<div class="currentPage">
+   	    				<a href="#requestsGeneral">
+            			<img src="img/requestsGeneral.png" alt="general"></a> 
+            		</div>
+            		<h3 class="iconLabel">GENERAL</h3>
+        		</div>
+        		<div class="small-4 columns">
+        			<a href="#requestsMediation"><img src="img/requestsMediation.png" alt="mediation"></a>
+            		<h3 class="iconLabel">MEDIATION</h3>
+        		</div>
+       			<div class="small-4 columns">
+        			<a href="#requestsWithdraw"><img src="img/requestsWithdraw.png" alt="withdraw"></a>
+            		<h3 class="iconLabel">WITHDRAW</h3>
+        		</div>
+    		</div>
+		</div>
+	</div><!--Section End-->
+</div> <!--Requests General Page Container End-->
+
+
+<div data-role="page" id="requestsMediation">
+	<div class="section">
+		<div class="topSection">
+			<div class="row"> 
+    			<div class="small-2 columns">
+          			<a href="#personalDashboard"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         		</div>
+    			<div class="small-9 small-push-2 columns">
+        			<h2  class="topHeader">REQUESTS</h2>
+        		</div> 
+    		</div> 
+		</div>
+
+		<div class="content">
+			<div class="contentNews">
+				<div class="row">
+    				<div class="small-10 small-centered columns">
+        				<h3 class="requestsSubHeader">MEDIATION</h3>
+        			</div>
+    			</div>
+    				<div class="requestsContent">
+    					<div class="row">
+        					<div class="small-8 small-centered columns">
+    							<h4 class="requestsSubHeaderTop">YOUR INFORMATION</h4>
+            				</div>
+  						</div>
+        				<div class="row">	
+        					<div class="small-12 columns">
+            					<div class="requestsBarTop">
+                				</div>
+            				</div>
+        				</div>
+        				<div class="row">
+    						<div class="small-11 small-push-1 columns">
+                           
+            					<div>
+            						<input type="text" class="generalRequests" placeholder="Your Name:                 First, Last Name" />
+           	    				</div>
+           					</div>
+        				</div>
+        				<div class="row">
+    						<div class="small-11 small-push-1 columns">
+            					<div id="duplicater">
+            						<input type="text" class="generalRequests" placeholder="Your Roommate:         First, Last Name" />
+           	    				</div>
+           					</div>
+        				</div>
+                        <div class="row">
+                        	<div class="small-2 small-push-1 columns">
+                            	<div>
+                                <a href="#"><img class="addInput" src="img/addRoommate.png" alt="addField"></a>
+                                </div>
+                            </div>
+                            <div class="small-10 columns">
+                            	<a href="#"><p class="addRoommate addInput">Add Roommate</p></a>
+                            </div>
+                        </div>
+                        <div class="row">
+    					<div class="small-11 small-push-1 columns">
+            				<div>
+            					<input type="text" class="generalRequests" placeholder="Contact #:                       519-777-7777" />
+           	    			</div>
+           				</div>
+        			</div>
+        				<div class="row">
+        					<div class="small-8 small-centered columns">
+    							<h4 class="requestsSubHeaderBottom">YOUR MESSAGE</h4>
+            				</div>
+  						</div>
+        				<div class="row">	
+        					<div class="small-12 columns">
+            					<div class="requestsBarBottom">
+                				</div>
+            				</div>
+        				</div>
+        				<div class="row">
+        					<div class="small-10 small-centered columns">
+            					<div class="requestsTextArea">
+            						<textarea placeholder="Your Message Here:">
+                					</textarea>
+                				</div>
+            				</div>
+        				</div>
+					</div><!--End Requests Content-->
+    					<div class="row">
+        					<div class="small-4 small-centered columns">
+       	    					<a href="#"><img class="sendButton" src="img/sendButton.png" alt="send"></a>
+            				</div>
+        				</div>
+                      
+			</div><!--End IconScroll2-->
+		</div><!--End Content-->
+    	<div class="bottomSection">
+			<div class="row">
+    			<div class="small-4 columns">
+   	    			<a href="#requestsGeneral"><img src="img/requestsGeneral.png" alt="general"></a> 
+            		<h3 class="iconLabel">GENERAL</h3>
+        		</div>
+        		<div class="small-4 columns">
+        			<div class="currentPage">
+        				<a href="#requestsMediation">
+            			<img src="img/requestsMediation.png" alt="mediation"></a>
+            		</div>
+            		<h3 class="iconLabel">MEDIATION</h3>
+        		</div>
+        		<div class="small-4 columns">
+        			<a href="#requestsWithdraw"><img src="img/requestsWithdraw.png" alt="withdraw"></a>
+           		    <h3 class="iconLabel">WITHDRAW</h3>
+        		</div>
+    		</div>
+		</div><!--End BottomSection-->
+	</div><!--Section End-->
+</div> <!--Requests Mediation Page Container End-->
+
+
+<div data-role="page" id="requestsWithdraw">
+	<div class="section">
+		<div class="topSection">
+			<div class="row"> 
+    			<div class="small-2 columns">
+          			<a href="#personalDashboard"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         		</div>
+    			<div class="small-9 small-push-2 columns">
+        			<h2  class="topHeader">REQUESTS</h2>
+        		</div> 
+    		</div> 
+		</div>
+		<div class="content">
+			<div class="contentNews">
+				<div class="row">
+    				<div class="small-10 small-centered columns">
+        				<h3 class="requestsSubHeader">WITHDRAW</h3>
+        			</div>
+    			</div>
+    				<div class="requestsContent">
+    					<div class="row">
+        					<div class="small-8 small-centered columns">
+    							<h4 class="requestsSubHeaderTop">YOUR INFORMATION</h4>
+            				</div>
+  						</div>
+        				<div class="row">	
+        					<div class="small-12 columns">
+            					<div class="requestsBarTop">
+                				</div>
+            				</div>
+        				</div>
+        				<div class="row">
+    						<div class="small-11 small-push-1 columns">
+                            
+            					<div>
+                                <input type="text" class="generalRequests" placeholder="Your Name:                 First, Last Name" />
+           	    				</div>
+           					</div>
+        				</div>
+        				<div class="row">
+    						<div class="small-11 small-push-1 columns">
+            					<div class="infoContainerRequestsBottom">
+                                	<input type="text" class="generalRequests" placeholder="Your Student #:                        000000" />
+           	    				</div>
+           					</div>
+        				</div>
+                        <div class="row">
+    					<div class="small-11 small-push-1 columns">
+            				<div>
+            					<input type="text" class="generalRequests" placeholder="Contact #:                       519-777-7777" />
+           	    			</div>
+           				</div>
+        			</div>
+        				<div class="row">
+        					<div class="small-8 small-centered columns">
+    							<h4 class="requestsSubHeaderBottom">YOUR MESSAGE</h4>
+            				</div>
+  						</div>
+        				<div class="row">	
+        					<div class="small-12 columns">
+            					<div class="requestsBarBottom">
+                				</div>
+            				</div>
+        				</div>
+       					<div class="row">
+        					<div class="small-10 small-centered columns">
+            					<div class="requestsTextArea">
+            						<textarea placeholder="Your Message Here:">
+                					</textarea>
+                				</div>
+            				</div>
+        				</div>
+                    </div><!--End Requests Content-->
+                    <div class="row">
+        				<div class="small-4 small-centered columns">
+       	    				<a href="#"><img class="sendButton" src="img/sendButton.png" alt="send"></a>
+            			</div>
+        			</div>  
+                   
+			</div><!--End IconScroll2-->
+		</div><!--End Content-->
+	
+    	<div class="bottomSection">
+			<div class="row">
+    			<div class="small-4 columns">
+   	    			<a href="#requestsGeneral"><img src="img/requestsGeneral.png" alt="general"></a> 
+            		<h3 class="iconLabel">GENERAL</h3>
+        		</div>
+        		<div class="small-4 columns">
+        			<a href="#requestsMediation"><img src="img/requestsMediation.png" alt="mediation"></a>
+            		<h3 class="iconLabel">MEDIATION</h3>
+        		</div>
+        		<div class="small-4 columns">
+         			<div class="currentPage">
+        				<a href="#requestsWithdraw">
+            			<img src="img/requestsWithdraw.png" alt="withdraw"></a>
+            		</div>
+            		<h3 class="iconLabel">WITHDRAW</h3>
+        		</div>
+    		</div>
+		</div>
+    </div><!--End Section-->
+</div><!--Requests Withdraw Section End-->
+
+
+<div data-role="page" id="buildingIntro">
+	<div class="section">
+		<div class="row">
+    		<div class="small-2 columns">
+        		<a href="#mainMenu">
+   	    		<img class="colorMenu" src="img/mainMenuButtonColor.png" alt="menu">
+            	</a>
+         	</div>
+    	</div>
+		<div class="row">
+    		<div class="small-11 small-centered columns">
+   	    		<img class="dashBoardDummy" src="img/buildingIntroIcon.png" alt="Building_Intro">
+         	</div>
+    	</div>
+    	<div class="row">
+    		<div class="small-10 small-centered columns">
+   	    		<h2 class="dashBoardHeaderBuilding">BUILDING DASHBOARD</h2>
+         	</div>
+    	</div>
+	</div><!--End Section-->
+
+	<div class="bottomSectionBuilding">
+		<div class="row">
+    		<div class="small-11 small-centered columns">
+    			<div class="small-4 columns">
+   	    			<a href="#buildingSectionGarbage"><img src="img/calendarBuildingIcon.png" alt="building"></a> 
+            		<h3 class="iconLabel">BUILDING</h3>
+        		</div>
+        		<div class="small-4 columns">
+        			<a href="#eventsPage"><img src="img/eventsIcon.png" alt="events"></a>
+            		<h3 class="iconLabel">EVENTS</h3>
+        		</div>
+        		<div class="small-4 columns">
+        			<a href="#classifiedsBuySection"><img src="img/classifiedsIcon.png" alt="classifieds"></a>
+            		<h3 class="iconLabel">CLASSIFIEDS</h3>
+        		</div>
+        	</div>
+    	</div>
+	</div>
+</div><!--End data-page-->
+
+
+
+<!--Building Garbage-->
+<div data-role="page" id="buildingSectionGarbage">
+	<div class="section">
+		<div class="topSection">
+			<div class="row"> 
+    			<div class="small-2 columns">
+          			<a href="#buildingIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         		</div>
+    			<div class="small-9 small-push-3 columns">
+        			<h2  class="topHeader">BUILDING</h2>
+        		</div> 
+    		</div> 
+         </div>   
+	</div><!--End Section-->
+	<div class="content">
+		<div class="row">
+    		<div class="small-10 small-centered columns">
+        		<h3 class="requestsSubHeader">GARBAGE</h3>
+        	</div>
+    	</div>
+    		<div class="garbageContent">
+    			<div class="row">
+        			<div class="small-10 small-centered columns">
+            			<p class="garbageDescription">Please ensure all garbage and recycling has been seperated and dispose at designated location. The following are your garbage days for the week:</p>
+            		</div>
+        		</div>	
+			</div>
+    		<div class="row">
+    			<div class="small-4 columns">
+   	    			<img class="garbageDay1" src="img/garbageMondayIcon.png" alt="garbageDay_Monday"> 
+        		</div>
+        		<div class="small-4 columns">
+   	    			<img class="garbageDay2" src="img/garbageWednesdayIcon.png" alt="garbageDay_Monday"> 
+        		</div>
+    		</div>
+    </div><!--End Content-->
+    		<div class="bottomSection">
+				<div class="row">
+    				<div class="small-12  small-centered columns">
+    					<div class="small-4 columns">
+        					<div class="currentPage2">
+   	    						<a href="#buildingSectionGarbage"><img src="img/garbageIcon.png" alt="garbage"></a> 
+            					<h3 class="iconLabel">GARBAGE</h3>
+        					</div>
+        				</div>
+        				<div class="small-4 columns">
+        					<a href="#houseKeepingSection"><img src="img/housekeepingIcon.png" alt="housekeeping"></a>
+            				<h3 class="iconLabel">HOUSEKEEPING</h3>
+       		 			</div>
+        				<div class="small-4 columns">
+        					<a href="#rulesSection"><img src="img/rulesIcon.png" alt="rules"></a>
+            				<h3 class="iconLabel">RULES &amp; <br> POLICIES</h3>
+        				</div>
+    				</div>
+				</div>
+     		</div><!--End Bottom Section-->
+</div><!--Gargage Page Container End-->
+
+
+
+<div data-role="page" id="houseKeepingSection">
+	<div class="section">
+		<div class="topSection">
+			<div class="row"> 
+    			<div class="small-2 columns">
+          			<a href="#buildingIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         		</div>
+    			<div class="small-9 small-push-3 columns">
+        			<h2  class="topHeader">BUILDING</h2>
+        		</div> 
+    		</div> 
+		</div>
+		<div class="content">
+			<div class="row">
+    			<div class="small-10 small-centered columns">
+        			<h3 class="requestsSubHeader">HOUSEKEEPING</h3>
+        		</div>
+    		</div>
+    			<div class="garbageContent">
+    				<div class="row">
+        				<div class="small-10 small-centered columns">
+            				<p class="garbageDescription">Our in-house housekeeping staff will be cleaning around the building on the day specified this week. Please allow access to your dorm for washroom cleaning.</p>
+            			</div>
+        			</div>	
+				</div>
+    			<div class="row">
+    				<div class="small-4 small-centered columns">
+   	    				<img class="housekeepingDay" src="img/housekeepingTuesdayIcon.png" alt="garbageDay_Monday"> 
+        			</div>
+    			</div>
+    	</div><!--End Content-->
+    		<div class="bottomSection">
+				<div class="row">
+    				<div class="small-12  small-centered columns">
+    					<div class="small-4 columns">
+        					<a href="#buildingSectionGarbage"><img src="img/garbageIcon.png" alt="garbage"></a> 
+            				<h3 class="iconLabel">GARBAGE</h3>	
+        				</div>
+        				<div class="small-4 columns">
+        					<div class="currentPage2">
+            					<a href="#houseKeepingSection"><img src="img/housekeepingIcon.png" alt="housekeeping"></a>
+           		 				<h3 class="iconLabel">HOUSEKEEPING</h3>
+            				</div>
+        				</div>
+        				<div class="small-4 columns">
+        					<a href="#rulesSection">
+           					 <img src="img/rulesIcon.png" alt="rules"></a>
+            
+            				<h3 class="iconLabel">RULES &amp; POLICIES</h3>
+        				</div>
+    				</div>
+				</div>
+           </div><!--Bottom Section End-->
+	</div><!--Section End-->
+</div>
+
+<div data-role="page" id="rulesSection">
+
+<div class="section">
+<div class="topSection">
+	<div class="row"> 
+    <div class="small-2 columns">
+          <a href="#buildingIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         </div>
+    	<div class="small-9 small-push-3 columns">
+        	<h2  class="topHeader">BUILDING</h2>
+        </div> 
+    </div> 
+</div>
+
+<div class="contentNews">
+	<div class="row">
+    	<div class="small-11 small-centered columns">
+        	<h3 class="requestsSubHeader">RULES &amp; POLICIES</h3>
+        </div>
+    </div>
+	<div class="rulesContent1">
+	<div class="row">
+    	<dl class="accordion" data-accordion>
+  			<dd>
+    					<a href="#panel13" onClick="highlightLink(this);"><span class="complaintText">Alcohol Limits</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    			<div id="panel13" class="content">
+      				<span class="dateColor">1 Point:</span><br>
+                    14.A  Possession  of  a  single
+                    serve  glass  bottle<br> 
+                    14.B  Possession  of  a  mini
+                    keg,  or  alcohol  container  larger  than  750ml<br>  
+                    14.C  Possession  of  drinking  apparatus,  including  
+                    but  not  limited  to  beer  funnel,  beer  bong,  beer  
+                    hat,  or  beer  boot
+    			</div>
+               </dd>
+  					<dd>
+   						 <a href="#panel14" onClick="highlightLink(this);"><span class="complaintText">Disruptive  or  Irresponsible  Behaviour</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel14" class="content">
+     							 <span class="dateColor">1 Point:</span><br>
+                    7.A  Noise  should  not  be  heard  outside  of  the  
+                    suite,  including  but  not  limited  to  noise  from  TVs,  
+                    computers,  stereos,  human  voices  or  video  
+                    games <br> 
+                    7.B  Social  gatherings  are  to  be  kept  at  a  
+                    reasonable  level  of  volume  at  all  times <br> 
+                    7.C  Physically  active  spo
+                    rts  and  games  are  to  not  
+                    to  be  played  in  a  manner  that  could  cause  injury  
+                    or  damage,  or  disturb  others,  and  are  not  to  be  
+                    played  in  Residence  common  areas
+    						</div>
+ 					 </dd>
+        			<dd>
+    					<a href="#panel15" onClick="highlightLink(this);"><span class="complaintText">Guest Sign In</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel15" class="content">
+                  <span class="dateColor">1 Point:</span><br>
+     							6.A  Exceeding  ten  overnight  guest  stays  in  one  month <br> 
+                  6.B  Repeated  failure  to  stay  with  guest<br>
+                  6.C  Receiving  three  or  more  guest  policy  warnings  for  any  reason <br> 
+                  6.D  Repeatedly  not  signing  guests  out  after.
+    						</div>
+  					</dd>
+ 				 	<dd>
+    					<a href="#panel16" onClick="highlightLink(this);"><span class="complaintText">No Smoking</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel16" class="content">
+     							<span class="dateColor">2 Point:</span><br>
+                  9.A  Smoking  inside  any  Residence  building,  or  
+                  within  nine  metres  of  the  Residence  building<br>  
+                  9.B  Possession  of  a  smoking  device  used  for  a  
+                  legal  substance,  including  but  not  limited  to  pipes  
+                  or  hookahs
+    						</div>
+        			</dd>
+   		</dl>
+        </div>
+  </div> 
+</div>
+    
+
+<div class="bottomSection">
+	<div class="row">
+    	<div class="small-12  small-centered columns">
+    		<div class="small-4 columns">
+        		
+   	    			<a href="#buildingSectionGarbage"><img src="img/garbageIcon.png" alt="garbage"></a> 
+            			<h3 class="iconLabel">GARBAGE</h3>
+        		
+        	</div>
+        <div class="small-4 columns">
+        	
+            <a href="#houseKeepingSection"><img src="img/housekeepingIcon.png" alt="housekeeping"></a>
+            <h3 class="iconLabel">HOUSEKEEPING</h3>
+           
+        </div>
+        <div class="small-4 columns">
+         <div class="currentPage2">
+        	<a href="#rulesSection">
+            <img src="img/rulesIcon.png" alt="rules"></a>
+            </div>
+            <h3 class="iconLabel">RULES &amp; POLICIES</h3>
+        	</div>
+        </div>
+    </div>
+</div>
+</div><!--Rules and Policies Section End-->
+</div>
+
+<div data-role="page" id="classifiedsBuySection">
+	<div class="section">
+		<div class="topSection">
+			<div class="row"> 
+    			<div class="small-2 columns">
+          			<a href="#buildingIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         		</div>
+    			<div class="small-9 small-push-2 columns">
+        			<h2  class="topHeader">CLASSIFIEDS</h2>
+        		</div> 
+    		</div> 
+		</div>
+			<div class="contentClassifieds">
+				<div class="row">
+    				<div class="small-10 small-centered columns">
+        				<h3 class="requestsSubHeader">BUY</h3>
+        			</div>
+    			</div>
+					<div class="rulesContent">
+						<div class="row">
+    						<dl class="accordion" data-accordion>
+  								<dd>
+    								<a href="#panel1" onClick="highlightLink(this);"><span class="complaintText">Mens Nike Size 10</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    								<div id="panel1" class="content">
+      								<p class="classifiedsDescription"><span class="classifiedsUser">user1324 </span><br> Price: <span class="price">$120.00</span><br>Contact: <span class="classifiedsEmail">user1324@gmail.com</span></p> <span class="itemDescription">Mens Nike shoes barely worn size 10 asking $120 or best offer.</span><br><a href="#">More Info</a>
+    								</div>
+               					</dd>
+               						<div class="classifiedsDivider">
+               						</div>
+  								<dd>
+   						 			<a href="#panel2" onClick="highlightLink(this);"><span class="complaintText">Red Dress Size 3</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    								<div id="panel2" class="content">
+     								 <p class="classifiedsDescription"><span class="classifiedsUser">user1324 </span><br> Price: <span class="price">$50.00</span> OBO.<br>Contact: <span class="classifiedsEmail">user1324@gmail.com</span></p> <span class="itemDescription">Coco Chanel dress size 3, tags still on..</span><br><a href="#">More Info</a>
+    								</div>
+ 					 			</dd>
+                     				<div class="classifiedsDivider">
+               						</div>
+        						<dd>
+    								<a href="#panel43" onClick="highlightLink(this);"><span class="complaintText">Sony PSP MINT CONDITION</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    								<div id="panel43" class="content">
+     								 <p class="classifiedsDescription"><span class="classifiedsUser">user1324 </span><br> Price: <span class="price">$150.00</span> OBO.<br>Contact: <span class="classifiedsEmail">user1324@gmail.com</span></p> <span class="itemDescription">Sony PSP, 8 Games Mint condition with 4 games..</span><br><a href="#">More Info</a>
+    								</div>
+  								</dd>
+                    				<div class="classifiedsDivider">
+               						</div>
+ 				 				<dd>
+    								<a href="#panel44" onClick="highlightLink(this);"><span class="complaintText">Portable Air Conditioner</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    								<div id="panel44" class="content">
+     							 	<p class="classifiedsDescription"><span class="classifiedsUser">user1324 </span><br> Price: <span class="price">$50.00</span> OBO.<br>Contact: <span class="classifiedsEmail">user1324@gmail.com</span></p> <span class="itemDescription">Sony PSP, 8 Games Mint condition with 4 games..</span><br><a href="#">More Info</a><a href="#">More Info</a>
+    								</div>
+        						</dd>
+   							</dl>
+        				</div>
+  					</div><!--Rules Content End--> 
+			</div><!--Content End-->
+    			<div class="bottomSectionClassifieds">
+					<div class="row">
+    					<div class="small-11  small-centered columns">
+    						<div class="small-4 columns">
+        						<div class="currentPage">
+   	    							<a href="#classifiedsBuySection"><img src="img/classifiedsBuyIcon.png" alt="buy"></a> 
+            						<h3 class="iconLabel">BUY</h3>
+        						</div>
+        					</div>
+        					<div class="small-4 columns">
+            					<a href="#classifiedsSellSection"><img src="img/classifiedsSellIcon.png" alt="sell"></a>
+            					<h3 class="iconLabel">SELL</h3>
+        					</div>
+        					<div class="small-4 columns">
+        						<a href="#classifiedsCreateSection">
+            					<img src="img/classifiedsCreateIcon.png" alt="create"></a> 
+            					<h3 class="iconLabel">CREATE</h3>
+        					</div>
+      					</div>  
+    				</div>
+				</div>
+	</div><!--Classifieds Buy Section End-->
+</div>
+
+
+<div data-role="page" id="classifiedsSellSection">
+	<div class="section">
+		<div class="topSection">
+			<div class="row"> 
+    			<div class="small-2 columns">
+          			<a href="#buildingIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         		</div>
+    			<div class="small-9 small-push-2 columns">
+        			<h2  class="topHeader">CLASSIFIEDS</h2>
+        		</div> 
+    		</div> 
+		</div>
+			<div class="contentNews">
+				<div class="row">
+    				<div class="small-10 small-centered columns">
+        				<h3 class="requestsSubHeader">SELL</h3>
+        			</div>
+    			</div>
+				<div class="content">
+					<div class="row">
+    					<dl class="accordion" data-accordion>
+  							<dd>
+                	<a href="#panel17" onClick="highlightLink(this);"><img class="saleItem" src="img/itemShoes.png" alt="shoes"> <span class="saleText">SHOES</span> <span class="itemPrice">$999</span><span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    							<div id="panel17" class="content">
+      							           <p class="classifiedsDescription"><span class="classifiedsUser">user1324 </span><br> Price: <span class="price">$50.00</span> OBO.<br>Contact: <span class="classifiedsEmail">user1324@gmail.com</span></p>
+                                <div class="imageContainer">
+                                	<a href="#" data-reveal-id="myModal"><img class="saleItem2" src="img/itemShoes.png" alt="item1"></a>
+                                    <a href="#" data-reveal-id="myModal"><img class="saleItem2" src="img/itemShoes.png" alt="item1"></a>
+                                    <a href="#" data-reveal-id="myModal"><img class="saleItem2" src="img/itemShoes.png" alt="item1"></a>
+                                </div> 
+                                      <div id="myModal" class="reveal-modal" data-reveal>
+  									                   <h2 class="itemTitle">Shoes</h2>
+                                    	<div class="modalContainer">
+  										                <img class="saleItem3" src="img/itemShoes.png" alt="item1">
+                                    	<img class="saleItem3" src="img/itemShoes.png" alt="item1">
+                                    	<img class="saleItem3" src="img/itemShoes.png" alt="item1">
+  									                   <a class="close-reveal-modal">&#215;</a>
+                                    	</div>
+									</div>
+                               <span class="itemDescription">Womens 8 inch high heels, black suede no scuffs and like new.</span><br><a href="#">More Info</a>
+    							</div>
+               				</dd>
+               					<div class="classifiedsDivider">
+               					</div>
+  							<dd>
+   						 		<a href="#panel18" onClick="highlightLink(this);"><img class="saleItemPlant" src="img/itemPlant.png" alt="plant"> <span class="saleText">PLANT</span> <span class="itemPrice2">$999</span><span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    							<div id="panel18" class="content">
+     							<p class="classifiedsDescription"><span class="classifiedsUser">user1324 </span><br> Price: <span class="price">$30.00</span> OBO.<br>Contact: <span class="classifiedsEmail">user1324@gmail.com</span></p>
+                                <div class="imageContainer">
+                                	<a href="#" data-reveal-id="myModal2"><img class="saleItem2" src="img/itemPlant.png" alt="item2"></a>
+                                    <a href="#" data-reveal-id="myModal2"><img class="saleItem2" src="img/itemPlant.png" alt="item2"></a>
+                                    <a href="#" data-reveal-id="myModal2"><img class="saleItem2" src="img/itemPlant.png" alt="item2"></a>
+                                </div> 
+                                <div id="myModal2" class="reveal-modal" data-reveal>
+  									<h2 class="itemTitle">Shoes</h2>
+                                    	<div class="modalContainer">
+  										<img class="saleItem3" src="img/itemPlant.png" alt="item2">
+                                    	<img class="saleItem3" src="img/itemPlant.png" alt="item2">
+                                    	<img class="saleItem3" src="img/itemPlant.png" alt="item2">
+  									<a class="close-reveal-modal">&#215;</a>
+                                    	</div>
+									</div>
+                               <span class="itemDescription">Indoor plant to add some life to your room</span><br><a href="#">More Info</a>
+    							</div>
+ 					 		</dd>
+                     			<div class="classifiedsDivider">
+               					</div>
+        					<dd>
+    							<a href="#panel19" onClick="highlightLink(this);"><img class="saleItemToolbox" src="img/itemToolbox.png" alt="toolbox"> <span class="saleText">TOOL BOX</span> <span class="itemPrice3">$999</span><span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    							<div id="panel19" class="content">
+     							<p class="classifiedsDescription"><span class="classifiedsUser">user1324 </span><br> Price: <span class="price">$30.00</span> OBO.<br>Contact: <span class="classifiedsEmail">user1324@gmail.com</span></p>
+                                <div class="imageContainer">
+                                	<a href="#" data-reveal-id="myModal3"><img class="saleItem2" src="img/itemToolbox.png" alt="item3"></a>
+                                    <a href="#" data-reveal-id="myModal3"><img class="saleItem2" src="img/itemToolbox.png" alt="item3"></a>
+                                    <a href="#" data-reveal-id="myModal3"><img class="saleItem2" src="img/itemToolbox.png" alt="item3"></a>
+                                </div> 
+                                <div id="myModal3" class="reveal-modal" data-reveal>
+  									<h2 class="itemTitle">Shoes</h2>
+                                    	<div class="modalContainer">
+  										<img class="saleItem3" src="img/itemToolbox.png" alt="item3">
+                                    	<img class="saleItem3" src="img/itemToolbox.png" alt="item3">
+                                    	<img class="saleItem3" src="img/itemToolbox.png" alt="item3">
+  									<a class="close-reveal-modal">&#215;</a>
+                                    	</div>
+									</div>
+                               <span class="itemDescription">Are you a handy man in need of a toolbox? Like new toolbox..</span><br><a href="#">More Info</a>
+    							</div>
+  							</dd>
+                    			<div class="classifiedsDivider">
+               					</div>
+ 				 			<dd>
+    							<a href="#panel20" onClick="highlightLink(this);"><img class="saleItem" src="img/itemBook.png" alt="book"> <span class="saleText">ITEM BOOK</span> <span class="itemPrice">$999</span><span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    							<div id="panel20" class="content">
+     							<p class="classifiedsDescription"><span class="classifiedsUser">user1324 </span><br> Price: <span class="price">$30.00</span> OBO.<br>Contact: <span class="classifiedsEmail">user1324@gmail.com</span></p>
+                                <div class="imageContainer">
+                                	<a href="#" data-reveal-id="myModal4"><img class="saleItem2" src="img/itemBook.png" alt="item4"></a>
+                                    <a href="#" data-reveal-id="myModal4"><img class="saleItem2" src="img/itemBook.png" alt="item4"></a>
+                                    <a href="#" data-reveal-id="myModal4"><img class="saleItem2" src="img/itemBook.png" alt="item4"></a>
+                                </div> 
+                                <div id="myModal4" class="reveal-modal" data-reveal>
+  									<h2 class="itemTitle">Shoes</h2>
+                                    	<div class="modalContainer">
+  										<img class="saleItem3" src="img/itemBook.png" alt="item4">
+                                    	<img class="saleItem3" src="img/itemBook.png" alt="item4">
+                                    	<img class="saleItem3" src="img/itemBook.png" alt="item4">
+  									<a class="close-reveal-modal">&#215;</a>
+                                    	</div>
+									</div>
+                               <span class="itemDescription">Are you a handy man in need of a toolbox? Like new toolbox..</span><br><a href="#">More Info</a>
+    							</div>
+        					</dd>
+   						</dl>
+        			</div>
+  				</div><!--Rules Content End--> 
+			</div><!--Content End-->
+    			<div class="bottomSectionClassifieds">
+					<div class="row">
+    					<div class="small-11  small-centered columns">
+    						<div class="small-4 columns">
+   	    						<a href="#classifiedsBuySection"><img src="img/classifiedsBuyIcon.png" alt="buy"></a> 
+            					<h3 class="iconLabel">BUY</h3>
+        					</div>
+        					<div class="small-4 columns">
+        						<div class="currentPage">
+            						<a href="#classifiedsSellSection"><img src="img/classifiedsSellIcon.png" alt="sell"></a>
+            						<h3 class="iconLabel">SELL</h3>
+           						</div>
+        					</div>
+        					<div class="small-4 columns">
+        						<a href="#classifiedsCreateSection">
+            					<img src="img/classifiedsCreateIcon.png" alt="create"></a>
+            					<h3 class="iconLabel">CREATE</h3>
+        					</div>
+      					</div>  
+    				</div>
+				</div>
+	</div><!--Section End-->
+</div><!--Page Container End-->
+
+
+
+<div data-role="page" id="classifiedsCreateSection">
+	<div class="section">
+			<div class="topSection">
+				<div class="row"> 
+    				<div class="small-2 columns">
+         			 	<a href="#buildingIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         			</div>
+    				<div class="small-9 small-push-2 columns">
+        				<h2 class="topHeader">CLASSIFIEDS</h2>
+        			</div> 
+    			</div> 
+			</div><!--End Top Section-->
+				<div class="contentNews">
+					<div class="row">
+    					<div class="small-10 small-centered columns">
+        					<h3 class="requestsSubHeader">CREATE</h3>
+        				</div>
+    				</div>
+					<div class="row">
+    					<div class="small-11 columns">
+    	  					<div class="dropDownContainer">
+        						<div class="small-5 columns">
+            						<div class="categoryDiv">
+                                    
+                                        <select class="categoryDropdown" data-role="none">
+                								<option class="optionBackground">BUY/SELL</option>
+                    							<option class="optionBackground" value="new">BUY</option>
+                    							<option class="optionBackground" value="used">SELL</option>
+                							</select>
+                					</div>
+            					</div>
+          					</div> <!--dropDownContainer End-->
+          					<div class="dropDownContainer">
+            					<div class="small-5 small-push-4 columns">
+            						<div class="categoryDiv">
+            							<select class="categoryDropdown" data-role="none">
+                							<option class="optionBackground">CONDITION</option>
+                    						<option class="optionBackground" value="new">NEW</option>
+                    						<option class="optionBackground" value="used">USED</option>
+                						</select>
+                					</div>
+            					</div>
+          					</div><!--dropDownContainer end-->
+       					</div>    
+    				</div><!--End Row-->
+                    <div class="row">
+    					<div class="small-2 columns">
+                			<label class="labelInfo"> STUDENT NUMBER: </label>
+        				</div>
+        				<div class="small-9 columns">
+    						<input type="text" placeholder="000000"/>
+        				</div>	
+    				</div>
+                    <div class="row">
+    					<div class="small-2 columns">
+                			<label class="labelInfo"> USER-<br>NAME: </label>
+        				</div>
+        				<div class="small-9 columns">
+    						<input type="text" placeholder="username"/>
+        				</div>	
+    				</div>
+    				<div class="row">
+    					<div class="small-2 columns">
+                			<label class="labelInfo"> EMAIL: </label>
+        				</div>
+        				<div class="small-9 columns">
+    						<input type="text" placeholder="EMAIL"/>
+        				</div>	
+    				</div>
+    				<div class="row">
+    					<div class="small-2 columns">
+                			<label class="labelInfo"> PHONE: </label>
+        				</div>
+        				<div class="small-9 columns">
+    						<input type="text" placeholder="PHONE"/>
+        				</div>
+    				</div> 
+    				<div class="row">
+    					<div class="small-2 columns">
+                			<label class="labelInfo"> TITLE: </label>
+                		</div>
+                		<div class="small-9 columns">
+    						<input type="text" placeholder="TITLE"/>
+            			</div>	
+    				</div>
+    				<div class="row">
+    					<div class="small-2 columns">
+                			<label class="labelInfo"> PRICE: </label>
+                		</div>
+                		<div class="small-9 columns">
+    						<input type="text" placeholder="e.g. Free or $40"/>
+            			</div>	
+    				</div>
+                    <div class="row">
+                    	<div class="dropDownContainer">
+            						<div class="small-6 small-push-4 columns">
+            							<div class="categoryDiv">
+            								<select class="categoryDropdown" data-role="none">
+                							<option class="optionBackground">CATEGORY</option>
+                    						<option class="optionBackground" value="furniture">FURNITURE</option>
+                    						<option class="optionBackground" >CLOTHING</option>
+                    						<option class="optionBackground" >ELECTRONICS</option>
+                						</select>
+                						</div>
+            						</div>
+          				</div><!--dropDownContainer end-->
+                    </div>
+    				<div class="row">
+    					<div class="small-12 columns">
+    						<textarea id="classifiedDescription" spellcheck="true" placeholder="DESCRIPTION"></textarea>
+            			</div>
+    				</div>
+    				<div class="row">
+    					<div class="addPhotoContainer">
+            				<div class="small-6 columns">
+                					<img id="imgUpload" src="img/addphotoMiniIcon.png" alt="your image" />
+                                    <input id="file1" type='file' onchange="readURL(this);" />	
+                                    <p class="pleaseSelect">Select Image</p>
+                			</div>
+                			<div class="small-6 columns">
+                				<img id="imgUpload2" src="img/addphotoMiniIcon.png" alt="your image" />
+                                    <input id="file2" type='file' onchange="readURL2(this);" />
+                                    <p class="pleaseSelect">Select Image</p>
+                			</div>
+          				</div> <!--End of addPhotoContainer--> 
+    				</div>
+                    <div class="row">
+                    	<div class="addPhotoContainer">
+                        	<div class="small-6 columns">
+                					<img id="imgUpload3" src="img/addphotoMiniIcon.png" alt="your image" />
+                                    <input id="file3" type='file' onchange="readURL3(this);" />	
+                                    <p class="pleaseSelect">Select Image</p>
+                			</div>
+                			<div class="small-6 columns">
+                				<img id="imgUpload4" src="img/addphotoMiniIcon.png" alt="your image" />
+                                    <input id="file4" type='file' onchange="readURL4(this);" />
+                                    <p class="pleaseSelect">Select Image</p>
+                			</div>
+                        </div>
+                    </div>
+    				<div class="row">
+    					<div class="small-4 small-centered columns">
+   	    					<img src="img/sendButton.png" alt="send_button">
+        				</div>
+                        </div>
+                  
+    				</div>
+				</div><!--End of createScrollSection/Content-->
+    				<div class="bottomSectionClassifieds">
+						<div class="row">
+    						<div class="small-11  small-centered columns">
+    							<div class="small-4 columns">
+   	    							<a href="#classifiedsBuySection"><img src="img/classifiedsBuyIcon.png" alt="buy"></a> 
+            							<h3 class="iconLabel">BUY</h3>	
+        						</div>
+        						<div class="small-4 columns">
+            						<a href="#classifiedsSellSection"><img src="img/classifiedsSellIcon.png" alt="sell"></a>
+            						<h3 class="iconLabel">SELL</h3>
+        						</div>
+        						<div class="small-4 columns">
+         							<div class="currentPage">
+        								<a href="#classifiedsCreateSection">
+            							<img src="img/classifiedsCreateIcon.png" alt="create"></a>
+            						</div>
+            						<h3 class="iconLabel">CREATE</h3>
+            					</div>
+       						</div>
+                        </div>
+   					</div><!--End of BottomSection--> 
+</div><!--Classifieds Create Section End-->
+
+
+<div data-role="page" id="eventsPage">
+
+<div class="section">
+<div class="topSection">
+	<div class="row"> 
+    <div class="small-2 columns">
+          <a href="#buildingIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         </div>
+    	<div class="small-9 small-push-4 columns">
+        	<h2  class="topHeader">EVENTS</h2>
+        </div> 
+    </div> 
+</div>
+
+<div class="contentNews">
+	<div class="row">
+    	<div class="small-10 small-centered columns">
+        	<h3 class="requestsSubHeader">PROGRAMS</h3>
+        </div>
+    </div>
+	<div class="rulesContent">
+	<div class="row">
+    	<dl class="accordion" data-accordion>
+  			<dd>
+            <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span>
+    					<a href="#panel21" onClick="highlightLink(this);"><span class="complaintText">Staff Meeting - FSU Building</span></a>
+    			<div id="panel21" class="content">
+            <p class="dateColor">September 9, 2014</p>
+            <p>There will be a meeting for FSU staff in the Conference room by Oasis.</p>
+            <p>2:00pm - 3:00pm</p>
+            <label>Who can come:</label> <input type="text" placeholder="FSU Staff">
+    			</div>
+               </dd>
+  					<dd>
+   						 <a href="#panel22" onClick="highlightLink(this);"><span class="complaintText">Breakfast Deals! - Oasis</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel22" class="content">
+                  <p class="dateColor">Monday - Friday</p>
+                  <p>Oasis will be offering half price breakfast during the week between the hours specified.</p>
+                  <p>8:00pm - 11:00pm</p>
+                  <label>Who can come:</label><input type="text" placeholder="everyone">
+    						</div>
+ 					 </dd>
+        			<dd>
+    					<a href="#panel23" onClick="highlightLink(this);"><span class="complaintText">Hockey Night - Bud Gardens</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel23" class="content">
+                  <p class="dateColor">September 22, 2014</p>
+                  <p>London Knights student ticket sale. Student tickets are $18 and are allowed to bring guests. Guest tickets are $20.</p>
+                  <p>7:00pm - 10:00pm</p>
+                  <label>Who can come:</label> <input type="text" placeholder="students &amp; guests">
+    						</div>
+  					</dd>
+ 				 	<dd>
+    					<a href="#panel24" onClick="highlightLink(this);"><span class="complaintText">Food Drive - FSU Building</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel24" class="content">
+                  <p class="dateColor">September 25, 2014</p>
+                  <p>Fanshawe College will be hosting a canned goods food drive to help those who are in need. Please help by bringing non-perishable goods to give to a family in need.</p>
+                  <p>8:00am - 4:00pm</p>
+                 <label>Who can come:</label> <input type="text" placeholder="students &amp; guests">
+    						</div>
+        			</dd>
+   		</dl>
+        </div>
+  </div> 
+</div>
+    
+
+<div class="bottomSectionEvents">
+	<div class="row">
+    	<div class="small-11  small-centered columns">
+    		<div class="small-4 columns">
+        		<div class="currentPage2">
+   	    			<a href="#eventsPage"><img src="img/programsIcon.png" alt="events"></a> 
+            			<h3 class="iconLabel">PROGRAMS</h3>
+        		</div>
+        	</div>
+        <div class="small-4 columns">
+        	
+            <a href="#eventsPageSection"><img src="img/eventsPageIcon.png" alt="eventsPage"></a>
+            <h3 class="iconLabel">EVENTS</h3>
+           
+        </div>
+        <div class="small-4 columns">
+         
+        	<a href="#contestsSection">
+            <img src="img/contestsIcon.png" alt="contests"></a>
+         
+            <h3 class="iconLabel">CONTESTS</h3>
+        	</div>
+        </div>
+    </div>
+</div>
+</div><!--Programs Section End-->
+</div>
+
+
+<div data-role="page" id="eventsPageSection">
+
+<div class="section">
+<div class="topSection">
+	<div class="row"> 
+    <div class="small-2 columns">
+          <a href="#buildingIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         </div>
+    	<div class="small-9 small-push-4 columns">
+        	<h2  class="topHeader">EVENTS</h2>
+        </div> 
+    </div> 
+</div>
+
+<div class="contentNews">
+	<div class="row">
+    	<div class="small-10 small-centered columns">
+        	<h3 class="requestsSubHeader">EVENTS</h3>
+        </div>
+    </div>
+	<div class="rulesContent">
+	<div class="row">
+    	<dl class="accordion" data-accordion>
+  			<dd>
+    					<a href="#panel25" onClick="highlightLink(this);"><span class="complaintText">Residence BBQ</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    			<div id="panel25" class="content">
+      				    <p class="dateColor">September 4</p>
+                    <p class="location">Outside of R Building</p>
+                    <p>This is a bbq for everybody at Residence to welcome you to Fanshawe College</p>
+                    <a href="#"><p>More Info</p></a>
+                    <label>Who can come:</label><input type="text" placeholder="everyone">
+                </div>
+               </dd>
+  					<dd>
+   						 <a href="#panel26" onClick="highlightLink(this);"><span class="complaintText">Open House</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel26" class="content">
+     							 <p class="dateColor">August 23</p>
+                    <p class="location">Your Residence Building</p>
+                    <p>Come familiarize yourself with your future home for the school year at our open house. Get to know some of the Residence staff and have </p>
+                    <a href="#"><p>More Info</p></a>
+                    <label>Who can come:</label><input type="text" placeholder="everyone">
+    						</div>
+ 					 </dd>
+        			<dd>
+    					<a href="#panel27" onClick="highlightLink(this);"><span class="complaintText">Scavenger Hunt</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel27" class="content">
+     							 <p class="dateColor">September 4</p>
+                    <p class="location">Fanshawe Campus</p>
+                    <p>Take part in a scavenger hunt to explore campus and get a feel for the location of building. There will also be staff in different locations if you have any questions.</p>
+                    <a href="#"><p>More Info</p></a>
+                    <label>Who can come:</label><input type="text" placeholder="everyone">
+    						</div>
+  					</dd>
+ 				 	<dd>
+    					<a href="#panel28" onClick="highlightLink(this);"><span class="complaintText">Fundraiser</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel28" class="content">
+     							<p class="dateColor">September 14</p>
+                    <p class="location">Fanshawe soccer field</p>
+                    <p>Come take part in this fundraiser with baked goods and fun activities where all the proceeds go to a good cause.</p>
+                    <a href="#"><p>More Info</p></a>
+                    <label>Who can come:</label><input type="text" placeholder="everyone">
+    						</div>
+        			</dd>
+   		</dl>
+        </div>
+  </div> 
+</div>
+    
+
+<div class="bottomSectionEvents">
+	<div class="row">
+    	<div class="small-11  small-centered columns">
+    		<div class="small-4 columns">
+        		
+   	    			<a href="#eventsPage"><img src="img/programsIcon.png" alt="events"></a> 
+            			<h3 class="iconLabel">PROGRAMS</h3>
+        	
+        	</div>
+        	<div class="small-4 columns">
+        		<div class="currentPage2">
+            		<a href="#eventsPageSection"><img src="img/eventsPageIcon.png" alt="eventsPage"></a>
+            		<h3 class="iconLabel">EVENTS</h3>
+           		</div>
+       		 </div>
+        	<div class="small-4 columns">
+         
+        		<a href="#contestsSection">
+            	<img src="img/contestsIcon.png" alt="contests"></a>
+            
+            	<h3 class="iconLabel">CONTESTS</h3>
+       		 </div>
+        </div>
+    </div>
+</div>
+</div><!--Events Section End-->
+</div>
+
+<div data-role="page" id="contestsSection">
+
+<div class="section">
+<div class="topSection">
+	<div class="row"> 
+    <div class="small-2 columns">
+          <a href="#buildingIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         </div>
+    	<div class="small-9 small-push-4 columns">
+        	<h2  class="topHeader">EVENTS</h2>
+        </div> 
+    </div> 
+</div>
+
+<div class="contentNews">
+	<div class="row">
+    	<div class="small-10 small-centered columns">
+        	<h3 class="requestsSubHeader">CONTESTS</h3>
+        </div>
+    </div>
+	<div class="rulesContent">
+	<div class="row">
+    	<dl class="accordion" data-accordion>
+  			<dd>
+    					<a href="#panel29" onClick="highlightLink(this);"><span class="complaintText">Fanshawe's Got Talent</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    			<div id="panel29" class="content">
+      				<p class="dateColor">November 18</p>
+                    <p class="location">Forwell Hall</p>
+                    <p>Can you sing, play a musical instrument, juggle, dance or unicycle? Do you own, or have access to a ventriloquist dummy? If you answered yes to any of those questions, or possess another talent that you wish to show off, then we want you to enter the Fanshawe Student Union’s third annual Fanshawe’s Got Talent competition.</p>
+                    <a href="http://www.fsu.ca/events.php"><p>More Info</p></a>
+    			</div>
+               </dd>
+  					<dd>
+   						 <a href="#panel30" onClick="highlightLink(this);"><span class="complaintText">Knights Tickets</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel30" class="content">
+     							<p class="dateColor">October 3</p>
+                    <p class="location">Forwell Hall</p>
+                    <p>The Fanshawe Student Union is giving away two pairs of tickets to the London Knights’ game on October 3rd against the Kitchener Rangers. The game takes place at Budweiser Gardens, and starts at 7:30 pm.</p>
+                    <a href="http://www.fsu.ca/events.php"><p>More Info</p></a>
+    						</div>
+ 					 </dd>
+        			<dd>
+    					<a href="#panel31" onClick="highlightLink(this);"><span class="complaintText">NHL Pool</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel31" class="content">
+     							<p class="dateColor">September 15</p>
+                    <p class="location">Forwell Hall</p>
+                    <p>Open to all Fanshawe students. One entry per person and you could win up to $150 Downtown London Dollars!</p>
+                    <a href="http://www.fsu.ca/events.php"><p>More Info</p></a>
+    						</div>
+  					</dd>
+ 				 	<dd>
+    					<a href="#panel32" onClick="highlightLink(this);"><span class="complaintText">Microsoft Surface Tablet</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel32" class="content">
+     							 <p class="dateColor">September 15</p>
+                    <p class="location">Forwell Hall</p>
+                    <p>Simply enter with your email address and student number for a chance to win a Microsoft Surface Tablet. Must be a Full-Time student to enter.</p>
+                    <a href="http://www.fsu.ca/events.php"><p>More Info</p></a>
+    						</div>
+        			</dd>
+   		</dl>
+        </div>
+  </div> 
+</div>
+    
+
+<div class="bottomSectionEvents">
+	<div class="row">
+    	<div class="small-11  small-centered columns">
+    		<div class="small-4 columns">
+        		
+   	    			<a href="#eventsPage"><img src="img/programsIcon.png" alt="events"></a> 
+            			<h3 class="iconLabel">PROGRAMS</h3>
+        	
+        	</div>
+        	<div class="small-4 columns">
+        		
+            		<a href="#eventsPageSection"><img src="img/eventsPageIcon.png" alt="eventsPage"></a>
+            		<h3 class="iconLabel">EVENTS</h3>
+           		
+       		 </div>
+        	<div class="small-4 columns">
+        		 <div class="currentPage2">
+        		<a href="#contestsSection">
+            	<img src="img/contestsIcon.png" alt="contests"></a>
+            	<h3 class="iconLabel">CONTESTS</h3>
+                </div>
+       		 </div>
+        </div>
+    </div>
+ </div>
+</div><!--Contests Section End-->
+</div>
+
+
+
+
+
+<!--News Section-->
+
+<div data-role="page" id="newsIntro">
+
+<div class="section">
+	<div class="row">
+    	<div class="small-2 columns">
+        	<a href="#mainMenu">
+   	    	<img class="colorMenu" src="img/mainMenuButtonColor.png" alt="menu">
+            </a>
+         </div>
+    </div>
+	<div class="row">
+    	<div class="small-11 small-centered columns">
+   	    	<img class="dashBoardDummy" src="img/newsIntro.png" alt="News_Intro">
+         </div>
+    </div>
+    <div class="row">
+    	<div class="small-10 small-centered columns">
+   	    	<h2 class="newsHeader">NEWS</h2>
+         </div>
+    </div>
+</div>
+
+
+<div class="bottomSection">
+	<div class="row">
+    	<div class="small-11 small-centered columns">
+    	<div class="small-4 columns">
+   	    	<a href="#generalNoticesPage"><img src="img/generalNoticesIcon.png" alt="gen_notices"></a> 
+            <h3 class="iconLabel">GENERAL NOTICES</h3>
+        </div>
+        <div class="small-4 columns">
+        	<a href="#monthlyReportsPage"><img src="img/monthlyReportIcon.png" alt="monthly_reports"></a>
+            <h3 class="iconLabel">MONTHLY REPORTS</h3>
+        </div>
+        <div class="small-4 columns">
+        	<a href="#comingEventsPage"><img src="img/comingEventsIcon.png" alt="coming_events"></a>
+            <h3 class="iconLabel">COMING EVENTS</h3>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<div data-role="page" id="generalNoticesPage">
+
+<div class="section">
+<div class="topSection">
+	<div class="row"> 
+    <div class="small-2 columns">
+          <a href="#newsIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         </div>
+    	<div class="small-9 small-push-4 columns">
+        	<h2  class="topHeader">NEWS</h2>
+        </div> 
+    </div> 
+</div>
+
+<div class="contentNews">
+	<div class="row">
+    	<div class="small-12 small-centered columns">
+        	<h3 class="requestsSubHeader">GENERAL NOTICES</h3>
+        </div>
+    </div>
+	<div class="newsContent">
+	<div class="row">
+    	<dl class="accordion" data-accordion>
+  			<dd>
+    					<a href="#panel45" onClick="highlightLink(this);"><span class="complaintText">Program Registration Deadline</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    			<div id="panel45" class="content">
+      				<p class="dateColor">September 1</p>
+                    <p class="location">Office of the Registrar</p>
+                    <p>Be sure to register on time to ensure your place for the new school year. You may apply after the date indicated but your position is not guaranteed.</p>
+    			</div>
+               </dd>
+  					<dd>
+   						 <a href="#panel46" onClick="highlightLink(this);"><span class="complaintText">Intramural Registration Deadline</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel46" class="content">
+     							 <p class="dateColor">September 4</p>
+                    <p class="location">Athletics Office</p>
+                    <p>If you are looking to sign up for Fall Intramurals be sure to hand in your forms before the deadline! </p>
+                    <a href="http://http://www.fanshawec.ca/services/student-services/athletics/campus-recreation/intramural-program"><p>More Info</p></a>
+    						</div>
+ 					 </dd>
+        			<dd>
+    					<a href="#panel47" onClick="highlightLink(this);"><span class="complaintText">Resume Workshop</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel47" class="content">
+     							<p class="dateColor">September 4</p>
+                    <p class="location">Forwell Hall</p>
+                    <p>Looking to improve your resume to job hunt? Be sure to come to our resume workshop and have professionals look over yours and give you tips on how to improve it and stand out from the rest.</p>
+    						</div>
+  					</dd>
+ 				 	<dd>
+    					<a href="#panel48" onClick="highlightLink(this);"><span class="complaintText">Work Study Application Deadline</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel48" class="content">
+     							 <p class="dateColor">September 4</p>
+                    <p class="location">Financial Aid Office</p>
+                    <p>If you are looking to enroll in a work study program make sure you apply before the application stage closes. If you need assistance please see a Financial Aid Advisor.</p>
+                    <a href="http://http://www.fanshawec.ca/admissions/financial-aid/resources/work-study-program"><p>More Info</p></a>
+    						</div>
+        			</dd>
+   		</dl>
+        </div>
+  </div> 
+</div>
+    
+
+<div class="bottomSection">
+	<div class="row">
+    	<div class="small-11  small-centered columns">
+    		<div class="small-4 columns">
+        		<div class="currentPage2">
+   	    			<a href="#generalNoticesPage"><img src="img/generalNoticesIcon.png" alt="gen_notices"></a> 
+           			 <h3 class="iconLabel">GENERAL NOTICES</h3>
+        		</div>
+        	</div>
+        <div class="small-4 columns">
+        	
+            <a href="#monthlyReportsPage"><img src="img/monthlyReportIcon.png" alt="monthly_reports"></a>
+            <h3 class="iconLabel">MONTHLY REPORTS</h3>
+           
+        </div>
+        <div class="small-4 columns">
+         
+        	<a href="#comingEventsPage"><img src="img/comingEventsIcon.png" alt="coming_events"></a>
+            <h3 class="iconLabel">COMING EVENTS</h3>
+            
+           
+        </div>
+        </div>
+    </div>
+</div>
+</div><!--General Notices End-->
+</div>
+
+
+<div data-role="page" id="monthlyReportsPage">
+
+<div class="section">
+<div class="topSection">
+	<div class="row"> 
+    <div class="small-2 columns">
+          <a href="#newsIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         </div>
+    	<div class="small-9 small-push-4 columns">
+        	<h2  class="topHeader">NEWS</h2>
+        </div> 
+    </div> 
+</div>
+
+<div class="contentNews">
+	<div class="row">
+    	<div class="small-12 small-centered columns">
+        	<h3 class="requestsSubHeader">MONTHLY REPORT</h3>
+        </div>
+    </div>
+	<div class="newsContent">
+	<div class="row">
+    	<dl class="accordion" data-accordion>
+  			<dd>
+    					<a href="#panel49" onClick="highlightLink(this);"><span class="complaintText">Fanshawe's Mens Soccer Win!</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    			<div id="panel49" class="content">
+      				      <p class="dateColor">September 4</p>
+                    <p>Fanshawe's Mens soccer team takes on Niagara and come ontop with 3 points, they are hungry for their next win later this week.</p>
+                    <a href="http://http://www.fanshawec.ca/news-events"><p>More Info</p></a>
+    			</div>
+               </dd>
+  					<dd>
+   						 <a href="#panel50" onClick="highlightLink(this);"><span class="complaintText">Women's Volleyball Champions</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel50" class="content">
+     							<p class="dateColor">September 4</p>
+                    <p>The Falcon's Womens team destroys the tournament this weekend and bring home the trophy to London.</p>
+                    <a href="http://http://www.fanshawec.ca/news-events"><p>More Info</p></a>
+    						</div>
+ 					 </dd>
+        			<dd>
+    					<a href="#panel51" onClick="highlightLink(this);"><span class="complaintText">Don't Forget To Vote</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel51" class="content">
+     							<p class="dateColor">September 4</p>
+                    <p>FSU elections are right around the corner and with all the amazing posters you have seen around campus there is no way you can forget to vote, but in case you have forgotton be sure to check out how!</p>
+                    <a href="http://http://www.fanshawec.ca/news-events"><p>More Info</p></a>
+    						</div>
+  					</dd>
+ 				 	<dd>
+    					<a href="#panel52" onClick="highlightLink(this);"><span class="complaintText">Tutor Services</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel52" class="content">
+     							<p class="dateColor">September 4</p>
+                    <p>Feel like you could use a bit more help? Be sure to check out tutor services and get help immediately to crush your next test!</p>
+                    <a href="http://http://www.fanshawec.ca/news-events"><p>More Info</p></a>
+    						</div>
+        			</dd>
+   		</dl>
+        </div>
+  </div> 
+</div>
+    
+
+<div class="bottomSection">
+	<div class="row">
+    	<div class="small-11  small-centered columns">
+    		<div class="small-4 columns">
+        		
+   	    			<a href="#generalNoticesPage"><img src="img/generalNoticesIcon.png" alt="gen_notices"></a> 
+           			 <h3 class="iconLabel">GENERAL NOTICES</h3>
+        		
+        	</div>
+        <div class="small-4 columns">
+        	<div class="currentPage2">
+            <a href="#monthlyReportsPage"><img src="img/monthlyReportIcon.png" alt="monthly_reports"></a>
+            <h3 class="iconLabel">MONTHLY REPORTS</h3>
+           </div>
+        </div>
+        <div class="small-4 columns">
+         
+        	<a href="#comingEventsPage"><img src="img/comingEventsIcon.png" alt="coming_events"></a>
+            <h3 class="iconLabel">COMING EVENTS</h3>
+            
+            
+        </div>
+        </div>
+    </div>
+</div>
+</div><!--Monthly Report End-->
+</div>
+
+
+<div data-role="page" id="comingEventsPage">
+
+<div class="section">
+<div class="topSection">
+	<div class="row"> 
+    <div class="small-2 columns">
+          <a href="#newsIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         </div>
+    	<div class="small-9 small-push-4 columns">
+        	<h2  class="topHeader">NEWS</h2>
+        </div> 
+    </div> 
+</div>
+
+<div class="contentNews">
+	<div class="row">
+    	<div class="small-12 small-centered columns">
+        	<h3 class="requestsSubHeader">COMING EVENTS</h3>
+        </div>
+    </div>
+	<div class="newsContent">
+	<div class="row">
+    	<dl class="accordion" data-accordion>
+  			<dd>
+    					<a href="#panel53" onClick="highlightLink(this);"><span class="complaintText">Special Guest Speaker</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    			       <div id="panel53" class="content">
+                   <p class="dateColor">September 4</p>
+                    <p class="location">Downtown Campus</p>
+                    <p>Fanshawe's Media Design program has really been taking off and luckily we have a guest speaker coming to Fanshawe's new downtown campus to talk about the industry.</p>
+                    <a href="http://www.fsu.ca/events.php"><p>More Info</p></a>
+
+    			</div>
+               </dd>
+  					<dd>
+   						 <a href="#panel54" onClick="highlightLink(this);"><span class="complaintText">Heart &amp; Stroke Volunteers Needed</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel54" class="content">
+                  <p class="dateColor">September 4</p>
+                    <p class="location">M Building</p>
+                    <p>Looking to do some volunteer work for an amazing cause? Heart &amp; Stroke is looking for enthusiastic volunteers to help organizing and host a charity event.</p>
+                    <a href="http://www.fsu.ca/events.php"><p>More Info</p></a>
+    						</div>
+ 					 </dd>
+        			<dd>
+    					<a href="#panel55" onClick="highlightLink(this);"><span class="complaintText">Student Exchange Info Seminar</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel55" class="content">
+                  <p class="dateColor">September 4</p>
+                    <p class="location">Forwell Hall</p>
+                    <p>Thinking about doing somet studying abroad? Look no further, Student Exchange program is hosting an information seminar on different locations you can travel to. To find out more please click the link below.</p>
+                    <a href="http://www.fsu.ca/events.php"><p>More Info</p></a>
+    						</div>
+  					</dd>
+ 				 	<dd>
+    					<a href="#panel56" onClick="highlightLink(this);"><span class="complaintText">Dental Hygiene Awareness</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel56" class="content">
+                  <p class="dateColor">September 4</p>
+                    <p class="location">Outside of Fanshawe's Book Store</p>
+                    <p>Everybody loves a nice smile. Come to a Dental Hygiene awareness event on behalf of Fanshawe's Dental Hygenist program.</p>
+                    <a href="http://www.fsu.ca/events.php"><p>More Info</p></a>
+    						</div>
+        			</dd>
+   		</dl>
+        </div>
+  </div> 
+</div>
+    
+
+<div class="bottomSection">
+	<div class="row">
+    	<div class="small-11  small-centered columns">
+    		<div class="small-4 columns">
+        		
+   	    			<a href="#generalNoticesPage"><img src="img/generalNoticesIcon.png" alt="gen_notices"></a> 
+           			 <h3 class="iconLabel">GENERAL NOTICES</h3>
+        		
+        	</div>
+        <div class="small-4 columns">
+        	
+            <a href="#monthlyReportsPage"><img src="img/monthlyReportIcon.png" alt="monthly_reports"></a>
+            <h3 class="iconLabel">MONTHLY REPORTS</h3>
+           
+        </div>
+        <div class="small-4 columns">
+         	<div class="currentPage2">
+        	<a href="#comingEventsPage"><img src="img/comingEventsIcon.png" alt="coming_events"></a>
+            <h3 class="iconLabel">COMING EVENTS</h3>
+            </div>
+           
+        </div>
+        </div>
+    </div>
+</div>
+</div><!--Coming Events End-->
+</div>
+
+
+
+
+
+<!--Chat Section-->
+
+<div data-role="page" id="chatIntro">
+
+  <div class="section">
+	   <div class="row">
+    	   <div class="small-2 columns">
+        	   <a href="#mainMenu">
+   	    	   <img class="colorMenu" src="img/mainMenuButtonColor.png" alt="menu">
+            </a>
+         </div>
+      </div>
+	   <div class="row">
+    	   <div class="small-11 small-centered columns">
+   	    	   <img class="dashBoardDummy" src="img/largeChatIcon.png" alt="Chat_Intro">
+         </div>
+    </div>
+    <div class="row">
+    	<div class="small-10 small-centered columns">
+   	    	<h2 class="chatHeader">CHAT</h2>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bottomSectionChat">
+	   <div class="row">
+        	   <div class="small-4 small-centered columns">
+            	   <div class="currentPage">
+	    			        <a href="#chatFormSection"><img class="chatStart" src="img/largeStartIcon.png" alt="large_start"></a>
+                 </div>
+             </div>
+     </div>
+  </div>
+</div><!--End Chat Intro-->
+
+<div data-role="page" id="chatFormSection">
+
+<div class="section">
+	<div class="topSection">
+		<div class="row"> 
+    		<div class="small-2 columns">
+          		<a href="#chatIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         	</div>
+    		<div class="small-9 small-push-5 columns">
+        	<h2 class="topHeader">CHAT</h2>
+        	</div> 
+    	</div> 
+	</div>
+
+	<div class="contentChat">
+		<div class="row">
+    		<div class="small-4 small-centered columns">
+   		    	<img id="chatDummy" src="img/chatDummy.png" alt="chat_dummy"> 
+            </div>
+   		 </div>
+    
+    	<div class="row">
+        	<div class="small-10 small-centered columns">
+            	<h3 class="chatInformation">YOUR INFORMATION</h3>
+            </div>
+        </div>	
+        
+        <div class="row">
+        	<div class="small-12 columns">
+            	<div class="chatSeperator">
+                </div>
+            </div>
+        </div>
+	
+    
+    <div class="row">
+    	<div class="small-10 small-centered columns">
+        	<div class="chatForm">
+    		<form>
+        		<input type="text" name="yourName" placeholder="Your Name:">
+                <input type="text" name="building" placeholder="Building:">
+                <input type="text" name="apartment" placeholder="Apartment#:">
+                <textarea rows="4" cols="50" placeholder="Inquiry:"></textarea>
+        	</form>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+	<div class="bottomSectionChat">
+		<div class="row">
+    		<div class="small-11 small-centered columns">
+        		<div class="small-5 small-centered columns">
+            		<div class="currentPage">
+	    			<a href="#chatWindow"><img class="chatStart" src="img/largeStartIcon.png" alt="large_start"></a>
+                	</div>
+             	</div>
+         	</div>
+   	    </div>
+    </div>
+</div><!--Chat Form End-->
+</div>
+
+<div data-role="page" id="chatWindow">
+
+<div class="section">
+	<div class="topSection">
+		<div class="row"> 
+    		<div class="small-2 columns">
+          		<a href="#chatFormSection"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         	</div>
+    		<div class="small-9 small-push-5 columns">
+        	<h2 class="topHeader">CHAT</h2>
+        	</div> 
+    	</div> 
+	</div>
+
+	<div  id="chatScroll" class="content">
+		<div class="row">
+    		<div class="small-10 small-push-3 columns">
+        		<div class="chatFloatLeft">
+            		<p class="operatorTitle">OPERATOR</p><br><p class="operatorMessage">Hello, how can I help you today?</p>
+           		 </div>
+        	</div>
+    	</div>
+        <div class="row">
+        	<div class="chatConvoSeperator">
+            </div>
+        </div>
+        <div class="row">
+    		<div class="small-9 columns">
+        		<div class="chatFloatRight">
+            		<p class="operatorTitle">USER NAME</p><br><p class="operatorMessage">Hello, I am very unsure of where to go to print off some documents needed for class.</p>
+           		 </div>
+        	</div>
+            <div class="small-3 columns">
+       	    	<img class="chatDummyIcon" src="img/userNameDummy.png" alt="username"> 
+            </div>
+    	</div>
+        
+        
+        <div class="row">
+        	<div class="chatConvoSeperator">
+            </div>
+        </div>
+        <div class="row">
+        	<div class="small-3 columns">
+       	    	<img class="chatDummyIcon" src="img/operatorDummyIcon.png" alt="username"> 
+            </div>
+        	
+    		<div class="small-9 columns">
+        		<div class="chatFloatLeft">
+            		<p class="operatorTitle">OPERATOR</p><br><p class="operatorMessage">Alright, let me look that up for you. Could I start by getting your location?</p>
+           		 </div>
+        	</div>
+            
+    	</div>
+        
+        <div class="row">
+        	<div class="chatConvoSeperator">
+            </div>
+        </div>
+        
+       
+        <div class="row">
+    		<div class="small-9 columns">
+        		<div class="chatFloatRight">
+            		<p class="operatorTitle">USER NAME</p><br><p class="operatorMessage">I am currently sitting in Alumni Lounge roughly above the pharmacy.</p>
+           		 </div>
+        	</div>
+            <div class="small-3 columns">
+       	    	<img class="chatDummyIcon" src="img/userNameDummy.png" alt="username"> 
+            </div>
+    	</div>
+        
+        
+        <div class="row">
+        	<div class="chatConvoSeperator">
+            </div>
+        </div>
+         <div class="row">
+        	<div class="small-3 columns">
+       	    	<img class="chatDummyIcon" src="img/operatorDummyIcon.png" alt="username"> 
+            </div>
+        	
+    		<div class="small-9 columns">
+        		<div class="chatFloatLeft">
+            		<p class="operatorTitle">OPERATOR</p><br><p class="operatorMessage">Looks like that nearest lab with a printer is just after Outback Shack before Forwell Hall.</p>
+           		 </div>
+        	</div>
+            
+    	</div>
+        
+        <div class="row">
+        	<div class="chatConvoSeperator">
+            </div>
+        </div>
+        
+        <div class="row">
+    		<div class="small-9 columns">
+        		<div class="chatFloatRight">
+            		<p class="operatorTitle">USER NAME</p><br><p class="operatorMessage">Thank you for your help!</p>
+           		 </div>
+        	</div>
+            <div class="small-3 columns">
+       	    	<img class="chatDummyIcon" src="img/userNameDummy.png" alt="username"> 
+            </div>
+    	</div>
+        
+        
+    </div>
+</div>
+    
+
+	<div class="bottomSection">
+		<div class="row">
+    		
+            	<div class="chatInputSection">
+           	    	<img id="addAttachments" src="img/addAttachmentsIcon.png" alt="addAttachments"> 
+              
+            	<div class="small-9 small-centered columns">
+        		<form id="chatInput">
+                	<textarea rows="4" cols="50" placeholder="Your Text Here:"></textarea>
+                </form>
+                </div>
+                
+                	<img id="chatSendButton" src="img/chatSendButton.png" alt="chatsend"> 
+                </div>
+         	
+   	    </div>
+   
+</div><!--Chat Window End-->
+</div>
+
+
+<div data-role="page" id="fsuIntro">
+	<div class="section">
+		<div class="row">
+    		<div class="small-2 columns">
+        		<a href="#mainMenu">
+   	    			<img class="colorMenu" src="img/mainMenuButtonColor.png" alt="menu">
+            	</a>
+         	</div>
+    	</div>
+		<div class="row">
+    		<div class="small-11 small-centered columns">
+   	    		<img class="dashBoardDummy" src="img/fsuLargeIcon.png" alt="fsu_Intro">
+         	</div>
+    	</div>
+    	<div class="row">
+    		<div class="small-10 small-centered columns">
+   	    		<h2 class="fsuHeader"><span class="fanshawe">FANSHAWE</span><br>STUDENT UNION<br></h2>
+                
+         	</div>
+    	</div>
+	</div><!--End Section-->
+		<div class="bottomSectionFSU">
+			<div class="row">
+    			<div class="small-11 small-centered columns">
+    				<div class="small-4 columns">
+   	    				<a href="#fsuEventsPage"><img src="img/eventsPageIcon.png" alt="fsuEvents"></a> 
+            			<h3 class="iconLabel">EVENTS</h3>
+       		 		</div>
+        			<div class="small-4 columns">
+        				<a href="#fsuContestsPage"><img src="img/contestsIcon.png" alt="fsuContests"></a>
+            			<h3 class="iconLabel">CONTESTS</h3>
+        			</div>
+        			<div class="small-4 columns">
+        				<a href="#fsuInfoPage"><img src="img/infoIcon.png" alt="fsuInfo"></a>
+            			<h3 class="iconLabel">INFO</h3>
+       				</div>
+        		</div>
+    		</div>
+		</div>
+</div> <!--data-page end-->
+
+
+
+
+<div data-role="page" id="fsuEventsPage">
+	<div class="section">
+		<div class="topSection">
+			<div class="row"> 
+    			<div class="small-2 columns">
+          			<a href="#fsuIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         		</div>
+    			<div class="small-9 small-push-5 columns">
+        			<h2 class="topHeader">FSU</h2>
+        		</div> 
+    		</div> 
+		</div><!--End top Section-->
+		<div class="contentNews">
+			<div class="row">
+    			<div class="small-12 small-centered columns">
+        			<h3 class="requestsSubHeader">EVENTS</h3>
+        		</div>
+    		</div>
+				<div class="fsuContent">
+					<div class="row">
+    					<dl class="accordion" data-accordion>
+  							<dd>
+    							<a href="#panel57" onClick="highlightLink(this);"><span class="complaintText">Frosh Week</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						    <div id="panel57" class="content">
+                    <p class="dateColor">September 4</p>
+                    <p class="location">Main Campus</p>
+                    <p>The school year has begun once again and that means FROSH week is upon us. Be sure to look up when your orientation is for your program. Don't miss out on all the good things Fanshawe has to offer. Sign up today! </p>
+                    <a href="http://www.fsu.ca/events.php"><p>More Info</p></a>
+                    <label>Who can come: </label> <input type="text" placeholder="everyone">
+    						    </div>
+               	</dd>
+  							<dd>
+   						 		<a href="#panel58" onClick="highlightLink(this);"><span class="complaintText">Pub Night</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    							<div id="panel58" class="content">
+                    <p class="dateColor">September 4</p>
+                    <p class="location">Outback Shack</p>
+                    <p>What is better then being done class early and having the rest of the day to do whatever? A pub night! Join us at Outback Shack for some drinks and socialize with your new classmates. $3 cover at the door. 19+ event.</p>
+                    <a href="http://www.fsu.ca/events.php"><p>More Info</p></a>
+                    <label>Who can come: </label> <input type="text" placeholder="everyone">
+    							</div>
+ 					 		</dd>
+        					<dd>
+    							<a href="#panel59" onClick="highlightLink(this);"><span class="complaintText">Canned Food Drive</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    							<div id="panel59" class="content">
+                    <p class="dateColor">September 4</p>
+                    <p class="location">Forwell Hall</p>
+                    <p>Help those in need by bringing some canned goods to donate. Please bring only non-perishable items and remember that EVERY can counts!</p>
+                    <a href="http://www.fsu.ca/events.php"><p>More Info</p></a>
+                    <label>Who can come: </label> <input type="text" placeholder="everyone">
+    							</div>
+  							</dd>
+ 				 			<dd>
+    							<a href="#panel60" onClick="highlightLink(this);"><span class="complaintText">FSU Bake Sale</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    							<div id="panel60" class="content">
+                    <p class="dateColor">September 4</p>
+                    <p class="location">Oasis</p>
+                    <p>Fanshawe Mens soccer team needs your help! They need to raise enough to enter a tournament in a few months. So they all put on their aprons and got to baking. Come support your schools soccer team and buy some baked goods.</p>
+                    <a href="http://www.fsu.ca/events.php"><p>More Info</p></a>
+                    <label>Who can come: </label> <input type="text" placeholder="everyone">
+    							</div>
+        					</dd>
+   						</dl>
+        			</div>
+  				</div><!--End FSU Content--> 
+		</div><!--End Content-->
+    			<div class="bottomSectionFSU">
+					<div class="row">
+    					<div class="small-11 small-centered columns">
+    						<div class="small-4 columns">
+            					<div class="currentPage2">
+   	    							<a href="#fsuEventsPage"><img src="img/eventsPageIcon.png" alt="fsuEvents"></a> 
+            							<h3 class="iconLabel">EVENTS</h3>
+                				</div>
+       		 				</div>
+        					<div class="small-4 columns">
+        						<a href="#fsuContestsPage"><img src="img/contestsIcon.png" alt="fsuContests"></a>
+            					<h3 class="iconLabel">CONTESTS</h3>
+        					</div>
+        					<div class="small-4 columns">
+        						<a href="#fsuInfoPage"><img src="img/infoIcon.png" alt="fsuInfo"></a>
+            					<h3 class="iconLabel">INFO</h3>
+        					</div>
+        				</div>
+    				</div>
+                 </div>
+	</div><!--Section End-->
+</div><!--FSU EVENTS Page Container End-->
+
+
+<div data-role="page" id="fsuContestsPage">
+	<div class="section">
+		<div class="topSection">
+			<div class="row"> 
+    			<div class="small-2 columns">
+          			<a href="#fsuIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         		</div>
+    			<div class="small-9 small-push-5 columns">
+        			<h2  class="topHeader">FSU</h2>
+        		</div> 
+    		</div> 
+		</div>
+		<div class="contentNews">
+			<div class="row">
+    			<div class="small-12 small-centered columns">
+        			<h3 class="requestsSubHeader">CONTESTS</h3>
+        		</div>
+    		</div>
+				<div class="fsuContent">
+					<div class="row">
+    					<dl class="accordion" data-accordion>
+  							<dd>
+    							<a href="#panel61" onClick="highlightLink(this);"><span class="complaintText">Video Game Contest</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel61" class="content">
+                  <p class="dateColor">September 4</p>
+                    <p class="location">Forwell Hall</p>
+                    <p>Show what you got in an array of video games to choose from. Contests for different kind of games will be on going all day, $5 entry per contestant. Please sign up at Biz Booth.</p>
+                    <a href="http://fsu.ca/contests.php"><p>More Info</p></a>
+                    <label>Who can come: </label> <input type="text" placeholder="everyone">
+    						</div>
+               				</dd>
+  							<dd>
+   						 		<a href="#panel62" onClick="highlightLink(this);"><span class="complaintText">Fanshawe Fashion Showcase</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    							<div id="panel62" class="content">
+                    <p class="dateColor">September 4</p>
+                    <p class="location">H Building</p>
+                    <p>There is nothing wrong with a little competition, come join us as we see what Fanshawe's Fashion program has been up to in a fun competition where the audience will vote on the best fashion pieces.</p>
+                    <a href="http://fsu.ca/contests.php"><p>More Info</p></a>
+                    <label>Who can come: </label> <input type="text" placeholder="everyone">
+    							</div>
+ 					 		</dd>
+        					<dd>
+    							<a href="#panel63" onClick="highlightLink(this);"><span class="complaintText">FSU BBQ</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    							<div id="panel63" class="content">
+                    <p class="dateColor">September 4</p>
+                    <p class="location">Outside of Forwell Hall</p>
+                    <p>Let's kick off the year with a bbq! FSU is hosting an amazing bbq for all students to welcome you to Fanshawe, stop by and chat with faculty or FSU representitives.</p>
+                    <a href="http://fsu.ca/contests.php"><p>More Info</p></a>
+                    <label>Who can come: </label> <input type="text" placeholder="everyone">
+    							</div>
+  							</dd>
+ 				 			<dd>
+    							<a href="#panel64" onClick="highlightLink(this);"><span class="complaintText">Scavenger Hunt</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    							<div id="panel64" class="content">
+                    <p class="dateColor">September 4</p>
+                    <p class="location">Main Campus</p>
+                    <p>FSU presents its first Scavenger Hunt. Sign up at the FSU office and on the date indicated participate in hunting down different objects throughout campus to complete your list.</p>
+                    <a href="http://fsu.ca/contests.php"><p>More Info</p></a>
+                    <label>Who can come: </label> <input type="text" placeholder="everyone">
+    							</div>
+        					</dd>
+   						</dl>
+        			</div>
+  				</div> <!--End FSU Content-->
+		</div><!--End Content-->
+    		<div class="bottomSectionFSU">
+    			<div class="row">
+    				<div class="small-11 small-centered columns">
+    					<div class="small-4 columns">
+   	    					<a href="#fsuEventsPage"><img src="img/eventsPageIcon.png" alt="fsuEvents"></a> 
+            				<h3 class="iconLabel">EVENTS</h3>
+       		 			</div>
+        				<div class="small-4 columns">
+        					<div class="currentPage2">
+        						<a href="#fsuContestsPage"><img src="img/contestsIcon.png" alt="fsuContests"></a>
+            					<h3 class="iconLabel">CONTESTS</h3>
+            				</div>
+        				</div>
+        				<div class="small-4 columns">
+        					<a href="#fsuInfoPage"><img src="img/infoIcon.png" alt="fsuInfo"></a>
+            				<h3 class="iconLabel">INFO</h3>
+        				</div>
+        			</div>
+    			</div>
+            </div>
+	</div><!--End Section-->
+</div><!--FSU Contests End-->
+
+
+<div data-role="page" id="fsuInfoPage">
+	<div class="section">
+		<div class="topSection">
+			<div class="row"> 
+    			<div class="small-2 columns">
+         	 		<a href="#fsuIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+        	 	</div>
+    			<div class="small-9 small-push-5 columns">
+        			<h2 class="topHeader">FSU</h2>
+                </div>
+        	</div> 
+    	</div> 
+	</div>
+	<div class="contentNews">
+		<div class="row">
+    		<div class="small-12 small-centered columns">
+        		<h3 class="requestsSubHeader">INFO</h3>
+        	</div>
+    	</div>
+			<div class="fsuContent">
+				<div class="row">
+    				<dl class="accordion" data-accordion>
+  						<dd>
+    						<a href="#panel65" onClick="highlightLink(this);"><span class="complaintText">Information Seminar</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel65" class="content">
+                  <p class="dateColor">September 4</p>
+                    <p class="location">Gym 3</p>
+                    <p>Want to know everything that Fanshawe has to offer? Come to our information seminar where we cover all the important opportunities Fanshawe has to offer and even get a tour of some of the major parts of campus.</p>
+                    <a href="http://www.fanshawec.ca/about-us/why-fanshawe"><p>More Info</p></a>
+                    <label>Who can come: </label> <input type="text" placeholder="everyone">
+    						</div>
+               			</dd>
+  						<dd>
+   						 	<a href="#panel66" onClick="highlightLink(this);"><span class="complaintText">Where to shop?</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel66" class="content">
+                  <p class="dateColor">September 4</p>
+                    <p class="location">City of London</p>
+                    <p>Looking to get some shopping done? Whether its groceries or clothing, London has alot to offer and can cater to any students needs. Be sure to check out the malls and boutiques to find what you need.</p>
+                    <a href="http://www.londontourism.ca/Things-To-Do/Retail-Stores"><p>More Info</p></a>
+    						</div>
+ 					 	</dd>
+        				<dd>
+    						<a href="#panel67" onClick="highlightLink(this);"><span class="complaintText">Need Help?</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel67" class="content">
+                  <p class="dateColor">September 4</p>
+                    <p class="location">FSU Office</p>
+                    <p>If you have any questions do not hesitate to contact an FSU staff member. </p>
+                    <a href="http://fsu.ca/council_staff.php"><p>More Info</p></a>
+    						</div>
+  						</dd>
+ 				 		<dd>
+    						<a href="#panel68" onClick="highlightLink(this);"><span class="complaintText">FSU Newsletter</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel68" class="content">
+                  <p class="dateColor">September 4</p>
+                    <p class="location">FSU Office</p>
+                    <p>Find out what the latest news is on campus by checking out Fanshawe's Interrobang. Click the link below to view the latest issue.</p>
+                    <a href="http://fsu.ca/publications.php"><p>More Info</p></a>
+     							 Don't forget to check out this months College newspaper.
+    						</div>
+        				</dd>
+   					</dl>
+        		</div>
+  			</div> <!--End FSU Content-->
+	</div><!--End Content-->
+    <div class="bottomSectionFSU">
+		<div class="row">
+    		<div class="small-11 small-centered columns">
+    			<div class="small-4 columns">
+   	    			<a href="#fsuEventsPage"><img src="img/eventsPageIcon.png" alt="fsuEvents"></a> 
+            		<h3 class="iconLabel">EVENTS</h3>
+       			 </div>
+        		<div class="small-4 columns">
+        			<a href="#fsuContestsPage"><img src="img/contestsIcon.png" alt="fsuContests"></a>
+            		<h3 class="iconLabel">CONTESTS</h3>
+        		</div>
+        		<div class="small-4 columns">
+        			<div class="currentPage2">
+        				<a href="#fsuInfoPage"><img src="img/infoIcon.png" alt="fsuInfo"></a>
+            			<h3 class="iconLabel">INFO</h3>
+            		</div>
+        		</div>
+        	</div>
+    	</div>
+	</div>
+</div><!--FSU Info End-->
+
+<div data-role="page" id="generalInfoIntro">
+
+<div class="section">
+	<div class="row">
+    	<div class="small-2 columns">
+        	<a href="#mainMenu">
+   	    	<img class="colorMenu" src="img/mainMenuButtonColor.png" alt="menu">
+            </a>
+         </div>
+    </div>
+	<div class="row">
+    	<div class="small-11 small-centered columns">
+   	    	<img class="dashBoardDummy" src="img/generalInfoIcon.png" alt="fsu_Intro">
+         </div>
+    </div>
+    <div class="row">
+    	<div class="small-10 small-centered columns">
+   	    	<h2 class="genInfoHeader"><span class="fanshawe">GENERAL</span><br>INFORMATION</h2>
+         </div>
+    </div>
+</div>
+
+
+<div class="bottomSection">
+	<div class="row">
+    	<div class="small-11 small-centered columns">
+    		<div class="small-4 columns">
+   	    		<a href="#genInfoCity"><img src="img/cityGuideIcon.png" alt="fsuEvents"></a> 
+            	<h3 class="iconLabel">CITY<br>GUIDE</h3>
+       		 </div>
+        <div class="small-4 columns">
+        	<a href="#genInfoBus"><img src="img/busIcon.png" alt="fsuContests"></a>
+            <h3 class="iconLabel">LTC</h3>
+        </div>
+        <div class="small-4 columns">
+        	<a href="#genInfoDirectory"><img src="img/directoryIcon.png" alt="fsuInfo"></a>
+            <h3 class="iconLabel">DIRECTORY</h3>
+        </div>
+        </div>
+    </div>
+</div>
+</div><!--data-page end-->
+
+
+<div data-role="page" id="genInfoCity">
+
+<div class="section">
+	<div class="topSection">
+		<div class="row"> 
+    		<div class="small-2 columns">
+         	 <a href="#generalInfoIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+        	 </div>
+    		<div class="small-9 small-push-1 columns">
+        		<h2  class="topHeader">GENERAL INFO</h2>
+                </div>
+        </div> 
+    </div> 
+</div>
+
+<div class="contentNews">
+	<div class="row">
+    	<div class="small-12 small-centered columns">
+        	<h3 class="requestsSubHeader">CITY GUIDE</h3>
+        </div>
+    </div>
+	<div class="genInfoContent">
+	<div class="row">
+    	<dl class="accordion">
+  			<dd>
+    					<a href="#eventsCity" onClick="highlightLink(this);"><span class="complaintText">EVENTS</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+               </dd>
+               <div class="classifiedsDivider">
+               </div>
+  					<dd>
+   						 <a href="#entertainmentCity" onClick="highlightLink(this);"><span class="complaintText">ENTERTAINMENT</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+ 					 </dd>
+                     <div class="classifiedsDivider">
+               </div>
+        			<dd>
+    					<a href="#moviesCity" onClick="highlightLink(this);"><span class="complaintText">MOVIES</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+  					</dd>
+                    <div class="classifiedsDivider">
+               </div>
+ 				 	<dd>
+    					<a href="#restaurantsCity" onClick="highlightLink(this);"><span class="complaintText">RESTAURANTS</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+        			</dd>
+   		</dl>
+        </div>
+  </div> 
+</div>
+    
+
+<div class="bottomSection">
+	
+    <div class="row">
+    	<div class="small-11 small-centered columns">
+    		<div class="small-4 columns">
+            	<div class="currentPage2">
+   	    		<a href="#genInfoCity"><img src="img/cityGuideIcon.png" alt="fsuEvents"></a> 
+            	<h3 class="iconLabel">CITY<br>GUIDE</h3>
+                </div>
+       		 </div>
+        <div class="small-4 columns">
+        	<a href="#genInfoBus"><img src="img/busIcon.png" alt="fsuContests"></a>
+            <h3 class="iconLabel">LTC</h3>
+        </div>
+        <div class="small-4 columns">
+        	<a href="#genInfoDirectory"><img src="img/directoryIcon.png" alt="fsuInfo"></a>
+            <h3 class="iconLabel">DIRECTORY</h3>
+        </div>
+        </div>
+    </div>
+	
+</div><!--Gen Info City Guide End-->
+</div>
+
+<div data-role="page" id="eventsCity">
+
+<div class="section">
+  <div class="topSection">
+    <div class="row"> 
+        <div class="small-2 columns">
+           <a href="#genInfoCity"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+           </div>
+        <div class="small-9 small-push-2 columns">
+            <h2  class="topHeader">CITY GUIDE</h2>
+                </div>
+        </div> 
+    </div> 
+</div>
+
+<div class="contentNews">
+  <div class="row">
+      <div class="small-12 small-centered columns">
+          <h3 class="requestsSubHeader">EVENTS</h3>
+        </div>
+    </div>
+  <div class="genInfoContent">
+  <div class="row">
+      <dl class="accordion" data-accordion>
+        <dd>
+              <a href="#panel73" onClick="highlightLink(this);"><span class="complaintText">Road Hockey Tournament</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+          <div id="panel73" class="content">
+              <p class="dateColor">September 4</p>
+                    <p class="location">Victoria Park</p>
+                    <p>4th Annual 3 on 3 hockey tournament in the heart of downtown London. Plenty of fun activities for the family and a variety of delicious foods to enjoy. </p>
+                    <a href="http://www.londontourism.ca/Events"><p>More Info</p></a>
+          </div>
+               </dd>
+               <div class="classifiedsDivider">
+               </div>
+            <dd>
+               <a href="#panel74" onClick="highlightLink(this);"><span class="complaintText">Color Run</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+                <div id="panel74" class="content">
+                   <p class="dateColor">September 4</p>
+                    <p class="location">TBA</p>
+                    <p>We can’t wait to see you! Below is all the information you will need to be ready for race day. Grab your tutus, your friends, and your running shoes and we’ll see you at the start line! </p>
+                    <a href="http://ca.thecolorrun.com/"><p>More Info</p></a>
+                </div>
+           </dd>
+                     <div class="classifiedsDivider">
+               </div>
+              <dd>
+              <a href="#panel75" onClick="highlightLink(this);"><span class="complaintText">Harvest Festival</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+                <div id="panel75" class="content">
+                  <p class="dateColor">October 4</p>
+                    <p class="location">Victoria Park</p>
+                    <p>Come enjoy plenty of activities for the family from a corn maze to bobbing for apples there is fun for everyone! </p>
+                    <a href="http://www.londontourism.ca/Events"><p>More Info</p></a>
+                 </div>
+            </dd>
+                    <div class="classifiedsDivider">
+               </div>
+          <dd>
+              <a href="#panel76" onClick="highlightLink(this);"><span class="complaintText">Ice Rink Opening</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+                <div id="panel76" class="content">
+                   <p class="dateColor">November 14</p>
+                    <p class="location">Victoria Park</p>
+                    <p>Join us in the opening of the public skating rink in Victoria Park and join in on the fun. Don't have skates? That's fine we offer skate rentals. </p>
+                    <a href="http://www.londontourism.ca/Events"><p>More Info</p></a>
+                 </div>
+              </dd>
+      </dl>
+        </div>
+  </div> 
+</div>
+    
+
+<div class="bottomSection">
+  
+    <div class="row">
+      <div class="small-11 small-centered columns">
+        <div class="small-4 columns">
+              <div class="currentPage2">
+            <a href="#genInfoCity"><img src="img/cityGuideIcon.png" alt="fsuEvents"></a> 
+              <h3 class="iconLabel">CITY<br>GUIDE</h3>
+                </div>
+           </div>
+        <div class="small-4 columns">
+          <a href="#genInfoBus"><img src="img/busIcon.png" alt="fsuContests"></a>
+            <h3 class="iconLabel">LTC</h3>
+        </div>
+        <div class="small-4 columns">
+          <a href="#genInfoDirectory"><img src="img/directoryIcon.png" alt="fsuInfo"></a>
+            <h3 class="iconLabel">DIRECTORY</h3>
+        </div>
+        </div>
+    </div>
+  
+</div><!--Gen Info City Guide End-->
+</div>
+
+<div data-role="page" id="entertainmentCity">
+
+<div class="section">
+  <div class="topSection">
+    <div class="row"> 
+        <div class="small-2 columns">
+           <a href="#genInfoCity"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+           </div>
+        <div class="small-9 small-push-1 columns">
+            <h2  class="topHeader">CITY GUIDE</h2>
+                </div>
+        </div> 
+    </div> 
+</div>
+
+<div class="contentNews">
+  <div class="row">
+      <div class="small-12 small-centered columns">
+          <h3 class="requestsSubHeader">ENTERTAINMENT</h3>
+        </div>
+    </div>
+  <div class="genInfoContent">
+  <div class="row">
+      <dl class="accordion" data-accordion>
+        <dd>
+              <a href="#panel77" onClick="highlightLink(this);"><span class="complaintText">Tuesday Night is Movie Night</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+          <div id="panel77" class="content">
+              <p class="dateColor">Every Tuesday</p>
+              <p class="location">All Cineplex Theatre Locations</p>
+              <p>Nothing like a night to go see a movie and tickets are half off! Be sure to line up early to ensure the best seat in the house! </p>
+              <a href="http://www.cineplex.com"><p>More Info</p></a>
+          </div>
+               </dd>
+               <div class="classifiedsDivider">
+               </div>
+            <dd>
+               <a href="#panel78" onClick="highlightLink(this);"><span class="complaintText">Comedy Night</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+                <div id="panel78" class="content">
+                  <p class="dateColor">September 23</p>
+                  <p class="location">Forwell Hall</p>
+                  <p>Laugh until your cheeks hurt, September 23 is Comedy Night at Fanshawe College. Join us as we host several comedians to entertain you. $5 per person </p>
+                  <a href="http://fsu.ca/events.php"><p>More Info</p></a>
+                </div>
+           </dd>
+                     <div class="classifiedsDivider">
+               </div>
+              <dd>
+              <a href="#panel79" onClick="highlightLink(this);"><span class="complaintText">Kenny Vs Spenny Live</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+                <div id="panel79" class="content">
+                  <p class="dateColor">October 14</p>
+                  <p class="location">Forwell Hall</p>
+                  <p>An interactive evening with two of Canada's comedic pioneers. Q and A, heated debates and of course possible and random humiliations. Get your tickets at the Biz Booth.</p>
+                  <a href="http://fsu.ca/events.php"><p>More Info</p></a>
+                </div>
+            </dd>
+                    <div class="classifiedsDivider">
+               </div>
+          <dd>
+              <a href="#panel80" onClick="highlightLink(this);"><span class="complaintText">Tony Lee and Stevie Starr</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+                <div id="panel80" class="content">
+                  <p class="dateColor">October 17</p>
+                  <p class="location">Forwell Hall</p>
+                  <p>Back by popular demand are two of the most popular performers to ever visit Fanshawe. X-rated hypnotist Tony Lee returns to Fanshawe to put on a show that is always one of the most outrageous,</p>
+                  <a href="http://fsu.ca/events.php"><p>More Info</p></a>
+                </div>
+              </dd>
+      </dl>
+        </div>
+  </div> 
+</div>
+    
+
+<div class="bottomSection">
+  
+    <div class="row">
+      <div class="small-11 small-centered columns">
+        <div class="small-4 columns">
+              <div class="currentPage2">
+            <a href="#genInfoCity"><img src="img/cityGuideIcon.png" alt="fsuEvents"></a> 
+              <h3 class="iconLabel">CITY<br>GUIDE</h3>
+                </div>
+           </div>
+        <div class="small-4 columns">
+          <a href="#genInfoBus"><img src="img/busIcon.png" alt="fsuContests"></a>
+            <h3 class="iconLabel">LTC</h3>
+        </div>
+        <div class="small-4 columns">
+          <a href="#genInfoDirectory"><img src="img/directoryIcon.png" alt="fsuInfo"></a>
+            <h3 class="iconLabel">DIRECTORY</h3>
+        </div>
+        </div>
+    </div>
+  
+</div><!--Gen Info City Guide End-->
+</div>
+
+<div data-role="page" id="moviesCity">
+
+<div class="section">
+  <div class="topSection">
+    <div class="row"> 
+        <div class="small-2 columns">
+           <a href="#genInfoCity"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+           </div>
+        <div class="small-9 small-push-1 columns">
+            <h2  class="topHeader">CITY GUIDE</h2>
+                </div>
+        </div> 
+    </div> 
+</div>
+
+<div class="contentNews">
+  <div class="row">
+      <div class="small-12 small-centered columns">
+          <h3 class="requestsSubHeader">MOVIES</h3>
+        </div>
+    </div>
+  <div class="genInfoContent">
+  <div class="row">
+      <dl class="accordion" data-accordion>
+        <dd>
+              <a href="#panel81" onClick="highlightLink(this);"><span class="complaintText">The Equalizer</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+          <div id="panel81" class="content">
+                  <p class="dateColor">October 1</p>
+                  <p class="time">6:30pm</p>
+                  <p class="location">Rainbow Cinemas (CITI Plaza)</p>
+                  <p>The October 1st film is The Equalizer. Denzel Washington plays McCall, a man who believes he has put his mysterious past behind him and dedicated himself to beginning a new, quiet life. But when McCall meets Teri, a young girl under the control of ultra-violent Russian gangsters, he can't stand idly by - he has to help her.</p>
+                  <a href="http://fsu.ca/calendar.php"><p>More Info</p></a>
+          </div>
+               </dd>
+               <div class="classifiedsDivider">
+               </div>
+            <dd>
+               <a href="#panel82" onClick="highlightLink(this);"><span class="complaintText">Gone Girl</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+                <div id="panel82" class="content">
+                   <p class="dateColor">October 8</p>
+                   <p class="time">6:30pm</p>
+                  <p class="location">Rainbow Cinemas (CITI Plaza)</p>
+                  <p>The October 8th film is Gone Girl. On the occasion of his fifth wedding anniversary, Nick Dunne (Ben Affleck) reports that his beautiful wife has gone missing. Under pressure from the police and a growing media frenzy, Nick's portrait of a blissful union begins to crumble. Soon his lies, deceits and strange behavior have everyone asking the same dark question: Did Nick Dunne kill his wife? </p>
+                  <a href="http://fsu.ca/calendar.php"><p>More Info</p></a>
+                </div>
+           </dd>
+                     <div class="classifiedsDivider">
+               </div>
+              <dd>
+              <a href="#panel83" onClick="highlightLink(this);"><span class="complaintText">Dracula Untold</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+                <div id="panel83" class="content">
+                  <p class="dateColor">October 15</p>
+                  <p class="time">7:00pm</p>
+                  <p class="location">Rainbow Cinemas (CITI Plaza)</p>
+                  <p>The October 15th film is Dracula Untold, the origin story of the man who became Dracula.</p>
+                  <a href="http://fsu.ca/calendar.php"><p>More Info</p></a>
+                </div>
+            </dd>
+                    <div class="classifiedsDivider">
+               </div>
+          <dd>
+              <a href="#panel84" onClick="highlightLink(this);"><span class="complaintText">The Judge</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+                <div id="panel84" class="content">
+                   <p class="dateColor">October 22</p>
+                   <p class="time">6:30pm</p>
+                  <p class="location">Rainbow Cinemas (CITI Plaza)</p>
+                  <p>The October 1st film is The Judge. A big-city lawyer returns home after the death of his mother, only to learn that his estranged father, the town's judge, is suspected of murder. He sets out to discover the truth and along the way reconnects with the family he walked away from years before. </p>
+                  <a href="http://fsu.ca/calendar.php"><p>More Info</p></a>
+                </div>
+              </dd>
+      </dl>
+        </div>
+  </div> 
+</div>
+    
+
+<div class="bottomSection">
+  
+    <div class="row">
+      <div class="small-11 small-centered columns">
+        <div class="small-4 columns">
+              <div class="currentPage2">
+            <a href="#genInfoCity"><img src="img/cityGuideIcon.png" alt="fsuEvents"></a> 
+              <h3 class="iconLabel">CITY<br>GUIDE</h3>
+                </div>
+           </div>
+        <div class="small-4 columns">
+          <a href="#genInfoBus"><img src="img/busIcon.png" alt="fsuContests"></a>
+            <h3 class="iconLabel">LTC</h3>
+        </div>
+        <div class="small-4 columns">
+          <a href="#genInfoDirectory"><img src="img/directoryIcon.png" alt="fsuInfo"></a>
+            <h3 class="iconLabel">DIRECTORY</h3>
+        </div>
+        </div>
+    </div>
+  
+</div><!--Gen Info City Guide End-->
+</div>
+
+<div data-role="page" id="restaurantsCity">
+
+<div class="section">
+  <div class="topSection">
+    <div class="row"> 
+        <div class="small-2 columns">
+           <a href="#genInfoCity"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+           </div>
+        <div class="small-9 small-push-1 columns">
+            <h2  class="topHeader">CITY GUIDE</h2>
+                </div>
+        </div> 
+    </div> 
+</div>
+
+<div class="contentNews">
+  <div class="row">
+      <div class="small-12 small-centered columns">
+          <h3 class="requestsSubHeader">RESTAURANTS</h3>
+        </div>
+    </div>
+  <div class="genInfoContent">
+  <div class="row">
+      <dl class="accordion" data-accordion>
+        <dd>
+              <a href="#panel85" onClick="highlightLink(this);"><span class="complaintText">Bertoldi's Trattoria</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+              <div id="panel85" class="content">
+                <img class="restaurantLogos" src="img/bertoldis.gif" alt="bertoldi Logo">
+                  <p class="dateColor">(519) 438-4343</p>
+                  <p class="location">650 Richmond Street</p>
+                  <p>Inspired by our grandparents Nonno Gelindo and Nonna Marie. our food is cooked the true Italian way - made from scratch using only the freshest ingredients possible. We bake our own bread daily, we make all of our specialty pastas, and all of our sauces are made fresh here on the premises.</p>
+                  <a href="http://www.londontourism.ca/Places-To-Eat/Casual-Dining/Bertoldis-Trattoria"><p>More Info</p></a>
+                  </div>
+               </dd>
+               <div class="classifiedsDivider">
+               </div>
+            <dd>
+               <a href="#panel86" onClick="highlightLink(this);"><span class="complaintText">Thaifoon Restaurant </span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+                <div id="panel86" class="content">
+                  <img class="restaurantLogos" src="img/thaifoon.jpg" alt="bertoldi Logo">
+                  <p class="dateColor">(519) 850-1222 </p>
+                  <p class="location">120 Dundas Street</p>
+                  <p>Thaifoon is a destination for business luncheon, pre-theatre &amp; concert events, social gathering, a romantic dinner or a casual night out. <br><br>Sample Thai delicacies made from scratch using diverse authentic &amp; modern styles. Specialties includes Pad Thai, Thai Curry, Peanut Past, Panko-crusted Salmon.</p>
+                  <a href="http://www.londontourism.ca/Places-To-Eat/Casual-Dining/Thaifoon-Restaurant"><p>More Info</p></a>
+                </div>
+           </dd>
+                     <div class="classifiedsDivider">
+               </div>
+              <dd>
+              <a href="#panel87" onClick="highlightLink(this);"><span class="complaintText">Auberge du Petit Prince</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+                <div id="panel87" class="content">
+                  <img class="restaurantLogos" src="img/AubergePatio.jpg" alt="bertoldi Logo">
+                  <p class="dateColor">(519) 434-7124 </p>
+                  <p class="location">458-460 King Street</p>
+                  <p>At Auberge du Petit Prince we want our guests to have a unique dining experience like no other in the city. Our new Head Chef Kyle Rose, and Sous Chef Byron Hallett, has developed a myriad of classic French offerings with a modern flare. Our menu is our strongest foot and we lead with it consistently. We update the menu seasonally, and also offer a 3-course price fixed menu year round.</p>
+                  <a href="http://www.londontourism.ca/Places-To-Eat/Casual-Dining/Auberge-du-Petit-Prince"><p>More Info</p></a>
+                </div>
+            </dd>
+                    <div class="classifiedsDivider">
+               </div>
+          <dd>
+              <a href="#panel89" onClick="highlightLink(this);"><span class="complaintText">The Church Key Bistro-Pub</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+                <div id="panel89" class="content">
+                   <img class="restaurantLogos" src="img/ChurchKeyInterior.jpg" alt="bertoldi Logo">
+                  <p class="dateColor">(519) 936-0960  </p>
+                  <p class="location">2476 Richmond Street</p>
+                  <p>Warm and comfortable, with a pleasing combination of brick, stone, and wood, The Church Key is an extensively renovated pub in a prominent Richmond Row heritage building. An intimate outdoor courtyard flanks the south side of the building. The Church Key follows in the British tradition of the gastro pub by specializing in traditional food done with gourmet flair. Chef Michael Anglestad, with over 20 years in fine dining, uses seasonal, locally sourced ingredients extensively.</p>
+                  <a href="http://www.londontourism.ca/Places-To-Eat/Casual-Dining/Bertoldis-Trattoria"><p>More Info</p></a>
+                </div>
+              </dd>
+      </dl>
+        </div>
+  </div> 
+</div>
+    
+
+<div class="bottomSection">
+  
+    <div class="row">
+      <div class="small-11 small-centered columns">
+        <div class="small-4 columns">
+              <div class="currentPage2">
+            <a href="#genInfoCity"><img src="img/cityGuideIcon.png" alt="fsuEvents"></a> 
+              <h3 class="iconLabel">CITY<br>GUIDE</h3>
+                </div>
+           </div>
+        <div class="small-4 columns">
+          <a href="#genInfoBus"><img src="img/busIcon.png" alt="fsuContests"></a>
+            <h3 class="iconLabel">LTC</h3>
+        </div>
+        <div class="small-4 columns">
+          <a href="#genInfoDirectory"><img src="img/directoryIcon.png" alt="fsuInfo"></a>
+            <h3 class="iconLabel">DIRECTORY</h3>
+        </div>
+        </div>
+    </div>
+  
+</div><!--Gen Info City Guide End-->
+</div>
+
+
+<div data-role="page" id="genInfoBus">
+
+<div class="section">
+	<div class="topSection">
+		<div class="row"> 
+    		<div class="small-2 columns">
+         	 <a href="#generalInfoIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+        	 </div>
+    		<div class="small-9 small-push-1 columns">
+        		<h2  class="topHeader">GENERAL INFO</h2>
+                </div>
+        </div> 
+    </div> 
+</div>
+
+<div class="content">
+	<div class="row">
+    	<div class="small-12 small-centered columns">
+        	<h3 class="requestsSubHeader">LTC</h3>
+        </div>
+    </div>
+	<div id="ltcScroll" class="genInfoContent">
+	<div class="row">
+    	<dl class="accordion" data-accordion>
+  			<dd>
+    					<a href="#panel90" onClick="highlightLink(this);"><span class="complaintText">27 FANSHAWE COLLEGE</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    			<div id="panel90" class="content">
+      				Next bus: 4:34pm, 5:01pm, 5:34pm.
+    			</div>
+               </dd>
+               <div class="classifiedsDivider">
+               </div>
+  					<dd>
+   						 <a href="#panel91" onClick="highlightLink(this);"><span class="complaintText">25 KILLALY</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel91" class="content">
+     							 Next bus: 11:30am, 11:45am, 12:00pm.
+    						</div>
+ 					 </dd>
+                     <div class="classifiedsDivider">
+               </div>
+        			<dd>
+    					<a href="#panel92" onClick="highlightLink(this);"><span class="complaintText">20 CHERRYHILL</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel92" class="content">
+     							Next bus: 4:34pm, 5:01pm, 5:34pm.
+    						</div>
+  					</dd>
+                    <div class="classifiedsDivider">
+               </div>
+ 				 	<dd>
+    					<a href="#panel93" onClick="highlightLink(this);"><span class="complaintText">17 OXFORD WEST</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel93" class="content">
+     							 Next bus: 12:30pm, 12:47pm, 1:04pm.
+    						</div>
+        			</dd>
+                    <div class="classifiedsDivider">
+               </div>
+                    <dd>
+    					<a href="#panel94" onClick="highlightLink(this);"><span class="complaintText">4 OXFORD EAST</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel94" class="content">
+     							  Next bus: 12:30pm, 12:47pm, 1:04pm.
+    						</div>
+        			</dd>
+   		</dl>
+        </div>
+  </div> 
+</div>
+    
+
+<div class="bottomSection">
+	
+    <div class="row">
+    	<div class="small-11 small-centered columns">
+    		<div class="small-4 columns">
+            	
+   	    		<a href="#genInfoCity"><img src="img/cityGuideIcon.png" alt="fsuEvents"></a> 
+            	<h3 class="iconLabel">CITY<br>GUIDE</h3>
+             
+       		 </div>
+        <div class="small-4 columns">
+        	<div class="currentPage2">
+        	<a href="#genInfoBus"><img src="img/busIcon.png" alt="fsuContests"></a>
+            <h3 class="iconLabel">LTC</h3>
+            </div>
+        </div>
+        <div class="small-4 columns">
+        	<a href="#genInfoDirectory"><img src="img/directoryIcon.png" alt="fsuInfo"></a>
+            <h3 class="iconLabel">DIRECTORY</h3>
+        </div>
+        </div>
+    </div>
+	
+</div><!--Gen Info LTC End-->
+</div>
+
+
+<div data-role="page" id="genInfoDirectory">
+
+  <div class="section">
+  	<div class="topSection">
+  		<div class="row"> 
+      		<div class="small-2 columns">
+           	 <a href="#generalInfoIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+          	 </div>
+      		<div class="small-9 small-push-1 columns">
+          		<h2  class="topHeader">GENERAL INFO</h2>
+                  </div>
+          </div> 
+      </div> 
+  </div>
+
+  <div class="content">
+  	<div class="row">
+      	<div class="small-12 small-centered columns">
+          	<h3 class="requestsSubHeader">DIRECTORY</h3>
+          </div>
+      </div>
+  	<div id="ltcScroll2" class="genInfoContent">
+  	<div class="row">
+      	<dl class="accordion" data-accordion>
+    			<dd class="directoryContact">
+      					<a href="#panel95" onClick="highlightLink(this);"><span class="complaintText">James Jones</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+      			     <div id="panel95" class="content directoryContact">
+                      <p class="directoryTitle">FSU Head Coordinator</p>
+        				      <p class="directoryOffice">Office: FSU Office</p>
+                      <p class="contactInfo">Phone: <a href="tel:+15196947392">519-694-7392</a></p>
+                      <p class="contactInfo">Email: <a href="mailto:waltergramajo@yahoo.ca">jjones@gmail.com</a></p>
+                      <a href="tel:+15196947392"><img class="phoneIcon" src="img/phoneIcon.png" alt="phone"></a>
+                      <a href="mailto:waltergramajo@yahoo.ca"><img class="emailIcon" src="img/emailIcon.png" alt="email"></a>
+      			     </div>
+                 </dd>
+                 <div class="classifiedsDivider">
+                 </div>
+    					<dd class="directoryContact">
+     						 <a href="#panel96" onClick="highlightLink(this);"><span class="complaintText">Melissa Haggerty</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+      						<div id="panel96" class="content directoryContact">
+       							<p class="directoryTitle">FSU President</p>
+                      <p class="directoryOffice">Office: FSU Office</p>
+                      <p class="contactInfo">Phone: <a href="tel:+15196947392">519-694-7392</a></p>
+                      <p class="contactInfo">Email: <a href="mailto:waltergramajo@yahoo.ca">jjones@gmail.com</a></p>
+                      <a href="tel:+15196947392"><img class="phoneIcon" src="img/phoneIcon.png" alt="phone"></a>
+                      <a href="mailto:waltergramajo@yahoo.ca"><img class="emailIcon" src="img/emailIcon.png" alt="email"></a>
+      						</div>
+   					 </dd>
+                       <div class="classifiedsDivider">
+                 </div>
+          			<dd>
+      					<a href="#panel97" onClick="highlightLink(this);"><span class="complaintText">Ron Smith</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span>        
+                          </a>
+      						<div id="panel97" class="content directoryContact">
+       							  <p class="directoryTitle">Financial Aid Advisor</p>
+                      <p class="directoryOffice">Office: Office of the Registrar</p>
+                      <p class="contactInfo">Phone: <a href="tel:+15196947392">519-694-7392</a></p>
+                      <p class="contactInfo">Email: <a href="mailto:waltergramajo@yahoo.ca">jjones@gmail.com</a></p>
+                      <a href="tel:+15196947392"><img class="phoneIcon" src="img/phoneIcon.png" alt="phone"></a>
+                      <a href="mailto:waltergramajo@yahoo.ca"><img class="emailIcon" src="img/emailIcon.png" alt="email"></a>
+      						</div>
+    					</dd>
+                      <div class="classifiedsDivider">
+                 </div>
+   				 	<dd>
+      					<a href="#panel98" onClick="highlightLink(this);"><span class="complaintText">Eric Flint</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+      						<div id="panel98" class="content directoryContact">
+                      <p class="directoryTitle">Residence Leader</p>
+                      <p class="directoryOffice">Office: R Building</p>
+                      <p class="contactInfo">Phone: <a href="tel:+15196947392">519-694-7392</a></p>
+                      <p class="contactInfo">Email: <a href="mailto:waltergramajo@yahoo.ca">jjones@gmail.com</a></p>
+                      <a href="tel:+15196947392"><img class="phoneIcon" src="img/phoneIcon.png" alt="phone"></a>
+                      <a href="mailto:waltergramajo@yahoo.ca"><img class="emailIcon" src="img/emailIcon.png" alt="email"></a>
+                  </div>
+          			</dd>
+                      <div class="classifiedsDivider">
+                 </div>
+                      <dd>
+      					<a href="#panel99" onClick="highlightLink(this);"><span class="complaintText">Diana Bell</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+      						<div id="panel99" class="content directoryContact">
+       							  <p class="directoryTitle">Student Success Advisor</p>
+                      <p class="directoryOffice">Office: D Building</p>
+                      <p class="contactInfo">Phone: <a href="tel:+15196947392">519-694-7392</a></p>
+                      <p class="contactInfo">Email: <a href="mailto:waltergramajo@yahoo.ca">jjones@gmail.com</a></p>
+                      <a href="tel:+15196947392"><img class="phoneIcon" src="img/phoneIcon.png" alt="phone"></a>
+                      <a href="mailto:waltergramajo@yahoo.ca"><img class="emailIcon" src="img/emailIcon.png" alt="email"></a>
+      						</div>
+          			</dd>
+     		</dl>
+          </div>
+    </div> 
+  </div>
+    
+
+  <div class="bottomSection">
+      <div class="row">
+      	<div class="small-11 small-centered columns">
+      		<div class="small-4 columns">	
+     	    		<a href="#genInfoCity"><img src="img/cityGuideIcon.png" alt="fsuEvents"></a> 
+              	<h3 class="iconLabel">CITY<br>GUIDE</h3>
+         	</div>
+          <div class="small-4 columns">
+          	
+          	<a href="#genInfoBus"><img src="img/busIcon.png" alt="fsuContests"></a>
+              <h3 class="iconLabel">LTC</h3>
+             
+          </div>
+          <div class="small-4 columns">
+          	<div class="currentPage2">
+          	   <a href="#genInfoDirectory"><img src="img/directoryIcon.png" alt="fsuInfo"></a>
+              <h3 class="iconLabel">DIRECTORY</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+	</div>
+
+</div><!--Gen Info Directory End-->
+
+
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js"></script> <!--For Calendar-->
+    <script>
+		$( "#datePicker" ).datepicker({ altField: "#actualDate", dayNamesMin: ['S', 'M', 'T', 'W', 'T', 'F', 'S'] });
+	</script>
+    <script>
+	$(document).bind("mobileinit", function(){
+  $.mobile.changePage.allowSamePageTransition = true;
+});
+</script>
+<script src="js/mainClassPath.js" type="text/javascript"></script>  
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+	<script src="js/foundation/foundation.dropdown.js"></script>
+    <script src="js/foundation/foundation.accordion.js"></script>
+    <script src="js/foundation/foundation.reveal.js"></script>
+    <script src="js/createPaths.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

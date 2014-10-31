@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Animation Test</title>
+<link rel="stylesheet" href="css/foundation.css" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/vendor/modernizr.js"></script>
+<link rel="shortcut icon" href="img/favicon.ico" />
+<script type="text/javascript" src="js/progresscircle.min.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="small-6 small-centered columns text-center">
+            		<canvas id="my_canvas" width="200" height="100"></canvas>
+           			<a href="http://qiao.github.io/ProgressCircle.js/"> Progress Circle </a>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="small-12 columns">
+   		 <div class="line"></div>
+         </div>
+    </div>
+ 	<div class="row">
+    	<div class="small-6 small-centered columns">
+    		<div class="progress small-12 success round"> 
+    		<span id="progBar" class="meter" style="width: 0"></span> 
+            </div>
+         </div>
+    </div>
+    <div class="row">
+    	<div class="small-12 columns">
+   		 <div class="line"></div>
+         </div>
+    </div>
+    <div class="row">
+        <div class="small-6 small-centered columns text-center">
+            		<canvas id="buttonCanvas" width="200" height="100"></canvas>
+        </div>
+    </div>
+    
+<script>
+	var myCanvas = document.getElementById('my_canvas');
+	var p1 =0;
+	var p2= 0;
+	var p3 = 1;
+	var p4 = 0;
+	var progBar = document.getElementById('progBar');	
+	var buttonCanvas = document.getElementById('buttonCanvas');
+
+	var context = buttonCanvas.getContext('2d');
+	var fill;
+
+	var circle = new ProgressCircle({
+    	canvas: myCanvas,
+		minRadius: 40,
+		infoLineBaseAngle: 45,
+        horizLineLength: 10
+		
+	});
+	var button = new ProgressCircle({
+		canvas: buttonCanvas,
+		arcWidth: 5,
+		gapWidth: -.05,
+		minRadius: 40
+		
+	});
+	button.addEntry({
+		fillColor: 'rgba(0, 0, 0, 0.5)',
+		progressListener: function() {
+        return p3; // between 0 and 1
+    	}
+	});
+	button.addEntry({
+		fillColor: 'rgba(102,204,204,.5)',
+		progressListener: function() {
+        return p4; // between 0 and 1
+    	}
+	});
+
+	circle.addEntry({
+		fillColor: 'rgba(0, 0, 0, 0.5)',
+		
+		progressListener: function() {
+			return p1; // between 0 and 1
+		},infoListener: function() {
+				return Math.round(p1 * 100) + '%';
+			},
+	});
+
+function init(){
+	
+context.fillStyle = "blue";
+context.font = "bold 16px Arial";
+context.fillText("Zibri",buttonCanvas.width/2 , buttonCanvas.height/2 );
+buttonCanvas.addEventListener('mouseover', fillBorder, false);
+buttonCanvas.addEventListener('mouseout', hideBorder, false);
+setInterval(fillBar, 50);
+setInterval(fillCircle, 60);
+circle.start(60); // 33 is the interval(ms) between each update
+button.start(60);
+
+}
+function hideBorder(){
+	clearInterval(fill);
+	fill =setInterval(removeBorder,10);
+}
+function removeBorder(){
+	if(p4 <= 0.01){
+		clearInterval(fill);
+	}
+	
+	p4 -= .01;
+}
+function fillBorder(){
+	clearInterval(fill);
+	fill =setInterval(createBorder,10);
+}
+function createBorder(){
+	if(p4 >= 1){
+		clearInterval(fill);
+	}
+	p4 += .01;
+}
+function fillCircle(){
+	if(p1 >= 1){
+		p1=0;
+	}
+	p1 += .01;
+}
+function fillBar(){
+	if(p2 >= 100){
+		p2=0;
+	}
+	p2 += 1;
+	progBar.style.width = p2 +'%';
+}
+window.onload = init();
+</script>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script>
+   $(document).foundation();
+</script>
+
+</body>
+</html>
