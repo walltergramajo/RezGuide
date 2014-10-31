@@ -22,7 +22,7 @@
         	<div class=" menu">
                 <ul class="menu-icons">
                     <li>
-                        <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add_main">
+                        <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add">
                         <div class="small-4 columns">
                             <img src="<?php echo base_url(); ?>img/cms-create.png" onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" alt="Add">
                         </div>

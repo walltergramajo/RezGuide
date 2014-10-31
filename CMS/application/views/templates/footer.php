@@ -5,7 +5,7 @@
                     <div class="small-12 columns">
                         <ul id="footerNav">
                             <li>
-                                <a class="botAnchor" href="<?php echo base_url(); ?>index.php/cms_main.php">
+                                <a class="botAnchor" href="<?php echo base_url(); ?>index.php/main">
                                 <img onMouseOver="swapDark('3')" onMouseOut="swapLight('3')" class="botImg" src="<?php echo base_url(); ?>img/homeIcon.png" alt="Home">
                                 <p class="menuText header">Home</p>
                                 </a>
