@@ -12,4 +12,8 @@ class Account_model extends CI_Model {
 		$points = $this->db->get_where('tbl_points', array('points_id' => $studentPoints->points_id));
 		return $points->result();
 	}
+
+	public function totalPoints($sId){
+		
+	}
 }
