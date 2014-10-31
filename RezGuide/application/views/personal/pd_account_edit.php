@@ -28,7 +28,7 @@
                     <div class="row">
         				<div class="small-12 accountLine"></div>
         			</div>
-                    <form>
+                    <form method="post" action="<?php base_url(); ?>index.php/account/">
                     	<div class="row">
                     		<div class="small-2 columns">
                         		<label class="labelInfo">cellphone#</label>
