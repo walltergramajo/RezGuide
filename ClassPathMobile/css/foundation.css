@@ -3660,14 +3660,14 @@ ul.off-canvas-list {
 /* Foundation Dropdowns */
 .f-dropdown {
   position: absolute;
-  color: #FFF;
+  color: #65666a;
   left: -9999px;
   list-style: none;
   margin-left: 0;
   width: 100%;
   max-height: none;
   height: auto;
-  background: #74cabd;
+  background: #65666a;
   border: solid 1px #cccccc;
   font-size: 16px;
   z-index: 99;
@@ -3683,7 +3683,7 @@ ul.off-canvas-list {
     width: 0;
     height: 0;
     border: inset 6px;
-    border-color: transparent transparent #74cabd transparent;
+    border-color: transparent transparent #ebebeb transparent;
     border-bottom-style: solid;
     position: absolute;
     top: -12px;
@@ -3721,13 +3721,14 @@ ul.off-canvas-list {
   .f-dropdown.content {
     position: absolute;
     left: -9999px;
+    color: #65666a;
     list-style: none;
     margin-left: 0;
     padding: 1.25rem;
     width: 100%;
     height: auto;
     max-height: none;
-    background: #74cabd;
+    background: #65666a;
     border: solid 1px #cccccc;
     font-size: 16px;
     z-index: 99;
@@ -3752,7 +3753,7 @@ ul.off-canvas-list {
     width: 0;
     height: 0;
     border: inset 6px;
-    border-color: transparent transparent #74cabd transparent;
+    border-color: transparent transparent #ebebeb transparent;
     border-bottom-style: solid;
     position: absolute;
     top: -12px;
@@ -3778,7 +3779,7 @@ ul.off-canvas-list {
     width: 0;
     height: 0;
     border: inset 6px;
-    border-color: transparent transparent #74cabd transparent;
+    border-color: transparent transparent #ebebeb transparent;
     border-bottom-style: solid;
     position: absolute;
     top: -12px;
@@ -3803,7 +3804,7 @@ ul.off-canvas-list {
     width: 0;
     height: 0;
     border: inset 6px;
-    border-color: transparent transparent #74cabd transparent;
+    border-color: transparent transparent #ebebeb transparent;
     border-bottom-style: solid;
     position: absolute;
     top: -12px;
@@ -3828,7 +3829,7 @@ ul.off-canvas-list {
     width: 0;
     height: 0;
     border: inset 6px;
-    border-color: transparent transparent #74cabd transparent;
+    border-color: transparent transparent #ebebeb transparent;
     border-bottom-style: solid;
     position: absolute;
     top: -12px;
@@ -3858,7 +3859,7 @@ ul.off-canvas-list {
     width: 100%;
     height: auto;
     max-height: none;
-    background: #74cabd;
+    background: #ebebeb;
     border: solid 1px #cccccc;
     font-size: 16px;
     z-index: 99;

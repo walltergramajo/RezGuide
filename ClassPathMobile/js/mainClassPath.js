@@ -46,7 +46,7 @@ $('#transportationIcon').click(function () {
 //for highlighted link choice on Selector Page
 
 var highlightLink = function () {
-        var active = null, colour = '#518d84', backgroundImage2 = "url('img/selectionArrow.png')";
+        var active = null, colour = '#65666a', backgroundImage2 = "url('img/selectionArrow.png')";
         if (this.attachEvent) this.attachEvent('onunload', function () {
             active = null;
         });
@@ -67,13 +67,15 @@ var highlightLink = function () {
 
 var highlightLinkSchedule = function () {
     window.console&&console.log("THIS WORKS");
-        var active = null, colour = '#518d84';
+        var active = null, colour = '#65666a';
         if (this.attachEvent) this.attachEvent('onunload', function () {
             active = null;
         });
         return function (element) {
             if ((active != element) && element.style) {
                 if (active) active.style.backgroundColor = '';
+                if (active) active.style.color = '';
+                element.style.color = '#FFF';
 				element.style.backgroundColor = colour;
                 active = element;
 				
