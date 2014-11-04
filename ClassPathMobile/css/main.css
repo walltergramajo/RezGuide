@@ -40,7 +40,7 @@ body
 
 .logInContainer
 {
-	background-color: #74cabd;
+	background-color: #ebebeb;
 	height: 568px;
 }
 
@@ -60,7 +60,7 @@ body
 	font-size: 1.7em;
 	text-align: center;
 	line-height: 24px;
-	color: #FFF;
+	color: #65666a;
 	margin-top: 30px;
 	margin-bottom: 20px;
 	font-family: 'caviar_dreamsregular';
@@ -73,7 +73,7 @@ body
 .pleaseLogIn
 {
 	font-family: 'caviar_dreamsregular';
-	color: #FFF;
+	color: #65666a;
 	font-size: 0.9em;
 	text-align: center;
 }
@@ -89,7 +89,7 @@ body
 .forgotPassword
 {
 	font-family: 'caviar_dreamsregular';
-	color: #FFF;
+	color: #65666a;
 	font-size: 0.8em;
 	text-align: center;
 	
@@ -2085,7 +2085,7 @@ input[type='file'] {
 
 	.logInContainer
 	{
-		background-color: #74cabd;
+		background-color: #ebebeb;
 		height: 667px;
 	}
 
@@ -2105,7 +2105,7 @@ input[type='file'] {
 		font-size: 2.1em;
 		text-align: center;
 		line-height: 24px;
-		color: #FFF;
+		color: #65666a;
 		margin-top: 30px;
 		margin-bottom: 20px;
 		font-family: 'caviar_dreamsregular';
@@ -2117,7 +2117,7 @@ input[type='file'] {
 	.pleaseLogIn
 	{
 	font-family: 'caviar_dreamsregular';
-	color: #FFF;
+	color: #65666a;
 	font-size: 0.9em;
 	text-align: center;
 	}
@@ -2133,7 +2133,7 @@ input[type='file'] {
 	.forgotPassword
 	{
 	font-family: 'caviar_dreamsregular';
-	color: #FFF;
+	color: #65666a;
 	font-size: 0.8em;
 	text-align: center;
 	
