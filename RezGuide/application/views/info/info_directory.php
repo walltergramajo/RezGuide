@@ -7,7 +7,7 @@
     <div class="row">
        <div class="small-8 small-centered columns">
         	<div class="accordionScroll">
-        		<dl class="accordion2" data-accordion>
+        		<dl class="accordion" data-accordion>
                     <?php foreach ($results as $row): ?>
                         <dd class="accordionBottom">
                             <a href="#panel<?php echo $row->directory_id ?>" class="accordionLink accordionTitle" onClick="highlightLink2(this);"><?php echo $row->directory_firstname . " " . $row->directory_lastname ?><span class="right accordionDropDownIcon"><img src="<?php echo base_url() ?>img/accordionArrowDown.png" alt="Click For more Information."></span></a>

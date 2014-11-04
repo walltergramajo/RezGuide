@@ -40,7 +40,7 @@
     </div><!--End mainContent-->
              
 	<div class="row">
-    	<div class="small-5 small-centered columns">
+    	<div class="small-4 small-centered columns">
         	<div class="profileNav">
         		<ul class="pagination"> 
             		<li><a href="<?php echo base_url(); ?>index.php/dashboard/account"><img id="prevArrow" src="<?php echo base_url(); ?>img/WA_larrow.png" height="20" width="20" alt="previous"></a></li> 

@@ -427,17 +427,23 @@ th {
 .profileNav
 {
 	margin-top: 20px;
+	position: fixed;
+	bottom: 90px;
 }
 .profileNav2
 {
 	margin-top: 5px;
 	margin-left: -10px;
+	position: fixed;
+	bottom: 90px;
 }
 
 .profileNav3
 {
 	margin-top: 20px;
 	margin-left: -10px;
+	position: fixed;
+	bottom: 90px;
 }
 
 .complaintDate

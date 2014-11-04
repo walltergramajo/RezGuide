@@ -175,7 +175,7 @@ $('#addInput').click(function(){
 });
 
 var highlightLink = function () {
-        var active = null, colour = '#ebebeb', backgroundImage2 = "url('img/selectionArrowGreen.png')";
+        var active = null, colour = '#65666a', backgroundImage2 = "url('img/selectionArrowGreen.png')";
         if (this.attachEvent) this.attachEvent('onunload', function () {
             active = null;
         });
@@ -191,7 +191,7 @@ var highlightLink = function () {
 }();
 
 var highlightLink2 = function () {
-        var active = null, colour = '#74cabd', backgroundImage2 = "url('img/accordionArrowDown.png')";
+        var active = null, colour = '#65666a', backgroundImage2 = "url('img/accordionArrowDown.png')";
         if (this.attachEvent) this.attachEvent('onunload', function () {
             active = null;
         });
