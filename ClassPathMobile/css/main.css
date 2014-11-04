@@ -856,19 +856,19 @@ li {
 	margin-bottom: 20px;
 	font-size: 1em;
 	text-align: center;
-	color: #74cabd;
+	color: #65666a;
 }
 
 #textGuide
 {
-	color: #FFF;
+	color: #65666a;
 	margin-top: 20px;
 	font-size: 2em;
 }
 
 #textGuideBg
 {
-	background-color: #74cabd;
+	background-color: #ebebeb;
 	height: 75px;
 	padding-left: 15px;
 	margin-bottom: -8px;
@@ -879,7 +879,7 @@ li {
 
 #pathGuide
 {
-	color: #FFF;
+	color: #65666a;
 	margin-top: 20px;
 	font-size: 2em;
 }
@@ -888,7 +888,7 @@ li {
 
 #pathGuideBg
 {
-	background-color: #74cabd;
+	background-color: #ebebeb;
 	height: 75px;
 	padding-left: 15px;
 	margin-bottom: 25px;
@@ -941,7 +941,7 @@ li {
 
 .textGuideBg
 {
-	background-color: #74cabd;
+	background-color: #ebebeb;
 	height: 55px;
 	padding-top: 13px;
 	border-bottom: solid 1px #518d84;

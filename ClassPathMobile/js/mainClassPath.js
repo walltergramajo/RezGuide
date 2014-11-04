@@ -84,19 +84,22 @@ var highlightLinkSchedule = function () {
 }();
 
 var highlightLinkPath = function () {
-        var active = null, colour = '#518d84', backgroundImage2 = "url('img/selectionArrow.png')";
+        var active = null, colour = '#65666a', backgroundImage2 = "url('img/selectionArrow.png')", textcolor = '#FFF';
         if (this.attachEvent) this.attachEvent('onunload', function () {
             active = null;
         });
         return function (element) {
             if ((active != element) && element.style) {
+                if (active) active.style.color = '';
                 if (active) active.style.backgroundColor = '';
 				if (active) active.style.backgroundImage = '';
-				
+                
+                
                 element.style.backgroundImage = backgroundImage2;
 				element.style.backgroundColor = colour;
 				element.style.backgroundRepeat = "no-repeat";
 				element.style.backgroundSize = "20px 75px";
+                element.style.color = textcolor;
                 active = element;
 				
             }
