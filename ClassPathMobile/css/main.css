@@ -811,7 +811,7 @@ li {
 }
 /*Drop Down Background*/
 #cssmenu ul ul li {
-  background: rgba(116, 202, 189, 0.8);
+  background: rgba(235, 235, 235, 0.8);
    padding: 16px 8px 16px 28px;
    margin-left: -13px;
    height: 60px;
@@ -819,10 +819,10 @@ li {
   text-align: right;
 }
 #cssmenu ul ul li:hover {
-  background: rgba(81,141,132, 0.8);
+  background: rgba(101,102,106, 0.8);
 }
 #cssmenu ul ul li a {
-  color: #FFF;
+  color: #65666a;
 }
 
 /*Down Down Text*/
@@ -2345,7 +2345,7 @@ input[type='file'] {
 	}
 
 	#cssmenu ul ul li {
-  background: rgba(116, 202, 189, 0.8);
+  background: rgba(235, 235, 235, 0.8);
    padding: 16px 8px 16px 28px;
    margin-left: -13px;
    height: 85px;
