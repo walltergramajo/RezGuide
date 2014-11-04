@@ -9,7 +9,7 @@ class Login_model extends CI_Model {
 	public function verify($u,$p){
 		//just filler login verification ------------------
 		if($u != null && $p != null){
-			$this->getStudentData($u);
+			$this->getStudentData($u,$p);
 			return "confirmed";
 		}else{
 			return "confirmed";
@@ -17,8 +17,8 @@ class Login_model extends CI_Model {
 		//-------------------------------------------------
 	}
 
-	public function getStudentData($u){
-		$userQuery = $this->db->get_where('tbl_students', array('students_username' => $u));
+	public function getStudentData($u,$p){
+		$userQuery = $this->db->get_where('tbl_students', array('students_username' => $u, 'students_password' => $p));
 		$userResult = $userQuery->row();
 		$userArray = array(
 					'username' => $u,
