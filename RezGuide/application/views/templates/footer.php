@@ -30,3 +30,4 @@
         </div>
     </div>
 </footer>
+<script src="<?php echo base_url(); ?>js/vendor/jquery.js"></script>
