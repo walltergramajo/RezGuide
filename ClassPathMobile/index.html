@@ -7,9 +7,9 @@
     <!--For Android Full Screen-->
     <meta name="mobile-web-app-capable" content="yes">
     <title>Class Path Main</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
     <link rel="stylesheet" href="css/foundation.css" />
     <link href="css/normalize.css" rel="stylesheet" type="text/css"/>  
-    <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
     <link href="js/jquery-ui-1.10.4.custom/css/custom-theme/jquery-ui-1.10.4.custom.css" rel="stylesheet" type="text/css" media="screen">
     <link rel="stylesheet" href="jqueryMobile/jquery.mobile.structure-1.4.2.css" />
    	<!--<link rel="apple-touch-startup-image" href="img/Default-568h@2x.png">-->
@@ -979,8 +979,10 @@
     	<div class="row">
         	<div id="pointsBg">
         		<div class="small-12 columns">
-                	<div class="small-5 small-centered columns">
-   	    				<img src="img/4Points.png" alt="4 points">
+                	<div class="small-4 small-centered columns">
+   	    				      <div class="pointsCircle">
+                          <p class="pointsValue">5</p>
+                      </div>
                     </div>
                 </div>
          	</div>
@@ -999,7 +1001,9 @@
             		     </div>
         		      </div>
        			      <div class="small-2 columns">
-        			       <img class="pointsSmall" src="img/2points.png" alt="2points"> 
+        			       <div class="pointsCircleSmall">
+                          <p class="pointsValueSmall">2</p>
+                      </div>
         		      </div>
                 </div>
            </div>    
@@ -1018,7 +1022,9 @@
                   </div>
               </div>
               <div class="small-2 columns">
-                <img class="pointsSmall" src="img/2points.png" alt="2points"> 
+                  <div class="pointsCircleSmall">
+                    <p class="pointsValueSmall">3</p>
+                  </div>
               </div>
             </div>
           </div>    
@@ -1105,7 +1111,7 @@
                 	<p>Total Amount Due:</p>
                 </div>
                 <div class="small-2 columns">	
-                	<p class="moneyAmounts">$300</p>
+                	<p class="TotalAmounts">$300</p>
                 </div>
             </div>
         </div>    
@@ -1222,7 +1228,7 @@
     			<div class="small-2 columns">
           			<a href="#personalDashboard"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
         		</div>
-    			<div class="small-9 small-push-1 columns">
+    			<div class="small-9 small-push-4 columns">
         				<h2  class="topHeader">NOTICES</h2>
         		</div> 
     		</div> 
@@ -1297,7 +1303,7 @@
     			<div class="small-2 columns">
          			<a href="#personalDashboard"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
          		</div>
-    			<div class="small-9 small-push-1 columns">
+    			<div class="small-9 small-push-4 columns">
         			<h2  class="topHeader">NOTICES</h2>
         		</div> 
     		</div> 

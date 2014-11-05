@@ -2806,8 +2806,6 @@ textarea.ui-input-text {
 	min-height: 2.2em;
 	text-align: left; /* Opera aligns type="date" right by default */
 	
-	background: transparent none;
-	-webkit-appearance: none;
 	-webkit-border-radius: inherit;
 	border-radius: inherit;
 }
@@ -2881,13 +2879,19 @@ textarea.ui-mini {
 .ui-input-text input::-moz-placeholder,
 .ui-input-search input::-moz-placeholder,
 textarea.ui-input-text::-moz-placeholder {
-	color: #aaa;
+	color: #65666a;
 }
 /* Same for IE10 */
 .ui-input-text input:-ms-input-placeholder,
 .ui-input-search input:-ms-input-placeholder,
 textarea.ui-input-text:-ms-input-placeholder {
-	color: #aaa;
+	color: #65666a;
+}
+
+.ui-input-text input::-webkit-placeholder,
+.ui-input-search input::-webkit-placeholder,
+textarea.ui-input-text::-webkit-placeholder {
+	color: #65666a;
 }
 /* Resolves issue #5131: Width of textinput depends on its type,
 for Android 4.1 */

@@ -46,6 +46,25 @@ body
 }
 
 
+input[type="text"], textarea
+{
+	background-color: #ebebeb;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #65666a;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #65666a;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #65666a;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #65666a;
+}
+
 
 .logInContainer
 {
@@ -261,7 +280,7 @@ body
 
 .dateColor
 {
-	color: #74cabd;
+	color: #e31d1a;
 }
 
 .location
@@ -541,10 +560,7 @@ body
 	border-radius: 0px;
 	 -webkit-border-radius: 0px;
 }
-input, textarea {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-}
+
 
 .addRoommate
 {
@@ -962,6 +978,8 @@ input[type=checkbox] {
 	display: none;
 }
 
+
+
 .checkboxFive {
 	width: 25px; 
 	margin-left: 290px;
@@ -1139,7 +1157,7 @@ input[type=checkbox] {
 
 .dashBoardHeader
 {
-	color: #74cabd;
+	color: #e31d1a;
 	font-size: 2.2em;
 	text-align: center;
 	line-height: 40px;
@@ -1193,7 +1211,7 @@ input[type=checkbox] {
 	font-size: 1.1em;
 	margin-bottom: -6px;
 	margin-top: 10px;
-	color: #647673;
+	color: #e31d1a;
 	text-align: right;
 }
 
@@ -1201,7 +1219,7 @@ input[type=checkbox] {
 {
 	font-size: 1.1em;
 	margin-bottom: -6px;
-	color: #647673;
+	color: #e31d1a;
 	text-align: right;
 }
 
@@ -1209,7 +1227,7 @@ input[type=checkbox] {
 .greyBar
 {
 	height: 5px;
-	background-color: #b1bab9;
+	background-color: #65666a;
 	width: 340px;
 }
 
@@ -1252,7 +1270,7 @@ input[type=checkbox] {
 
 #pointsHeader
 {
-	color: #74cabd;
+	color: #65666a;
 	font-family: 'caviar_dreamsbold';
 	font-size: 1.9em;
 	margin-top: 40px;
@@ -1261,7 +1279,7 @@ input[type=checkbox] {
 
 #pointsBg
 {
-	background-color: #74cabd;
+	background-color: #ebebeb;
 	padding-top: 30px;
 	height: 140px;
 }
@@ -1270,11 +1288,51 @@ input[type=checkbox] {
 {
 	position: relative;
 }
+
+.pointsCircle
+{
+	border: solid 4px #65666a;
+	height: 90px;
+	width: 90px;
+	border-radius: 50px;
+	 -webkit-align-items: center; /* Safari 7.0+ */
+    align-items: center;
+    padding: 5px;
+}
+
+.pointsValue
+{
+	font-size: 2.8em;
+	text-align: center;
+	color: #65666a;
+	font-family: 'caviar_dreamsregular';
+}
+
+.pointsCircleSmall
+{
+	border: solid 2px #65666a;
+	height: 30px;
+	width: 30px;
+	margin-top: 5px;
+	border-radius: 50px;
+	 -webkit-align-items: center; /* Safari 7.0+ */
+    align-items: center;
+    padding: 5px;
+}
+
+.pointsValueSmall
+{
+	font-size: 0.8em;
+	text-align: center;
+	color: #65666a;
+	font-family: 'caviar_dreamsbold';
+}
+
 .pointsViolation
 {
 	margin-left: -15px;
 	top: 0px;
-	border-bottom: solid 1px #74cabd;
+	border-bottom: solid 1px #65666a;
 	bottom: 0px;
 	position: relative;
 }
@@ -1291,7 +1349,7 @@ input[type=checkbox] {
 
 .sideSelectionBar
 {
-	background-color: #74cabd;
+	background-color: #65666a;
 	margin-top: 0px;
 	background-position: left;
 	height: 38px;
@@ -1322,7 +1380,7 @@ input[type=checkbox] {
 .pointsTitle
 {
 	font-size: 1em;
-	color: #74cabd;
+	color: #e31d1a;
 	font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -1341,7 +1399,7 @@ input[type=checkbox] {
 
 #balanceHeader
 {
-	color: #74cabd;
+	color: #65666a;
 	font-family: 'caviar_dreamsbold';
 	font-size: 1.9em;
 	margin-top: 40px;
@@ -1350,14 +1408,14 @@ input[type=checkbox] {
 
 #pointsBg2
 {
-	background-color: #74cabd;
+	background-color: #ebebeb;
 	padding-top: 30px;
 	height: 180px;
 }
 
 .amountDue p
 {
-	color: #74cabd;
+	color: #65666a;
 	font-family: Helvetica, Arial, sans-serif;
 	margin-bottom: 87px;
 }
@@ -1365,11 +1423,18 @@ input[type=checkbox] {
 .moneyAmounts
 {
 	margin-left: -30px;
+	color: #e31d1a;
+}
+
+.TotalAmounts
+{
+	color: #e31d1a;
+	margin-left: -30px;
 }
 
 #pointsBg2 p
 {
-	color: #FFF;
+	color: #65666a;
 	line-height: 20px;
 	font-family: Helvetica, Arial, sans-serif;
 }
@@ -1379,19 +1444,19 @@ input[type=checkbox] {
 	height: 2px;
 	width: 360px;
 	margin-top: -10px;
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(101,102,106,0.5);
 }
 
 .whiteDivider
 {
-	background-color: #FFF;
+	background-color: #65666a;
 	height: 40px;
 	width: 2px;
 }
 
 .noticesSubHeader
 {
-	color: #74cabd;
+	color: #65666a;
 	font-size: 1.8em;
 	text-align: center;
 	margin-top: 30px;
@@ -1399,6 +1464,14 @@ input[type=checkbox] {
 
 
 .complaintText
+{
+	color: #65666a;
+	font-size: 1.0em;
+	font-weight: normal;
+	position: relative;
+}
+
+.complaintText a:hover
 {
 	color: #FFF;
 	font-size: 1.0em;
@@ -1450,7 +1523,7 @@ input[type=checkbox] {
 
 .requestsContent
 {
-	background-color: #74cabd;
+	background-color: #ebebeb;
 	margin-top: -5px;
 	margin-bottom: 56px;
 	
@@ -1468,7 +1541,7 @@ input[type=text].generalRequests
 
 .requestsSubHeader
 {
-	color: #74cabd;
+	color: #65666a;
 	font-family: 'caviar_dreamsbold';
 	font-size: 1.8em;
 	text-align: center;
@@ -1478,7 +1551,7 @@ input[type=text].generalRequests
 .requestsSubHeaderTop
 {
 	font-size: 1em;
-	color: #647673;
+	color: #e31d1a;
 	font-family: Helvetica, Arial, sans-serif;
 	text-align: center;
 	margin-top: 15px;
@@ -1487,7 +1560,7 @@ input[type=text].generalRequests
 .requestsSubHeaderBottom
 {
 	font-size: 1em;
-	color: #647673;
+	color: #e31d1a;
 	font-family: Helvetica, Arial, sans-serif;
 	text-align: center;
 	margin-top: 15px;
@@ -1495,7 +1568,7 @@ input[type=text].generalRequests
 
 .requestsBarTop
 {
-	background-color: #518d84;
+	background-color: #65666a;
 	height: 2px;
 	margin-left: -15px;
 	width: 360px;
@@ -1504,7 +1577,7 @@ input[type=text].generalRequests
 
 .requestsBarBottom
 {
-	background-color: #518d84;
+	background-color: #65666a;
 	height: 2px;
 	margin-left: -15px;
 	width: 360px;
@@ -2173,6 +2246,13 @@ input[type='file'] {
 		overflow: auto;
 		padding-top: 3px;
 		-webkit-overflow-scrolling: touch;
+	}
+
+	.greyBar
+	{
+		height: 5px;
+		background-color: #65666a;
+		width: 375px;
 	}
 
 

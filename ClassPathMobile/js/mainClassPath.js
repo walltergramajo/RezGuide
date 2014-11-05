@@ -54,6 +54,8 @@ var highlightLink = function () {
             if ((active != element) && element.style) {
                 if (active) active.style.backgroundColor = '';
 				if (active) active.style.backgroundImage = '';
+                if (active) active.style.color = '';
+                element.style.color = '#FFF';
 				
                 element.style.backgroundImage = backgroundImage2;
 				element.style.backgroundColor = colour;
