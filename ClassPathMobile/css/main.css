@@ -1166,7 +1166,7 @@ input[type=checkbox] {
 
 .dashBoardHeaderBuilding
 {
-	color: #74cabd;
+	color: #e31d1a;
 	font-size: 2.2em;
 	text-align: center;
 	line-height: 40px;
@@ -1613,7 +1613,7 @@ input[type=text].generalRequests
 
 .garbageContent
 {
-	background-color: #74cabd;
+	background-color: #ebebeb;
 	height: 198px;
 	width: 100%;
 	text-align: center;
@@ -1622,24 +1622,27 @@ input[type=text].generalRequests
 .garbageDescription
 {
 	font-size: 1.1em;
-	color: #FFF;
+	color: #65666a;
 	height: 168px;
 	margin-top: 10px;
 }
 
-.garbageDay1
+.garbageCircle
 {
+	border: solid 4px #65666a;
+	border-radius: 50px;
+	height: 75px;
+	width: 75px;
 	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-left: 50px;
 }
 
-.garbageDay2
+.garbageDay
 {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-left: -50px;
+	font-size: 0.7em;
+	text-align: center;
+	margin-top: 25px;
 }
+
 
 .currentPage2:after {
     content: "";
