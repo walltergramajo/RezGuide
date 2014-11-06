@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 29, 2014 at 03:41 PM
+-- Generation Time: Nov 06, 2014 at 10:51 PM
 -- Server version: 5.5.33
 -- PHP Version: 5.5.3
 
@@ -725,7 +725,8 @@ INSERT INTO tbl_events (events_id, events_title, events_location, events_startda
 (3, 'First Run Film: Dracula Untold', 'Rainbow Cinemas (CITI Plaza)', 'October 25th at 7:00 PM', 'October 25th at 11:00 PM', 'Every Wednesday during the school year, you can go to Rainbow Cinemas at downtown London''s CITI Plaza and watch a brand new film for the low price of $4 for students, and $6 for guests. Maximum two tickets can be purchased by one person.\r\n\r\nThe October 15th film is Dracula Untold, the origin story of the man who became Dracula.\r\n\r\nTickets on sale Tuesday, October 14th through Wednesday, October 15th, 9 AM to 7 PM each day, only at the Biz Booth.\r\n\r\nTwo showtimes to choose from: 7:10 or 9:25 pm.', '$4 for students/$6 for guests\r\n\r\nDirections to theatre:\r\nRainbow Cinemas is located on the 2nd floor of the Citi Plaza, at 355 Wellington Street. It is accessible by taking the #4 Oxford Street East bus (get off at Richmond and Dundas, head East, and enter through the Central Library entrance on Dundas), or the #20 Cherryhill bus (get off at Wellington and Dundas, then head South, and enter through the Wellington and King entrance near Goodlife).', '', 2, 'Ticket purchaser must be a Fanshawe Student'),
 (4, 'VegFest London Pre-Festival Party', 'Organic Works Bakery, 222 Wellington Street', 'October 24, 2014 - 6:00 PM', 'October 24, 2014 - 9:00 PM', '<p>It''s thyme to turnip the beet!  VegFest London is happening for the first time ever, so it''s time to celery-brate. Join us at Organic Works Bakery. Get your vegan snack on and enjoy live acoustic music and talks from special guests, including Abby Hopson of My Body Zen. We''ll also have some fun games, because it isn''t a party without party games right? With purchase of ticket you will receive: Spread of vegan h''orderves 1 ticket for vegan wine or beer (if 19 years of age of older) or non-alcoholic drink 10% of all in store purchases, Door prize tickets, Swag (a value of over $45) PLUS you''ll be supporting two amazing local animal rescue organizations. $15 from each ticket sold supports Animal Outreach and Cedar Row Farm Sanctuary.</p>', '$35 for admission per person. <a href="http://www.vegfestlondon.com/pre-festival-party/2014/10/24/pre-festival-party">Click here</a> for more info.', 'http://www.vegfestlondon.com/pre-festival-party/2014/10/24/pre-festival-party', 2, 'All ages'),
 (5, 'Dinner & Silent Auction', 'St. Michael''s Parish Hall, 511 Cheapside Street', 'October 24 - 6:00 PM', 'October 24 - 11:30PM', '<p>Support the Society of Saint Vincent de Paul - Bid on GREAT auction items - Invite your family, friends & colleagues!</p>', 'LIVE ENTERTAINMENT\r\nCASH BAR 6:00PM\r\nCocktails 7:00PM\r\n\r\nTO PURCHASE TICKETS Email Linda at <a href="mailto:president.lpc@ssvplondonpc.com">president.lpc@ssvplondonpc.com</a> or call Paul at <a href="tel+5194747135">519.474.7135</a>\r\nTickets: $50 each\r\nENTERTAINMENT BY MIKE FAGAN\r\nBenefiting our Outreach Programs & Store Charitable Operations', 'http://www.londontourism.ca/Events/Fundraisers-and-Benefits/Dinner-and-Silent-Auction', 2, 'All ages'),
-(6, 'Get to Know your Neighbours', 'Falcon House', 'September 9, 2014 at 5:00pm', 'September 9, 2014 at 6:00pm', 'Come meet the other students in your building! With free pizza and drinks!', 'Free', '', 3, 'Open to all Residence Students');
+(6, 'Get to Know your Neighbours', 'Falcon House', 'September 9, 2014 at 5:00pm', 'September 9, 2014 at 6:00pm', 'Come meet the other students in your building! With free pizza and drinks!', 'Free', '', 3, 'Open to all Residence Students'),
+(7, 'Healthy College Habits', 'Forwell Hall, London Campus', 'Sept. 4, 2014', 'Sept. 25, 2014', 'Learn some easy tips and tricks for living away from home for the first time. From cooperating with fellow students to balancing your work/study time, this program should help new students adjust to college life.', 'Free', '', 4, 'Open to all Residence Students');
 
 -- --------------------------------------------------------
 
@@ -746,7 +747,8 @@ CREATE TABLE tbl_eventscat (
 INSERT INTO tbl_eventscat (eventsCat_id, eventsCat_type) VALUES
 (1, 'FSU'),
 (2, 'City'),
-(3, 'Building');
+(3, 'Building'),
+(4, 'Programs');
 
 -- --------------------------------------------------------
 
@@ -958,7 +960,8 @@ CREATE TABLE tbl_notices (
 INSERT INTO tbl_notices (notices_id, students_id, noticesCat_id, notices_date, notices_title, notices_description) VALUES
 (1, 2, 2, '2014-10-24', 'Maintenance on your unit', 'This notice is to make you aware that residence maintenance workers will need to enter your unit on Friday October 24th to perform a safety check on your heater unit and test your smoke alarm.'),
 (2, 3, 3, '2014-10-20', 'Disorderly conduct', 'The named student is hereby given an official written warning for disorderly conduct on the night of October 13th.'),
-(3, 4, 1, '2014-10-30', 'Mediation Notification', 'This notification is issued to the concerned parties to request their attendance at a hearing of the Residence Advisory council to mediate the issues raised in complaint #4535.');
+(3, 4, 1, '2014-10-30', 'Mediation Notification', 'This notification is issued to the concerned parties to request their attendance at a hearing of the Residence Advisory council to mediate the issues raised in complaint #4535.'),
+(4, 3, 3, '2014-11-03', 'Noise complaint', 'The student has been issued a formal notice of disruption of common areas via excessive noise during the hours of 2am to 4 am on November 3rd.');
 
 -- --------------------------------------------------------
 
@@ -1249,9 +1252,30 @@ CREATE TABLE tbl_students (
 
 INSERT INTO tbl_students (students_id, students_firstname, students_lastname, students_program, students_stNumber, rbuilding_id, students_roomNumber, students_email, students_phone, students_cellphone, students_address, students_image, students_facebook, students_twitter, students_linkedin, students_username, students_password) VALUES
 (1, 'John', 'Smith', 'IDP1', 555551, 2, '302', 'j_smith55@fanshaweonline.ca', '519-555-5555', '226-555-5555', '', 'default.jpg', '', '', '', 'j_smith04', ''),
-(2, 'Steve', 'Rogers', 'POLI1', 19454, 1, '143', 'rogers_s@fanshaweonline.ca', '519-276-1226', '226-927-5571', '43 Devonshire Rd, Toronto ON', 'steverogers1.jpg', 'facebook.com/steve.rogers.43', 'twitter.com/captain_am', 'ca.linkedin.com/in/steverrogers', 's_rogers', ''),
-(3, 'Kitty', 'Pryde', 'PSYCH', 45674, 1, '204', 'shadow_cat43@hotmail.com', '519-476-1235', '226-756-1235', '43 Worscester Rd, London ON', 'kitty.jpg', 'facebook.com/kitty.pryde', 'twitter.com/shadowcat752', 'ca.linkedin.com/in/kittypryde', 'k_pryde', ''),
-(4, 'Miles', 'Morales', 'WEBDEV', 71235, 3, '342', 'morales_m@fanshaweonline.ca', '519-243-7786', '226-324-7621', '354 Findlay Ave, Waterloo ON', 'miles-selfy.jpg', 'facebook.com/miles.morales.456', 'twitter.com/newspidey', 'ca.linkedin.com/in/milesmorales', 'm_morales', '');
+(2, 'Steve', 'Rogers', 'POLI1', 19454, 1, '143', 'rogers_s@fanshaweonline.ca', '519-276-1226', '226-927-5571', '43 Devonshire Rd, Toronto ON', 'steverogers1.jpg', 'facebook.com/steve.rogers.43', 'twitter.com/captain_am', 'ca.linkedin.com/in/steverrogers', 's_rogers', 'capt'),
+(3, 'Kitty', 'Pryde', 'PSYCH', 45674, 1, '204', 'shadow_cat43@hotmail.com', '519-476-1235', '226-756-1235', '43 Worscester Rd, London ON', 'kitty.jpg', 'facebook.com/kitty.pryde', 'twitter.com/shadowcat752', 'ca.linkedin.com/in/kittypryde', 'k_pryde', 'kitkat01'),
+(4, 'Miles', 'Morales', 'WEBDEV', 71235, 3, '342', 'morales_m@fanshaweonline.ca', '519-243-7786', '226-324-7621', '354 Findlay Ave, Waterloo ON', 'miles-selfy.jpg', 'facebook.com/miles.morales.456', 'twitter.com/newspidey', 'ca.linkedin.com/in/milesmorales', 'm_morales', 'amznspidy');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table 'tbl_studentsevents'
+--
+
+CREATE TABLE tbl_studentsevents (
+  studentsevents_id int(5) unsigned NOT NULL AUTO_INCREMENT,
+  students_id int(5) NOT NULL,
+  events_id int(5) NOT NULL,
+  PRIMARY KEY (studentsevents_id)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table 'tbl_studentsevents'
+--
+
+INSERT INTO tbl_studentsevents (studentsevents_id, students_id, events_id) VALUES
+(1, 2, 2),
+(2, 2, 3);
 
 -- --------------------------------------------------------
 
