@@ -63,7 +63,7 @@ class Dashboard extends CI_Controller {
 			$this->load->view('templates/head',$data);
 			$this->load->view('personal/pd_header');
 
-			$this->load->view('personal/pd_account_edit');
+			$this->load->view('personal/pd_account_edit',$data);
 
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');

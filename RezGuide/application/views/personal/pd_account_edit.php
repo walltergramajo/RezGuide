@@ -6,13 +6,13 @@
             		<img id="profilePicEdit" src="<?php echo base_url(); ?>img/WA_user.png" width="250" alt="Account Picture">
            		</div>
             	<div class="small-12 columns text-center">
-            		<h3 class="headerInfo" id="firstName"><?php echo $results['students_firstname']; ?></h3>
+            		<h3 class="headerInfo" id="firstName"><?php echo $results->students_firstname; ?></h3>
            		</div>
             	<div class="small-12 columns text-center">
-            		<h3 class="headerInfo" id="lastName"><?php echo $results['students_lastname']; ?></h3>
+            		<h3 class="headerInfo" id="lastName"><?php echo $results->students_lastname; ?></h3>
             	</div>
             	<div class="small-12 columns text-center">
-            		<h3 class="headerInfo" id="programName"><?php echo $results['students_program']; ?></h3>
+            		<h3 class="headerInfo" id="programName"><?php echo $results->students_program; ?></h3>
             	</div>
         	</div>
         	<div class="small-8 columns">
@@ -34,13 +34,13 @@
                         		<label class="labelInfo">cellphone#</label>
                         	</div>
                             <div class="small-4 small-push-1 columns">
-                            	<input type="text" placeholder="Cellphone #" name="cellphone"/>
+                            	<input type="text" placeholder="Cellphone #" name="cellphone" value="<?php echo $results->students_cellphone; ?>"/>
                             </div>
                             <div class="small-2 small-push-1 columns">
                         		<label class="labelInfo">student#</label>
                         	</div>
                             <div class="small-3 columns">
-                            	<input type="text" placeholder="student #" name="studentNum"/>
+                            	<input type="text" placeholder="student #" name="studentNum" value="<?php echo $results->students_stNumber; ?>"/>
                             </div>
                     	</div>
                         <div class="row">
@@ -48,7 +48,7 @@
                             	<label class="labelInfo">build/floor/room</label>
                             </div>
                             <div class="small-9 columns">
-                            	<input type="text" placeholder="build/floor/room" name="room" value="<?php  ?>"/>
+                            	<input type="text" placeholder="build/floor/room" name="room" value="<?php echo $results->students_roomNumber; ?>"/>
                             </div>
                         </div>
                         <div class="row">
@@ -64,7 +64,7 @@
                             	<label class="labelInfo">facebook</label>
                             </div>
                             <div class="small-9 columns">
-                            	<input type="text" placeholder="facebook"/>
+                            	<input type="text" placeholder="facebook" value="<?php echo $results->students_facebook; ?>"/>
                             </div>
                         </div>
                         <div class="row">
@@ -72,7 +72,7 @@
                             	<label class="labelInfo">twitter</label>
                             </div>
                             <div class="small-9 columns">
-                            	<input type="text" placeholder="twitter"/>
+                            	<input type="text" placeholder="twitter" value="<?php echo $results->students_twitter; ?>"/>
                             </div>
                         </div>
                         <div class="row">
@@ -80,7 +80,7 @@
                             	<label class="labelInfo">linkedIn</label>
                             </div>
                             <div class="small-9 columns">
-                            	<input type="text" placeholder="linkedIn"/>
+                            	<input type="text" placeholder="linkedIn" value="<?php echo $results->students_linkedin; ?>"/>
                             </div>
                         </div>
                     </form>
