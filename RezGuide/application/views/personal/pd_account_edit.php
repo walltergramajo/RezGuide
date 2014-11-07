@@ -6,13 +6,13 @@
             		<img id="profilePicEdit" src="<?php echo base_url(); ?>img/WA_user.png" width="250" alt="Account Picture">
            		</div>
             	<div class="small-12 columns text-center">
-            		<h3 class="headerInfo" id="firstName">First Name </h3>
+            		<h3 class="headerInfo" id="firstName"><?php echo $results['students_firstname']; ?></h3>
            		</div>
             	<div class="small-12 columns text-center">
-            		<h3 class="headerInfo" id="lastName">Last Name </h3>
+            		<h3 class="headerInfo" id="lastName"><?php echo $results['students_lastname']; ?></h3>
             	</div>
             	<div class="small-12 columns text-center">
-            		<h3 class="headerInfo" id="programName">Program </h3>
+            		<h3 class="headerInfo" id="programName"><?php echo $results['students_program']; ?></h3>
             	</div>
         	</div>
         	<div class="small-8 columns">

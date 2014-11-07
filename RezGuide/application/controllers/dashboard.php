@@ -17,7 +17,8 @@ class Dashboard extends CI_Controller {
 	}
 
 	public function account($page = null){
-		
+		$this->load->model('Account_model');
+
 		if($page == "balance"){
 			$data['pgTitle'] = "RezGuide - Personal Dashboard - Account Balance";
 			$data['section'] = "Your Profile";
@@ -30,8 +31,6 @@ class Dashboard extends CI_Controller {
 			$this->load->view('templates/close');
 
 		}elseif($page == "points"){
-			$this->load->model('Account_model');
-
 			$data['pgTitle'] = "RezGuide - Personal Dashboard - My Points";
 			$data['section'] = "Account";
 			$data['results'] = $this->Account_model->getPoints($this->session->userdata('sId'));
@@ -48,6 +47,7 @@ class Dashboard extends CI_Controller {
 		}elseif($page == "edit_p2"){
 			$data['pgTitle'] = "RezGuide - Personal Dashboard - Edit Account";
 			$data['section'] = "Your Profile";
+			$data['results'] = $this->Account_model->studentData($this->session->userdata('sId'));
 			$this->load->view('templates/head',$data);
 			$this->load->view('personal/pd_header');
 
@@ -59,6 +59,7 @@ class Dashboard extends CI_Controller {
 		}else{
 			$data['pgTitle'] = "RezGuide - Personal Dashboard - Edit Account";
 			$data['section'] = "Your Profile";
+			$data['results'] = $this->Account_model->studentData($this->session->userdata('sId'));
 			$this->load->view('templates/head',$data);
 			$this->load->view('personal/pd_header');
 

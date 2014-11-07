@@ -42,7 +42,7 @@ class Events extends CI_Controller {
 	public function programs(){
 		$data['pgTitle'] = "RezGuide - Events - Programs";
 		$data['section'] = "Programs";
-		//$data['results'] = $this->Events_model->getEvents();
+		$data['results'] = $this->Events_model->getEvents(4);
 		$data['scrollTarget'] = ".accordionScroll";
 		$this->load->view('templates/head',$data);
 		$this->load->view('building/bd_header');

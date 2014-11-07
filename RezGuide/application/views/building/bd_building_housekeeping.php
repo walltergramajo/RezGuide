@@ -3,7 +3,12 @@
         <div class="row" id="buildingRow">
             <div class="small-11 small-centered columns">
                 <div class="small-2 small-push-1 columns">
-                    <img src="<?php echo base_url(); ?>img/tuesday.png" id="cleaningImage" class="left" alt="Cleaning Day">
+                    <?php foreach ($results as $row): ?>
+                        <div>
+                            <p><?php echo $row->gbhk_day ?></p>
+                        </div>
+                    <?php endforeach; ?>
+                    <!-- <img src="<?php echo base_url(); ?>img/tuesday.png" id="cleaningImage" class="left" alt="Cleaning Day"> -->
                 </div>
                 <div class="small-8 columns">    
                     <p id="noticeTitle" class="header text-center">Housekeeping</p>

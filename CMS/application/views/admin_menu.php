@@ -13,7 +13,7 @@
 </header>
 <div class="row">
 	<div class="small-7 small-centered columns">
-    	<h1 class="welcomeHeader"><?php echo welcomeMessage(); ?><br>Welcome to your admin page</h1>
+    	<h1 class="welcomeHeader"><?php echo $greeting; ?><br>Welcome to your admin page</h1>
     </div>
 </div>
 <div class="row iconRow">
