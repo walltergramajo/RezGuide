@@ -2645,35 +2645,35 @@ ul.pagination {
     display: block;
     margin-bottom: 0 !important; }
     .accordion dd.active a {
-		border-left: 15px solid #518d84;
-		background: url(../img/accordionArrow.png) no-repeat center left;
-      background-color: #74cabd;
-	  background-image:url('img/accordionArrow.png');
-	  color:#FFF;
-	   }
+    border-left: 15px solid #ebebeb;
+    background: url(../img/accordionArrow.png) no-repeat center left;
+      background-color: #65666a;
+    background-image:url('img/accordionArrow.png');
+    color:#FFF;
+     }
     .accordion dd > a {
-      background: #FFF;
-	  border-left: 15px solid #74cabd;
-      color: #518d84;
-	  font-size:1.15em;;
+      background: #ebebeb;
+    border-left: 15px solid #65666a;
+      color: #65666a;
+    font-size:1.15em;
       padding:20px 1rem;
       display: block;
       font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
       }
-	  .accordion dd span {
-		  margin-right: 10px;
-		  margin-top: -10px;
-		  font-size:1.45em;
-	  }
+    .accordion dd span {
+      margin-right: 10px;
+      margin-top: -10px;
+      font-size:1.45em;
+    }
       .accordion dd > a:hover {
-		border-left: 15px solid #518d84;
-		background: url(../img/accordionArrow.png)no-repeat center left;
+    border-left: 15px solid #e31d1a;
+    background: url(../img/accordionArrow.png)no-repeat center left;
        }
   .accordion .content {
-	border-left: 15px solid #518d84;
+  border-left: 15px solid #e31d1a;
     display: none;
     padding: 0.9375rem;
-	 }
+   }
     .accordion .content.active {
       display: block;
       background: white; }

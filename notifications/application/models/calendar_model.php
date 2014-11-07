@@ -3,9 +3,8 @@
 class Calendar_model extends CI_Model {
 
 	public function getEvents(){
-		$student = $this->db->get_where('tbl_studentsevents', array('students_id' => $this->session->userdata('sId')));
-		$studentEvents = $student->result_array();
-		$calEvents = $this->db->get_where('tbl_events', array('events_id' => $studentEvents['events_id']));
-		return $calEvents->result_array();
+		$query = "SELECT * FROM tbl_studentsevents, tbl_events WHERE tbl_studentsevents.events_id = tbl_events.events_id AND tbl_studentsevents.students_id = ".$this->session->userdata('sId');
+		$calEvents = $this->db->query($query);
+		return $calEvents->result();
 	}
 }

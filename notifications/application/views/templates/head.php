@@ -11,3 +11,6 @@
     <link rel="shortcut icon" href="<?php echo base_url(); ?>img/fanFavicon.ico" />
 </head>
 <body>
+<?php
+	$this->load->view("notification_launch");
+?>

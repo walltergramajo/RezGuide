@@ -4,7 +4,7 @@ class Main extends CI_Controller {
 	
 	public function __construct(){
 		parent::__construct();
-		$this->load->helper('helpers/welcome_helper');
+		$this->load->helper('welcome_helper');
 	}
 
 	public function index(){

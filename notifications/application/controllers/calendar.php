@@ -15,10 +15,8 @@ class Calendar extends CI_Controller {
 		$this->load->view('calendar/calendar_header');
 		$this->load->view('calendar/calendar');
 
-		// $this->load->view('templates/footer');
-		// $this->load->view('includes/calendar_datepicker');
-		// $this->load->view('includes/datepicker');
-		// $this->load->view('templates/close');
+		$this->load->view('calendar/calEvents');
+		$this->load->view('templates/close');
 	}
 
 }

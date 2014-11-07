@@ -4,9 +4,6 @@
         	<img src="<?php echo base_url(); ?>img/WA_rglogosm.png" alt="RezGuide"> 
         </div>
         <div class="small-10 columns" id="pageTitle">
-                    <div id="notifications">
-
-                    </div>
         	<div id="headerContainerSolo">
         	<h2 id="titleHeaderSolo" class="text-right header">Main Menu</h2>
             </div>

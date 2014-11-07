@@ -22,8 +22,10 @@ class Building extends CI_Controller {
 	}
 
 	public function garbage(){
+		$this->load->model('Gbhk_model');
 		$data['pgTitle'] = "RezGuide - Building Dashboard - Garbage";
 		$data['section'] = "Garbage";
+		$data['results'] = $this->Gbhk_model->garbageDays();
 		$this->load->view('templates/head',$data);
 		$this->load->view('building/bd_header');
 
@@ -35,8 +37,10 @@ class Building extends CI_Controller {
 	}
 
 	public function housekeeping(){
+		$this->load->model('Gbhk_model');
 		$data['pgTitle'] = "RezGuide - Building Dashboard - Housekeeping";
 		$data['section'] = "Housekeeping";
+		$data['results'] = $this->Gbhk_model->housekeepingDays();
 		$this->load->view('templates/head',$data);
 		$this->load->view('building/bd_header');
 		
