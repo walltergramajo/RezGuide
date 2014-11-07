@@ -169,7 +169,7 @@ input[type="text"], textarea
 	text-transform: uppercase;
 	font-size: 12pt;
 	padding: 3px 0;
-	color: #518d84;
+	color: #e31d1a;
 	
 }
 .ui-datepicker tbody td {
@@ -189,9 +189,9 @@ input[type="text"], textarea
 .ui-datepicker td span, .ui-datepicker td a {
 	display: inline-block;
 	text-align: center;
-	width: 30px;
-	height: 30px;
-	line-height: 30px;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
 	color: #74cabd;
 	
 }
@@ -200,7 +200,7 @@ input[type="text"], textarea
 }
 .ui-datepicker-calendar .ui-state-hover {
 	
-	border: 1px solid #74cabd;
+	border: 1px solid #65666a;
 	border-radius: 30px;
 }
 .ui-datepicker-calendar .ui-state-active {
@@ -1073,14 +1073,6 @@ input[type=checkbox] {
 	padding-top: 95px;
 }
 
-#calendarIntroHeader
-{
-	color: #74cabd;
-	font-size: 2.2em;
-	text-align: center;
-	line-height: 40px;
-	margin-bottom: 45px;
-}
 
 
 .bottomSectionCalendar1
@@ -1088,7 +1080,9 @@ input[type=checkbox] {
 	position: relative;
 	width: 100%;
 	height: 135px;
-	background-color: #74cabd;
+	background-color: #ebebeb;
+	position: fixed;
+	bottom: 0;
 }
 
 
@@ -1098,13 +1092,23 @@ input[type=checkbox] {
 	position: absolute;
 	margin-top: 35px;
 	margin-left: 10px;
-	height: 70px;
-	width: 70px;
+	height: 60px;
+	width: 60px;
+	border: solid 3px #65666a;
+	border-radius: 50px;
+}
+
+.dateClicked
+{
+	font-size: 2.2em;
+	text-align: center;
+	margin-bottom: 10px;
+	color: #e31d1a;
 }
 
 .calendarDescription
 {
-	color: #FFF;
+	color: #65666a;
 	font-size: 1.1em;
 	font-family: Helvetica, sans-serif;
 	margin-top: 15px;
@@ -1112,7 +1116,7 @@ input[type=checkbox] {
 
 .calendarDescriptionLower
 {
-	color: #FFF;
+	color: #65666a;
 	font-size: 1.1em;
 	font-family: Helvetica, sans-serif;
 
@@ -1124,7 +1128,7 @@ input[type=checkbox] {
 	height: 120px;
 	margin-top: 10px;
 	margin-left: 225px;
-	background-color: #FFF;
+	background-color: #65666a;
 	position: absolute;
 }
 
@@ -1135,17 +1139,17 @@ input[type=checkbox] {
 	position: absolute;
 	margin-top: 70px;
 	margin-left: 85px;
-	background-color: #90d5ca;
+	background-color: #65666a;
 }
 
 .dateDividerHorizontalSmall
 {
 	height: 2px;
-	width: 75px;
+	width: 60px;
 	position: absolute;
 	margin-top: 70px;
 	margin-left: 237px;
-	background-color: #90d5ca;
+	background-color: #65666a;
 }
 
 /*Dashboard Page*/
@@ -1716,7 +1720,7 @@ input[type=text].generalRequests
 
 .classifiedsEmail
 {
-	color: #74cabd;
+	color: #e31d1a;
 }
 
 .itemDescription
@@ -1778,7 +1782,7 @@ input[type=text].generalRequests
 
 .saleText
 {
-	color: #FFF;
+	color: #65666a;
 	font-size: 1.0em;
 	margin-left: 70px;
 }
@@ -1879,10 +1883,10 @@ input[type=text].generalRequests
 
 .pleaseSelect
 {
-	color: #74cabd;
+	color: #e31d1a;
 	font-size: 10px;
 	margin-top: -2px;
-	margin-right: 20px;
+	margin-left: 20px;
 }
 
 
@@ -1928,7 +1932,7 @@ input[type='file'] {
 
 .chatHeader
 {
-	color: #74cabd;
+	color: #e31d1a;
 	font-size: 2.2em;
 	text-align: center;
 	line-height: 40px;
@@ -1945,7 +1949,7 @@ input[type='file'] {
 
 .chatSeperator
 {
-	background-color: #999;
+	background-color: #65566a;
 	height: 5px;
 	width:340px;
 	margin-left: -25px;
@@ -1997,12 +2001,12 @@ input[type='file'] {
 {
 	height: 3px;
 	width: 100%;
-	background-color: #74cabd;
+	background-color: #ebebeb;
 }
 
 .operatorTitle
 {
-	color: #74cabd;
+	color: #e31d1a;
 	font-size: 0.8em;
 	margin-top: 8px;
 	margin-bottom: -20px;
@@ -2038,7 +2042,7 @@ input[type='file'] {
 
 .fsuHeader
 {
-	color: #74cabd;
+	color: #e31d1a;
 	font-size: 1.7em;
 	text-align: center;
 	line-height: 25px;
@@ -2076,7 +2080,7 @@ input[type='file'] {
 
 .genInfoHeader
 {
-	color: #74cabd;
+	color: #e31d1a;
 	font-size: 1.7em;
 	text-align: center;
 	line-height: 25px;
@@ -2119,7 +2123,7 @@ input[type='file'] {
 	text-align: center;
 	font-size: 1.4em;
 	margin: 0 auto;
-	color: #74cabd;
+	color: #e31d1a;
 }
 
 .directoryOffice
@@ -2513,9 +2517,29 @@ input[type='file'] {
 	{
 		position: relative;
 		width: 100%;
-		height: 225px;
-		background-color: #74cabd;
+		height: 190px;
+		background-color: #ebebeb;
+		position: fixed;
+		bottom: 0;
 	}
+
+	.dateClicked
+	{
+		font-size: 2.2em;
+		text-align: center;
+		margin-top: 5px;
+		color: #e31d1a;
+	}
+
+	.ui-datepicker td span, .ui-datepicker td a {
+	display: inline-block;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	color: #74cabd;
+	
+}
 
 	.dateSelected
 	{
@@ -2528,7 +2552,7 @@ input[type='file'] {
 
 	.calendarDescription
 	{
-		color: #FFF;
+		color: #65666a;
 		font-size: 1.1em;
 		font-family: Helvetica, sans-serif;
 		margin-top: 50px;
@@ -2536,7 +2560,7 @@ input[type='file'] {
 
 	.calendarDescriptionLower
 	{
-		color: #FFF;
+		color: #65666a;
 		font-size: 1.1em;
 		font-family: Helvetica, sans-serif;
 	}
@@ -2547,7 +2571,7 @@ input[type='file'] {
 		height: 120px;
 		margin-top: 40px;
 		margin-left: 225px;
-		background-color: #FFF;
+		background-color: #65666a;
 		position: absolute;
 	}
 
@@ -2558,7 +2582,7 @@ input[type='file'] {
 		position: absolute;
 		margin-top: 105px;
 		margin-left: 85px;
-		background-color: #90d5ca;
+		background-color: #65666a;
 	}
 
 	.dateDividerHorizontalSmall
@@ -2568,7 +2592,7 @@ input[type='file'] {
 		position: absolute;
 		margin-top: 105px;
 		margin-left: 237px;
-		background-color: #90d5ca;
+		background-color: #65666a;
 	}
 
 	/*Personal Dashboard*/

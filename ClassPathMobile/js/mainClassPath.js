@@ -46,6 +46,7 @@ $('#transportationIcon').click(function () {
 //for highlighted link choice on Selector Page
 
 var highlightLink = function () {
+    console.log('YAY IT WORKS');
         var active = null, colour = '#65666a', backgroundImage2 = "url('img/selectionArrow.png')";
         if (this.attachEvent) this.attachEvent('onunload', function () {
             active = null;

@@ -270,7 +270,7 @@ button.ui-button::-moz-focus-inner {
 	text-align: center;
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: normal;
- 	border-bottom: 2px solid #74cabd;
+ 	border-bottom: 2px solid #65666a;
 }
 .ui-datepicker td {
 	margin-bottom: 30px;
@@ -540,18 +540,18 @@ button.ui-button::-moz-focus-inner {
 	color: #518d84;
 }
 .ui-widget-content a {
-	color: #518d84;
+	color: #e31d1a;
 	background-color: #FFF;
 }
 .ui-widget-header {
 	
 	background: #ffffff url(images/ui-bg_gloss-wave_35_ffffff_500x100.png) 50% 50% repeat-x;
-	color: #74cabd;
+	color: #65666a;
 	font-family: Helvetica, Arial, sans-serif;
 	
 }
 .ui-widget-header a {
-	color: #74cabd;
+	color: #65666a;
 }
 
 /* Interaction states
@@ -562,12 +562,12 @@ button.ui-button::-moz-focus-inner {
 	
 	background-color: #FFF;
 	font-family: Helvetica, Arial, sans-serif;
-	color: #74cabd;
+	color: #65666a;
 }
 .ui-state-default a,
 .ui-state-default a:link,
 .ui-state-default a:visited {
-	color: #74cabd;
+	color: #65666a;
 	text-decoration: none;
 }
 .ui-state-hover,
@@ -579,7 +579,7 @@ button.ui-button::-moz-focus-inner {
 	
 	background: #ffffff url(images/ui-bg_glass_100_ffffff_1x400.png) 50% 50% repeat-x;
 	font-weight: bold;
-	color: #74cabd;
+	color: #65666a;
 }
 .ui-state-hover a,
 .ui-state-hover a:hover,
@@ -589,17 +589,17 @@ button.ui-button::-moz-focus-inner {
 .ui-state-focus a:hover,
 .ui-state-focus a:link,
 .ui-state-focus a:visited {
-	color: #74cabd;
+	color: #65666a;
 	text-decoration: none;
 }
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
-	border: 1px solid #74cabd;
+	border: 1px solid #e31d1a;
 	border-radius: 30px;
-	background: #ffffff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+	background: #FFF 50% 50% repeat-x;
 	font-weight: bold;
-	color: #518d84;
+	color: #65666a;
 }
 .ui-state-active a,
 .ui-state-active a:link,
@@ -613,11 +613,11 @@ button.ui-button::-moz-focus-inner {
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
-	border: 1px solid #518d84;
+	border: 1px solid #e31d1a;
 	-webkit-border-radius: 40px;
 	border-radius: 40px;
-	background: #ffffff url(images/ui-bg_highlight-soft_75_ffffff_1x100.png) 50% top repeat-x;
-	color: #363636;
+	background: #e31d1a 50% top repeat-x;
+	color: #FFF;
 }
 .ui-state-highlight a,
 .ui-widget-content .ui-state-highlight a,
@@ -656,8 +656,7 @@ button.ui-button::-moz-focus-inner {
 .ui-state-disabled,
 .ui-widget-content .ui-state-disabled,
 .ui-widget-header .ui-state-disabled {
-	opacity: .35;
-	filter:Alpha(Opacity=35);
+
 	background-image: none;
 }
 .ui-state-disabled .ui-icon {
