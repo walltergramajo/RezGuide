@@ -9,22 +9,22 @@
         	<div class="small-6 small-centered columns" id="classifiedFilters">
             	<div class="row">
                 	<div class="small-2 columns">
-                    	<a href="<?php echo base_url(); ?>index.php/classifieds/buy"><img src="<?php echo base_url(); ?>img/all.png" alt="All Classifieds"></a>
+                    	<a href="<?php echo base_url(); ?>index.php/classifieds/buy"><img src="<?php echo base_url(); ?>img/WA_all.png" alt="All Classifieds"></a>
                     </div>
                     <div class="small-2 columns">
-                    	<a href="<?php echo base_url(); ?>index.php/classifieds/buy/books"><img src="<?php echo base_url(); ?>img/book.png" alt="Books"></a>
+                    	<a href="<?php echo base_url(); ?>index.php/classifieds/buy/books"><img src="<?php echo base_url(); ?>img/WA_book.png" alt="Books"></a>
                     </div>
                     <div class="small-2 columns">
-                    	<a href="<?php echo base_url(); ?>index.php/classifieds/buy/clothing"><img src="<?php echo base_url(); ?>img/clothing.png" alt="Clothing"></a>
+                    	<a href="<?php echo base_url(); ?>index.php/classifieds/buy/clothing"><img src="<?php echo base_url(); ?>img/WA_clothing.png" alt="Clothing"></a>
                     </div>
                     <div class="small-2 columns">
-                    	<a href="<?php echo base_url(); ?>index.php/classifieds/buy/furniture"><img src="<?php echo base_url(); ?>img/furniture.png" alt="Furniture"></a>
+                    	<a href="<?php echo base_url(); ?>index.php/classifieds/buy/furniture"><img src="<?php echo base_url(); ?>img/WA_furniture.png" alt="Furniture"></a>
                     </div>
                     <div class="small-2 columns">
-                    	<a href="<?php echo base_url(); ?>index.php/classifieds/buy/electronics"><img src="<?php echo base_url(); ?>img/computers.png" alt="Electronics"></a>
+                    	<a href="<?php echo base_url(); ?>index.php/classifieds/buy/electronics"><img src="<?php echo base_url(); ?>img/WA_electronics.png" alt="Electronics"></a>
                     </div>
                     <div class="small-2 columns">
-                    	<a href="<?php echo base_url(); ?>index.php/classifieds/buy/other"><img src="<?php echo base_url(); ?>img/other.png" alt="other"></a>
+                    	<a href="<?php echo base_url(); ?>index.php/classifieds/buy/other"><img src="<?php echo base_url(); ?>img/WA_other.png" alt="other"></a>
                     </div>
                 </div>
             </div>
