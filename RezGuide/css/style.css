@@ -1,5 +1,15 @@
 @charset "utf-8"; 
 /* CSS Document */
+
+/*Colors for color scheme
+
+Dark Grey Text Color: #65666a;
+Red Fanshawe Color: #e31d1a;
+Light Grey: #ebebeb;
+
+*/
+
+
 @font-face {
     font-family: 'caviar_dreamsbold';
     src: url(../assets/caviar_dreams_bold-webfont.eot);
@@ -512,13 +522,13 @@ th {
 .pointsNumber
 {
 	font-size: 9em;
-	color: #74cabd;
+	color: #e31d1a;
 	margin: auto;
 }
 
 .pointsCircle
 {
-	border: solid 7px #74cabd;
+	border: solid 7px #65666a;
 	height: 200px;
 	width: 200px;
 	border-radius: 100px;
@@ -526,7 +536,7 @@ th {
 
 .smallCircle
 {
-	border: solid 3px #74cabd;
+	border: solid 3px #65666a;
 	height: 40px;
 	width: 40px;
 	border-radius: 100px;
@@ -535,7 +545,7 @@ th {
 .smallPoints
 {
 	font-size: 1.2em;
-	color: #74cabd;
+	color: #e31d1a;
 	text-align: center;
 }
 

@@ -59,9 +59,9 @@
                 </div>
             </div>
             <div class="row">
-        		<div class=" small-6 small-centered columns text-center">
-                	<input type="image" src="<?php echo base_url(); ?>img/send.png" alt="Submit!">
-        		</div>
+        		<div class=" small-4 small-push-8 text-center">
+                    <input type="submit" class="submitButton" value="SEND" alt="Send!">
+                </div>
         	</div>
         </form>
      </div>
