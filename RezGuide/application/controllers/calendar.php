@@ -6,10 +6,13 @@ class Calendar extends CI_Controller {
 		parent::__construct();
 	}
 
-	public function index(){
+	public function index($date = null){
 		$this->load->model('Calendar_model');
 
-		$data['events'] = $this->Calendar_model->getEvents();
+		if($date == null){
+			$date = date();
+		}
+		$data['events'] = $this->Calendar_model->getEvents($date);
 		$data['pgTitle'] = "Calendar";
 		$this->load->view('templates/head', $data);
 		$this->load->view('calendar/calendar_header');
