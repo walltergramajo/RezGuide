@@ -13,7 +13,7 @@
                         	<dd class="accordionBottom">
                                 <a href="#panel<?php echo $row->news_id ?>" class="accordionLink accordionTitle" onClick="highlightLink2(this);"><?php echo $row->news_title ?><span class="right accordionDropDownIcon"><img class="imgswap" src="<?php echo base_url(); ?>img/accordionArrowDown.png" alt="Click For more Information."></span> </a>
                                 <div id="panel<?php echo $row->news_id ?>" class="content"> 
-                                    <p class="complaintDate"><?php echo $row->news_date ?></p>
+                                    <p class="complaintDate"><?php echo $row->news_datetime ?></p>
                                     <p>Location: <?php echo $row->news_location ?></p>
                                     <p><?php echo $row->news_description ?></p>
                                 </div>
