@@ -13,7 +13,7 @@
                 <div class="small-8 columns">    
                     <p id="noticeTitle" class="header text-center">Garbage</p>
                     <div class="buildingLine"> </div>
-                    <p class="text-center" id="buildingContent"> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas lectus lorem, rutrum sit amet iaculis nec, porta quis nisl. Pellentesque vulputate elit nec turpis hendrerit tempor. Etiam eu viverra velit. Integer urna arcu, tincidunt non sem at, tincidunt ornare nisl. </p>
+                    <p class="text-center" id="buildingContent">Please ensure all garbage and recycling has been seperated and dispose at designated location. The following are your garbage days for the week</p>
                     <div class="buildingLine"> </div>
                 </div>
             </div>

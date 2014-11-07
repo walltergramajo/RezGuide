@@ -18,6 +18,6 @@ class Account_model extends CI_Model {
 
 	public function studentData($sId){
 		$query = $this->db->get_where('tbl_students', array('students_id' => $sId));
-		return $query->result_array();
+		return $query->row();
 	}
 }

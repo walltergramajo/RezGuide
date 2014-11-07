@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 06, 2014 at 10:51 PM
+-- Generation Time: Nov 07, 2014 at 08:31 PM
 -- Server version: 5.5.33
 -- PHP Version: 5.5.3
 
@@ -128,10 +128,32 @@ CREATE TABLE tbl_city (
   city_hours varchar(35) NOT NULL,
   city_price varchar(10) NOT NULL,
   city_link varchar(85) NOT NULL,
-  city_img varchar(85) NOT NULL,
+  city_img varchar(85) NOT NULL DEFAULT 'default.jpg',
   cityCat_id int(3) NOT NULL,
   PRIMARY KEY (city_id)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table 'tbl_city'
+--
+
+INSERT INTO tbl_city (city_id, city_title, city_description, city_location, city_hours, city_price, city_link, city_img, cityCat_id) VALUES
+(1, 'Road Hockey Tournament', '4th Annual 3 on 3 hockey tournament in the heart of downtown London. Plenty of fun activities for the family and a variety of delicious foods to enjoy.', 'Victoria Park', 'September 4', '', 'http://www.londontourism.ca/Events', 'default.jpg', 1),
+(2, 'Color Run', 'We can’t wait to see you! Below is all the information you will need to be ready for race day. Grab your tutus, your friends, and your running shoes and we’ll see you at the start line!', 'TBA', 'September 4', '', 'http://ca.thecolorrun.com/', 'default.jpg', 1),
+(3, 'Harvest Festival', 'Come enjoy plenty of activities for the family from a corn maze to bobbing for apples there is fun for everyone!', 'Victoria Park', 'October 4', '', 'http://www.londontourism.ca/Events', 'default.jpg', 1),
+(4, 'Ice Rink Opening', 'Join us in the opening of the public skating rink in Victoria Park and join in on the fun. Don''t have skates? That''s fine we offer skate rentals.', 'Victoria Park', 'November 14', '', 'http://www.londontourism.ca/Events', 'default.jpg', 1),
+(5, 'Tuesday Night is Movie Night', 'Nothing like a night to go see a movie and tickets are half off! Be sure to line up early to ensure the best seat in the house!', 'All Cineplex Theatre Locations', 'Every Tuesday', '', 'http://www.cineplex.com', 'default.jpg', 2),
+(6, 'Comedy Night', 'Laugh until your cheeks hurt, September 23 is Comedy Night at Fanshawe College. Join us as we host several comedians to entertain you. $5 per person', 'Forwell Hall', 'September 23', '$5.00', 'http://fsu.ca/events.php', 'default.jpg', 2),
+(7, 'Kenny Vs Spenny Live', 'An interactive evening with two of Canada''s comedic pioneers. Q and A, heated debates and of course possible and random humiliations. Get your tickets at the Biz Booth.', 'Forwell Hall', 'October 14', '', 'http://fsu.ca/events.php', 'default.jpg', 2),
+(8, 'Tony Lee and Stevie Starr', 'Back by popular demand are two of the most popular performers to ever visit Fanshawe. X-rated hypnotist Tony Lee returns to Fanshawe to put on a show that is always one of the most outrageous.', 'Forwell Hall', 'October 17', '', 'http://fsu.ca/events.php', 'default.jpg', 2),
+(9, 'The Equalizer', 'The October 1st film is The Equalizer. Denzel Washington plays McCall, a man who believes he has put his mysterious past behind him and dedicated himself to beginning a new, quiet life. But when McCall meets Teri, a young girl under the control of ultra-violent Russian gangsters, he can''t stand idly by - he has to help her.', 'Rainbow Cinemas (CITI Plaza)', 'October 1, 6:30pm', '', 'http://fsu.ca/calendar.php', 'default.jpg', 3),
+(10, 'Gone Girl', 'The October 8th film is Gone Girl. On the occasion of his fifth wedding anniversary, Nick Dunne (Ben Affleck) reports that his beautiful wife has gone missing. Under pressure from the police and a growing media frenzy, Nick''s portrait of a blissful union begins to crumble. Soon his lies, deceits and strange behavior have everyone asking the same dark question: Did Nick Dunne kill his wife?', 'Rainbow Cinemas (CITI Plaza)', 'October 8, 6:30pm', '', 'http://fsu.ca/calendar.php', 'default.jpg', 3),
+(11, 'Dracula Untold', 'The October 15th film is Dracula Untold, the origin story of the man who became Dracula.', 'Rainbow Cinemas (CITI Plaza)', 'October 15, 7:00pm', '', 'http://fsu.ca/calendar.php', 'default.jpg', 3),
+(12, 'The Judge', 'The October 22nd film is The Judge. A big-city lawyer returns home after the death of his mother, only to learn that his estranged father, the town''s judge, is suspected of murder. He sets out to discover the truth and along the way reconnects with the family he walked away from years before.', 'Rainbow Cinemas (CITI Plaza)', 'October 22, 6:30pm', '', 'http://fsu.ca/calendar.php', 'default.jpg', 3),
+(13, 'Bertoldi''s Trattoria', 'Inspired by our grandparents Nonno Gelindo and Nonna Marie. our food is cooked the true Italian way - made from scratch using only the freshest ingredients possible. We bake our own bread daily, we make all of our specialty pastas, and all of our sauces are made fresh here on the premises.', '650 Richmond Street', '', '', 'http://www.londontourism.ca/Places-To-Eat/Casual-Dining/Bertoldis-Trattoria', 'default.jpg', 4),
+(14, 'Thaifoon Restaurant', 'Thaifoon is a destination for business luncheon, pre-theatre &amp; concert events, social gathering, a romantic dinner or a casual night out. <br><br>Sample Thai delicacies made from scratch using diverse authentic &amp; modern styles. Specialties includes Pad Thai, Thai Curry, Peanut Past, Panko-crusted Salmon.', '120 Dundas Street', '', '', 'http://www.londontourism.ca/Places-To-Eat/Casual-Dining/Thaifoon-Restaurant', 'default.jpg', 4),
+(15, 'Auberge du Petit Prince', 'At Auberge du Petit Prince we want our guests to have a unique dining experience like no other in the city. Our new Head Chef Kyle Rose, and Sous Chef Byron Hallett, has developed a myriad of classic French offerings with a modern flare. Our menu is our strongest foot and we lead with it consistently. We update the menu seasonally, and also offer a 3-course price fixed menu year round.', '458-460 King Street', '', '', 'http://www.londontourism.ca/Places-To-Eat/Casual-Dining/Auberge-du-Petit-Prince', 'default.jpg', 4),
+(16, 'The Church Key Bistro-Pub', 'Warm and comfortable, with a pleasing combination of brick, stone, and wood, The Church Key is an extensively renovated pub in a prominent Richmond Row heritage building. An intimate outdoor courtyard flanks the south side of the building. The Church Key follows in the British tradition of the gastro pub by specializing in traditional food done with gourmet flair. Chef Michael Anglestad, with over 20 years in fine dining, uses seasonal, locally sourced ingredients extensively.', '2476 Richmond Street', '', '', 'http://www.londontourism.ca/Places-To-Eat/Casual-Dining/Bertoldis-Trattoria', 'default.jpg', 4);
 
 -- --------------------------------------------------------
 
@@ -143,7 +165,17 @@ CREATE TABLE tbl_citycat (
   cityCat_id int(3) unsigned NOT NULL AUTO_INCREMENT,
   cityCat_category varchar(50) NOT NULL,
   PRIMARY KEY (cityCat_id)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table 'tbl_citycat'
+--
+
+INSERT INTO tbl_citycat (cityCat_id, cityCat_category) VALUES
+(1, 'General'),
+(2, 'Entertainment'),
+(3, 'Movies'),
+(4, 'Restaurants');
 
 -- --------------------------------------------------------
 
