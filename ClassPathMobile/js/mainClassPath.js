@@ -46,8 +46,7 @@ $('#transportationIcon').click(function () {
 //for highlighted link choice on Selector Page
 
 var highlightLink = function () {
-    console.log('YAY IT WORKS');
-        var active = null, colour = '#65666a', backgroundImage2 = "url('img/selectionArrow.png')";
+        var active = null, colour = '#65666a', backgroundImage2 = "url('img/selectionArrow.png')", textcolor = '#FFF';
         if (this.attachEvent) this.attachEvent('onunload', function () {
             active = null;
         });
@@ -63,7 +62,7 @@ var highlightLink = function () {
 				element.style.backgroundRepeat = "no-repeat";
 				element.style.backgroundSize = "15px 58px";
                 active = element;
-				
+				window.console&&console.log('YAY');
             }
         }
 }();

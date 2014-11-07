@@ -2449,6 +2449,9 @@ ul.pagination {
       .accordion dd > a:hover {
         background: #65666a;
         color: #FFF; }
+        .accordion dd > a.active {
+        background: #65666a;
+        color: #FFF; }
   .accordion .content {
     display: none;
     padding: 0.9375em; 
