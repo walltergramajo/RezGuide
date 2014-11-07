@@ -7,7 +7,9 @@ class Info extends CI_Controller {
 	}
 
 	public function index(){
+		$this->load->model('City_model');
 		$data['pgTitle'] = "RezGuide - Info";
+		$data['results'] = $this->City_model->getCity(1);
 		$data['scrollTarget'] = ".accordionScroll";
 		$this->load->view('templates/head',$data);
 		$this->load->view('info/info_header');
@@ -19,10 +21,33 @@ class Info extends CI_Controller {
 		$this->load->view('templates/close');
 	}
 
-	public function cityguide(){
-		$this->load->model('Events_model');
+	public function cityguide($cat = null){
+		$this->load->model('City_model');
+
+		switch ($cat) {
+			case 'general':
+				$cat = 1;
+				break;
+
+			case 'entertainment':
+				$cat = 2;
+				break;
+
+			case 'movies':
+				$cat = 3;
+				break;
+
+			case 'restaurants':
+				$cat = 4;
+				break;
+			
+			default:
+				$cat = null;
+				break;
+		}
+
 		$data['pgTitle'] = "RezGuide - City Guide";
-		$data['results'] = $this->Events_model->getEvents(2);
+		$data['results'] = $this->City_model->getCity($cat);
 		$data['scrollTarget'] = ".accordionScroll";
 		$this->load->view('templates/head',$data);
 		$this->load->view('info/info_header');
