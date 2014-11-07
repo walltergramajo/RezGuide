@@ -325,10 +325,10 @@ button.ui-button::-moz-focus-inner {
 	left: 300px;
 }
 .ui-datepicker .ui-datepicker-prev-hover {
-	left: 20px;
+	border: none;
 }
 .ui-datepicker .ui-datepicker-next-hover {
-	left: 300px;
+	border: none;
 }
 .ui-datepicker .ui-datepicker-prev span,
 .ui-datepicker .ui-datepicker-next span {
@@ -855,8 +855,9 @@ body .ui-tooltip {
 .ui-state-focus,
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
-	background: #65666a;
-	color: #fff;
+	background: #FFF;
+	border: 2px solid #e31d1a;
+	color: #65666a;
 }
 .ui-state-hover a,
 .ui-state-hover a:hover,
@@ -872,8 +873,8 @@ body .ui-tooltip {
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
-	border: 2px solid #e31d1a;
-	background: #e31d1a;
+	border: 2px solid #65666a;
+	background: #65666a;
 	color: #FFF;
 }
 .ui-state-active a,
@@ -889,8 +890,8 @@ body .ui-tooltip {
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
 	border: 2px solid #65666a;
-	background: #e31d1a;
-	color: #fff ;
+	background: #ebebeb;
+	color: #65666a ;
 }
 .ui-state-highlight a,
 .ui-widget-content .ui-state-highlight a,
@@ -949,14 +950,14 @@ body .ui-tooltip {
 	background-image: url(images/ui-icons_222222_256x240.png);
 }
 .ui-widget-header .ui-icon {
-	background-image: url(images/ui-icons_74cabd_256x240.png);
+	background-image: url(images/ui-icons_65666a_256x240.png);
 }
 .ui-state-default .ui-icon {
 	background-image: url(images/ui-icons_ef8c08_256x240.png);
 }
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon {
-	background-image: url(images/ui-icons_ffffff_256x240.png);
+	background-image: url(images/ui-icons_222222_256x240.png);
 }
 .ui-state-active .ui-icon {
 	background-image: url(images/ui-icons_ef8c08_256x240.png);

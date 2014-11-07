@@ -1304,7 +1304,7 @@ input, textarea, select {
 		height:30px;
 		width:30px;
 		background: #fff;
-		color: #74cabd;
+		color: #65666a;
 		margin-left:25px;
 		font-size:1.3em;
 	}
@@ -1316,7 +1316,7 @@ input, textarea, select {
 	}
 
 	.ui-widget-header {
-		color: #74cabd;
+		color: #e31d1a;
 		font-size: 1.25em;
 	
 	}
@@ -1339,6 +1339,22 @@ input, textarea, select {
 	}
 	.ui-datepicker .ui-datepicker-next-hover {
 		left: 225px;
+	}
+
+	.ui-state-highlight,
+	.ui-widget-content .ui-state-highlight,
+	.ui-widget-header .ui-state-highlight {
+		border: 2px solid #65666a;
+		background: #ebebeb;
+		color: #65666a ;
+	}
+
+	.ui-state-active,
+	.ui-widget-content .ui-state-active,
+	.ui-widget-header .ui-state-active {
+		border: 2px solid #65666a;
+		background: #65666a;
+		color: #FFF;
 	}
 
 	.rezguideLogin
