@@ -9,6 +9,7 @@
                         </div>
                     <?php endforeach; ?>
                     <!-- <img src="<?php echo base_url(); ?>img/garbageDays.png" id="garbageImage" alt="Cleaning Day"> -->
+                    <!-- Holy Mother of gawd why cant I get this to work -->
                 </div>
                 <div class="small-8 columns">    
                     <p id="noticeTitle" class="header text-center">Garbage</p>
