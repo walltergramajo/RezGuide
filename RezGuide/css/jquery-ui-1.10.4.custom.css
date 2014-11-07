@@ -365,10 +365,10 @@ button.ui-button::-moz-focus-inner {
 	padding: .7em .3em;
 	text-align: center;
 	font-size:1.75em;
-	color: #518d84;
+	color: #e31d1a;
 	font-weight:300;
 	padding-bottom: 2px;
-	border-bottom: solid 2px #74cabd;
+	border-bottom: solid 2px #65666a;
 }
 .ui-datepicker td {
 	border: 0;
@@ -812,7 +812,7 @@ body .ui-tooltip {
 }
 .ui-widget-header {
 	
-	color: #74cabd;
+	color: #e31d1a;
 	font-size: 1.75em;
 	
 }
@@ -839,7 +839,7 @@ body .ui-tooltip {
 	height:50px;
 	width:50px;
 	background: #fff;
-	color: #74cabd;
+	color: #65666a;
 	margin-left:25px;
 	font-size:1.75em;
 }
@@ -855,7 +855,7 @@ body .ui-tooltip {
 .ui-state-focus,
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
-	background: #518d84;
+	background: #65666a;
 	color: #fff;
 }
 .ui-state-hover a,
@@ -872,9 +872,9 @@ body .ui-tooltip {
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
-	border: 2px solid #518d84;
-	background: #74cabd;
-	color: #fff;
+	border: 2px solid #e31d1a;
+	background: #e31d1a;
+	color: #FFF;
 }
 .ui-state-active a,
 .ui-state-active a:link,
@@ -888,8 +888,8 @@ body .ui-tooltip {
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
-	border: 2px solid #74cabd;
-	background: #518d84;
+	border: 2px solid #65666a;
+	background: #e31d1a;
 	color: #fff ;
 }
 .ui-state-highlight a,
