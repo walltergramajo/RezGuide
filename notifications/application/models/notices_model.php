@@ -22,7 +22,7 @@ class Notices_model extends CI_Model {
 	}
 
 	public function getAll($u){
-		$notices = $this->db->get_where('students_id' => $u));
-		return $notices->result();
+		$allnotices = $this->db->get_where('tbl_notices', array('seen' => 0, 'students_id' => $u));
+		return $allnotices->result();
 	}
 }
