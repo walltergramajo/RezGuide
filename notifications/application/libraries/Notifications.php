@@ -5,10 +5,10 @@ class Notifications {
 	public function getunseen() {
 
 		$CI =& get_instance();
-	    $CI->load->model('Notices_model');
+	    $CI->load->model('Notifications_model');
 
 	    if($CI->session->userdata('logged_in') == TRUE) {
-		    $unseen = $CI->Notices_model->getAll($CI->session->userdata('sId'));
+		    $unseen = $CI->Notifications_model->getAll($CI->session->userdata('sId'));
 		    return $unseen;
 		    // $theusername = $CI->session->userdata('username');
 		    // return $theusername;
