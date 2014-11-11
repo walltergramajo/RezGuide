@@ -7,6 +7,6 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/foundation.css" />
     <script src="<?php echo base_url(); ?>js/vendor/modernizr.js"></script>
     <link href="<?php echo base_url(); ?>css/cms_styles.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href="<?php echo base_url(); ?>img/favicon.ico" />
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>img/fanFavicon.ico" />
 </head>
 <body>
