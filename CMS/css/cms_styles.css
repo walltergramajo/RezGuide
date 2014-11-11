@@ -910,7 +910,7 @@ body {
 	
 	.dashboardText {
 		margin-top: 15px;
-		color: #74cabd;
+		color: #65666a;
 		font-size: 2.5em;
 		text-transform: uppercase;
 	}
@@ -1054,7 +1054,7 @@ body {
 	
 	.menuText {
 		margin-top: -10px;
-		color: #fff;
+		color: #65666a;
 		text-transform: uppercase;
 		font-size: .6em;
 	}
@@ -1080,7 +1080,7 @@ body {
 	}
 	
 	.botAnchor:hover p {
-		color: #518d84;
+		color: #e31d1a;
 	}
 	
 	.botImg {

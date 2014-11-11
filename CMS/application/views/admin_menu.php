@@ -24,7 +24,7 @@
                     <li>
                         <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add">
                         <div class="small-4 columns">
-                            <img src="<?php echo base_url(); ?>img/CMS_add.png" onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" alt="Add">
+                            <img src="<?php echo base_url(); ?>img/CMS_addLrg.png" onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" alt="Add">
                         </div>
                         <div class="small-8 columns">
                             <p class="dashboardText text-justify header"> Add </p>
@@ -34,7 +34,7 @@
                     <li>
                         <a class="botAnchor" href="<?php echo base_url(); ?>index.php/edit">
                         <div class="small-4 columns">
-                            <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="<?php echo base_url(); ?>img/CMS_edit.png" alt="Edit">
+                            <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="<?php echo base_url(); ?>img/CMS_editLrg.png" alt="Edit">
                         </div>
                         <div class="small-8 columns">
                             <p class="dashboardText text-justify header"> Edit </p>
@@ -44,7 +44,7 @@
                     <li>
                         <a class="botAnchor" href="<?php echo base_url(); ?>index.php/users_main.php">
                         <div class="small-4 columns">
-                            <img id="usersIcon" onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="<?php echo base_url(); ?>img/CMS_users.png" alt="Users">
+                            <img id="usersIcon" onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="<?php echo base_url(); ?>img/CMS_usersLrg.png" alt="Users">
                         </div>
                         <div class="small-8 columns">
                             <p class="dashboardText text-justify header"> Users </p>
