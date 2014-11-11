@@ -4,8 +4,8 @@
             <div class="small-4 columns text-center">
                 <div id="calendarAccordion">
                     <dl class="accordion" data-accordion>
-                        <?php foreach ($events as $row): ?>
-                            <dd>
+                        <?php //foreach ($events as $row): ?>
+                            <!-- <dd>
                                 <a href="#panel<?php echo $row->events_id ?>" class="accordionLink" onClick="highlightLink(this);"><?php echo $row->events_title ?><span class="right"><img src="<?php echo base_url(); ?>img/accordionArrowDownHover.png" alt="Click For more Information."></span></a>
                                 <div id="panel<?php echo $row->events_id ?>" class="content">
                                     <div class="dividerAccordionTop"></div>
@@ -24,8 +24,8 @@
                                         <div class="dividerAccordion"></div>
                                     </div>
                                 </div>
-                            </dd>
-                        <?php endforeach; ?>
+                            </dd> -->
+                        <?php //endforeach; ?>
                     </dl>
                 </div>
             </div>
