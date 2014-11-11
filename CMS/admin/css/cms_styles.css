@@ -317,7 +317,7 @@ body {
 	}
 	
 	.divider {
-		background-color: #dce8e6;
+		background-color: #ebebeb;
 		display: block;
 		margin: 0 auto;
 		width: 650px;
@@ -325,7 +325,7 @@ body {
 	}
 	
 	.lgdivider {
-		background-color: #b9e4de;
+		background-color: #ebebeb;
 		display: block;
 		margin: 0 auto;
 		width: 570px;
@@ -333,7 +333,7 @@ body {
 	}
 	
 	.titleDivider {
-		background-color: #b9e4de;
+		background-color: #ebebeb;
 		display: block;
 		margin: 0 auto;
 		width: 800px;
