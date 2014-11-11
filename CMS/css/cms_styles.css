@@ -39,7 +39,7 @@ body {
 	}
 	
 	#titleDirectory {
-		color: #518d84;
+		color: #65666a;
 		font-size: 4.28em;
 		margin-left: 75px;
 		margin-top: 60px;
@@ -47,7 +47,7 @@ body {
 	}
 	
 	#titleHeader {
-		color: #FFF;
+		color: #e31d1a;
 		font-size: 3.46em;
 		margin-top: -35px;
 	}
@@ -58,14 +58,14 @@ body {
 	
 	header {
 		height: 180px;
-		background-color: #74cabd;
+		background-color: #ebebeb;
 	}
 	
 	.welcomeHeader
 	{
 		font-family: 'caviar_dreamsbold';
 		font-size: 1.8em;
-		color: #74cabd;
+		color: #65666a;
 		text-align: center;
 		text-transform: uppercase;
 	}
@@ -139,7 +139,7 @@ body {
 	}
 	
 	#fsuTitle {
-		color: #518d84;
+		color: #65666a;
 		font-size: 4.28em;
 		margin-left: -120px;
 		margin-top: 60px;
@@ -1047,7 +1047,7 @@ body {
 		bottom: 0;
 		left: 0;
 		width: 100%;
-		background-color: #74cabd;
+		background-color: #ebebeb;
 		height: 70px;
 		z-index: 100;
 	}

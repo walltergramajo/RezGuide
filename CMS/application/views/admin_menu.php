@@ -1,7 +1,7 @@
 <header>
 	<div class="row" id="headerRow">
     	<div class="small-3 columns" id="mainLogo">
-        	<img src="<?php echo base_url(); ?>img/FINAL_LOGO.png" alt="RezGuide"> 
+        	<img src="<?php echo base_url(); ?>img/WA_rgLogoSm.png" alt="RezGuide"> 
         </div>
         <div class="small-9 columns" id="pageTitle">
         	<div id="headerContainer">
@@ -24,7 +24,7 @@
                     <li>
                         <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add">
                         <div class="small-4 columns">
-                            <img src="<?php echo base_url(); ?>img/cms-create.png" onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" alt="Add">
+                            <img src="<?php echo base_url(); ?>img/CMS_add.png" onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" alt="Add">
                         </div>
                         <div class="small-8 columns">
                             <p class="dashboardText text-justify header"> Add </p>
@@ -34,7 +34,7 @@
                     <li>
                         <a class="botAnchor" href="<?php echo base_url(); ?>index.php/edit">
                         <div class="small-4 columns">
-                            <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="<?php echo base_url(); ?>img/cms-edit.png" alt="Edit">
+                            <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="<?php echo base_url(); ?>img/CMS_edit.png" alt="Edit">
                         </div>
                         <div class="small-8 columns">
                             <p class="dashboardText text-justify header"> Edit </p>
@@ -44,7 +44,7 @@
                     <li>
                         <a class="botAnchor" href="<?php echo base_url(); ?>index.php/users_main.php">
                         <div class="small-4 columns">
-                            <img id="usersIcon" onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="<?php echo base_url(); ?>img/cms-users.png" alt="Users">
+                            <img id="usersIcon" onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="<?php echo base_url(); ?>img/CMS_users.png" alt="Users">
                         </div>
                         <div class="small-8 columns">
                             <p class="dashboardText text-justify header"> Users </p>
