@@ -68,6 +68,7 @@ body {
 		color: #65666a;
 		text-align: center;
 		text-transform: uppercase;
+		padding-top:30px;
 	}
 	
 	.menu {
@@ -1053,7 +1054,7 @@ body {
 	}
 	
 	.menuText {
-		margin-top: -10px;
+		margin-top: 5px;
 		color: #65666a;
 		text-transform: uppercase;
 		font-size: .6em;
@@ -1061,7 +1062,7 @@ body {
 	
 	#footerNav {
 		width: 600px;
-		margin-left: -80px;
+		margin-left: -0px;
 	}
 	
 	#footerNav li {
@@ -1071,7 +1072,8 @@ body {
 	}
 	
 	#footerNav li img {
-		width: 50px;
+		padding-top:10px;
+		width:35px;
 	}
 	
 	.botAnchor {
