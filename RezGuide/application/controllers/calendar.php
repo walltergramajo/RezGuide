@@ -11,9 +11,13 @@ class Calendar extends CI_Controller {
 		$this->load->view('templates/head', $data);
 		$this->load->view('calendar/calendar_header');
 		$this->load->view('calendar/calendar');
-
-		//$this->load->view('calendar/calEvents');
 		$this->load->view('templates/close');
+	}
+
+	public function events_calendar(){
+		$this->load->library('Json');
+		$data['events'] = $this->json->calendar_events();
+		$this->load->view('calendar/calEvents', $data);
 	}
 
 }
