@@ -71,7 +71,7 @@
                         <ul id="footerNav">
                             <li>
                                 <a class="botAnchor" href="cms_main.php">
-                                <img onMouseOver="swapDark('3')" onMouseOut="swapLight('3')" class="botImg" src="../img/homeIcon.png" alt="Home">
+                                <img onMouseOver="swapDark('3')" onMouseOut="swapLight('3')" class="botImg" src="../img/CMS_home.png" alt="Home">
                                 <p class="menuText header">Home</p>
                                 </a>
                             </li>

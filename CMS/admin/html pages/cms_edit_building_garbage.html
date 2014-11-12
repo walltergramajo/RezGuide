@@ -134,31 +134,31 @@
                         <ul id="footerNav">
                             <li>
                                 <a class="botAnchor" href="cms_main.php">
-                                <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="../img/homeIcon.png" alt="Home">
+                                <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="../img/CMS_home.png" alt="Home">
                                 <p class="menuText header">Home</p>
                                 </a>
                             </li>
                             <li>
                                 <a class="botAnchor" href="cms_add_main.php">
-                                <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="../img/addIcon.png" alt="Add">
+                                <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="../img/CMS_add.png" alt="Add">
                                 <p class="menuText header">Add</p>
                                 </a>
                             </li>
                             <li>
                                 <a class="botAnchor" href="cms_edit_main.php">
-                                <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="../img/editNavIcon.png" alt="Edit">
+                                <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="../img/CMS_edit.png" alt="Edit">
                                 <p class="menuText header">Edit</p>
                                 </a>
                             </li>
                             <li>
                                 <a class="botAnchor" href="cms_users_main.php">
-                                <img onMouseOver="swapDark('3')" onMouseOut="swapLight('3')" class="botImg" src="../img/usersNavIcon.png" alt="Users">
+                                <img onMouseOver="swapDark('3')" onMouseOut="swapLight('3')" class="botImg" src="../img/CMS_users.png" alt="Users">
                                 <p class="menuText header">Users</p>
                                 </a>
                             </li>
                             <li>
                                 <a class="botAnchor" href="includes/caller.php?caller_id=logout">
-                                <img onMouseOver="swapDark('4')" onMouseOut="swapLight('4')" class="botImg" src="../img/logoutIcon.png" alt="Logout">
+                                <img onMouseOver="swapDark('4')" onMouseOut="swapLight('4')" class="botImg" src="../img/CMS_logout.png" alt="Logout">
                                 <p class="menuText header">Logout</p>
                                 </a>
                             </li>
