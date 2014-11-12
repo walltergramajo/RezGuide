@@ -6,15 +6,14 @@
     <title>Rezguide Select News</title>
     <link rel="stylesheet" href="../css/foundation.css" />
     <link href="css/cms_styles.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="shortcut icon" href="../img/fanFavicon.ico" />
     <script src="../js/vendor/modernizr.js"></script>
   </head>
   <body>
     <header>
     	<div class="row" id="headerRow">
         	<div class="small-3 columns" id="mainLogo">
-            	<img src="../img/FINAL_LOGO.png" alt="Reznet"> 
-            </div>
+            	<img src="../img/WA_rgLogoSm.png" alt="RezGuide"> </div>
             <div class="small-9 columns" id="pageTitle">
             	<div id="headerContainer">
             	<h1 id="titleDirectory" class="header">Fanshawe Rezguide</h1>
