@@ -1,5 +1,6 @@
 <section id="notificationsRow">
     <div id="notificationsZone">
+        <div id="noti-button"></div>
     	<div id="notifications" class="small-3 columns">
             <p>
                 <?php

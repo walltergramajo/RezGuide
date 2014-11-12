@@ -4,5 +4,6 @@
       $(document).foundation();
     </script>
     <script src="<?php echo base_url(); ?>js/main.js"></script>
+    <script src="<?php echo base_url(); ?>js/notifications.js"></script>
 </body>
 </html>

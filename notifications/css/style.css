@@ -1272,10 +1272,31 @@ input, textarea, select {
 	max-width: 62.5rem;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
 }
 
 #notifications {
 	float: right;
+	margin-right: 25px;
+	background: #fff;
+	height: 100px;
+	width: 300px;
+	overflow-y: scroll;
+	visibility: hidden;
+}
+
+#noti-button {
+	background: blue;
+	width: 24px;
+	height: 24px;
+	border-radius: 12px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.shown {
+	visibility: visible !important;
 }
 
 @media only screen and (max-width: 768px){

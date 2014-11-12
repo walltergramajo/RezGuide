@@ -24,6 +24,7 @@ class Login_model extends CI_Model {
 					'username' => $u,
 					'users_name' => $userResult->students_firstname,
 					'sId' => $userResult->students_id,
+					'sNum' => $userResult->students_stNumber,
 					'logged_in' => TRUE
 				);
 

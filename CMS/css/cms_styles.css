@@ -306,7 +306,7 @@ body {
 	}
 	
 	#submit {
-		background-image: url(../../img/submit.png);
+		background-image: url(../img/submit.png);
 		width: 100px;
 		height: 95px;
 		background-color: transparent;
@@ -442,7 +442,7 @@ body {
 	}
 	
 	#edit {
-		background-image: url(../../img/submit.png);
+		background-image: url(../img/submit.png);
 		width: 100px;
 		height: 95px;
 		background-color: transparent;
@@ -454,7 +454,7 @@ body {
 	}
 	
 	#add {
-		background-image: url(../../img/submit.png);
+		background-image: url(../img/submit.png);
 		width: 100px;
 		height: 95px;
 		background-color: transparent;
@@ -809,7 +809,7 @@ body {
 	}
 	
 	#finish {
-		background-image: url(../../img/submit.png);
+		background-image: url(../img/submit.png);
 		width: 100px;
 		height: 95px;
 		background-color: transparent;
