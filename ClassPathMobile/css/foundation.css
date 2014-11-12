@@ -3692,7 +3692,7 @@ ul.off-canvas-list {
     border-bottom-style: solid;
     position: absolute;
     top: -12px;
-    left: 45px;
+    left: 48px;
     z-index: 99; }
   .f-dropdown:after {
     content: "";
@@ -3704,7 +3704,7 @@ ul.off-canvas-list {
     border-bottom-style: solid;
     position: absolute;
     top: -14px;
-    left: 44px;
+    left: 47px;
     z-index: 98; }
   .f-dropdown.right:before {
     left: auto;
@@ -3762,7 +3762,7 @@ ul.off-canvas-list {
     border-bottom-style: solid;
     position: absolute;
     top: -12px;
-    left: 97px;
+    left: 101px;
     z-index: 99; }
   #drop3:after {
     content: "";
@@ -3774,7 +3774,7 @@ ul.off-canvas-list {
     border-bottom-style: solid;
     position: absolute;
     top: -14px;
-    left: 96px;
+    left: 100px;
     z-index: 98; }
 	
 	
@@ -3788,7 +3788,7 @@ ul.off-canvas-list {
     border-bottom-style: solid;
     position: absolute;
     top: -12px;
-    left: 151px;
+    left: 153px;
     z-index: 99; }
   #drop4:after {
     content: "";
@@ -3800,7 +3800,7 @@ ul.off-canvas-list {
     border-bottom-style: solid;
     position: absolute;
     top: -14px;
-    left: 150px;
+    left: 152px;
     z-index: 98; }
 	
 		#drop5:before {
@@ -3813,7 +3813,7 @@ ul.off-canvas-list {
     border-bottom-style: solid;
     position: absolute;
     top: -12px;
-    left: 205px;
+    left: 207px;
     z-index: 99; }
   #drop5:after {
     content: "";
@@ -3825,7 +3825,7 @@ ul.off-canvas-list {
     border-bottom-style: solid;
     position: absolute;
     top: -14px;
-    left: 204px;
+    left: 206px;
     z-index: 98; }
 	
 	#drop6:before {
@@ -3838,7 +3838,7 @@ ul.off-canvas-list {
     border-bottom-style: solid;
     position: absolute;
     top: -12px;
-    left: 257px;
+    left: 260px;
     z-index: 99; }
   #drop6:after {
     content: "";
@@ -3850,7 +3850,7 @@ ul.off-canvas-list {
     border-bottom-style: solid;
     position: absolute;
     top: -14px;
-    left: 256px;
+    left: 259px;
     z-index: 98; }
 	
 	

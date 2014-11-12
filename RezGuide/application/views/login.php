@@ -1,3 +1,4 @@
+<div class="loginContainer">
 <header class="hide">
     <h1 class="hide"> Login </h1>
 </header>
@@ -39,3 +40,4 @@
         </form>
     </div>
 </section>
+</div>
