@@ -21,8 +21,4 @@ class Notices_model extends CI_Model {
 		return $warnings->result();
 	}
 
-	public function getAll($u){
-		$notices = $this->db->get_where('students_id' => $u));
-		return $notices->result();
-	}
 }

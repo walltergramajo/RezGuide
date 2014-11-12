@@ -12,6 +12,7 @@
   <body>
     <header>
     	<div class="row" id="headerRow">
+                <?php $this->load->view("notification_launch"); ?>
         	<div class="small-2 columns" id="mainLogo">
             	<img src="img/WA_rglogo.png" alt="RezGuide">
             </div>

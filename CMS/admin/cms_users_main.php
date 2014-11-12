@@ -6,15 +6,14 @@
     <title>Rezguide Users Main Menu</title>
     <link rel="stylesheet" href="../css/foundation.css" />
     <link href="css/cms_styles.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <link rel="shortcut icon" href="../img/fanFavicon.ico" />
     <script src="../js/vendor/modernizr.js"></script>
   </head>
   <body>
     <header>
     	<div class="row" id="headerRow">
         	<div class="small-3 columns" id="mainLogo">
-            	<img src="../img/FINAL_LOGO.png" alt="Reznet"> 
-            </div>
+            	<img src="../img/WA_rgLogoSm.png" alt="RezGuide"> </div>
             <div class="small-9 columns" id="pageTitle">
             	<div id="headerContainer">
             	<h1 id="titleDirectory" class="header">Fanshawe Rezguide</h1>
@@ -72,31 +71,31 @@
                         <ul id="footerNav">
                             <li>
                                 <a class="botAnchor" href="cms_main.php">
-                                <img onMouseOver="swapDark('3')" onMouseOut="swapLight('3')" class="botImg" src="../img/homeIcon.png" alt="Home">
+                                <img onMouseOver="swapDark('3')" onMouseOut="swapLight('3')" class="botImg" src="../img/CMS_home.png" alt="Home">
                                 <p class="menuText header">Home</p>
                                 </a>
                             </li>
                             <li>
                                 <a class="botAnchor" href="cms_add_main.php">
-                                <img onMouseOver="swapDark('4')" onMouseOut="swapLight('4')" class="botImg" src="../img/addIcon.png" alt="Add">
+                                <img onMouseOver="swapDark('4')" onMouseOut="swapLight('4')" class="botImg" src="../img/CMS_add.png" alt="Add">
                                 <p class="menuText header">Add</p>
                                 </a>
                             </li>
                             <li>
                                 <a class="botAnchor" href="cms_edit_main.php">
-                                <img onMouseOver="swapDark('5')" onMouseOut="swapLight('5')" class="botImg" src="../img/editNavIcon.png" alt="Edit">
+                                <img onMouseOver="swapDark('5')" onMouseOut="swapLight('5')" class="botImg" src="../img/CMS_edit.png" alt="Edit">
                                 <p class="menuText header">Edit</p>
                                 </a>
                             </li>
                             <li>
                                 <a class="botAnchor" href="cms_users_main.php">
-                                <img onMouseOver="swapDark('6')" onMouseOut="swapLight('6')" class="botImg" src="../img/usersNavIcon.png" alt="Users">
+                                <img onMouseOver="swapDark('6')" onMouseOut="swapLight('6')" class="botImg" src="../img/CMS_users.png" alt="Users">
                                 <p class="menuText header">Users</p>
                                 </a>
                             </li>
                             <li>
                                 <a class="botAnchor" href="includes/caller.php?caller_id=logout">
-                                <img onMouseOver="swapDark('4')" onMouseOut="swapLight('4')" class="botImg" src="../img/logoutIcon.png" alt="Logout">
+                                <img onMouseOver="swapDark('4')" onMouseOut="swapLight('4')" class="botImg" src="../img/CMS_logout.png" alt="Logout">
                                 <p class="menuText header">Logout</p>
                                 </a>
                             </li>

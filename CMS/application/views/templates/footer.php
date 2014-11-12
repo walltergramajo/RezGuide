@@ -6,31 +6,31 @@
                     <ul id="footerNav">
                         <li>
                             <a class="botAnchor" href="<?php echo base_url(); ?>index.php/main">
-                            <img onMouseOver="swapDark('3')" onMouseOut="swapLight('3')" class="botImg" src="<?php echo base_url(); ?>img/homeIcon.png" alt="Home">
+                            <img onMouseOver="swapDark('3')" onMouseOut="swapLight('3')" class="botImg" src="<?php echo base_url(); ?>img/CMS_home.png" alt="Home">
                             <p class="menuText header">Home</p>
                             </a>
                         </li>
                         <li>
                             <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add">
-                            <img onMouseOver="swapDark('4')" onMouseOut="swapLight('4')" class="botImg" src="<?php echo base_url(); ?>img/addIcon.png" alt="Add">
+                            <img onMouseOver="swapDark('4')" onMouseOut="swapLight('4')" class="botImg" src="<?php echo base_url(); ?>img/CMS_add.png" alt="Add">
                             <p class="menuText header">Add</p>
                             </a>
                         </li>
                         <li>
                             <a class="botAnchor" href="<?php echo base_url(); ?>index.php/edit">
-                            <img onMouseOver="swapDark('5')" onMouseOut="swapLight('5')" class="botImg" src="<?php echo base_url(); ?>img/editNavIcon.png" alt="Edit">
+                            <img onMouseOver="swapDark('5')" onMouseOut="swapLight('5')" class="botImg" src="<?php echo base_url(); ?>img/CMS_edit.png" alt="Edit">
                             <p class="menuText header">Edit</p>
                             </a>
                         </li>
                         <li>
                             <a class="botAnchor" href="<?php echo base_url(); ?>index.php/cms_users_main.php">
-                            <img onMouseOver="swapDark('6')" onMouseOut="swapLight('6')" class="botImg" src="<?php echo base_url(); ?>img/usersNavIcon.png" alt="Users">
+                            <img onMouseOver="swapDark('6')" onMouseOut="swapLight('6')" class="botImg" src="<?php echo base_url(); ?>img/CMS_users.png" alt="Users">
                             <p class="menuText header">Users</p>
                             </a>
                         </li>
                         <li>
                             <a class="botAnchor" href="<?php echo base_url(); ?>index.php/login/logout">
-                            <img onMouseOver="swapDark('7')" onMouseOut="swapLight('7')" class="botImg" src="<?php echo base_url(); ?>img/logoutIcon.png" alt="Logout">
+                            <img onMouseOver="swapDark('7')" onMouseOut="swapLight('7')" class="botImg" src="<?php echo base_url(); ?>img/CMS_logout.png" alt="Logout">
                             <p class="menuText header">Logout</p>
                             </a>
                         </li>

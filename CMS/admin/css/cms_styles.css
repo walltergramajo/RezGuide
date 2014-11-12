@@ -39,7 +39,7 @@ body {
 	}
 	
 	#titleDirectory {
-		color: #518d84;
+		color: #65666a;
 		font-size: 4.28em;
 		margin-left: 75px;
 		margin-top: 60px;
@@ -47,7 +47,7 @@ body {
 	}
 	
 	#titleHeader {
-		color: #FFF;
+		color: #e31d1a;
 		font-size: 3.46em;
 		margin-top: -35px;
 	}
@@ -58,14 +58,14 @@ body {
 	
 	header {
 		height: 180px;
-		background-color: #74cabd;
+		background-color: #ebebeb;
 	}
 	
 	.welcomeHeader
 	{
 		font-family: 'caviar_dreamsbold';
 		font-size: 1.8em;
-		color: #74cabd;
+		color: #65666a;
 		text-align: center;
 		text-transform: uppercase;
 	}
@@ -139,7 +139,7 @@ body {
 	}
 	
 	#fsuTitle {
-		color: #518d84;
+		color: #65666a;
 		font-size: 4.28em;
 		margin-left: -120px;
 		margin-top: 60px;
@@ -193,7 +193,7 @@ body {
 	}
 	
 	#subTitle {
-		color: #74cabd;
+		color: #65666a;
 		font-size: 2.8em;
 		font-weight: 900;
 		font-family: 'caviar_dreamsregular';
@@ -317,7 +317,7 @@ body {
 	}
 	
 	.divider {
-		background-color: #dce8e6;
+		background-color: #ebebeb;
 		display: block;
 		margin: 0 auto;
 		width: 650px;
@@ -325,7 +325,7 @@ body {
 	}
 	
 	.lgdivider {
-		background-color: #b9e4de;
+		background-color: #ebebeb;
 		display: block;
 		margin: 0 auto;
 		width: 570px;
@@ -333,7 +333,7 @@ body {
 	}
 	
 	.titleDivider {
-		background-color: #b9e4de;
+		background-color: #ebebeb;
 		display: block;
 		margin: 0 auto;
 		width: 800px;
@@ -910,7 +910,7 @@ body {
 	
 	.dashboardText {
 		margin-top: 15px;
-		color: #74cabd;
+		color: #65666a;
 		font-size: 2.5em;
 		text-transform: uppercase;
 	}
@@ -1047,14 +1047,14 @@ body {
 		bottom: 0;
 		left: 0;
 		width: 100%;
-		background-color: #74cabd;
+		background-color: #ebebeb;
 		height: 70px;
 		z-index: 100;
 	}
 	
 	.menuText {
 		margin-top: -10px;
-		color: #fff;
+		color: #65666a;
 		text-transform: uppercase;
 		font-size: .6em;
 	}
@@ -1071,7 +1071,7 @@ body {
 	}
 	
 	#footerNav li img {
-		width: 60px;
+		width: 50px;
 	}
 	
 	.botAnchor {
@@ -1080,7 +1080,7 @@ body {
 	}
 	
 	.botAnchor:hover p {
-		color: #518d84;
+		color: #e31d1a;
 	}
 	
 	.botImg {

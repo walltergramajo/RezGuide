@@ -1259,15 +1259,24 @@ input, textarea, select {
   font-size: 15px;
 }
 
-#notifications {
-	position: absolute;
+#notificationsRow {
+	position: fixed;
 	top: 0;
-	background: #fff;
-	width: 300px;
-	height: 100px;
-	right: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
 }
 
+#notificationsZone {
+	width: 100%;
+	max-width: 62.5rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#notifications {
+	float: right;
+}
 
 @media only screen and (max-width: 768px){
 	.mainContent
