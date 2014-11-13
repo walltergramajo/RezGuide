@@ -1,4 +1,5 @@
-<section class="mainContent">
+<section class="sectionContainer">
+<div class="mainContent">
     <div class="row">
     	<div class="small-4 small-centered columns text-center">
     		<p id="noticeTitle" class="header">Balance</p>
@@ -28,5 +29,5 @@
             </div>
         </div>
     </div>
-    <div class="filler"> </div>
+</div>
 </section>

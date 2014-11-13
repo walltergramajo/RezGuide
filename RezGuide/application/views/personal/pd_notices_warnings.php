@@ -1,4 +1,4 @@
-<section>
+<section class="sectionContainer">
     <div class="mainContent">
         <div class="row">
         	<div class="small-10 small-centered columns text-center">
@@ -36,7 +36,7 @@
         </div>
     </div>
 	<div class="row">
-    	<div class="small-5 small-push-4 columns">
+    	<div class="small-5 small-centered columns">
         	<div class="profileNav2">
         		<ul class="pagination"> 
             		<li><a href="<?php echo base_url(); ?>index.php/dashboard/notices/maintenance"><img id="prevArrow" src="<?php echo base_url(); ?>img/WA_larrow.png" height="20px" width="20px" alt="previous"></a></li>

@@ -10,7 +10,8 @@
         </div>
     </div>
 </header>
-<section class="mainContent">
+<section class="sectionContainer">
+<div class="mainContent">
     <div class="row iconRow">
     	<div class="small-6 small-centered columns text-center">
         	<div class="row">
@@ -62,4 +63,5 @@
         	</div>
         </div>
     </div>
+</div>
 </section>

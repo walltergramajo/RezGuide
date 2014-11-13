@@ -1,4 +1,4 @@
-<section>
+<section class="sectionContainer">
     <div class="mainContent">
         <form>
             <div class="row">
@@ -76,18 +76,18 @@
                 </div>
             </div>
         </form>
-    </div>
-    <div class="row">
-    	<div class="small-5 small-push-4 columns">
-        	<div class="profileNav2">
-        		<ul class="pagination"> 
-            		<li><a href="<?php echo base_url(); ?>index.php/dashboard"><img id="prevArrow" src="<?php echo base_url(); ?>img/WA_larrow.png" height="20px" width="20px" alt="previous"></a></li>
-                	<li><a href="<?php echo base_url(); ?>index.php/dashboard/requests"><img src="<?php echo base_url(); ?>img/WA_dotFull.png" height="20px" width="20px" alt="currentPage"></a></li>
-                	<li><a href="<?php echo base_url(); ?>index.php/dashboard/requests/mediation"><img src="<?php echo base_url(); ?>img/WA_dotEmpty.png" height="20px" width="20px" alt="emptyPage"></a></li>
+        <div class="row" id="paginationBg">
+        <div class="small-5 small-centered columns">
+            <div class="profileNav2">
+                <ul class="pagination"> 
+                    <li><a href="<?php echo base_url(); ?>index.php/dashboard"><img id="prevArrow" src="<?php echo base_url(); ?>img/WA_larrow.png" height="20px" width="20px" alt="previous"></a></li>
+                    <li><a href="<?php echo base_url(); ?>index.php/dashboard/requests"><img src="<?php echo base_url(); ?>img/WA_dotFull.png" height="20px" width="20px" alt="currentPage"></a></li>
+                    <li><a href="<?php echo base_url(); ?>index.php/dashboard/requests/mediation"><img src="<?php echo base_url(); ?>img/WA_dotEmpty.png" height="20px" width="20px" alt="emptyPage"></a></li>
                     <li><a href="<?php echo base_url(); ?>index.php/dashboard/requests/withdraw"><img src="<?php echo base_url(); ?>img/WA_dotEmpty.png" height="20px" width="20px" alt="emptyPage"></a></li>
-                	<li><a href="<?php echo base_url(); ?>index.php/dashboard/requests/mediation"><img id="nextArrow" src="<?php echo base_url(); ?>img/WA_rArrow.png" height="20px" width="20px" alt="previous"></a></li>
-             	</ul>
+                    <li><a href="<?php echo base_url(); ?>index.php/dashboard/requests/mediation"><img id="nextArrow" src="<?php echo base_url(); ?>img/WA_rArrow.png" height="20px" width="20px" alt="previous"></a></li>
+                </ul>
             </div>
         </div>
+    </div>
     </div>  
 </section>

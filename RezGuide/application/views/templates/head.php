@@ -11,3 +11,4 @@
     <link rel="shortcut icon" href="<?php echo base_url(); ?>img/fanFavicon.ico" />
 </head>
 <body>
+	<div class="mainWrapper">

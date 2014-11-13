@@ -79,11 +79,20 @@ header{
 	margin-bottom: -13px;
 }
 
+.sectionContainer
+{
+	height: 100px;
+	width: 100%;
+	position: fixed;
+}
+
 .mainContent
 {
-	height: 100%;
+	height: 390px;
 	width: 100%;
-	margin-top: 200px;
+	margin-top: 190px;
+	margin-bottom: 50px;
+	padding-bottom: 50px;
 	overflow: auto;
 }
 
@@ -443,24 +452,31 @@ th {
 
 .profileNav
 {
-	margin-top: 20px;
+	margin-top: 15px;
+	height: 50px;
+	width: 100%;
+	background-color: #FFF;
 	position: fixed;
-	bottom: 90px;
+	bottom: 70px;
 }
 .profileNav2
 {
-	margin-top: 5px;
-	margin-left: -10px;
+	margin-top: 15px;
+	height: 50px;
+	width: 100%;
+	background-color: #FFF;
 	position: fixed;
-	bottom: 90px;
+	bottom: 70px;
 }
 
 .profileNav3
 {
-	margin-top: 20px;
-	margin-left: -10px;
+	margin-top: 15px;
+	height: 50px;
+	width: 100%;
+	background-color: #FFF;
 	position: fixed;
-	bottom: 90px;
+	bottom: 70px;
 }
 
 .complaintDate
