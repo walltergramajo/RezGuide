@@ -30,7 +30,7 @@
                         <li>
                             <a class="botAnchor" href="cms_edit_fsu_general.php">
                             <div class="small-4 columns">
-                                <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" id="genIcon" src="../img/cms-general.png" alt="General">
+                                <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" id="genIcon" src="../img/CMS_general.png" alt="General">
                             </div>
                             <div class="small-8 columns">
                                 <p id="genTitle" class="dashboardText text-justify header"> General </p>
@@ -40,7 +40,7 @@
                         <li>
                             <a class="botAnchor" href="cms_edit_fsu_contest_select.php">
                             <div class="small-4 columns">
-                                <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" id="contestsIcon" src="../img/cms-contests.png" alt="Contests">
+                                <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" id="contestsIcon" src="../img/CMS_contests.png" alt="Contests">
                             </div>
                             <div class="small-8 columns">
                                 <p id="contestsTitle" class="dashboardText text-justify header"> Contests </p>
@@ -50,7 +50,7 @@
                         <li>
                             <a class="botAnchor" href="cms_edit_fsu_event_select.php">
                             <div class="small-4 columns">
-                                <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" id="eventsIcon" src="../img/cms-events.png" alt="Events">
+                                <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" id="eventsIcon" src="../img/WA_events.png" alt="Events">
                             </div>
                             <div class="small-8 columns">
                                 <p id="eventsTitle" class="dashboardText text-justify header"> Events </p>

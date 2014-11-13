@@ -77,7 +77,7 @@
                         <div class="small-3 columns">
                             <div class="edit">
                                 <a href="#">
-                                    <img src="../img/edit.png" alt="Edit">
+                                    <img src="../img/CMS_editPencil.png" alt="Edit">
                                 </a>
                             </div>
                         </div>
@@ -87,7 +87,7 @@
                         </div>
                         <div class="small-3 columns">
                             <a href="#">
-                                <img class="delete" src="../img/delete.png" alt="Delete">
+                                <img class="delete" src="../img/CMS_delete.png" alt="Delete" >
                             </a>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                         <div class="small-3 columns">
                             <div class="edit">
                                 <a href="#">
-                                    <img src="../img/edit.png" alt="Edit">
+                                    <img src="../img/CMS_editPencil.png" alt="Edit">
                                 </a>
                             </div>
                         </div>
@@ -111,7 +111,7 @@
                         </div>
                         <div class="small-3 columns">
                             <a href="#">
-                                <img class="delete" src="../img/delete.png" alt="Delete">
+                                <img class="delete" src="../img/CMS_delete.png" alt="Delete" >
                             </a>
                         </div>
                     </div>
@@ -133,7 +133,7 @@
                 <ul id="pageNav">
                     <li>
                         <a href="cms_edit_student_pg2.php">
-                            <img src="../img/prev.png" alt="Previous Page">
+                            <img src="../img/WA_lArrow.png" alt="Previous Page">
                         </a>
                     </li>
                     <li>
@@ -142,8 +142,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="cms_edit_student_pg2.php">
-                            <img src="../img/unselected.png" alt="Page 2">
+                        <a href="cms_edit_student_pg2.php"> <img src="../img/WA_dotEmpty.png" alt="Page 2">
                         </a>
                     </li>
                     <li>
@@ -153,7 +152,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <img src="../img/next.png" alt="Next Page">
+                            <img src="../img/WA_rArrow.png" alt="Next Page">
                         </a>
                     </li>
                 </ul>

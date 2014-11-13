@@ -30,7 +30,7 @@
                         <li>
                             <a class="botAnchor" href="cms_users_add.php">
                             <div class="small-4 columns">
-                                <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="../img/cms-create.png" alt="Add">
+                                <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="../img/CMS_addLrg.png" alt="Add">
                             </div>
                             <div class="small-8 columns">
                                 <p class="dashboardText text-justify header"> Add </p>
@@ -40,7 +40,7 @@
                         <li>
                             <a class="botAnchor" href="cms_users_edit_select.php">
                             <div class="small-4 columns">
-                                <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="../img/cms-edit.png" alt="Edit">
+                                <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="../img/CMS_editLrg.png" alt="Edit">
                             </div>
                             <div class="small-8 columns">
                                 <p class="dashboardText text-justify header"> Edit </p>
@@ -50,7 +50,7 @@
                         <li>
                             <a class="botAnchor" href="cms_users_delete.php">
                             <div class="small-4 columns">
-                                <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" id="delete" src="../img/cms-delete.png" alt="Delete">
+                                <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" id="delete" src="../img/CMS_deleteLrg.png" alt="Delete">
                             </div>
                             <div class="small-8 columns">
                                 <p class="dashboardText text-justify header"> Delete </p>
@@ -95,7 +95,7 @@
                             </li>
                             <li>
                                 <a class="botAnchor" href="includes/caller.php?caller_id=logout">
-                                <img onMouseOver="swapDark('4')" onMouseOut="swapLight('4')" class="botImg" src="../img/CMS_logout.png" alt="Logout">
+                                <img onMouseOver="swapDark('7')" onMouseOut="swapLight('7')" class="botImg" src="../img/CMS_logout.png" alt="Logout">
                                 <p class="menuText header">Logout</p>
                                 </a>
                             </li>

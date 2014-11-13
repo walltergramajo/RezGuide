@@ -65,7 +65,7 @@
                         <div class="small-3 columns">
                             <div class="editDay">
                                 <a href="#">
-                                    <img src="../img/edit.png" alt="Edit">
+                                    <img src="../img/CMS_editPencil.png" alt="Edit">
                                 </a>
                             </div>
                         </div>
@@ -74,7 +74,7 @@
                         </div>
                         <div class="small-3 columns">
                             <a href="#">
-                                <img class="deleteDay" src="../img/delete.png" alt="Delete">
+                                <img class="deleteDay" src="../img/CMS_delete.png" alt="Delete" >
                             </a>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
                         <div class="small-3 columns">
                             <div class="editDay">
                                 <a href="#">
-                                    <img src="../img/edit.png" alt="Edit">
+                                    <img src="../img/CMS_editPencil.png" alt="Edit">
                                 </a>
                             </div>
                         </div>
@@ -97,7 +97,7 @@
                         </div>
                         <div class="small-3 columns">
                             <a href="#">
-                                <img class="deleteDay" src="../img/delete.png" alt="Delete">
+                                <img class="deleteDay" src="../img/CMS_delete.png" alt="Delete" >
                             </a>
                         </div>
                     </div>
@@ -117,10 +117,10 @@
                     </div>
                     
                     <div class="row">
-                        <div class="small-12 columns">
-                            <input id="add" type="submit" value=" ">
-                        </div>
-                    </div>
+            	<div  class="small-4 columns push-4">
+                	<input type="submit" class="submitButton1" value="SUBMIT" alt="Send!">
+                </div>
+            </div>
                 </div>
             </div>
         </form>

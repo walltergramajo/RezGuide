@@ -31,7 +31,7 @@
                             <a class="botAnchor" href="cms_add_notice_complaint.php">
                             	<div class="row">
                                     <div class="small-5 columns">
-                                        <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="../img/cms-complaint.png" alt="Complaint">
+                                        <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="../img/CMS_notices.png" alt="Complaint">
                                     </div>
                                     <div class="small-7 columns">
                                         <p class="dashboardText text-justify header"> Complaint </p>
@@ -43,7 +43,7 @@
                             <a class="botAnchor" href="cms_add_notice_fine.php">
                             	<div class="row">
                                     <div class="small-5 columns">
-                                        <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="../img/cms-fine.png" alt="Fine">
+                                        <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="../img/CMS_news.png" alt="Fine">
                                     </div>
                                     <div class="small-7 columns">
                                         <p class="dashboardText text-justify header"> Fine </p>
@@ -55,7 +55,7 @@
                             <a class="botAnchor" href="cms_add_notice_warning.php">
                                 <div class="row">
                                 	<div class="small-5 columns">
-                                        <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="../img/cms-warning.png" alt="Warning">
+                                        <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="../img/WA_points.png" alt="Warning">
                                 	</div>
                                 	<div class="small-7 columns">
                                         <p class="dashboardText text-justify header"> Warning </p>

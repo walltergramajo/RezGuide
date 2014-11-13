@@ -31,7 +31,7 @@
                             <a class="botAnchor" href="cms_edit_building_garbage.php">
                             	<div class="row">
                                     <div class="small-4 columns">
-                                        <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="../img/cms-city.png" alt="Garbage">
+                                        <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="../img/CMS_garbage.png" alt="Garbage">
                                     </div>
                                     <div class="small-8 columns">
                                         <p class="dashboardText text-justify header"> Garbage </p>
@@ -43,7 +43,7 @@
                             <a class="botAnchor" href="cms_edit_building_housekeeping.php">
                             	<div class="row">
                                     <div class="small-4 columns">
-                                        <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="../img/cms-directory.png" alt="Housekeeping">
+                                        <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="../img/CMS_house.png" alt="Housekeeping">
                                     </div>
                                     <div class="small-8 columns">
                                         <p class="dashboardText text-justify header"> Housekeeping </p>
@@ -55,7 +55,7 @@
                             <a class="botAnchor" href="cms_edit_building_rules.php">
                                 <div class="row">
                                 	<div class="small-4 columns">
-                                        <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="../img/cms-info.png" alt="Rules and Regulations">
+                                        <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="../img/CMS_info.png" alt="Rules and Regulations">
                                 	</div>
                                 	<div class="small-8 columns">
                                         <p class="dashboardText text-justify header"> Rules and Regulations </p>
@@ -67,7 +67,7 @@
                             <a class="botAnchor" href="cms_edit_building_events_main.php">
                                 <div class="row">
                                     <div class="small-4 columns">
-                                        <img onMouseOver="swapDark('3')" onMouseOut="swapLight('3')" class="botImg" src="../img/cms-events.png" alt="Events">
+                                        <img onMouseOver="swapDark('3')" onMouseOut="swapLight('3')" class="botImg" src="../img/WA_events.png" alt="Events">
                                     </div>
                                     <div class="small-8 columns">
                                         <p class="dashboardText text-justify header"> Events </p>

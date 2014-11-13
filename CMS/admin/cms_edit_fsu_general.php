@@ -33,8 +33,11 @@
             	<h2 id="fsuGenTitle">General</h2>
                 <div class="lgdivider"></div>
                 <textarea id="genInfo">Quis tristique nisl. Sed ipsum justo, vulputate eget erat semper, lacinia placerat odio. Sed bibendum, sem vel condimentum accumsan, est risus pulvinar tortor.</textarea>
-                <div class="lgdivider"></div>
-                <input type="submit" id="edit" value=" ">
+                <div class="lgdivider"></div><div class="row">
+                        <div  class="small-4 columns push-4">
+                            <input type="submit" class="submitButton1" value="SUBMIT" alt="Send!">
+                        </div>
+                    </div>
             </div>
             </form>
         </div>

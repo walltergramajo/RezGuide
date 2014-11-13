@@ -31,7 +31,7 @@
                             <a href="cms_edit_building_events_contest_select.php">
                             	<div class="row">
                                     <div class="small-5 columns">
-                                        <img src="../img/cms-contests.png" alt="Contests">
+                                        <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="../img/CMS_contests.png" alt="Contests">
                                     </div>
                                     <div class="small-7 columns">
                                         <p class="dashboardText text-justify header"> Contests </p>
@@ -43,7 +43,7 @@
                             <a href="cms_edit_building_events_event_select.php">
                             	<div class="row">
                                     <div class="small-5 columns">
-                                        <img src="../img/cms-events.png" alt="Events">
+                                        <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="../img/WA_events.png" alt="Events">
                                     </div>
                                     <div class="small-7 columns">
                                         <p class="dashboardText text-justify header"> Events </p>
@@ -55,7 +55,7 @@
                             <a href="cms_edit_building_events_program_select.php">
                                 <div class="row">
                                 	<div class="small-5 columns">
-                                        <img src="../img/cms-info.png" alt="Programs">
+                                        <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="../img/CMS_info.png" alt="Programs">
                                 	</div>
                                 	<div class="small-7 columns">
                                         <p class="dashboardText text-justify header"> Programs </p>
@@ -77,31 +77,31 @@
                         <ul id="footerNav">
                             <li>
                                 <a class="botAnchor" href="cms_main.php">
-                                <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="../img/CMS_home.png" alt="Home">
+                                <img onMouseOver="swapDark('3')" onMouseOut="swapLight('3')" class="botImg" src="../img/CMS_home.png" alt="Home">
                                 <p class="menuText header">Home</p>
                                 </a>
                             </li>
                             <li>
                                 <a class="botAnchor" href="cms_add_main.php">
-                                <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="../img/CMS_add.png" alt="Add">
+                                <img onMouseOver="swapDark('4')" onMouseOut="swapLight('4')" class="botImg" src="../img/CMS_add.png" alt="Add">
                                 <p class="menuText header">Add</p>
                                 </a>
                             </li>
                             <li>
                                 <a class="botAnchor" href="cms_edit_main.php">
-                                <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="../img/CMS_edit.png" alt="Edit">
+                                <img onMouseOver="swapDark('5')" onMouseOut="swapLight('5')" class="botImg" src="../img/CMS_edit.png" alt="Edit">
                                 <p class="menuText header">Edit</p>
                                 </a>
                             </li>
                             <li>
                                 <a class="botAnchor" href="cms_users_main.php">
-                                <img onMouseOver="swapDark('3')" onMouseOut="swapLight('3')" class="botImg" src="../img/CMS_users.png" alt="Users">
+                                <img onMouseOver="swapDark('6')" onMouseOut="swapLight('6')" class="botImg" src="../img/CMS_users.png" alt="Users">
                                 <p class="menuText header">Users</p>
                                 </a>
                             </li>
                             <li>
                                 <a class="botAnchor" href="includes/caller.php?caller_id=logout">
-                                <img onMouseOver="swapDark('4')" onMouseOut="swapLight('4')" class="botImg" src="../img/CMS_logout.png" alt="Logout">
+                                <img onMouseOver="swapDark('7')" onMouseOut="swapLight('7')" class="botImg" src="../img/CMS_logout.png" alt="Logout">
                                 <p class="menuText header">Logout</p>
                                 </a>
                             </li>

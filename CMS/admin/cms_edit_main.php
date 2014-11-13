@@ -31,7 +31,7 @@
                             <li>
                                 <a class="botAnchor" href="cms_edit_notice_select.php">
                                 <div class="small-4 columns genIcons">
-                                    <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="../img/notice.png" alt="Notices">
+                                    <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="../img/CMS_notices.png" alt="Notices">
                                 </div>
                                 <div class="small-8 columns">
                                     <p class="dashboardText text-justify header"> Notices </p>
@@ -41,7 +41,7 @@
                             <li>
                                 <a class="botAnchor" href="cms_edit_student_select.php">
                                 <div class="small-4 columns">
-                                    <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="../img/students.png" alt="Students">
+                                    <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="../img/CMS_students.png" alt="Students">
                                 </div>
                                 <div class="small-8 columns">
                                     <p class="dashboardText text-justify header"> Students </p>
@@ -51,7 +51,7 @@
                             <li>
                                 <a class="botAnchor" href="cms_edit_news_select.php">
                                 <div class="small-4 columns">
-                                    <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="../img/news.png" alt="News">
+                                    <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="../img/CMS_news.png" alt="News">
                                 </div>
                                 <div class="small-8 columns">
                                     <p class="dashboardText text-justify header"> News </p>
@@ -67,7 +67,7 @@
                             <li>
                                 <a class="botAnchor" href="cms_edit_building_main.php">
                                 <div class="small-4 columns">
-                                    <img onMouseOver="swapDark('3')" onMouseOut="swapLight('3')" class="botImg" src="../img/building.png" alt="Building">
+                                    <img onMouseOver="swapDark('3')" onMouseOut="swapLight('3')" class="botImg" src="../img/CMS_building.png" alt="Building">
                                 </div>
                                 <div class="small-8 columns">
                                     <p class="dashboardText text-justify header"> Building </p>
@@ -77,7 +77,7 @@
                             <li>
                                 <a class="botAnchor" href="cms_edit_fsu_main.php">
                                 <div class="small-4 columns">
-                                    <img onMouseOver="swapDark('4')" onMouseOut="swapLight('4')" class="botImg" src="../img/fsu.png" alt="FSU">
+                                    <img onMouseOver="swapDark('4')" onMouseOut="swapLight('4')" class="botImg" src="../img/CMS_fsu.png" alt="FSU">
                                 </div>
                                 <div class="small-8 columns">
                                     <p class="dashboardText text-justify header"> FSU </p>
@@ -87,7 +87,7 @@
                             <li>
                                 <a class="botAnchor" href="cms_edit_general_main.php">
                                 <div class="small-4 columns">
-                                    <img onMouseOver="swapDark('5')" onMouseOut="swapLight('5')" class="botImg" src="../img/general.png" alt="General">
+                                    <img onMouseOver="swapDark('5')" onMouseOut="swapLight('5')" class="botImg" src="../img/CMS_general.png" alt="General">
                                 </div>
                                 <div class="small-8 columns">
                                     <p class="dashboardText text-justify header"> General </p>

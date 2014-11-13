@@ -37,7 +37,7 @@
                     </div>
                 	<div class="row">
                     	<div class="small-12 columns">
-                        	<img src="../img/fsuImage.png" alt="Image Preview">
+                        	<img src="../img/CMS_fsuUpload.png" alt="Image Preview">
                         </div>
                     </div>
                 </div>
@@ -90,10 +90,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="small-12 columns">
-                                <input type="submit" id="add" value=" ">
-                            </div>
-                        </div>
+            	<div class="small-4 columns push-4">
+                	<input type="submit" class="submitButton1" value="SUBMIT" alt="Send!">
+                </div>
+            </div>
                     </div>
                 </div>
             </div>

@@ -31,7 +31,7 @@
                             <a class="botAnchor" href="cms_add_general_city.php">
                             <div class="row">
                                 <div class="small-4 columns">
-                                    <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" id="cityIcon" src="../img/cms-city.png" alt="City">
+                                    <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" id="cityIcon" src="../img/CMS_city.png" alt="City">
                                 </div>
                                 <div class="small-8 columns">
                                     <p class="dashboardText text-justify header"> City </p>
@@ -43,7 +43,7 @@
                             <a class="botAnchor" href="cms_add_general_directory.php">
                             <div class="row">
                                 <div class="small-4 columns">
-                                    <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" id="directIcon" src="../img/cms-directory.png" alt="Directory">
+                                    <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" id="directIcon" src="../img/CMS_directory.png" alt="Directory">
                                 </div>
                                 <div class="small-8 columns">
                                     <p class="dashboardText text-justify header"> Directory </p>
@@ -55,7 +55,7 @@
                             <a class="botAnchor" href="cms_add_general_information.php">
                             <div class="row">
                                 <div class="small-4 columns">
-                                    <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" id="infoIcon" src="../img/cms-info.png" alt="Information">
+                                    <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" id="infoIcon" src="../img/CMS_info.png" alt="Information">
                                 </div>
                                 <div class="small-8 columns">
                                     <p id="infoTitle" class="dashboardText text-justify header"> Information </p>

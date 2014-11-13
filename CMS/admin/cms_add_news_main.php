@@ -31,7 +31,7 @@
                             <a class="botAnchor" href="cms_add_news_upcoming.php">
                             	<div class="row">
                                     <div class="small-5 columns">
-                                        <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="../img/cms-upcoming.png" alt="Upcoming">
+                                        <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="../img/CMS_upcoming.png" alt="Upcoming">
                                     </div>
                                     <div class="small-7 columns">
                                         <p class="dashboardText text-justify header"> Upcoming </p>
@@ -43,7 +43,7 @@
                             <a class="botAnchor" href="cms_add_news_monthly.php">
                             	<div class="row">
                                     <div class="small-5 columns">
-                                        <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="../img/cms-monthly.png" alt="Monthly">
+                                        <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="../img/CMS_monthly.png" alt="Monthly">
                                     </div>
                                     <div class="small-7 columns">
                                         <p class="dashboardText text-justify header"> Monthly </p>
@@ -55,7 +55,7 @@
                             <a class="botAnchor" href="cms_add_news_event.php">
                                 <div class="row">
                                 	<div class="small-5 columns">
-                                        <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="../img/cms-events.png" alt="Events">
+                                        <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="../img/WA_events.png" alt="Events">
                                 	</div>
                                 	<div class="small-7 columns">
                                         <p class="dashboardText text-justify header"> Events </p>

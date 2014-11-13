@@ -38,7 +38,7 @@
         	<div class="small-3 columns">
             	<div class="edit">
                     <a href="cms_edit_building_events_programs_pg1.php">
-                        <img src="../img/edit.png" alt="Edit">
+                        <img src="../img/CMS_editPencil.png" alt="Edit">
                     </a>
                 </div>
             </div>
@@ -47,7 +47,7 @@
             </div>
             <div class="small-3 columns">
             	<a href="#">
-                	<img class="delete" src="../img/delete.png" alt="Delete">
+                	<img class="delete" src="../img/CMS_delete.png" alt="Delete" >
                 </a>
             </div>
         </div>
@@ -61,7 +61,7 @@
         	<div class="small-3 columns">
             	<div class="edit">
                     <a href="cms_edit_building_events_programs_pg1.php">
-                        <img src="../img/edit.png" alt="Edit">
+                        <img src="../img/CMS_editPencil.png" alt="Edit">
                     </a>
                 </div>
             </div>
@@ -70,7 +70,7 @@
             </div>
             <div class="small-3 columns">
             	<a href="#">
-                	<img class="delete" src="../img/delete.png" alt="Delete">
+                	<img class="delete" src="../img/CMS_delete.png" alt="Delete" >
                 </a>
             </div>
         </div>
@@ -84,7 +84,7 @@
         	<div class="small-3 columns">
             	<div class="edit">
                     <a href="cms_edit_building_events_programs_pg1.php">
-                        <img src="../img/edit.png" alt="Edit">
+                        <img src="../img/CMS_editPencil.png" alt="Edit">
                     </a>
                 </div>
             </div>
@@ -93,7 +93,7 @@
             </div>
             <div class="small-3 columns">
             	<a href="#">
-                	<img class="delete" src="../img/delete.png" alt="Delete">
+                	<img class="delete" src="../img/CMS_delete.png" alt="Delete" >
                 </a>
             </div>
         </div>
@@ -107,7 +107,7 @@
         	<div class="small-3 columns">
             	<div class="edit">
                     <a href="cms_edit_building_events_programs_pg1.php">
-                        <img src="../img/edit.png" alt="Edit">
+                        <img src="../img/CMS_editPencil.png" alt="Edit">
                     </a>
                 </div>
             </div>
@@ -116,7 +116,7 @@
             </div>
             <div class="small-3 columns">
             	<a href="#">
-                	<img class="delete" src="../img/delete.png" alt="Delete">
+                	<img class="delete" src="../img/CMS_delete.png" alt="Delete" >
                 </a>
             </div>
         </div>

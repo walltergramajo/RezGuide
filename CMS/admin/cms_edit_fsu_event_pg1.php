@@ -28,6 +28,12 @@
         	<div class="row">
             	<div class="small-4 columns">
                 	<div class="row">
+                    	<div class="small-12 columns addImg">
+                        	<img src="../img/CMS_fsuUpload.png" alt="Image Preview">
+                        </div>
+                    </div>
+                    
+                    <div class="row">
                     	<div id="browseButton" class="small-10 small-push-3 columns">
                         	<div class="small button">
                             	<span>choose image</span>
@@ -35,12 +41,8 @@
                             </div>
                         </div>
                     </div>
-                	<div class="row">
-                    	<div class="small-12 columns">
-                        	<img src="../img/fsuImage.png" alt="Image Preview">
-                        </div>
-                    </div>
                 </div>
+                
                 <div class="small-8 columns">
                 	<div class="coreInfo" id="eventpgOne">
                         <div class="row">
@@ -77,22 +79,21 @@
                 <ul id="pageNav">
                     <li>
                         <a href="#">
-                            <img src="../img/prev.png" alt="Previous Page">
+                            <img src="../img/WA_lArrow.png" alt="Previous Page">
                         </a>
                     </li>
                     <li>
                         <a href="cms_edit_fsu_event_pg1.php">
-                            <img src="../img/selected.png" alt="Page 1">
+                            <img src="../img/WA_dotFull.png" alt="Page 1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cms_edit_fsu_event_pg2.php"> <img src="../img/WA_dotEmpty.png" alt="Page 2">
                         </a>
                     </li>
                     <li>
                         <a href="cms_edit_fsu_event_pg2.php">
-                            <img src="../img/unselected.png" alt="Page 2">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="cms_edit_fsu_event_pg2.php">
-                            <img src="../img/next.png" alt="Next Page">
+                            <img src="../img/WA_rArrow.png" alt="Next Page">
                         </a>
                     </li>
                 </ul>

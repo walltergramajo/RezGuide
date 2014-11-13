@@ -122,8 +122,8 @@
                 </div>
             </div>
             <div class="row">
-            	<div class="small-12 columns">
-                	<input type="submit" name="submit" id="add" value=" ">
+            	<div class="small-4 columns push-4">
+                	<input type="submit" class="submitButton1" value="SUBMIT" alt="Submit!">
                 </div>
             </div>
         </form>

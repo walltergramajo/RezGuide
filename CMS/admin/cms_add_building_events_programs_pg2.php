@@ -105,8 +105,8 @@
                 </div>
             </div>
             <div class="row">
-            	<div class="small-12 columns">
-                	<input id="submit" type="submit" value=" ">
+            	<div class="small-4 columns push-4">
+                	<input type="submit" class="submitButton1" value="SUBMIT" alt="Send!">
                 </div>
             </div>
         </form>
@@ -115,22 +115,21 @@
                 <ul id="pageNav">
                     <li>
                         <a href="cms_add_building_events_programs_pg1.php">
-                            <img src="../img/prev.png" alt="Previous Page">
+                            <img src="../img/WA_lArrow.png" alt="Previous Page">
                         </a>
                     </li>
                     <li>
                         <a href="cms_add_building_events_programs_pg1.php">
-                            <img src="../img/unselected.png" alt="Page 1">
+                            <img src="../img/WA_dotFull.png" alt="Page 1">
                         </a>
                     </li>
                     <li>
-                        <a href="cms_add_building_events_programs_pg2.php">
-                            <img src="../img/selected.png" alt="Page 2">
+                        <a href="cms_add_building_events_programs_pg2.php"> <img src="../img/WA_dotEmpty.png" alt="Page 2">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="../img/next.png" alt="Next Page">
+                            <img src="../img/WA_rArrow.png" alt="Next Page">
                         </a>
                     </li>
                 </ul>

@@ -44,7 +44,7 @@
             </div>
             <div class="small-3 columns">
             	<a href="#">
-                	<img class="delete" src="../img/delete.png" alt="Delete">
+                	<img class="delete" src="../img/CMS_delete.png" alt="Delete" >
                 </a>
             </div>
         </div>
@@ -64,7 +64,7 @@
             </div>
             <div class="small-3 columns">
             	<a href="#">
-                	<img class="delete" src="../img/delete.png" alt="Delete">
+                	<img class="delete" src="../img/CMS_delete.png" alt="Delete" >
                 </a>
             </div>
         </div>
@@ -84,7 +84,7 @@
             </div>
             <div class="small-3 columns">
             	<a href="#">
-                	<img class="delete" src="../img/delete.png" alt="Delete">
+                	<img class="delete" src="../img/CMS_delete.png" alt="Delete" >
                 </a>
             </div>
         </div>
@@ -104,7 +104,7 @@
             </div>
             <div class="small-3 columns">
             	<a href="#">
-                	<img class="delete" src="../img/delete.png" alt="Delete">
+                	<img class="delete" src="../img/CMS_delete.png" alt="Delete">
                 </a>
             </div>
         </div>
@@ -120,12 +120,12 @@
             	<ul id="deleteOpt">
                 	<li>
                     	<a href="#">
-                    		<img src="../img/cancel.png" alt="Cancel Delete">
+                    		<img src="../img/CMS_cancelPU.png" alt="Delete">
                         </a>
                     </li>
                     <li>
                     	<a href="#">
-                    		<img src="../img/deleteIcon.png" alt="Delete">
+                    		<img src="../img/CMS_deletePU.png" alt=" Cancel Delete" >
                         </a>
                     </li>
                 </ul>

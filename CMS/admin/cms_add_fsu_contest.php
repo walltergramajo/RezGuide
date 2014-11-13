@@ -26,8 +26,14 @@
     <section>
     	<form id="fsuContest">
         	<div class="row">
-            	<div id="fsuContest" class="small-4 columns">
+            	<div class="small-4 columns">
                 	<div class="row">
+                    	<div class="small-12 columns addImg">
+                        	<img src="../img/CMS_fsuUpload.png" alt="Image Preview">
+                        </div>
+                    </div>
+                    
+                    <div class="row">
                     	<div id="browseButton" class="small-10 small-push-3 columns">
                         	<div class="small button">
                             	<span>choose image</span>
@@ -35,12 +41,8 @@
                             </div>
                         </div>
                     </div>
-                	<div class="row">
-                    	<div class="small-12 columns">
-                        	<img src="../img/fsuImage.png" alt="Image Preview">
-                        </div>
-                    </div>
                 </div>
+                
                 <div class="small-8 columns">
                 	<div class="coreInfo">
                         <div class="row">
@@ -89,11 +91,11 @@
                                 <input type="text" placeholder="www.contestLink.com">
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="small-12 columns">
-                                <input type="submit" id="add" value=" ">
-                            </div>
+                                <div class="row">
+                        <div class="small-4 columns push-4">
+                            <input type="submit" class="submitButton1" value="SUBMIT" alt="Send!">
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>

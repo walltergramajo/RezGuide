@@ -31,8 +31,11 @@
                         <h2 id="fsuGenTitle">Rules and Regulations</h2>
                         <div class="lgTitleDividerRules"></div>
                         <textarea id="rules">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis tincidunt nulla, sit amet tempus augue accumsan porttitor. Aliquam lorem odio, gravida vitae adipiscing et, viverra vulputate risus. Nulla eget elit non lacus eleifend faucibus non vitae nibh. Sed ut iaculis dui. </textarea>
-                        <div class="lgTitleDividerRules"></div>
-                        <input type="submit" id="edit" value=" ">
+                        <div class="lgTitleDividerRules"></div><div class="row">
+                        <div  class="small-4 columns push-4">
+                            <input type="submit" class="submitButton1" value="SUBMIT" alt="Send!">
+                        </div>
+                    </div>
                     </div>
             	</div>
             </div>

@@ -66,43 +66,50 @@
                         </div>
                     </div>
                     </div><!--end duplicater-->
-                    <div class="small-6 small-centered columns">
-                    	<img id="addInput" src="../img/addRequest.png" alt="addNotice"> 
+                    
+                    <div class="row">
+                        <div class="small-6  columns">
+                            <div class="lgTitleDivider2"></div>
+                            <p id="addInput"> Add Request
+                            <img src="../img/WA_addR.png" alt="addNotice">
+                            </p>
+                        </div>
+                        
+                        <div class="small-2 columns addImg">
+                        	<input class="submitButton" type="submit" name="submit" value="Submit">
+                        </div>
                     </div>
                     
-                    <div class="small-12 columns">
-                    	<input type="submit" id="finish" value=" ">
-                    </div>
                 </div>
             </div>
         </form>
         
         <div class="row">
-        	<div class="small-6 small-centered columns">
+        	<div class="small-7 small-centered columns">
                 <ul id="pageNav">
                     <li>
                         <a href="cms_add_student_pg2.php">
-                            <img src="../img/prev.png" alt="Previous Page">
+                            <img src="../img/WA_lArrow.png" alt="Previous Page">
                         </a>
                     </li>
                     <li>
                         <a href="cms_add_student_pg1.php">
-                            <img src="../img/unselected.png" alt="Page 1">
+                            <img src="../img/WA_dotEmpty.png" alt="Page 1">
                         </a>
                     </li>
                     <li>
-                        <a href="cms_add_student_pg2.php">
-                            <img src="../img/unselected.png" alt="Page 2">
+                        <a href="cms_add_student_pg2.php"> 
+                        <img src="../img/WA_dotEmpty.png" alt="Page 2">
                         </a>
                     </li>
                     <li>
                         <a href="cms_add_student_pg3.php">
-                            <img src="../img/selected.png" alt="Page 3">
+                            <img src="../img/WA_dotFull.png" alt="Page 3">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="../img/next.png" alt="Next Page">
+                            <img src="../img/WA_rArrow.png" alt="Next Page">
                         </a>
                     </li>
                 </ul>
@@ -113,7 +120,7 @@
     <div class="filler"> </div>
     <footer>
     	<div class="row text-center">
-        	<div class="small-6 small-centered columns">
+        	<div class="small-7 small-centered columns">
                 <nav class="row">
                     <div class="small-12 columns">
                         <ul id="footerNav">
