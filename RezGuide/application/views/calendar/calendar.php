@@ -37,7 +37,6 @@
 
     <script src="<?php echo base_url(); ?>js/jquery-1.10.2.js"></script>
     <script src="<?php echo base_url(); ?>js/jquery-ui-1.10.4.custom.js"></script>
-    
     <script src="<?php echo base_url(); ?>js/jquery.nicescroll.js"></script>
 
     <script>
@@ -60,11 +59,11 @@
 		});
 	});
 	</script>
-    <script src="<?php echo base_url(); ?>js/calendar.js"></script>
     <script src="<?php echo base_url(); ?>js/foundation.min.js"></script>
     <script>
       $(document).foundation();
     </script>
     <script src="<?php echo base_url(); ?>js/main.js"></script>
+    <script src="<?php echo base_url(); ?>js/calendar.js"></script>
   </body>
 </html>
