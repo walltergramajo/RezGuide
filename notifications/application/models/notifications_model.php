@@ -6,10 +6,10 @@ class Notifications_model extends CI_Model {
 		parent::__construct();
 	}
 
-	public function getAll($u){
-		$this->db->select('notices_title');
+	public function getAll($u, $getwhat, $wasseen){
+		$this->db->select($getwhat);
 		$this->db->from('tbl_notices');
-		$this->db->where(array('students_id' => $u, 'seen' => 0));
+		$this->db->where(array('students_id' => $u, 'seen' => $wasseen));
 		$this->db->order_by('timestamp', 'desc');
 
 		$allnotices = $this->db->get();
