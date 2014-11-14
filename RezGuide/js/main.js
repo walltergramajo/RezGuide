@@ -2,6 +2,7 @@
 
 //Global variables
 var botImg, botImg1, fOut, fIn, opacity, eventCal, months, year, pointsEntry, entryArrow, events, day;
+var arrowDown = '(../img/arrow_off.png)';
 
 months = ["January", "Feburary", "March", "April","May","June", "July","August","September","October","November","December"];
 function init(){
@@ -191,7 +192,7 @@ var highlightLink = function () {
 }();
 
 var highlightLink2 = function () {
-        var active = null, colour = '#65666a', backgroundImage2 = "url('img/accordionArrowDown.png')";
+        var active = null, colour = '#65666a';
         if (this.attachEvent) this.attachEvent('onunload', function () {
             active = null;
         });
@@ -200,7 +201,11 @@ var highlightLink2 = function () {
                 if (active) active.style.backgroundColor = '';
 				if (active) active.style.color = '';
 				
+				//if (active) active.style.backgroundImage = '';
 				
+				//element.style.backgroundImage = backgroundImage2;
+				//element.style.backgroundRepeat = "no-repeat";
+				//element.style.backgroundPosition = "right";
 				element.style.backgroundColor = colour;
 				element.style.color = "#FFF";
                 active = element;
@@ -211,10 +216,12 @@ var highlightLink2 = function () {
         };
 }();
 
-$('.accordionLink').click(function () {
-		$('.imgswap').attr("src", '../../img/arrow_off.png');
-		$('.imgswap', $(this).parent()).attr("src", '../img/arrow_on.png');	
-});
+//$('.accordionLink').click(function () {
+		//$('.imgswap').attr("src", 'arrowDown';
+			//if(active){
+		//$('.imgswap', $(this).parent()).attr("src", '../img/arrow_on.png');	
+	//}
+//});
 
 $('.accordionLink').click(function () {
 						$('.directoryContact').removeClass('fadein').addClass('fadeout');

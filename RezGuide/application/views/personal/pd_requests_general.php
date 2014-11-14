@@ -76,7 +76,8 @@
                 </div>
             </div>
         </form>
-        <div class="row" id="paginationBg">
+    <div id="paginationBg">
+        <div class="row">
         <div class="small-5 small-centered columns">
             <div class="profileNav2">
                 <ul class="pagination"> 
@@ -88,6 +89,6 @@
                 </ul>
             </div>
         </div>
-    </div>
+        </div>
     </div>  
 </section>

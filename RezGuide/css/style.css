@@ -90,9 +90,10 @@ header{
 {
 	height: 390px;
 	width: 100%;
-	margin-top: 190px;
+	margin-top: 180px;
 	margin-bottom: 50px;
 	padding-bottom: 50px;
+	position: absolute;
 	overflow: auto;
 }
 
@@ -450,6 +451,15 @@ th {
 	margin-top: 30px;
 }
 
+#paginationBg
+{
+	background-color: #FFF;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	bottom: 70px;
+}
+
 .profileNav
 {
 	margin-top: 15px;
@@ -457,7 +467,7 @@ th {
 	width: 100%;
 	background-color: #FFF;
 	position: fixed;
-	bottom: 70px;
+	bottom: 60px;
 }
 .profileNav2
 {
@@ -466,7 +476,7 @@ th {
 	width: 100%;
 	background-color: #FFF;
 	position: fixed;
-	bottom: 70px;
+	bottom: 60px;
 }
 
 .profileNav3
@@ -476,7 +486,7 @@ th {
 	width: 100%;
 	background-color: #FFF;
 	position: fixed;
-	bottom: 70px;
+	bottom: 60px;
 }
 
 .complaintDate

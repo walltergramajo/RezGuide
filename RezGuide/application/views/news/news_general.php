@@ -1,4 +1,4 @@
-<section>
+<section class="sectionContainer">
     <div class="mainContent">
         <div class="row">
         	<div class="small-10 small-centered columns text-center">
@@ -11,7 +11,7 @@
                 	<dl class="accordion" data-accordion>
                         <?php foreach ($results as $row): ?>
                         	<dd class="accordionBottom">
-                                <a href="#panel<?php echo $row->news_id ?>" class="accordionLink accordionTitle" onClick="highlightLink2(this);"><?php echo $row->news_title ?><span class="right accordionDropDownIcon"><img class="imgswap" src="<?php echo base_url(); ?>img/accordionArrowDown.png" alt="Click For more Information."></span> </a>
+                                <a href="#panel<?php echo $row->news_id ?>" class="accordionLink accordionTitle" onClick="highlightLink2(this);"><?php echo $row->news_title ?><span class="right accordionDropDownIcon"><img src="<?php echo base_url(); ?>img/accordionArrowDown.png" alt="Click For more Information."></span> </a>
                                 <div id="panel<?php echo $row->news_id ?>" class="content"> 
                                     <p class="complaintDate"><?php echo $row->news_datetime ?></p>
                                     <p>Location: <?php echo $row->news_location ?></p>
@@ -48,7 +48,8 @@
             </div>
         </div>
     </div><!--End mainContent-->
-    
+ 
+  <div id="paginationBg">   
     <div class="row">
     	<div class="small-5 small-push-4 columns">
         	<div class="profileNav2">
@@ -62,6 +63,5 @@
             </div>
         </div>
     </div>
-    
-    <div class="filler"> </div>
+</div>
 </section>

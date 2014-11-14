@@ -1,4 +1,4 @@
-<section>
+<section class="sectionContainer">
     <div class="mainContent">
         <div class="row">
         	<div class="small-10 small-centered columns text-center">
@@ -44,7 +44,8 @@
             </div>
         </div>
     </div><!--End mainContent-->
-        
+ 
+  <div id="paginationBg">       
     <div class="row">
     	<div class="small-5 small-push-4 columns">
         	<div class="profileNav2">
@@ -58,6 +59,5 @@
             </div>
         </div>
     </div>
-    
-    <div class="filler"> </div>
+</div>
 </section>

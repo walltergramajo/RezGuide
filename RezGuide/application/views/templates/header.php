@@ -23,3 +23,4 @@
             </div>
         </div>
     </header>
+    <div class="mainWrapper">

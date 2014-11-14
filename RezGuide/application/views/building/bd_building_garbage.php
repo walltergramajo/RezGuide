@@ -20,7 +20,7 @@
             </div>
         </div>
     </div>    
-        
+         <div id="paginationBg">
         <div class="row">
         	<div class="small-5 small-centered columns">
             	<div class="profileNav3">
@@ -34,4 +34,5 @@
                 </div>
             </div>
         </div>
+    </div>
 </section>

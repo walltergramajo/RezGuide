@@ -21,6 +21,7 @@
         </div>
     </div><!--End mainContent-->
     
+<div id="paginationBg">
     <div class="row">
     	<div class="small-5 small-push-4 columns">
         	<div class="profileNav2">
@@ -34,4 +35,5 @@
             </div>
         </div>
     </div>
+</div>
 </section>
