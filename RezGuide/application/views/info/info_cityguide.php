@@ -9,16 +9,16 @@
             <div class="small-6 small-centered columns" id="classifiedFilters">
                 <div class="row">
                     <div class="small-3 columns">
-                        <a href="<?php echo base_url(); ?>index.php/info/cityguide/general"><img src="<?php echo base_url(); ?>img/all.png" alt="All info"></a>
+                        <a href="<?php echo base_url(); ?>index.php/info/cityguide/general"><img src="<?php echo base_url(); ?>img/WA_entertainment.png" alt="entertainment"></a>
                     </div>
                     <div class="small-3 columns">
-                        <a href="<?php echo base_url(); ?>index.php/info/cityguide/entertainment"><img src="<?php echo base_url(); ?>img/book.png" alt="Books"></a>
+                        <a href="<?php echo base_url(); ?>index.php/info/cityguide/entertainment"><img src="<?php echo base_url(); ?>img/WA_eventsSm.png" alt="events"></a>
                     </div>
                     <div class="small-3 columns">
-                        <a href="<?php echo base_url(); ?>index.php/info/cityguide/movies"><img src="<?php echo base_url(); ?>img/clothing.png" alt="Clothing"></a>
+                        <a href="<?php echo base_url(); ?>index.php/info/cityguide/movies"><img src="<?php echo base_url(); ?>img/WA_movies.png" alt="movies"></a>
                     </div>
                     <div class="small-3 columns">
-                        <a href="<?php echo base_url(); ?>index.php/info/cityguide/restaurants"><img src="<?php echo base_url(); ?>img/furniture.png" alt="Furniture"></a>
+                        <a href="<?php echo base_url(); ?>index.php/info/cityguide/restaurants"><img src="<?php echo base_url(); ?>img/WA_restaurants.png" alt="restaurants"></a>
                     </div>
                 </div>
             </div>

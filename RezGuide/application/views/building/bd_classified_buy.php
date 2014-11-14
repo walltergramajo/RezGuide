@@ -35,7 +35,7 @@
                     <?php foreach ($results as $row): ?>
                         <?php $desc = substr($row->classifieds_description,0,50) ?>
                     	<dd class="accordionBottom">
-                			<a href="#panel<?php echo $row->classifieds_id ?>" class="accordionLink">
+                			<a href="#panel<?php echo $row->classifieds_id ?>" class="accordionLink" onClick="highlightLink3(this)">
                                 <div class="row">
                                 	<div class="classifiedRow">
                                     	<div class="small-3 columns text-center">

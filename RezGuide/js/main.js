@@ -227,7 +227,7 @@ $('.accordionLink').click(function () {
 								});
 
 var highlightLink3 = function () {
-        var active = null, colour = '#74cabd', Image2 = "url('img/addphotoMiniIconWhite.png')";
+        var active = null, colour = '#65666a', Image2 = "url('img/addphotoMiniIconWhite.png')";
         if (this.attachEvent) this.attachEvent('onunload', function () {
             active = null;
         });

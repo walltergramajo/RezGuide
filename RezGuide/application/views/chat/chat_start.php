@@ -56,9 +56,10 @@
                 </div>
             </div>
             <div class="row">
-            	<div class="small-12 text-center columns">
+            	<div class="small-2 small-push-10 columns">
                	 	<a href="<?php echo base_url(); ?>index.php/chat/chat_channel">
             			<img src="<?php echo base_url(); ?>img/send.png" class="text-center" alt="submit">
+                        <input type="submit" class="submitButton" value="SEND" alt="Send!"><!--Needs function to collect data to send to Chat-->
                     </a>
                 </div>
             </div> 

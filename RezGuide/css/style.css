@@ -106,7 +106,7 @@ header{
 	text-transform:uppercase;
 }
 .iconTextChat{
-	color:#ebebeb;
+	color:#65666a;
 	font-size: 0.9em;
 	text-transform:uppercase;
 }
@@ -146,7 +146,7 @@ header{
 	
 }
 #chatSideOptions{
-	border-left: 3px solid  rgba(102,204,204,.4);
+	border-left: 3px solid  rgba(227,29,26,.4);
 	padding: 0 auto;
 	
 }
@@ -209,7 +209,7 @@ header{
 	margin-top:18px;
 }
 .chatUsersName{
-	color: #ebebeb;
+	color: #e31d1a;
 	text-transform:uppercase;
 }
 #inputArea textarea{
@@ -324,7 +324,7 @@ header{
       #calendarAccordion .accordion dd > a:hover {
 		border-left: 10px solid #e31d1a;
         background: #65666a;
-		background: url(../img/WA_accentArrow.png) #fff no-repeat center left;
+		background: url(../img/accordionArrow.png) #fff no-repeat center left;
 		color: #65666a }
   #calendarAccordion .accordion .content {
 	background: #65666a;

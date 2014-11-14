@@ -10,7 +10,7 @@
             	<dl class="accordion" data-accordion>
                     <?php foreach ($results as $row): ?>
                     	<dd class="accordionBottom">
-                			<a href="#panel<?php echo $row->events_id ?>" class="accordionLink">
+                			<a href="#panel<?php echo $row->events_id ?>" class="accordionLink" onClick="highlightLink3(this);">
                                 <div class="row">
                                 	<div class="classifiedRow">
                                     	<div class="small-2 columns fsuEventThumb">
