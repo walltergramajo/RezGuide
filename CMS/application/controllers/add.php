@@ -99,4 +99,44 @@ class Add extends CI_Controller {
 
 	}
 
+	public function students($page = null){
+		if($page == "pg3") {
+			$data['pgTitle'] = "RezGuide Add A Student";
+			$data['section'] = "A New Student";
+			$this->load->view('templates/head',$data);
+			$this->load->view('add/add_header');
+			$this->load->view('add/students/page3');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}else if($page == "pg2") {
+			$data['pgTitle'] = "RezGuide Add A Student";
+			$data['section'] = "A New Student";
+			$this->load->view('templates/head',$data);
+			$this->load->view('add/add_header');
+			$this->load->view('add/students/page2');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}else{
+			$data['pgTitle'] = "RezGuide Add A Student";
+			$data['section'] = "A New Student";
+			$this->load->view('templates/head',$data);
+			$this->load->view('add/add_header');
+			$this->load->view('add/students/page1');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}
+
+	}
+
 }
+
+
+
+
+
+
+
+
+
+
+
