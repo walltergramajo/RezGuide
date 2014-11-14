@@ -4,7 +4,7 @@
     	<div id="notifications" class="small-3 columns">
             <p>
                 <?php
-                $newAlerts = $this->notifications->getunseen();
+                $newAlerts = $this->fetchnotifications->getnotifications("notices_title", 0);
                     if (is_string($newAlerts)) { 
                         echo $newAlerts;
                     } else { 
@@ -13,6 +13,7 @@
                         }
                     }
             	?>
+                <p><a href="<?php echo base_url(); ?>index.php/notifications">View all Notifications</a></p>
             </p>
         </div>
     </div>

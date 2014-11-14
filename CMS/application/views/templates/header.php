@@ -13,7 +13,7 @@
     <header>
     	<div class="row" id="headerRow">
         	<div class="small-2 columns" id="mainLogo">
-            	<img src="img/WA_rgLogoSm.png" alt="RezGuide">
+            	<img src="<?php echo base_url(); ?>img/WA_rgLogoSm.png" alt="RezGuide">
             </div>
             <div class="small-10 columns" id="pageTitle">
             	<div id="headerContainer">

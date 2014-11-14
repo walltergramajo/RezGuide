@@ -4,12 +4,12 @@ class Main extends CI_Controller {
 	
 	public function __construct(){
 		parent::__construct();
-		$this->load->helper('welcome_helper');
+		// $this->load->helper('welcome_helper');
 	}
 
 	public function index(){
 		$data['pgTitle'] = "RezGuide Content Management System Home";
-		$data['greeting'] = welcomeMessage();
+		// $data['greeting'] = welcomeMessage();
 		$this->load->view('templates/head',$data);
 		$this->load->view('admin_menu');
 		$this->load->view('templates/footer');

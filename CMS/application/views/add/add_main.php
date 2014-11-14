@@ -15,7 +15,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="botAnchor" href="<?php echo base_url(); ?>cms_add_student_pg1.php">
+                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add/students">
                             <div class="small-4 columns">
                                 <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="<?php echo base_url(); ?>img/students.png" alt="Students">
                             </div>
