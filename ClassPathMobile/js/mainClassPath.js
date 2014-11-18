@@ -46,7 +46,7 @@ $('#transportationIcon').click(function () {
 //for highlighted link choice on Selector Page
 
 var highlightLink = function () {
-        var active = null, colour = '#65666a', backgroundImage2 = "url('img/selectionArrow.png')", textcolor = '#FFF';
+        var active = null, colour = '#65666a', backgroundImage2 = "url('img/selectionArrow.png')";
         if (this.attachEvent) this.attachEvent('onunload', function () {
             active = null;
         });
@@ -62,7 +62,7 @@ var highlightLink = function () {
 				element.style.backgroundRepeat = "no-repeat";
 				element.style.backgroundSize = "15px 58px";
                 active = element;
-				window.console&&console.log('YAY');
+		          console.log('YAY THIS WORKS');
             }
         }
 }();
@@ -77,7 +77,7 @@ var highlightLinkSchedule = function () {
             if ((active != element) && element.style) {
                 if (active) active.style.backgroundColor = '';
                 if (active) active.style.color = '';
-                element.style.color = '#FFF';
+                element.style.color = 'white';
 				element.style.backgroundColor = colour;
                 active = element;
 				
@@ -86,12 +86,13 @@ var highlightLinkSchedule = function () {
 }();
 
 var highlightLinkPath = function () {
-        var active = null, colour = '#65666a', backgroundImage2 = "url('img/selectionArrow.png')", textcolor = '#FFF';
+        var active = null, colour = '#65666a', backgroundImage2 = "url('img/selectionArrow.png')";
         if (this.attachEvent) this.attachEvent('onunload', function () {
             active = null;
         });
         return function (element) {
             if ((active != element) && element.style) {
+                window.console&&console.log("TEST TEXT");
                 if (active) active.style.color = '';
                 if (active) active.style.backgroundColor = '';
 				if (active) active.style.backgroundImage = '';
@@ -101,7 +102,7 @@ var highlightLinkPath = function () {
 				element.style.backgroundColor = colour;
 				element.style.backgroundRepeat = "no-repeat";
 				element.style.backgroundSize = "20px 75px";
-                element.style.color = textcolor;
+                element.style.color = "#FFF";
                 active = element;
 				
             }
