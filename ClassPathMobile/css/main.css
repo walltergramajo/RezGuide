@@ -610,7 +610,7 @@ input[type="text"], textarea
 
 .iconScroll
 {
-	height: 420px;
+	height: 380px;
 	width: 350px;
 	overflow-x: hidden;
 	overflow: auto;
@@ -2239,6 +2239,15 @@ input[type='file'] {
 	text-align: center;
 	}
 
+	#cssmenu ul ul li {
+	  background: rgba(235, 235, 235, 0.8);
+	   padding: 16px 8px 16px 28px;
+	   margin-left: -13px;
+	   height: 73px;
+	  width: 214px;
+	  text-align: right;
+	}
+
 
 	.logInStart
 	{
@@ -2458,14 +2467,6 @@ input[type='file'] {
 		-webkit-overflow-scrolling: touch;
 	}
 
-	#cssmenu ul ul li {
-  background: rgba(235, 235, 235, 0.8);
-   padding: 16px 8px 16px 28px;
-   margin-left: -13px;
-   height: 85px;
-  width: 214px;
-  text-align: right;
-}
 
 	/*Main Menu*/
 
