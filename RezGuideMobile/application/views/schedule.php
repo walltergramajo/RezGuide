@@ -3,7 +3,7 @@
 		<div class="topSection">
 			<div class="row"> 
         <div class="small-2 columns">
-          <a href="#main"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+          <a href="#main"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
         </div>
     		<div class="small-9 small-push-3 columns">
         	<h2 class="topHeader">SCHEDULE</h2>
@@ -16,7 +16,7 @@
        		<div class="small-push-1">
         		<div class="small-1 column"></div>
         		<div class="small-2 columns">
-       	    	<a href="#" data-dropdown="drop2"><img id ="monday"  src="img/days_M.png" alt="Monday"></a>
+       	    	<a href="#" data-dropdown="drop2"><img id ="monday"  src="<?php echo base_url(); ?>img/days_M.png" alt="Monday"></a>
               <div id="drop2" data-dropdown-content class="small f-dropdown content">
                 <div class="dailyClasses">
   								<p id="paraGraph" onClick="highlightLinkSchedule(this);">ARTS - Arts and Crafts</p>
@@ -26,7 +26,7 @@
 							</div>
             </div>
            	<div class="small-2 columns">
-            	<a href="#" data-dropdown="drop3"><img src="img/days_T.png" alt="Tuesday"></a>
+            	<a href="#" data-dropdown="drop3"><img src="<?php echo base_url(); ?>img/days_T.png" alt="Tuesday"></a>
               <div class="eventContainer">
                 <div id="drop3" data-dropdown-content class="small f-dropdown content">
                   <div class="dailyClasses">
@@ -38,7 +38,7 @@
 							</div>
             </div>
             <div class="small-2 columns">	
-            	<a href="#" data-dropdown="drop4"><img src="img/days_W.png" alt="Wednesday"></a>
+            	<a href="#" data-dropdown="drop4"><img src="<?php echo base_url(); ?>img/days_W.png" alt="Wednesday"></a>
               <div id="drop4" data-dropdown-content class="small f-dropdown content">
                 <div class="dailyClasses">
  						 			<p onClick="highlightLinkSchedule(this);">ARTS - Pottery Level 1</p>
@@ -48,7 +48,7 @@
               </div>
             </div>
             <div class="small-2 columns">
-            	<a href="#" data-dropdown="drop5"><img src="img/days_T.png" alt="Thursday"></a>
+            	<a href="#" data-dropdown="drop5"><img src="<?php echo base_url(); ?>img/days_T.png" alt="Thursday"></a>
               <div id="drop5" data-dropdown-content class="f-dropdown content">
                 <div class="dailyClasses">
                 	<p onClick="highlightLinkSchedule(this);">PHYS - Core Training</p>
@@ -58,7 +58,7 @@
               </div>
             </div>
             <div class="small-2 columns">
-            	<a href="#" data-dropdown="drop6"><img src="img/days_F.png" alt="Friday"></a>
+            	<a href="#" data-dropdown="drop6"><img src="<?php echo base_url(); ?>img/days_F.png" alt="Friday"></a>
               <div id="drop6" data-dropdown-content class="f-dropdown content">
                 <div class="dailyClasses">
                 	<p onClick="highlightLinkSchedule(this);">HIST - Civil War</p>
@@ -73,7 +73,7 @@
    		</div>
     	<div class="row">
     		<div class="small-4 small-centered columns">
-   	    	<a href="#selectorSection"><img class="startButton" src="img/startButton.png" alt="start button"></a> 
+   	    	<a href="#selectorSection"><img class="startButton" src="<?php echo base_url(); ?>img/startButton.png" alt="start button"></a> 
         </div>
    		</div>
 		</div><!--End contentClassPath-->
@@ -81,16 +81,16 @@
 			<div class="row">
     		<div class="small-4 columns">
         	<div class="currentPage">
-   	    		<a href="#scheduleSection"><img src="img/schedule.png" alt="schedule"></a> 
+   	    		<a href="#scheduleSection"><img src="<?php echo base_url(); ?>img/schedule.png" alt="schedule"></a> 
           </div>
           <h3 class="iconLabel">SCHEDULE</h3>
         </div>
         <div class="small-4 columns">
-        	<a href="#classroomSection"><img src="img/classroom.png" alt="classroom"></a>
+        	<a href="#classroomSection"><img src="<?php echo base_url(); ?>img/classroom.png" alt="classroom"></a>
           <h3 class="iconLabel">CLASSROOM NUMBER</h3>
         </div>
         <div class="small-4 columns">
-          <a href="#3dmapSection"><img src="img/3dMap.png" alt="3dMap"></a>
+          <a href="#3dmapSection"><img src="<?php echo base_url(); ?>img/3dMap.png" alt="3dMap"></a>
           <h3 class="iconLabel">3D MAP</h3>
         </div>
     	</div>

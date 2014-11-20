@@ -2,7 +2,7 @@
 	<div class="logInContainer">
     	<div id="logoWhiteSpace" class="row">
         	<div class="small-5 small-centered columns">
-       	    	<img id="logInLogo" src="img/logInLogo.png" alt="logo"> 
+       	    	<img id="logInLogo" src="<?php echo base_url(); ?>img/logInLogo.png" alt="logo"> 
             </div>
         </div>
         <div class="row">

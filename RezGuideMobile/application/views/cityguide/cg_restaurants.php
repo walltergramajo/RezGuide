@@ -3,7 +3,7 @@
     <div class="topSection">
       <div class="row"> 
         <div class="small-2 columns">
-          <a href="#genInfoCity"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+          <a href="#genInfoCity"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
         </div>
         <div class="small-9 small-push-1 columns">
           <h2  class="topHeader">CITY GUIDE</h2>
@@ -22,7 +22,7 @@
       <div class="row">
         <dl class="accordion" data-accordion>
           <dd>
-            <a href="#panel85" onClick="highlightLink(this);"><span class="complaintText">Bertoldi's Trattoria</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+            <a href="#panel85" onClick="highlightLink(this);"><span class="complaintText">Bertoldi's Trattoria</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
             <div id="panel85" class="content">
               <img class="restaurantLogos" src="img/bertoldis.gif" alt="bertoldi Logo">
               <p class="dateColor">(519) 438-4343</p>
@@ -32,7 +32,7 @@
             </div>
           </dd>
           <dd>
-            <a href="#panel86" onClick="highlightLink(this);"><span class="complaintText">Thaifoon Restaurant </span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+            <a href="#panel86" onClick="highlightLink(this);"><span class="complaintText">Thaifoon Restaurant </span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
             <div id="panel86" class="content">
               <img class="restaurantLogos" src="img/thaifoon.jpg" alt="bertoldi Logo">
               <p class="dateColor">(519) 850-1222 </p>
@@ -42,7 +42,7 @@
             </div>
           </dd>
           <dd>
-            <a href="#panel87" onClick="highlightLink(this);"><span class="complaintText">Auberge du Petit Prince</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+            <a href="#panel87" onClick="highlightLink(this);"><span class="complaintText">Auberge du Petit Prince</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
             <div id="panel87" class="content">
               <img class="restaurantLogos" src="img/AubergePatio.jpg" alt="bertoldi Logo">
               <p class="dateColor">(519) 434-7124 </p>
@@ -52,7 +52,7 @@
             </div>
           </dd>
           <dd>
-            <a href="#panel89" onClick="highlightLink(this);"><span class="complaintText">The Church Key Bistro-Pub</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+            <a href="#panel89" onClick="highlightLink(this);"><span class="complaintText">The Church Key Bistro-Pub</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
             <div id="panel89" class="content">
               <img class="restaurantLogos" src="img/ChurchKeyInterior.jpg" alt="bertoldi Logo">
               <p class="dateColor">(519) 936-0960  </p>
@@ -71,16 +71,16 @@
       <div class="small-11 small-centered columns">
         <div class="small-4 columns">
           <div class="currentPage2">
-            <a href="#genInfoCity"><img src="img/cityGuideIcon.png" alt="fsuEvents"></a> 
+            <a href="#genInfoCity"><img src="<?php echo base_url(); ?>img/cityGuideIcon.png" alt="fsuEvents"></a> 
             <h3 class="iconLabel">CITY<br>GUIDE</h3>
           </div>
         </div>
         <div class="small-4 columns">
-          <a href="#genInfoBus"><img src="img/busIcon.png" alt="fsuContests"></a>
+          <a href="#genInfoBus"><img src="<?php echo base_url(); ?>img/busIcon.png" alt="fsuContests"></a>
           <h3 class="iconLabel">LTC</h3>
         </div>
         <div class="small-4 columns">
-          <a href="#genInfoDirectory"><img src="img/directoryIcon.png" alt="fsuInfo"></a>
+          <a href="#genInfoDirectory"><img src="<?php echo base_url(); ?>img/directoryIcon.png" alt="fsuInfo"></a>
           <h3 class="iconLabel">DIRECTORY</h3>
         </div>
       </div>

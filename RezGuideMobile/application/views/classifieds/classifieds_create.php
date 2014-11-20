@@ -3,7 +3,7 @@
 		<div class="topSection">
 			<div class="row"> 
     			<div class="small-2 columns">
-         			<a href="#buildingIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+         			<a href="#buildingIntro"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
                 </div>
     			<div class="small-9 small-push-2 columns">
         			<h2 class="topHeader">CLASSIFIEDS</h2>
@@ -112,12 +112,12 @@
     		<div class="row">
     			<div class="addPhotoContainer">
             		<div class="small-6 columns">
-                		<img id="imgUpload" src="img/addphotoMiniIcon.png" alt="your image" />
+                		<img id="imgUpload" src="<?php echo base_url(); ?>img/addphotoMiniIcon.png" alt="your image" />
                         <input id="file1" type='file' onchange="readURL(this);" />	
                         <p class="pleaseSelect">Select Image</p>
                 	</div>
                 	<div class="small-6 columns">
-                		<img id="imgUpload2" src="img/addphotoMiniIcon.png" alt="your image" />
+                		<img id="imgUpload2" src="<?php echo base_url(); ?>img/addphotoMiniIcon.png" alt="your image" />
                         <input id="file2" type='file' onchange="readURL2(this);" />
                         <p class="pleaseSelect">Select Image</p>
                 	</div>
@@ -126,12 +126,12 @@
             <div class="row">
                 <div class="addPhotoContainer">
                     <div class="small-6 columns">
-                		<img id="imgUpload3" src="img/addphotoMiniIcon.png" alt="your image" />
+                		<img id="imgUpload3" src="<?php echo base_url(); ?>img/addphotoMiniIcon.png" alt="your image" />
                         <input id="file3" type='file' onchange="readURL3(this);" />	
                         <p class="pleaseSelect">Select Image</p>
                 	</div>
                 	<div class="small-6 columns">
-                		<img id="imgUpload4" src="img/addphotoMiniIcon.png" alt="your image" />
+                		<img id="imgUpload4" src="<?php echo base_url(); ?>img/addphotoMiniIcon.png" alt="your image" />
                         <input id="file4" type='file' onchange="readURL4(this);" />
                         <p class="pleaseSelect">Select Image</p>
                 	</div>
@@ -148,17 +148,16 @@
 		<div class="row">
     		<div class="small-11  small-centered columns">
     			<div class="small-4 columns">
-   	    			<a href="#classifiedsBuySection"><img src="img/classifiedsBuyIcon.png" alt="buy"></a> 
+   	    			<a href="#classifiedsBuySection"><img src="<?php echo base_url(); ?>img/classifiedsBuyIcon.png" alt="buy"></a> 
             		<h3 class="iconLabel">BUY</h3>	
         		</div>
         		<div class="small-4 columns">
-            		<a href="#classifiedsSellSection"><img src="img/classifiedsSellIcon.png" alt="sell"></a>
+            		<a href="#classifiedsSellSection"><img src="<?php echo base_url(); ?>img/classifiedsSellIcon.png" alt="sell"></a>
             		<h3 class="iconLabel">SELL</h3>
         		</div>
         		<div class="small-4 columns">
          			<div class="currentPage">
-        				<a href="#classifiedsCreateSection">
-            			<img src="img/classifiedsCreateIcon.png" alt="create"></a>
+        				<a href="#classifiedsCreateSection"><img src="<?php echo base_url(); ?>img/classifiedsCreateIcon.png" alt="create"></a>
             		</div>
             		<h3 class="iconLabel">CREATE</h3>
             	</div>

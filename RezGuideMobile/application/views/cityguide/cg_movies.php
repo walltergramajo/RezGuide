@@ -3,7 +3,7 @@
     <div class="topSection">
       <div class="row"> 
         <div class="small-2 columns">
-          <a href="#genInfoCity"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+          <a href="#genInfoCity"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
         </div>
         <div class="small-9 small-push-1 columns">
           <h2  class="topHeader">CITY GUIDE</h2>
@@ -22,7 +22,7 @@
       <div class="row">
         <dl class="accordion" data-accordion>
           <dd>
-            <a href="#panel81" onClick="highlightLink(this);"><span class="complaintText">The Equalizer</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+            <a href="#panel81" onClick="highlightLink(this);"><span class="complaintText">The Equalizer</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
             <div id="panel81" class="content">
               <p class="dateColor">October 1</p>
               <p class="time">6:30pm</p>
@@ -32,7 +32,7 @@
             </div>
           </dd>
           <dd>
-            <a href="#panel82" onClick="highlightLink(this);"><span class="complaintText">Gone Girl</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+            <a href="#panel82" onClick="highlightLink(this);"><span class="complaintText">Gone Girl</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
             <div id="panel82" class="content">
               <p class="dateColor">October 8</p>
               <p class="time">6:30pm</p>
@@ -42,7 +42,7 @@
             </div>
           </dd>
           <dd>
-            <a href="#panel83" onClick="highlightLink(this);"><span class="complaintText">Dracula Untold</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+            <a href="#panel83" onClick="highlightLink(this);"><span class="complaintText">Dracula Untold</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
             <div id="panel83" class="content">
               <p class="dateColor">October 15</p>
               <p class="time">7:00pm</p>
@@ -52,7 +52,7 @@
             </div>
           </dd>
           <dd>
-            <a href="#panel84" onClick="highlightLink(this);"><span class="complaintText">The Judge</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+            <a href="#panel84" onClick="highlightLink(this);"><span class="complaintText">The Judge</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
             <div id="panel84" class="content">
               <p class="dateColor">October 22</p>
               <p class="time">6:30pm</p>
@@ -71,16 +71,16 @@
       <div class="small-11 small-centered columns">
         <div class="small-4 columns">
           <div class="currentPage2">
-            <a href="#genInfoCity"><img src="img/cityGuideIcon.png" alt="fsuEvents"></a> 
+            <a href="#genInfoCity"><img src="<?php echo base_url(); ?>img/cityGuideIcon.png" alt="fsuEvents"></a> 
             <h3 class="iconLabel">CITY<br>GUIDE</h3>
           </div>
         </div>
         <div class="small-4 columns">
-          <a href="#genInfoBus"><img src="img/busIcon.png" alt="fsuContests"></a>
+          <a href="#genInfoBus"><img src="<?php echo base_url(); ?>img/busIcon.png" alt="fsuContests"></a>
           <h3 class="iconLabel">LTC</h3>
         </div>
         <div class="small-4 columns">
-          <a href="#genInfoDirectory"><img src="img/directoryIcon.png" alt="fsuInfo"></a>
+          <a href="#genInfoDirectory"><img src="<?php echo base_url(); ?>img/directoryIcon.png" alt="fsuInfo"></a>
           <h3 class="iconLabel">DIRECTORY</h3>
         </div>
       </div>

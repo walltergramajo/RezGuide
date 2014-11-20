@@ -3,7 +3,7 @@
     <div class="topSection">
       <div class="row"> 
         <div class="small-2 columns">
-          <a href="#genInfoCity"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+          <a href="#genInfoCity"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
         </div>
         <div class="small-9 small-push-1 columns">
           <h2  class="topHeader">CITY GUIDE</h2>
@@ -22,7 +22,7 @@
       <div class="row">
         <dl class="accordion" data-accordion>
           <dd>
-            <a href="#panel77" onClick="highlightLink(this);"><span class="complaintText">Tuesday Night is Movie Night</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+            <a href="#panel77" onClick="highlightLink(this);"><span class="complaintText">Tuesday Night is Movie Night</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
             <div id="panel77" class="content">
               <p class="dateColor">Every Tuesday</p>
               <p class="location">All Cineplex Theatre Locations</p>
@@ -31,7 +31,7 @@
             </div>
           </dd>
           <dd>
-            <a href="#panel78" onClick="highlightLink(this);"><span class="complaintText">Comedy Night</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+            <a href="#panel78" onClick="highlightLink(this);"><span class="complaintText">Comedy Night</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
             <div id="panel78" class="content">
               <p class="dateColor">September 23</p>
               <p class="location">Forwell Hall</p>
@@ -40,7 +40,7 @@
             </div>
           </dd>
           <dd>
-            <a href="#panel79" onClick="highlightLink(this);"><span class="complaintText">Kenny Vs Spenny Live</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+            <a href="#panel79" onClick="highlightLink(this);"><span class="complaintText">Kenny Vs Spenny Live</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
             <div id="panel79" class="content">
               <p class="dateColor">October 14</p>
               <p class="location">Forwell Hall</p>
@@ -49,7 +49,7 @@
             </div>
           </dd>
           <dd>
-            <a href="#panel80" onClick="highlightLink(this);"><span class="complaintText">Tony Lee and Stevie Starr</span> <span class="selectionArrowGenInfo"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+            <a href="#panel80" onClick="highlightLink(this);"><span class="complaintText">Tony Lee and Stevie Starr</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
             <div id="panel80" class="content">
               <p class="dateColor">October 17</p>
               <p class="location">Forwell Hall</p>
@@ -67,16 +67,16 @@
       <div class="small-11 small-centered columns">
         <div class="small-4 columns">
           <div class="currentPage2">
-            <a href="#genInfoCity"><img src="img/cityGuideIcon.png" alt="fsuEvents"></a> 
+            <a href="#genInfoCity"><img src="<?php echo base_url(); ?>img/cityGuideIcon.png" alt="fsuEvents"></a> 
             <h3 class="iconLabel">CITY<br>GUIDE</h3>
           </div>
         </div>
         <div class="small-4 columns">
-          <a href="#genInfoBus"><img src="img/busIcon.png" alt="fsuContests"></a>
+          <a href="#genInfoBus"><img src="<?php echo base_url(); ?>img/busIcon.png" alt="fsuContests"></a>
           <h3 class="iconLabel">LTC</h3>
         </div>
         <div class="small-4 columns">
-          <a href="#genInfoDirectory"><img src="img/directoryIcon.png" alt="fsuInfo"></a>
+          <a href="#genInfoDirectory"><img src="<?php echo base_url(); ?>img/directoryIcon.png" alt="fsuInfo"></a>
           <h3 class="iconLabel">DIRECTORY</h3>
         </div>
       </div>

@@ -3,7 +3,7 @@
     <div class="topSection">
       <div class="row"> 
     		<div class="small-2 columns">
-          <a id="backButton" href="#mainMenu"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+          <a id="backButton" href="#mainMenu"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
         </div>
         <div class="small-9 small-push-2 columns">
         	<h2 id="calendarHeader" class="topHeader">CALENDAR</h2>

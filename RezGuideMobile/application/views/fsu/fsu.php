@@ -3,13 +3,13 @@
 		<div class="row">
     		<div class="small-2 columns">
         		<a href="#mainMenu">
-   	    			<img class="colorMenu" src="img/mainMenuButtonColor.png" alt="menu">
+   	    			<img class="colorMenu" src="<?php echo base_url(); ?>img/mainMenuButtonColor.png" alt="menu">
             	</a>
          	</div>
     	</div>
 		<div class="row">
     		<div class="small-11 small-centered columns">
-   	    		<img class="dashBoardDummy" src="img/fsuLargeIcon.png" alt="fsu_Intro">
+   	    		<img class="dashBoardDummy" src="<?php echo base_url(); ?>img/fsuLargeIcon.png" alt="fsu_Intro">
          	</div>
     	</div>
     	<div class="row">
@@ -22,15 +22,15 @@
 		<div class="row">
     		<div class="small-11 small-centered columns">
     			<div class="small-4 columns">
-   	    			<a href="#fsuEventsPage"><img src="img/eventsPageIcon.png" alt="fsuEvents"></a> 
+   	    			<a href="#fsuEventsPage"><img src="<?php echo base_url(); ?>img/eventsPageIcon.png" alt="fsuEvents"></a> 
             		<h3 class="iconLabel">EVENTS</h3>
        		 	</div>
         		<div class="small-4 columns">
-        			<a href="#fsuContestsPage"><img src="img/contestsIcon.png" alt="fsuContests"></a>
+        			<a href="#fsuContestsPage"><img src="<?php echo base_url(); ?>img/contestsIcon.png" alt="fsuContests"></a>
             		<h3 class="iconLabel">CONTESTS</h3>
         		</div>
         		<div class="small-4 columns">
-        			<a href="#fsuInfoPage"><img src="img/infoIcon.png" alt="fsuInfo"></a>
+        			<a href="#fsuInfoPage"><img src="<?php echo base_url(); ?>img/infoIcon.png" alt="fsuInfo"></a>
             		<h3 class="iconLabel">INFO</h3>
        			</div>
         	</div>

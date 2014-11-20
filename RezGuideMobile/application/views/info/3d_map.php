@@ -3,7 +3,7 @@
 		<div class="topSection">
       <div class="row"> 
     		<div class="small-2 columns">
-          <a href="#main"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+          <a href="#main"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
         </div>
     		<div class="small-9 small-push-4 columns">
         	<h2 class="topHeader">3D MAP</h2>
@@ -27,7 +27,7 @@
 								<ul>
    								<li class='has-sub last'>
                     <a href='#'>
-                      <span><img id="buildingIcon" class="sideIcons" src="img/buildingIcon.png" alt="building"></span>
+                      <span><img id="buildingIcon" class="sideIcons" src="<?php echo base_url(); ?>img/buildingIcon.png" alt="building"></span>
                     </a>
       							<ul>
          							<li class='last'><a href='#'><span class="iconLabeL">BUILDING</span></a></li>
@@ -35,7 +35,7 @@
   					 			</li>
                   <li class='has-sub last'>
                     <a href='#'>
-                      <span><img id="classroomIcon" class="sideIcons" src="img/classroomIcon.png" alt="classroom2"></span>
+                      <span><img id="classroomIcon" class="sideIcons" src="<?php echo base_url(); ?>img/classroomIcon.png" alt="classroom2"></span>
                     </a>
     								<ul>
        								<li class='last'><a href='#'><span>CLASSROOM</span></a></li>
@@ -43,7 +43,7 @@
   					 			</li>
                   <li class='has-sub last'>
                     <a href='#'>
-                      <span><img id="labsIcon" class="sideIcons" src="img/labIcon.png" alt="lab"></span>
+                      <span><img id="labsIcon" class="sideIcons" src="<?php echo base_url(); ?>img/labIcon.png" alt="lab"></span>
                     </a>
     								<ul>
        								<li class='last'><a href='#'><span>LABS</span></a></li>
@@ -51,7 +51,7 @@
   					 			</li>
                   <li class='has-sub last'>
                     <a href='#'>
-                      <span><img id="bathroomIcon" class="sideIcons" src="img/bathroomIcon.png" alt="washroom"></span>
+                      <span><img id="bathroomIcon" class="sideIcons" src="<?php echo base_url(); ?>img/bathroomIcon.png" alt="washroom"></span>
                     </a>
     								<ul>
        								<li class='last'><a href='#'><span>WASHROOM</span></a></li>
@@ -59,7 +59,7 @@
   					 			</li>
                   <li class='has-sub last'>
                     <a href='#'>
-                      <span><img id="shoppingIcon" class="sideIcons" src="img/shoppingIcon.png" alt="shopping"></span>
+                      <span><img id="shoppingIcon" class="sideIcons" src="<?php echo base_url(); ?>img/shoppingIcon.png" alt="shopping"></span>
                     </a>
     								<ul>
        								<li class='last'><a href='#'><span>SHOPPING</span></a></li>
@@ -67,7 +67,7 @@
   					 			</li>
                   <li class='has-sub last'>
                     <a href='#'>
-                      <span><img id="restaurantIcon" class="sideIcons" src="img/restaurantIcon.png" alt="restaurant"></span>
+                      <span><img id="restaurantIcon" class="sideIcons" src="<?php echo base_url(); ?>img/restaurantIcon.png" alt="restaurant"></span>
                     </a>
     								<ul>
        								<li class='last'><a href='#'><span>RESTAURANT</span></a></li>
@@ -75,7 +75,7 @@
   					 			</li>
                   <li class='has-sub last'>
                     <a href='#'>
-                      <span><img id="servicesIcon" class="sideIcons" src="img/servicesIcon.png" alt="services"></span>
+                      <span><img id="servicesIcon" class="sideIcons" src="<?php echo base_url(); ?>img/servicesIcon.png" alt="services"></span>
                     </a>
     								<ul>
        								<li class='last'><a href='#'><span>SERVICES</span></a></li>
@@ -83,7 +83,7 @@
   					 			</li>
                   <li class='has-sub last'>
                     <a href='#'>
-                      <span><img id="officesIcon" class="sideIcons" src="img/officesIcon.png" alt="offices"></span>
+                      <span><img id="officesIcon" class="sideIcons" src="<?php echo base_url(); ?>img/officesIcon.png" alt="offices"></span>
                     </a>
     								<ul>
        							  <li class='last'><a href='#'><span>OFFICES</span></a></li>
@@ -91,7 +91,7 @@
   					 			</li>
                   <li class='has-sub last'>
                     <a href='#'>
-                      <span><img id="transportationIcon" class="sideIcons" src="img/transportationIcon.png" alt="transportation"></span>
+                      <span><img id="transportationIcon" class="sideIcons" src="<?php echo base_url(); ?>img/transportationIcon.png" alt="transportation"></span>
                     </a>
       							<ul>
          							<li class='last'><a href='#'><span class="iconLabeL">TRANSPORTATION</span></a></li>
@@ -107,16 +107,16 @@
 		<div class="bottomSection">
 			<div class="row">
     		<div class="small-4 columns">
-   	    	<a href="#scheduleSection"><img src="img/schedule.png" alt="schedule"></a> 
+   	    	<a href="#scheduleSection"><img src="<?php echo base_url(); ?>img/schedule.png" alt="schedule"></a> 
           <h3 class="iconLabel">SCHEDULE</h3>
         </div>
         <div class="small-4 columns">
-        	<a href="#classroomSection"><img src="img/classroom.png" alt="classroom"></a>
+        	<a href="#classroomSection"><img src="<?php echo base_url(); ?>img/classroom.png" alt="classroom"></a>
           <h3 class="iconLabel">CLASSROOM NUMBER</h3>
         </div>
         <div class="small-4 columns">
         	<div class="currentPage">
-        		<a href="#3dmapSection"><img src="img/3dMap.png" alt="3dMap"></a>
+        		<a href="#3dmapSection"><img src="<?php echo base_url(); ?>img/3dMap.png" alt="3dMap"></a>
           </div>
           <h3 class="iconLabel">3D MAP</h3>
         </div>

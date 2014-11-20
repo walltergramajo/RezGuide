@@ -3,13 +3,13 @@
     	<div class="row">
         	<div class="small-2 columns">
             	<a href="#mainMenu">
-                    <img class="colorMenu" src="img/mainMenuButtonColor.png" alt="menu">
+                    <img class="colorMenu" src="<?php echo base_url(); ?>img/mainMenuButtonColor.png" alt="menu">
                 </a>
             </div>
         </div>
     	<div class="row">
         	<div class="small-11 small-centered columns">
-       	    	<img class="dashBoardDummy" src="img/newsIntro.png" alt="News_Intro">
+       	    	<img class="dashBoardDummy" src="<?php echo base_url(); ?>img/newsIntro.png" alt="News_Intro">
             </div>
         </div>
         <div class="row">
@@ -23,15 +23,15 @@
     	<div class="row">
         	<div class="small-11 small-centered columns">
             	<div class="small-4 columns">
-           	    	<a href="#generalNoticesPage"><img src="img/generalNoticesIcon.png" alt="gen_notices"></a> 
+           	    	<a href="#generalNoticesPage"><img src="<?php echo base_url(); ?>img/generalNoticesIcon.png" alt="gen_notices"></a> 
                     <h3 class="iconLabel">GENERAL NOTICES</h3>
                 </div>
                 <div class="small-4 columns">
-                	<a href="#monthlyReportsPage"><img src="img/monthlyReportIcon.png" alt="monthly_reports"></a>
+                	<a href="#monthlyReportsPage"><img src="<?php echo base_url(); ?>img/monthlyReportIcon.png" alt="monthly_reports"></a>
                     <h3 class="iconLabel">MONTHLY REPORTS</h3>
                 </div>
                 <div class="small-4 columns">
-                	<a href="#comingEventsPage"><img src="img/comingEventsIcon.png" alt="coming_events"></a>
+                	<a href="#comingEventsPage"><img src="<?php echo base_url(); ?>img/comingEventsIcon.png" alt="coming_events"></a>
                     <h3 class="iconLabel">COMING EVENTS</h3>
                 </div>
             </div>

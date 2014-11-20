@@ -3,7 +3,7 @@
 		<div class="topSection">
 			<div class="row"> 
     			<div class="small-2 columns">
-          			<a href="#personalDashboard"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+          			<a href="#personalDashboard"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
          		</div>
     			<div class="small-9 small-push-2 columns">
         			<h2  class="topHeader">REQUESTS</h2>
@@ -46,7 +46,7 @@
                     <div class="row">
                         <div class="small-2 small-push-1 columns">
                             <div>
-                                <a href="#"><img class="addInput" src="img/addRoommate.png" alt="addField"></a>
+                                <a href="#"><img class="addInput" src="<?php echo base_url(); ?>img/addRoommate.png" alt="addField"></a>
                             </div>
                         </div>
                         <div class="small-10 columns">
@@ -80,7 +80,7 @@
 				</div><!--End Requests Content-->
     			<div class="row">
         			<div class="small-4 small-centered columns">
-       	    			<a href="#"><img class="sendButton" src="img/sendButton.png" alt="send"></a>
+       	    			<a href="#"><img class="sendButton" src="<?php echo base_url(); ?>img/sendButton.png" alt="send"></a>
             		</div>
         		</div>
 			</div><!--End IconScroll2-->
@@ -88,17 +88,17 @@
     	<div class="bottomSection">
 			<div class="row">
     			<div class="small-4 columns">
-   	    			<a href="#requestsGeneral"><img src="img/requestsGeneral.png" alt="general"></a> 
+   	    			<a href="#requestsGeneral"><img src="<?php echo base_url(); ?>img/requestsGeneral.png" alt="general"></a> 
             		<h3 class="iconLabel">GENERAL</h3>
         		</div>
         		<div class="small-4 columns">
         			<div class="currentPage">
-        				<a href="#requestsMediation"><img src="img/requestsMediation.png" alt="mediation"></a>
+        				<a href="#requestsMediation"><img src="<?php echo base_url(); ?>img/requestsMediation.png" alt="mediation"></a>
             		</div>
             		<h3 class="iconLabel">MEDIATION</h3>
         		</div>
         		<div class="small-4 columns">
-        			<a href="#requestsWithdraw"><img src="img/requestsWithdraw.png" alt="withdraw"></a>
+        			<a href="#requestsWithdraw"><img src="<?php echo base_url(); ?>img/requestsWithdraw.png" alt="withdraw"></a>
            		    <h3 class="iconLabel">WITHDRAW</h3>
         		</div>
     		</div>

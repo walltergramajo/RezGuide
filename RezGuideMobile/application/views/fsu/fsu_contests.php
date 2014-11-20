@@ -3,7 +3,7 @@
 		<div class="topSection">
 			<div class="row"> 
     			<div class="small-2 columns">
-          			<a href="#fsuIntro"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+          			<a href="#fsuIntro"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
          		</div>
     			<div class="small-9 small-push-5 columns">
         			<h2  class="topHeader">FSU</h2>
@@ -20,7 +20,7 @@
 				<div class="row">
     				<dl class="accordion" data-accordion>
   						<dd>
-    						<a href="#panel61" onClick="highlightLink(this);"><span class="complaintText">Video Game Contest</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<a href="#panel61" onClick="highlightLink(this);"><span class="complaintText">Video Game Contest</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
     						<div id="panel61" class="content">
                                 <p class="dateColor">September 4</p>
                                 <p class="location">Forwell Hall</p>
@@ -30,7 +30,7 @@
     						</div>
                			</dd>
   						<dd>
-   						 	<a href="#panel62" onClick="highlightLink(this);"><span class="complaintText">Fanshawe Fashion Showcase</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+   						 	<a href="#panel62" onClick="highlightLink(this);"><span class="complaintText">Fanshawe Fashion Showcase</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
     						<div id="panel62" class="content">
                                 <p class="dateColor">September 4</p>
                                 <p class="location">H Building</p>
@@ -40,7 +40,7 @@
     						</div>
  					 	</dd>
         				<dd>
-    						<a href="#panel63" onClick="highlightLink(this);"><span class="complaintText">FSU BBQ</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<a href="#panel63" onClick="highlightLink(this);"><span class="complaintText">FSU BBQ</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
     						<div id="panel63" class="content">
                                 <p class="dateColor">September 4</p>
                                 <p class="location">Outside of Forwell Hall</p>
@@ -50,7 +50,7 @@
     						</div>
   						</dd>
  				 		<dd>
-    						<a href="#panel64" onClick="highlightLink(this);"><span class="complaintText">Scavenger Hunt</span> <span class="selectionArrowRules"><img src="img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<a href="#panel64" onClick="highlightLink(this);"><span class="complaintText">Scavenger Hunt</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
     						<div id="panel64" class="content">
                                 <p class="dateColor">September 4</p>
                                 <p class="location">Main Campus</p>
@@ -67,17 +67,17 @@
     		<div class="row">
     			<div class="small-11 small-centered columns">
     				<div class="small-4 columns">
-   	    				<a href="#fsuEventsPage"><img src="img/eventsPageIcon.png" alt="fsuEvents"></a> 
+   	    				<a href="#fsuEventsPage"><img src="<?php echo base_url(); ?>img/eventsPageIcon.png" alt="fsuEvents"></a> 
             			<h3 class="iconLabel">EVENTS</h3>
        		 		</div>
         			<div class="small-4 columns">
         				<div class="currentPage2">
-        					<a href="#fsuContestsPage"><img src="img/contestsIcon.png" alt="fsuContests"></a>
+        					<a href="#fsuContestsPage"><img src="<?php echo base_url(); ?>img/contestsIcon.png" alt="fsuContests"></a>
             				<h3 class="iconLabel">CONTESTS</h3>
             			</div>
         			</div>
         			<div class="small-4 columns">
-        				<a href="#fsuInfoPage"><img src="img/infoIcon.png" alt="fsuInfo"></a>
+        				<a href="#fsuInfoPage"><img src="<?php echo base_url(); ?>img/infoIcon.png" alt="fsuInfo"></a>
             			<h3 class="iconLabel">INFO</h3>
         			</div>
         		</div>
