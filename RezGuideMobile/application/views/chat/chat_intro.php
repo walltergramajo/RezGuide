@@ -3,13 +3,13 @@
     <div class="row">
       <div class="small-2 columns">
         <a href="#mainMenu">
-   	    	<img class="colorMenu" src="img/mainMenuButtonColor.png" alt="menu">
+   	    	<img class="colorMenu" src="<?php echo base_url(); ?>img/mainMenuButtonColor.png" alt="menu">
         </a>
       </div>
     </div>
     <div class="row">
     	<div class="small-11 small-centered columns">
-   	    <img class="dashBoardDummy" src="img/largeChatIcon.png" alt="Chat_Intro">
+   	    <img class="dashBoardDummy" src="<?php echo base_url(); ?>img/largeChatIcon.png" alt="Chat_Intro">
       </div>
     </div>
     <div class="row">
@@ -22,7 +22,7 @@
     <div class="row">
       <div class="small-4 small-centered columns">
         <div class="currentPage">
-	    		<a href="#chatFormSection"><img class="chatStart" src="img/largeStartIcon.png" alt="large_start"></a>
+	    		<a href="#chatFormSection"><img class="chatStart" src="<?php echo base_url(); ?>img/largeStartIcon.png" alt="large_start"></a>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@
         <div class="topSection">
             <div class="row"> 
                 <div class="small-2 columns">
-                    <a href="#personalDashboard"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+                    <a href="#personalDashboard"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
                 </div>
                 <div class="small-9 small-push-2 columns">
                     <h2 id="accountHeader" class="topHeader">ACCOUNT</h2>
@@ -13,7 +13,7 @@
         <div class="contentNews">
             <div class="row">
                 <div class="small-5 small-push-1 columns">
-                    <img id="colouredDummy" src="img/colouredDummyIcon.png" alt="coloured_dummy"> 
+                    <img id="colouredDummy" src="<?php echo base_url(); ?>img/colouredDummyIcon.png" alt="coloured_dummy"> 
                 </div>
                 <div class="small-7 columns">
                     <div id="profileInfo">
@@ -77,7 +77,7 @@
             </div>
             <div class="row">
                 <div class="small-4 small-centered columns">
-                    <a href="#"><img src="img/sendButton.png" alt="sendButton" value="submit"></a>
+                    <a href="#"><img src="<?php echo base_url(); ?>img/sendButton.png" alt="sendButton" value="submit"></a>
                 </div>
             </div>
         </div>
@@ -87,16 +87,16 @@
         <div class="row">
             <div class="small-4 columns">
                 <div class="currentPage">
-                    <a href="#profileSection"><img src="img/profileIcon.png" alt="profile"></a> 
+                    <a href="#profileSection"><img src="<?php echo base_url(); ?>img/profileIcon.png" alt="profile"></a> 
                 </div>
                 <h3 class="iconLabel">PROFILE</h3>
             </div>
             <div class="small-4 columns">
-                <a href="#pointsPage"><img src="img/pointsIcon.png" alt="points"></a>
+                <a href="#pointsPage"><img src="<?php echo base_url(); ?>img/pointsIcon.png" alt="points"></a>
                 <h3 class="iconLabel">POINTS</h3>
             </div>
             <div class="small-4 columns">
-                <a href="#accountBalance"><img src="img/balanceIcon.png" alt="balance"></a>
+                <a href="#accountBalance"><img src="<?php echo base_url(); ?>img/balanceIcon.png" alt="balance"></a>
                 <h3 class="iconLabel">BALANCE</h3>
             </div>
         </div>

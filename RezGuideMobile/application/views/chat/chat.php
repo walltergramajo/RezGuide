@@ -3,7 +3,7 @@
     	<div class="topSection">
     		<div class="row"> 
         		<div class="small-2 columns">
-              		<a href="#chatFormSection"><img class="backButton" src="img/backButton.png" alt="backButton"></a>
+              		<a href="#chatFormSection"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
              	</div>
         		<div class="small-9 small-push-5 columns">
                     <h2 class="topHeader">CHAT</h2>
@@ -28,7 +28,7 @@
                		</div>
             	</div>
                 <div class="small-3 columns">
-           	    	<img class="chatDummyIcon" src="img/userNameDummy.png" alt="username"> 
+           	    	<img class="chatDummyIcon" src="<?php echo base_url(); ?>img/userNameDummy.png" alt="username"> 
                 </div>
         	</div>
             <div class="row">
@@ -36,7 +36,7 @@
             </div>
             <div class="row">
             	<div class="small-3 columns">
-           	    	<img class="chatDummyIcon" src="img/operatorDummyIcon.png" alt="username"> 
+           	    	<img class="chatDummyIcon" src="<?php echo base_url(); ?>img/operatorDummyIcon.png" alt="username"> 
                 </div>
         		<div class="small-9 columns">
             		<div class="chatFloatLeft">
@@ -54,7 +54,7 @@
                		</div>
             	</div>
                 <div class="small-3 columns">
-           	    	<img class="chatDummyIcon" src="img/userNameDummy.png" alt="username"> 
+           	    	<img class="chatDummyIcon" src="<?php echo base_url(); ?>img/userNameDummy.png" alt="username"> 
                 </div>
         	</div>
             <div class="row">
@@ -62,7 +62,7 @@
             </div>
             <div class="row">
                 <div class="small-3 columns">
-                    <img class="chatDummyIcon" src="img/operatorDummyIcon.png" alt="username"> 
+                    <img class="chatDummyIcon" src="<?php echo base_url(); ?>img/operatorDummyIcon.png" alt="username"> 
                 </div>
                 <div class="small-9 columns">
                 	<div class="chatFloatLeft">
@@ -81,7 +81,7 @@
                		</div>
             	</div>
                 <div class="small-3 columns">
-           	    	<img class="chatDummyIcon" src="img/userNameDummy.png" alt="username"> 
+           	    	<img class="chatDummyIcon" src="<?php echo base_url(); ?>img/userNameDummy.png" alt="username"> 
                 </div>
         	</div>
         </div>
@@ -89,13 +89,13 @@
 	<div class="bottomSectionChat">
 		<div class="row">
             <div class="chatInputSection">
-           	    <img id="addAttachments" src="img/addAttachmentsIcon.png" alt="addAttachments"> 
+           	    <img id="addAttachments" src="<?php echo base_url(); ?>img/addAttachmentsIcon.png" alt="addAttachments"> 
             	<div class="small-9 small-centered columns">
                     <form id="chatInput">
                 	   <textarea rows="4" cols="50" placeholder="Your Text Here:"></textarea>
                     </form>
                 </div>
-                <img id="chatSendButton" src="img/chatSendButton.png" alt="chatsend"> 
+                <img id="chatSendButton" src="<?php echo base_url(); ?>img/chatSendButton.png" alt="chatsend"> 
             </div>
    	    </div>
     </div><!--Chat Window End-->

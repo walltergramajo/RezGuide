@@ -2,12 +2,12 @@
 	<div class="section">
 		<div class="row">
     		<div class="small-2 columns">
-        		<a href="#mainMenu"><img class="colorMenu" src="img/mainMenuButtonColor.png" alt="menu"></a>
+        		<a href="#mainMenu"><img class="colorMenu" src="<?php echo base_url(); ?>img/mainMenuButtonColor.png" alt="menu"></a>
          	</div>
     	</div>
 		<div class="row">
     		<div class="small-11 small-centered columns">
-   	    		<img class="dashBoardDummy" src="img/buildingIntroIcon.png" alt="Building_Intro">
+   	    		<img class="dashBoardDummy" src="<?php echo base_url(); ?>img/buildingIntroIcon.png" alt="Building_Intro">
          	</div>
     	</div>
     	<div class="row">
@@ -21,15 +21,15 @@
 		<div class="row">
     		<div class="small-11 small-centered columns">
     			<div class="small-4 columns">
-   	    			<a href="#buildingSectionGarbage"><img src="img/calendarBuildingIcon.png" alt="building"></a> 
+   	    			<a href="#buildingSectionGarbage"><img src="<?php echo base_url(); ?>img/calendarBuildingIcon.png" alt="building"></a> 
             		<h3 class="iconLabel">BUILDING</h3>
         		</div>
         		<div class="small-4 columns">
-        			<a href="#eventsPage"><img src="img/eventsIcon.png" alt="events"></a>
+        			<a href="#eventsPage"><img src="<?php echo base_url(); ?>img/eventsIcon.png" alt="events"></a>
             		<h3 class="iconLabel">EVENTS</h3>
         		</div>
         		<div class="small-4 columns">
-        			<a href="#classifiedsBuySection"><img src="img/classifiedsIcon.png" alt="classifieds"></a>
+        			<a href="#classifiedsBuySection"><img src="<?php echo base_url(); ?>img/classifiedsIcon.png" alt="classifieds"></a>
             		<h3 class="iconLabel">CLASSIFIEDS</h3>
         		</div>
         	</div>
