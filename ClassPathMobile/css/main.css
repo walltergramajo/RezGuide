@@ -40,6 +40,11 @@ body
 	-webkit-overflow-scrolling: touch;
 }
 
+.forceWhite
+{
+	color: #FFF !important;
+}
+
 .hidden
 {
 	display: none;
@@ -899,7 +904,7 @@ li {
 
 #textGuide
 {
-	color: #65666a;
+	
 	margin-top: 20px;
 	font-size: 2em;
 }
@@ -917,7 +922,7 @@ li {
 
 #pathGuide
 {
-	color: #65666a;
+	
 	margin-top: 20px;
 	font-size: 2em;
 }

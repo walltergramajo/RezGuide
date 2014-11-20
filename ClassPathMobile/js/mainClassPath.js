@@ -92,19 +92,17 @@ var highlightLinkPath = function () {
         });
         return function (element) {
             if ((active != element) && element.style) {
-                window.console&&console.log("TEST TEXT");
                 if (active) active.style.color = '';
                 if (active) active.style.backgroundColor = '';
 				if (active) active.style.backgroundImage = '';
                 
-                
+                element.style.color = 'white';
                 element.style.backgroundImage = backgroundImage2;
 				element.style.backgroundColor = colour;
 				element.style.backgroundRepeat = "no-repeat";
 				element.style.backgroundSize = "20px 75px";
-                element.style.color = "#FFF";
                 active = element;
-				
+				console.log("SELECTOR WORKS")
             }
         }
 }();
