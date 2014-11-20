@@ -120,12 +120,12 @@
                     </li>
                     <li>
                         <a href="cms_add_fsu_event_pg1.php">
-                            <img src="../img/WA_dotFull.png" alt="Page 1">
+                            <img src="../img/WA_dotEmpty.png" alt="Page 1">
                         </a>
                     </li>
                     <li>
                         <a href="cms_add_fsu_event_pg2.php">
-                            <img src="../img/WA_dotEmpty.png" alt="Page 2">
+                            <img src="../img/WA_dotFull.png" alt="Page 2">
                         </a>
                     </li>
                     <li>

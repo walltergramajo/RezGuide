@@ -1249,7 +1249,8 @@ button, .button {
   cursor:pointer; }
   
   .addImg {
-	margin-top:30px; 
+	display: block;
+	margin: 50px 0 0 30px; 
   }
 
 .addFile span {
@@ -1270,6 +1271,10 @@ button, .button {
 	color:white;
 	background: #888;
 	}
+
+.hidden {
+	opacity:0;
+}
 
 
 
