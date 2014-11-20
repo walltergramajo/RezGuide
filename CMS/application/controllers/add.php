@@ -128,6 +128,88 @@ class Add extends CI_Controller {
 
 	}
 
+	public function news($page = null){
+		// $this->load->model('Notices_model');
+		if($page == "upcoming"){
+			$data['pgTitle'] = "RezGuide Add An Upcoming Event";
+			$data['section'] = "News";
+			$data['subSection'] = "an upcoming event";
+			$this->load->view('templates/head',$data);
+			$this->load->view('add/add_header');
+			$this->load->view('add/news/upcoming');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}elseif($page == "monthly"){
+			$data['pgTitle'] = "RezGuide Add A Monthly Event";
+			$data['section'] = "News";
+			$data['subSection'] = "a monthly event";
+			$this->load->view('templates/head',$data);
+			$this->load->view('add/add_header');
+			$this->load->view('add/news/monthly');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}elseif($page == "event"){
+			$data['pgTitle'] = "RezGuide Add An Event";
+			$data['section'] = "News";
+			$data['subSection'] = "an event";
+			$this->load->view('templates/head',$data);
+			$this->load->view('add/add_header');
+			$this->load->view('add/news/event');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}else{
+			$data['pgTitle'] = "RezGuide News Main Menu";
+			$data['section'] = "News";
+			$this->load->view('templates/head',$data);
+			$this->load->view('add/add_header');
+			$this->load->view('add/news');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}
+
+	}
+
+	public function fsu($page = null){
+		// $this->load->model('Notices_model');
+		if($page == "contests"){
+			$data['pgTitle'] = "RezGuide Add An Upcoming Event";
+			$data['section'] = "FSU";
+			$data['subSection'] = "an FSU Contest";
+			$this->load->view('templates/head',$data);
+			$this->load->view('add/add_header');
+			$this->load->view('add/fsu/contests');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}elseif($page == "events"){
+			$data['pgTitle'] = "RezGuide Add A Monthly Event";
+			$data['section'] = "FSU";
+			$data['subSection'] = "an FSU Event";
+			$this->load->view('templates/head',$data);
+			$this->load->view('add/add_header');
+			$this->load->view('add/fsu/eventspg1');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}elseif($page == "events_pg2"){
+			$data['pgTitle'] = "RezGuide Add An Event";
+			$data['section'] = "News";
+			$data['subSection'] = "an FSU event";
+			$this->load->view('templates/head',$data);
+			$this->load->view('add/add_header');
+			$this->load->view('add/fsu/eventspg2');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}else{
+			$data['pgTitle'] = "RezGuide Fanshawe Stuent Union";
+			$data['section'] = "FSU";
+			$this->load->view('templates/head',$data);
+			$this->load->view('add/add_header');
+			$this->load->view('add/fsu');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}
+
+	}
+
 }
 
 
