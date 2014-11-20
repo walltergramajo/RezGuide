@@ -82,21 +82,130 @@
     <section>
     <?php if(!empty($message)){echo $message;} ?>
     	<form  enctype="multipart/form-data" action="cms_add_news_upcoming.php" method="post" id="newsEvent">
-        	<div class="row">
+        	
+            <div class="row coreInfo">
+                <div class="large-9 columns">
+
+                    <div class="row">
+                        <div class="small-2 columns">
+                            <label>Location</label>
+                        </div>
+                        <div class="small-10 columns">
+                            <input name="location" type="text" placeholder="Location">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="small-2 columns">
+                            <label>Date</label>
+                        </div>
+                        <div class="small-10 columns">
+                            <input name="date" type="text" placeholder="DD / MM / YY">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="small-2 columns">
+                            <label>Time</label>
+                        </div>
+                        <div class="small-10 columns">
+                            <input name="time" type="text" placeholder="Time">
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="small-2 columns">
+                            <label>Title</label>
+                        </div>
+                        <div class="small-10 columns">
+                            <input name="name" type="text" placeholder="Title">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="small-2 columns">
+                            <label>Content</label>
+                        </div>
+                        <div class="small-10 columns">
+                            <textarea name="desc" placeholder="Content"></textarea>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="large-3 columns">
+                        <span><img src="../img/upload.png" alt="Choose an Image"></span>
+                        <input onchange="readURL(this);" name="file" id="imageButton" type="file" value="choose image">
+                    </div>
+                
+
+                    <div class="row">
+                            <div class="large-1 columns">
+                                <span>+</span>
+                                <input onchange="readURL(this);" name="file" id="imageButton" type="file" value="choose image">
+                            </div>
+            
+                            <div class="large-1 columns">
+                                <span>+</span>
+                                <input onchange="readURL(this);" name="file" id="imageButton" type="file" value="choose image">
+                            </div>
+                        
+                            <div class="large-1 columns">
+                                <span>+</span>
+                                <input onchange="readURL(this);" name="file" id="imageButton" type="file" value="choose image">
+                            </div>
+                            
+                            <div class="large-2">
+                                 <hr>
+                                 <input type="submit" class="submitButton1" value="SUBMIT" alt="Submit!">
+                            </div>
+                    </div>
+               
+
+
+            </div><!-- ROW -->
+
+
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--
+
+            <div class="row">
             	<div class="small-4 columns" id="locDateTime">
                 	<div class="row">
                     	<div class="small-12 columns">
                         	<div id="imgContainer">
-                        	<img src="../img/CMS_pickImg.png" alt="Choose an Image">
+                        	<img src="../img/upload.png" alt="Choose an Image">
                             </div>
                             <div id="browseButton2" class="small-10 small-push-3 columns">
                         		<div class="small button">
-                            		<span>choose image</span>
+                            		<span>+</span>
                         			<input onchange="readURL(this);" name="file" id="imageButton" type="file" value="choose image">
                            	 	</div>
                         	</div>
                         </div>
                     </div>
+
+
                     <div class="locDateTimeInputs">
                         <div class="row">
                             <div class="small-3 columns">
@@ -124,6 +233,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="small-8 columns">
                 	<div class="coreInfo">
                         <div class="row">
@@ -143,6 +253,7 @@
                             </div>
                         </div>
                         <div class="row">
+
             	<div class="small-4 columns push-4">
                 	<input type="submit" class="submitButton1" value="SUBMIT" alt="Submit!">
                 </div>
@@ -150,7 +261,7 @@
                     </div>
                 </div>
             </div>
-        </form>
+        </form> -->
     </section>
     
     <div class="filler"> </div>
