@@ -3,7 +3,7 @@
 		<div class="row">
     		<div class="small-6 columns">
         		<div class="mainSections">
-            		<a href="#main">
+            		<a href="<?php echo base_url(); ?>index.php/classpath">
        	    			<div class="small-8 small-centered columns">
                 			<img class="smallIcons" src="<?php echo base_url(); ?>img/classPathThumb.png" alt="classPath"> 
                         </div>
@@ -13,7 +13,7 @@
         	</div>
         	<div class="small-6 columns">
         		<div class="mainSections2">
-            		<a id="calendarLink" href="#calendarPage">
+            		<a id="calendarLink" href="<?php echo base_url(); ?>index.php/calendar">
    	    				<div class="small-8 small-centered columns">
             				<img class="smallIcons" src="<?php echo base_url(); ?>img/calendarThumb.png" alt="classPath"> 
             			</div>
@@ -25,7 +25,7 @@
   		<div class="row">
     		<div class="small-6 columns">
         		<div class="mainSections">
-            		<a href="#personalDashboard">
+            		<a href="<?php echo base_url(); ?>index.php/dashboard">
    	    				<div class="small-8 small-centered columns">
             				<img src="<?php echo base_url(); ?>img/personalDashboardThumb.png" alt="classPath"> 
             			</div>
@@ -35,7 +35,7 @@
     		</div>
         	<div class="small-6 columns">
         		<div class="mainSections2">
-            		<a href="#buildingIntro">
+            		<a href="<?php echo base_url(); ?>index.php/building">
             			<div class="small-8 small-centered columns">
    	    					<img src="<?php echo base_url(); ?>img/buildingThumb.png" alt="classPath"> 
             			</div>
@@ -47,7 +47,7 @@
   		<div class="row">
     		<div class="small-6 columns">
         		<div class="mainSections">
-            		<a href="#newsIntro">
+            		<a href="<?php echo base_url(); ?>index.php/news">
             			<div class="small-8 small-centered columns">
    	    					<img class="smallIcons" src="<?php echo base_url(); ?>img/newsThumb.png" alt="classPath"> 
             			</div>
@@ -57,7 +57,7 @@
     		</div>
         	<div class="small-6 columns">
         		<div class="mainSections2">
-            		<a href="#chatIntro">
+            		<a href="<?php echo base_url(); ?>index.php/chat">
             			<div class="small-8 small-centered columns">
    	    					<img class="smallIcons" src="<?php echo base_url(); ?>img/chatThumb.png" alt="classPath">
             			</div> 
@@ -69,7 +69,7 @@
   		<div class="row">
     		<div class="small-6 columns">
         		<div class="mainSections">
-            		<a href="#fsuIntro">
+            		<a href="<?php echo base_url(); ?>index.php/fsu">
             			<div class="small-8 small-centered columns">
    	    					<img src="<?php echo base_url(); ?>img/fsuThumb.png" alt="classPath"> 
             			</div>
@@ -79,7 +79,7 @@
     		</div>
         	<div class="small-6 columns">
         		<div class="mainSections2">
-            		<a href="#generalInfoIntro">
+            		<a href="<?php echo base_url(); ?>index.php/info">
             			<div class="small-8 small-centered columns">
    	    					<img src="<?php echo base_url(); ?>img/genInfoThumb.png" alt="classPath">
             			</div> 
