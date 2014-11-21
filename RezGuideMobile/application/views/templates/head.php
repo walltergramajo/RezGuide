@@ -6,7 +6,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
     <!--For Android Full Screen-->
     <meta name="mobile-web-app-capable" content="yes">
-    <title>Class Path Main</title>
+    <title>RezGuide Mobile App</title>
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/foundation.css" />
     <link href="<?php echo base_url(); ?>css/main.css" rel="stylesheet" type="text/css" media="screen">
     <link href="<?php echo base_url(); ?>css/normalize.css" rel="stylesheet" type="text/css"/>  

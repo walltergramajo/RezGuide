@@ -2,7 +2,7 @@
   <div class="section">
     <div class="row">
       <div class="small-2 columns">
-        <a href="#mainMenu"><img class="colorMenu" src="<?php echo base_url(); ?>img/mainMenuButtonColor.png" alt="menu"></a>
+        <a href="<?php echo base_url(); ?>index.php/main"><img class="colorMenu" src="<?php echo base_url(); ?>img/mainMenuButtonColor.png" alt="menu"></a>
       </div>
     </div>
 		<div class="row">
@@ -20,15 +20,15 @@
   <div class="bottomSection">
     <div class="row">
     	<div class="small-4 columns">
-   	    <a href="#profileSection"><img src="<?php echo base_url(); ?>img/profileIcon.png" alt="profile"></a> 
+   	    <a href="<?php echo base_url(); ?>index.php/account"><img src="<?php echo base_url(); ?>img/profileIcon.png" alt="profile"></a> 
         <h3 class="iconLabel">ACCOUNT</h3>
       </div>
       <div class="small-4 columns">
-        <a href="#noticesComplaints"><img src="<?php echo base_url(); ?>img/noticesIcon.png" alt="notices"></a>
+        <a href="<?php echo base_url(); ?>index.php/notices"><img src="<?php echo base_url(); ?>img/noticesIcon.png" alt="notices"></a>
         <h3 class="iconLabel">NOTICES</h3>
       </div>
       <div class="small-4 columns">
-        <a href="#requestsGeneral"><img src="<?php echo base_url(); ?>img/requestsIcon.png" alt="requests"></a>
+        <a href="<?php echo base_url(); ?>index.php/requests"><img src="<?php echo base_url(); ?>img/requestsIcon.png" alt="requests"></a>
         <h3 class="iconLabel">REQUESTS</h3>
       </div>
     </div>

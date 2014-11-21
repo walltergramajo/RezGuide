@@ -3,7 +3,7 @@
         <div class="topSection">
             <div class="row"> 
                 <div class="small-2 columns">
-                    <a href="#personalDashboard"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
+                    <a href="<?php echo base_url(); ?>index.php/dashboard"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
                 </div>
                 <div class="small-9 small-push-2 columns">
                     <h2 id="accountBalanceHeader" class="topHeader">ACCOUNT</h2>
@@ -57,16 +57,16 @@
         <div class="bottomSection">
             <div class="row">
                 <div class="small-4 columns">
-                    <a href="#profileSection"><img src="<?php echo base_url(); ?>img/profileIcon.png" alt="profile"></a> 
+                    <a href="<?php echo base_url(); ?>index.php/account/profile"><img src="<?php echo base_url(); ?>img/profileIcon.png" alt="profile"></a> 
                     <h3 class="iconLabel">PROFILE</h3>
                 </div>
                 <div class="small-4 columns">
-                    <a href="#pointsPage"><img src="<?php echo base_url(); ?>img/pointsIcon.png" alt="points"></a>
+                    <a href="<?php echo base_url(); ?>index.php/account/points"><img src="<?php echo base_url(); ?>img/pointsIcon.png" alt="points"></a>
                     <h3 class="iconLabel">POINTS</h3>
                 </div>
                 <div class="small-4 columns">
                     <div class="currentPage">
-                        <a href="#accountBalance"><img src="<?php echo base_url(); ?>img/balanceIcon.png" alt="balance"></a>
+                        <a href="<?php echo base_url(); ?>index.php/account/balance"><img src="<?php echo base_url(); ?>img/balanceIcon.png" alt="balance"></a>
                     </div>
                     <h3 class="iconLabel">BALANCE</h3>
                 </div>
