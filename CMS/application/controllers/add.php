@@ -191,7 +191,7 @@ class Add extends CI_Controller {
 			$this->load->view('templates/close');
 		}elseif($page == "events_pg2"){
 			$data['pgTitle'] = "RezGuide Add An Event";
-			$data['section'] = "News";
+			$data['section'] = "FSU";
 			$data['subSection'] = "an FSU event";
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
@@ -204,6 +204,47 @@ class Add extends CI_Controller {
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
 			$this->load->view('add/fsu');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}
+
+	}
+
+	public function general($page = null){
+		// $this->load->model('Notices_model');
+		if($page == "city"){
+			$data['pgTitle'] = "RezGuide Add An Upcoming Event";
+			$data['section'] = "General";
+			$data['subSection'] = "City Locations";
+			$this->load->view('templates/head',$data);
+			$this->load->view('add/add_header');
+			$this->load->view('add/general/city');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}elseif($page == "directory"){
+			$data['pgTitle'] = "RezGuide Add A Monthly Event";
+			$data['section'] = "General";
+			$data['subSection'] = "Directory";
+			$this->load->view('templates/head',$data);
+			$this->load->view('add/add_header');
+			$this->load->view('add/general/directory');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}elseif($page == "information"){
+			$data['pgTitle'] = "RezGuide Add An Event";
+			$data['section'] = "General";
+			$data['subSection'] = "LTC Information";
+			$this->load->view('templates/head',$data);
+			$this->load->view('add/add_header');
+			$this->load->view('add/general/information');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}else{
+			$data['pgTitle'] = "RezGuide Fanshawe Stuent Union";
+			$data['section'] = "General";
+			$this->load->view('templates/head',$data);
+			$this->load->view('add/add_header');
+			$this->load->view('add/general');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
 		}
