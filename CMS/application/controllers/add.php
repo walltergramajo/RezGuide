@@ -66,7 +66,7 @@ class Add extends CI_Controller {
 
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
-			$this->load->view('add/notices/complaint');
+			$this->load->view('add/noticeform');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
 		}elseif($page == "fine"){
@@ -75,7 +75,7 @@ class Add extends CI_Controller {
 			$data['subSection'] = "Fine";
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
-			$this->load->view('add/notices/fine');
+			$this->load->view('add/noticeform');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
 		}elseif($page == "warning"){
@@ -84,7 +84,7 @@ class Add extends CI_Controller {
 			$data['subSection'] = "Warning";
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
-			$this->load->view('add/notices/warning');
+			$this->load->view('add/noticeform');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
 		}else{
