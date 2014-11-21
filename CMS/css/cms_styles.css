@@ -590,9 +590,6 @@ body {
 		font-size: 1em;
 	}
 	
-	#newsEvent {
-	}
-	
 	.locDateTimeInputs {
 		margin-left: -10px;
 	}
@@ -602,7 +599,7 @@ body {
 	}
 	
 	.coreInfo {
-		margin-top:30px;
+		margin-top:50px;
 	}
 	
 	.coreInfo label {
@@ -614,6 +611,10 @@ body {
 		margin-top: 10px;
 	}
 	
+	.coreInfo textarea {
+		margin-top: 10px;
+		height: 100px;
+	}
 	
 	#locDateTime img {
 		display: block;
@@ -1198,7 +1199,7 @@ body {
   	-webkit-transition: -webkit-box-shadow 0.2s, border-color 0.2s ease-in-out;
   	-moz-transition: -moz-box-shadow 0.2s, border-color 0.2s ease-in-out;
   	transition: box-shadow 0.2s, border-color 0.2s ease-in-out;
-	margin-left:65px;
+  	float: right;
 	}
 					
 .submitButton2:hover{
@@ -1208,7 +1209,13 @@ body {
     -moz-box-shadow: 0 0 2px #ebebeb;
     box-shadow: 0 0 2px #ebebeb;
     border-color: #999999;
-	}	
+	}
+	
+.submitButton2:active{
+	color: #ebebeb;
+	background:#e31d1a;
+	border-color: #851727;
+	}
 	
 button, .button {
   border-style: none;
@@ -1242,5 +1249,33 @@ button, .button {
   cursor:pointer; }
   
   .addImg {
-	margin-top:30px; 
+	display: block;
+	margin: 50px 0 0 30px; 
   }
+
+.addFile span {
+	cursor: pointer;
+	margin: 20px 5px 20px 5px;
+	display: block;
+	background: #ebebeb;
+	color: #65666a;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	}
+
+	.addFile span:hover {
+	color:white;
+	background: #888;
+	}
+
+.hidden {
+	opacity:0;
+}
+
+
+
+
