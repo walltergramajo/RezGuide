@@ -3,7 +3,7 @@
   	<div class="topSection">
   		<div class="row">
     		<div class="small-2 columns">
-         	<a href="#generalInfoIntro"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
+         	<a href="<?php echo base_url(); ?>index.php/info"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
         </div>
     		<div class="small-9 small-push-1 columns">
         	<h2  class="topHeader">GENERAL INFO</h2>
@@ -60,17 +60,17 @@
     <div class="row">
     	<div class="small-11 small-centered columns">
     		<div class="small-4 columns">
-   	    	<a href="#genInfoCity"><img src="<?php echo base_url(); ?>img/cityGuideIcon.png" alt="fsuEvents"></a> 
+   	    	<a href="<?php echo base_url(); ?>index.php/cityguide"><img src="<?php echo base_url(); ?>img/cityGuideIcon.png" alt="fsuEvents"></a> 
           <h3 class="iconLabel">CITY<br>GUIDE</h3>
        	</div>
         <div class="small-4 columns">
         	<div class="currentPage2">
-        	  <a href="#genInfoBus"><img src="<?php echo base_url(); ?>img/busIcon.png" alt="fsuContests"></a>
+        	  <a href="<?php echo base_url(); ?>index.php/info/ltc"><img src="<?php echo base_url(); ?>img/busIcon.png" alt="fsuContests"></a>
             <h3 class="iconLabel">LTC</h3>
           </div>
         </div>
         <div class="small-4 columns">
-        	<a href="#genInfoDirectory"><img src="<?php echo base_url(); ?>img/directoryIcon.png" alt="fsuInfo"></a>
+        	<a href="<?php echo base_url(); ?>index.php/info/directory"><img src="<?php echo base_url(); ?>img/directoryIcon.png" alt="fsuInfo"></a>
           <h3 class="iconLabel">DIRECTORY</h3>
         </div>
       </div>

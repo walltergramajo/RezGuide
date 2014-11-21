@@ -2,7 +2,7 @@
   <div class="section">
     <div class="row">
       <div class="small-2 columns">
-        <a href="#mainMenu">
+        <a href="<?php echo base_url(); ?>index.php/main">
    	    	<img class="colorMenu" src="<?php echo base_url(); ?>img/mainMenuButtonColor.png" alt="menu">
         </a>
       </div>
@@ -22,7 +22,7 @@
     <div class="row">
       <div class="small-4 small-centered columns">
         <div class="currentPage">
-	    		<a href="#chatFormSection"><img class="chatStart" src="<?php echo base_url(); ?>img/largeStartIcon.png" alt="large_start"></a>
+	    		<a href="<?php echo base_url(); ?>index.php/chat/login"><img class="chatStart" src="<?php echo base_url(); ?>img/largeStartIcon.png" alt="large_start"></a>
         </div>
       </div>
     </div>

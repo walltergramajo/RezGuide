@@ -3,7 +3,7 @@
 		<div class="topSection">
 			<div class="row"> 
     			<div class="small-2 columns">
-          			<a href="#personalDashboard"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
+          			<a href="<?php echo base_url(); ?>index.php/notices/dashboard"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
          		</div>
     			<div class="small-9 small-push-2 columns">
         			<h2  class="topHeader">REQUESTS</h2>
@@ -78,16 +78,16 @@
 			<div class="row">
     			<div class="small-4 columns">
         			<div class="currentPage">
-   	    				<a href="#requestsGeneral"><img src="<?php echo base_url(); ?>img/requestsGeneral.png" alt="general"></a> 
+   	    				<a href="<?php echo base_url(); ?>index.php/requests/general"><img src="<?php echo base_url(); ?>img/requestsGeneral.png" alt="general"></a> 
             		</div>
             		<h3 class="iconLabel">GENERAL</h3>
         		</div>
         		<div class="small-4 columns">
-        			<a href="#requestsMediation"><img src="<?php echo base_url(); ?>img/requestsMediation.png" alt="mediation"></a>
+        			<a href="<?php echo base_url(); ?>index.php/requests/mediation"><img src="<?php echo base_url(); ?>img/requestsMediation.png" alt="mediation"></a>
             		<h3 class="iconLabel">MEDIATION</h3>
         		</div>
        			<div class="small-4 columns">
-        			<a href="#requestsWithdraw"><img src="<?php echo base_url(); ?>img/requestsWithdraw.png" alt="withdraw"></a>
+        			<a href="<?php echo base_url(); ?>index.php/requests/withdraw"><img src="<?php echo base_url(); ?>img/requestsWithdraw.png" alt="withdraw"></a>
             		<h3 class="iconLabel">WITHDRAW</h3>
         		</div>
     		</div>

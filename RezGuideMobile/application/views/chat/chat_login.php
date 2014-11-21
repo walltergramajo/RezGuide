@@ -3,7 +3,7 @@
     	<div class="topSection">
     		<div class="row"> 
         		<div class="small-2 columns">
-              		<a href="#chatIntro"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
+              		<a href="<?php echo base_url(); ?>index.php/chat/intro"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
              	</div>
         		<div class="small-9 small-push-5 columns">
                     <h2 class="topHeader">CHAT</h2>
@@ -44,7 +44,7 @@
         		<div class="small-11 small-centered columns">
             		<div class="small-5 small-centered columns">
                 		<div class="currentPage">
-    	    			    <a href="#chatWindow"><img class="chatStart" src="<?php echo base_url(); ?>img/largeStartIcon.png" alt="large_start"></a>
+    	    			    <a href="<?php echo base_url(); ?>index.php/chat/chatlog"><img class="chatStart" src="<?php echo base_url(); ?>img/largeStartIcon.png" alt="large_start"></a>
                     	</div>
                  	</div>
              	</div>

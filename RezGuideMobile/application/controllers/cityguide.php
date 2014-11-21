@@ -1,27 +1,33 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Fsu extends CI_Controller {
+class Cityguide extends CI_Controller {
 	public function index(){
 		$this->load->view('templates/head');
-		$this->load->view('fsu/fsu');
+		$this->load->view('cityguide/cityguide');
 		$this->load->view('templates/close');
 	}
 
 	public function events(){
 		$this->load->view('templates/head');
-		$this->load->view('fsu/fsu_events');
+		$this->load->view('cityguide/cg_events');
 		$this->load->view('templates/close');
 	}
 
-	public function contests(){
+	public function movies(){
 		$this->load->view('templates/head');
-		$this->load->view('fsu/fsu_contests');
+		$this->load->view('cityguide/cg_movies');
 		$this->load->view('templates/close');
 	}
 
-	public function info(){
+	public function restaurants(){
 		$this->load->view('templates/head');
-		$this->load->view('fsu/fsu_info');
+		$this->load->view('cityguide/cg_restaurants');
+		$this->load->view('templates/close');
+	}
+
+	public function entertainment(){
+		$this->load->view('templates/head');
+		$this->load->view('cityguide/cg_entertainment');
 		$this->load->view('templates/close');
 	}
 }

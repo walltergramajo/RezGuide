@@ -3,7 +3,7 @@
 		<div class="topSection">
 			<div class="row"> 
     			<div class="small-2 columns">
-          			<a href="#fsuIntro"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
+          			<a href="<?php echo base_url(); ?>index.php/fsu"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
          		</div>
     			<div class="small-9 small-push-5 columns">
         			<h2 class="topHeader">FSU</h2>
@@ -68,16 +68,16 @@
     			<div class="small-11 small-centered columns">
     				<div class="small-4 columns">
             			<div class="currentPage2">
-   	    					<a href="#fsuEventsPage"><img src="<?php echo base_url(); ?>img/eventsPageIcon.png" alt="fsuEvents"></a> 
+   	    					<a href="<?php echo base_url(); ?>index.php/fsu/events"><img src="<?php echo base_url(); ?>img/eventsPageIcon.png" alt="fsuEvents"></a> 
             				<h3 class="iconLabel">EVENTS</h3>
                 		</div>
        		 		</div>
         			<div class="small-4 columns">
-        				<a href="#fsuContestsPage"><img src="<?php echo base_url(); ?>img/contestsIcon.png" alt="fsuContests"></a>
+        				<a href="<?php echo base_url(); ?>index.php/fsu/contests"><img src="<?php echo base_url(); ?>img/contestsIcon.png" alt="fsuContests"></a>
             			<h3 class="iconLabel">CONTESTS</h3>
         			</div>
         			<div class="small-4 columns">
-        				<a href="#fsuInfoPage"><img src="<?php echo base_url(); ?>img/infoIcon.png" alt="fsuInfo"></a>
+        				<a href="<?php echo base_url(); ?>index.php/fsu/info"><img src="<?php echo base_url(); ?>img/infoIcon.png" alt="fsuInfo"></a>
             			<h3 class="iconLabel">INFO</h3>
         			</div>
         		</div>

@@ -3,7 +3,7 @@
     <div class="topSection">
     	<div class="row"> 
         <div class="small-2 columns">
-          <a href="#newsIntro"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
+          <a href="<?php echo base_url(); ?>index.php/news"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
         </div>
         <div class="small-9 small-push-4 columns">
           <h2  class="topHeader">NEWS</h2>
@@ -65,16 +65,16 @@
       <div class="row">
       	<div class="small-11  small-centered columns">
       		<div class="small-4 columns">
-     	    	<a href="#generalNoticesPage"><img src="<?php echo base_url(); ?>img/generalNoticesIcon.png" alt="gen_notices"></a> 
+     	    	<a href="<?php echo base_url(); ?>index.php/news/general"><img src="<?php echo base_url(); ?>img/generalNoticesIcon.png" alt="gen_notices"></a> 
             <h3 class="iconLabel">GENERAL NOTICES</h3>
           </div>
           <div class="small-4 columns">
-            <a href="#monthlyReportsPage"><img src="<?php echo base_url(); ?>img/monthlyReportIcon.png" alt="monthly_reports"></a>
+            <a href="<?php echo base_url(); ?>index.php/news/monthly"><img src="<?php echo base_url(); ?>img/monthlyReportIcon.png" alt="monthly_reports"></a>
             <h3 class="iconLabel">MONTHLY REPORTS</h3>
           </div>
           <div class="small-4 columns">
            	<div class="currentPage2">
-              <a href="#comingEventsPage"><img src="<?php echo base_url(); ?>img/comingEventsIcon.png" alt="coming_events"></a>
+              <a href="<?php echo base_url(); ?>index.php/news/coming_events"><img src="<?php echo base_url(); ?>img/comingEventsIcon.png" alt="coming_events"></a>
               <h3 class="iconLabel">COMING EVENTS</h3>
             </div>
           </div>

@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="<?php echo base_url(); ?>img/ios/icon@2x.png" />
     <link rel="apple-touch-icon" sizes="144x144" href="<?php echo base_url(); ?>img/ios/icon-72@2x.png" />
     <script src="<?php echo base_url(); ?>js/vendor/modernizr.js"></script>
-    <script src="<?php echo base_url(); ?>http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="<?php echo base_url(); ?>jqueryMobile/jquery.mobile-1.4.2.js"></script>
     
   </head>

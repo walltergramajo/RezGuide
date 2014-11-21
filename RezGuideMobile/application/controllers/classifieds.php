@@ -1,27 +1,27 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Fsu extends CI_Controller {
+class Classifieds extends CI_Controller {
 	public function index(){
 		$this->load->view('templates/head');
-		$this->load->view('fsu/fsu');
+		$this->load->view('classifieds/classifieds_buy');
 		$this->load->view('templates/close');
 	}
 
-	public function events(){
+	public function buy(){
 		$this->load->view('templates/head');
-		$this->load->view('fsu/fsu_events');
+		$this->load->view('classifieds/classifieds_buy');
 		$this->load->view('templates/close');
 	}
 
-	public function contests(){
+	public function sell(){
 		$this->load->view('templates/head');
-		$this->load->view('fsu/fsu_contests');
+		$this->load->view('classifieds/classifieds_sell');
 		$this->load->view('templates/close');
 	}
 
-	public function info(){
+	public function create(){
 		$this->load->view('templates/head');
-		$this->load->view('fsu/fsu_info');
+		$this->load->view('classifieds/classifieds_create');
 		$this->load->view('templates/close');
 	}
 }
