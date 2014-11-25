@@ -3,7 +3,7 @@
     	<div class="topSection">
     		<div class="row"> 
         		<div class="small-2 columns">
-              		<a href="#chatFormSection"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
+              		<a href="<?php echo base_url(); ?>index.php/chat/login"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
              	</div>
         		<div class="small-9 small-push-5 columns">
                     <h2 class="topHeader">CHAT</h2>

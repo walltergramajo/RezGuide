@@ -3,7 +3,7 @@
     <div class="topSection">
       <div class="row"> 
         <div class="small-2 columns">
-          <a href="#buildingIntro"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
+          <a href="<?php echo base_url(); ?>index.php/building"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
         </div>
         <div class="small-9 small-push-3 columns">
         	<h2  class="topHeader">BUILDING</h2>
@@ -64,16 +64,16 @@
       <div class="row">
         <div class="small-12  small-centered columns">
     		  <div class="small-4 columns">
-   	    		<a href="#buildingSectionGarbage"><img src="<?php echo base_url(); ?>img/garbageIcon.png" alt="garbage"></a> 
+   	    		<a href="<?php echo base_url(); ?>index.php/building/garbage"><img src="<?php echo base_url(); ?>img/garbageIcon.png" alt="garbage"></a> 
             <h3 class="iconLabel">GARBAGE</h3>
         	</div>
           <div class="small-4 columns">
-            <a href="#houseKeepingSection"><img src="<?php echo base_url(); ?>img/housekeepingIcon.png" alt="housekeeping"></a>
+            <a href="<?php echo base_url(); ?>index.php/building/housekeeping"><img src="<?php echo base_url(); ?>img/housekeepingIcon.png" alt="housekeeping"></a>
             <h3 class="iconLabel">HOUSEKEEPING</h3>
           </div>
           <div class="small-4 columns">
             <div class="currentPage2">
-              <a href="#rulesSection"><img src="<?php echo base_url(); ?>img/rulesIcon.png" alt="rules"></a>
+              <a href="<?php echo base_url(); ?>index.php/building/rules"><img src="<?php echo base_url(); ?>img/rulesIcon.png" alt="rules"></a>
             </div>
             <h3 class="iconLabel">RULES &amp; POLICIES</h3>
         	</div>

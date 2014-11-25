@@ -3,7 +3,7 @@
 		<div class="topSection">
 			<div class="row"> 
     		<div class="small-2 columns">
-          <a href="#buildingIntro"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
+          <a href="<?php echo base_url(); ?>index.php/building"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
         </div>
     		<div class="small-9 small-push-2 columns">
         	<h2  class="topHeader">CLASSIFIEDS</h2>
@@ -54,16 +54,16 @@
     		<div class="small-11  small-centered columns">
     			<div class="small-4 columns">
         		<div class="currentPage">
-   	    			<a href="#classifiedsBuySection"><img src="<?php echo base_url(); ?>img/classifiedsBuyIcon.png" alt="buy"></a> 
+   	    			<a href="<?php echo base_url(); ?>index.php/classifieds/buy"><img src="<?php echo base_url(); ?>img/classifiedsBuyIcon.png" alt="buy"></a> 
             	<h3 class="iconLabel">BUY</h3>
         		</div>
         	</div>
         	<div class="small-4 columns">
-            <a href="#classifiedsSellSection"><img src="<?php echo base_url(); ?>img/classifiedsSellIcon.png" alt="sell"></a>
+            <a href="<?php echo base_url(); ?>index.php/classifieds/sell"><img src="<?php echo base_url(); ?>img/classifiedsSellIcon.png" alt="sell"></a>
             <h3 class="iconLabel">SELL</h3>
         	</div>
           <div class="small-4 columns">
-        		<a href="#classifiedsCreateSection"><img src="<?php echo base_url(); ?>img/classifiedsCreateIcon.png" alt="create"></a> 
+        		<a href="<?php echo base_url(); ?>index.php/classifieds/create"><img src="<?php echo base_url(); ?>img/classifiedsCreateIcon.png" alt="create"></a> 
             <h3 class="iconLabel">CREATE</h3>
         	</div>
       	</div>  

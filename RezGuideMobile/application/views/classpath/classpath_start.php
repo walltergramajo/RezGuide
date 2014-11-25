@@ -4,7 +4,7 @@
 			<div class="topSection">
 				<div class="row"> 
         			<div class="small-2 columns">
-            			<a href="#mainMenu">
+            			<a href="<?php echo base_url(); ?>index.php/main">
                             <img id="mainMenuButton" src="<?php echo base_url(); ?>img/mainMenuButton.png" alt="mainMenu"> 
             			</a>
             		</div>
@@ -29,7 +29,7 @@
 			</div><!--End contentClassPath-->
 			<div class="row">
             	<div class="small-4 small-centered columns">
-           	    	<a href="#scheduleSection"><img id="classPathStart2" src="<?php echo base_url(); ?>img/startButton.png" alt="classpath_start"></a> 
+           	    	<a href="<?php echo base_url(); ?>index.php/classpath/schedule"><img id="classPathStart2" src="<?php echo base_url(); ?>img/startButton.png" alt="classpath_start"></a> 
                 </div>
             </div>	
 		</div><!--Container End-->

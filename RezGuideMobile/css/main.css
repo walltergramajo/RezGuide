@@ -40,11 +40,22 @@ body
 	-webkit-overflow-scrolling: touch;
 }
 
+.forceWhite
+{
+	color: #FFF !important;
+}
+
 .hidden
 {
 	display: none;
 }
 
+.accordion dd > a:hover {
+        background: #65666a;
+        color: #FFF; }
+        .accordion dd > a.active {
+        background: #65666a;
+        color: #FFF; }
 
 input[type="text"], textarea
 {
@@ -269,6 +280,23 @@ input[type="text"], textarea
 	color: #65666a;
 	font-size: 1.1em;
 	margin-top: 13px;
+}
+
+.mainMenuHeader3
+{
+	font-family: 'caviar_dreamsregular';
+	color: #65666a;
+	font-size: 1.1em;
+	margin-top: 38px;
+}
+
+
+.mainMenuHeader4
+{
+	font-family: 'caviar_dreamsregular';
+	color: #65666a;
+	font-size: 1.1em;
+	margin-top: 0px;
 }
 
 .smallIcons
@@ -527,7 +555,6 @@ input[type="text"], textarea
 #whiteBar
 {
 	height: 5px;
-	margin-top: ;
 	background-color: #FFF;
 }
 
@@ -580,7 +607,7 @@ input[type="text"], textarea
 
 .content3
 {
-	background-image: url(../img/3dmapImage.png);
+	background-image: url("../img/3dmapImage.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: right;
@@ -588,7 +615,7 @@ input[type="text"], textarea
 
 .iconScroll
 {
-	height: 420px;
+	height: 380px;
 	width: 350px;
 	overflow-x: hidden;
 	overflow: auto;
@@ -877,7 +904,7 @@ li {
 
 #textGuide
 {
-	color: #65666a;
+	
 	margin-top: 20px;
 	font-size: 2em;
 }
@@ -895,7 +922,7 @@ li {
 
 #pathGuide
 {
-	color: #65666a;
+	
 	margin-top: 20px;
 	font-size: 2em;
 }
@@ -1206,9 +1233,6 @@ input[type=checkbox] {
 	font-size: 0.8em;
 }
 
-#programHeader::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #74cabd;
-}
 
 #contactInfo
 {
@@ -1466,10 +1490,15 @@ input[type=checkbox] {
 	margin-top: 30px;
 }
 
+.complaintTextWhite
+{
+	color: #FFF;
+}
+
 
 .complaintText
 {
-	color: #65666a;
+	
 	font-size: 1.0em;
 	font-weight: normal;
 	position: relative;
@@ -2215,6 +2244,15 @@ input[type='file'] {
 	text-align: center;
 	}
 
+	#cssmenu ul ul li {
+	  background: rgba(235, 235, 235, 0.8);
+	   padding: 16px 8px 16px 28px;
+	   margin-left: -13px;
+	   height: 73px;
+	  width: 214px;
+	  text-align: right;
+	}
+
 
 	.logInStart
 	{
@@ -2434,14 +2472,6 @@ input[type='file'] {
 		-webkit-overflow-scrolling: touch;
 	}
 
-	#cssmenu ul ul li {
-  background: rgba(235, 235, 235, 0.8);
-   padding: 16px 8px 16px 28px;
-   margin-left: -13px;
-   height: 85px;
-  width: 214px;
-  text-align: right;
-}
 
 	/*Main Menu*/
 

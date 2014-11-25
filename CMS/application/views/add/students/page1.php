@@ -4,13 +4,7 @@
         	<div class="small-4 columns">
             	<div class="row">
                 	<div class="small-12 columns addImg">
-                    	<img src="<?php echo base_url(); ?>img/CMS_pickImg.png" alt="Choose an Image">
-                        <div id="browseButton2" class="small-10 small-push-3 columns">
-                    		<div class="small button">
-                        		<span>choose image</span>
-                    			<input id="imageButton" type="file" name="image" value="<?php if(!empty($autoimage)){echo $autoimage;} ?>">
-                       	 	</div>
-                    	</div>
+                    	<img src="<?php echo base_url(); ?>img/upload.png" alt="Choose an Image" id="imageButton" type="file" name="image" value="<?php if(!empty($autoimage)){echo $autoimage;} ?>">
                     </div>
                 </div>
                 <div id="nameProg">

@@ -2,7 +2,7 @@
     <div class="section">
         <div class="row">
             <div class="small-2 columns">
-                <a href="#mainMenu">
+                <a href="<?php echo base_url(); ?>index.php/main">
                     <img class="colorMenu" src="<?php echo base_url(); ?>img/mainMenuButtonColor.png" alt="menu">
                 </a>
             </div>
@@ -23,15 +23,15 @@
         <div class="row">
             <div class="small-11 small-centered columns">
                 <div class="small-4 columns">
-                    <a href="#genInfoCity"><img src="<?php echo base_url(); ?>img/cityGuideIcon.png" alt="fsuEvents"></a> 
+                    <a href="<?php echo base_url(); ?>index.php/cityguide"><img src="<?php echo base_url(); ?>img/cityGuideIcon.png" alt="fsuEvents"></a> 
                     <h3 class="iconLabel">CITY<br>GUIDE</h3>
                 </div>
                 <div class="small-4 columns">
-        	        <a href="#genInfoBus"><img src="<?php echo base_url(); ?>img/busIcon.png" alt="fsuContests"></a>
+        	        <a href="<?php echo base_url(); ?>index.php/info/ltc"><img src="<?php echo base_url(); ?>img/busIcon.png" alt="fsuContests"></a>
                     <h3 class="iconLabel">LTC</h3>
                 </div>
                 <div class="small-4 columns">
-        	       <a href="#genInfoDirectory"><img src="<?php echo base_url(); ?>img/directoryIcon.png" alt="fsuInfo"></a>
+        	       <a href="<?php echo base_url(); ?>index.php/info/directory"><img src="<?php echo base_url(); ?>img/directoryIcon.png" alt="fsuInfo"></a>
                     <h3 class="iconLabel">DIRECTORY</h3>
                 </div>
             </div>

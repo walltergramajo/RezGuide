@@ -3,7 +3,7 @@
 		<div class="topSection">
 			<div class="row"> 
     			<div class="small-2 columns">
-         			<a href="#personalDashboard"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
+         			<a href="<?php echo base_url(); ?>index.php/dashboard"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
          		</div>
     			<div class="small-9 small-push-4 columns">
         			<h2  class="topHeader">NOTICES</h2>
@@ -54,16 +54,16 @@
     	<div class="bottomSection">
 			<div class="row">
     			<div class="small-4 columns">
-   	    			<a href="#noticesComplaints"><img src="<?php echo base_url(); ?>img/complaintsIcon.png" alt="complaints"></a> 
+   	    			<a href="<?php echo base_url(); ?>index.php/notices/complaints"><img src="<?php echo base_url(); ?>img/complaintsIcon.png" alt="complaints"></a> 
             		<h3 class="iconLabel">COMPLAINTS</h3>
         		</div>
         		<div class="small-4 columns">
-        			<a href="#noticesWarnings"><img src="<?php echo base_url(); ?>img/warningIcon.png" alt="warnings"></a>
+        			<a href="<?php echo base_url(); ?>index.php/notices/warnings"><img src="<?php echo base_url(); ?>img/warningIcon.png" alt="warnings"></a>
             		<h3 class="iconLabel">WARNINGS</h3>
        			</div>
         		<div class="small-4 columns">
         			<div class="currentPage">
-        				<a href="#noticesMaintenance"><img src="<?php echo base_url(); ?>img/maintenanceIcon.png" alt="maintenance"></a>
+        				<a href="<?php echo base_url(); ?>index.php/notices/maintenance"><img src="<?php echo base_url(); ?>img/maintenanceIcon.png" alt="maintenance"></a>
             		</div>
             		<h3 class="iconLabel">MAINTENANCE</h3>
         		</div>

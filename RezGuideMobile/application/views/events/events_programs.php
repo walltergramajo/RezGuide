@@ -3,7 +3,7 @@
     <div class="topSection">
       <div class="row"> 
         <div class="small-2 columns">
-          <a href="#buildingIntro"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
+          <a href="<?php echo base_url(); ?>index.php/building"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
         </div>
         <div class="small-9 small-push-4 columns">
         	<h2  class="topHeader">EVENTS</h2>
@@ -67,16 +67,16 @@
         <div class="small-11  small-centered columns">
     		  <div class="small-4 columns">
         		<div class="currentPage2">
-   	    			<a href="#eventsPage"><img src="<?php echo base_url(); ?>img/programsIcon.png" alt="events"></a> 
+   	    			<a href="<?php echo base_url(); ?>index.php/events/programs"><img src="<?php echo base_url(); ?>img/programsIcon.png" alt="events"></a> 
             	<h3 class="iconLabel">PROGRAMS</h3>
         		</div>
         	</div>
           <div class="small-4 columns">
-            <a href="#eventsPageSection"><img src="<?php echo base_url(); ?>img/eventsPageIcon.png" alt="eventsPage"></a>
+            <a href="<?php echo base_url(); ?>index.php/events/building_events"><img src="<?php echo base_url(); ?>img/eventsPageIcon.png" alt="eventsPage"></a>
             <h3 class="iconLabel">EVENTS</h3>
           </div>
           <div class="small-4 columns">
-            <a href="#contestsSection"><img src="<?php echo base_url(); ?>img/contestsIcon.png" alt="contests"></a>
+            <a href="<?php echo base_url(); ?>index.php/events/contests"><img src="<?php echo base_url(); ?>img/contestsIcon.png" alt="contests"></a>
             <h3 class="iconLabel">CONTESTS</h3>
         	</div>
         </div>

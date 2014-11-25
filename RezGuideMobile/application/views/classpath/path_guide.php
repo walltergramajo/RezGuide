@@ -3,7 +3,7 @@
         <div class="topSection">
             <div class="row"> 
                 <div class="small-2 columns">
-                    <a href="#main"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
+                    <a href="<?php echo base_url(); ?>index.php/classpath"><img class="backButton" src="<?php echo base_url(); ?>img/backButton.png" alt="backButton"></a>
                 </div>
                 <div class="small-9 small-push-2 columns">
                     <h2 id="pathGuideHeader" class="topHeader">PATH GUIDE</h2>
@@ -33,11 +33,11 @@
                     <h3 class="iconLabel">PHOTO HELP</h3>
                 </div>
                 <div class="small-4 columns">
-                    <a href="#textGuideSection"><img src="<?php echo base_url(); ?>img/textGuideIcon.png" alt="classroom"></a>
+                    <a href="<?php echo base_url(); ?>index.php/classpath/text_guide"><img src="<?php echo base_url(); ?>img/textGuideIcon.png" alt="classroom"></a>
                     <h3 class="iconLabel">TEXT<br> GUIDE</h3>
                 </div>
                 <div class="small-4 columns">
-                    <a href="#classroomSection"><img src="<?php echo base_url(); ?>img/startOverIcon.png" alt="3dMap"></a>
+                    <a href="<?php echo base_url(); ?>index.php/classpath/start"><img src="<?php echo base_url(); ?>img/startOverIcon.png" alt="3dMap"></a>
                     <h3 class="iconLabel">START<br> OVER</h3>
                 </div>
             </div>
