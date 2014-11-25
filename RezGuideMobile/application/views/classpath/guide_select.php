@@ -53,7 +53,7 @@
             		<h3 class="iconLabel">SCHEDULE</h3>
         		</div>
         		<div class="small-4 columns">
-        			<a href="<?php echo base_url(); ?>index.php/classpath/start"><img src="<?php echo base_url(); ?>img/classroom.png" alt="classroom"></a>
+        			<a href="<?php echo base_url(); ?>index.php/classpath/begin_classpath"><img src="<?php echo base_url(); ?>img/classroom.png" alt="classroom"></a>
             		<h3 class="iconLabel">CLASSROOM NUMBER</h3>
         		</div>
         		<div class="small-4 columns">

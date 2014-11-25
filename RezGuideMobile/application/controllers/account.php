@@ -2,6 +2,7 @@
 
 class Account extends CI_Controller {
 	public function index(){
+		
 		$this->load->view('templates/head');
 		$this->load->view('account/account_profile');
 		$this->load->view('templates/close');
