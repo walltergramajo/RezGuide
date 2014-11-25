@@ -2,17 +2,40 @@
 // ClassPath functions
 var pathsArray, steps, text, output, destinationHeader;
 var stepsArray = new Array();
+var pathStart = null;
+var pathEnd = null;
 
 function classPathInit(){
-	startButton = document.querySelector("#classPathStart");
-	startButton.addEventListener("click",createPath,false);
+	// startButton = document.querySelector("#classPathStart");
+	// startButton.addEventListener("click",createPath,false);
+	textPath = document.querySelector("#textGuideSection");
+	textPath.addEventListener("load",createPath,false);
+
 	destinationHeader = document.querySelector("#destinationRoom");
+
+	startInput1 = document.querySelector("#startPoint");
+	startInput2 = document.querySelector("#start");
+
+	startInput1.addEventListener("change",function(){pathStart = this.value; storeClassrooms();},false);
+	startInput2.addEventListener("change",function(){pathStart = this.value; storeClassrooms();},false);
+}
+
+function storeClassrooms(){
+	if(Modernizr.localstorage){
+		localStorage['start'] = pathStart;
+		localStorage['end'] = pathEnd;
+		localStorage['stored'] = true;
+	}else{
+		alert('classpath unavailable');
+	}
 }
 
 function createPath(){
 	//console.log("logging");
-	var start = document.querySelector("#start").value;
-	var end = document.querySelector("#end").value;
+	// var start = document.querySelector("#start").value;
+	// var end = document.querySelector("#end").value;
+	var start = localStorage['start'];
+	var end = localStorage['end'];
 	//console.log(start);
 	destinationHeader.innerHTML = end;
 	
