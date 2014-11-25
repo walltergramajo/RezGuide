@@ -546,6 +546,11 @@ body {
 		margin-bottom: 25px;
 		color: #FFF;
 	}
+
+	#balanceAmount
+	{
+		float: right;
+	}
 	
 	#fine {
 		margin-top: 20px;
@@ -856,6 +861,28 @@ body {
 		width: 20px;
 		margin-top: 13px;
 	}
+
+	.garbageTitle
+	{
+		color: #65666a;
+		font-family: 'caviar_dreamsregular';
+	}
+
+	.inputLabel
+	{
+		margin-right: 5px;
+	}
+
+	#garbageInputs
+	{
+		margin-top: 10px;
+	}
+
+	.addAnother
+	{
+		float: right;
+		margin-right: 50px;
+	}
 	
 	#garbage select {
 		margin-bottom: 25px;
@@ -914,6 +941,92 @@ body {
 		background-color: 518f86;
 		color: #FFF;
 	}
+
+
+	/*   Edit Student
+	========================================*/
+
+	.pointsTable
+	{
+		border: solid 1px #ebebeb;
+		padding: 0 7px 7px 7px;
+	}
+
+	.divider2 {
+		background-color: #ebebeb;
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		height: 4px;
+	}
+
+	#labelsContainer
+	{
+		background-color: #ebebeb;
+	}
+
+	.pointsTitle
+	{
+		font-family: 'caviar_dreamsregular';
+		color: #65666a;
+		text-align: center;
+	}
+
+
+	.edit2 {
+		width: 30px;
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-bottom: 5px;
+	}
+
+	.titleHere
+	{
+		text-align: center;
+		font-size: 1em;
+		margin-top: 15px;
+		margin-bottom: 0px;
+	}
+
+	.pointsHere
+	{
+		text-align: center;
+		font-size: 1em;
+		margin-top: 15px;
+		margin-bottom: 0px;
+	}
+
+
+	.addTitle
+	{
+		float: left;
+	}
+
+	.titleText
+	{
+		float: right;
+	}
+
+	.addPointsHeader
+	{
+		font-family: 'caviar_dreamsregular';
+		color: #65666a;
+		text-align: center;
+		font-size: 2em;
+	}
+
+	.inputPLabel
+	{
+		margin-left: 10px;
+		margin-right: 55px;
+	}
+
+	#submitRow
+	{
+		margin-top: 20px;
+	}
+
+
 	
 	/*   Dashboard
 	========================================*/

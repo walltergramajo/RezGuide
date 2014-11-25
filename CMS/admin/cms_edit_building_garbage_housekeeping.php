@@ -25,7 +25,6 @@
     
     <section>
     	<form id="garbage">
-            <div class="buildingInfoInput">
                 <div class="row">
                     <div class="small-12 columns">
                         <div class="row">
@@ -40,16 +39,16 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="duplicater">
                 <div class="row">
                         <div class="small-4 columns">
-                            <h2>Building</h2>
+                            <h2 class="garbageTitle">Building</h2>
                         </div>
                         <div class="small-4 columns">
-                            <h2>Selection</h2>
+                            <h2 class="garbageTitle">Selection</h2>
                         </div>
                         <div class="small-4 columns">
-                            <h2>Day</h2>
+                            <h2 class="garbageTitle">Day</h2>
                         </div>
                 </div>
 
@@ -63,8 +62,8 @@
                         </select>
                     </div>
 
-                    <div class="small-3 small-push-2 columns">
-                    Garbage<input type="radio" name="sex" value="male" checked> Housekeeping<input type="radio" name="sex" value="female">
+                    <div id="garbageInputs" class="small-3 small-push-2 columns">
+                        <span class="inputLabel">Garbage</span><input class="buildingRadio" type="radio" name="options" value="garbage" checked> <span class="inputLabel">Housekeeping</span><input class="buildingRadio" type="radio" name="options" value="housekeeping">
                     </div>
                     
                     <div class="small-2 small-push-3 columns">
@@ -82,7 +81,12 @@
                     </div>
                 </div>
             </div>
-                    
+            
+            <div class="row">
+                        <div class="small-3 small-push-10 columns">
+                            <a id="addInput" href="#"><img src="../img/WA_addR.png" alt="add day"><p class="addAnother">Add Another Day</p></a>
+                        </div>
+                </div>        
         </form>
     </section>
     <div class="filler"> </div>

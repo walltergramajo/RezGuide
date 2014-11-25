@@ -29,7 +29,7 @@
                 <div class="small-12 columns">
                 	<div class="row">
                         <div class="small-12 columns">
-                            <h2 class="titles">Residence Status</h2>
+                            <h2 class="titles">Balance</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -37,20 +37,141 @@
                             <div class="lgTitleDivider"></div>
                         </div>
                     </div>
-                    <div class="row">
-                    	<div class="small-2 columns">
-                        	<label>Balance</label>
-                        </div>
-                        <div class="small-4 columns">
-                        	<input type="text" placeholder="Balance" value="1000">
-                        </div>
-                        <div class="small-2 columns">
-                        	<label>Points</label>
-                        </div>
-                        <div class="small-4 columns">
-                        	<input type="text" placeholder="Points" value="3">
+                    
+              
+            <div class="row"> 
+                <div class="small-7 columns">     
+                       <div class="pointsTable"> 
+                            <div id="labelsContainer" class="row">
+                                <div class="small-5 columns">
+                                    <h3 class="pointsTitle">Account Summary</h3>
+                                </div>
+                            </div>    
+                            
+                            <div class="row">
+                                <div class="small-4 columns">
+                                    <p class="titleHere">Balance Forward:</p>
+                                </div>
+                                <div class="small-3 columns">
+                                    $<input id="balanceAmount" type="text">
+                                </div>
+                                <div class="small-3 columns">
+                                    <p class="pointsHere">Limit is 1L per student</p>
+                                </div>
+                                <div class="small-1 columns">
+                                    <a href="#">
+                                        <img class="delete" src="../img/CMS_delete.png" alt="Delete" >
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="small-4 columns">
+                                    <p class="titleHere">Current Charges:</p>
+                                </div>
+                                <div class="small-3 columns">
+                                    $<input id="balanceAmount" type="text">
+                                </div>
+                                <div class="small-3 columns">
+                                    <p class="pointsHere">Limit is 1L per student</p>
+                                </div>
+                                <div class="small-1 columns">
+                                    <a href="#">
+                                        <img class="delete" src="../img/CMS_delete.png" alt="Delete" >
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="small-4 columns">
+                                    <p class="titleHere">Total Charges:</p>
+                                </div>
+                                <div class="small-3 columns">
+                                    $<input id="balanceAmount" type="text">
+                                </div>
+                                <div class="small-3 columns">
+                                    <p class="pointsHere">Limit is 1L per student</p>
+                                </div>
+                                <div class="small-1 columns">
+                                    <a href="#">
+                                        <img class="delete" src="../img/CMS_delete.png" alt="Delete" >
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="small-4 columns">
+                                    <p class="titleHere">Payments:</p>
+                                </div>
+                                <div class="small-3 columns">
+                                    $<input id="balanceAmount" type="text">
+                                </div>
+                                <div class="small-3 columns">
+                                    <p class="pointsHere">Limit is 1L per student</p>
+                                </div>
+                                <div class="small-1 columns">
+                                    <a href="#">
+                                        <img class="delete" src="../img/CMS_delete.png" alt="Delete" >
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="small-4 columns">
+                                    <p class="titleHere">Refunds:</p>
+                                </div>
+                                <div class="small-3 columns">
+                                    $<input id="balanceAmount" type="text">
+                                </div>
+                                <div class="small-3 columns">
+                                    <p class="pointsHere">Limit is 1L per student</p>
+                                </div>
+                                <div class="small-1 columns">
+                                    <a href="#">
+                                        <img class="delete" src="../img/CMS_delete.png" alt="Delete" >
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="small-12 columns">
+                                    <div class="divider2"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="small-4 columns">
+                                    <p class="titleHere">Total Amount Due:</p>
+                                </div>
+                                <div class="small-3 columns">
+                                    $<input id="balanceAmount" type="text">
+                                </div>
+                                <div class="small-3 columns">
+                                    <p class="pointsHere">Limit is 1L per student</p>
+                                </div>
+                                <div class="small-1 columns">
+                                    <a href="#">
+                                        <img class="delete" src="../img/CMS_delete.png" alt="Delete" >
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="small-5 columns">
+                            <h2 class="addPointsHeader">Add New:</h2>
+                            <input class="titleText" type="text" placeholder="Title">
+                            <textarea placeholder="Description"></textarea>
+                            
+                    </div>
+
+            </div>
+
+            <div id="submitRow" class="row">
+                <div class="small-2 small-push-9 columns">
+                   <input type="submit" class="submitButton" value="Add" alt="Send!">
+                </div>
+            </div>
                 	<div class="row">
                         <div class="small-12 columns">
                             <h2 class="titles">Notices</h2>

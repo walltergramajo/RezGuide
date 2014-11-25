@@ -174,6 +174,10 @@ $('#addInput').click(function(){
     $("#duplicater").clone().insertAfter("div#duplicater:last");
 });
 
+$('#addInput').click(function(){
+    $(".duplicater").clone().insertAfter("div.duplicater:last");
+});
+
 var highlightLink = function () {
         var active = null, colour = '#518d84', backgroundImage2 = "url('img/selectionArrowGreen.png')";
         if (this.attachEvent) this.attachEvent('onunload', function () {

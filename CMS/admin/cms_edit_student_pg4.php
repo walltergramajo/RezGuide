@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rezguide Building Rules and Regulations</title>
+    <title>Rezguide Edit Student</title>
     <link rel="stylesheet" href="../css/foundation.css" />
     <link href="css/cms_styles.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="../img/fanFavicon.ico" />
@@ -17,19 +17,19 @@
             <div class="small-9 columns" id="pageTitle">
             	<div id="headerContainer">
             	<h1 id="titleDirectory" class="header">Fanshawe Rezguide</h1>
-            	<h2 id="titleHeader" class="text-right header">Building</h2>
+            	<h2 id="titleHeader" class="text-right header">Edit Student</h2>
                 </div>
             </div>
         </div>
     </header>
     
     <section>
-    	<form>
-            <div class="row" id="mainInfo">
+    	<form id="newStudent">
+        	<div class="row" id="mainInfo">
                 <div class="small-12 columns">
-                    <div class="row">
+                	<div class="row">
                         <div class="small-12 columns">
-                            <h2 class="titles">Policies &amp; Regulations</h2>
+                            <h2 class="titles">Points</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -51,7 +51,7 @@
                                     <h3 class="pointsTitle">Title</h3>
                                 </div>
                                 <div class="small-3 columns">
-                                    <h3 class="pointsTitle">Policies</h3>
+                                    <h3 class="pointsTitle">Points</h3>
                                 </div>
                                 <div class="small-2 columns">
                                     <h3 class="pointsTitle">Delete</h3>
@@ -67,10 +67,10 @@
                                     </div>
                                 </div>
                                 <div class="small-4 columns">
-                                    <p class="titleHere">Alcohol Limit</p>
+                                    <p class="titleHere">Title Here</p>
                                 </div>
-                                <div class="small-3 columns">
-                                    <p class="pointsHere">Limit is 1L per student</p>
+                                <div class="small-1 small-push-1 columns">
+                                    <p class="pointsHere">2</p>
                                 </div>
                                 <div class="small-1 columns">
                                     <a href="#">
@@ -96,8 +96,8 @@
                                 <div class="small-4 columns">
                                     <p class="titleHere">Title Here</p>
                                 </div>
-                                <div class="small-3 columns">
-                                    <p class="pointsHere">Limit is 1L per student</p>
+                                <div class="small-1 small-push-1 columns">
+                                    <p class="pointsHere">2</p>
                                 </div>
                                 <div class="small-1 columns">
                                     <a href="#">
@@ -114,21 +114,62 @@
                     </div>
 
                     <div class="small-5 columns">
-                            <h2 class="addPointsHeader">Add New:</h2>
+                            <h2 class="addPointsHeader">Add Points:</h2>
                             <input class="titleText" type="text" placeholder="Title">
                             <textarea placeholder="Description"></textarea>
-                            
+                            <h2 class="addPointsHeader">Amount:</h2>
+                            <input type="radio" name="options" value="garbage" checked><span class="inputPLabel">1</span> 
+                            <input type="radio" name="options" value="housekeeping"><span class="inputPLabel">2</span>
+                            <input type="radio" name="options" value="housekeeping"><span class="inputPLabel">3</span>
+                            <input type="radio" name="options" value="housekeeping"><span class="inputPLabel">4</span>
                     </div>
 
             </div>
 
             <div id="submitRow" class="row">
-                <div class="small-2 small-push-9 columns">
-                   <input type="submit" class="submitButton" value="Add" alt="Send!">
+                <div class="small-2 small-centered columns">
+                   <input type="submit" class="submitButton" value="Submit" alt="Send!">
                 </div>
             </div>
         </form>
+        
+        <div class="row">
+        	<div class="small-8 small-centered columns">
+                <ul id="pageNav">
+                    <li>
+                        <a href="cms_edit_student_pg2.php">
+                            <img src="../img/WA_lArrow.png" alt="Previous Page">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cms_edit_student_pg1.php">
+                            <img src="../img/WA_dotEmpty.png" alt="Page 1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cms_edit_student_pg2.php"> <img src="../img/WA_dotEmpty.png" alt="Page 2">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cms_edit_student_pg3.php">
+                            <img src="../img/WA_dotEmpty.png" alt="Page 3">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cms_edit_student_pg4.php">
+                            <img src="../img/WA_dotFull.png" alt="Page 3">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../img/WA_rArrow.png" alt="Next Page">
+                        </a>
+                    </li>
+                </ul>
+        	</div>
+        </div>
     </section>
+    
     <div class="filler"> </div>
     <footer>
     	<div class="row text-center">
