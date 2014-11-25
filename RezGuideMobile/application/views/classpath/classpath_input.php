@@ -45,7 +45,7 @@
         </div>
         <div class="small-4 columns">
           <div class="currentPage">
-        		<a href="<?php echo base_url(); ?>index.php/classpath/start"><img src="<?php echo base_url(); ?>img/classroom.png" alt="classroom"></a>
+        		<a href="<?php echo base_url(); ?>index.php/classpath/begin_classpath"><img src="<?php echo base_url(); ?>img/classroom.png" alt="classroom"></a>
           </div>
           <h3 class="iconLabel">CLASSROOM NUMBER</h3>
         </div>
