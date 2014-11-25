@@ -41,7 +41,7 @@
                 <div class=" menu">
                     <ul class="menu-icons">
                         <li>
-                            <a class="botAnchor" href="<?php echo base_url(); ?>cms_edit_building_main.php">
+                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/building">
                             <div class="small-4 columns">
                                 <img onMouseOver="swapDark('3')" onMouseOut="swapLight('3')" class="botImg" src="<?php echo base_url(); ?>img/building.png" alt="Building">
                             </div>
