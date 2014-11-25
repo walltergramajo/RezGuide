@@ -23,7 +23,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/cms_users_main.php">
+                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/users">
                             <img onMouseOver="swapDark('6')" onMouseOut="swapLight('6')" class="botImg" src="<?php echo base_url(); ?>img/CMS_users.png" alt="Users">
                             <p class="menuText header">Users</p>
                             </a>
