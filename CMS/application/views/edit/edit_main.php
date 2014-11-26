@@ -51,7 +51,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="botAnchor" href="<?php echo base_url(); ?>cms_edit_fsu_main.php">
+                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/fsu">
                             <div class="small-4 columns">
                                 <img onMouseOver="swapDark('4')" onMouseOut="swapLight('4')" class="botImg" src="<?php echo base_url(); ?>img/fsu.png" alt="FSU">
                             </div>
@@ -61,7 +61,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="botAnchor" href="<?php echo base_url(); ?>cms_edit_general_main.php">
+                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/general">
                             <div class="small-4 columns">
                                 <img onMouseOver="swapDark('5')" onMouseOut="swapLight('5')" class="botImg" src="<?php echo base_url(); ?>img/general.png" alt="General">
                             </div>

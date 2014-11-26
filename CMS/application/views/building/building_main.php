@@ -40,7 +40,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/building/events">
+                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/building_events/building_events">
                                 <div class="row">
                                     <div class="small-4 columns">
                                         <img onMouseOver="swapDark('3')" onMouseOut="swapLight('3')" class="botImg" src="../img/WA_events.png" alt="Events">

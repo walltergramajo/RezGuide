@@ -38,7 +38,7 @@
         	<div class="small-3 columns">
             	<div class="edit">
                     <a href="cms_edit_building_events_contest.php">
-                        <img src="../img/CMS_editPencil.png" alt="Edit">
+                        <img src="img/CMS_editPencil.png" alt="Edit">
                     </a>
                 </div>
             </div>
