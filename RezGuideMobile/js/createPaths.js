@@ -8,23 +8,62 @@ var pathEnd = null;
 function classPathInit(){
 	// startButton = document.querySelector("#classPathStart");
 	// startButton.addEventListener("click",createPath,false);
-	textPath = document.querySelector("#textGuideSection");
-	textPath.addEventListener("load",createPath,false);
-
-	destinationHeader = document.querySelector("#destinationRoom");
+	// (window.location.href.indexOf("classpath") != -1) ? classpathStartInit() :
+	// (window.location.href.indexOf("begin_classpath") != -1) ? inputPageInit() : 
+	// (window.location.href.indexOf("text_guide") != -1) ? textGuideInit() :
+	// (window.location.href.indexOf("schedule") != -1) ? scheduleInit() : console.log("another page");
+	
+	startInput2 = document.querySelector("#start");
+	if(startInput2){
+		startInput2.addEventListener("change",function(){pathStart = this.value; storeClassrooms();},false);
+	}else{
+		console.log("not input page");
+	}
 
 	startInput1 = document.querySelector("#startPoint");
-	startInput2 = document.querySelector("#start");
+	if(startInput1){
+		startInput1.addEventListener("change",function(){pathStart = this.value; storeClassrooms();},false);
+	}else{
+		console.log("not start page");
+	}
 
-	startInput1.addEventListener("change",function(){pathStart = this.value; storeClassrooms();},false);
-	startInput2.addEventListener("change",function(){pathStart = this.value; storeClassrooms();},false);
+	textPath = document.querySelector("#textGuideSection");
+	if(textPath){
+		textPath.addEventListener("load",createPath,false);
+	}
+	destinationHeader = document.querySelector("#destinationRoom");
 }
 
+// function classpathStartInit(){
+// 	console.log("startInit");
+// 	startInput1 = document.querySelector("#startPoint");
+// 	if(startInput1){
+// 		startInput1.addEventListener("change",function(){pathStart = this.value; storeClassrooms();},false);
+// 	}else{
+// 		console.log("not start page");
+// 	}
+// }
+// function inputPageInit(){
+// 	console.log("inputInit");
+// 	startInput2 = document.querySelector("#start");
+// 	startInput2.addEventListener("change",function(){pathStart = this.value; storeClassrooms();},false);
+// }
+// function scheduleInit(){}
+// function textGuideInit(){
+// 	console.log("textGuideInit");
+// 	textPath = document.querySelector("#textGuideSection");
+// 	textPath.addEventListener("load",createPath,false);
+// 	destinationHeader = document.querySelector("#destinationRoom");
+// }
+// function pathGuideInit(){}
+
 function storeClassrooms(){
+	console.log("storeClassrooms called");
 	if(Modernizr.localstorage){
 		localStorage['start'] = pathStart;
 		localStorage['end'] = pathEnd;
 		localStorage['stored'] = true;
+		console.log("rooms saved");
 	}else{
 		alert('classpath unavailable');
 	}
