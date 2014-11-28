@@ -1,5 +1,5 @@
      <section>
-    	<form  enctype="multipart/form-data" action="cms_add_news_upcoming.php" method="post" id="newsEvent">
+    	<?php echo $formstart; ?>
         	<div class="row">
             	<div class="small-4 columns" id="locDateTime">
                 	<div class="row">
@@ -21,7 +21,7 @@
                                 <label>location</label>
                             </div>
                             <div class="small-9 columns">
-                                <input name="location" type="text" placeholder="location">
+                                <?php echo $location; ?>
                             </div>
                         </div>
                         <div class="row">
@@ -29,7 +29,7 @@
                                 <label>mm/dd/yyyy</label>
                             </div>
                             <div class="small-9 columns">
-                                <input name="date" type="text" placeholder="mm/dd/yyyy">
+                                <?php echo $date; ?>
                             </div>
                         </div>
                         <div class="row">
@@ -37,7 +37,7 @@
                                 <label>time</label>
                             </div>
                             <div class="small-9 columns">
-                                <input name="time" type="text" placeholder="time">
+                                <?php echo $time; ?>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                                 <label>Title</label>
                             </div>
                             <div class="small-10 columns">
-                                <input name="name" type="text" placeholder="Title">
+                                <?php echo $name; ?>
                             </div>
                         </div>
                         <div class="row">
@@ -57,7 +57,7 @@
                                 <label>Content</label>
                             </div>
                             <div class="small-10 columns">
-                                <textarea name="desc" placeholder="Content"></textarea>
+                                <?php echo $content; ?>
                             </div>
                         </div>
                         <div class="row">

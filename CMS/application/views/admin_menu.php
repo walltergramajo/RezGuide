@@ -42,7 +42,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="botAnchor" href="<?php echo base_url(); ?>index.php/users_main.php">
+                        <a class="botAnchor" href="<?php echo base_url(); ?>index.php/users">
                         <div class="small-4 columns">
                             <img id="usersIcon" onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="<?php echo base_url(); ?>img/CMS_usersLrg.png" alt="Users">
                         </div>

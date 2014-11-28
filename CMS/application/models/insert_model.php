@@ -6,12 +6,111 @@ class Insert_model extends CI_Model {
 		parent::__construct();
 	}
 
-	public function notice() {
-		$data = array(
-					'' => '',
+	/**
+	*	Insert all news items to tbl_news with appropriate newsCat_id
+	*/
+
+	public function news_upcoming() {
+		$record = array(
+					'news_title' => $_POST['name'],
+					'news_location' => $_POST['location'],
+					'news_datetime' => $_POST['date'],
+					'news_description' => $_POST['desc'],
+					'newsCat_id' => $_POST['news_category']
 		);
 
-		$this->db->insert('tbl_notices', $data); 
+		$this->db->insert('tbl_news', $record); 
 	}
+
+	public function news_monthly() {
+		$record = array(
+					'news_title' => $_POST['name'],
+					'news_location' => $_POST['location'],
+					'news_datetime' => $_POST['date'],
+					'news_description' => $_POST['desc'],
+					'newsCat_id' => $_POST['news_category']
+		);
+
+		$this->db->insert('tbl_news', $record); 
+	}
+
+	public function news_event() {
+		$record = array(
+					'news_title' => $_POST['name'],
+					'news_location' => $_POST['location'],
+					'news_datetime' => $_POST['date'],
+					'news_description' => $_POST['desc'],
+					'newsCat_id' => $_POST['news_category']
+		);
+
+		$this->db->insert('tbl_news', $record); 
+	}
+
+	/**
+	*	Insert FSU contests to tbl_contests, and FSU events to tbl_events
+	*/
+
+	public function fsu_contest() {
+		$record = array(
+					'contests_title' => $_POST['name'],
+					'contests_description' => $_POST['desc'],
+					'contests_location' => $_POST['location'],
+					'contests_startdate' => $_POST['start'],
+					'contests_enddate' => $_POST['end'],
+					'contests_link' => $_POST['link'],
+					'contestCat_id' => $_POST['contest_category']
+		);
+
+		$this->db->insert('tbl_contests', $record); 
+	}
+
+	public function fsu_event() {
+		$record = array(
+					'events_title' => $_POST['name'],
+					'events_description' => $_POST['desc'],
+					'events_location' => $_POST['location'],
+					'events_startdate' => $_POST['start'],
+					'events_enddate' => $_POST['end'],
+					'events_link' => $_POST['link'],
+					'events_whocome' => $_POST['who'],
+					'eventsCat_id' => $_POST['events_category']
+		);
+
+		$this->db->insert('tbl_events', $record); 
+	}
+
+	/**
+	*	Insert Building contests to tbl_contests, and Building events to tbl_events
+	*/
+
+	public function bld_contest() {
+		$record = array(
+					'contests_title' => $_POST['name'],
+					'contests_description' => $_POST['desc'],
+					'contests_location' => $_POST['location'],
+					'contests_startdate' => $_POST['start'],
+					'contests_enddate' => $_POST['end'],
+					'contests_link' => $_POST['link'],
+					'contestCat_id' => $_POST['contest_category']
+		);
+
+		$this->db->insert('tbl_contests', $record); 
+	}
+
+	public function bld_event() {
+		$record = array(
+					'events_title' => $_POST['name'],
+					'events_description' => $_POST['desc'],
+					'events_location' => $_POST['location'],
+					'events_startdate' => $_POST['start'],
+					'events_enddate' => $_POST['end'],
+					'events_link' => $_POST['link'],
+					'events_whocome' => $_POST['who'],
+					'eventsCat_id' => $_POST['events_category']
+		);
+
+		$this->db->insert('tbl_events', $record); 
+	}
+
 
 }

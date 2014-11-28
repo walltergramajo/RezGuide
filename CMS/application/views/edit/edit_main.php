@@ -5,7 +5,7 @@
                 <div class=" menu">
                     <ul class="menu-icons">
                         <li>
-                            <a class="botAnchor" href="<?php echo base_url(); ?>cms_edit_notice_select.php">
+                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/edit/notices">
                             <div class="small-4 columns genIcons">
                                 <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="<?php echo base_url(); ?>img/CMS_notices.png" alt="Notices">
                             </div>
@@ -15,7 +15,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="botAnchor" href="<?php echo base_url(); ?>cms_edit_student_select.php">
+                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/edit/students">
                             <div class="small-4 columns">
                                 <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="<?php echo base_url(); ?>img/CMS_students.png" alt="Students">
                             </div>
@@ -25,7 +25,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="botAnchor" href="<?php echo base_url(); ?>cms_edit_news_select.php">
+                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/edit/news">
                             <div class="small-4 columns">
                                 <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="<?php echo base_url(); ?>img/CMS_news.png" alt="News">
                             </div>
@@ -41,7 +41,7 @@
                 <div class=" menu">
                     <ul class="menu-icons">
                         <li>
-                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/building">
+                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/edit/building">
                             <div class="small-4 columns">
                                 <img onMouseOver="swapDark('3')" onMouseOut="swapLight('3')" class="botImg" src="<?php echo base_url(); ?>img/CMS_building.png" alt="Building">
                             </div>
@@ -51,7 +51,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/fsu">
+                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/edit/fsu">
                             <div class="small-4 columns">
                                 <img onMouseOver="swapDark('4')" onMouseOut="swapLight('4')" class="botImg" src="<?php echo base_url(); ?>img/CMS_fsu.png" alt="FSU">
                             </div>
@@ -61,7 +61,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/general">
+                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/edit/general">
                             <div class="small-4 columns">
                                 <img onMouseOver="swapDark('5')" onMouseOut="swapLight('5')" class="botImg" src="<?php echo base_url(); ?>img/CMS_general.png" alt="General">
                             </div>

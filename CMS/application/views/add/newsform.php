@@ -1,6 +1,5 @@
     <section>
-    <?php if(!empty($message)){echo $message;} ?>
-        <form  enctype="multipart/form-data" action="cms_add_news_monthly.php" method="post" id="newsMonthly">
+        <?php echo $formstart; ?>
             
             <div class="row coreInfo">
                 <div class="large-9 columns">
@@ -10,7 +9,7 @@
                             <label>Location</label>
                         </div>
                         <div class="small-10 columns">
-                            <input name="location" type="text" placeholder="Location">
+                            <?php echo $location; ?>
                         </div>
                     </div>
 
@@ -19,7 +18,7 @@
                             <label>Date</label>
                         </div>
                         <div class="small-10 columns">
-                            <input name="date" type="text" placeholder="DD / MM / YY">
+                            <?php echo $date; ?>
                         </div>
                     </div>
 
@@ -28,7 +27,7 @@
                             <label>Time</label>
                         </div>
                         <div class="small-10 columns">
-                            <input name="time" type="text" placeholder="Time">
+                            <?php echo $time; ?>
                         </div>
                     </div>
 
@@ -39,7 +38,7 @@
                             <label>Title</label>
                         </div>
                         <div class="small-10 columns">
-                            <input name="name" type="text" placeholder="Title">
+                            <?php echo $name; ?>
                         </div>
                     </div>
 
@@ -48,10 +47,10 @@
                             <label>Content</label>
                         </div>
                         <div class="small-10 columns">
-                            <textarea name="desc" placeholder="Content"></textarea>
+                            <?php echo $content; ?>
                         </div>
                     </div>
-                    
+                <?php echo $category; ?>
                 </div>
 
                 <div class="row">

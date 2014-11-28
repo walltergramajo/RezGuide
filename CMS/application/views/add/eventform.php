@@ -1,6 +1,5 @@
     <section>
-    <?php if(!empty($message)){echo $message;} ?>
-        <form  enctype="multipart/form-data" action="cms_add_news_upcoming.php" method="post" id="FSUContest">
+        <?php echo $formstart; ?>
             
             <div class="row coreInfo">
                 <div class="large-9 columns">
@@ -10,7 +9,7 @@
                             <label>Title</label>
                         </div>
                         <div class="small-10 columns">
-                            <input name="name" type="text" placeholder="Title">
+                            <?php echo $name; ?>
                         </div>
                     </div>
 
@@ -19,7 +18,7 @@
                             <label>Content</label>
                         </div>
                         <div class="small-10 columns">
-                            <textarea name="desc" placeholder="Content"></textarea>
+                            <?php echo $content; ?>
                         </div>
                     </div>
                     <hr>
@@ -29,7 +28,7 @@
                             <label>Location</label>
                         </div>
                         <div class="small-10 columns">
-                            <input name="Location" type="text" placeholder="Location">
+                            <?php echo $location; ?>
                         </div>
                     </div>
 
@@ -38,13 +37,13 @@
                             <label>Who</label>
                         </div>
                         <div class="small-4 columns">
-                            <input name="who" type="text" placeholder="Who can Enter">
+                            <?php echo $who; ?>
                         </div>
                         <div class="small-2 columns">
                             <label>Link</label>
                         </div>
                         <div class="small-4 columns">
-                            <input name="link" type="text" placeholder="Link">
+                            <?php echo $link; ?>
                         </div>
                     </div>
 
@@ -53,13 +52,13 @@
                             <label>Start</label>
                         </div>
                         <div class="small-4 columns">
-                            <input name="start" type="text" placeholder="Start">
+                            <?php echo $start; ?>
                         </div>
                         <div class="small-2 columns">
                             <label>End</label>
                         </div>
                         <div class="small-4 columns">
-                            <input name="end" type="text" placeholder="End">
+                            <?php echo $end; ?>
                         </div>
                     </div>
 
@@ -68,16 +67,16 @@
                             <label>($) Price</label>
                         </div>
                         <div class="small-4 columns">
-                            <input name="start" type="text" placeholder="Student Price">
+                            <?php echo $studprice; ?>
                         </div>
                         <div class="small-2 columns">
                             <label>($) Guests</label>
                         </div>
                         <div class="small-4 columns">
-                            <input name="end" type="text" placeholder="Guest Price">
+                            <?php echo $gstprice; ?>
                         </div>
                     </div>
-
+                <?php echo $category; ?>
                 </div>
 
                 <div class="row">
