@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
     </header>
     <div id="loginLogo" class="row">
         	<div class="small-6 small-centered columns text-center">
-            	<img src="img/FINAL_LOGO.png" alt="Reznet!">
+            	<img src="img/WA_rgLogoHome.png" alt="Rezguide">
             </div>
     </div>
     <section id="loginArea">
