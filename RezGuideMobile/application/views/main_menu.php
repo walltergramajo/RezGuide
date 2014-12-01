@@ -73,7 +73,7 @@
             			<div class="small-8 small-centered columns">
    	    					<img src="<?php echo base_url(); ?>img/MA_fsu.png" alt="classPath"> 
             			</div>
-            			<h2 class="mainMenuHeader">FANSHAWE STUDENT UNION</h2>
+            			<h2 class="mainMenuHeader">FANSHAWE <br>STUDENT UNION</h2>
             		</a>
         		</div>
     		</div>
