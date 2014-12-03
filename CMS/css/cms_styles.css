@@ -1277,5 +1277,6 @@ button, .button {
 }
 
 
-
-
+#popup {
+	display: none; /* Temporarily hidden to work on Edit section of CMS. -RM */
+}

@@ -10,16 +10,17 @@
             	<div class="divider"></div>
             </div>
         </div>
+        <?php foreach($record as $row): ?>
         <div class="row">
         	<div class="small-3 columns">
             	<div class="edit">
-                    <a href="cms_edit_general_directory.php">
+                    <a href="<?php echo base_url(); ?>index.php/users/edit/<?php echo $row->directory_id; ?>">
                         <img src="<?php echo base_url(); ?>img/CMS_editPencil.png" alt="Edit">
                     </a>
                 </div>
             </div>
             <div class="small-6 columns">
-            	<p class="users">user1</p>
+            	<p class="users"><?php echo $row->directory_firstname . " " . $row->directory_lastname; ?></p>
             </div>
             <div class="small-3 columns">
             	<a href="#">
@@ -33,11 +34,12 @@
             	<div class="divider"></div>
             </div>
         </div>
-        <div class="row">
+        <?php endforeach; ?>
+        <!-- <div class="row">
         	<div class="small-3 columns">
             	<div class="edit">
                     <a href="cms_edit_general_directory.php">
-                        <img src="<?php echo base_url(); ?>img/CMS_editPencil.png" alt="Edit">
+                        <img src="<?php // echo base_url(); ?>img/CMS_editPencil.png" alt="Edit">
                     </a>
                 </div>
             </div>
@@ -46,7 +48,7 @@
             </div>
             <div class="small-3 columns">
             	<a href="#">
-                	<img class="delete" src="<?php echo base_url(); ?>img/CMS_delete.png" alt="Delete" >
+                	<img class="delete" src="<?php // echo base_url(); ?>img/CMS_delete.png" alt="Delete" >
                 </a>
             </div>
         </div>
@@ -60,7 +62,7 @@
         	<div class="small-3 columns">
             	<div class="edit">
                     <a href="cms_edit_general_directory.php">
-                        <img src="<?php echo base_url(); ?>img/CMS_editPencil.png" alt="Edit">
+                        <img src="<?php // echo base_url(); ?>img/CMS_editPencil.png" alt="Edit">
                     </a>
                 </div>
             </div>
@@ -69,7 +71,7 @@
             </div>
             <div class="small-3 columns">
             	<a href="#">
-                	<img class="delete" src="<?php echo base_url(); ?>img/CMS_delete.png" alt="Delete" >
+                	<img class="delete" src="<?php // echo base_url(); ?>img/CMS_delete.png" alt="Delete" >
                 </a>
             </div>
         </div>
@@ -83,7 +85,7 @@
         	<div class="small-3 columns">
             	<div class="edit">
                     <a href="cms_edit_general_directory.php">
-                        <img src="<?php echo base_url(); ?>img/CMS_editPencil.png" alt="Edit">
+                        <img src="<?php // echo base_url(); ?>img/CMS_editPencil.png" alt="Edit">
                     </a>
                 </div>
             </div>
@@ -92,10 +94,10 @@
             </div>
             <div class="small-3 columns">
             	<a href="#">
-                	<img class="delete" src="<?php echo base_url(); ?>img/CMS_delete.png" alt="Delete" >
+                	<img class="delete" src="<?php // echo base_url(); ?>img/CMS_delete.png" alt="Delete" >
                 </a>
             </div>
-        </div>
+        </div> -->
         
     </section>
     <section id="popup">

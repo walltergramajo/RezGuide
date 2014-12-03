@@ -4,7 +4,7 @@
             	<div class="menu">
                     <ul class="build-icons">
                         <li>
-                            <a href="<?php echo base_url(); ?>index.php/building_events/contests">
+                            <a href="<?php echo base_url(); ?>index.php/edit/building/events/contests">
                             	<div class="row">
                                     <div class="small-5 columns">
                                         <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="<?php echo base_url(); ?>img/CMS_contests.png" alt="Contests">
@@ -16,7 +16,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url(); ?>index.php/building_events/event_select">
+                            <a href="<?php echo base_url(); ?>index.php/edit/building/events/events">
                             	<div class="row">
                                     <div class="small-5 columns">
                                         <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="<?php echo base_url(); ?>img/WA_events.png" alt="Events">
@@ -28,7 +28,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url(); ?>index.php/building_events/program_select">
+                            <a href="<?php echo base_url(); ?>index.php/edit/building/events/programs">
                                 <div class="row">
                                 	<div class="small-5 columns">
                                         <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="<?php echo base_url(); ?>img/CMS_info.png" alt="Programs">

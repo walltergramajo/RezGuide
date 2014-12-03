@@ -4,7 +4,7 @@
             	<div class=" menu">
                     <ul class="menu-icons">
                         <li>
-                            <a class="botAnchor" href="<?php base_url(); ?>users/users_add">
+                            <a class="botAnchor" href="<?php base_url(); ?>users/dd">
                             <div class="small-4 columns">
                                 <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="<?php echo base_url(); ?>img/CMS_addLrg.png" alt="Add">
                             </div>
@@ -14,7 +14,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="botAnchor" href="<?php base_url(); ?>users/users_edit">
+                            <a class="botAnchor" href="<?php base_url(); ?>users/edit">
                             <div class="small-4 columns">
                                 <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="<?php echo base_url(); ?>img/CMS_editLrg.png" alt="Edit">
                             </div>
@@ -24,7 +24,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="botAnchor" href="<?php base_url(); ?>users/users_delete">
+                            <a class="botAnchor" href="<?php base_url(); ?>users/delete">
                             <div class="small-4 columns">
                                 <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" id="delete" src="<?php echo base_url(); ?>img/CMS_deleteLrg.png" alt="Delete">
                             </div>
