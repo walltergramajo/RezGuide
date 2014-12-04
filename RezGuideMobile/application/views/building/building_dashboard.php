@@ -21,7 +21,7 @@
 		<div class="row">
     		<div class="small-11 small-centered columns">
     			<div class="small-4 columns">
-   	    			<a href="<?php echo base_url(); ?>index.php/building"><img src="<?php echo base_url(); ?>img/calendarBuildingIcon.png" alt="building"></a> 
+   	    			<a href="<?php echo base_url(); ?>index.php/building/garbage"><img src="<?php echo base_url(); ?>img/calendarBuildingIcon.png" alt="building"></a> 
             		<h3 class="iconLabel">BUILDING</h3>
         		</div>
         		<div class="small-4 columns">
