@@ -5,13 +5,8 @@
 </div>
 <div class="row">
     <div class="small-7 small-centered columns">
-<<<<<<< HEAD
             <div class="small-2 small-push-1 columns">
-                <a class="botAnchor" href="<?php echo base_url(); ?>index.php/building/contests">
-=======
-            <div class="small-2 columns">
                 <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add/building/contests">
->>>>>>> 62813ed8b268c7e541f07e22ff51a08f94b10a41
                     <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="<?php echo base_url(); ?>img/CMS_contests.png" alt="Contests">
                         <h3 class="menuHeaders">Contests</h3>
                 </a>
