@@ -22,7 +22,7 @@
             </div>
         </div>
         
-        <?php foreach($contests as $row): ?>
+        <?php foreach($events as $row): ?>
         <div class="row">
         	<div class="small-12 columns">
             	<div class="divider"></div>
@@ -31,13 +31,13 @@
         <div class="row">
         	<div class="small-3 columns">
             	<div class="edit">
-                    <a href="<?php echo base_url(); ?>index.php/edit/building/contests/<?php echo $row->contests_id; ?>">
+                    <a href="cms_edit_building_events_contest.php">
                         <img src="<?php echo base_url(); ?>img/CMS_editPencil.png" alt="Edit">
                     </a>
                 </div>
             </div>
             <div class="small-6 columns">
-            	<p class="users"><?php echo $row->contests_title; ?></p>
+            	<p class="users"><?php echo $row->events_title; ?></p>
             </div>
             <div class="small-3 columns">
             	<a href="#">

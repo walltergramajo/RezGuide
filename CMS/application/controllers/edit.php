@@ -47,7 +47,7 @@ class Edit extends CI_Controller {
 		$this->load->view('templates/close');
 	}
 
-	public function building($page = null, $subsection = null){
+	public function building($page = null, $record = null){
 		if($page == "garbage"){
 			$data['pgTitle'] = "Building Garbage Day";
 			$data['section'] = "Building";
@@ -71,37 +71,98 @@ class Edit extends CI_Controller {
 			$this->load->view('edit/building/building_header');
 			$this->load->view('edit/building/building_rules');
 			$this->load->view('templates/close');
-		}elseif($page == "events"){
-			if($subsection == "contests"){
-				$data['pgTitle'] = "Building Contest Select";
-				$this->load->view('templates/head', $data);
-				$this->load->view('edit/building/building_header');
-				$this->load->view('edit/building/building_contests_select');
-				$this->load->view('templates/footer');
-				$this->load->view('templates/close');
-			}elseif($subsection == "events"){
-				$data['pgTitle'] = "Building Event Select";
-				$this->load->view('templates/head', $data);
-				$this->load->view('edit/building/building_header');
-				$this->load->view('edit/building/building_events_select');
-				$this->load->view('templates/footer');
-				$this->load->view('templates/close');
-			}elseif($subsection == "programs"){
-				$data['pgTitle'] = "Building Program Select";
-				$this->load->view('templates/head', $data);
-				$this->load->view('edit/building/building_header');
-				$this->load->view('edit/building/building_program_select');
+		}elseif($page == "contests"){
+			if($record != null){
+				$data['pgTitle'] = "RezGuide Edit A Building Contest";
+				$data['sectTitle'] = "Edit a Building Contest";
+					$data['section'] = "Building";
+					$data['uri'] = "contests";
+				$contest = $this->update_model->getSingle('tbl_contests', 'contests_id', $record);
+					$id = $contest->contests_id;
+					$title = $contest->contests_title;
+					$desc = $contest->contests_description;
+					$start = $contest->contests_startdate;
+					$end = $contest->contests_enddate;
+					$location = $contest->contests_location;
+					$link = $contest->contests_link;
+					$who = $contest->contests_whoenter;
+				$data['formstart'] = form_open('edit/update/building_contest', array('id' => 'bldContest'));
+					$data['name'] = form_input(array(
+											'name' => 'title',
+											'type' => 'text',
+											'placeholder' => 'Title',
+											'value' => $title
+					));
+					$data['content'] = form_textarea(array(
+											'name' => 'description',
+											'placeholder' => 'Content',
+											'value' => $desc
+					));
+					$data['location'] = form_input(array(
+											'name' => 'location',
+											'type' => 'text',
+											'placeholder' => 'Location',
+											'value' => $location
+					));
+	                $data['who'] = form_input(array(
+											'name' => 'whoenter',
+											'type' => 'text',
+											'placeholder' => 'Who can Enter',
+											'value' => $who
+					));
+					$data['link'] = form_input(array(
+											'name' => 'link',
+											'type' => 'text',
+											'placeholder' => 'Link',
+											'value' => $link
+					));
+					$data['start'] = form_input(array(
+											'name' => 'startdate',
+											'type' => 'text',
+											'placeholder' => 'Start',
+											'value' => $start
+					));
+					$data['end'] = form_input(array(
+											'name' => 'enddate',
+											'type' => 'text',
+											'placeholder' => 'End',
+											'value' => $end
+					));
+					$data['category'] = form_hidden('category_id', 3);
+					$data['id'] = form_hidden('id', $id);
+				$this->load->view('templates/head',$data);
+				$this->load->view('add/add_header');
+				$this->load->view('building/building_options_menu');
+				$this->load->view('add/contestform');
 				$this->load->view('templates/footer');
 				$this->load->view('templates/close');
 			}else{
-				$data['pgTitle'] = "Building Events Main";
-				$data['section'] = "Building";
+				$data['pgTitle'] = "Building Contest Select";
+				$data['sectTitle'] = "Select a Building Contest";
+					$data['section'] = "Building";
+					$data['uri'] = "contests";
+				$data['contests'] = $this->update_model->getAll('tbl_contests');
+
 				$this->load->view('templates/head', $data);
 				$this->load->view('edit/building/building_header');
-				$this->load->view('edit/building/building_events_main');
+				$this->load->view('building/building_options_menu');
+				$this->load->view('building/building_contests_edit_select');
 				$this->load->view('templates/footer');
 				$this->load->view('templates/close');
 			}
+		}elseif($page == "events"){
+			$this->load->model('events_model');
+			$data['pgTitle'] = "Building Event Select";
+				$data['section'] = "Building";
+				$data['uri'] = "events";
+			$data['events'] = $this->events_model->getEvents(3);
+
+			$this->load->view('templates/head', $data);
+			$this->load->view('edit/building/building_header');
+			$this->load->view('building/building_options_menu');
+			$this->load->view('building/building_events_edit_select');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
 		}else{
 			$data['pgTitle'] = "RezGuide News Main Menu";
 			$data['section'] = "Building";
@@ -196,6 +257,9 @@ class Edit extends CI_Controller {
 	public function update($function){
 		$this->load->model('Update_model');
 		$this->Update_model->$function();
-		$this->index();
+		
+		if($function == "building_contest"){
+			$this->building('contests');
+		}
 	}
 }

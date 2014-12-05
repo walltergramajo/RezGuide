@@ -2,13 +2,11 @@
     <div class="small-8 small-centered columns">
         <div class="small-3 small-push-4 columns">
             <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add/<?php echo $section . "/" . $uri; ?>">
-
                 <img onMouseOver="swapDark('5')" onMouseOut="swapLight('5')" class="botImg" src="<?php echo base_url(); ?>img/CMS_add.png" alt="Add">
             </a>
         </div>
         <div class="small-3 small-pull-4 columns">
             <a class="botAnchor" href="<?php echo base_url(); ?>index.php/edit/<?php echo $section . "/" . $uri; ?>">
-
             <img onMouseOver="swapDark('6')" onMouseOut="swapLight('6')" class="botImg" src="<?php echo base_url(); ?>img/CMS_edit.png" alt="Edit">
             </a>
         </div>
@@ -80,21 +78,8 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="small-2 columns">
-                            <label>($) Price</label>
-                        </div>
-                        <div class="small-4 columns">
-                            <?php echo $studprice; ?>
-                        </div>
-                        <div class="small-2 columns">
-                            <label>($) Guests</label>
-                        </div>
-                        <div class="small-4 columns">
-                            <?php echo $gstprice; ?>
-                        </div>
-                    </div>
                 <?php echo $category; ?>
+                <?php echo $id; ?>
                 </div>
 
                 <div class="row">

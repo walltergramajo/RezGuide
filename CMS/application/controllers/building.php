@@ -11,7 +11,6 @@
 		$this->load->view('templates/head', $data);
 		$this->load->view('building/building_header');
 		$this->load->view('building/building_options_menu');
-		$this->load->view('building/building_menu');
 		$this->load->view('templates/footer');
 		$this->load->view('templates/close');
 	}
