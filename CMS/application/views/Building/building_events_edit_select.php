@@ -31,7 +31,7 @@
         <div class="row">
         	<div class="small-3 columns">
             	<div class="edit">
-                    <a href="cms_edit_building_events_contest.php">
+                    <a href="<?php echo base_url(); ?>index.php/edit/Building/events/<?php echo $row->events_id; ?>">
                         <img src="<?php echo base_url(); ?>img/CMS_editPencil.png" alt="Edit">
                     </a>
                 </div>

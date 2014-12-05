@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 03, 2014 at 06:45 PM
+-- Generation Time: Dec 05, 2014 at 10:45 PM
 -- Server version: 5.5.33
 -- PHP Version: 5.5.3
 
@@ -46,7 +46,7 @@ CREATE TABLE tbl_admins (
 INSERT INTO tbl_admins (admins_id, admins_username, admins_password, admins_firstname, admins_lastname, admins_email, admins_level, admins_empnumber, admins_position) VALUES
 (1, 'roberts_t_43', 'buttons747', 'Trent', 'Roberts', 'roberts_t1@fanshaweonline.ca', 1, '1002', 'Residence Manager'),
 (2, 'fairchild_k_13', 'spuffy789', 'Kaitlyn', 'Fairchild', 'katie_fairchild43@gmail.com', 2, '2041', 'Residence Advisor'),
-(3, 'banks_k_2', 'hanshotfirst', 'Kevin', 'Banks', 'banks_k1@fanshaweonline.ca', 1, '1005', 'Residence IT Manager');
+(3, 'banks_k_2', 'hanshotfirst', 'Kevin', 'Banks', 'banks_k3@fanshaweonline.ca', 1, '1005', 'Residence IT Manager');
 
 -- --------------------------------------------------------
 
@@ -663,6 +663,7 @@ CREATE TABLE tbl_contests (
   contests_location varchar(100) NOT NULL,
   contests_link varchar(150) NOT NULL,
   contestCat_id int(3) NOT NULL,
+  contests_whoenter varchar(50) NOT NULL,
   PRIMARY KEY (contests_id)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
 
@@ -670,11 +671,16 @@ CREATE TABLE tbl_contests (
 -- Dumping data for table 'tbl_contests'
 --
 
-INSERT INTO tbl_contests (contests_id, contests_title, contests_description, contests_startdate, contests_enddate, contests_location, contests_link, contestCat_id) VALUES
-(1, 'Fanshawe’s Got Talent', 'Can you sing, play a musical instrument, juggle, dance or unicycle? Do you own, or have access to a ventriloquist dummy? If you answered yes to any of those questions, or possess another talent that you wish to show off, then we want you to enter the Fanshawe Student Union’s third annual Fanshawe’s Got Talent competition.', 'September 29th', 'October 17th', 'Out Back Shack', 'http://www.fsu.ca/contest_fgt.php', 1),
-(2, 'Win London Knights tickets', 'The Fanshawe Student Union is giving away two pairs of tickets to the London Knights’ game on October 17th against the Owen Sound Attack. The game takes place at Budweiser Gardens, and starts at 7 pm.\r\n\r\nTo enter the draw, you must be a current, full-time Fanshawe College student (in the Fall of 2014).\r\n\r\nFill out your contact information below to receive one entry into the draw. To receive a second entry into the draw, check the box at the bottom to subscribe to the FSU’s email newsletter. Each student can receieve a maximum two entries into the draw.\r\n\r\nWe will randomly draw two names on Wednesday, October 15th at 12 pm. The winning students will be contacted via email by the FSU to arrange the pickup of their 2 free tickets.', 'October 1st', 'October 15th', 'FSU Building', 'http://www.fsu.ca/contest_knights_101714.php', 1),
-(3, 'Falcon Flash Fiction Competition', 'Stories must be unpublished, original and fictional, and they must be between one sentence and 750 words long.\r\n\r\nWriters are only allowed one submission a month and must be Fanshawe College students with a valid student card.\r\n\r\nSubmissions for this month’s contest must be sent to editor, Stephanie Lai s_lai6@fanshawec.ca by October 3.\r\n\r\nThe documents should be Word files, and they should include the title of the piece and name of the author.\r\n\r\nThe winning story will be published a week from the deadline, and its author will get a $10 gift card for The Out Back Shack or Oasis.\r\n\r\nGood luck!', 'October 1st', 'October 23rd', 'London Campus', 'http://www.fsu.ca/interrobang_falcon_fiction.php', 2),
-(4, 'Costume Contest', 'Join in the fun with a Halloween Costume Contest. Come in costume or come to vote. Winners will be decided by a poll from your fellow residence students. Win Fanshawe swag.', 'October 31 at 4pm', 'October 31 at 6pm', 'Merlin House', '', 2);
+INSERT INTO tbl_contests (contests_id, contests_title, contests_description, contests_startdate, contests_enddate, contests_location, contests_link, contestCat_id, contests_whoenter) VALUES
+(1, 'Fanshawe’s Got Talent', 'Can you sing, play a musical instrument, juggle, dance or unicycle? Do you own, or have access to a ventriloquist dummy? If you answered yes to any of those questions, or possess another talent that you wish to show off, then we want you to enter the Fanshawe Student Union’s third annual Fanshawe’s Got Talent competition.', 'September 29th', 'October 17th', 'Out Back Shack', 'http://www.fsu.ca/contest_fgt.php', 3, ''),
+(2, 'Win London Knights tickets', 'The Fanshawe Student Union is giving away two pairs of tickets to the London Knights’ game on October 17th against the Owen Sound Attack. The game takes place at Budweiser Gardens, and starts at 7 pm.\r\n\r\nTo enter the draw, you must be a current, full-time Fanshawe College student (in the Fall of 2014).\r\n\r\nFill out your contact information below to receive one entry into the draw. To receive a second entry into the draw, check the box at the bottom to subscribe to the FSU’s email newsletter. Each student can receieve a maximum two entries into the draw.\r\n\r\nWe will randomly draw two names on Wednesday, October 15th at 12 pm. The winning students will be contacted via email by the FSU to arrange the pickup of their 2 free tickets.', 'October 1st', 'October 15th', 'FSU Building', 'http://www.fsu.ca/contest_knights_101714.php', 2, ''),
+(3, 'Falcon Flash Fiction Competition', 'Stories must be unpublished, original and fictional, and they must be between one sentence and 750 words long.\r\n\r\nWriters are only allowed one submission a month and must be Fanshawe College students with a valid student card.\r\n\r\nSubmissions for this month’s contest must be sent to editor, Stephanie Lai s_lai6@fanshawec.ca by October 3.\r\n\r\nThe documents should be Word files, and they should include the title of the piece and name of the author.\r\n\r\nThe winning story will be published a week from the deadline, and its author will get a $10 gift card for The Out Back Shack or Oasis.\r\n\r\nGood luck!', 'October 1st', 'October 23rd', 'London Campus', 'http://www.fsu.ca/interrobang_falcon_fiction.php', 2, ''),
+(4, 'Costume Contest', 'Join in the fun with a Halloween Costume Contest. Come in costume or come to vote. Winners will be decided by a poll from your fellow residence students. Win Fanshawe swag.', 'October 31 at 4pm', 'October 31 at 6pm', 'Merlin House', '', 2, ''),
+(5, 'test', 'test', 'test', 'test', 'test', 'test', 3, ''),
+(6, 'test', 'test', 'test', 'test', 'test', 'test', 3, ''),
+(7, 'another test', 'still testing', '2014-08-31', '2015-10-31', 'testtown', 'test.com', 3, ''),
+(8, 'test', 'last test', 'fdsa', 'fdsa', 'tesa', 'fdsa', 3, ''),
+(9, 'last test', 'fdsajkl;', 'fdjkl;da', 'fjkdl;fsa', 'fdjkl;dae', 'fdjkl;a', 3, '');
 
 -- --------------------------------------------------------
 
@@ -726,7 +732,7 @@ CREATE TABLE tbl_directory (
 --
 
 INSERT INTO tbl_directory (directory_id, directory_firstname, directory_lastname, directory_position, directory_email, rbuilding_id, directory_officenumber, directory_phone, directory_username, directory_password) VALUES
-(1, 'Victor', 'Peckham', 'Dean, Faculty of Technology', 'vcullham@fanshawec.ca', 2, 'T3012', '519-321-4456', 'victor34', 'iheartkitties'),
+(1, 'Victor', 'Johnson', 'Dean, Faculty of Technology', 'vcullham@fanshawec.ca', 2, 'T3012', '519-321-4456', 'victor34', 'iheartkitties'),
 (2, 'Gareth', 'Keenan', 'Assistant Dean, Faculty of Technology', 'gkeenan@fanshawec.ca', 1, 'T3012b', '519-321-4563', 'sgtgareth', 'assistantregional'),
 (3, 'Dawn', 'Tinsley', 'Administrative Assistant', 'dtinsley@fanshawec.ca', 3, 'T1001', '519-321-4568', 'dawnybear', 'ihearttim');
 
@@ -761,7 +767,7 @@ INSERT INTO tbl_events (events_id, events_title, events_location, events_startda
 (3, 'First Run Film: Dracula Untold', 'Rainbow Cinemas (CITI Plaza)', 'October 25th at 7:00 PM', 'October 25th at 11:00 PM', '2014-10-25', 'Every Wednesday during the school year, you can go to Rainbow Cinemas at downtown London''s CITI Plaza and watch a brand new film for the low price of $4 for students, and $6 for guests. Maximum two tickets can be purchased by one person.\r\n\r\nThe October 15th film is Dracula Untold, the origin story of the man who became Dracula.\r\n\r\nTickets on sale Tuesday, October 14th through Wednesday, October 15th, 9 AM to 7 PM each day, only at the Biz Booth.\r\n\r\nTwo showtimes to choose from: 7:10 or 9:25 pm.', '$4 for students/$6 for guests\r\n\r\nDirections to theatre:\r\nRainbow Cinemas is located on the 2nd floor of the Citi Plaza, at 355 Wellington Street. It is accessible by taking the #4 Oxford Street East bus (get off at Richmond and Dundas, head East, and enter through the Central Library entrance on Dundas), or the #20 Cherryhill bus (get off at Wellington and Dundas, then head South, and enter through the Wellington and King entrance near Goodlife).', '', 2, 'Ticket purchaser must be a Fanshawe Student'),
 (4, 'VegFest London Pre-Festival Party', 'Organic Works Bakery, 222 Wellington Street', 'October 24, 2014 - 6:00 PM', 'October 24, 2014 - 9:00 PM', '2014-10-24', '<p>It''s thyme to turnip the beet!  VegFest London is happening for the first time ever, so it''s time to celery-brate. Join us at Organic Works Bakery. Get your vegan snack on and enjoy live acoustic music and talks from special guests, including Abby Hopson of My Body Zen. We''ll also have some fun games, because it isn''t a party without party games right? With purchase of ticket you will receive: Spread of vegan h''orderves 1 ticket for vegan wine or beer (if 19 years of age of older) or non-alcoholic drink 10% of all in store purchases, Door prize tickets, Swag (a value of over $45) PLUS you''ll be supporting two amazing local animal rescue organizations. $15 from each ticket sold supports Animal Outreach and Cedar Row Farm Sanctuary.</p>', '$35 for admission per person. <a href="http://www.vegfestlondon.com/pre-festival-party/2014/10/24/pre-festival-party">Click here</a> for more info.', 'http://www.vegfestlondon.com/pre-festival-party/2014/10/24/pre-festival-party', 2, 'All ages'),
 (5, 'Dinner & Silent Auction', 'St. Michael''s Parish Hall, 511 Cheapside Street', 'October 24 - 6:00 PM', 'October 24 - 11:30PM', '2014-10-24', '<p>Support the Society of Saint Vincent de Paul - Bid on GREAT auction items - Invite your family, friends & colleagues!</p>', 'LIVE ENTERTAINMENT\r\nCASH BAR 6:00PM\r\nCocktails 7:00PM\r\n\r\nTO PURCHASE TICKETS Email Linda at <a href="mailto:president.lpc@ssvplondonpc.com">president.lpc@ssvplondonpc.com</a> or call Paul at <a href="tel+5194747135">519.474.7135</a>\r\nTickets: $50 each\r\nENTERTAINMENT BY MIKE FAGAN\r\nBenefiting our Outreach Programs & Store Charitable Operations', 'http://www.londontourism.ca/Events/Fundraisers-and-Benefits/Dinner-and-Silent-Auction', 2, 'All ages'),
-(6, 'Get to Know your Neighbours', 'Falcon House', 'September 9, 2014 at 5:00pm', 'September 9, 2014 at 6:00pm', '2014-09-09', 'Come meet the other students in your building! With free pizza and drinks!', 'Free', '', 3, 'Open to all Residence Students'),
+(6, 'Get to Know your Neighbours and have fun', 'Falcon House', 'September 9, 2014 at 5:00pm', 'September 9, 2014 at 6:00pm', '2014-09-09', 'Come meet the other students in your building! With free pizza and drinks!', 'Free', '', 3, 'Open to all Residence Students'),
 (7, 'Healthy College Habits', 'Forwell Hall, London Campus', 'Sept. 4, 2014', 'Sept. 25, 2014', '2014-09-04', 'Learn some easy tips and tricks for living away from home for the first time. From cooperating with fellow students to balancing your work/study time, this program should help new students adjust to college life.', 'Free', '', 4, 'Open to all Residence Students');
 
 -- --------------------------------------------------------
@@ -1287,10 +1293,11 @@ CREATE TABLE tbl_students (
 --
 
 INSERT INTO tbl_students (students_id, students_firstname, students_lastname, students_program, students_stNumber, rbuilding_id, students_roomNumber, students_email, students_phone, students_cellphone, students_address, students_image, students_facebook, students_twitter, students_linkedin, students_username, students_password) VALUES
-(1, 'John', 'Smith', 'IDP1', 555551, 2, '302', 'j_smith55@fanshaweonline.ca', '519-555-5555', '226-555-5555', '', 'default.jpg', '', '', '', 'j_smith04', ''),
+(1, 'John', 'Rogington', 'IDP1', 555551, 2, '302', 'j_smith55@fanshaweonline.ca', '519-555-5555', '226-555-5555', '', 'default.jpg', '', '', '', 'j_smith04', ''),
 (2, 'Steve', 'Rogers', 'POLI1', 19454, 1, '143', 'rogers_s@fanshaweonline.ca', '519-276-1226', '226-927-5571', '43 Devonshire Rd, Toronto ON', 'steverogers1.jpg', 'facebook.com/steve.rogers.43', 'twitter.com/captain_am', 'ca.linkedin.com/in/steverrogers', 's_rogers', 'capt'),
 (3, 'Kitty', 'Pryde', 'PSYCH', 45674, 1, '204', 'shadow_cat43@hotmail.com', '519-476-1235', '226-756-1235', '43 Worscester Rd, London ON', 'kitty.jpg', 'facebook.com/kitty.pryde', 'twitter.com/shadowcat752', 'ca.linkedin.com/in/kittypryde', 'k_pryde', 'kitkat01'),
-(4, 'Miles', 'Morales', 'WEBDEV', 71235, 3, '342', 'morales_m@fanshaweonline.ca', '519-243-7786', '226-324-7621', '354 Findlay Ave, Waterloo ON', 'miles-selfy.jpg', 'facebook.com/miles.morales.456', 'twitter.com/newspidey', 'ca.linkedin.com/in/milesmorales', 'm_morales', 'amznspidy');
+(4, 'Miles', 'Morales', 'WEBDEV', 71235, 3, '342', 'morales_m@fanshaweonline.ca', '519-243-7786', '226-324-7621', '354 Findlay Ave, Waterloo ON', 'miles-selfy.jpg', 'facebook.com/miles.morales.456', 'twitter.com/newspidey', 'ca.linkedin.com/in/milesmorales', 'm_morales', 'amznspidy'),
+(5, 'Stephanie', 'Tschirhart', 'IMS', 55453, 3, '124', 'stephietee@gmail.com', '519-756-3548', '226-651-4898', '456 London Ave, London', 'default.jpg', 'facebook.com/stephietee', '@stephietee', 'linkedin.com/in/stephie', 'stephietee43', 'ilikekitties25');
 
 -- --------------------------------------------------------
 

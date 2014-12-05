@@ -39,6 +39,15 @@
                             <?php echo $content; ?>
                         </div>
                     </div>
+
+                    <div class="row">
+                        <div class="small-2 columns">
+                            <label>More Info</label>
+                        </div>
+                        <div class="small-10 columns">
+                            <?php echo $moreinfo; ?>
+                        </div>
+                    </div>
                     <hr>
 
                     <div class="row">
@@ -95,6 +104,7 @@
                         </div>
                     </div>
                 <?php echo $category; ?>
+                <?php if(isset($id)) { echo $id; } ?>
                 </div>
 
                 <div class="row">

@@ -395,9 +395,9 @@ class Add extends CI_Controller {
 			$this->load->view('templates/close');
 		}elseif($page == "events"){
 			$data['pgTitle'] = "RezGuide Add A Monthly Event";
-			$data['section'] = "Building";
-			$data['nse'] = "a Building Event";
-			$data['uri'] = "events";
+			$data['sectTitle'] = "Add A Building Event";
+				$data['section'] = "Building";
+				$data['uri'] = "events";
 			$data['formstart'] = form_open('add/insert_record/fsu_event', array('id' => 'bldContest'));
 				$data['name'] = form_input(array(
 										'name' => 'name',
@@ -407,6 +407,10 @@ class Add extends CI_Controller {
 				$data['content'] = form_textarea(array(
 										'name' => 'desc',
 										'placeholder' => 'Content'
+				));
+				$data['moreinfo'] = form_textarea(array(
+										'name' => 'info',
+										'placeholder' => 'More Info'
 				));
 				$data['location'] = form_input(array(
 										'name' => 'location',
