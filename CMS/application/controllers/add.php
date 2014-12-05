@@ -74,6 +74,49 @@ class Add extends CI_Controller {
 			$data['pgTitle'] = "RezGuide Add A Notice";
 			$data['section'] = "Notices";
 			$data['subSection'] = "Fine";
+
+				$data['formstart'] = form_open('notices/insert', array('id' => 'warning'));
+
+				$data['studentName'] = form_input(array(
+										'id' => 'nameSearch',
+										'name' => 'studentName',
+										'type' => 'text',
+										'placeholder' => 'John Smith, 000000',
+										'onkeyup' => 'ajaxSearch()'
+				));
+                $data['type'] = form_dropdown('type', array(
+										'' => 'Type',
+										'1' => 'Complaint 1',
+										'2' => 'Complaint 2',
+										'3' => 'Complaint 3'
+				));
+				$data['date'] = form_input(array(
+										'id' => 'complaintdate',
+										'name' => 'date',
+										'type' => 'text',
+										'placeholder' => 'yyyy/mm/dd'
+				));
+                $data['building'] = form_dropdown('building', array(
+										'' => 'Building',
+										'merlin' => 'Merlin',
+										'falcon' => 'Falcon',
+										'peregrine' => 'Peregrine',
+										'kestrel' => 'Kestrel'
+				));
+				$data['roomNum'] = form_input(array(
+										'id' => 'room1',
+										'name' => 'roomNum',
+										'type' => 'number',
+										'placeholder' => 'Room #'
+				));
+				$data['content'] = form_textarea(array(
+										'id' => 'contentText',
+										'name' => 'content',
+										'type' => 'text',
+										'placeholder' => 'Content'
+				));
+				$data['notices_category'] = form_hidden('notices_category', 1);
+
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
 			$this->load->view('add/noticeform');
@@ -83,6 +126,49 @@ class Add extends CI_Controller {
 			$data['pgTitle'] = "RezGuide Add A Notice";
 			$data['section'] = "Notices";
 			$data['subSection'] = "Warning";
+
+				$data['formstart'] = form_open('notices/insert', array('id' => 'warning'));
+
+				$data['studentName'] = form_input(array(
+										'id' => 'nameSearch',
+										'name' => 'studentName',
+										'type' => 'text',
+										'placeholder' => 'John Smith, 000000',
+										'onkeyup' => 'ajaxSearch()'
+				));
+                $data['type'] = form_dropdown('type', array(
+										'' => 'Type',
+										'1' => 'Complaint 1',
+										'2' => 'Complaint 2',
+										'3' => 'Complaint 3'
+				));
+				$data['date'] = form_input(array(
+										'id' => 'complaintdate',
+										'name' => 'date',
+										'type' => 'text',
+										'placeholder' => 'yyyy/mm/dd'
+				));
+                $data['building'] = form_dropdown('building', array(
+										'' => 'Building',
+										'merlin' => 'Merlin',
+										'falcon' => 'Falcon',
+										'peregrine' => 'Peregrine',
+										'kestrel' => 'Kestrel'
+				));
+				$data['roomNum'] = form_input(array(
+										'id' => 'room1',
+										'name' => 'roomNum',
+										'type' => 'number',
+										'placeholder' => 'Room #'
+				));
+				$data['content'] = form_textarea(array(
+										'id' => 'contentText',
+										'name' => 'content',
+										'type' => 'text',
+										'placeholder' => 'Content'
+				));
+				$data['notices_category'] = form_hidden('notices_category', 1);
+
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
 			$this->load->view('add/noticeform');
@@ -300,7 +386,7 @@ class Add extends CI_Controller {
 		}elseif($page == "events"){
 			$data['pgTitle'] = "RezGuide Add A Monthly Event";
 			$data['section'] = "Building";
-			$data['subSection'] = "a Building Event";
+			$data['nse'] = "a Building Event";
 			$data['uri'] = "events";
 			$data['formstart'] = form_open('add/insert_record/fsu_event', array('id' => 'bldContest'));
 				$data['name'] = form_input(array(
@@ -349,7 +435,7 @@ class Add extends CI_Controller {
 				));
 				$data['category'] = form_hidden('events_category', 3);
 			$this->load->view('templates/head',$data);
-			$this->load->view('add/add_header');
+			$this->load->view('building/building_header');
 			$this->load->view('building/building_options_menu');
 			$this->load->view('add/eventform');
 			$this->load->view('templates/footer');

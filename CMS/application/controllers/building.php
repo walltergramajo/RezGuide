@@ -8,6 +8,7 @@
 
 	function index(){
 		$data['pgTitle'] = "Building Main Menu";
+		$data['sectTitle'] = "Building Main Menu";
 		$this->load->view('templates/head', $data);
 		$this->load->view('building/building_header');
 		$this->load->view('building/building_options_menu');

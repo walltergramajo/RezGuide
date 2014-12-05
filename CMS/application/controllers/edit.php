@@ -74,7 +74,7 @@ class Edit extends CI_Controller {
 		}elseif($page == "contests"){
 			if($record != null){
 				$data['pgTitle'] = "RezGuide Edit A Building Contest";
-				$data['sectTitle'] = "Edit a Building Contest";
+				$data['sectTitle'] = "Edit Contest";
 					$data['section'] = "Building";
 					$data['uri'] = "contests";
 				$contest = $this->update_model->getSingle('tbl_contests', 'contests_id', $record);
@@ -131,31 +131,31 @@ class Edit extends CI_Controller {
 					$data['category'] = form_hidden('category_id', 3);
 					$data['id'] = form_hidden('id', $id);
 				$this->load->view('templates/head',$data);
-				$this->load->view('add/add_header');
+				$this->load->view('building/building_header');
 				$this->load->view('building/building_options_menu');
 				$this->load->view('add/contestform');
 				$this->load->view('templates/footer');
 				$this->load->view('templates/close');
 			}else{
 				$data['pgTitle'] = "Building Contest Select";
-				$data['sectTitle'] = "Select a Building Contest";
+				$data['sectTitle'] = "Select a Contest";
 					$data['section'] = "Building";
 					$data['uri'] = "contests";
-				$data['contests'] = $this->update_model->getAll('tbl_contests');
+				$data['contests'] = $this->update_model->getAll('tbl_contests', 'contestCat_id', 3);
 
 				$this->load->view('templates/head', $data);
-				$this->load->view('edit/building/building_header');
+				$this->load->view('building/building_header');
 				$this->load->view('building/building_options_menu');
 				$this->load->view('building/building_contests_edit_select');
 				$this->load->view('templates/footer');
 				$this->load->view('templates/close');
 			}
 		}elseif($page == "events"){
-			$this->load->model('events_model');
 			$data['pgTitle'] = "Building Event Select";
+			$data['sectTitle'] = "Select an Event";
 				$data['section'] = "Building";
 				$data['uri'] = "events";
-			$data['events'] = $this->events_model->getEvents(3);
+			$data['events'] = $this->update_model->getAll('tbl_events', 'eventsCat_id', 3);
 
 			$this->load->view('templates/head', $data);
 			$this->load->view('edit/building/building_header');

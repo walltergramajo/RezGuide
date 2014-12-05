@@ -6,8 +6,8 @@ class Update_model extends CI_Model {
 		parent::__construct();
 	}
 
-	public function getAll($table){
-		$allData = $this->db->get($table);
+	public function getAll($table, $col, $cat){
+		$allData = $this->db->get_where($table, array($col => $cat));
 		return $allData->result();
 	}
 
