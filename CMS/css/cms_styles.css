@@ -1280,3 +1280,24 @@ button, .button {
 #popup {
 	display: none; /* Temporarily hidden to work on Edit section of CMS. -RM */
 }
+
+/**-------- Prototype styling for Live Search Results Box*/
+#autoSuggestionsList > li {
+	background: none repeat scroll 0 0 #F3F3F3;
+	border-bottom: 1px solid #E3E3E3;
+	list-style: none outside none;
+	padding: 3px 15px 3px 15px;
+	text-align: left;
+}
+
+#autoSuggestionsList > li a {
+	color: #800000;
+}
+
+.auto_list {
+	border: 1px solid #E3E3E3;
+	border-radius: 5px 5px 5px 5px;
+	position: absolute;
+	z-index: 9999;
+}
+/**-----------*/
