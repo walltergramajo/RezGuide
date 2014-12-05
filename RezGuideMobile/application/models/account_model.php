@@ -20,4 +20,8 @@ class Account_model extends CI_Model {
 		$query = $this->db->get_where('tbl_students', array('students_id' => $sId));
 		return $query->row();
 	}
+
+	public function updateProfile(){
+		$this->db->insert();
+	}
 }

@@ -33,4 +33,8 @@ class Account extends CI_Controller {
 		$this->load->view('account/account_balance');
 		$this->load->view('templates/close');
 	}
+
+	public function update(){
+		$this->Account_model->updateProfile();
+	}
 }
