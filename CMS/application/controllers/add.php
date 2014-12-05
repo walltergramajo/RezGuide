@@ -356,6 +356,7 @@ class Add extends CI_Controller {
 				$data['category'] = form_hidden('events_category', 3);
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
+			$this->load->view('building/building_options_menu');
 			$this->load->view('add/eventform');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
@@ -365,6 +366,7 @@ class Add extends CI_Controller {
 			$data['subSection'] = "a Building Program";
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
+			$this->load->view('building/building_options_menu');
 			$this->load->view('add/eventform');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');

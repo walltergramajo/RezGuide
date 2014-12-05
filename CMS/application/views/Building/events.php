@@ -1,21 +1,6 @@
-<div id="optionsIcons" class="row">
-    <div class="small-8 small-centered columns">
-        <div class="small-3 small-push-4 columns">
-            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/building/contests">
-                <img onMouseOver="swapDark('5')" onMouseOut="swapLight('5')" class="botImg" src="<?php echo base_url(); ?>img/CMS_add.png" alt="Add">
-            </a>
-        </div>
-        <div class="small-3 small-pull-4 columns">
-            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/building/contests_edit">
-            <img onMouseOver="swapDark('6')" onMouseOut="swapLight('6')" class="botImg" src="<?php echo base_url(); ?>img/CMS_edit.png" alt="Edit">
-            </a>
-        </div>
-    </div>
-</div>
-
-
     <section>
-        <?php echo $formstart; ?>
+    <?php if(!empty($message)){echo $message;} ?>
+        <form  enctype="multipart/form-data" action="cms_add_news_upcoming.php" method="post" id="FSUContest">
             
             <div class="row coreInfo">
                 <div class="large-9 columns">
@@ -25,7 +10,7 @@
                             <label>Title</label>
                         </div>
                         <div class="small-10 columns">
-                            <?php echo $name; ?>
+                            <input name="name" type="text" placeholder="Title">
                         </div>
                     </div>
 
@@ -34,7 +19,7 @@
                             <label>Content</label>
                         </div>
                         <div class="small-10 columns">
-                            <?php echo $content; ?>
+                            <textarea name="desc" placeholder="Content"></textarea>
                         </div>
                     </div>
                     <hr>
@@ -44,7 +29,7 @@
                             <label>Location</label>
                         </div>
                         <div class="small-10 columns">
-                            <?php echo $location; ?>
+                            <input name="Location" type="text" placeholder="Location">
                         </div>
                     </div>
 
@@ -53,13 +38,13 @@
                             <label>Who</label>
                         </div>
                         <div class="small-4 columns">
-                            <?php echo $who; ?>
+                            <input name="who" type="text" placeholder="Who can Enter">
                         </div>
                         <div class="small-2 columns">
                             <label>Link</label>
                         </div>
                         <div class="small-4 columns">
-                            <?php echo $link; ?>
+                            <input name="link" type="text" placeholder="Link">
                         </div>
                     </div>
 
@@ -68,13 +53,13 @@
                             <label>Start</label>
                         </div>
                         <div class="small-4 columns">
-                            <?php echo $start; ?>
+                            <input name="start" type="text" placeholder="Start">
                         </div>
                         <div class="small-2 columns">
                             <label>End</label>
                         </div>
                         <div class="small-4 columns">
-                            <?php echo $end; ?>
+                            <input name="end" type="text" placeholder="End">
                         </div>
                     </div>
 
@@ -83,16 +68,16 @@
                             <label>($) Price</label>
                         </div>
                         <div class="small-4 columns">
-                            <?php echo $studprice; ?>
+                            <input name="start" type="text" placeholder="Student Price">
                         </div>
                         <div class="small-2 columns">
                             <label>($) Guests</label>
                         </div>
                         <div class="small-4 columns">
-                            <?php echo $gstprice; ?>
+                            <input name="end" type="text" placeholder="Guest Price">
                         </div>
                     </div>
-                <?php echo $category; ?>
+
                 </div>
 
                 <div class="row">
@@ -125,5 +110,5 @@
 
         </form> 
     </section>
-    
+
     <div class="filler"> </div>

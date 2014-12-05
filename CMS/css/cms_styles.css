@@ -70,6 +70,27 @@ body {
 		text-transform: uppercase;
 		padding-top:30px;
 	}
+
+	.menuHeaders
+	{
+		font-size: 0.9em;
+		font-family: 'caviar_dreamsregular';
+		text-align: center;
+	}
+
+	#optionsIcons
+	{
+		margin-top: 20px;
+	}
+
+	.categorySelect
+	{
+		font-size: 1.8em;
+		font-family: 'caviar_dreamsregular';
+		color: #65666a;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
 	
 	.menu {
 		margin-bottom: 20px;
