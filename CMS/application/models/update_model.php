@@ -33,4 +33,21 @@ class Update_model extends CI_Model {
 
 	}
 
+	public function users() {
+		$name = $_POST['name'];
+		$namearray = explode(' ', trim($name));
+		$record = array(
+					'admins_firstname' => $namearray[0],
+					'admins_lastname' => end($namearray),
+					'admins_position' => $_POST['position'],
+					'admins_email' => $_POST['email'],
+					'admins_empnumber' => $_POST['empnumber'],
+					'admins_username' => $_POST['username'],
+					'admins_password' => $_POST['password']		);
+
+		$this->db->where('admins_id', $_POST['id']);
+		$this->db->update('tbl_admins', $record);
+
+	}
+
 }

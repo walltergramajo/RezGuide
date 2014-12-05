@@ -24,23 +24,23 @@ class Students_model extends CI_Model {
 
         $results = $this->db->get('tbl_students', 10);
 
-        $result_data = "[";
-        foreach($results->result() as $row):
-        	$result_data .= "{";
-			$result_data .= "\"id\" : ". $row->students_id .",";
-			$result_data .= "\"firstname\" : \"". $row->students_firstname ."\",";
-			$result_data .= "\"lastname\" : \"". $row->students_lastname ."\",";
-			$result_data .= "\"studentnumber\" : \"". $row->students_stNumber ."\",";
-			$result_data .= "\"rbuilding\" : \"". $row->rbuilding_id ."\",";
-			$result_data .= "\"roomnum\" : \"". $row->students_roomNumber ."\"";
-			$result_data .= "},";
-        endforeach;
-        $result_data = chop($result_data, ",");
-		$result_data .= "]";
+  //       $result_data = "[";
+  //       foreach($results->result() as $row):
+  //       	$result_data .= "{";
+		// 	$result_data .= "\"id\" : ". $row->students_id .",";
+		// 	$result_data .= "\"firstname\" : \"". $row->students_firstname ."\",";
+		// 	$result_data .= "\"lastname\" : \"". $row->students_lastname ."\",";
+		// 	$result_data .= "\"studentnumber\" : \"". $row->students_stNumber ."\",";
+		// 	$result_data .= "\"rbuilding\" : \"". $row->rbuilding_id ."\",";
+		// 	$result_data .= "\"roomnum\" : \"". $row->students_roomNumber ."\"";
+		// 	$result_data .= "},";
+  //       endforeach;
+  //       $result_data = chop($result_data, ",");
+		// $result_data .= "]";
 
-		return $result_data;
+		// echo $result_data;
 
-		//return json_encode($results->result());
+		echo json_encode($results->result());
     }
 
 }

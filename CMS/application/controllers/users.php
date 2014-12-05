@@ -26,15 +26,26 @@
 	}
 
 	public function edit($userId = null){
-		$data['pgTitle'] = "Edit Users";
-		$data['record'] = $this->update_model->getSingle('tbl_directory', 'directory_id', $userId);
-		$data['formstart'] = form_open('users/update/directory', array('id' => 'createUser'));
+		if($userId != null){
+			$data['pgTitle'] = "Edit Users";
+			$data['record'] = $this->update_model->getSingle('tbl_admins', 'admins_id', $userId);
+			$data['formstart'] = form_open('users/update/users', array('id' => 'createUser'));
 
-		$this->load->view('templates/head', $data);
-		$this->load->view('users/header');
-		$this->load->view('users/users_edit');
-		$this->load->view('templates/footer');
-		$this->load->view('templates/close');
+			$this->load->view('templates/head', $data);
+			$this->load->view('users/header');
+			$this->load->view('users/users_edit');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}else{
+			$data['pgTitle'] = "Edit Users";
+			$data['record'] = $this->update_model->getAll('tbl_admins');
+
+			$this->load->view('templates/head', $data);
+			$this->load->view('users/header');
+			$this->load->view('users/users_select');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}
 	}
 
 	public function delete(){

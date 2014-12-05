@@ -146,7 +146,7 @@ class Edit extends CI_Controller {
 
 	}
 
-	public function general($page = null){
+	public function general($page = null, $userId = null){
 		if($page == "city"){
 			$data['pgTitle'] = "Edit City Location";
 			$this->load->view('templates/head', $data);
@@ -155,14 +155,26 @@ class Edit extends CI_Controller {
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
 		}elseif($page == "directory"){
-			$data['pgTitle'] = "Edit City Location";
-			$data['record'] = $this->update_model->getAll('tbl_directory');
+			if($userId != null){
+				$data['pgTitle'] = "Edit Directory Record";
+				$data['record'] = $this->update_model->getSingle('tbl_directory', 'directory_id', $userId);
+				$data['formstart'] = form_open('users/update/directory', array('id' => 'createUser'));
 
-			$this->load->view('templates/head', $data);
-			$this->load->view('edit/general/general_header');
-			$this->load->view('edit/general/general_directory_select');
-			$this->load->view('templates/footer');
-			$this->load->view('templates/close');
+				$this->load->view('templates/head', $data);
+				$this->load->view('edit/general/general_header');
+				$this->load->view('edit/general/general_directory_edit');
+				$this->load->view('templates/footer');
+				$this->load->view('templates/close');
+			}else{
+				$data['pgTitle'] = "Edit Directory";
+				$data['record'] = $this->update_model->getAll('tbl_directory');
+
+				$this->load->view('templates/head', $data);
+				$this->load->view('edit/general/general_header');
+				$this->load->view('edit/general/general_directory_select');
+				$this->load->view('templates/footer');
+				$this->load->view('templates/close');
+			}
 		}elseif($page == "information"){
 			$data['pgTitle'] = "Edit City Location";
 			$this->load->view('templates/head', $data);
@@ -179,5 +191,11 @@ class Edit extends CI_Controller {
 			$this->load->view('templates/close');
 		}
 
+	}
+
+	public function update($function){
+		$this->load->model('Update_model');
+		$this->Update_model->$function();
+		$this->index();
 	}
 }

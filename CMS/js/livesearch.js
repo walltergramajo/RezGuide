@@ -10,23 +10,27 @@ function ajaxSearch() {
             'search_data': input_data
         };
 
-        $.ajax({
-            url: base_url + 'livesearch/autocomplete',
-            type: 'GET',
-            data: post_data,
-            dataType: 'json',
-            success: function(result) {
-                // return success
-                // if (data.length > 0) {
-                //     $('#suggestions').show();
-                //     $('#autoSuggestionsList').addClass('auto_list');
-                //     $('#autoSuggestionsList').html(data);
-                // }
-            console.log(result);
-            },
-            error: function(){
-                console.log("not working");
-            }
+        // $.ajax({
+        //     url: base_url + 'livesearch/autocomplete',
+        //     type: 'GET',
+        //     data: post_data,
+        //     success: function(result) {
+        //         // return success
+        //         // if (data.length > 0) {
+        //         //     $('#suggestions').show();
+        //         //     $('#autoSuggestionsList').addClass('auto_list');
+        //         //     $('#autoSuggestionsList').html(data);
+        //         // }
+        //     // var jsondata = JSON.parse(result);
+        //     console.log(result);
+        //     },
+        //     error: function(){
+        //         console.log("not working");
+        //     }
+        // });
+
+        $.getJSON(base_url + 'livesearch/autocomplete', post_data, function(data){
+            console.log(data);
         });
 
     }
