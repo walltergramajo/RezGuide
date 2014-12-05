@@ -22,16 +22,16 @@
 	    <div class="row">
     	  <dl class="accordion">
   			  <dd>
-    				<a href="#eventsCity" onClick="highlightLink(this);"><span class="complaintText">EVENTS</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    				<a href="<?php echo base_url(); ?>index.php/cityguide/events" onClick="highlightLink(this);"><span class="complaintText">EVENTS</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
           </dd>
   				<dd>
-   					<a href="#entertainmentCity" onClick="highlightLink(this);"><span class="complaintText">ENTERTAINMENT</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
+   					<a href="<?php echo base_url(); ?>index.php/cityguide/entertainment" onClick="highlightLink(this);"><span class="complaintText">ENTERTAINMENT</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
  					</dd>
         	<dd>
-    				<a href="#moviesCity" onClick="highlightLink(this);"><span class="complaintText">MOVIES</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    				<a href="<?php echo base_url(); ?>index.php/cityguide/movies" onClick="highlightLink(this);"><span class="complaintText">MOVIES</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
   				</dd>
  				 	<dd>
-    				<a href="#restaurantsCity" onClick="highlightLink(this);"><span class="complaintText">RESTAURANTS</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    				<a href="<?php echo base_url(); ?>index.php/cityguide/restaurants" onClick="highlightLink(this);"><span class="complaintText">RESTAURANTS</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
         	</dd>
    		  </dl>
       </div>

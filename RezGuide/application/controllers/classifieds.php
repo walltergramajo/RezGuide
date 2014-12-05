@@ -70,6 +70,7 @@ class Classifieds extends CI_Controller {
 	public function create_classified(){
 		if($this->input->post('submit')){
 			$this->Classifieds_model->createClassified();
+			create();
 		}
 	}
 

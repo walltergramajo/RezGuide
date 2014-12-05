@@ -8,19 +8,25 @@ class News extends CI_Controller {
 	}
 
 	public function general(){
-		$this->load->view('templates/head');
+		$this->load->model('News_model');
+		$data['results'] = $this->News_model->getNews(1);
+		$this->load->view('templates/head',$data);
 		$this->load->view('news/news_general');
 		$this->load->view('templates/close');
 	}
 
 	public function monthly(){
-		$this->load->view('templates/head');
+		$this->load->model('News_model');
+		$data['results'] = $this->News_model->getNews(2);
+		$this->load->view('templates/head',$data);
 		$this->load->view('news/news_monthlyreport');
 		$this->load->view('templates/close');
 	}
 
 	public function coming_events(){
-		$this->load->view('templates/head');
+		$this->load->model('News_model');
+		$data['results'] = $this->News_model->getNews(3);
+		$this->load->view('templates/head',$data);
 		$this->load->view('news/news_comingevents');
 		$this->load->view('templates/close');
 	}

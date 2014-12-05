@@ -59,6 +59,6 @@ class Classifieds_model extends CI_Model {
 			'students_id' => $this->session->userdata('sId')
 		);
 
-		
+		$this->db->insert('tbl_classifieds',$classified);
 	}
 }
