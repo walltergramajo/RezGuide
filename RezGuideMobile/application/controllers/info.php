@@ -14,7 +14,9 @@ class Info extends CI_Controller {
 	}
 
 	public function directory(){
-		$this->load->view('templates/head');
+		$this->load->model('Directory_model');
+		$data['results'] = $this->Directory_model->getDirectory();
+		$this->load->view('templates/head',$data);
 		$this->load->view('info/directory');
 		$this->load->view('templates/close');
 	}
