@@ -1,12 +1,12 @@
 <div id="optionsIcons" class="row">
     <div class="small-8 small-centered columns">
         <div class="small-3 small-push-4 columns">
-            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/building/contests">
+            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add/building/events">
                 <img onMouseOver="swapDark('5')" onMouseOut="swapLight('5')" class="botImg" src="<?php echo base_url(); ?>img/CMS_add.png" alt="Add">
             </a>
         </div>
         <div class="small-3 small-pull-4 columns">
-            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/building/contests_edit">
+            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/building/events">
             <img onMouseOver="swapDark('6')" onMouseOut="swapLight('6')" class="botImg" src="<?php echo base_url(); ?>img/CMS_edit.png" alt="Edit">
             </a>
         </div>

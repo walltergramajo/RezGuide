@@ -1,12 +1,12 @@
 <div id="optionsIcons" class="row">
     <div class="small-8 small-centered columns">
         <div class="small-3 small-push-4 columns">
-            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/building/contests">
+            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/building/garbage">
                 <img onMouseOver="swapDark('5')" onMouseOut="swapLight('5')" class="botImg" src="<?php echo base_url(); ?>img/CMS_add.png" alt="Add">
             </a>
         </div>
         <div class="small-3 small-pull-4 columns">
-            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/building/contests_edit">
+            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/building/garbage_edit">
             <img onMouseOver="swapDark('6')" onMouseOut="swapLight('6')" class="botImg" src="<?php echo base_url(); ?>img/CMS_edit.png" alt="Edit">
             </a>
         </div>
@@ -66,15 +66,15 @@
                         </select>
                     </div>
 
-                    <div  class="small-3 small-push-2 columns">
+                    <div  class="small-3 columns">
                         <input type="submit" class="submitButton2" value="add" alt="Send!">
                     </div>
                 </div>
             </div>
             
             <div class="row">
-                        <div class="small-3 small-push-10 columns">
-                            <a id="addInput" href="#"><img src="../img/WA_addR.png" alt="add day"><p class="addAnother">Add Another Day</p></a>
+                        <div class="small-6 small-push-10 columns">
+                            <a id="addInput" href="#"><img src="<?php echo base_url(); ?>img/WA_addR.png" alt="add day"><p class="addAnother">Add Another Day</p></a>
                         </div>
                 </div>        
         </form>

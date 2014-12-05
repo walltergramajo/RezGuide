@@ -251,6 +251,14 @@ var highlightLink3 = function () {
 }();
 
 
+$('#maintenance_type').on('change', function() {
+    var val = $(this).val();
+    $('#Garbage').hide();
+    $('#House').hide();
+    $('#' + val).show();
+});
+
+
 
 
 window.onload = init();
