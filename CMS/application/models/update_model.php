@@ -13,7 +13,7 @@ class Update_model extends CI_Model {
 
 	public function getSingle($table, $col, $id){
 		$singleData = $this->db->get_where($table, array($col => $id));
-		return $singleData->result();
+		return $singleData->row();
 	}
 
 	public function directory() {
@@ -47,6 +47,23 @@ class Update_model extends CI_Model {
 
 		$this->db->where('admins_id', $_POST['id']);
 		$this->db->update('tbl_admins', $record);
+
+	}
+
+	public function building_contest() {
+		$record = array(
+					'contests_title' => $_POST['title'],
+					'contests_description' => $_POST['description'],
+					'contests_startdate' => $_POST['startdate'],
+					'contests_enddate' => $_POST['enddate'],
+					'contests_location' => $_POST['location'],
+					'contests_link' => $_POST['link'],
+					'contestCat_id' => $_POST['category_id'],
+					'contests_whoenter' => $_POST['whoenter']
+				);
+
+		$this->db->where('contests_id', $_POST['id']);
+		$this->db->update('tbl_contests', $record);
 
 	}
 

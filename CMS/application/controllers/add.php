@@ -312,7 +312,7 @@ class Add extends CI_Controller {
 			$data['section'] = "Building";
 			$data['subSection'] = "a Building Event";
 			$data['uri'] = "events";
-			$data['formstart'] = form_open('add/insert_record/fsu_event', array('id' => 'fsuEvent'));
+			$data['formstart'] = form_open('add/insert_record/fsu_event', array('id' => 'bldContest'));
 				$data['name'] = form_input(array(
 										'name' => 'name',
 										'type' => 'text',
