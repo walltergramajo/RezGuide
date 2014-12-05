@@ -79,7 +79,7 @@
                     </div>
 
                 <?php echo $category; ?>
-                <?php echo $id; ?>
+                <?php if(isset($id)) { echo $id; } ?>
                 </div>
 
                 <div class="row">
