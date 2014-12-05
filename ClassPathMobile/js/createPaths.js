@@ -10,10 +10,10 @@ function classPathInit(){
 }
 
 function createPath(){
-	//console.log("logging");
+	console.log("logging");
 	var start = document.querySelector("#start").value;
 	var end = document.querySelector("#end").value;
-	//console.log(start);
+	console.log(start);
 	destinationHeader.innerHTML = end;
 	
 	pathArray = $.getJSON('includes/caller.php?tag=paths&begin='+start+'&end='+end, function(data){
@@ -40,7 +40,7 @@ function createPath(){
 		
 		console.log(output);
 	});
-	//console.log(pathArray);
+	console.log(pathArray);
 }
 
 window.addEventListener("load",classPathInit,false); 

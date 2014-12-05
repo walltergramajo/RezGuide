@@ -14,13 +14,13 @@
         <div class="row">
         	<div class="small-3 columns">
             	<div class="edit">
-                    <a href="<?php echo base_url(); ?>index.php/edit/general/directory/<?php echo $row->directory_id; ?>">
+                    <a href="<?php echo base_url(); ?>index.php/users/edit/<?php echo $row->admins_id; ?>">
                         <img src="<?php echo base_url(); ?>img/CMS_editPencil.png" alt="Edit">
                     </a>
                 </div>
             </div>
             <div class="small-6 columns">
-            	<p class="users"><?php echo $row->directory_firstname . " " . $row->directory_lastname; ?></p>
+            	<p class="users"><?php echo $row->admins_firstname . " " . $row->admins_lastname; ?></p>
             </div>
             <div class="small-3 columns">
             	<a href="#">

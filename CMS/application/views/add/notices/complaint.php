@@ -3,11 +3,11 @@
     <?php echo $formstart; ?>
         <div class="row">
             <div class="small-2 columns">
-                <label>Student #</label>
+                <label>Student Name</label>
             </div>
             <div class="small-4 columns">
             	<!-- <input id="studNum" name="studentNum" type="number" placeholder="0000000" value="<?php // if(!empty($autostudNum)){echo $autostudNum;} ?>"> -->
-                <?php echo $studentNum; ?>
+                <?php echo $studentName; ?>
             </div>
             <div class="small-2 columns">
                 <label>Type</label>

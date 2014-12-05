@@ -25,11 +25,12 @@ class Add extends CI_Controller {
 
 				$data['formstart'] = form_open('notices/insert', array('id' => 'warning'));
 
-				$data['studentNum'] = form_input(array(
-										'id' => 'studNum',
-										'name' => 'studentNum',
-										'type' => 'number',
-										'placeholder' => '0000000'
+				$data['studentName'] = form_input(array(
+										'id' => 'nameSearch',
+										'name' => 'studentName',
+										'type' => 'text',
+										'placeholder' => 'John Smith, 000000',
+										'onkeyup' => 'ajaxSearch()'
 				));
                 $data['type'] = form_dropdown('type', array(
 										'' => 'Type',
@@ -364,6 +365,52 @@ class Add extends CI_Controller {
 			$data['pgTitle'] = "RezGuide Add An Event";
 			$data['section'] = "Building";
 			$data['subSection'] = "a Building Program";
+			$data['formstart'] = form_open('add/insert_record/fsu_event', array('id' => 'fsuEvent'));
+				$data['name'] = form_input(array(
+										'name' => 'name',
+										'type' => 'text',
+										'placeholder' => 'Title'
+				));
+				$data['content'] = form_textarea(array(
+										'name' => 'desc',
+										'placeholder' => 'Content'
+				));
+				$data['location'] = form_input(array(
+										'name' => 'location',
+										'type' => 'text',
+										'placeholder' => 'Location'
+				));
+                $data['who'] = form_input(array(
+										'name' => 'who',
+										'type' => 'text',
+										'placeholder' => 'Who can Enter'
+				));
+				$data['link'] = form_input(array(
+										'name' => 'link',
+										'type' => 'text',
+										'placeholder' => 'Link'
+				));
+				$data['start'] = form_input(array(
+										'name' => 'start',
+										'type' => 'text',
+										'placeholder' => 'Start'
+				));
+				$data['end'] = form_input(array(
+										'name' => 'end',
+										'type' => 'text',
+										'placeholder' => 'End'
+				));
+				$data['studprice'] = form_input(array(
+										'name' => 'studprice',
+										'type' => 'text',
+										'placeholder' => 'Student Price'
+				));
+				$data['gstprice'] = form_input(array(
+										'name' => 'gstprice',
+										'type' => 'text',
+										'placeholder' => 'Guest Price'
+				));
+				$data['category'] = form_hidden('events_category', 3);
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
 			$this->load->view('building/building_options_menu');
