@@ -22,6 +22,7 @@ class Add extends CI_Controller {
 			$data['pgTitle'] = "RezGuide Add A Notice";
 			$data['section'] = "Notices";
 			$data['subSection'] = "Complaint";
+			$data['uri'] = "complaint";
 
 				$data['formstart'] = form_open('notices/insert', array('id' => 'warning'));
 
@@ -67,6 +68,7 @@ class Add extends CI_Controller {
 
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
+			$this->load->view('notices/notices_options_menu');
 			$this->load->view('add/noticeform');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
@@ -74,6 +76,7 @@ class Add extends CI_Controller {
 			$data['pgTitle'] = "RezGuide Add A Notice";
 			$data['section'] = "Notices";
 			$data['subSection'] = "Fine";
+			$data['uri'] = "fine";
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
 			$this->load->view('add/noticeform');
@@ -83,6 +86,7 @@ class Add extends CI_Controller {
 			$data['pgTitle'] = "RezGuide Add A Notice";
 			$data['section'] = "Notices";
 			$data['subSection'] = "Warning";
+			$data['uri'] = "warning";
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
 			$this->load->view('add/noticeform');

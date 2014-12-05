@@ -23,7 +23,7 @@
                 <div class=" menu">
                     <ul class="menu-icons">
                         <li>
-                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add/notice">
+                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add/notice/complaint">
                             <div class="small-4 columns">
                                 <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="<?php echo base_url(); ?>img/CMS_notices.png" alt="Notices">
                             </div>
