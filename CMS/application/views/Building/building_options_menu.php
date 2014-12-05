@@ -6,7 +6,7 @@
 <div class="row">
     <div class="small-7 small-centered columns">
             <div class="small-2 columns">
-                <a class="botAnchor" href="<?php echo base_url(); ?>index.php/building/contests">
+                <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add/building/contests">
                     <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="<?php echo base_url(); ?>img/CMS_contests.png" alt="Contests">
                         <h3 class="menuHeaders">Contests</h3>
                 </a>

@@ -22,7 +22,7 @@
             </div>
         </div>
         
-        <?php foreach($contests as $row): ?>
+        <?php foreach($events as $row): ?>
         <div class="row">
         	<div class="small-12 columns">
             	<div class="divider"></div>
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="small-6 columns">
-            	<p class="users"><?php echo $row->contests_title; ?></p>
+            	<p class="users"><?php echo $row->events_title; ?></p>
             </div>
             <div class="small-3 columns">
             	<a href="#">

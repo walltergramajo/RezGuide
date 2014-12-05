@@ -254,6 +254,7 @@ class Add extends CI_Controller {
 			$data['pgTitle'] = "RezGuide Add An Upcoming Event";
 			$data['section'] = "Building";
 			$data['subSection'] = "a Building Contest";
+			$data['uri'] = "contests";
 			$data['formstart'] = form_open('add/insert_record/bld_contest', array('id' => 'bldContest'));
 				$data['name'] = form_input(array(
 										'name' => 'name',
@@ -302,6 +303,7 @@ class Add extends CI_Controller {
 				$data['category'] = form_hidden('contest_category', 3);
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
+			$this->load->view('building/building_options_menu');
 			$this->load->view('add/eventform');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
@@ -309,6 +311,7 @@ class Add extends CI_Controller {
 			$data['pgTitle'] = "RezGuide Add A Monthly Event";
 			$data['section'] = "Building";
 			$data['subSection'] = "a Building Event";
+			$data['uri'] = "events";
 			$data['formstart'] = form_open('add/insert_record/fsu_event', array('id' => 'fsuEvent'));
 				$data['name'] = form_input(array(
 										'name' => 'name',
