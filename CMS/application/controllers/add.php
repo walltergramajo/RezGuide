@@ -71,6 +71,7 @@ class Add extends CI_Controller {
 			$this->load->view('notices/notices_options_menu');
 			$this->load->view('add/noticeform');
 			$this->load->view('templates/footer');
+			$this->load->view('livesearch_script');
 			$this->load->view('templates/close');
 		}elseif($page == "fine"){
 			$data['pgTitle'] = "RezGuide Add A Notice";

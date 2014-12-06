@@ -40,6 +40,7 @@ class Students_model extends CI_Model {
 
 		// echo $result_data;
 
+        //echo $search_data;
 		echo json_encode($results->result());
     }
 
