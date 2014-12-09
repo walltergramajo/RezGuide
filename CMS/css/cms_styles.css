@@ -273,6 +273,11 @@ body {
 	#password {
 		width: 600px;
 	}
+
+	#submitRow
+	{
+		margin-bottom: 60px;
+	}
 	
 	#position {
 		width: 600px;

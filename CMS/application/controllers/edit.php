@@ -27,14 +27,46 @@ class Edit extends CI_Controller {
 		$this->load->view('templates/close');
 	}
 
-	public function students(){
-		$data['pgTitle'] = "RezGuide Select A Student";
-		$data['section'] = "Building";
-		$this->load->view('templates/head', $data);
-		$this->load->view('edit/students/students_header');
-		$this->load->view('edit/students/student_edit');
-		$this->load->view('templates/footer');
-		$this->load->view('templates/close');
+	public function students($page = null, $record = null){
+		if($page == "studentInfo"){
+			$data['pgTitle'] = "RezGuide Select A Student";
+			$data['section'] = "Building";
+			$this->load->view('templates/head', $data);
+			$this->load->view('edit/students/students_header');
+			$this->load->view('students/students_options_menu');
+			$this->load->view('edit/students/student_edit_pg1');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}elseif($page == "balance"){
+			$data['pgTitle'] = "RezGuide Select A Student";
+			$data['section'] = "Building";
+			$this->load->view('templates/head', $data);
+			$this->load->view('edit/students/students_header');
+			$this->load->view('students/students_options_menu');
+			$this->load->view('edit/students/student_edit_pg2');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}
+		elseif($page == "mealPlan"){
+			$data['pgTitle'] = "RezGuide Select A Student";
+			$data['section'] = "Building";
+			$this->load->view('templates/head', $data);
+			$this->load->view('edit/students/students_header');
+			$this->load->view('students/students_options_menu');
+			$this->load->view('edit/students/student_edit_pg3');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}
+		elseif($page == "points"){
+			$data['pgTitle'] = "RezGuide Select A Student";
+			$data['section'] = "Building";
+			$this->load->view('templates/head', $data);
+			$this->load->view('edit/students/students_header');
+			$this->load->view('students/students_options_menu');
+			$this->load->view('edit/students/student_edit_pg4');
+			$this->load->view('templates/footer');
+			$this->load->view('templates/close');
+		}
 	}
 	
 	public function news(){

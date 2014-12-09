@@ -203,6 +203,7 @@ class Add extends CI_Controller {
 			$data['section'] = "A New Student";
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
+			$this->load->view('students/students_options_menu');
 			$this->load->view('add/students/page3');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
@@ -211,6 +212,7 @@ class Add extends CI_Controller {
 			$data['section'] = "A New Student";
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
+			$this->load->view('students/students_options_menu');
 			$this->load->view('add/students/page2');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
@@ -219,6 +221,7 @@ class Add extends CI_Controller {
 			$data['section'] = "A New Student";
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
+			$this->load->view('students/students_options_menu');
 			$this->load->view('add/students/page1');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
