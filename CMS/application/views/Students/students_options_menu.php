@@ -21,7 +21,7 @@
             </div>
             <div class="small-2 small-push-2 columns">
                 <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add/students/">
-                    <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="<?php echo base_url(); ?>img/CMS_info.png" alt="Programs">
+                    <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="<?php echo base_url(); ?>img/mealPlan_Med.png" alt="Programs">
                     <h3 class="menuHeaders">Meal Plan</h3>
                 </a>
             </div>
