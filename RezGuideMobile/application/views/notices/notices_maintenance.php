@@ -18,15 +18,17 @@
     		</div>
     		<div class="complaintsContent">
     			<div class="row">
-    				<dl class="accordion" data-accordion>
+    				<dl class="accordion" data-accordion>   
+                        <?php foreach ($results as $row): ?>
   						<dd>
-    						<a href="#panel9" onClick="highlightLink(this);"><span class="complaintText">Routine Maintenance</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
-    						<div id="panel9" class="content">
-                                <p class="dateColor">September 9, 2014</p>
-                                <p>Every single light bulb that has been reported as needing a change or residence leaders that have noticed a light that should be changed will be undergoing a light bulb swap.</p>
+    						<a href="#panel<?php echo $row->notices_id ?>" onClick="highlightLink(this);"><span class="complaintText"><?php echo $row->notices_title ?></span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel<?php echo $row->notices_id ?>" class="content">
+                                <p class="dateColor"><?php echo $row->notices_date ?></p>
+                                <p><?php echo $row->notices_description ?></p>
     						</div>
   						</dd>
-  						<dd>
+                        <?php endforeach; ?>
+  						<!-- <dd>
    							<a href="#panel10" onClick="highlightLink(this);"><span class="complaintText">Routine Maintenance</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
     						<div id="panel10" class="content">
                                 <p class="dateColor">September 9, 2014</p>
@@ -46,7 +48,7 @@
                                 <p class="dateColor">September 9, 2014</p>
                                 <p>Hot Water Pipe Maintenance. There have been some issues with the hot water so we will be inspecting the hot water pipe system. Water may be temporarily down but you will be given notice.</p>
     						</div>
-        				</dd>
+        				</dd> -->
    					</dl>
   				</div>
 			</div><!--Complaints Content End-->

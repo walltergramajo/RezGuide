@@ -43,4 +43,4 @@ function createPath(){
 	console.log(pathArray);
 }
 
-window.addEventListener("load",classPathInit,false); 
+//window.addEventListener("load",classPathInit,false); 

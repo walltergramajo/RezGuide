@@ -21,7 +21,8 @@ class Account_model extends CI_Model {
 		return $query->row();
 	}
 
-	public function updateProfile(){
-		$this->db->insert();
+	public function updateProfile($formData,$id){
+		$this->db->where('students_id', $id);
+		$this->db->update('tbl_students',$formData);
 	}
 }

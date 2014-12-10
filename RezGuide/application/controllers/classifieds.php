@@ -69,7 +69,37 @@ class Classifieds extends CI_Controller {
 
 	public function create_classified(){
 		if($this->input->post('submit')){
-			$this->Classifieds_model->createClassified();
+			if($this->input->post('type') === 'buy'){
+				$buy = 1;
+				$sell = 0;
+			}elseif($this->input->post('type') === 'sell'){
+				$buy = 0;
+				$sell = 1;
+			}
+
+			if($this->input->post('condition') === 'new'){
+				$new = 1;
+				$used = 0;
+			}elseif($this->input->post('condition') === 'used'){
+				$new = 0;
+				$used = 1;
+			}
+
+			$classified = array(
+				'classifieds_user' => $this->session->userdata('username'),
+				'classifieds_title' => $this->input->post('title'),
+				'classifieds_description' => $this->input->post('itemDescription'),
+				'classifieds_email' => $this->input->post('email'),
+				'classifieds_phone' => $this->input->post('phone'),
+				'classifieds_buy' => $buy,
+				'classifieds_sell' => $sell,
+				'classifieds_new' => $new,
+				'classifieds_used' => $used,
+				'classifieds_price' => $this->input->post('price'),
+				'classCat_id' => $this->input->post('category'),
+				'students_id' => $this->session->userdata('sId')
+			);
+			$this->Classifieds_model->createClassified($classified);
 			create();
 		}
 	}

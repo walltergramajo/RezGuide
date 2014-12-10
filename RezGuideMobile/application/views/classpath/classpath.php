@@ -1,3 +1,4 @@
+<div onLoad="classPathInit()">
 <div data-role="page" id="main"> <!--Main Page Container Start-->
 	<div> <!--Main Start-->
  		<div id="container"><!--Container Start-->
@@ -483,3 +484,6 @@
         </div>
     </div>
 </div><!--textGuideSection End-->
+</div>
+
+<!--<script type="text/javascript"> document.querySelector("#classpathLoad").addEventListener("load",function(){; console.log("loaded the page");},false); </script>-->

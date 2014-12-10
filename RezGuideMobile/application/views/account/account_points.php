@@ -28,6 +28,7 @@
         </div>
       </div>
     </div>
+    <?php foreach ($results as $row): ?>
     <div class="pointsContainer">
       <div class="pointsSelectionArrow pointsViolation">
         <div class="row">
@@ -35,20 +36,21 @@
     		    <div class="selectionDiv" onClick="highlightLinkPoints(this);">
         		  <div class="small-8 columns">
                 <div class="violationInfo">
-        				  <h3 class="pointsTitle">UNDERAGE DRINKING</h3>
-            			<p class="pointsDate">DECEMBER 1, 2013</p>
+        				  <h3 class="pointsTitle"><?php echo $row->points_name ?></h3>
+            			<!-- <p class="pointsDate">DECEMBER 1, 2013</p> -->
             		</div>
         		  </div>
        			  <div class="small-2 columns">
                 <div class="pointsCircleSmall">
-                  <p class="pointsValueSmall">2</p>
+                  <p class="pointsValueSmall"><?php echo $row->points_number ?></p>
                 </div>
         		  </div>
             </div>
           </div>    
         </div>
       </div>
-      <div class="pointsSelectionArrow pointsViolation">
+      <?php endforeach; ?>
+      <!-- <div class="pointsSelectionArrow pointsViolation">
         <div class="row">
           <div class="sideSelectionBar">
             <div class="selectionDiv" onClick="highlightLinkPoints(this);">
@@ -66,7 +68,7 @@
             </div>
           </div>    
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 

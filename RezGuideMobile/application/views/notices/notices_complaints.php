@@ -19,15 +19,17 @@
       <div class="complaintsContentNotices">
         <div class="row">
           <dl class="accordion" data-accordion>
+            <?php foreach ($results as $row): ?>
         		<dd>
               <span class="selectionArrowRules"><div class="activeSelectionAccordion"></div><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span>
-    					<a href="#panel0" onClick="highlightLink(this);"><span class="complaintText">Noise Complaint</span> </a>
-              <div id="panel0" class="content">
-      				  <p class="dateColor">September 9, 2014</p>
-                <p>Resident has failed to follow noise level procedures after 11pm. Several warnings were given to keep it down but resident has failed to do so.</p>
+    					<a href="#panel<?php echo $row->notices_id ?>" onClick="highlightLink(this);"><span class="complaintText"><?php echo $row->notices_title ?></span> </a>
+              <div id="panel<?php echo $row->notices_id ?>" class="content">
+      				  <p class="dateColor"><?php echo $row->notices_date ?></p>
+                <p><?php echo $row->notices_description ?></p>
               </div>
   					</dd>
-  					<dd>
+            <?php endforeach; ?>
+  					<!-- <dd>
    						<a href="#panel33" onClick="highlightLink(this);"><span class="complaintText">Housing Violation</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
     					<div id="panel33" class="content">
                 <p class="dateColor">October 2, 2014</p>
@@ -47,7 +49,7 @@
                 <p class="dateColor">October 23, 2014</p>
                 <p>Indecent exposure around dorm, student has been walking around without appropriate amount of clothing.</p>
     					</div>
-        		</dd>
+        		</dd> -->
    				</dl>
   			</div>
 		  </div>
