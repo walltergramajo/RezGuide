@@ -304,6 +304,8 @@ class Add extends CI_Controller {
 		if($page == "upcoming"){
 			$data['pgTitle'] = "RezGuide Add An Upcoming Event";
 			$data['section'] = "News";
+			$data['ZoneTitle'] = "Add";
+			$data['sectTitle'] = "Campus News";
 			$data['uri'] = "News";
 			$data['subSection'] = "Add an upcoming event";
 			$data['formstart'] = form_open('add/insert_record/news_upcoming', array('id' => 'newsEvent'));
@@ -341,6 +343,8 @@ class Add extends CI_Controller {
 		}elseif($page == "monthly"){
 			$data['pgTitle'] = "RezGuide Add A Monthly Event";
 			$data['section'] = "News";
+			$data['ZoneTitle'] = "Add";
+			$data['sectTitle'] = "Campus Promotion";
 			$data['uri'] = "Special Offers";
 			$data['subSection'] = "Add a monthly event";
 			$data['formstart'] = form_open('add/insert_record/news_monthly', array('id' => 'newsEvent'));
@@ -378,6 +382,8 @@ class Add extends CI_Controller {
 		}elseif($page == "event"){
 			$data['pgTitle'] = "RezGuide Add An Event";
 			$data['section'] = "News";
+			$data['ZoneTitle'] = "Add";
+			$data['sectTitle'] = "Campus Event";
 			$data['uri'] = "Event";
 			$data['subSection'] = "Add an event";
 			$data['formstart'] = form_open('add/insert_record/news_event', array('id' => 'newsEvent'));
@@ -898,7 +904,8 @@ class Add extends CI_Controller {
 			$data['pgTitle'] = "RezGuide Add An Upcoming Event";
 			$data['section'] = "FSU";
 			$data['uri'] = "contests";
-			
+			$data['ZoneTitle'] = "Add";
+			$data['sectTitle'] = "FSU Contest";
 
 			$data['subSection'] = "Add an FSU Contest";
 
@@ -957,7 +964,8 @@ class Add extends CI_Controller {
 		}elseif($page == "events"){
 			$data['pgTitle'] = "RezGuide Add FSU Event";
 			$data['section'] = "FSU";
-
+			$data['ZoneTitle'] = "Add";
+			$data['sectTitle'] = "FSU Event";
 			$data['uri'] = "events";
 
 			$data['subSection'] = "Add an FSU Event";
