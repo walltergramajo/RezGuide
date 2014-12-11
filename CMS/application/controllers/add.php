@@ -531,6 +531,7 @@ class Add extends CI_Controller {
 		if($page == "contests"){
 			$data['pgTitle'] = "RezGuide Add An Upcoming Event";
 			$data['section'] = "FSU";
+			$data['uri'] = "contests";
 			$data['subSection'] = "an FSU Contest";
 			$data['formstart'] = form_open('add/insert_record/fsu_contest', array('id' => 'fsuContest'));
 				$data['name'] = form_input(array(
@@ -580,12 +581,14 @@ class Add extends CI_Controller {
 				$data['category'] = form_hidden('contest_category', 1);
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
+			$this->load->view('FSU/fsu_options_menu');
 			$this->load->view('add/eventform');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
 		}elseif($page == "events"){
 			$data['pgTitle'] = "RezGuide Add FSU Event";
 			$data['section'] = "FSU";
+			$data['uri'] = "events";
 			$data['subSection'] = "an FSU Event";
 			$data['formstart'] = form_open('add/insert_record/fsu_event', array('id' => 'fsuEvent'));
 				$data['name'] = form_input(array(
@@ -635,6 +638,7 @@ class Add extends CI_Controller {
 				$data['category'] = form_hidden('events_category', 1);
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
+			$this->load->view('FSU/fsu_options_menu');
 			$this->load->view('add/eventform');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
