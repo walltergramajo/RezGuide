@@ -18,7 +18,7 @@
 <section id="select">
         <div class="row">
             <div class="small-10 small-centered columns">
-                <h2 id="subTitle">CHOOSE CONTEST TO EDIT</h2>
+                <h2 id="subTitle">CHOOSE <?php echo $sectTitle; ?> TO EDIT</h2>
             </div>
         </div>
         
@@ -31,7 +31,7 @@
         <div class="row">
         	<div class="small-3 columns">
             	<div class="edit">
-                    <a href="<?php echo base_url(); ?>index.php/edit/Building/events/<?php echo $row->events_id; ?>">
+                    <a href="<?php echo base_url(); ?>index.php/edit/Building/<?php echo $uri; ?>/<?php echo $row->events_id; ?>">
                         <img src="<?php echo base_url(); ?>img/CMS_editPencil.png" alt="Edit">
                     </a>
                 </div>

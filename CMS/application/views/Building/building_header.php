@@ -5,7 +5,7 @@
             <div class="small-9 columns" id="pageTitle">
             	<div id="headerContainer">
             	<h1 id="titleDirectory" class="header">Fanshawe Rezguide</h1>
-            	<h2 id="titleHeader" class="text-right header"><?php echo $sectTitle; ?></h2>
+            	<h2 id="titleHeader" class="text-right header"><?php if(isset($ZoneTitle)) { echo $ZoneTitle . " " . $sectTitle; }else{ echo $subTitle; } ?></h2>
                 </div>
             </div>
         </div>

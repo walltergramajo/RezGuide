@@ -15,6 +15,13 @@
 
 
     <section>
+        <?php 
+            if(isset($success)){
+                echo "<div class=\"successmsg form_msg\"><p>" . $sectTitle . " " . $success . "</p></div>";
+            }elseif(strlen(validation_errors()) != 0){
+                echo "<div class=\"errormsg form_msg\">" . validation_errors() . "</div>";
+            }
+        ?>
         <?php echo $formstart; ?>
             
             <div class="row coreInfo">
@@ -68,13 +75,13 @@
                             <label>Start</label>
                         </div>
                         <div class="small-4 columns">
-                            <?php echo $start; ?>
+                            <?php echo $s_day . $s_month . $s_year; ?>
                         </div>
                         <div class="small-2 columns">
                             <label>End</label>
                         </div>
                         <div class="small-4 columns">
-                            <?php echo $end; ?>
+                            <?php echo $e_day . $e_month . $e_year; ?>
                         </div>
                     </div>
 

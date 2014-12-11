@@ -46,7 +46,7 @@ $('#transportationIcon').click(function () {
 //for highlighted link choice on Selector Page
 
 var highlightLink = function () {
-        var active = null, colour = '#65666a', backgroundImage2 = "url('img/selectionArrow.png')";
+        var active = null, colour = '#65666a', backgroundImage2 = "url('"+baseUrl+"img/selectionArrow.png')";
         if (this.attachEvent) this.attachEvent('onunload', function () {
             active = null;
         });
@@ -86,7 +86,7 @@ var highlightLinkSchedule = function () {
 }();
 
 var highlightLinkPath = function () {
-        var active = null, colour = '#65666a', backgroundImage2 = "url('img/selectionArrow.png')";
+        var active = null, colour = '#65666a', backgroundImage2 = "url('"+baseUrl+"img/selectionArrow.png')";
         if (this.attachEvent) this.attachEvent('onunload', function () {
             active = null;
         });
@@ -108,7 +108,7 @@ var highlightLinkPath = function () {
 }();
 
 var highlightLinkPoints = function () {
-        var active = null, colour= 'rgba(0,0,0,0)', backgroundImage3 = "url('img/selectionArrowGreen.png')";
+        var active = null, colour= 'rgba(0,0,0,0)', backgroundImage3 = "url('"+baseUrl+"img/selectionArrowGreen.png')";
         if (this.attachEvent) this.attachEvent('onunload', function () {
             active = null;
         });

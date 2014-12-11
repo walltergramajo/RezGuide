@@ -5,6 +5,7 @@ class Edit extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->helper('form');
+		$this->load->library('form_validation');
 		$this->load->model('update_model');
 	}
 
@@ -106,7 +107,8 @@ class Edit extends CI_Controller {
 		}elseif($page == "contests"){
 			if($record != null){
 				$data['pgTitle'] = "RezGuide Edit A Building Contest";
-				$data['sectTitle'] = "Edit Contest";
+				$data['ZoneTitle'] = "Edit";
+				$data['sectTitle'] = "Contest";
 					$data['section'] = "Building";
 					$data['uri'] = "contests";
 				$contest = $this->update_model->getSingle('tbl_contests', 'contests_id', $record);
@@ -170,7 +172,8 @@ class Edit extends CI_Controller {
 				$this->load->view('templates/close');
 			}else{
 				$data['pgTitle'] = "Building Contest Select";
-				$data['sectTitle'] = "Select a Contest";
+				$data['ZoneTitle'] = "Select";
+				$data['sectTitle'] = "Contest";
 					$data['section'] = "Building";
 					$data['uri'] = "contests";
 				$data['contests'] = $this->update_model->getAll('tbl_contests', 'contestCat_id', 3);
@@ -185,7 +188,8 @@ class Edit extends CI_Controller {
 		}elseif($page == "events"){
 			if($record != null){
 				$data['pgTitle'] = "Building Event Select";
-				$data['sectTitle'] = "Select an Event";
+				$data['ZoneTitle'] = "Edit";
+				$data['sectTitle'] = "Event";
 					$data['section'] = "Building";
 					$data['uri'] = "events";
 				$event = $this->update_model->getSingle('tbl_events', 'events_id', $record);
@@ -265,10 +269,108 @@ class Edit extends CI_Controller {
 				$this->load->view('templates/close');
 			}else{
 				$data['pgTitle'] = "Building Event Select";
-				$data['sectTitle'] = "Select an Event";
+				$data['ZoneTitle'] = "Select";
+				$data['sectTitle'] = "Event";
 					$data['section'] = "Building";
 					$data['uri'] = "events";
 				$data['events'] = $this->update_model->getAll('tbl_events', 'eventsCat_id', 3);
+
+				$this->load->view('templates/head', $data);
+				$this->load->view('building/building_header');
+				$this->load->view('building/building_options_menu');
+				$this->load->view('building/building_events_edit_select');
+				$this->load->view('templates/footer');
+				$this->load->view('templates/close');
+			}
+		}elseif($page == "programs"){
+			if($record != null){
+				$data['pgTitle'] = "Building Event Select";
+				$data['ZoneTitle'] = "Edit";
+				$data['sectTitle'] = "Building Program";
+					$data['section'] = "Building";
+					$data['uri'] = "programs";
+				$event = $this->update_model->getSingle('tbl_events', 'events_id', $record);
+					$id = $event->events_id;
+					$title = $event->events_title;
+					$desc = $event->events_description;
+					$info = $event->events_moreinfo;
+					$start = $event->events_startdate;
+					$end = $event->events_enddate;
+					$location = $event->events_location;
+					$link = $event->events_link;
+					$who = $event->events_whocome;
+				$data['formstart'] = form_open('edit/update/building_program', array('id' => 'bldEvent'));
+					$data['name'] = form_input(array(
+											'name' => 'title',
+											'type' => 'text',
+											'placeholder' => 'Title',
+											'value' => $title
+					));
+					$data['content'] = form_textarea(array(
+											'name' => 'description',
+											'placeholder' => 'Content',
+											'value' => $desc
+					));
+					$data['moreinfo'] = form_textarea(array(
+											'name' => 'moreinfo',
+											'placeholder' => 'More Info',
+											'value' => $info
+					));
+					$data['location'] = form_input(array(
+											'name' => 'location',
+											'type' => 'text',
+											'placeholder' => 'Location',
+											'value' => $location
+					));
+	                $data['who'] = form_input(array(
+											'name' => 'whocome',
+											'type' => 'text',
+											'placeholder' => 'Who can Enter',
+											'value' => $who
+					));
+					$data['link'] = form_input(array(
+											'name' => 'link',
+											'type' => 'text',
+											'placeholder' => 'Link',
+											'value' => $link
+					));
+					$data['start'] = form_input(array(
+											'name' => 'startdate',
+											'type' => 'text',
+											'placeholder' => 'Start',
+											'value' => $start
+					));
+					$data['end'] = form_input(array(
+											'name' => 'enddate',
+											'type' => 'text',
+											'placeholder' => 'End',
+											'value' => $end
+					));
+					$data['studprice'] = form_input(array(
+											'name' => 'studprice',
+											'type' => 'text',
+											'placeholder' => 'Student Price'
+					));
+					$data['gstprice'] = form_input(array(
+											'name' => 'gstprice',
+											'type' => 'text',
+											'placeholder' => 'Guest Price'
+					));
+					$data['category'] = form_hidden('category_id', 4);
+					$data['id'] = form_hidden('id', $id);
+				$this->load->view('templates/head',$data);
+				$this->load->view('building/building_header');
+				$this->load->view('building/building_options_menu');
+				$this->load->view('add/eventform');
+				$this->load->view('templates/footer');
+				$this->load->view('templates/close');
+			}else{
+				$data['pgTitle'] = "Building Event Select";
+				$data['ZoneTitle'] = "Select";
+				$data['sectTitle'] = "Program";
+					$data['section'] = "Building";
+					$data['uri'] = "programs";
+				$data['events'] = $this->update_model->getAll('tbl_events', 'eventsCat_id', 4);
 
 				$this->load->view('templates/head', $data);
 				$this->load->view('building/building_header');
@@ -369,13 +471,14 @@ class Edit extends CI_Controller {
 	}
 
 	public function update($function){
-		$this->load->model('Update_model');
 		$this->Update_model->$function();
 		
 		if($function == "building_contest"){
 			$this->building('contests');
 		}elseif($function == "building_event"){
 			$this->building('events');
+		}elseif($function == "building_program"){
+			$this->building('programs');
 		}
 	}
 }

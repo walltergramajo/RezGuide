@@ -11,15 +11,16 @@
             </div> 
         </div>
         <div class="contentNews">
+            <form method="post" action="<?php echo base_url(); ?>index.php/account/update">
             <div class="row">
                 <div class="small-5 small-push-1 columns">
                     <img id="colouredDummy" src="<?php echo base_url(); ?>img/colouredDummyIcon.png" alt="coloured_dummy"> 
                 </div>
                 <div class="small-7 columns">
                     <div id="profileInfo">
-                        <input type="text" class="profileName" placeholder="FIRST NAME" name="first_name" />
-                        <input type="text" class="profileName" placeholder="LAST NAME" name="last_name" />
-                        <input type="text" id="programHeader" placeholder="PROGRAM" name="program" />
+                        <input type="text" class="profileName" placeholder="FIRST NAME" name="first_name" value="<?php echo $results->students_firstname; ?>" />
+                        <input type="text" class="profileName" placeholder="LAST NAME" name="last_name" value="<?php echo $results->students_lastname; ?>" />
+                        <input type="text" id="programHeader" placeholder="PROGRAM" name="program" value="<?php echo $results->students_program; ?>" />
                     </div>
                 </div>
             </div>
@@ -37,14 +38,14 @@
                 <div class="row">
                     <div class="small-11 small-push-1 columns">
                         <div>
-                            <input type="text" class="cellphone" placeholder="Cellphone#:                    519-777-7777" name="cell_phone"/>
+                            <input type="text" class="cellphone" placeholder="Cellphone#:                    519-777-7777" name="cell_phone" value="<?php echo $results->students_cellphone; ?>"/>
                         </div>
                     </div>
                 </div>   
                 <div class="row">
                     <div class="small-11 small-push-1 columns">
                         <div>
-                            <input type="text" class="address" placeholder="Address:               123 Fake St, London" name="address"/>
+                            <input type="text" class="address" placeholder="Address:               123 Fake St, London" name="address" value="<?php echo $results->students_address; ?>"/>
                         </div>
                     </div>
                 </div>   
@@ -63,23 +64,24 @@
                 <div class="row">
                     <div class="small-11 small-push-1 columns">
                         <div class="infoContainerTop">
-                            <input type="text" class="facebook" placeholder="Facebook:               www.facebook.com" name="facebook"/>
+                            <input type="text" class="facebook" placeholder="Facebook:               www.facebook.com" name="facebook" value="<?php echo $results->students_facebook; ?>"/>
                         </div>
                     </div>
                 </div>   
                 <div class="row">
                     <div class="small-11 small-push-1 columns">
                         <div class="infoContainer">
-                            <input type="text" class="twitter" placeholder="Twitter:                          www.twitter.com" name="twitter"/>
+                            <input type="text" class="twitter" placeholder="Twitter:                          www.twitter.com" name="twitter" value="<?php echo $results->students_twitter; ?>"/>
                         </div>
                     </div>
                 </div>   
             </div>
             <div class="row">
                 <div class="small-4 small-centered columns">
-                    <a href="#"><img src="<?php echo base_url(); ?>img/sendButton.png" alt="sendButton" value="submit"></a>
+                    <input type="image" src="<?php echo base_url(); ?>img/sendButton.png" alt="sendButton" value="submit">
                 </div>
             </div>
+            </form>
         </div>
     </div>
 

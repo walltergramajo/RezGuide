@@ -17,6 +17,13 @@
 
 
     <section>
+        <?php 
+            if(isset($success)){
+                echo "<div class=\"successmsg form_msg\"><p>" . $sectTitle . " " . $success . "</p></div>";
+            }elseif(strlen(validation_errors()) != 0){
+                echo "<div class=\"errormsg form_msg\">" . validation_errors() . "</div>";
+            }
+        ?>
         <?php echo $formstart; ?>
             
             <div class="row coreInfo">

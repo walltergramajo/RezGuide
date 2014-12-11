@@ -8,6 +8,9 @@
       $.mobile.changePage.allowSamePageTransition = true;
     });
   </script>
+  <script type="text/javascript">
+    baseUrl = "<?php echo base_url(); ?>";
+  </script>
   <script src="<?php echo base_url(); ?>js/mainClassPath.js" type="text/javascript"></script>  
   <script src="<?php echo base_url(); ?>js/foundation.min.js"></script>
   <script src="<?php echo base_url(); ?>js/foundation/foundation.js"></script>

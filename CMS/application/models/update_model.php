@@ -85,4 +85,22 @@ class Update_model extends CI_Model {
 
 	}
 
+	public function building_program() {
+		$record = array(
+					'events_title' => $_POST['title'],
+					'events_description' => $_POST['description'],
+					'events_moreinfo' => $_POST['moreinfo'],
+					'events_startdate' => $_POST['startdate'],
+					'events_enddate' => $_POST['enddate'],
+					'events_location' => $_POST['location'],
+					'events_link' => $_POST['link'],
+					'eventsCat_id' => $_POST['category_id'],
+					'events_whocome' => $_POST['whocome']
+				);
+
+		$this->db->where('events_id', $_POST['id']);
+		$this->db->update('tbl_events', $record);
+
+	}
+
 }

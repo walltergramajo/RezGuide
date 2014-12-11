@@ -222,6 +222,7 @@ body {
 		text-align: center;
 		margin-top: 20px;
 		margin-bottom: 30px;
+		text-transform: uppercase;
 	}
 	
 	#createUser {
@@ -1326,6 +1327,48 @@ button, .button {
 	border-radius: 5px 5px 5px 5px;
 	position: absolute;
 	z-index: 9999;
+}
+/**-----------*/
+
+/**-------- Prototype styling for Success and Validation Error Message Boxes*/
+.form_msg {
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.2em;
+	font-family: 'caviar_dreamsregular';
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	padding: 15px 0;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.errormsg p {
+	color: #e31d1a;
+}
+
+.successmsg p {
+	color: #65666a;
+}
+
+.form_msg p {
+	margin: 0;
+}
+/**-----------*/
+
+/**-------- Input field width restrictions for new day/month/year fields*/
+.datefield {
+	display: inline !important; /* important to prevent foundation.css override */
+}
+
+.day_field,
+.month_field {
+	width: 45px !important; /* important to prevent foundation.css override */
+	margin-right: 10px !important; /* important to prevent foundation.css override */
+}
+
+.year_field {
+	width: 80px !important; /* important to prevent foundation.css override */
 }
 /**-----------*/
 
