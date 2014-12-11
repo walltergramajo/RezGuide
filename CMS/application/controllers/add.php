@@ -304,6 +304,7 @@ class Add extends CI_Controller {
 		if($page == "upcoming"){
 			$data['pgTitle'] = "RezGuide Add An Upcoming Event";
 			$data['section'] = "News";
+			$data['uri'] = "News";
 			$data['subSection'] = "Add an upcoming event";
 			$data['formstart'] = form_open('add/insert_record/news_upcoming', array('id' => 'newsEvent'));
 				$data['location'] = form_input(array(
@@ -333,12 +334,14 @@ class Add extends CI_Controller {
 				$data['category'] = form_hidden('news_category', 3);
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
+			$this->load->view('campus/campus_options_menu');
 			$this->load->view('add/newsform');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
 		}elseif($page == "monthly"){
 			$data['pgTitle'] = "RezGuide Add A Monthly Event";
 			$data['section'] = "News";
+			$data['uri'] = "Special Offers";
 			$data['subSection'] = "Add a monthly event";
 			$data['formstart'] = form_open('add/insert_record/news_monthly', array('id' => 'newsEvent'));
 				$data['location'] = form_input(array(
@@ -368,12 +371,14 @@ class Add extends CI_Controller {
 				$data['category'] = form_hidden('news_category', 2);
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
+			$this->load->view('campus/campus_options_menu');
 			$this->load->view('add/newsform');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
 		}elseif($page == "event"){
 			$data['pgTitle'] = "RezGuide Add An Event";
 			$data['section'] = "News";
+			$data['uri'] = "Event";
 			$data['subSection'] = "Add an event";
 			$data['formstart'] = form_open('add/insert_record/news_event', array('id' => 'newsEvent'));
 				$data['location'] = form_input(array(
@@ -403,6 +408,7 @@ class Add extends CI_Controller {
 				$data['category'] = form_hidden('news_category', 1);
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
+			$this->load->view('campus/campus_options_menu');
 			$this->load->view('add/newsform');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');

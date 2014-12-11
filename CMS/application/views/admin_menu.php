@@ -48,7 +48,7 @@
                                 <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="<?php echo base_url(); ?>img/CMS_news.png" alt="News">
                             </div>
                             <div class="small-8 columns">
-                                <p class="dashboardText text-justify header"> News </p>
+                                <p class="dashboardText text-justify header">Campus </p>
                             </div>
                             </a>
                         </li>

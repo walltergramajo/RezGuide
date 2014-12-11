@@ -15,7 +15,7 @@
             </div>
             <div class="small-2 small-pull-4 columns">
                 <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add/fsu/events">
-                    <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="<?php echo base_url(); ?>img/WA_events.png" alt="Events">
+                    <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="<?php echo base_url(); ?>img/CMS_events.png" alt="Events">
                     <h3 class="menuHeaders">Events</h3>
                 </a>
             </div>
