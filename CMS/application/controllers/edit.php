@@ -219,6 +219,7 @@ class Edit extends CI_Controller {
 				$this->load->view('building/building_options_menu');
 				$this->load->view('building/building_contests_edit_select');
 				$this->load->view('templates/footer');
+				$this->load->view('deletescript.php');
 				$this->load->view('templates/close');
 			}
 		}elseif($page == "events"){
@@ -594,5 +595,12 @@ class Edit extends CI_Controller {
 		}elseif($function == "bld_program"){
 			$this->building('programs');
 		}
+	}
+
+	public function delete_record($controller, $function, $record){
+		$this->load->model('delete_model');
+		$this->delete_model->$function($record);
+
+		if($function == "Building")
 	}
 }
