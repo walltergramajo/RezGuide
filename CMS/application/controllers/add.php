@@ -35,17 +35,17 @@ class Add extends CI_Controller {
 						array(
 							'field'   => 's_day', 
 		                    'label'   => 'Start Date - Day', 
-		                    'rules'   => 'xss_clean'
+		                    'rules'   => 'required|xss_clean'
 						),
 						array(
 							'field'   => 's_month', 
 		                    'label'   => 'Start Date - Month', 
-		                    'rules'   => 'xss_clean'
+		                    'rules'   => 'required|xss_clean'
 						),
 						array(
 							'field'   => 's_year', 
 		                    'label'   => 'Start Date - Year', 
-		                    'rules'   => 'xss_clean'
+		                    'rules'   => 'required|xss_clean'
 						),
 						array(
 							'field'   => 'e_day', 
@@ -71,10 +71,24 @@ class Add extends CI_Controller {
 							'field'   => 'event_category', 
 		                    'label'   => 'db_category', 
 		                    'rules'   => 'xss_clean'
+						),
+						array(
+							'field'   => 'studprice', 
+		                    'label'   => 'Student Price', 
+		                    'rules'   => 'xss_clean'
+						),
+						array(
+							'field'   => 'gstprice', 
+		                    'label'   => 'Guest Price', 
+		                    'rules'   => 'xss_clean'
+						),
+						array(
+							'field'   => 'info', 
+		                    'label'   => 'More info', 
+		                    'rules'   => 'xss_clean'
 						)
 					);
 		$this->form_validation->set_rules($rules);
-		$this->load->model('Insert_model');
 	}
 
 	public function index(){
@@ -304,6 +318,9 @@ class Add extends CI_Controller {
 		if($page == "upcoming"){
 			$data['pgTitle'] = "RezGuide Add An Upcoming Event";
 			$data['section'] = "News";
+			$data['ZoneTitle'] = "Add";
+			$data['sectTitle'] = "Campus News";
+			$data['uri'] = "News";
 			$data['subSection'] = "Add an upcoming event";
 			$data['formstart'] = form_open('add/insert_record/news_upcoming', array('id' => 'newsEvent'));
 				$data['location'] = form_input(array(
@@ -333,12 +350,16 @@ class Add extends CI_Controller {
 				$data['category'] = form_hidden('news_category', 3);
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
+			$this->load->view('campus/campus_options_menu');
 			$this->load->view('add/newsform');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
 		}elseif($page == "monthly"){
 			$data['pgTitle'] = "RezGuide Add A Monthly Event";
 			$data['section'] = "News";
+			$data['ZoneTitle'] = "Add";
+			$data['sectTitle'] = "Campus Promotion";
+			$data['uri'] = "Special Offers";
 			$data['subSection'] = "Add a monthly event";
 			$data['formstart'] = form_open('add/insert_record/news_monthly', array('id' => 'newsEvent'));
 				$data['location'] = form_input(array(
@@ -368,12 +389,16 @@ class Add extends CI_Controller {
 				$data['category'] = form_hidden('news_category', 2);
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
+			$this->load->view('campus/campus_options_menu');
 			$this->load->view('add/newsform');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
 		}elseif($page == "event"){
 			$data['pgTitle'] = "RezGuide Add An Event";
 			$data['section'] = "News";
+			$data['ZoneTitle'] = "Add";
+			$data['sectTitle'] = "Campus Event";
+			$data['uri'] = "Event";
 			$data['subSection'] = "Add an event";
 			$data['formstart'] = form_open('add/insert_record/news_event', array('id' => 'newsEvent'));
 				$data['location'] = form_input(array(
@@ -403,6 +428,7 @@ class Add extends CI_Controller {
 				$data['category'] = form_hidden('news_category', 1);
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
+			$this->load->view('campus/campus_options_menu');
 			$this->load->view('add/newsform');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
@@ -419,6 +445,17 @@ class Add extends CI_Controller {
 	}
 
 	public function building($page = null){
+	/**
+	*	if($page == "contests")
+	* 		if(form_validation->run() == FALSE)
+	* 		else
+	*	if($page == "events")
+	* 		if(form_validation->run() == FALSE)
+	* 		else
+	*	if($page == "programs")
+	* 		if(form_validation->run() == FALSE)
+	* 		else
+	*/
 		if($page == "contests"){
 			/**
 			*	Load standard form.
@@ -614,50 +651,96 @@ class Add extends CI_Controller {
 					$data['name'] = form_input(array(
 											'name' => 'name',
 											'type' => 'text',
-											'placeholder' => 'Title'
+											'placeholder' => 'Title',
+											'value' => set_value('name')
 					));
 					$data['content'] = form_textarea(array(
 											'name' => 'desc',
-											'placeholder' => 'Content'
+											'placeholder' => 'Content',
+											'value' => set_value('desc')
 					));
 					$data['moreinfo'] = form_textarea(array(
 											'name' => 'info',
-											'placeholder' => 'More Info'
+											'placeholder' => 'More Info',
+											'value' => set_value('info')
 					));
 					$data['location'] = form_input(array(
 											'name' => 'location',
 											'type' => 'text',
-											'placeholder' => 'Location'
+											'placeholder' => 'Location',
+											'value' => set_value('location')
 					));
 	                $data['who'] = form_input(array(
 											'name' => 'who',
 											'type' => 'text',
-											'placeholder' => 'Who can Enter'
+											'placeholder' => 'Who can Enter',
+											'value' => set_value('who')
 					));
 					$data['link'] = form_input(array(
 											'name' => 'link',
 											'type' => 'text',
-											'placeholder' => 'Link'
+											'placeholder' => 'Link',
+											'value' => set_value('link')
 					));
-					$data['start'] = form_input(array(
-											'name' => 'start',
+					$data['s_day'] = form_input(array(
+											'name' => 's_day',
 											'type' => 'text',
-											'placeholder' => 'Start'
+											'class' => 'datefield day_field',
+											'placeholder' => 'DD',
+											'maxlength' => '2',
+											'value' => set_value('s_day')
 					));
-					$data['end'] = form_input(array(
-											'name' => 'end',
+					$data['s_month'] = form_input(array(
+											'name' => 's_month',
 											'type' => 'text',
-											'placeholder' => 'End'
+											'class' => 'datefield month_field',
+											'placeholder' => 'MM',
+											'maxlength' => '2',
+											'value' => set_value('s_month')
+					));
+					$data['s_year'] = form_input(array(
+											'name' => 's_year',
+											'type' => 'text',
+											'class' => 'datefield year_field',
+											'placeholder' => 'YYYY',
+											'maxlength' => '4',
+											'value' => set_value('s_year')
+					));
+					$data['e_day'] = form_input(array(
+											'name' => 'e_day',
+											'type' => 'text',
+											'class' => 'datefield day_field',
+											'placeholder' => 'DD',
+											'maxlength' => '2',
+											'value' => set_value('e_day')
+					));
+					$data['e_month'] = form_input(array(
+											'name' => 'e_month',
+											'type' => 'text',
+											'class' => 'datefield month_field',
+											'placeholder' => 'MM',
+											'maxlength' => '2',
+											'value' => set_value('e_month')
+					));
+					$data['e_year'] = form_input(array(
+											'name' => 'e_year',
+											'type' => 'text',
+											'class' => 'datefield year_field',
+											'placeholder' => 'YYYY',
+											'maxlength' => '4',
+											'value' => set_value('e_year')
 					));
 					$data['studprice'] = form_input(array(
 											'name' => 'studprice',
 											'type' => 'text',
-											'placeholder' => 'Student Price'
+											'placeholder' => 'Student Price',
+											'value' => set_value('studprice')
 					));
 					$data['gstprice'] = form_input(array(
 											'name' => 'gstprice',
 											'type' => 'text',
-											'placeholder' => 'Guest Price'
+											'placeholder' => 'Guest Price',
+											'value' => set_value('gstprice')
 					));
 					$data['category'] = form_hidden('events_category', 3);
 				$this->load->view('templates/head',$data);
@@ -704,15 +787,47 @@ class Add extends CI_Controller {
 											'type' => 'text',
 											'placeholder' => 'Link'
 					));
-					$data['start'] = form_input(array(
-											'name' => 'start',
+					$data['s_day'] = form_input(array(
+											'name' => 's_day',
 											'type' => 'text',
-											'placeholder' => 'Start'
+											'class' => 'datefield day_field',
+											'placeholder' => 'DD',
+											'maxlength' => '2'
 					));
-					$data['end'] = form_input(array(
-											'name' => 'end',
+					$data['s_month'] = form_input(array(
+											'name' => 's_month',
 											'type' => 'text',
-											'placeholder' => 'End'
+											'class' => 'datefield month_field',
+											'placeholder' => 'MM',
+											'maxlength' => '2'
+					));
+					$data['s_year'] = form_input(array(
+											'name' => 's_year',
+											'type' => 'text',
+											'class' => 'datefield year_field',
+											'placeholder' => 'YYYY',
+											'maxlength' => '4'
+					));
+					$data['e_day'] = form_input(array(
+											'name' => 'e_day',
+											'type' => 'text',
+											'class' => 'datefield day_field',
+											'placeholder' => 'DD',
+											'maxlength' => '2'
+					));
+					$data['e_month'] = form_input(array(
+											'name' => 'e_month',
+											'type' => 'text',
+											'class' => 'datefield month_field',
+											'placeholder' => 'MM',
+											'maxlength' => '2'
+					));
+					$data['e_year'] = form_input(array(
+											'name' => 'e_year',
+											'type' => 'text',
+											'class' => 'datefield year_field',
+											'placeholder' => 'YYYY',
+											'maxlength' => '4'
 					));
 					$data['studprice'] = form_input(array(
 											'name' => 'studprice',
@@ -746,55 +861,102 @@ class Add extends CI_Controller {
 					$data['section'] = "Building";
 					$data['uri'] = "programs";
 				$data['subSection'] = "Add a Building Program";
-				$data['formstart'] = form_open('add/insert_record/bld_program', array('id' => 'fsuEvent'));
+				$data['formstart'] = form_open('add/insert_record/bld_program', array('id' => 'bldProgram'));
 					$data['name'] = form_input(array(
 											'name' => 'name',
 											'type' => 'text',
-											'placeholder' => 'Title'
+											'placeholder' => 'Title',
+											'value' => set_value('name')
 					));
 					$data['content'] = form_textarea(array(
 											'name' => 'desc',
-											'placeholder' => 'Content'
+											'placeholder' => 'Content',
+											'value' => set_value('desc')
 					));
 					$data['moreinfo'] = form_textarea(array(
 											'name' => 'info',
-											'placeholder' => 'More Info'
+											'placeholder' => 'More Info',
+											'value' => set_value('info')
 					));
 
 					$data['location'] = form_input(array(
 											'name' => 'location',
 											'type' => 'text',
-											'placeholder' => 'Location'
+											'placeholder' => 'Location',
+											'value' => set_value('location')
 					));
 	                $data['who'] = form_input(array(
 											'name' => 'who',
 											'type' => 'text',
-											'placeholder' => 'Who can Enter'
+											'placeholder' => 'Who can Enter',
+											'value' => set_value('who')
 					));
 					$data['link'] = form_input(array(
 											'name' => 'link',
 											'type' => 'text',
-											'placeholder' => 'Link'
+											'placeholder' => 'Link',
+											'value' => set_value('link')
+
 					));
-					$data['start'] = form_input(array(
-											'name' => 'start',
+					$data['s_day'] = form_input(array(
+											'name' => 's_day',
 											'type' => 'text',
-											'placeholder' => 'Start'
+											'class' => 'datefield day_field',
+											'placeholder' => 'DD',
+											'maxlength' => '2',
+											'value' => set_value('s_day')
 					));
-					$data['end'] = form_input(array(
-											'name' => 'end',
+					$data['s_month'] = form_input(array(
+											'name' => 's_month',
 											'type' => 'text',
-											'placeholder' => 'End'
+											'class' => 'datefield month_field',
+											'placeholder' => 'MM',
+											'maxlength' => '2',
+											'value' => set_value('s_month')
+					));
+					$data['s_year'] = form_input(array(
+											'name' => 's_year',
+											'type' => 'text',
+											'class' => 'datefield year_field',
+											'placeholder' => 'YYYY',
+											'maxlength' => '4',
+											'value' => set_value('s_year')
+					));
+					$data['e_day'] = form_input(array(
+											'name' => 'e_day',
+											'type' => 'text',
+											'class' => 'datefield day_field',
+											'placeholder' => 'DD',
+											'maxlength' => '2',
+											'value' => set_value('e_day')
+					));
+					$data['e_month'] = form_input(array(
+											'name' => 'e_month',
+											'type' => 'text',
+											'class' => 'datefield month_field',
+											'placeholder' => 'MM',
+											'maxlength' => '2',
+											'value' => set_value('e_month')
+					));
+					$data['e_year'] = form_input(array(
+											'name' => 'e_year',
+											'type' => 'text',
+											'class' => 'datefield year_field',
+											'placeholder' => 'YYYY',
+											'maxlength' => '4',
+											'value' => set_value('e_year')
 					));
 					$data['studprice'] = form_input(array(
 											'name' => 'studprice',
 											'type' => 'text',
-											'placeholder' => 'Student Price'
+											'placeholder' => 'Student Price',
+											'value' => set_value('studprice')
 					));
 					$data['gstprice'] = form_input(array(
 											'name' => 'gstprice',
 											'type' => 'text',
-											'placeholder' => 'Guest Price'
+											'placeholder' => 'Guest Price',
+											'value' => set_value('gstprice')
 					));
 					$data['category'] = form_hidden('events_category', 4);
 				$this->load->view('templates/head',$data);
@@ -813,7 +975,7 @@ class Add extends CI_Controller {
 					$data['section'] = "Building";
 					$data['uri'] = "programs";
 				$data['subSection'] = "Add a Building Program";
-				$data['formstart'] = form_open('add/insert_record/bld_program', array('id' => 'fsuEvent'));
+				$data['formstart'] = form_open('add/insert_record/bld_program', array('id' => 'bldProgram'));
 					$data['name'] = form_input(array(
 											'name' => 'name',
 											'type' => 'text',
@@ -842,16 +1004,49 @@ class Add extends CI_Controller {
 											'name' => 'link',
 											'type' => 'text',
 											'placeholder' => 'Link'
+
 					));
-					$data['start'] = form_input(array(
-											'name' => 'start',
+					$data['s_day'] = form_input(array(
+											'name' => 's_day',
 											'type' => 'text',
-											'placeholder' => 'Start'
+											'class' => 'datefield day_field',
+											'placeholder' => 'DD',
+											'maxlength' => '2'
 					));
-					$data['end'] = form_input(array(
-											'name' => 'end',
+					$data['s_month'] = form_input(array(
+											'name' => 's_month',
 											'type' => 'text',
-											'placeholder' => 'End'
+											'class' => 'datefield month_field',
+											'placeholder' => 'MM',
+											'maxlength' => '2'
+					));
+					$data['s_year'] = form_input(array(
+											'name' => 's_year',
+											'type' => 'text',
+											'class' => 'datefield year_field',
+											'placeholder' => 'YYYY',
+											'maxlength' => '4'
+					));
+					$data['e_day'] = form_input(array(
+											'name' => 'e_day',
+											'type' => 'text',
+											'class' => 'datefield day_field',
+											'placeholder' => 'DD',
+											'maxlength' => '2'
+					));
+					$data['e_month'] = form_input(array(
+											'name' => 'e_month',
+											'type' => 'text',
+											'class' => 'datefield month_field',
+											'placeholder' => 'MM',
+											'maxlength' => '2'
+					));
+					$data['e_year'] = form_input(array(
+											'name' => 'e_year',
+											'type' => 'text',
+											'class' => 'datefield year_field',
+											'placeholder' => 'YYYY',
+											'maxlength' => '4'
 					));
 					$data['studprice'] = form_input(array(
 											'name' => 'studprice',
@@ -891,7 +1086,12 @@ class Add extends CI_Controller {
 		if($page == "contests"){
 			$data['pgTitle'] = "RezGuide Add An Upcoming Event";
 			$data['section'] = "FSU";
+			$data['uri'] = "contests";
+			$data['ZoneTitle'] = "Add";
+			$data['sectTitle'] = "FSU Contest";
+
 			$data['subSection'] = "Add an FSU Contest";
+
 			$data['formstart'] = form_open('add/insert_record/fsu_contest', array('id' => 'fsuContest'));
 				$data['name'] = form_input(array(
 										'name' => 'name',
@@ -940,13 +1140,19 @@ class Add extends CI_Controller {
 				$data['category'] = form_hidden('contest_category', 1);
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
+			$this->load->view('FSU/fsu_options_menu');
 			$this->load->view('add/eventform');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
 		}elseif($page == "events"){
 			$data['pgTitle'] = "RezGuide Add FSU Event";
 			$data['section'] = "FSU";
+			$data['ZoneTitle'] = "Add";
+			$data['sectTitle'] = "FSU Event";
+			$data['uri'] = "events";
+
 			$data['subSection'] = "Add an FSU Event";
+
 			$data['formstart'] = form_open('add/insert_record/fsu_event', array('id' => 'fsuEvent'));
 				$data['name'] = form_input(array(
 										'name' => 'name',
@@ -995,6 +1201,7 @@ class Add extends CI_Controller {
 				$data['category'] = form_hidden('events_category', 1);
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
+			$this->load->view('FSU/fsu_options_menu');
 			$this->load->view('add/eventform');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
@@ -1015,27 +1222,36 @@ class Add extends CI_Controller {
 		if($page == "city"){
 			$data['pgTitle'] = "RezGuide Add A City Location";
 			$data['section'] = "General";
+			$data['ZoneTitle'] = "Add";
+			$data['sectTitle'] = "City Info";
 			$data['subSection'] = "City Locations";
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
+			$this->load->view('general/general_options_menu');
 			$this->load->view('add/general/city');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
 		}elseif($page == "directory"){
 			$data['pgTitle'] = "RezGuide Add A User to Directory";
 			$data['section'] = "General";
+			$data['ZoneTitle'] = "Add";
+			$data['sectTitle'] = "Directory Info";
 			$data['subSection'] = "Directory";
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
+			$this->load->view('general/general_options_menu');
 			$this->load->view('add/general/directory');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
 		}elseif($page == "information"){
 			$data['pgTitle'] = "RezGuide Add LTC Information";
 			$data['section'] = "General";
+			$data['ZoneTitle'] = "Add";
+			$data['sectTitle'] = "General Info";
 			$data['subSection'] = "LTC Information";
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
+			$this->load->view('general/general_options_menu');
 			$this->load->view('add/general/information');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
@@ -1052,6 +1268,7 @@ class Add extends CI_Controller {
 	}
 	
 	public function insert_record($function) {
+		$this->load->model('insert_model');
 		if ($this->form_validation->run() != FALSE){
 			$this->Insert_model->$function();
 		}
@@ -1080,14 +1297,3 @@ class Add extends CI_Controller {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-

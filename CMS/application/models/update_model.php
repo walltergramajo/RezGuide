@@ -6,8 +6,12 @@ class Update_model extends CI_Model {
 		parent::__construct();
 	}
 
-	public function getAll($table, $col, $cat){
-		$allData = $this->db->get_where($table, array($col => $cat));
+	public function getAll($table, $col=null, $cat=null){
+		if($cat != null){
+			$allData = $this->db->get_where($table, array($col => $cat));
+		}else{
+			$allData = $this->db->get($table);
+		}
 		return $allData->result();
 	}
 
@@ -50,16 +54,18 @@ class Update_model extends CI_Model {
 
 	}
 
-	public function building_contest() {
+	public function bld_contest() {
+		$startdate = $_POST['s_year'] . "-" . $_POST['s_month'] . "-" . $_POST['s_day'];
+		$enddate = $_POST['e_year'] . "-" . $_POST['e_month'] . "-" . $_POST['e_day'];
 		$record = array(
-					'contests_title' => $_POST['title'],
-					'contests_description' => $_POST['description'],
-					'contests_startdate' => $_POST['startdate'],
-					'contests_enddate' => $_POST['enddate'],
+					'contests_title' => $_POST['name'],
+					'contests_description' => $_POST['desc'],
+					'contests_startdate' => $startdate,
+					'contests_enddate' => $enddate,
 					'contests_location' => $_POST['location'],
 					'contests_link' => $_POST['link'],
-					'contestCat_id' => $_POST['category_id'],
-					'contests_whoenter' => $_POST['whoenter']
+					'contestCat_id' => $_POST['contest_category'],
+					'contests_whoenter' => $_POST['who']
 				);
 
 		$this->db->where('contests_id', $_POST['id']);
@@ -67,17 +73,21 @@ class Update_model extends CI_Model {
 
 	}
 
-	public function building_event() {
+	public function bld_event() {
+		$startdate = $_POST['s_year'] . "-" . $_POST['s_month'] . "-" . $_POST['s_day'];
+		$enddate = $_POST['e_year'] . "-" . $_POST['e_month'] . "-" . $_POST['e_day'];
+		$caldate = $_POST['s_year'] . "-" . $_POST['s_month'] . "-" . $_POST['s_day'];
 		$record = array(
-					'events_title' => $_POST['title'],
-					'events_description' => $_POST['description'],
-					'events_moreinfo' => $_POST['moreinfo'],
-					'events_startdate' => $_POST['startdate'],
-					'events_enddate' => $_POST['enddate'],
+					'events_title' => $_POST['name'],
+					'events_description' => $_POST['desc'],
+					'events_moreinfo' => $_POST['info'],
+					'events_startdate' => $startdate,
+					'events_caldate' => $startdate,
+					'events_enddate' => $enddate,
 					'events_location' => $_POST['location'],
 					'events_link' => $_POST['link'],
-					'eventsCat_id' => $_POST['category_id'],
-					'events_whocome' => $_POST['whocome']
+					'eventsCat_id' => $_POST['event_category'],
+					'events_whocome' => $_POST['who']
 				);
 
 		$this->db->where('events_id', $_POST['id']);
@@ -85,22 +95,37 @@ class Update_model extends CI_Model {
 
 	}
 
-	public function building_program() {
+	public function bld_program() {
+		$startdate = $_POST['s_year'] . "-" . $_POST['s_month'] . "-" . $_POST['s_day'];
+		$enddate = $_POST['e_year'] . "-" . $_POST['e_month'] . "-" . $_POST['e_day'];
+		$caldate = $_POST['s_year'] . "-" . $_POST['s_month'] . "-" . $_POST['s_day'];
 		$record = array(
-					'events_title' => $_POST['title'],
-					'events_description' => $_POST['description'],
-					'events_moreinfo' => $_POST['moreinfo'],
-					'events_startdate' => $_POST['startdate'],
-					'events_enddate' => $_POST['enddate'],
+					'events_title' => $_POST['name'],
+					'events_description' => $_POST['desc'],
+					'events_moreinfo' => $_POST['info'],
+					'events_startdate' => $startdate,
+					'events_caldate' => $startdate,
+					'events_enddate' => $enddate,
 					'events_location' => $_POST['location'],
 					'events_link' => $_POST['link'],
-					'eventsCat_id' => $_POST['category_id'],
-					'events_whocome' => $_POST['whocome']
+					'eventsCat_id' => $_POST['event_category'],
+					'events_whocome' => $_POST['who']
 				);
 
 		$this->db->where('events_id', $_POST['id']);
 		$this->db->update('tbl_events', $record);
 
 	}
+
+	public function bld_rule() {
+		$record = array(
+					'rules_title' => $_POST['name'],
+					'rules_description' => $_POST['desc']
+				);
+
+		$this->db->where('rules_id', $_POST['id']);
+		$this->db->update('tbl_rules', $record);
+	}
+
 
 }
