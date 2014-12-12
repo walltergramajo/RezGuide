@@ -10,7 +10,8 @@
                 	<label>Name</label>
                 </div>
                 <div class="small-10 columns">
-                	<input id="name" type="text" name="name" placeholder="John Smith" value="<?php echo reset($record)->directory_firstname . " " . reset($record)->directory_lastname; ?>">
+                	<input id="name" type="text" name="name" placeholder="John Smith" >
+                   <!--  value="<?php echo reset($record)->directory_firstname . " " . reset($record)->directory_lastname; ?>" -->
                 </div>
             </div>
             <div class="row">
@@ -18,7 +19,8 @@
                 	<label>Email</label>
                 </div>
                 <div class="small-10 columns">
-                	<input id="email" name="email" type="email" placeholder="jsmith@example.com" value="<?php echo reset($record)->directory_email; ?>">
+                	<input id="email" name="email" type="email" placeholder="jsmith@example.com" >
+                    <!-- value="<?php echo reset($record)->directory_email; ?>" -->
                 </div>
             </div>
             <div class="row">

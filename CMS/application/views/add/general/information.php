@@ -1,3 +1,20 @@
+<div id="optionsIcons" class="row">
+    <div class="small-8 small-centered columns">
+        <div class="small-3 small-push-5 columns">
+            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add/general/information">
+
+                <img onMouseOver="swapDark('5')" onMouseOut="swapLight('5')" class="botImg" src="<?php echo base_url(); ?>img/CMS_add.png" alt="Add">
+            </a>
+        </div>
+        <div class="small-3 small-pull-3 columns">
+            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/edit/general/information">
+
+            <img onMouseOver="swapDark('6')" onMouseOut="swapLight('6')" class="botImg" src="<?php echo base_url(); ?>img/CMS_edit.png" alt="Edit">
+            </a>
+        </div>
+    </div>
+</div>
+
     <section>
         <form id="LTC">
             <div class="row">

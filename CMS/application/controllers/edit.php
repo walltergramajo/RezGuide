@@ -434,7 +434,7 @@ class Edit extends CI_Controller {
 		}elseif($page == "directory"){
 			if($userId != null){
 				$data['pgTitle'] = "Edit Directory Record";
-				$data['record'] = $this->update_model->getSingle('tbl_directory', 'directory_id', $userId);
+				// $data['record'] = $this->update_model->getSingle('tbl_directory', 'directory_id', $userId);
 				$data['formstart'] = form_open('users/update/directory', array('id' => 'createUser'));
 
 				$this->load->view('templates/head', $data);
@@ -444,7 +444,7 @@ class Edit extends CI_Controller {
 				$this->load->view('templates/close');
 			}else{
 				$data['pgTitle'] = "Edit Directory";
-				$data['record'] = $this->update_model->getAll('tbl_directory');
+				// $data['record'] = $this->update_model->getAll('tbl_directory');
 
 				$this->load->view('templates/head', $data);
 				$this->load->view('edit/general/general_header');

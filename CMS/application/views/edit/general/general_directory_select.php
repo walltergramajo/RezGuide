@@ -1,7 +1,7 @@
 <section id="select">
         <div class="row">
             <div class="small-12 columns">
-                <h2 id="subTitle">CHOOSE A USER TO EDIT</h2>
+                <h2 id="subTitle">CHOOSE A DIRECTORY TO EDIT</h2>
             </div>
         </div>
         
@@ -10,7 +10,7 @@
             	<div class="divider"></div>
             </div>
         </div>
-        <?php foreach($record as $row): ?>
+        <!-- <?php foreach($record as $row): ?> -->
         <div class="row">
         	<div class="small-3 columns">
             	<div class="edit">
@@ -20,7 +20,8 @@
                 </div>
             </div>
             <div class="small-6 columns">
-            	<p class="users"><?php echo $row->directory_firstname . " " . $row->directory_lastname; ?></p>
+            	<p class="users"></p>
+                <?php echo $row->directory_firstname . " " . $row->directory_lastname; ?>
             </div>
             <div class="small-3 columns">
             	<a href="#">
