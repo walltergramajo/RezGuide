@@ -1,5 +1,29 @@
+                    <section id="popup">
+                        <div class="row">
+                            <div class="small-11 columns">
+                                <p id="deleteNot">Are you sure you want to permanently delete notice *insert notice name here*?</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-12 small-pull-1 columns">
+                                <ul id="deleteOpt">
+                                    <li>
+                                        <a id="cancelDel" href="#">
+                                            <img src="http://localhost:8888/ryan/RezGuide/CMS/img/cancel.png" alt="Cancel Delete">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a id="deleteMe">
+                                            <img src="http://localhost:8888/ryan/RezGuide/CMS/img/deleteIcon.png" alt="Delete">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
 <section>
-    	<form>
+    	<?php echo $formstart; ?>
             <div class="row" id="mainInfo">
                 <div class="small-12 columns">
                     <div class="row">
@@ -33,22 +57,23 @@
                                 </div>
                             </div>    
                             
+                            <?php foreach($rules as $row): ?>
                             <div class="row">
                                 <div class="small-2 columns">
                                     <div class="edit2">
-                                        <a href="#">
+                                        <a href="<?php echo base_url(); ?>index.php/building/rules/<?php echo $row->rules_id; ?>">
                                             <img src="<?php echo base_url(); ?>img/CMS_editPencil.png" alt="Edit">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="small-4 columns">
-                                    <p class="titleHere">Alcohol Limit</p>
+                                    <p class="titleHere"><?php echo $row->rules_title; ?></p>
                                 </div>
                                 <div class="small-3 columns">
-                                    <p class="pointsHere">Limit is 1L per student</p>
+                                    <p class="pointsHere"><?php echo word_limiter($row->rules_description, 5); ?></p>
                                 </div>
                                 <div class="small-1 columns">
-                                    <a href="#">
+                                    <a href="#" class="del" data-record="<?php echo $row->rules_id; ?>" data-controller="<?php echo $section; ?>" data-function="<?php echo $uri; ?>">
                                         <img class="delete" src="<?php echo base_url(); ?>img/CMS_delete.png" alt="Delete" >
                                     </a>
                                 </div>
@@ -59,12 +84,12 @@
                                     <div class="divider2"></div>
                                 </div>
                             </div>
-                            
-                            <div class="row">
+                            <?php endforeach; ?>
+                            <!-- <div class="row">
                                 <div class="small-2 columns">
                                     <div class="edit2">
                                         <a href="#">
-                                            <img src="<?php echo base_url(); ?>img/CMS_editPencil.png" alt="Edit">
+                                            <img src="<?php// echo base_url(); ?>img/CMS_editPencil.png" alt="Edit">
                                         </a>
                                     </div>
                                 </div>
@@ -76,7 +101,7 @@
                                 </div>
                                 <div class="small-1 columns">
                                     <a href="#">
-                                        <img class="delete" src="<?php echo base_url(); ?>img/CMS_delete.png" alt="Delete" >
+                                        <img class="delete" src="<?php// echo base_url(); ?>img/CMS_delete.png" alt="Delete" >
                                     </a>
                                 </div>
                             </div>
@@ -84,22 +109,23 @@
                                 <div class="small-12 columns">
                                     <div class="divider2"></div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
                     <div class="small-5 columns">
                             <h2 class="addPointsHeader">Add New:</h2>
-                            <input class="titleText" type="text" placeholder="Title">
-                            <textarea placeholder="Description"></textarea>
-                            
+                            <?php echo $name; ?>
+                            <?php echo $desc; ?>
+                            <?php if(isset($id)) { echo $id; } ?>
                     </div>
 
             </div>
 
+
             <div id="submitRow" class="row">
                 <div class="small-2 small-push-9 columns">
-                   <input type="submit" class="submitButton" value="Add" alt="Send!">
+                   <input type="submit" class="submitButton" value="Submit" alt="Send!">
                 </div>
             </div>
         </form>

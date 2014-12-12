@@ -113,22 +113,22 @@ class Edit extends CI_Controller {
 					$data['uri'] = "contests";
 				$contest = $this->update_model->getSingle('tbl_contests', 'contests_id', $record);
 					$id = $contest->contests_id;
-					$title = $contest->contests_title;
+					$name = $contest->contests_title;
 					$desc = $contest->contests_description;
-					$start = $contest->contests_startdate;
-					$end = $contest->contests_enddate;
 					$location = $contest->contests_location;
 					$link = $contest->contests_link;
 					$who = $contest->contests_whoenter;
-				$data['formstart'] = form_open('edit/update/building_contest', array('id' => 'bldContest'));
+					$s_array = explode("-", $contest->contests_startdate);
+					$e_array = explode("-", $contest->contests_enddate);
+				$data['formstart'] = form_open('edit/update_record/bld_contest', array('id' => 'bldContest'));
 					$data['name'] = form_input(array(
-											'name' => 'title',
+											'name' => 'name',
 											'type' => 'text',
 											'placeholder' => 'Title',
-											'value' => $title
+											'value' => $name
 					));
 					$data['content'] = form_textarea(array(
-											'name' => 'description',
+											'name' => 'desc',
 											'placeholder' => 'Content',
 											'value' => $desc
 					));
@@ -139,7 +139,7 @@ class Edit extends CI_Controller {
 											'value' => $location
 					));
 	                $data['who'] = form_input(array(
-											'name' => 'whoenter',
+											'name' => 'who',
 											'type' => 'text',
 											'placeholder' => 'Who can Enter',
 											'value' => $who
@@ -150,19 +150,55 @@ class Edit extends CI_Controller {
 											'placeholder' => 'Link',
 											'value' => $link
 					));
-					$data['start'] = form_input(array(
-											'name' => 'startdate',
+					$data['s_day'] = form_input(array(
+											'name' => 's_day',
 											'type' => 'text',
-											'placeholder' => 'Start',
-											'value' => $start
+											'class' => 'datefield day_field',
+											'placeholder' => 'DD',
+											'maxlength' => '2',
+											'value' => $s_array[2]
 					));
-					$data['end'] = form_input(array(
-											'name' => 'enddate',
+					$data['s_month'] = form_input(array(
+											'name' => 's_month',
 											'type' => 'text',
-											'placeholder' => 'End',
-											'value' => $end
+											'class' => 'datefield month_field',
+											'placeholder' => 'MM',
+											'maxlength' => '2',
+											'value' => $s_array[1]
 					));
-					$data['category'] = form_hidden('category_id', 3);
+					$data['s_year'] = form_input(array(
+											'name' => 's_year',
+											'type' => 'text',
+											'class' => 'datefield year_field',
+											'placeholder' => 'YYYY',
+											'maxlength' => '4',
+											'value' => $s_array[0]
+					));
+					$data['e_day'] = form_input(array(
+											'name' => 'e_day',
+											'type' => 'text',
+											'class' => 'datefield day_field',
+											'placeholder' => 'DD',
+											'maxlength' => '2',
+											'value' => $e_array[2]
+					));
+					$data['e_month'] = form_input(array(
+											'name' => 'e_month',
+											'type' => 'text',
+											'class' => 'datefield month_field',
+											'placeholder' => 'MM',
+											'maxlength' => '2',
+											'value' => $e_array[1]
+					));
+					$data['e_year'] = form_input(array(
+											'name' => 'e_year',
+											'type' => 'text',
+											'class' => 'datefield year_field',
+											'placeholder' => 'YYYY',
+											'maxlength' => '4',
+											'value' => $s_array[0]
+					));
+					$data['category'] = form_hidden('contest_category', 3);
 					$data['id'] = form_hidden('id', $id);
 				$this->load->view('templates/head',$data);
 				$this->load->view('building/building_header');
@@ -183,6 +219,7 @@ class Edit extends CI_Controller {
 				$this->load->view('building/building_options_menu');
 				$this->load->view('building/building_contests_edit_select');
 				$this->load->view('templates/footer');
+				$this->load->view('deletescript.php');
 				$this->load->view('templates/close');
 			}
 		}elseif($page == "events"){
@@ -194,28 +231,30 @@ class Edit extends CI_Controller {
 					$data['uri'] = "events";
 				$event = $this->update_model->getSingle('tbl_events', 'events_id', $record);
 					$id = $event->events_id;
-					$title = $event->events_title;
+					$name = $event->events_title;
 					$desc = $event->events_description;
 					$info = $event->events_moreinfo;
-					$start = $event->events_startdate;
-					$end = $event->events_enddate;
 					$location = $event->events_location;
 					$link = $event->events_link;
 					$who = $event->events_whocome;
-				$data['formstart'] = form_open('edit/update/building_event', array('id' => 'bldEvent'));
+					$studprice = $event->events_studentprice;
+					$gstprice = $event->events_guestprice;
+					$s_array = explode("-", $event->events_startdate);
+					$e_array = explode("-", $event->events_enddate);
+				$data['formstart'] = form_open('edit/update_record/bld_event', array('id' => 'bldEvent'));
 					$data['name'] = form_input(array(
-											'name' => 'title',
+											'name' => 'name',
 											'type' => 'text',
 											'placeholder' => 'Title',
-											'value' => $title
+											'value' => $name
 					));
 					$data['content'] = form_textarea(array(
-											'name' => 'description',
+											'name' => 'desc',
 											'placeholder' => 'Content',
 											'value' => $desc
 					));
 					$data['moreinfo'] = form_textarea(array(
-											'name' => 'moreinfo',
+											'name' => 'info',
 											'placeholder' => 'More Info',
 											'value' => $info
 					));
@@ -226,7 +265,7 @@ class Edit extends CI_Controller {
 											'value' => $location
 					));
 	                $data['who'] = form_input(array(
-											'name' => 'whocome',
+											'name' => 'who',
 											'type' => 'text',
 											'placeholder' => 'Who can Enter',
 											'value' => $who
@@ -237,29 +276,67 @@ class Edit extends CI_Controller {
 											'placeholder' => 'Link',
 											'value' => $link
 					));
-					$data['start'] = form_input(array(
-											'name' => 'startdate',
+					$data['s_day'] = form_input(array(
+											'name' => 's_day',
 											'type' => 'text',
-											'placeholder' => 'Start',
-											'value' => $start
+											'class' => 'datefield day_field',
+											'placeholder' => 'DD',
+											'maxlength' => '2',
+											'value' => $s_array[2]
 					));
-					$data['end'] = form_input(array(
-											'name' => 'enddate',
+					$data['s_month'] = form_input(array(
+											'name' => 's_month',
 											'type' => 'text',
-											'placeholder' => 'End',
-											'value' => $end
+											'class' => 'datefield month_field',
+											'placeholder' => 'MM',
+											'maxlength' => '2',
+											'value' => $s_array[1]
+					));
+					$data['s_year'] = form_input(array(
+											'name' => 's_year',
+											'type' => 'text',
+											'class' => 'datefield year_field',
+											'placeholder' => 'YYYY',
+											'maxlength' => '4',
+											'value' => $s_array[0]
+					));
+					$data['e_day'] = form_input(array(
+											'name' => 'e_day',
+											'type' => 'text',
+											'class' => 'datefield day_field',
+											'placeholder' => 'DD',
+											'maxlength' => '2',
+											'value' => $e_array[2]
+					));
+					$data['e_month'] = form_input(array(
+											'name' => 'e_month',
+											'type' => 'text',
+											'class' => 'datefield month_field',
+											'placeholder' => 'MM',
+											'maxlength' => '2',
+											'value' => $e_array[1]
+					));
+					$data['e_year'] = form_input(array(
+											'name' => 'e_year',
+											'type' => 'text',
+											'class' => 'datefield year_field',
+											'placeholder' => 'YYYY',
+											'maxlength' => '4',
+											'value' => $s_array[0]
 					));
 					$data['studprice'] = form_input(array(
 											'name' => 'studprice',
 											'type' => 'text',
-											'placeholder' => 'Student Price'
+											'placeholder' => 'Student Price',
+											'value' => $studprice
 					));
 					$data['gstprice'] = form_input(array(
 											'name' => 'gstprice',
 											'type' => 'text',
-											'placeholder' => 'Guest Price'
+											'placeholder' => 'Guest Price',
+											'value' => $gstprice
 					));
-					$data['category'] = form_hidden('category_id', 3);
+					$data['category'] = form_hidden('event_category', 3);
 					$data['id'] = form_hidden('id', $id);
 				$this->load->view('templates/head',$data);
 				$this->load->view('building/building_header');
@@ -291,7 +368,7 @@ class Edit extends CI_Controller {
 					$data['uri'] = "programs";
 				$event = $this->update_model->getSingle('tbl_events', 'events_id', $record);
 					$id = $event->events_id;
-					$title = $event->events_title;
+					$name = $event->events_title;
 					$desc = $event->events_description;
 					$info = $event->events_moreinfo;
 					$start = $event->events_startdate;
@@ -299,20 +376,22 @@ class Edit extends CI_Controller {
 					$location = $event->events_location;
 					$link = $event->events_link;
 					$who = $event->events_whocome;
-				$data['formstart'] = form_open('edit/update/building_program', array('id' => 'bldEvent'));
+					$s_array = explode("-", $event->events_startdate);
+					$e_array = explode("-", $event->events_enddate);
+				$data['formstart'] = form_open('edit/update_record/bld_program', array('id' => 'bldProgram'));
 					$data['name'] = form_input(array(
-											'name' => 'title',
+											'name' => 'name',
 											'type' => 'text',
 											'placeholder' => 'Title',
-											'value' => $title
+											'value' => $name
 					));
 					$data['content'] = form_textarea(array(
-											'name' => 'description',
+											'name' => 'desc',
 											'placeholder' => 'Content',
 											'value' => $desc
 					));
 					$data['moreinfo'] = form_textarea(array(
-											'name' => 'moreinfo',
+											'name' => 'info',
 											'placeholder' => 'More Info',
 											'value' => $info
 					));
@@ -323,7 +402,7 @@ class Edit extends CI_Controller {
 											'value' => $location
 					));
 	                $data['who'] = form_input(array(
-											'name' => 'whocome',
+											'name' => 'who',
 											'type' => 'text',
 											'placeholder' => 'Who can Enter',
 											'value' => $who
@@ -334,17 +413,53 @@ class Edit extends CI_Controller {
 											'placeholder' => 'Link',
 											'value' => $link
 					));
-					$data['start'] = form_input(array(
-											'name' => 'startdate',
+					$data['s_day'] = form_input(array(
+											'name' => 's_day',
 											'type' => 'text',
-											'placeholder' => 'Start',
-											'value' => $start
+											'class' => 'datefield day_field',
+											'placeholder' => 'DD',
+											'maxlength' => '2',
+											'value' => $s_array[2]
 					));
-					$data['end'] = form_input(array(
-											'name' => 'enddate',
+					$data['s_month'] = form_input(array(
+											'name' => 's_month',
 											'type' => 'text',
-											'placeholder' => 'End',
-											'value' => $end
+											'class' => 'datefield month_field',
+											'placeholder' => 'MM',
+											'maxlength' => '2',
+											'value' => $s_array[1]
+					));
+					$data['s_year'] = form_input(array(
+											'name' => 's_year',
+											'type' => 'text',
+											'class' => 'datefield year_field',
+											'placeholder' => 'YYYY',
+											'maxlength' => '4',
+											'value' => $s_array[0]
+					));
+					$data['e_day'] = form_input(array(
+											'name' => 'e_day',
+											'type' => 'text',
+											'class' => 'datefield day_field',
+											'placeholder' => 'DD',
+											'maxlength' => '2',
+											'value' => $e_array[2]
+					));
+					$data['e_month'] = form_input(array(
+											'name' => 'e_month',
+											'type' => 'text',
+											'class' => 'datefield month_field',
+											'placeholder' => 'MM',
+											'maxlength' => '2',
+											'value' => $e_array[1]
+					));
+					$data['e_year'] = form_input(array(
+											'name' => 'e_year',
+											'type' => 'text',
+											'class' => 'datefield year_field',
+											'placeholder' => 'YYYY',
+											'maxlength' => '4',
+											'value' => $s_array[0]
 					));
 					$data['studprice'] = form_input(array(
 											'name' => 'studprice',
@@ -356,7 +471,7 @@ class Edit extends CI_Controller {
 											'type' => 'text',
 											'placeholder' => 'Guest Price'
 					));
-					$data['category'] = form_hidden('category_id', 4);
+					$data['category'] = form_hidden('event_category', 4);
 					$data['id'] = form_hidden('id', $id);
 				$this->load->view('templates/head',$data);
 				$this->load->view('building/building_header');
@@ -470,15 +585,22 @@ class Edit extends CI_Controller {
 
 	}
 
-	public function update($function){
-		$this->Update_model->$function();
+	public function update_record($function){
+		$this->update_model->$function();
 		
-		if($function == "building_contest"){
+		if($function == "bld_contest"){
 			$this->building('contests');
-		}elseif($function == "building_event"){
+		}elseif($function == "bld_event"){
 			$this->building('events');
-		}elseif($function == "building_program"){
+		}elseif($function == "bld_program"){
 			$this->building('programs');
 		}
+	}
+
+	public function delete_record($controller, $function, $record){
+		$this->load->model('delete_model');
+		$this->delete_model->$function($record);
+
+		if($function == "Building")
 	}
 }

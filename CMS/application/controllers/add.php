@@ -35,17 +35,17 @@ class Add extends CI_Controller {
 						array(
 							'field'   => 's_day', 
 		                    'label'   => 'Start Date - Day', 
-		                    'rules'   => 'xss_clean'
+		                    'rules'   => 'required|xss_clean'
 						),
 						array(
 							'field'   => 's_month', 
 		                    'label'   => 'Start Date - Month', 
-		                    'rules'   => 'xss_clean'
+		                    'rules'   => 'required|xss_clean'
 						),
 						array(
 							'field'   => 's_year', 
 		                    'label'   => 'Start Date - Year', 
-		                    'rules'   => 'xss_clean'
+		                    'rules'   => 'required|xss_clean'
 						),
 						array(
 							'field'   => 'e_day', 
@@ -71,10 +71,24 @@ class Add extends CI_Controller {
 							'field'   => 'event_category', 
 		                    'label'   => 'db_category', 
 		                    'rules'   => 'xss_clean'
+						),
+						array(
+							'field'   => 'studprice', 
+		                    'label'   => 'Student Price', 
+		                    'rules'   => 'xss_clean'
+						),
+						array(
+							'field'   => 'gstprice', 
+		                    'label'   => 'Guest Price', 
+		                    'rules'   => 'xss_clean'
+						),
+						array(
+							'field'   => 'info', 
+		                    'label'   => 'More info', 
+		                    'rules'   => 'xss_clean'
 						)
 					);
 		$this->form_validation->set_rules($rules);
-		$this->load->model('Insert_model');
 	}
 
 	public function index(){
@@ -92,6 +106,7 @@ class Add extends CI_Controller {
 			$data['pgTitle'] = "RezGuide Add A Notice";
 			$data['section'] = "Notices";
 			$data['subSection'] = "Complaint";
+			$data['subTitle'] = "Add Complaint";
 			$data['uri'] = "complaint";
 
 				$data['formstart'] = form_open('notices/insert', array('id' => 'warning'));
@@ -147,7 +162,7 @@ class Add extends CI_Controller {
 			$data['pgTitle'] = "RezGuide Add A Notice";
 			$data['section'] = "Notices";
 			$data['subSection'] = "Fine";
-
+			$data['subTitle'] = "Add Fine";
 			$data['uri'] = "fine";
 
 
@@ -204,7 +219,7 @@ class Add extends CI_Controller {
 			$data['pgTitle'] = "RezGuide Add A Notice";
 			$data['section'] = "Notices";
 			$data['subSection'] = "Warning";
-
+			$data['subTitle'] = "Add Warning";
 			$data['uri'] = "warning";
 
 
@@ -430,474 +445,6 @@ class Add extends CI_Controller {
 
 	}
 
-	public function building($page = null){
-		if($page == "contests"){
-			/**
-			*	Load standard form.
-			*/
-			if($this->form_validation->run() == FALSE){
-				$data['pgTitle'] = "RezGuide Add An Upcoming Event";
-				$data['ZoneTitle'] = "Add";
-				$data['sectTitle'] = "Building Contest";
-					$data['section'] = "Building";
-					$data['uri'] = "contests";
-				$data['formstart'] = form_open('add/insert_record/bld_contest', array('id' => 'bldContest'));
-					$data['name'] = form_input(array(
-											'name' => 'name',
-											'type' => 'text',
-											'placeholder' => 'Title',
-											'value' => set_value('name')
-					));
-					$data['content'] = form_textarea(array(
-											'name' => 'desc',
-											'placeholder' => 'Content',
-											'value' => set_value('desc')
-					));
-					$data['location'] = form_input(array(
-											'name' => 'location',
-											'type' => 'text',
-											'placeholder' => 'Location',
-											'value' => set_value('location')
-					));
-	                $data['who'] = form_input(array(
-											'name' => 'who',
-											'type' => 'text',
-											'placeholder' => 'Who can Enter',
-											'value' => set_value('who')
-					));
-					$data['link'] = form_input(array(
-											'name' => 'link',
-											'type' => 'text',
-											'placeholder' => 'Link',
-											'value' => set_value('link')
-					));
-					$data['s_day'] = form_input(array(
-											'name' => 's_day',
-											'type' => 'text',
-											'class' => 'datefield day_field',
-											'placeholder' => 'DD',
-											'maxlength' => '2',
-											'value' => set_value('s_day')
-					));
-					$data['s_month'] = form_input(array(
-											'name' => 's_month',
-											'type' => 'text',
-											'class' => 'datefield month_field',
-											'placeholder' => 'MM',
-											'maxlength' => '2',
-											'value' => set_value('s_month')
-					));
-					$data['s_year'] = form_input(array(
-											'name' => 's_year',
-											'type' => 'text',
-											'class' => 'datefield year_field',
-											'placeholder' => 'YYYY',
-											'maxlength' => '4',
-											'value' => set_value('s_year')
-					));
-					$data['e_day'] = form_input(array(
-											'name' => 'e_day',
-											'type' => 'text',
-											'class' => 'datefield day_field',
-											'placeholder' => 'DD',
-											'maxlength' => '2',
-											'value' => set_value('e_day')
-					));
-					$data['e_month'] = form_input(array(
-											'name' => 'e_month',
-											'type' => 'text',
-											'class' => 'datefield month_field',
-											'placeholder' => 'MM',
-											'maxlength' => '2',
-											'value' => set_value('e_month')
-					));
-					$data['e_year'] = form_input(array(
-											'name' => 'e_year',
-											'type' => 'text',
-											'class' => 'datefield year_field',
-											'placeholder' => 'YYYY',
-											'maxlength' => '4',
-											'value' => set_value('e_year')
-					));
-					$data['category'] = form_hidden('contest_category', 3);
-				$this->load->view('templates/head',$data);
-				$this->load->view('building/building_header');
-				$this->load->view('building/building_options_menu');
-				$this->load->view('add/contestform');
-				$this->load->view('templates/footer');
-				$this->load->view('templates/close');
-			}else{
-			/**
-			*	Validation has run. Either reload form with errors, or with success message.
-			*/
-				$data['pgTitle'] = "RezGuide Add An Upcoming Event";
-				$data['ZoneTitle'] = "Add";
-				$data['sectTitle'] = "Building Contest";
-					$data['section'] = "Building";
-					$data['uri'] = "contests";
-				$data['formstart'] = form_open('add/insert_record/bld_contest', array('id' => 'bldContest'));
-					$data['name'] = form_input(array(
-											'name' => 'name',
-											'type' => 'text',
-											'placeholder' => 'Title'
-					));
-					$data['content'] = form_textarea(array(
-											'name' => 'desc',
-											'placeholder' => 'Content'
-					));
-					$data['location'] = form_input(array(
-											'name' => 'location',
-											'type' => 'text',
-											'placeholder' => 'Location'
-					));
-	                $data['who'] = form_input(array(
-											'name' => 'who',
-											'type' => 'text',
-											'placeholder' => 'Who can Enter'
-					));
-					$data['link'] = form_input(array(
-											'name' => 'link',
-											'type' => 'text',
-											'placeholder' => 'Link'
-					));
-					$data['s_day'] = form_input(array(
-											'name' => 's_day',
-											'type' => 'text',
-											'class' => 'datefield day_field',
-											'placeholder' => 'DD'
-					));
-					$data['s_month'] = form_input(array(
-											'name' => 's_month',
-											'type' => 'text',
-											'class' => 'datefield month_field',
-											'placeholder' => 'MM',
-											'maxlength' => '2'
-					));
-					$data['s_year'] = form_input(array(
-											'name' => 's_year',
-											'type' => 'text',
-											'class' => 'datefield year_field',
-											'placeholder' => 'YYYY',
-											'maxlength' => '4'
-					));
-					$data['e_day'] = form_input(array(
-											'name' => 'e_day',
-											'type' => 'text',
-											'class' => 'datefield day_field',
-											'placeholder' => 'DD',
-											'maxlength' => '2'
-					));
-					$data['e_month'] = form_input(array(
-											'name' => 'e_month',
-											'type' => 'text',
-											'class' => 'datefield month_field',
-											'placeholder' => 'MM',
-											'maxlength' => '2'
-					));
-					$data['e_year'] = form_input(array(
-											'name' => 'e_year',
-											'type' => 'text',
-											'class' => 'datefield year_field',
-											'placeholder' => 'YYYY',
-											'maxlength' => '4'
-					));
-					$data['category'] = form_hidden('contest_category', 3);
-				// If / Else statement in view handles success or failure message.
-				$data['success'] = "added successfully. Would you like to add another?";
-				//
-				$this->load->view('templates/head',$data);
-				$this->load->view('building/building_header');
-				$this->load->view('building/building_options_menu');
-				$this->load->view('add/contestform');
-				$this->load->view('templates/footer');
-				$this->load->view('templates/close');
-			}
-		}elseif($page == "events"){
-			if($this->form_validation->run() == FALSE){
-			/**
-			*	Load standard form.
-			*/
-				$data['pgTitle'] = "RezGuide Add A Monthly Event";
-				$data['ZoneTitle'] = "Add";
-				$data['sectTitle'] = "Building Event";
-					$data['section'] = "Building";
-					$data['uri'] = "events";
-				$data['formstart'] = form_open('add/insert_record/bld_event', array('id' => 'bldContest'));
-					$data['name'] = form_input(array(
-											'name' => 'name',
-											'type' => 'text',
-											'placeholder' => 'Title'
-					));
-					$data['content'] = form_textarea(array(
-											'name' => 'desc',
-											'placeholder' => 'Content'
-					));
-					$data['moreinfo'] = form_textarea(array(
-											'name' => 'info',
-											'placeholder' => 'More Info'
-					));
-					$data['location'] = form_input(array(
-											'name' => 'location',
-											'type' => 'text',
-											'placeholder' => 'Location'
-					));
-	                $data['who'] = form_input(array(
-											'name' => 'who',
-											'type' => 'text',
-											'placeholder' => 'Who can Enter'
-					));
-					$data['link'] = form_input(array(
-											'name' => 'link',
-											'type' => 'text',
-											'placeholder' => 'Link'
-					));
-					$data['start'] = form_input(array(
-											'name' => 'start',
-											'type' => 'text',
-											'placeholder' => 'Start'
-					));
-					$data['end'] = form_input(array(
-											'name' => 'end',
-											'type' => 'text',
-											'placeholder' => 'End'
-					));
-					$data['studprice'] = form_input(array(
-											'name' => 'studprice',
-											'type' => 'text',
-											'placeholder' => 'Student Price'
-					));
-					$data['gstprice'] = form_input(array(
-											'name' => 'gstprice',
-											'type' => 'text',
-											'placeholder' => 'Guest Price'
-					));
-					$data['category'] = form_hidden('events_category', 3);
-				$this->load->view('templates/head',$data);
-				$this->load->view('building/building_header');
-				$this->load->view('building/building_options_menu');
-				$this->load->view('add/eventform');
-				$this->load->view('templates/footer');
-				$this->load->view('templates/close');
-			}else{
-			/**
-			*	Validation has run. Either reload form with errors, or with success message.
-			*/
-				$data['pgTitle'] = "RezGuide Add A Monthly Event";
-				$data['ZoneTitle'] = "Add";
-				$data['sectTitle'] = "Building Event";
-					$data['section'] = "Building";
-					$data['uri'] = "events";
-				$data['formstart'] = form_open('add/insert_record/bld_event', array('id' => 'bldContest'));
-					$data['name'] = form_input(array(
-											'name' => 'name',
-											'type' => 'text',
-											'placeholder' => 'Title'
-					));
-					$data['content'] = form_textarea(array(
-											'name' => 'desc',
-											'placeholder' => 'Content'
-					));
-					$data['moreinfo'] = form_textarea(array(
-											'name' => 'info',
-											'placeholder' => 'More Info'
-					));
-					$data['location'] = form_input(array(
-											'name' => 'location',
-											'type' => 'text',
-											'placeholder' => 'Location'
-					));
-	                $data['who'] = form_input(array(
-											'name' => 'who',
-											'type' => 'text',
-											'placeholder' => 'Who can Enter'
-					));
-					$data['link'] = form_input(array(
-											'name' => 'link',
-											'type' => 'text',
-											'placeholder' => 'Link'
-					));
-					$data['start'] = form_input(array(
-											'name' => 'start',
-											'type' => 'text',
-											'placeholder' => 'Start'
-					));
-					$data['end'] = form_input(array(
-											'name' => 'end',
-											'type' => 'text',
-											'placeholder' => 'End'
-					));
-					$data['studprice'] = form_input(array(
-											'name' => 'studprice',
-											'type' => 'text',
-											'placeholder' => 'Student Price'
-					));
-					$data['gstprice'] = form_input(array(
-											'name' => 'gstprice',
-											'type' => 'text',
-											'placeholder' => 'Guest Price'
-					));
-					$data['category'] = form_hidden('events_category', 3);
-				// If / Else statement in view handles success or failure message.
-				$data['success'] = "added successfully. Would you like to add another?";
-				//
-				$this->load->view('templates/head',$data);
-				$this->load->view('building/building_header');
-				$this->load->view('building/building_options_menu');
-				$this->load->view('add/eventform');
-				$this->load->view('templates/footer');
-				$this->load->view('templates/close');
-			}
-		}elseif($page == "programs"){
-			if($this->form_validation->run() == FALSE){
-			/**
-			*	Load standard form.
-			*/
-				$data['pgTitle'] = "RezGuide Add An Event";
-				$data['ZoneTitle'] = "Add";
-				$data['sectTitle'] = "Building Program";
-					$data['section'] = "Building";
-					$data['uri'] = "programs";
-				$data['subSection'] = "Add a Building Program";
-				$data['formstart'] = form_open('add/insert_record/bld_program', array('id' => 'fsuEvent'));
-					$data['name'] = form_input(array(
-											'name' => 'name',
-											'type' => 'text',
-											'placeholder' => 'Title'
-					));
-					$data['content'] = form_textarea(array(
-											'name' => 'desc',
-											'placeholder' => 'Content'
-					));
-					$data['moreinfo'] = form_textarea(array(
-											'name' => 'info',
-											'placeholder' => 'More Info'
-					));
-
-					$data['location'] = form_input(array(
-											'name' => 'location',
-											'type' => 'text',
-											'placeholder' => 'Location'
-					));
-	                $data['who'] = form_input(array(
-											'name' => 'who',
-											'type' => 'text',
-											'placeholder' => 'Who can Enter'
-					));
-					$data['link'] = form_input(array(
-											'name' => 'link',
-											'type' => 'text',
-											'placeholder' => 'Link'
-					));
-					$data['start'] = form_input(array(
-											'name' => 'start',
-											'type' => 'text',
-											'placeholder' => 'Start'
-					));
-					$data['end'] = form_input(array(
-											'name' => 'end',
-											'type' => 'text',
-											'placeholder' => 'End'
-					));
-					$data['studprice'] = form_input(array(
-											'name' => 'studprice',
-											'type' => 'text',
-											'placeholder' => 'Student Price'
-					));
-					$data['gstprice'] = form_input(array(
-											'name' => 'gstprice',
-											'type' => 'text',
-											'placeholder' => 'Guest Price'
-					));
-					$data['category'] = form_hidden('events_category', 4);
-				$this->load->view('templates/head',$data);
-				$this->load->view('add/add_header');
-				$this->load->view('building/building_options_menu');
-				$this->load->view('add/eventform');
-				$this->load->view('templates/footer');
-				$this->load->view('templates/close');
-			}else{
-			/**
-			*	Validation has run. Either reload form with errors, or with success message.
-			*/
-				$data['pgTitle'] = "RezGuide Add An Event";
-				$data['ZoneTitle'] = "Add";
-				$data['sectTitle'] = "Building Program";
-					$data['section'] = "Building";
-					$data['uri'] = "programs";
-				$data['subSection'] = "Add a Building Program";
-				$data['formstart'] = form_open('add/insert_record/bld_program', array('id' => 'fsuEvent'));
-					$data['name'] = form_input(array(
-											'name' => 'name',
-											'type' => 'text',
-											'placeholder' => 'Title'
-					));
-					$data['content'] = form_textarea(array(
-											'name' => 'desc',
-											'placeholder' => 'Content'
-					));
-					$data['moreinfo'] = form_textarea(array(
-											'name' => 'info',
-											'placeholder' => 'More Info'
-					));
-
-					$data['location'] = form_input(array(
-											'name' => 'location',
-											'type' => 'text',
-											'placeholder' => 'Location'
-					));
-	                $data['who'] = form_input(array(
-											'name' => 'who',
-											'type' => 'text',
-											'placeholder' => 'Who can Enter'
-					));
-					$data['link'] = form_input(array(
-											'name' => 'link',
-											'type' => 'text',
-											'placeholder' => 'Link'
-					));
-					$data['start'] = form_input(array(
-											'name' => 'start',
-											'type' => 'text',
-											'placeholder' => 'Start'
-					));
-					$data['end'] = form_input(array(
-											'name' => 'end',
-											'type' => 'text',
-											'placeholder' => 'End'
-					));
-					$data['studprice'] = form_input(array(
-											'name' => 'studprice',
-											'type' => 'text',
-											'placeholder' => 'Student Price'
-					));
-					$data['gstprice'] = form_input(array(
-											'name' => 'gstprice',
-											'type' => 'text',
-											'placeholder' => 'Guest Price'
-					));
-					$data['category'] = form_hidden('events_category', 4);
-				// If / Else statement in view handles success or failure message.
-				$data['success'] = "added successfully. Would you like to add another?";
-				//
-				$this->load->view('templates/head',$data);
-				$this->load->view('add/add_header');
-				$this->load->view('building/building_options_menu');
-				$this->load->view('add/eventform');
-				$this->load->view('templates/footer');
-				$this->load->view('templates/close');
-			}
-		}else{
-			$data['pgTitle'] = "RezGuide Building Events Main Menu";
-			$data['section'] = "Building";
-			$this->load->view('templates/head',$data);
-			$this->load->view('add/add_header');
-			$this->load->view('add/building');
-			$this->load->view('templates/footer');
-			$this->load->view('templates/close');
-		}
-
-	}
-
 	public function fsu($page = null){
 		// $this->load->model('Notices_model');
 		if($page == "contests"){
@@ -1085,6 +632,7 @@ class Add extends CI_Controller {
 	}
 	
 	public function insert_record($function) {
+		$this->load->model('insert_model');
 		if ($this->form_validation->run() != FALSE){
 			$this->Insert_model->$function();
 		}
@@ -1103,24 +651,6 @@ class Add extends CI_Controller {
 			$this->fsu('events');
 		}
 
-		if($function == "bld_contest"){
-			$this->building('contests');
-		}elseif($function == "bld_event"){
-			$this->building('events');
-		}elseif($function == "bld_program"){
-			$this->building('programs');
-		}
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
