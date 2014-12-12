@@ -106,6 +106,7 @@ class Add extends CI_Controller {
 			$data['pgTitle'] = "RezGuide Add A Notice";
 			$data['section'] = "Notices";
 			$data['subSection'] = "Complaint";
+			$data['subTitle'] = "Add Complaint";
 			$data['uri'] = "complaint";
 
 				$data['formstart'] = form_open('notices/insert', array('id' => 'warning'));
@@ -161,7 +162,7 @@ class Add extends CI_Controller {
 			$data['pgTitle'] = "RezGuide Add A Notice";
 			$data['section'] = "Notices";
 			$data['subSection'] = "Fine";
-
+			$data['subTitle'] = "Add Fine";
 			$data['uri'] = "fine";
 
 
@@ -218,7 +219,7 @@ class Add extends CI_Controller {
 			$data['pgTitle'] = "RezGuide Add A Notice";
 			$data['section'] = "Notices";
 			$data['subSection'] = "Warning";
-
+			$data['subTitle'] = "Add Warning";
 			$data['uri'] = "warning";
 
 
