@@ -55,7 +55,7 @@
         <div class="row">
         	<div class="small-3 columns">
             	<div class="edit">
-                    <a href="<?php echo base_url(); ?>index.php/Building/events/edit/<?php echo $row->events_id; ?>">
+                    <a href="<?php echo base_url(); ?>index.php/Building/<?php echo $uri; ?>/edit/<?php echo $row->events_id; ?>">
                         <img src="<?php echo base_url(); ?>img/CMS_editPencil.png" alt="Edit">
                     </a>
                 </div>

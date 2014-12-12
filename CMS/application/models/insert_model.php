@@ -123,12 +123,16 @@ class Insert_model extends CI_Model {
 	}
 
 	public function bld_program() {
+		$startdate = $_POST['s_year'] . "-" . $_POST['s_month'] . "-" . $_POST['s_day'];
+		$enddate = $_POST['e_year'] . "-" . $_POST['e_month'] . "-" . $_POST['e_day'];
+		$caldate = $_POST['s_year'] . "-" . $_POST['s_month'] . "-" . $_POST['s_day'];
 		$record = array(
 					'events_title' => $_POST['name'],
 					'events_description' => $_POST['desc'],
 					'events_location' => $_POST['location'],
-					'events_startdate' => $_POST['start'],
-					'events_enddate' => $_POST['end'],
+					'events_startdate' => $startdate,
+					'events_caldate' => $startdate,
+					'events_enddate' => $enddate,
 					'events_link' => $_POST['link'],
 					'events_whocome' => $_POST['who'],
 					'eventsCat_id' => $_POST['events_category']
