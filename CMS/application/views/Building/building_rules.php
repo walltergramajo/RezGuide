@@ -1,5 +1,29 @@
+                    <section id="popup">
+                        <div class="row">
+                            <div class="small-11 columns">
+                                <p id="deleteNot">Are you sure you want to permanently delete notice *insert notice name here*?</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-12 small-pull-1 columns">
+                                <ul id="deleteOpt">
+                                    <li>
+                                        <a id="cancelDel" href="#">
+                                            <img src="http://localhost:8888/ryan/RezGuide/CMS/img/cancel.png" alt="Cancel Delete">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a id="deleteMe">
+                                            <img src="http://localhost:8888/ryan/RezGuide/CMS/img/deleteIcon.png" alt="Delete">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
 <section>
-    	<form>
+    	<?php echo $formstart; ?>
             <div class="row" id="mainInfo">
                 <div class="small-12 columns">
                     <div class="row">
@@ -49,7 +73,7 @@
                                     <p class="pointsHere"><?php echo word_limiter($row->rules_description, 5); ?></p>
                                 </div>
                                 <div class="small-1 columns">
-                                    <a href="#">
+                                    <a href="#" class="del" data-record="<?php echo $row->rules_id; ?>" data-controller="<?php echo $controller; ?>" data-function="<?php echo $function; ?>">
                                         <img class="delete" src="<?php echo base_url(); ?>img/CMS_delete.png" alt="Delete" >
                                     </a>
                                 </div>
@@ -90,18 +114,18 @@
                     </div>
 
                     <div class="small-5 columns">
-                        <?php echo $formstart; ?>
                             <h2 class="addPointsHeader">Add New:</h2>
                             <?php echo $name; ?>
                             <?php echo $desc; ?>
-                        </form>
+                            <?php if(isset($id)) { echo $id; } ?>
                     </div>
 
             </div>
 
+
             <div id="submitRow" class="row">
                 <div class="small-2 small-push-9 columns">
-                   <input type="submit" class="submitButton" value="Add" alt="Send!">
+                   <input type="submit" class="submitButton" value="Submit" alt="Send!">
                 </div>
             </div>
         </form>

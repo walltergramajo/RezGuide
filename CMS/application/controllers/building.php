@@ -83,6 +83,8 @@
 		if($record != null){
 			$this->load->helper('text');
 			$data['pgTitle'] = "Building Rules &amp; Regulations";
+				$data['controller'] = "Building";
+				$data['function'] = "Rules";
 			$data['subTitle'] = "Rules and Regulations";
 			$data['rules'] =$this->update_model->getAll('tbl_rules');
 			$rule = $this->update_model->getSingle('tbl_rules', 'rules_id', $record);
@@ -108,10 +110,13 @@
 			$this->load->view('building/building_options_menu');
 			$this->load->view('building/building_rules');
 			$this->load->view('templates/footer');
+			$this->load->view('deletescript.php');
 			$this->load->view('templates/close');
 		}else{
 			$this->load->helper('text');
 			$data['pgTitle'] = "Building Rules &amp; Regulations";
+				$data['controller'] = "Building";
+				$data['function'] = "Rules";
 			$data['subTitle'] = "Rules and Regulations";
 			$data['rules'] = $this->update_model->getAll('tbl_rules');
 			$data['formstart'] = form_open('building/insert_record/bld_rule', array('id' => 'bldRule'));
@@ -131,6 +136,7 @@
 			$this->load->view('building/building_options_menu');
 			$this->load->view('building/building_rules');
 			$this->load->view('templates/footer');
+			$this->load->view('deletescript.php');
 			$this->load->view('templates/close');
 		}
 	}
@@ -140,7 +146,7 @@
 		$this->insert_model->$function();
 
 		if($function == "bld_rule"){
-			$this->building('rules');
+			$this->rules();
 		}
 
 	}
@@ -149,7 +155,16 @@
 		$this->update_model->$function();
 		
 		if($function == "bld_rule"){
-			$this->building('rules');
+			$this->rules();
+		}
+	}
+
+	public function delete_record($function, $record){
+		$this->load->model('delete_model');
+		$this->delete_model->$function($record);
+
+		if($function == "Rules"){
+			$this->rules();
 		}
 	}
 }

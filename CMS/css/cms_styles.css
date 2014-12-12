@@ -412,9 +412,27 @@ body {
 		background-color: #65666a;
 		position: fixed;
 		z-index: 1;
-		opacity: 0.9;
-		width: 1440px;
-		margin-top: -350px;
+		opacity: 0;
+		width: 100%;
+		-webkit-transform: translateY(50px);
+		-moz-transform: translateY(50px);
+		-o-transform: translateY(50px);
+		transform: translateY(50px);
+		-webkit-transition: all .5s ease;
+		-moz-transition: all .5s ease;
+		-o-transition: all .5s ease;
+		transition: all .5s ease;
+		visibility: hidden;
+		/*margin-top: -350px;*/
+	}
+
+	.modalup {
+		opacity: 0.9 !important;
+		visibility: visible !important;
+		-webkit-transform: translateY(0) !important;
+		-moz-transform: translateY(0) !important;
+		-o-transform: translateY(0) !important;
+		transform: translateY(0) !important;
 	}
 	
 	#deleteNot {
@@ -1305,9 +1323,9 @@ button, .button {
 }
 
 
-#popup {
-	display: none; /* Temporarily hidden to work on Edit section of CMS. -RM */
-}
+/*#popup {
+	display: none;  Temporarily hidden to work on Edit section of CMS. -RM 
+}*/
 
 /**-------- Prototype styling for Live Search Results Box*/
 #autoSuggestionsList > li {

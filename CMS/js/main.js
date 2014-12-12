@@ -263,8 +263,6 @@ $('#maintenance_type').on('change', function() {
 
 window.onload = init();
 
-
-
 /*// JavaScript Document
 
 //Global variables

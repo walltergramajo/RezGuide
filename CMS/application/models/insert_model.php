@@ -141,7 +141,7 @@ class Insert_model extends CI_Model {
 		$record = array(
 					'rules_title' => $_POST['name'],
 					'rules_description' => $_POST['desc'],
-					'rules_date' => date(l jS\, Y)
+					'rules_date' => date('F jS\, Y')
 				);
 
 		$this->db->insert('tbl_rules', $record);
