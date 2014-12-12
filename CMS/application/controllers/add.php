@@ -286,6 +286,7 @@ class Add extends CI_Controller {
 		if($page == "pg3") {
 			$data['pgTitle'] = "RezGuide Add A Student";
 			$data['section'] = "Add A New Student";
+			$data['subTitle'] = "Add Student Info";
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
 			$this->load->view('students/students_options_menu');
@@ -295,6 +296,7 @@ class Add extends CI_Controller {
 		}else if($page == "pg2") {
 			$data['pgTitle'] = "RezGuide Add A Student";
 			$data['section'] = "Add A New Student";
+			$data['subTitle'] = "Add Student Info";
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
 			$this->load->view('students/students_options_menu');
@@ -304,6 +306,7 @@ class Add extends CI_Controller {
 		}else{
 			$data['pgTitle'] = "RezGuide Add A Student";
 			$data['section'] = "Add A New Student";
+			$data['subTitle'] = "Add Student Info";
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
 			$this->load->view('students/students_options_menu');
@@ -453,6 +456,7 @@ class Add extends CI_Controller {
 			$data['uri'] = "contests";
 			$data['ZoneTitle'] = "Add";
 			$data['sectTitle'] = "FSU Contest";
+			$data['subTitle'] = "Add FSU Contest";
 
 			$data['subSection'] = "Add an FSU Contest";
 
@@ -464,6 +468,10 @@ class Add extends CI_Controller {
 				));
 				$data['content'] = form_textarea(array(
 										'name' => 'desc',
+										'placeholder' => 'Content'
+				));
+				$data['moreinfo'] = form_textarea(array(
+										'name' => 'info',
 										'placeholder' => 'Content'
 				));
 				$data['location'] = form_input(array(
@@ -481,15 +489,47 @@ class Add extends CI_Controller {
 										'type' => 'text',
 										'placeholder' => 'Link'
 				));
-				$data['start'] = form_input(array(
-										'name' => 'start',
+				$data['s_day'] = form_input(array(
+										'name' => 's_day',
 										'type' => 'text',
-										'placeholder' => 'Start'
+										'class' => 'datefield day_field',
+										'placeholder' => 'DD',
+										'maxlength' => '2'
 				));
-				$data['end'] = form_input(array(
-										'name' => 'end',
+				$data['s_month'] = form_input(array(
+										'name' => 's_month',
 										'type' => 'text',
-										'placeholder' => 'End'
+										'class' => 'datefield month_field',
+										'placeholder' => 'MM',
+										'maxlength' => '2'
+				));
+				$data['s_year'] = form_input(array(
+										'name' => 's_year',
+										'type' => 'text',
+										'class' => 'datefield year_field',
+										'placeholder' => 'YYYY',
+										'maxlength' => '4'
+				));
+				$data['e_day'] = form_input(array(
+										'name' => 'e_day',
+										'type' => 'text',
+										'class' => 'datefield day_field',
+										'placeholder' => 'DD',
+										'maxlength' => '2'
+				));
+				$data['e_month'] = form_input(array(
+										'name' => 'e_month',
+										'type' => 'text',
+										'class' => 'datefield month_field',
+										'placeholder' => 'MM',
+										'maxlength' => '2'
+				));
+				$data['e_year'] = form_input(array(
+										'name' => 'e_year',
+										'type' => 'text',
+										'class' => 'datefield year_field',
+										'placeholder' => 'YYYY',
+										'maxlength' => '4'
 				));
 				$data['studprice'] = form_input(array(
 										'name' => 'studprice',
@@ -513,6 +553,7 @@ class Add extends CI_Controller {
 			$data['section'] = "FSU";
 			$data['ZoneTitle'] = "Add";
 			$data['sectTitle'] = "FSU Event";
+			$data['subTitle'] = "Add FSU Event";
 			$data['uri'] = "events";
 
 			$data['subSection'] = "Add an FSU Event";
@@ -525,6 +566,10 @@ class Add extends CI_Controller {
 				));
 				$data['content'] = form_textarea(array(
 										'name' => 'desc',
+										'placeholder' => 'Content'
+				));
+				$data['moreinfo'] = form_textarea(array(
+										'name' => 'info',
 										'placeholder' => 'Content'
 				));
 				$data['location'] = form_input(array(
@@ -542,15 +587,47 @@ class Add extends CI_Controller {
 										'type' => 'text',
 										'placeholder' => 'Link'
 				));
-				$data['start'] = form_input(array(
-										'name' => 'start',
+				$data['s_day'] = form_input(array(
+										'name' => 's_day',
 										'type' => 'text',
-										'placeholder' => 'Start'
+										'class' => 'datefield day_field',
+										'placeholder' => 'DD',
+										'maxlength' => '2'
 				));
-				$data['end'] = form_input(array(
-										'name' => 'end',
+				$data['s_month'] = form_input(array(
+										'name' => 's_month',
 										'type' => 'text',
-										'placeholder' => 'End'
+										'class' => 'datefield month_field',
+										'placeholder' => 'MM',
+										'maxlength' => '2'
+				));
+				$data['s_year'] = form_input(array(
+										'name' => 's_year',
+										'type' => 'text',
+										'class' => 'datefield year_field',
+										'placeholder' => 'YYYY',
+										'maxlength' => '4'
+				));
+				$data['e_day'] = form_input(array(
+										'name' => 'e_day',
+										'type' => 'text',
+										'class' => 'datefield day_field',
+										'placeholder' => 'DD',
+										'maxlength' => '2'
+				));
+				$data['e_month'] = form_input(array(
+										'name' => 'e_month',
+										'type' => 'text',
+										'class' => 'datefield month_field',
+										'placeholder' => 'MM',
+										'maxlength' => '2'
+				));
+				$data['e_year'] = form_input(array(
+										'name' => 'e_year',
+										'type' => 'text',
+										'class' => 'datefield year_field',
+										'placeholder' => 'YYYY',
+										'maxlength' => '4'
 				));
 				$data['studprice'] = form_input(array(
 										'name' => 'studprice',

@@ -6,7 +6,6 @@ class Building extends CI_Controller {
 		parent::__construct();
 		$this->load->helper('form');
 		$this->load->model('update_model');
-		$this->load->helper('form');
 		$this->load->library('form_validation');
 		$rules = array(
 						array(
