@@ -21,17 +21,19 @@
     <div class="genInfoContent">
       <div class="row">
         <dl class="accordion" data-accordion>
-          <dd>
-            <a href="#panel81" onClick="highlightLink(this);"><span class="complaintText">The Equalizer</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
-            <div id="panel81" class="content">
-              <p class="dateColor">October 1</p>
-              <p class="time">6:30pm</p>
-              <p class="location">Rainbow Cinemas (CITI Plaza)</p>
-              <p>The October 1st film is The Equalizer. Denzel Washington plays McCall, a man who believes he has put his mysterious past behind him and dedicated himself to beginning a new, quiet life. But when McCall meets Teri, a young girl under the control of ultra-violent Russian gangsters, he can't stand idly by - he has to help her.</p>
-              <a href="http://fsu.ca/calendar.php"><p>More Info</p></a>
-            </div>
-          </dd>
-          <dd>
+          <?php foreach ($results as $row): ?>
+            <dd>
+              <a href="#panel<?php echo $row->city_id ?>" onClick="highlightLink(this);"><span class="complaintText"><?php echo $row->city_title ?></span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
+              <div id="panel<?php echo $row->city_id ?>" class="content">
+                <p class="dateColor"><?php echo $row->city_hours ?></p>
+                <!-- <p class="time">6:30pm</p> -->
+                <p class="location"><?php echo $row->city_location ?></p>
+                <p><?php echo $row->city_description ?></p>
+                <a href="<?php echo $row->city_link ?>"><p>More Info</p></a>
+              </div>
+            </dd>
+          <?php endforeach; ?>
+          <!-- <dd>
             <a href="#panel82" onClick="highlightLink(this);"><span class="complaintText">Gone Girl</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
             <div id="panel82" class="content">
               <p class="dateColor">October 8</p>
@@ -60,7 +62,7 @@
               <p>The October 1st film is The Judge. A big-city lawyer returns home after the death of his mother, only to learn that his estranged father, the town's judge, is suspected of murder. He sets out to discover the truth and along the way reconnects with the family he walked away from years before. </p>
               <a href="http://fsu.ca/calendar.php"><p>More Info</p></a>
             </div>
-          </dd>
+          </dd> -->
         </dl>
       </div>
     </div> 

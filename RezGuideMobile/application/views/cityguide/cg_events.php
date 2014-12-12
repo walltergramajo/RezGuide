@@ -21,16 +21,18 @@
     <div class="genInfoContent">
       <div class="row">
         <dl class="accordion" data-accordion>
-          <dd>
-            <a href="#panel73" onClick="highlightLink(this);"><span class="complaintText">Road Hockey Tournament</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
-            <div id="panel73" class="content">
-              <p class="dateColor">September 4</p>
-              <p class="location">Victoria Park</p>
-              <p>4th Annual 3 on 3 hockey tournament in the heart of downtown London. Plenty of fun activities for the family and a variety of delicious foods to enjoy. </p>
-              <a href="http://www.londontourism.ca/Events"><p>More Info</p></a>
-            </div>
-          </dd>
-          <dd>
+          <?php foreach ($results as $row): ?>
+            <dd>
+              <a href="#panel<?php echo $row->city_id ?>" onClick="highlightLink(this);"><span class="complaintText"><?php echo $row->city_title ?></span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
+              <div id="panel<?php echo $row->city_id ?>" class="content">
+                <p class="dateColor"><?php echo $row->city_hours ?></p>
+                <p class="location"><?php echo $row->city_location ?></p>
+                <p><?php echo $row->city_description ?></p>
+                <a href="<?php echo $row->city_link ?>"><p>More Info</p></a>
+              </div>
+            </dd>
+          <?php endforeach; ?>
+          <!-- <dd>
             <a href="#panel74" onClick="highlightLink(this);"><span class="complaintText">Color Run</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
             <div id="panel74" class="content">
               <p class="dateColor">September 4</p>
@@ -56,7 +58,7 @@
               <p>Join us in the opening of the public skating rink in Victoria Park and join in on the fun. Don't have skates? That's fine we offer skate rentals. </p>
               <a href="http://www.londontourism.ca/Events"><p>More Info</p></a>
             </div>
-          </dd>
+          </dd> -->
         </dl>
       </div>
     </div> 

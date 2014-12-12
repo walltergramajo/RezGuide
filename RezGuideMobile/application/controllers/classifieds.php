@@ -8,19 +8,22 @@ class Classifieds extends CI_Controller {
 	}
 
 	public function index(){
-		$this->load->view('templates/head');
+		$data['results'] = $this->Classifieds_model->getClassifiedsBuy();
+		$this->load->view('templates/head',$data);
 		$this->load->view('classifieds/classifieds_buy');
 		$this->load->view('templates/close');
 	}
 
 	public function buy(){
-		$this->load->view('templates/head');
+		$data['results'] = $this->Classifieds_model->getClassifiedsBuy();
+		$this->load->view('templates/head',$data);
 		$this->load->view('classifieds/classifieds_buy');
 		$this->load->view('templates/close');
 	}
 
 	public function sell(){
-		$this->load->view('templates/head');
+		$data['results'] = $this->Classifieds_model->getClassifiedsSell();
+		$this->load->view('templates/head',$data);
 		$this->load->view('classifieds/classifieds_sell');
 		$this->load->view('templates/close');
 	}

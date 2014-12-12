@@ -4,7 +4,7 @@ class Events extends CI_Controller {
 	public function index(){
 		$this->load->model('Events_model');
 		$data['results'] = $this->Events_model->getEvents(4);
-		$this->load->view('templates/head');
+		$this->load->view('templates/head',$data);
 		$this->load->view('events/events_programs');
 		$this->load->view('templates/close');
 	}

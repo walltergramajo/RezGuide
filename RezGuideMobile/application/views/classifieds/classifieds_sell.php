@@ -19,28 +19,30 @@
 			<div class="content">
 				<div class="row">
     			<dl class="accordion" data-accordion>
-  					<dd>
-              <a href="#panel17" onClick="highlightLink(this);"><img class="saleItem" src="<?php echo base_url(); ?>img/itemShoes.png" alt="shoes"> <span class="saleText">SHOES</span> <span class="itemPrice">$999</span><span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
-  						<div id="panel17" class="content">
-    						<p class="classifiedsDescription"><span class="classifiedsUser">user1324 </span><br> Price: <span class="price">$50.00</span> OBO.<br>Contact: <span class="classifiedsEmail">user1324@gmail.com</span></p>
-                <div class="imageContainer">
-                  <a href="#" data-reveal-id="myModal"><img class="saleItem2" src="<?php echo base_url(); ?>img/itemShoes.png" alt="item1"></a>
-                  <a href="#" data-reveal-id="myModal"><img class="saleItem2" src="<?php echo base_url(); ?>img/itemShoes.png" alt="item1"></a>
-                  <a href="#" data-reveal-id="myModal"><img class="saleItem2" src="<?php echo base_url(); ?>img/itemShoes.png" alt="item1"></a>
-                </div> 
-                <div id="myModal" class="reveal-modal" data-reveal>
-									<h2 class="itemTitle">Shoes</h2>
-                  <div class="modalContainer">
-										<img class="saleItem3" src="<?php echo base_url(); ?>img/itemShoes.png" alt="item1">
-                    <img class="saleItem3" src="<?php echo base_url(); ?>img/itemShoes.png" alt="item1">
-                    <img class="saleItem3" src="<?php echo base_url(); ?>img/itemShoes.png" alt="item1">
-                    <a class="close-reveal-modal">&#215;</a>
-                  </div>
-								</div>
-                <span class="itemDescription">Womens 8 inch high heels, black suede no scuffs and like new.</span><br><a href="#">More Info</a>
-  						</div>
-            </dd>
-  					<dd>
+            <?php foreach ($results as $row): ?>
+    					<dd>
+                <a href="#panel<?php echo $row->classifieds_id ?>" onClick="highlightLink(this);"><img class="saleItem" src="<?php echo base_url(); ?>img/itemShoes.png" alt="shoes"> <span class="saleText"><?php echo $row->classifieds_title ?></span> <span class="itemPrice"><?php echo $row->classifieds_price ?></span><span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    						<div id="panel<?php echo $row->classifieds_id ?>" class="content">
+      						<p class="classifiedsDescription"><span class="classifiedsUser"><?php echo $row->classifieds_user ?> </span><br> Price: <span class="price"><?php echo $row->classifieds_price ?></span><br>Contact: <span class="classifiedsEmail"><?php echo $row->classifieds_email ?></span></p>
+                  <div class="imageContainer">
+                    <a href="#" data-reveal-id="myModal"><img class="saleItem2" src="<?php echo base_url(); ?>img/itemShoes.png" alt="item1"></a>
+                    <a href="#" data-reveal-id="myModal"><img class="saleItem2" src="<?php echo base_url(); ?>img/itemShoes.png" alt="item1"></a>
+                    <a href="#" data-reveal-id="myModal"><img class="saleItem2" src="<?php echo base_url(); ?>img/itemShoes.png" alt="item1"></a>
+                  </div> 
+                  <div id="myModal" class="reveal-modal" data-reveal>
+  									<h2 class="itemTitle">Shoes</h2>
+                    <div class="modalContainer">
+  										<img class="saleItem3" src="<?php echo base_url(); ?>img/itemShoes.png" alt="item1">
+                      <img class="saleItem3" src="<?php echo base_url(); ?>img/itemShoes.png" alt="item1">
+                      <img class="saleItem3" src="<?php echo base_url(); ?>img/itemShoes.png" alt="item1">
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+  								</div>
+                  <span class="itemDescription"><?php echo $row->classifieds_description ?></span><br><a href="#">More Info</a>
+    						</div>
+              </dd>
+            <?php endforeach; ?>
+  					<!-- <dd>
  						 	<a href="#panel18" onClick="highlightLink(this);"><img class="saleItemPlant" src="<?php echo base_url(); ?>img/itemPlant.png" alt="plant"> <span class="saleText">PLANT</span> <span class="itemPrice2">$999</span><span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
   						<div id="panel18" class="content">
    							<p class="classifiedsDescription"><span class="classifiedsUser">user1324 </span><br> Price: <span class="price">$30.00</span> OBO.<br>Contact: <span class="classifiedsEmail">user1324@gmail.com</span></p>
@@ -102,7 +104,7 @@
                 </div>
                 <span class="itemDescription">Are you a handy man in need of a toolbox? Like new toolbox..</span><br><a href="#">More Info</a>
     					</div>
-        		</dd>
+        		</dd> -->
    				</dl>
         </div>
   		</div><!--Rules Content End--> 

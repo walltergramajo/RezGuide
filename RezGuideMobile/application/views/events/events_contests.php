@@ -20,16 +20,18 @@
       <div class="rulesContent">
         <div class="row">
           <dl class="accordion" data-accordion>
-            <dd>
-      				<a href="#panel29" onClick="highlightLink(this);"><span class="complaintText">Fanshawe's Got Talent</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
-              <div id="panel29" class="content">
-        				<p class="dateColor">November 18</p>
-                <p class="location">Forwell Hall</p>
-                <p>Can you sing, play a musical instrument, juggle, dance or unicycle? Do you own, or have access to a ventriloquist dummy? If you answered yes to any of those questions, or possess another talent that you wish to show off, then we want you to enter the Fanshawe Student Union’s third annual Fanshawe’s Got Talent competition.</p>
-                <a href="http://www.fsu.ca/events.php"><p>More Info</p></a>
-              </div>
-            </dd>
-    				<dd>
+            <?php foreach ($results as $row): ?>
+              <dd>
+        				<a href="#panel<?php echo $row->contests_id ?>" onClick="highlightLink(this);"><span class="complaintText"><?php echo $row->contests_title ?></span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
+                <div id="panel<?php echo $row->contests_id ?>" class="content">
+          				<p class="dateColor"><?php echo $row->contests_startdate ?></p>
+                  <p class="location"><?php echo $row->contests_location ?></p>
+                  <p><?php echo $row->contests_description ?></p>
+                  <a href="<?php echo $row->contests_link ?>"><p>More Info</p></a>
+                </div>
+              </dd>
+            <?php endforeach; ?>
+    				<!-- <dd>
      					<a href="#panel30" onClick="highlightLink(this);"><span class="complaintText">Knights Tickets</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
       				<div id="panel30" class="content">
        					<p class="dateColor">October 3</p>
@@ -55,7 +57,7 @@
                 <p>Simply enter with your email address and student number for a chance to win a Microsoft Surface Tablet. Must be a Full-Time student to enter.</p>
                 <a href="http://www.fsu.ca/events.php"><p>More Info</p></a>
       				</div>
-          	</dd>
+          	</dd> -->
           </dl>
         </div>
       </div> 

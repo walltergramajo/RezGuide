@@ -20,17 +20,19 @@
 		<div class="fsuContent">
 			<div class="row">
   			<dl class="accordion" data-accordion>
-					<dd>
-  					<a href="#panel65" onClick="highlightLink(this);"><span class="complaintText">Information Seminar</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
-  					<div id="panel65" class="content">
-              <p class="dateColor">September 4</p>
-              <p class="location">Gym 3</p>
-              <p>Want to know everything that Fanshawe has to offer? Come to our information seminar where we cover all the important opportunities Fanshawe has to offer and even get a tour of some of the major parts of campus.</p>
-              <a href="http://www.fanshawec.ca/about-us/why-fanshawe"><p>More Info</p></a>
-              <label>Who can come: </label> <input type="text" placeholder="everyone">
-  					</div>
-          </dd>
-					<dd>
+          <?php foreach ($resuts as $row): ?>
+  					<dd>
+    					<a href="#panel<?php echo $row->fsuinfo_id ?>" onClick="highlightLink(this);"><span class="complaintText"><?php echo $row->fsuinfo_title ?></span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    					<div id="panel<?php echo $row->fsuinfo_id ?>" class="content">
+                <p class="dateColor"><?php echo $row->fsuinfo_date ?></p>
+                <p class="location"><?php echo $row->fsuinfo_location ?></p>
+                <p><?php echo $row->fsuinfo_description ?></p>
+                <a href="<?php echo $row->fsuinfo_link ?>"><p>More Info</p></a>
+                <label>Who can come: </label> <input type="text" placeholder="everyone">
+    					</div>
+            </dd>
+          <?php endforeach; ?>
+					<!-- <dd>
  						<a href="#panel66" onClick="highlightLink(this);"><span class="complaintText">Where to shop?</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
   					<div id="panel66" class="content">
               <p class="dateColor">September 4</p>
@@ -57,7 +59,7 @@
               <a href="http://fsu.ca/publications.php"><p>More Info</p></a>
    						Don't forget to check out this months College newspaper.
   					</div>
-      		</dd>
+      		</dd> -->
  				</dl>
       </div>
   	</div> <!--End FSU Content-->

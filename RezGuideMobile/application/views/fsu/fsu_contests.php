@@ -19,17 +19,19 @@
 			<div class="fsuContent">
 				<div class="row">
     				<dl class="accordion" data-accordion>
-  						<dd>
-    						<a href="#panel61" onClick="highlightLink(this);"><span class="complaintText">Video Game Contest</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
-    						<div id="panel61" class="content">
-                                <p class="dateColor">September 4</p>
-                                <p class="location">Forwell Hall</p>
-                                <p>Show what you got in an array of video games to choose from. Contests for different kind of games will be on going all day, $5 entry per contestant. Please sign up at Biz Booth.</p>
-                                <a href="http://fsu.ca/contests.php"><p>More Info</p></a>
-                                <label>Who can come: </label> <input type="text" placeholder="everyone">
-    						</div>
-               			</dd>
-  						<dd>
+                        <?php foreach ($results as $row): ?>
+      						<dd>
+        						<a href="#panel<?php echo $row->contests_id ?>" onClick="highlightLink(this);"><span class="complaintText"><?php echo $row->contests_title ?></span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
+        						<div id="panel<?php echo $row->contests_id ?>" class="content">
+                                    <p class="dateColor"><?php echo $row->contests_startdate ?></p>
+                                    <p class="location"><?php echo $row->contests_location ?></p>
+                                    <p><?php echo $row->contests_description ?></p>
+                                    <a href="<?php echo $row->contests_link ?>"><p>More Info</p></a>
+                                    <label>Who can come: </label> <input type="text" placeholder="everyone">
+        						</div>
+                   			</dd>
+                        <?php endforeach; ?>
+  						<!-- <dd>
    						 	<a href="#panel62" onClick="highlightLink(this);"><span class="complaintText">Fanshawe Fashion Showcase</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
     						<div id="panel62" class="content">
                                 <p class="dateColor">September 4</p>
@@ -58,7 +60,7 @@
                                 <a href="http://fsu.ca/contests.php"><p>More Info</p></a>
                                 <label>Who can come: </label> <input type="text" placeholder="everyone">
     						</div>
-        				</dd>
+        				</dd> -->
    					</dl>
         		</div>
   			</div> <!--End FSU Content-->

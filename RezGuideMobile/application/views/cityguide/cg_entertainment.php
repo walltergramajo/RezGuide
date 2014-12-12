@@ -21,16 +21,18 @@
     <div class="genInfoContent">
       <div class="row">
         <dl class="accordion" data-accordion>
-          <dd>
-            <a href="#panel77" onClick="highlightLink(this);"><span class="complaintText">Tuesday Night is Movie Night</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
-            <div id="panel77" class="content">
-              <p class="dateColor">Every Tuesday</p>
-              <p class="location">All Cineplex Theatre Locations</p>
-              <p>Nothing like a night to go see a movie and tickets are half off! Be sure to line up early to ensure the best seat in the house! </p>
-              <a href="http://www.cineplex.com"><p>More Info</p></a>
-            </div>
-          </dd>
-          <dd>
+          <?php foreach ($results as $row): ?>
+            <dd>
+              <a href="#panel<?php echo $row->city_id ?>" onClick="highlightLink(this);"><span class="complaintText"><?php echo $row->city_title ?></span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
+              <div id="panel<?php echo $row->city_id ?>" class="content">
+                <p class="dateColor"><?php echo $row->city_hours ?></p>
+                <p class="location"><?php echo $row->city_location ?></p>
+                <p><?php echo $row->city_description ?></p>
+                <a href="<?php echo $row->city_link ?>"><p>More Info</p></a>
+              </div>
+            </dd>
+          <?php endforeach; ?>
+          <!-- <dd>
             <a href="#panel78" onClick="highlightLink(this);"><span class="complaintText">Comedy Night</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
             <div id="panel78" class="content">
               <p class="dateColor">September 23</p>
@@ -56,7 +58,7 @@
               <p>Back by popular demand are two of the most popular performers to ever visit Fanshawe. X-rated hypnotist Tony Lee returns to Fanshawe to put on a show that is always one of the most outrageous,</p>
               <a href="http://fsu.ca/events.php"><p>More Info</p></a>
             </div>
-          </dd>
+          </dd> -->
         </dl>
       </div>
     </div> 

@@ -46,6 +46,6 @@ class Account extends CI_Controller {
 		);
 		$id = $this->session->userdata('sId');
 		$this->Account_model->updateProfile($formData,$id);
-		profile();
+		$this->profile();
 	}
 }

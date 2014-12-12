@@ -1,15 +1,15 @@
 <?php 
 
 class Requests_model extends CI_Model {
-	public function sendGeneralRequest(){
-
+	public function sendGeneralRequest($request){
+		$this->db->insert('tbl_requests',$request);
 	}
 
-	public function requestMediation(){
+	// public function requestMediation($request){
+	// 	$this->db->insert('tbl_requests',$request);
+	// }
 
-	}
-
-	public function requestWithdraw(){
-		
-	}
+	// public function requestWithdraw($request){
+	// 	$this->db->insert('tbl_requests',$request);
+	// }
 }
