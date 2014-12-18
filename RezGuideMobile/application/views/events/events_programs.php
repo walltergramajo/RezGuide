@@ -20,17 +20,19 @@
       <div class="rulesContent">
         <div class="row">
           <dl class="accordion" data-accordion>
-            <dd>
-              <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span>
-    					<a href="#panel21" onClick="highlightLink(this);"><span class="complaintText">Staff Meeting - FSU Building</span></a>
-              <div id="panel21" class="content">
-                <p class="dateColor">September 9, 2014</p>
-                <p>There will be a meeting for FSU staff in the Conference room by Oasis.</p>
-                <p>2:00pm - 3:00pm</p>
-                <label>Who can come:</label> <input type="text" placeholder="FSU Staff">
-              </div>
-            </dd>
-  					<dd>
+            <?php foreach ($results as $row): ?>
+              <dd>
+                <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span>
+      					<a href="#panel<?php echo $row->events_id ?>" onClick="highlightLink(this);"><span class="complaintText"><?php echo $row->events_title ?></span></a>
+                <div id="panel<?php echo $row->events_id ?>" class="content">
+                  <p class="dateColor"><?php echo $row->events_startdate ?></p>
+                  <p><?php echo $row->events_description ?></p>
+                  <p><?php echo $row->events_location ?></p>
+                  <label>Who can come:</label> <input type="text" placeholder="FSU Staff">
+                </div>
+              </dd>
+            <?php endforeach; ?>
+  					<!-- <dd>
    						<a href="#panel22" onClick="highlightLink(this);"><span class="complaintText">Breakfast Deals! - Oasis</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
     					<div id="panel22" class="content">
                 <p class="dateColor">Monday - Friday</p>
@@ -56,7 +58,7 @@
                 <p>8:00am - 4:00pm</p>
                 <label>Who can come:</label> <input type="text" placeholder="students &amp; guests">
     					</div>
-        		</dd>
+        		</dd> -->
           </dl>
         </div>
       </div> 

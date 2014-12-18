@@ -21,17 +21,19 @@
     <div class="genInfoContent">
       <div class="row">
         <dl class="accordion" data-accordion>
-          <dd>
-            <a href="#panel85" onClick="highlightLink(this);"><span class="complaintText">Bertoldi's Trattoria</span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
-            <div id="panel85" class="content">
-              <img class="restaurantLogos" src="img/bertoldis.gif" alt="bertoldi Logo">
-              <p class="dateColor">(519) 438-4343</p>
-              <p class="location">650 Richmond Street</p>
-              <p>Inspired by our grandparents Nonno Gelindo and Nonna Marie. our food is cooked the true Italian way - made from scratch using only the freshest ingredients possible. We bake our own bread daily, we make all of our specialty pastas, and all of our sauces are made fresh here on the premises.</p>
-              <a href="http://www.londontourism.ca/Places-To-Eat/Casual-Dining/Bertoldis-Trattoria"><p>More Info</p></a>
-            </div>
-          </dd>
-          <dd>
+          <?php foreach ($results as $row): ?>
+            <dd>
+              <a href="#panel<?php echo $row->city_id ?>" onClick="highlightLink(this);"><span class="complaintText"><?php echo $row->city_title ?></span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
+              <div id="panel<?php echo $row->city_id ?>" class="content">
+                <img class="restaurantLogos" src="<?php echo base_url(); ?>img/<?php echo $row->city_img ?>" alt="bertoldi Logo">
+                <p class="dateColor"><?php echo $row->city_hours ?></p>
+                <p class="location"><?php echo $row->city_location ?></p>
+                <p><?php echo $row->city_description ?></p>
+                <a href="<?php echo $row->city_link ?>"><p>More Info</p></a>
+              </div>
+            </dd>
+          <?php endforeach; ?>
+          <!-- <dd>
             <a href="#panel86" onClick="highlightLink(this);"><span class="complaintText">Thaifoon Restaurant </span> <span class="selectionArrowGenInfo"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
             <div id="panel86" class="content">
               <img class="restaurantLogos" src="img/thaifoon.jpg" alt="bertoldi Logo">
@@ -60,7 +62,7 @@
               <p>Warm and comfortable, with a pleasing combination of brick, stone, and wood, The Church Key is an extensively renovated pub in a prominent Richmond Row heritage building. An intimate outdoor courtyard flanks the south side of the building. The Church Key follows in the British tradition of the gastro pub by specializing in traditional food done with gourmet flair. Chef Michael Anglestad, with over 20 years in fine dining, uses seasonal, locally sourced ingredients extensively.</p>
               <a href="http://www.londontourism.ca/Places-To-Eat/Casual-Dining/Bertoldis-Trattoria"><p>More Info</p></a>
             </div>
-          </dd>
+          </dd> -->
         </dl>
       </div>
     </div> 

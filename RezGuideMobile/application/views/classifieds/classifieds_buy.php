@@ -19,15 +19,17 @@
 			<div class="rulesContent">
 				<div class="row">
     			<dl class="accordion" data-accordion>
+            <?php foreach ($results as $row): ?>
   					<dd>
-    					<a href="#panel1" onClick="highlightLink(this);"><span class="complaintText">Mens Nike Size 10</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
-    					<div id="panel1" class="content">
-      					<p class="classifiedsDescription"><span class="classifiedsUser">user1324 </span><br> Price: <span class="price">$120.00</span><br>
-                  Contact: <span class="classifiedsEmail">user1324@gmail.com</span></p> 
-                <span class="itemDescription">Mens Nike shoes barely worn size 10 asking $120 or best offer.</span><br><a href="#">More Info</a>
+    					<a href="#panel<?php echo $row->classifieds_id ?>" onClick="highlightLink(this);"><span class="complaintText"><?php echo $row->classifieds_title ?></span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
+    					<div id="panel<?php echo $row->classifieds_id ?>" class="content">
+      					<p class="classifiedsDescription"><span class="classifiedsUser"><?php echo $row->classifieds_user ?> </span><br> Price: <span class="price"><?php echo $row->classifieds_price ?></span><br>
+                  Contact: <span class="classifiedsEmail"><?php echo $row->classifieds_email ?></span></p> 
+                <span class="itemDescription"><?php echo $row->classifieds_description ?></span><br><a href="#">More Info</a>
     					</div>
             </dd>
-  					<dd>
+          <?php endforeach; ?>
+  					<!-- <dd>
    						<a href="#panel2" onClick="highlightLink(this);"><span class="complaintText">Red Dress Size 3</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
     					<div id="panel2" class="content">
      						<p class="classifiedsDescription"><span class="classifiedsUser">user1324 </span><br> Price: <span class="price">$50.00</span> OBO.<br>Contact: <span class="classifiedsEmail">user1324@gmail.com</span></p> <span class="itemDescription">Coco Chanel dress size 3, tags still on..</span><br><a href="#">More Info</a>
@@ -44,7 +46,7 @@
     					<div id="panel44" class="content">
      						<p class="classifiedsDescription"><span class="classifiedsUser">user1324 </span><br> Price: <span class="price">$50.00</span> OBO.<br>Contact: <span class="classifiedsEmail">user1324@gmail.com</span></p> <span class="itemDescription">Sony PSP, 8 Games Mint condition with 4 games..</span><br><a href="#">More Info</a><a href="#">More Info</a>
     					</div>
-        		</dd>
+        		</dd> -->
    				</dl>
         </div>
   		</div><!--Rules Content End--> 

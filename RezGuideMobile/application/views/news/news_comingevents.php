@@ -20,16 +20,18 @@
       <div class="newsContent">
         <div class="row">
           <dl class="accordion" data-accordion>
-            <dd>
-    					<a href="#panel53" onClick="highlightLink(this);"><span class="complaintText">Special Guest Speaker</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
-              <div id="panel53" class="content">
-                <p class="dateColor">September 4</p>
-                <p class="location">Downtown Campus</p>
-                <p>Fanshawe's Media Design program has really been taking off and luckily we have a guest speaker coming to Fanshawe's new downtown campus to talk about the industry.</p>
-                <a href="http://www.fsu.ca/events.php"><p>More Info</p></a>
-              </div>
-            </dd>
-  					<dd>
+            <?php foreach ($results as $row): ?>
+              <dd>
+      					<a href="#panel<?php echo $row->news_id ?>" onClick="highlightLink(this);"><span class="complaintText"><?php echo $row->news_title ?></span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
+                <div id="panel<?php echo $row->news_id ?>" class="content">
+                  <p class="dateColor"><?php echo $row->news_datetime ?></p>
+                  <p class="location"><?php echo $row->news_location ?></p>
+                  <p><?php echo $row->news_description ?></p>
+                  <a href="#"><p>More Info</p></a>
+                </div>
+              </dd>
+            <?php endforeach; ?>
+  					<!-- <dd>
    						<a href="#panel54" onClick="highlightLink(this);"><span class="complaintText">Heart &amp; Stroke Volunteers Needed</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
     					<div id="panel54" class="content">
                 <p class="dateColor">September 4</p>
@@ -55,7 +57,7 @@
                 <p>Everybody loves a nice smile. Come to a Dental Hygiene awareness event on behalf of Fanshawe's Dental Hygenist program.</p>
                 <a href="http://www.fsu.ca/events.php"><p>More Info</p></a>
     					</div>
-        		</dd>
+        		</dd> -->
           </dl>
         </div>
       </div> 

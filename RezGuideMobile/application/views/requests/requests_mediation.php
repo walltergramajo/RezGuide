@@ -18,6 +18,7 @@
         				<h3 class="requestsSubHeader">MEDIATION</h3>
         			</div>
     			</div>
+                <form method="post" action="<?php echo base_url(); ?>index.php/requests/sendRequest/2">
     			<div class="requestsContent">
     				<div class="row">
         				<div class="small-8 small-centered columns">
@@ -32,14 +33,14 @@
         			<div class="row">
     					<div class="small-11 small-push-1 columns">
             				<div>
-            					<input type="text" class="generalRequests" placeholder="Your Name:                 First, Last Name" />
+            					<input type="text" class="generalRequests" placeholder="Your Name:                 First, Last Name" name="studentName" />
            	    			</div>
            				</div>
         			</div>
         			<div class="row">
     					<div class="small-11 small-push-1 columns">
             				<div id="duplicater">
-            					<input type="text" class="generalRequests" placeholder="Your Roommate:         First, Last Name" />
+            					<input type="text" class="generalRequests" placeholder="Your Roommate:         First, Last Name" name="roommateName" />
            	    			</div>
            				</div>
         			</div>
@@ -73,16 +74,17 @@
         			<div class="row">
         				<div class="small-10 small-centered columns">
             				<div class="requestsTextArea">
-            					<textarea placeholder="Your Message Here:"></textarea>
+            					<textarea placeholder="Your Message Here:" name="message"></textarea>
                 			</div>
             			</div>
         			</div>
 				</div><!--End Requests Content-->
     			<div class="row">
         			<div class="small-4 small-centered columns">
-       	    			<a href="#"><img class="sendButton" src="<?php echo base_url(); ?>img/sendButton.png" alt="send"></a>
+       	    			<input type="image" class="sendButton" src="<?php echo base_url(); ?>img/sendButton.png" alt="send">
             		</div>
         		</div>
+                </form>
 			</div><!--End IconScroll2-->
 		</div><!--End Content-->
     	<div class="bottomSection">

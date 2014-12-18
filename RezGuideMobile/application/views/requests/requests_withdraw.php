@@ -17,6 +17,7 @@
         				<h3 class="requestsSubHeader">WITHDRAW</h3>
         			</div>
     			</div>
+                <form method="post" action="<?php echo base_url(); ?>index.php/requests/sendRequest/3">
     			<div class="requestsContent">
     				<div class="row">
         				<div class="small-8 small-centered columns">
@@ -31,14 +32,14 @@
         			<div class="row">
     					<div class="small-11 small-push-1 columns">
             				<div>
-                                <input type="text" class="generalRequests" placeholder="Your Name:                 First, Last Name" />
+                                <input type="text" class="generalRequests" placeholder="Your Name:                 First, Last Name" name="studentName" />
            	    			</div>
            				</div>
         			</div>
         			<div class="row">
     					<div class="small-11 small-push-1 columns">
             				<div class="infoContainerRequestsBottom">
-                                <input type="text" class="generalRequests" placeholder="Your Student #:                        000000" />
+                                <input type="text" class="generalRequests" placeholder="Your Student #:                        000000" name="studentNumber" />
            	    			</div>
            				</div>
         			</div>
@@ -62,16 +63,17 @@
        				<div class="row">
         				<div class="small-10 small-centered columns">
             				<div class="requestsTextArea">
-            					<textarea placeholder="Your Message Here:"></textarea>
+            					<textarea placeholder="Your Message Here:" name="message"></textarea>
                 			</div>
             			</div>
         			</div>
                 </div><!--End Requests Content-->
                 <div class="row">
         			<div class="small-4 small-centered columns">
-       	    			<a href="#"><img class="sendButton" src="<?php echo base_url(); ?>img/sendButton.png" alt="send"></a>
+       	    			<input type="image" class="sendButton" src="<?php echo base_url(); ?>img/sendButton.png" alt="send">
             		</div>
-        		</div>  
+        		</div>
+                </form>
 			</div><!--End IconScroll2-->
 		</div><!--End Content-->
 	

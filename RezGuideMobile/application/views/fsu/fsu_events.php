@@ -19,17 +19,19 @@
 			<div class="fsuContent">
 				<div class="row">
     				<dl class="accordion" data-accordion>
-  						<dd>
-    						<a href="#panel57" onClick="highlightLink(this);"><span class="complaintText">Frosh Week</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
-    						<div id="panel57" class="content">
-                                <p class="dateColor">September 4</p>
-                                <p class="location">Main Campus</p>
-                                <p>The school year has begun once again and that means FROSH week is upon us. Be sure to look up when your orientation is for your program. Don't miss out on all the good things Fanshawe has to offer. Sign up today! </p>
-                                <a href="http://www.fsu.ca/events.php"><p>More Info</p></a>
-                                <label>Who can come: </label> <input type="text" placeholder="everyone">
-    						</div>
-               	        </dd>
-  						<dd>
+                        <?php foreach ($results as $row): ?>
+      						<dd>
+        						<a href="#panel<?php echo $row->events_id ?>" onClick="highlightLink(this);"><span class="complaintText"><?php echo $row->events_title ?></span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
+        						<div id="panel<?php echo $row->events_id ?>" class="content">
+                                    <p class="dateColor"><?php echo $row->events_startdate ?></p>
+                                    <p class="location"><?php echo $row->events_location ?></p>
+                                    <p><?php echo $row->events_description ?></p>
+                                    <a href="<?php echo $row->events_link ?>"><p>More Info</p></a>
+                                    <label>Who can come: </label> <input type="text" placeholder="everyone">
+        						</div>
+                   	        </dd>
+                        <?php endforeach; ?>
+  						<!-- <dd>
    						 	<a href="#panel58" onClick="highlightLink(this);"><span class="complaintText">Pub Night</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
     						<div id="panel58" class="content">
                                 <p class="dateColor">September 4</p>
@@ -58,7 +60,7 @@
                                 <a href="http://www.fsu.ca/events.php"><p>More Info</p></a>
                                 <label>Who can come: </label> <input type="text" placeholder="everyone">
     						</div>
-        				</dd>
+        				</dd> -->
    					</dl>
         		</div>
   			</div><!--End FSU Content--> 

@@ -69,7 +69,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add/fsu/contests">
+                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/fsu/contests">
                             <div class="small-4 columns">
                                 <img onMouseOver="swapDark('4')" onMouseOut="swapLight('4')" class="botImg" src="<?php echo base_url(); ?>img/CMS_fsu.png" alt="FSU">
                             </div>

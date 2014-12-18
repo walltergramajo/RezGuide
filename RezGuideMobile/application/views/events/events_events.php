@@ -20,17 +20,19 @@
       <div class="rulesContent">
         <div class="row">
           <dl class="accordion" data-accordion>
-            <dd>
-    					<a href="#panel25" onClick="highlightLink(this);"><span class="complaintText">Residence BBQ</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
-              <div id="panel25" class="content">
-      				  <p class="dateColor">September 4</p>
-                <p class="location">Outside of R Building</p>
-                <p>This is a bbq for everybody at Residence to welcome you to Fanshawe College</p>
-                <a href="#"><p>More Info</p></a>
-                <label>Who can come:</label><input type="text" placeholder="everyone">
-              </div>
-            </dd>
-  					<dd>
+            <?php foreach ($results as $row): ?>
+              <dd>
+      					<a href="#panel<?php echo $row->events_id ?>" onClick="highlightLink(this);"><span class="complaintText"><?php echo $row->events_title ?></span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
+                <div id="panel<?php echo $row->events_id ?>" class="content">
+        				  <p class="dateColor"><?php echo $row->events_startdate ?></p>
+                  <p class="location"><?php echo $row->events_location ?></p>
+                  <p><?php echo $row->events_description ?></p>
+                  <a href="<?php echo $row->events_link ?>"><p>More Info</p></a>
+                  <label>Who can come:</label><input type="text" placeholder="everyone">
+                </div>
+              </dd>
+            <?php endforeach; ?>
+  					<!-- <dd>
    						<a href="#panel26" onClick="highlightLink(this);"><span class="complaintText">Open House</span> <span class="selectionArrowRules"><img src="<?php echo base_url(); ?>img/rightArrowIcon.png" alt="right_arrow"></span></a>
     					<div id="panel26" class="content">
      						<p class="dateColor">August 23</p>
@@ -59,7 +61,7 @@
                 <a href="#"><p>More Info</p></a>
                 <label>Who can come:</label><input type="text" placeholder="everyone">
     					</div>
-            </dd>
+            </dd> -->
           </dl>
         </div>
       </div> 
