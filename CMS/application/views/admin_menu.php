@@ -79,7 +79,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add/general/city">
+                            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/general/city">
                             <div class="small-4 columns">
                                 <img onMouseOver="swapDark('5')" onMouseOut="swapLight('5')" class="botImg" src="<?php echo base_url(); ?>img/CMS_general.png" alt="General">
                             </div>
