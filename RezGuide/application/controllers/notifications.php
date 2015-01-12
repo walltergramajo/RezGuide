@@ -8,7 +8,7 @@ class Notifications extends CI_Controller {
 
 	public function index(){
 		$data['pgTitle'] = "RezGuide - Notifications";
-		//$data['allAlerts'] = $this->fetchnotifications->getnotifications();
+		$data['allAlerts'] = $this->fetchnotifications->getnotifications();
 		//$data['scrollTarget'] = ".accordionScroll";
 		$this->load->view('notifications/notifications_head',$data);
 

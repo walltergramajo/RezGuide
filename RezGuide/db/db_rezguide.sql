@@ -983,6 +983,8 @@ CREATE TABLE tbl_notices (
   notices_date date NOT NULL,
   notices_title varchar(50) NOT NULL,
   notices_description text NOT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  seen int(2) NOT NULL DEFAULT '0',
   PRIMARY KEY (notices_id)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1;
 
@@ -990,11 +992,13 @@ CREATE TABLE tbl_notices (
 -- Dumping data for table 'tbl_notices'
 --
 
-INSERT INTO tbl_notices (notices_id, students_id, noticesCat_id, notices_date, notices_title, notices_description) VALUES
-(1, 2, 2, '2014-10-24', 'Maintenance on your unit', 'This notice is to make you aware that residence maintenance workers will need to enter your unit on Friday October 24th to perform a safety check on your heater unit and test your smoke alarm.'),
-(2, 3, 3, '2014-10-20', 'Disorderly conduct', 'The named student is hereby given an official written warning for disorderly conduct on the night of October 13th.'),
-(3, 4, 1, '2014-10-30', 'Mediation Notification', 'This notification is issued to the concerned parties to request their attendance at a hearing of the Residence Advisory council to mediate the issues raised in complaint #4535.'),
-(4, 3, 3, '2014-11-03', 'Noise complaint', 'The student has been issued a formal notice of disruption of common areas via excessive noise during the hours of 2am to 4 am on November 3rd.');
+INSERT INTO tbl_notices (notices_id, students_id, noticesCat_id, notices_date, notices_title, notices_description, timestamp, seen) VALUES
+(1, 2, 2, '2014-10-24', 'Maintenance on your unit', 'This notice is to make you aware that residence maintenance workers will need to enter your unit on Friday October 24th to perform a safety check on your heater unit and test your smoke alarm.', '2014-09-03 15:22:19', 0),
+(2, 3, 3, '2014-10-20', 'Disorderly conduct', 'The named student is hereby given an official written warning for disorderly conduct on the night of October 13th.', '2014-09-22 10:32:29', 0),
+(3, 4, 1, '2014-10-30', 'Mediation Notification', 'This notification is issued to the concerned parties to request their attendance at a hearing of the Residence Advisory council to mediate the issues raised in complaint #4535.', '2014-09-30 17:31:25', 0),
+(4, 3, 3, '2014-11-03', 'Noise complaint', 'The student has been issued a formal notice of disruption of common areas via excessive noise during the hours of 2am to 4 am on November 3rd.', '2014-10-02 16:26:32', 0),
+(5, 2, 3, '2014-10-18', 'Warning for Steve', 'It''s a warning', '2014-11-12 18:16:18', 0),
+(6, 2, 3, '2014-10-19', 'Second Warning for Steve', 'Warning number two bro', '2014-11-12 18:16:18', 0);
 
 -- --------------------------------------------------------
 
@@ -1287,7 +1291,8 @@ INSERT INTO tbl_students (students_id, students_firstname, students_lastname, st
 (1, 'John', 'Smith', 'IDP1', 555551, 2, '302', 'j_smith55@fanshaweonline.ca', '519-555-5555', '226-555-5555', '', 'default.jpg', '', '', '', 'j_smith04', ''),
 (2, 'Steve', 'Rogers', 'POLI1', 19454, 1, '143', 'rogers_s@fanshaweonline.ca', '519-276-1226', '226-927-5571', '43 Devonshire Rd, Toronto ON', 'steverogers1.jpg', 'facebook.com/steve.rogers.43', 'twitter.com/captain_am', 'ca.linkedin.com/in/steverrogers', 's_rogers', 'capt'),
 (3, 'Kitty', 'Pryde', 'PSYCH', 45674, 1, '204', 'shadow_cat43@hotmail.com', '519-476-1235', '226-756-1235', '43 Worscester Rd, London ON', 'kitty.jpg', 'facebook.com/kitty.pryde', 'twitter.com/shadowcat752', 'ca.linkedin.com/in/kittypryde', 'k_pryde', 'kitkat01'),
-(4, 'Miles', 'Morales', 'WEBDEV', 71235, 3, '342', 'morales_m@fanshaweonline.ca', '519-243-7786', '226-324-7621', '354 Findlay Ave, Waterloo ON', 'miles-selfy.jpg', 'facebook.com/miles.morales.456', 'twitter.com/newspidey', 'ca.linkedin.com/in/milesmorales', 'm_morales', 'amznspidy');
+(4, 'Miles', 'Morales', 'WEBDEV', 71235, 3, '342', 'morales_m@fanshaweonline.ca', '519-243-7786', '226-324-7621', '354 Findlay Ave, Waterloo ON', 'miles-selfy.jpg', 'facebook.com/miles.morales.456', 'twitter.com/newspidey', 'ca.linkedin.com/in/milesmorales', 'm_morales', 'amznspidy'),
+(5, 'Natalia', 'Aguillon', 'IMS1', 9872361, 1, '206', 'n_aguillon@fanshaweonline.ca', '', '', '', 'default.jpg', 'https://www.facebook.com/Tataa', '', '', 'n_aguillon', '052016Na!');
 
 -- --------------------------------------------------------
 
@@ -1308,7 +1313,9 @@ CREATE TABLE tbl_studentsevents (
 
 INSERT INTO tbl_studentsevents (studentsevents_id, students_id, events_id) VALUES
 (1, 2, 2),
-(2, 2, 3);
+(2, 2, 3),
+(3, 5, 4),
+(4, 5, 2);
 
 -- --------------------------------------------------------
 
