@@ -7,89 +7,6 @@ class Building extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->model('update_model');
 		$this->load->library('form_validation');
-		$rules = array(
-						array(
-							'field'   => 'name', 
-		                    'label'   => 'Title', 
-		                    'rules'   => 'required|xss_clean'
-						),
-						array(
-							'field'   => 'desc', 
-		                    'label'   => 'Content', 
-		                    'rules'   => 'required|xss_clean'
-						),
-						array(
-							'field'   => 'location', 
-		                    'label'   => 'Location', 
-		                    'rules'   => 'required|xss_clean'
-						),
-						array(
-							'field'   => 'who', 
-		                    'label'   => 'Who Can Enter', 
-		                    'rules'   => 'xss_clean'
-						),
-						array(
-							'field'   => 'link', 
-		                    'label'   => 'Link', 
-		                    'rules'   => 'xss_clean'
-						),
-						array(
-							'field'   => 's_day', 
-		                    'label'   => 'Start Date - Day', 
-		                    'rules'   => 'required|xss_clean'
-						),
-						array(
-							'field'   => 's_month', 
-		                    'label'   => 'Start Date - Month', 
-		                    'rules'   => 'required|xss_clean'
-						),
-						array(
-							'field'   => 's_year', 
-		                    'label'   => 'Start Date - Year', 
-		                    'rules'   => 'required|xss_clean'
-						),
-						array(
-							'field'   => 'e_day', 
-		                    'label'   => 'End Date - Day', 
-		                    'rules'   => 'xss_clean'
-						),
-						array(
-							'field'   => 'e_month', 
-		                    'label'   => 'End Date - Month', 
-		                    'rules'   => 'xss_clean'
-						),
-						array(
-							'field'   => 'e_year', 
-		                    'label'   => 'End Date - Year', 
-		                    'rules'   => 'xss_clean'
-						),
-						array(
-							'field'   => 'contest_category', 
-		                    'label'   => 'db_category', 
-		                    'rules'   => 'xss_clean'
-						),
-						array(
-							'field'   => 'event_category', 
-		                    'label'   => 'db_category', 
-		                    'rules'   => 'xss_clean'
-						),
-						array(
-							'field'   => 'studprice', 
-		                    'label'   => 'Student Price', 
-		                    'rules'   => 'xss_clean'
-						),
-						array(
-							'field'   => 'gstprice', 
-		                    'label'   => 'Guest Price', 
-		                    'rules'   => 'xss_clean'
-						),
-						array(
-							'field'   => 'info', 
-		                    'label'   => 'More info', 
-		                    'rules'   => 'xss_clean'
-						)
-					);
-		$this->form_validation->set_rules($rules);
 	}
 
 	public function index(){
@@ -211,8 +128,9 @@ class Building extends CI_Controller {
 				$this->load->view('templates/head', $data);
 				$this->load->view('building/building_header');
 				$this->load->view('building/building_options_menu');
-				$this->load->view('building/building_contests_edit_select');
+				$this->load->view('templates/delete_overlay');
 				$this->load->view('templates/add_edit');
+				$this->load->view('building/building_contests_edit_select');
 				$this->load->view('templates/footer');
 				$this->load->view('deletescript.php');
 				$this->load->view('templates/close');
@@ -395,6 +313,7 @@ class Building extends CI_Controller {
 				$this->load->view('templates/head',$data);
 				$this->load->view('building/building_header');
 				$this->load->view('building/building_options_menu');
+				$this->load->view('templates/delete_overlay');
 				$this->load->view('templates/add_edit');
 				$this->load->view('add/contestform');
 				$this->load->view('templates/footer');
@@ -538,6 +457,7 @@ class Building extends CI_Controller {
 				$this->load->view('templates/head', $data);
 				$this->load->view('building/building_header');
 				$this->load->view('building/building_options_menu');
+				$this->load->view('templates/delete_overlay');
 				$this->load->view('templates/add_edit');
 				$this->load->view('building/building_events_edit_select');
 				$this->load->view('templates/footer');
@@ -895,6 +815,7 @@ class Building extends CI_Controller {
 				$this->load->view('templates/head', $data);
 				$this->load->view('building/building_header');
 				$this->load->view('building/building_options_menu');
+				$this->load->view('templates/delete_overlay');
 				$this->load->view('templates/add_edit');
 				$this->load->view('building/building_events_edit_select');
 				$this->load->view('templates/footer');
@@ -1131,7 +1052,7 @@ class Building extends CI_Controller {
 			$data['pgTitle'] = "Building Rules &amp; Regulations";
 			$data['subTitle'] = "Rules and Regulations";
 				$data['controller_uri'] = "building";
-				$data['function_uri'] = "Rules";
+				$data['function_uri'] = "rules";
 			$data['rules'] =$this->update_model->getAll('tbl_rules');
 			$rule = $this->update_model->getSingle('tbl_rules', 'rules_id', $record);
 				$id = $rule->rules_id;
@@ -1154,6 +1075,7 @@ class Building extends CI_Controller {
 			$this->load->view('templates/head', $data);
 			$this->load->view('building/building_header');
 			$this->load->view('building/building_options_menu');
+			$this->load->view('templates/delete_overlay');
 			$this->load->view('building/building_rules');
 			$this->load->view('templates/footer');
 			$this->load->view('deletescript.php');
@@ -1180,7 +1102,7 @@ class Building extends CI_Controller {
 			$this->load->view('templates/head', $data);
 			$this->load->view('building/building_header');
 			$this->load->view('building/building_options_menu');
-			$this->load->view('templates/add_edit');
+			$this->load->view('templates/delete_overlay');
 			$this->load->view('building/building_rules');
 			$this->load->view('templates/footer');
 			$this->load->view('deletescript.php');
