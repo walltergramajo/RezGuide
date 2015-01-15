@@ -9,13 +9,7 @@ class Fsu extends CI_Controller {
 	}
 
 	public function index(){
-		$data['pgTitle'] = "RezGuide Fanshawe Student Union";
-		$data['section'] = "FSU";
-		$this->load->view('templates/head',$data);
-		$this->load->view('add/add_header');
-		$this->load->view('add/fsu');
-		$this->load->view('templates/footer');
-		$this->load->view('templates/close');
+		$this->contests();
 	}
 
 	public function contests($edit = null, $record = null){

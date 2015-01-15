@@ -8,19 +8,19 @@
            
 
             <div class="small-2 small-push-2 columns">
-                <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add/students">
+                <a class="botAnchor" href="<?php echo base_url(); ?>index.php/students">
                     <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="<?php echo base_url(); ?>img/CMS_usersLrg.png" alt="Contests">
                         <h3 class="menuHeaders">Information</h3>
                 </a>
             </div>
             <div class="small-2 small-push-2 columns">
-                <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add/students/pg2">
+                <a class="botAnchor" href="<?php echo base_url(); ?>index.php/students/balance">
                     <img onMouseOver="swapDark('1')" onMouseOut="swapLight('1')" class="botImg" src="<?php echo base_url(); ?>img/MA_balance.png" alt="Events">
                     <h3 class="menuHeaders">Balance</h3>
                 </a>
             </div>
             <div class="small-2 small-push-2 columns">
-                <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add/students/">
+                <a class="botAnchor" href="<?php echo base_url(); ?>index.php/students/mealplan">
                     <img onMouseOver="swapDark('2')" onMouseOut="swapLight('2')" class="botImg" src="<?php echo base_url(); ?>img/mealPlan_Med.png" alt="Programs">
                     <h3 class="menuHeaders">Meal Plan</h3>
                 </a>

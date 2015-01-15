@@ -73,7 +73,7 @@
                                     <p class="pointsHere"><?php echo word_limiter($row->rules_description, 5); ?></p>
                                 </div>
                                 <div class="small-1 columns">
-                                    <a href="#" class="del" data-record="<?php echo $row->rules_id; ?>" data-controller="<?php echo $section; ?>" data-function="<?php echo $uri; ?>">
+                                    <a href="#" class="del" data-record="<?php echo $row->rules_id; ?>" data-controller="<?php echo $controller_uri; ?>" data-function="<?php echo $function_uri; ?>">
                                         <img class="delete" src="<?php echo base_url(); ?>img/CMS_delete.png" alt="Delete" >
                                     </a>
                                 </div>

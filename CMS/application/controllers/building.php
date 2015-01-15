@@ -93,13 +93,7 @@ class Building extends CI_Controller {
 	}
 
 	public function index(){
-		$data['pgTitle'] = "Building Main Menu";
-		$data['subTitle'] = "Building Main Menu";
-		$this->load->view('templates/head',$data);
-		$this->load->view('building/building_header');
-		$this->load->view('building/building_options_menu');
-		$this->load->view('templates/footer');
-		$this->load->view('templates/close');
+		$this->contests();
 	}
 
 	public function contests($edit = null, $record = null){
@@ -108,8 +102,8 @@ class Building extends CI_Controller {
 				$data['pgTitle'] = "RezGuide Edit A Building Contest";
 				$data['ZoneTitle'] = "Edit";
 				$data['sectTitle'] = "Contest";
-					$data['section'] = "Building";
-					$data['uri'] = "contests";
+					$data['controller_uri'] = "building";
+					$data['function_uri'] = "contests";
 				$contest = $this->update_model->getSingle('tbl_contests', 'contests_id', $record);
 					$id = $contest->contests_id;
 					$name = $contest->contests_title;
@@ -202,6 +196,7 @@ class Building extends CI_Controller {
 				$this->load->view('templates/head',$data);
 				$this->load->view('building/building_header');
 				$this->load->view('building/building_options_menu');
+				$this->load->view('templates/add_edit');
 				$this->load->view('add/contestform');
 				$this->load->view('templates/footer');
 				$this->load->view('templates/close');
@@ -209,14 +204,15 @@ class Building extends CI_Controller {
 				$data['pgTitle'] = "Building Contest Select";
 				$data['ZoneTitle'] = "Select";
 				$data['sectTitle'] = "Contest";
-					$data['section'] = "Building";
-					$data['uri'] = "contests";
+					$data['controller_uri'] = "building";
+					$data['function_uri'] = "contests";
 				$data['contests'] = $this->update_model->getAll('tbl_contests', 'contestCat_id', 3);
 
 				$this->load->view('templates/head', $data);
 				$this->load->view('building/building_header');
 				$this->load->view('building/building_options_menu');
 				$this->load->view('building/building_contests_edit_select');
+				$this->load->view('templates/add_edit');
 				$this->load->view('templates/footer');
 				$this->load->view('deletescript.php');
 				$this->load->view('templates/close');
@@ -229,8 +225,8 @@ class Building extends CI_Controller {
 				$data['pgTitle'] = "RezGuide Add An Upcoming Event";
 				$data['ZoneTitle'] = "Add";
 				$data['sectTitle'] = "Building Contest";
-					$data['section'] = "Building";
-					$data['uri'] = "contests";
+					$data['controller_uri'] = "Building";
+					$data['function_uri'] = "contests";
 				$data['formstart'] = form_open('building/insert_record/bld_contest', array('id' => 'bldContest'));
 					$data['name'] = form_input(array(
 											'name' => 'name',
@@ -313,6 +309,7 @@ class Building extends CI_Controller {
 				$this->load->view('templates/head',$data);
 				$this->load->view('building/building_header');
 				$this->load->view('building/building_options_menu');
+				$this->load->view('templates/add_edit');
 				$this->load->view('add/contestform');
 				$this->load->view('templates/footer');
 				$this->load->view('templates/close');
@@ -323,8 +320,8 @@ class Building extends CI_Controller {
 				$data['pgTitle'] = "RezGuide Add An Upcoming Event";
 				$data['ZoneTitle'] = "Add";
 				$data['sectTitle'] = "Building Contest";
-					$data['section'] = "Building";
-					$data['uri'] = "contests";
+					$data['controller_uri'] = "building";
+					$data['function_uri'] = "contests";
 				$data['formstart'] = form_open('building/insert_record/bld_contest', array('id' => 'bldContest'));
 					$data['name'] = form_input(array(
 											'name' => 'name',
@@ -398,6 +395,7 @@ class Building extends CI_Controller {
 				$this->load->view('templates/head',$data);
 				$this->load->view('building/building_header');
 				$this->load->view('building/building_options_menu');
+				$this->load->view('templates/add_edit');
 				$this->load->view('add/contestform');
 				$this->load->view('templates/footer');
 				$this->load->view('templates/close');
@@ -411,8 +409,8 @@ class Building extends CI_Controller {
 				$data['pgTitle'] = "Building Event Select";
 				$data['ZoneTitle'] = "Edit";
 				$data['sectTitle'] = "Event";
-					$data['section'] = "Building";
-					$data['uri'] = "events";
+					$data['controller_uri'] = "building";
+					$data['function_uri'] = "events";
 				$event = $this->update_model->getSingle('tbl_events', 'events_id', $record);
 					$id = $event->events_id;
 					$name = $event->events_title;
@@ -525,6 +523,7 @@ class Building extends CI_Controller {
 				$this->load->view('templates/head',$data);
 				$this->load->view('building/building_header');
 				$this->load->view('building/building_options_menu');
+				$this->load->view('templates/add_edit');
 				$this->load->view('add/eventform');
 				$this->load->view('templates/footer');
 				$this->load->view('templates/close');
@@ -532,13 +531,14 @@ class Building extends CI_Controller {
 				$data['pgTitle'] = "Building Event Select";
 				$data['ZoneTitle'] = "Select";
 				$data['sectTitle'] = "Event";
-					$data['section'] = "Building";
-					$data['uri'] = "events";
+					$data['controller_uri'] = "building";
+					$data['function_uri'] = "events";
 				$data['events'] = $this->update_model->getAll('tbl_events', 'eventsCat_id', 3);
 
 				$this->load->view('templates/head', $data);
 				$this->load->view('building/building_header');
 				$this->load->view('building/building_options_menu');
+				$this->load->view('templates/add_edit');
 				$this->load->view('building/building_events_edit_select');
 				$this->load->view('templates/footer');
 				$this->load->view('deletescript.php');
@@ -552,8 +552,8 @@ class Building extends CI_Controller {
 				$data['pgTitle'] = "RezGuide Add A Monthly Event";
 				$data['ZoneTitle'] = "Add";
 				$data['sectTitle'] = "Building Event";
-					$data['section'] = "Building";
-					$data['uri'] = "events";
+					$data['controller_uri'] = "building";
+					$data['function_uri'] = "events";
 				$data['formstart'] = form_open('building/insert_record/bld_event', array('id' => 'bldContest'));
 					$data['name'] = form_input(array(
 											'name' => 'name',
@@ -653,6 +653,7 @@ class Building extends CI_Controller {
 				$this->load->view('templates/head',$data);
 				$this->load->view('building/building_header');
 				$this->load->view('building/building_options_menu');
+				$this->load->view('templates/add_edit');
 				$this->load->view('add/eventform');
 				$this->load->view('templates/footer');
 				$this->load->view('templates/close');
@@ -663,8 +664,8 @@ class Building extends CI_Controller {
 				$data['pgTitle'] = "RezGuide Add A Monthly Event";
 				$data['ZoneTitle'] = "Add";
 				$data['sectTitle'] = "Building Event";
-					$data['section'] = "Building";
-					$data['uri'] = "events";
+					$data['controller_uri'] = "building";
+					$data['function_uri'] = "events";
 				$data['formstart'] = form_open('building/insert_record/bld_event', array('id' => 'bldContest'));
 					$data['name'] = form_input(array(
 											'name' => 'name',
@@ -753,6 +754,7 @@ class Building extends CI_Controller {
 				$this->load->view('templates/head',$data);
 				$this->load->view('building/building_header');
 				$this->load->view('building/building_options_menu');
+				$this->load->view('templates/add_edit');
 				$this->load->view('add/eventform');
 				$this->load->view('templates/footer');
 				$this->load->view('templates/close');
@@ -766,8 +768,8 @@ class Building extends CI_Controller {
 				$data['pgTitle'] = "Building Event Select";
 				$data['ZoneTitle'] = "Edit";
 				$data['sectTitle'] = "Building Program";
-					$data['section'] = "Building";
-					$data['uri'] = "programs";
+					$data['controller_uri'] = "building";
+					$data['function_uri'] = "programs";
 				$event = $this->update_model->getSingle('tbl_events', 'events_id', $record);
 					$id = $event->events_id;
 					$name = $event->events_title;
@@ -878,6 +880,7 @@ class Building extends CI_Controller {
 				$this->load->view('templates/head',$data);
 				$this->load->view('building/building_header');
 				$this->load->view('building/building_options_menu');
+				$this->load->view('templates/add_edit');
 				$this->load->view('add/eventform');
 				$this->load->view('templates/footer');
 				$this->load->view('templates/close');
@@ -885,13 +888,14 @@ class Building extends CI_Controller {
 				$data['pgTitle'] = "Building Event Select";
 				$data['ZoneTitle'] = "Select";
 				$data['sectTitle'] = "Program";
-					$data['section'] = "Building";
-					$data['uri'] = "programs";
+					$data['controller_uri'] = "Building";
+					$data['function_uri'] = "programs";
 				$data['events'] = $this->update_model->getAll('tbl_events', 'eventsCat_id', 4);
 
 				$this->load->view('templates/head', $data);
 				$this->load->view('building/building_header');
 				$this->load->view('building/building_options_menu');
+				$this->load->view('templates/add_edit');
 				$this->load->view('building/building_events_edit_select');
 				$this->load->view('templates/footer');
 				$this->load->view('deletescript.php');
@@ -905,8 +909,8 @@ class Building extends CI_Controller {
 				$data['pgTitle'] = "RezGuide Add An Event";
 				$data['ZoneTitle'] = "Add";
 				$data['sectTitle'] = "Building Program";
-					$data['section'] = "Building";
-					$data['uri'] = "programs";
+					$data['controller_uri'] = "building";
+					$data['function_uri'] = "programs";
 				$data['subSection'] = "Add a Building Program";
 				$data['formstart'] = form_open('building/insert_record/bld_program', array('id' => 'bldProgram'));
 					$data['name'] = form_input(array(
@@ -1009,6 +1013,7 @@ class Building extends CI_Controller {
 				$this->load->view('templates/head',$data);
 				$this->load->view('add/add_header');
 				$this->load->view('building/building_options_menu');
+				$this->load->view('templates/add_edit');
 				$this->load->view('add/eventform');
 				$this->load->view('templates/footer');
 				$this->load->view('templates/close');
@@ -1019,8 +1024,8 @@ class Building extends CI_Controller {
 				$data['pgTitle'] = "RezGuide Add An Event";
 				$data['ZoneTitle'] = "Add";
 				$data['sectTitle'] = "Building Program";
-					$data['section'] = "Building";
-					$data['uri'] = "programs";
+					$data['controller_uri'] = "building";
+					$data['function_uri'] = "programs";
 				$data['subSection'] = "Add a Building Program";
 				$data['formstart'] = form_open('building/insert_record/bld_program', array('id' => 'bldProgram'));
 					$data['name'] = form_input(array(
@@ -1112,6 +1117,7 @@ class Building extends CI_Controller {
 				$this->load->view('templates/head',$data);
 				$this->load->view('add/add_header');
 				$this->load->view('building/building_options_menu');
+				$this->load->view('templates/add_edit');
 				$this->load->view('add/eventform');
 				$this->load->view('templates/footer');
 				$this->load->view('templates/close');
@@ -1123,9 +1129,9 @@ class Building extends CI_Controller {
 		if($record != null){
 			$this->load->helper('text');
 			$data['pgTitle'] = "Building Rules &amp; Regulations";
-				$data['section'] = "Building";
-				$data['uri'] = "Rules";
 			$data['subTitle'] = "Rules and Regulations";
+				$data['controller_uri'] = "building";
+				$data['function_uri'] = "Rules";
 			$data['rules'] =$this->update_model->getAll('tbl_rules');
 			$rule = $this->update_model->getSingle('tbl_rules', 'rules_id', $record);
 				$id = $rule->rules_id;
@@ -1155,9 +1161,9 @@ class Building extends CI_Controller {
 		}else{
 			$this->load->helper('text');
 			$data['pgTitle'] = "Building Rules &amp; Regulations";
-				$data['section'] = "Building";
-				$data['uri'] = "rules";
 			$data['subTitle'] = "Rules and Regulations";
+				$data['controller_uri'] = "building";
+				$data['function_uri'] = "rules";
 			$data['rules'] = $this->update_model->getAll('tbl_rules');
 			$data['formstart'] = form_open('building/insert_record/bld_rule', array('id' => 'bldRule'));
 				$data['name'] = form_input(array(
@@ -1174,6 +1180,7 @@ class Building extends CI_Controller {
 			$this->load->view('templates/head', $data);
 			$this->load->view('building/building_header');
 			$this->load->view('building/building_options_menu');
+			$this->load->view('templates/add_edit');
 			$this->load->view('building/building_rules');
 			$this->load->view('templates/footer');
 			$this->load->view('deletescript.php');
@@ -1184,9 +1191,12 @@ class Building extends CI_Controller {
 	public function garbage(){
 		$data['pgTitle'] = "Building Garbage Day";
 		$data['subSection'] = "Garbage Day";
+			$data['controller_uri'] = "building";
+			$data['function_uri'] = "garbage";
 		$this->load->view('templates/head', $data);
 		$this->load->view('edit/building/building_header');
 		$this->load->view('building/building_options_menu');
+		$this->load->view('templates/add_edit');
 		$this->load->view('building/building_garbage_housekeeping');
 		$this->load->view('templates/footer');
 		$this->load->view('templates/close');
@@ -1195,9 +1205,12 @@ class Building extends CI_Controller {
 	public function garbage_edit(){
 		$data['pgTitle'] = "Building Garbage Day";
 		$data['subSection'] = "Garbage Day";
+			$data['controller_uri'] = "building";
+			$data['function_uri'] = "rules";
 		$this->load->view('templates/head', $data);
 		$this->load->view('edit/building/building_header');
 		$this->load->view('building/building_options_menu');
+		$this->load->view('templates/add_edit');
 		$this->load->view('building/garbage_housekeeping_edit');
 		$this->load->view('templates/footer');
 		$this->load->view('templates/close');

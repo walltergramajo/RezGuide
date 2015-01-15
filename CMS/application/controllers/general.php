@@ -2,6 +2,20 @@
 
 class General extends CI_Controller {
 
+	public function __construct(){
+		parent::__construct();
+		$this->load->helper('form');
+		// $this->load->library('form_validation');
+		// $rules = array(
+						
+		// 			);
+		// $this->form_validation->set_rules($rules);
+	}
+
+	public function index(){
+		$this->city();
+	}
+
 	public function city($edit = null){
 		// $this->load->model('Notices_model');
 		if($edit == "edit"){
