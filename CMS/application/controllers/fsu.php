@@ -16,10 +16,10 @@ class Fsu extends CI_Controller {
 		if($edit == 'edit'){
 			if($record != null) {
 				$data['pgTitle'] = "RezGuide Add An Upcoming Event";
-					$data['section'] = "FSU";
-					$data['uri'] = "contests";
 				$data['ZoneTitle'] = "Add";
 				$data['sectTitle'] = "FSU Contest";
+					$data['controller_uri'] = "fsu";
+					$data['function_uri'] = "contests";
 				$contest = $this->update_model->getSingle('tbl_contests', 'contests_id', $record);
 					$id = $contest->contests_id;
 					$name = $contest->contests_title;
@@ -29,7 +29,7 @@ class Fsu extends CI_Controller {
 					$who = $contest->contests_whoenter;
 					$s_array = explode("-", $contest->contests_startdate);
 					$e_array = explode("-", $contest->contests_enddate);
-				$data['formstart'] = form_open('fsu/insert_record/fsu_contest', array('id' => 'fsuContest'));
+				$data['formstart'] = form_open('fsu/update_record/fsu_contest', array('id' => 'fsuContest'));
 					$data['name'] = form_input(array(
 											'name' => 'name',
 											'type' => 'text',
@@ -111,7 +111,8 @@ class Fsu extends CI_Controller {
 					$data['id'] = form_hidden('id', $id);
 				$this->load->view('templates/head',$data);
 				$this->load->view('add/add_header');
-				$this->load->view('FSU/fsu_options_menu');
+				$this->load->view('fsu/fsu_options_menu');
+				$this->load->view('templates/add_edit');
 				$this->load->view('add/contestform');
 				$this->load->view('templates/footer');
 				$this->load->view('templates/close');
@@ -119,13 +120,15 @@ class Fsu extends CI_Controller {
 				$data['pgTitle'] = "FSU Contest Select";
 				$data['ZoneTitle'] = "Select";
 				$data['sectTitle'] = "Contest";
-					$data['section'] = "FSU";
-					$data['uri'] = "contests";
+					$data['controller_uri'] = "fsu";
+					$data['function_uri'] = "contests";
 				$data['contests'] = $this->update_model->getAll('tbl_contests', 'contestCat_id', 1);
 
 				$this->load->view('templates/head', $data);
 				$this->load->view('building/building_header');
 				$this->load->view('fsu/fsu_options_menu');
+				$this->load->view('templates/delete_overlay');
+				$this->load->view('templates/add_edit');
 				$this->load->view('fsu/fsu_contests_edit_select');
 				$this->load->view('templates/footer');
 				$this->load->view('deletescript.php');
@@ -133,13 +136,11 @@ class Fsu extends CI_Controller {
 			}
 		}else{
 			$data['pgTitle'] = "RezGuide Add An Upcoming Event";
-				$data['section'] = "FSU";
-				$data['uri'] = "contests";
 			$data['ZoneTitle'] = "Add";
 			$data['sectTitle'] = "FSU Contest";
-
 			$data['subSection'] = "Add an FSU Contest";
-
+				$data['controller_uri'] = "fsu";
+				$data['function_uri'] = "contests";
 			$data['formstart'] = form_open('fsu/insert_record/fsu_contest', array('id' => 'fsuContest'));
 				$data['name'] = form_input(array(
 										'name' => 'name',
@@ -214,7 +215,8 @@ class Fsu extends CI_Controller {
 				$data['category'] = form_hidden('contest_category', 1);
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
-			$this->load->view('FSU/fsu_options_menu');
+			$this->load->view('fsu/fsu_options_menu');
+			$this->load->view('templates/add_edit');
 			$this->load->view('add/contestform');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');
@@ -225,10 +227,10 @@ class Fsu extends CI_Controller {
 		if($edit == 'edit'){
 			if($record != null){
 				$data['pgTitle'] = "RezGuide Add FSU Event";
-					$data['section'] = "FSU";
-					$data['uri'] = "events";
 				$data['ZoneTitle'] = "Add";
 				$data['sectTitle'] = "FSU Event";
+					$data['controller_uri'] = "fsu";
+					$data['function_uri'] = "events";
 				$event = $this->update_model->getSingle('tbl_events', 'events_id', $record);
 						$id = $event->events_id;
 						$name = $event->events_title;
@@ -340,7 +342,8 @@ class Fsu extends CI_Controller {
 					$data['id'] = form_hidden('id', $id);
 				$this->load->view('templates/head',$data);
 				$this->load->view('add/add_header');
-				$this->load->view('FSU/fsu_options_menu');
+				$this->load->view('fsu/fsu_options_menu');
+				$this->load->view('templates/add_edit');
 				$this->load->view('add/eventform');
 				$this->load->view('templates/footer');
 				$this->load->view('templates/close');
@@ -348,13 +351,15 @@ class Fsu extends CI_Controller {
 				$data['pgTitle'] = "fsu Event Select";
 				$data['ZoneTitle'] = "Select";
 				$data['sectTitle'] = "Event";
-					$data['section'] = "fsu";
-					$data['uri'] = "events";
+					$data['controller_uri'] = "fsu";
+					$data['function_uri'] = "events";
 				$data['events'] = $this->update_model->getAll('tbl_events', 'eventsCat_id', 1);
 
 				$this->load->view('templates/head', $data);
 				$this->load->view('building/building_header');
 				$this->load->view('fsu/fsu_options_menu');
+				$this->load->view('templates/delete_overlay');
+				$this->load->view('templates/add_edit');
 				$this->load->view('fsu/fsu_events_edit_select');
 				$this->load->view('templates/footer');
 				$this->load->view('deletescript.php');
@@ -362,10 +367,10 @@ class Fsu extends CI_Controller {
 			}
 		}else{
 			$data['pgTitle'] = "RezGuide Add FSU Event";
-				$data['section'] = "FSU";
-				$data['uri'] = "events";
 			$data['ZoneTitle'] = "Add";
 			$data['sectTitle'] = "FSU Event";
+				$data['controller_uri'] = "fsu";
+				$data['function_uri'] = "events";
 			$data['formstart'] = form_open('fsu/insert_record/fsu_event', array('id' => 'fsuEvent'));
 				$data['name'] = form_input(array(
 										'name' => 'name',
@@ -450,7 +455,8 @@ class Fsu extends CI_Controller {
 				$data['category'] = form_hidden('events_category', 1);
 			$this->load->view('templates/head',$data);
 			$this->load->view('add/add_header');
-			$this->load->view('FSU/fsu_options_menu');
+			$this->load->view('fsu/fsu_options_menu');
+			$this->load->view('templates/add_edit');
 			$this->load->view('add/eventform');
 			$this->load->view('templates/footer');
 			$this->load->view('templates/close');

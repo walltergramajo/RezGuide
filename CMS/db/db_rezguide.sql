@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.6
+-- version 4.1.14
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Dec 12, 2014 at 07:08 PM
--- Server version: 5.5.33
--- PHP Version: 5.5.3
+-- Host: 127.0.0.1
+-- Generation Time: Jan 19, 2015 at 11:52 AM
+-- Server version: 5.6.17
+-- PHP Version: 5.5.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 -- Table structure for table 'tbl_admins'
 --
 
-CREATE TABLE tbl_admins (
+CREATE TABLE IF NOT EXISTS tbl_admins (
   admins_id int(3) unsigned NOT NULL AUTO_INCREMENT,
   admins_username varchar(60) NOT NULL,
   admins_password varchar(75) NOT NULL,
@@ -54,7 +54,7 @@ INSERT INTO tbl_admins (admins_id, admins_username, admins_password, admins_firs
 -- Table structure for table 'tbl_balance'
 --
 
-CREATE TABLE tbl_balance (
+CREATE TABLE IF NOT EXISTS tbl_balance (
   balance_id int(7) unsigned NOT NULL AUTO_INCREMENT,
   student_id int(7) NOT NULL,
   balance_itemname varchar(75) NOT NULL,
@@ -85,7 +85,7 @@ INSERT INTO tbl_balance (balance_id, student_id, balance_itemname, balance_credi
 -- Table structure for table 'tbl_buildings'
 --
 
-CREATE TABLE tbl_buildings (
+CREATE TABLE IF NOT EXISTS tbl_buildings (
   buildings_id smallint(2) unsigned NOT NULL AUTO_INCREMENT,
   buildings_name varchar(15) NOT NULL,
   PRIMARY KEY (buildings_id)
@@ -120,7 +120,7 @@ INSERT INTO tbl_buildings (buildings_id, buildings_name) VALUES
 -- Table structure for table 'tbl_city'
 --
 
-CREATE TABLE tbl_city (
+CREATE TABLE IF NOT EXISTS tbl_city (
   city_id int(6) unsigned NOT NULL AUTO_INCREMENT,
   city_title varchar(75) NOT NULL,
   city_description text NOT NULL,
@@ -161,7 +161,7 @@ INSERT INTO tbl_city (city_id, city_title, city_description, city_location, city
 -- Table structure for table 'tbl_citycat'
 --
 
-CREATE TABLE tbl_citycat (
+CREATE TABLE IF NOT EXISTS tbl_citycat (
   cityCat_id int(3) unsigned NOT NULL AUTO_INCREMENT,
   cityCat_category varchar(50) NOT NULL,
   PRIMARY KEY (cityCat_id)
@@ -183,7 +183,7 @@ INSERT INTO tbl_citycat (cityCat_id, cityCat_category) VALUES
 -- Table structure for table 'tbl_classcat'
 --
 
-CREATE TABLE tbl_classcat (
+CREATE TABLE IF NOT EXISTS tbl_classcat (
   classCat_id int(3) unsigned NOT NULL AUTO_INCREMENT,
   classCat_category varchar(75) NOT NULL,
   PRIMARY KEY (classCat_id)
@@ -206,7 +206,7 @@ INSERT INTO tbl_classcat (classCat_id, classCat_category) VALUES
 -- Table structure for table 'tbl_classifieds'
 --
 
-CREATE TABLE tbl_classifieds (
+CREATE TABLE IF NOT EXISTS tbl_classifieds (
   classifieds_id int(5) unsigned NOT NULL AUTO_INCREMENT,
   students_id int(7) NOT NULL,
   classifieds_user varchar(75) NOT NULL,
@@ -238,7 +238,7 @@ INSERT INTO tbl_classifieds (classifieds_id, students_id, classifieds_user, clas
 -- Table structure for table 'tbl_classrooms'
 --
 
-CREATE TABLE tbl_classrooms (
+CREATE TABLE IF NOT EXISTS tbl_classrooms (
   classrooms_id smallint(4) unsigned NOT NULL AUTO_INCREMENT,
   classrooms_number varchar(7) NOT NULL,
   zones_id smallint(3) NOT NULL,
@@ -591,7 +591,7 @@ INSERT INTO tbl_classrooms (classrooms_id, classrooms_number, zones_id) VALUES
 -- Table structure for table 'tbl_climages'
 --
 
-CREATE TABLE tbl_climages (
+CREATE TABLE IF NOT EXISTS tbl_climages (
   climages_id int(5) unsigned NOT NULL AUTO_INCREMENT,
   climages_title varchar(75) NOT NULL,
   climages_file varchar(150) NOT NULL,
@@ -612,7 +612,7 @@ INSERT INTO tbl_climages (climages_id, climages_title, climages_file) VALUES
 -- Table structure for table 'tbl_climg'
 --
 
-CREATE TABLE tbl_climg (
+CREATE TABLE IF NOT EXISTS tbl_climg (
   climg_id int(5) unsigned NOT NULL AUTO_INCREMENT,
   classifieds_id int(5) NOT NULL,
   climages_id int(5) NOT NULL,
@@ -633,7 +633,7 @@ INSERT INTO tbl_climg (climg_id, classifieds_id, climages_id) VALUES
 -- Table structure for table 'tbl_contestcat'
 --
 
-CREATE TABLE tbl_contestcat (
+CREATE TABLE IF NOT EXISTS tbl_contestcat (
   contestCat_id int(3) unsigned NOT NULL AUTO_INCREMENT,
   contestCat_category varchar(75) NOT NULL,
   PRIMARY KEY (contestCat_id)
@@ -654,7 +654,7 @@ INSERT INTO tbl_contestcat (contestCat_id, contestCat_category) VALUES
 -- Table structure for table 'tbl_contests'
 --
 
-CREATE TABLE tbl_contests (
+CREATE TABLE IF NOT EXISTS tbl_contests (
   contests_id int(4) unsigned NOT NULL AUTO_INCREMENT,
   contests_title varchar(100) NOT NULL,
   contests_description text NOT NULL,
@@ -683,7 +683,7 @@ INSERT INTO tbl_contests (contests_id, contests_title, contests_description, con
 -- Table structure for table 'tbl_days'
 --
 
-CREATE TABLE tbl_days (
+CREATE TABLE IF NOT EXISTS tbl_days (
   days_id int(2) unsigned NOT NULL AUTO_INCREMENT,
   days_name varchar(50) NOT NULL,
   PRIMARY KEY (days_id)
@@ -708,7 +708,7 @@ INSERT INTO tbl_days (days_id, days_name) VALUES
 -- Table structure for table 'tbl_directory'
 --
 
-CREATE TABLE tbl_directory (
+CREATE TABLE IF NOT EXISTS tbl_directory (
   directory_id int(5) unsigned NOT NULL AUTO_INCREMENT,
   directory_firstname varchar(75) NOT NULL,
   directory_lastname varchar(75) NOT NULL,
@@ -734,7 +734,7 @@ INSERT INTO tbl_directory (directory_id, directory_firstname, directory_lastname
 -- Table structure for table 'tbl_events'
 --
 
-CREATE TABLE tbl_events (
+CREATE TABLE IF NOT EXISTS tbl_events (
   events_id int(3) unsigned NOT NULL AUTO_INCREMENT,
   events_title varchar(75) NOT NULL,
   events_location varchar(75) NOT NULL,
@@ -770,7 +770,7 @@ INSERT INTO tbl_events (events_id, events_title, events_location, events_startda
 -- Table structure for table 'tbl_eventscat'
 --
 
-CREATE TABLE tbl_eventscat (
+CREATE TABLE IF NOT EXISTS tbl_eventscat (
   eventsCat_id int(3) unsigned NOT NULL AUTO_INCREMENT,
   eventsCat_type varchar(50) NOT NULL,
   PRIMARY KEY (eventsCat_id)
@@ -792,7 +792,7 @@ INSERT INTO tbl_eventscat (eventsCat_id, eventsCat_type) VALUES
 -- Table structure for table 'tbl_floors'
 --
 
-CREATE TABLE tbl_floors (
+CREATE TABLE IF NOT EXISTS tbl_floors (
   floors_id smallint(2) unsigned NOT NULL AUTO_INCREMENT,
   floors_number smallint(1) NOT NULL,
   PRIMARY KEY (floors_id)
@@ -813,7 +813,7 @@ INSERT INTO tbl_floors (floors_id, floors_number) VALUES
 -- Table structure for table 'tbl_fsuinfo'
 --
 
-CREATE TABLE tbl_fsuinfo (
+CREATE TABLE IF NOT EXISTS tbl_fsuinfo (
   fsuinfo_id int(3) unsigned NOT NULL AUTO_INCREMENT,
   fsuinfo_title varchar(100) NOT NULL,
   fsuinfo_description text NOT NULL,
@@ -839,7 +839,7 @@ INSERT INTO tbl_fsuinfo (fsuinfo_id, fsuinfo_title, fsuinfo_description, fsuinfo
 -- Table structure for table 'tbl_gbhk'
 --
 
-CREATE TABLE tbl_gbhk (
+CREATE TABLE IF NOT EXISTS tbl_gbhk (
   gbhk_id int(2) unsigned NOT NULL AUTO_INCREMENT,
   gbhk_day varchar(50) NOT NULL,
   gbhk_garbage int(2) NOT NULL DEFAULT '0',
@@ -865,7 +865,7 @@ INSERT INTO tbl_gbhk (gbhk_id, gbhk_day, gbhk_garbage, gbhk_housekeeping) VALUES
 -- Table structure for table 'tbl_hours'
 --
 
-CREATE TABLE tbl_hours (
+CREATE TABLE IF NOT EXISTS tbl_hours (
   hours_id int(2) unsigned NOT NULL AUTO_INCREMENT,
   hours_hours varchar(25) NOT NULL,
   PRIMARY KEY (hours_id)
@@ -907,7 +907,7 @@ INSERT INTO tbl_hours (hours_id, hours_hours) VALUES
 -- Table structure for table 'tbl_ltc'
 --
 
-CREATE TABLE tbl_ltc (
+CREATE TABLE IF NOT EXISTS tbl_ltc (
   ltc_id int(3) unsigned NOT NULL AUTO_INCREMENT,
   ltc_routename varchar(75) NOT NULL,
   ltc_routenumber varchar(5) NOT NULL,
@@ -920,7 +920,7 @@ CREATE TABLE tbl_ltc (
 -- Table structure for table 'tbl_ltcdh'
 --
 
-CREATE TABLE tbl_ltcdh (
+CREATE TABLE IF NOT EXISTS tbl_ltcdh (
   ltcdh_id int(3) unsigned NOT NULL AUTO_INCREMENT,
   ltc_id int(3) NOT NULL,
   days_id int(2) NOT NULL,
@@ -934,11 +934,12 @@ CREATE TABLE tbl_ltcdh (
 -- Table structure for table 'tbl_news'
 --
 
-CREATE TABLE tbl_news (
+CREATE TABLE IF NOT EXISTS tbl_news (
   news_id int(5) unsigned NOT NULL AUTO_INCREMENT,
   news_title varchar(100) NOT NULL,
   news_location varchar(75) NOT NULL,
-  news_datetime date NOT NULL,
+  news_date date NOT NULL,
+  news_time varchar(10) NOT NULL,
   news_description text NOT NULL,
   newsCat_id int(2) NOT NULL,
   PRIMARY KEY (news_id)
@@ -948,9 +949,9 @@ CREATE TABLE tbl_news (
 -- Dumping data for table 'tbl_news'
 --
 
-INSERT INTO tbl_news (news_id, news_title, news_location, news_datetime, news_description, newsCat_id) VALUES
-(1, 'Internet Service Outtage on October 28th - 9:00AM to 11:00AM', 'Falcon House, London Campus', '2014-10-13', 'Please be advised that on October 28th there will be an interruption of Internet service for all Falcon House residence units between the hours of 9:00 AM and 11:00 AM to allow for maintenance. Students are encouraged to avail themselves of homework and computer labs on campus if they require Internet during those hours for school work.', 1),
-(2, 'Campus Bus Tour', 'London Campus', '2014-08-20', 'Tours are held once a month & are a bus / walking tour hosted by Fanshawe\nCollege Foundation as a way to share details on all the new projects\ncurrently underway, and highlight the programs and future plans for the\nCollege. A boxed lunch prepared by the culinary students is provided.\nCommunity members are invited to join us on the following dates. Please\ncontact Elinor Schwob, Development Associate at 519.452.4430 x4896 or via\nemail at eschwob@fanshawec.ca for details.', 3);
+INSERT INTO tbl_news (news_id, news_title, news_location, news_date, news_time, news_description, newsCat_id) VALUES
+(1, 'Internet Service Outtage on October 28th - 9:00AM to 11:00AM', 'Falcon House, London Campus', '2014-10-13', '5:00pm', 'Please be advised that on October 28th there will be an interruption of Internet service for all Falcon House residence units between the hours of 9:00 AM and 11:00 AM to allow for maintenance. Students are encouraged to avail themselves of homework and computer labs on campus if they require Internet during those hours for school work.', 1),
+(2, 'Campus Bus Tour', 'London Campus', '2014-08-20', '12:30pm', 'Tours are held once a month & are a bus / walking tour hosted by Fanshawe\nCollege Foundation as a way to share details on all the new projects\ncurrently underway, and highlight the programs and future plans for the\nCollege. A boxed lunch prepared by the culinary students is provided.\nCommunity members are invited to join us on the following dates. Please\ncontact Elinor Schwob, Development Associate at 519.452.4430 x4896 or via\nemail at eschwob@fanshawec.ca for details.', 3);
 
 -- --------------------------------------------------------
 
@@ -958,7 +959,7 @@ INSERT INTO tbl_news (news_id, news_title, news_location, news_datetime, news_de
 -- Table structure for table 'tbl_newscat'
 --
 
-CREATE TABLE tbl_newscat (
+CREATE TABLE IF NOT EXISTS tbl_newscat (
   newsCat_id int(3) unsigned NOT NULL AUTO_INCREMENT,
   newsCat_category varchar(75) NOT NULL,
   PRIMARY KEY (newsCat_id)
@@ -969,9 +970,9 @@ CREATE TABLE tbl_newscat (
 --
 
 INSERT INTO tbl_newscat (newsCat_id, newsCat_category) VALUES
-(1, 'General Notices'),
-(2, 'Monthly Report'),
-(3, 'Coming Events');
+(1, 'News'),
+(2, 'Events'),
+(3, 'Special Offers');
 
 -- --------------------------------------------------------
 
@@ -979,7 +980,7 @@ INSERT INTO tbl_newscat (newsCat_id, newsCat_category) VALUES
 -- Table structure for table 'tbl_notices'
 --
 
-CREATE TABLE tbl_notices (
+CREATE TABLE IF NOT EXISTS tbl_notices (
   notices_id int(3) unsigned NOT NULL AUTO_INCREMENT,
   students_id int(7) NOT NULL,
   noticesCat_id int(2) NOT NULL,
@@ -1005,7 +1006,7 @@ INSERT INTO tbl_notices (notices_id, students_id, noticesCat_id, notices_date, n
 -- Table structure for table 'tbl_noticescat'
 --
 
-CREATE TABLE tbl_noticescat (
+CREATE TABLE IF NOT EXISTS tbl_noticescat (
   noticesCat_id int(2) unsigned NOT NULL AUTO_INCREMENT,
   noticesCat_type varchar(15) NOT NULL,
   PRIMARY KEY (noticesCat_id)
@@ -1026,7 +1027,7 @@ INSERT INTO tbl_noticescat (noticesCat_id, noticesCat_type) VALUES
 -- Table structure for table 'tbl_paths'
 --
 
-CREATE TABLE tbl_paths (
+CREATE TABLE IF NOT EXISTS tbl_paths (
   paths_id int(5) unsigned NOT NULL AUTO_INCREMENT,
   paths_startZone varchar(7) NOT NULL,
   paths_endZone varchar(7) NOT NULL,
@@ -1079,7 +1080,7 @@ INSERT INTO tbl_paths (paths_id, paths_startZone, paths_endZone, paths_stepSet) 
 -- Table structure for table 'tbl_points'
 --
 
-CREATE TABLE tbl_points (
+CREATE TABLE IF NOT EXISTS tbl_points (
   points_id int(5) unsigned NOT NULL AUTO_INCREMENT,
   points_name varchar(75) NOT NULL,
   points_description text NOT NULL,
@@ -1102,7 +1103,7 @@ INSERT INTO tbl_points (points_id, points_name, points_description, points_numbe
 -- Table structure for table 'tbl_pointsstudent'
 --
 
-CREATE TABLE tbl_pointsstudent (
+CREATE TABLE IF NOT EXISTS tbl_pointsstudent (
   pointsStudent_id int(6) unsigned NOT NULL AUTO_INCREMENT,
   students_id int(6) NOT NULL,
   points_id int(5) NOT NULL,
@@ -1124,7 +1125,7 @@ INSERT INTO tbl_pointsstudent (pointsStudent_id, students_id, points_id) VALUES
 -- Table structure for table 'tbl_rbuildgbhk'
 --
 
-CREATE TABLE tbl_rbuildgbhk (
+CREATE TABLE IF NOT EXISTS tbl_rbuildgbhk (
   rbuildgbhk_id int(6) unsigned NOT NULL AUTO_INCREMENT,
   rbuilding_id int(5) NOT NULL,
   gbhk_id int(2) NOT NULL,
@@ -1146,7 +1147,7 @@ INSERT INTO tbl_rbuildgbhk (rbuildgbhk_id, rbuilding_id, gbhk_id) VALUES
 -- Table structure for table 'tbl_rbuilding'
 --
 
-CREATE TABLE tbl_rbuilding (
+CREATE TABLE IF NOT EXISTS tbl_rbuilding (
   rbuilding_id int(3) unsigned NOT NULL AUTO_INCREMENT,
   rbuilding_name varchar(75) NOT NULL,
   rbuilding_address varchar(55) NOT NULL,
@@ -1171,7 +1172,7 @@ INSERT INTO tbl_rbuilding (rbuilding_id, rbuilding_name, rbuilding_address, rbui
 -- Table structure for table 'tbl_requests'
 --
 
-CREATE TABLE tbl_requests (
+CREATE TABLE IF NOT EXISTS tbl_requests (
   requests_id int(7) unsigned NOT NULL AUTO_INCREMENT,
   students_id int(7) NOT NULL,
   requestsCat_id int(2) NOT NULL,
@@ -1196,7 +1197,7 @@ INSERT INTO tbl_requests (requests_id, students_id, requestsCat_id, requests_dat
 -- Table structure for table 'tbl_requestscat'
 --
 
-CREATE TABLE tbl_requestscat (
+CREATE TABLE IF NOT EXISTS tbl_requestscat (
   requestsCat_id int(2) unsigned NOT NULL AUTO_INCREMENT,
   requestsCat_type varchar(15) NOT NULL,
   PRIMARY KEY (requestsCat_id)
@@ -1217,7 +1218,7 @@ INSERT INTO tbl_requestscat (requestsCat_id, requestsCat_type) VALUES
 -- Table structure for table 'tbl_rules'
 --
 
-CREATE TABLE tbl_rules (
+CREATE TABLE IF NOT EXISTS tbl_rules (
   rules_id int(3) unsigned NOT NULL AUTO_INCREMENT,
   rules_title varchar(75) NOT NULL,
   rules_description text NOT NULL,
@@ -1240,7 +1241,7 @@ INSERT INTO tbl_rules (rules_id, rules_title, rules_description, rules_date) VAL
 -- Table structure for table 'tbl_steps'
 --
 
-CREATE TABLE tbl_steps (
+CREATE TABLE IF NOT EXISTS tbl_steps (
   steps_id smallint(2) unsigned NOT NULL AUTO_INCREMENT,
   steps_stepText varchar(20) NOT NULL,
   PRIMARY KEY (steps_id)
@@ -1261,7 +1262,7 @@ INSERT INTO tbl_steps (steps_id, steps_stepText) VALUES
 -- Table structure for table 'tbl_students'
 --
 
-CREATE TABLE tbl_students (
+CREATE TABLE IF NOT EXISTS tbl_students (
   students_id int(5) unsigned NOT NULL AUTO_INCREMENT,
   students_firstname varchar(20) NOT NULL,
   students_lastname varchar(20) NOT NULL,
@@ -1298,7 +1299,7 @@ INSERT INTO tbl_students (students_id, students_firstname, students_lastname, st
 -- Table structure for table 'tbl_studentsevents'
 --
 
-CREATE TABLE tbl_studentsevents (
+CREATE TABLE IF NOT EXISTS tbl_studentsevents (
   studentsevents_id int(5) unsigned NOT NULL AUTO_INCREMENT,
   students_id int(5) NOT NULL,
   events_id int(5) NOT NULL,
@@ -1319,7 +1320,7 @@ INSERT INTO tbl_studentsevents (studentsevents_id, students_id, events_id) VALUE
 -- Table structure for table 'tbl_zones'
 --
 
-CREATE TABLE tbl_zones (
+CREATE TABLE IF NOT EXISTS tbl_zones (
   zones_id smallint(2) unsigned NOT NULL AUTO_INCREMENT,
   zones_name varchar(5) NOT NULL,
   PRIMARY KEY (zones_id)
@@ -1365,7 +1366,7 @@ INSERT INTO tbl_zones (zones_id, zones_name) VALUES
 -- Table structure for table 'tbl_zonesbuildings'
 --
 
-CREATE TABLE tbl_zonesbuildings (
+CREATE TABLE IF NOT EXISTS tbl_zonesbuildings (
   zonesBuildings_id smallint(2) unsigned NOT NULL AUTO_INCREMENT,
   zones_id smallint(2) NOT NULL,
   buildings_id smallint(2) NOT NULL,
@@ -1412,7 +1413,7 @@ INSERT INTO tbl_zonesbuildings (zonesBuildings_id, zones_id, buildings_id) VALUE
 -- Table structure for table 'tbl_zonesclassrooms'
 --
 
-CREATE TABLE tbl_zonesclassrooms (
+CREATE TABLE IF NOT EXISTS tbl_zonesclassrooms (
   zonesClassrooms_id smallint(4) unsigned NOT NULL AUTO_INCREMENT,
   zones_id smallint(2) NOT NULL,
   classrooms_id smallint(4) NOT NULL,
@@ -1765,7 +1766,7 @@ INSERT INTO tbl_zonesclassrooms (zonesClassrooms_id, zones_id, classrooms_id) VA
 -- Table structure for table 'tbl_zonesfloors'
 --
 
-CREATE TABLE tbl_zonesfloors (
+CREATE TABLE IF NOT EXISTS tbl_zonesfloors (
   zonesFloors_id smallint(2) unsigned NOT NULL AUTO_INCREMENT,
   zones_id smallint(2) NOT NULL,
   floors_id smallint(2) NOT NULL,

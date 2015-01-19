@@ -143,7 +143,7 @@ class Building extends CI_Controller {
 				$data['pgTitle'] = "RezGuide Add An Upcoming Event";
 				$data['ZoneTitle'] = "Add";
 				$data['sectTitle'] = "Building Contest";
-					$data['controller_uri'] = "Building";
+					$data['controller_uri'] = "building";
 					$data['function_uri'] = "contests";
 				$data['formstart'] = form_open('building/insert_record/bld_contest', array('id' => 'bldContest'));
 					$data['name'] = form_input(array(
@@ -808,7 +808,7 @@ class Building extends CI_Controller {
 				$data['pgTitle'] = "Building Event Select";
 				$data['ZoneTitle'] = "Select";
 				$data['sectTitle'] = "Program";
-					$data['controller_uri'] = "Building";
+					$data['controller_uri'] = "building";
 					$data['function_uri'] = "programs";
 				$data['events'] = $this->update_model->getAll('tbl_events', 'eventsCat_id', 4);
 

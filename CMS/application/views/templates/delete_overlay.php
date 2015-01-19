@@ -9,12 +9,12 @@
             <ul id="deleteOpt">
                 <li>
                     <a id="cancelDel" href="#">
-                        <img src="http://localhost:8888/ryan/RezGuide/CMS/img/cancel.png" alt="Cancel Delete">
+                        <img src="<?php echo base_url(); ?>img/cancel.png" alt="Cancel Delete">
                     </a>
                 </li>
                 <li>
                     <a id="deleteMe">
-                        <img src="http://localhost:8888/ryan/RezGuide/CMS/img/deleteIcon.png" alt="Delete">
+                        <img src="<?php echo base_url(); ?>img/deleteicon.png" alt="Delete">
                     </a>
                 </li>
             </ul>
