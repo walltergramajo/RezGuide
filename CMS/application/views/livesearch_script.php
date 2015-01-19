@@ -25,7 +25,7 @@
 							suggestionsbox.style.display = "block";
 							suggestionsbox.innerHTML = "<ul>";
 		                	for(i=0 ; i < returndata.length ; i++){
-		                		suggestionsbox.innerHTML += "<li>" + returndata[i].students_firstname +" "+ returndata[i].students_lastname + "</li>";
+		                		suggestionsbox.innerHTML += '<li class="option">' + returndata[i].students_firstname +' '+ returndata[i].students_lastname + '</li>';
 						    }
 						    suggestionsbox.innerHTML += "</ul>";
 						}
@@ -41,5 +41,12 @@
 	    xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	    xmlhttp.send(post_data);
 
+	    var options = document.querySelectorAll('.options');
+
+
 	}
+
+	function autoFill(id){
+    	console.log('you chose ' + this.students_firstname);
+    }
 </script>
