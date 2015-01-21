@@ -1,18 +1,3 @@
-<div id="optionsIcons" class="row">
-    <div class="small-8 small-centered columns">
-        <div class="small-3 small-push-5 columns">
-            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add/students/pg2">
-                <img onMouseOver="swapDark('5')" onMouseOut="swapLight('5')" class="botImg" src="<?php echo base_url(); ?>img/CMS_add.png" alt="Add">
-            </a>
-        </div>
-        <div class="small-3 small-pull-3 columns">
-            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/edit/students/balance">
-            <img onMouseOver="swapDark('6')" onMouseOut="swapLight('6')" class="botImg" src="<?php echo base_url(); ?>img/CMS_edit.png" alt="Edit">
-            </a>
-        </div>
-    </div>
-</div>
-
 <section>
 	<form action="cms_add_student_pg2.php" method="post" id="newStudent">
     	<div class="row" id="mainInfo">

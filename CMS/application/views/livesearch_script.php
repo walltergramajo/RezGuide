@@ -3,7 +3,7 @@
 		var xmlhttp,
 			searchField = document.querySelector("#nameSearch"),
 			input_data = searchField.value,
-			suggestionsbox = document.querySelector("#suggestions"),
+			resultslist = document.querySelector("#searchresults"),
 			post_data = "search_data=" + input_data,
 			returndata;
 
@@ -18,16 +18,18 @@
 	    xmlhttp.onreadystatechange = function() {
 	        if (xmlhttp.readyState == 4 ) {
 	           if(xmlhttp.status == 200){
-	                	returndata = JSON.parse(xmlhttp.responseText);
+	                	//returndata = JSON.parse(xmlhttp.responseText);
+	                	returndata = xmlhttp.responseText;
 	                	if(input_data.length === 0){
-	                		suggestionsbox.style.display = "none";
+	                		resultslist.style.display = "none";
 						}else{
-							suggestionsbox.style.display = "block";
-							suggestionsbox.innerHTML = "<ul>";
-		                	for(i=0 ; i < returndata.length ; i++){
-		                		suggestionsbox.innerHTML += '<li class="option">' + returndata[i].students_firstname +' '+ returndata[i].students_lastname + '</li>';
-						    }
-						    suggestionsbox.innerHTML += "</ul>";
+							resultslist.style.display = "block";
+							resultslist.innerHTML = returndata;
+		        //         	for(i=0 ; i < returndata.length ; i++){
+		        //         		resultslist.innerHTML = '<div class="row"><div class="small-12 columns"><div class="divider"></div></div></div><div class="row"><div class="small-3 columns"><div class="edit">';
+		        //         		resultslist.innerHTML += '<a href="<?php echo base_url(); ?>index.php/<?php echo $controller_uri; ?>/<?php echo $function_uri; ?>/edit/
+		        //         		resultslist.innerHTML += '<li class="option">' + returndata[i].students_firstname +' '+ returndata[i].students_lastname + '</li>';
+						    // }
 						}
 	           }else if(xmlhttp.status == 400) {
 	              alert('There was an error 400')
@@ -41,12 +43,6 @@
 	    xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	    xmlhttp.send(post_data);
 
-	    var options = document.querySelectorAll('.options');
-
 
 	}
-
-	function autoFill(id){
-    	console.log('you chose ' + this.students_firstname);
-    }
 </script>

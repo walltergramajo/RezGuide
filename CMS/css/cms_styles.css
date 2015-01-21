@@ -83,6 +83,14 @@ body {
 		margin-top: 20px;
 	}
 
+	#optionsIcons .option-add {
+		text-align: right;
+	}
+
+	#optionsIcons .option-edit {
+		text-align: left;
+	}
+
 	.categorySelect
 	{
 		font-size: 1.8em;
@@ -977,6 +985,9 @@ body {
 		margin: 85px 0 125px 0;
 	}
 	
+	.studentsearch {
+		margin-top: 20px;
+	}
 	
 	/*   Login
 	========================================*/

@@ -20,6 +20,7 @@ class Students_model extends CI_Model {
         $this->db->select('students_id, students_firstname, students_lastname, students_stNumber, rbuilding_id, students_roomNumber');
         $this->db->like('students_firstname', $search_data);
         $this->db->or_like('students_lastname', $search_data);
+        $this->db->order_by('students_firstname');
         //$this->db->or_like('students_stNumber', $search_data);
 
         $results = $this->db->get('tbl_students', 10);
@@ -40,8 +41,8 @@ class Students_model extends CI_Model {
 
 		// echo $result_data;
 
-        //echo $search_data;
-		echo json_encode($results->result());
+        return $results->result();
+		//echo json_encode($results->result());
     }
 
 }

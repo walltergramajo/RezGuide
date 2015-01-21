@@ -9,13 +9,15 @@ class Livesearch extends CI_Controller {
 
 	public function autocomplete() {
 	    $search_data = $this->input->post('search_data');
-	    $query = $this->Students_model->get_autocomplete($search_data);
+	    	$data['controller_uri'] = 'students';
+	    	$data['function_uri'] = 'information';
+	    $data['students'] = $this->Students_model->get_autocomplete($search_data);
 
-	    //$results = $query->result();
+	    $resultslist = $this->load->view('students/searchresults',$data);
 
 	    //echo $results;
 
-	    echo $query;
+	    echo $resultslist;
 	    //echo $search_data;
 	}
 

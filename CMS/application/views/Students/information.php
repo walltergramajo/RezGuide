@@ -1,20 +1,5 @@
-<div id="optionsIcons" class="row">
-    <div class="small-8 small-centered columns">
-        <div class="small-3 small-push-5 columns">
-            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/add/students">
-                <img onMouseOver="swapDark('5')" onMouseOut="swapLight('5')" class="botImg" src="<?php echo base_url(); ?>img/CMS_add.png" alt="Add">
-            </a>
-        </div>
-        <div class="small-3 small-pull-3 columns">
-            <a class="botAnchor" href="<?php echo base_url(); ?>index.php/edit/students/studentInfo">
-            <img onMouseOver="swapDark('6')" onMouseOut="swapLight('6')" class="botImg" src="<?php echo base_url(); ?>img/CMS_edit.png" alt="Edit">
-            </a>
-        </div>
-    </div>
-</div>
-
 <section>
-	<form action="cms_add_student_pg2.php" method="post" id="newStudent">
+	<?php echo $formstart; ?>
     	<div class="row">
         	<div class="small-4 columns">
             	<div class="row">
@@ -25,17 +10,17 @@
                 <div id="nameProg">
                     <div class="row">
                         <div class="small-10 small-centered columns">
-                            <input id="first" type="text" name="firstname" placeholder="First Name" value="<?php if(!empty($autofirstname)){echo $autofirstname;} ?>">
+                            <?php echo $firstname; ?>
                         </div>
                     </div>
                     <div class="row">
                         <div class="small-10 small-centered columns">
-                            <input id="last" type="text" name="lastname" placeholder="Last Name" value="<?php if(!empty($autolastname)){echo $autolastname;} ?>">
+                            <?php echo $lastname; ?>
                         </div>
                     </div>
                     <div class="row">
                         <div class="small-8 small-centered columns">
-                            <input id="program" type="text" name="program" placeholder="Program" value="<?php if(!empty($autoprogram)){echo $autoprogram;} ?>">
+                            <?php echo $program; ?>
                         </div>
                     </div>
                 </div>
@@ -51,26 +36,71 @@
                         <div class="smTitleDivider"></div>
                     </div>
                 </div>
-                <div class="row">
-                	<div class="small-2 columns">
-                    	<label>Cellphone</label>
+
+                 <div class="row">
+                    <div class="small-2 columns">
+                        <label>Username</label>
                     </div>
                     <div class="small-4 small-push-1 columns">
-                    	<input type="text" name="phone" placeholder="cellphone#" value="<?php if(!empty($autophone)){echo $autophone;} ?>">
+                        <?php echo $username; ?>
                     </div>
                     <div class="small-2 small-push-1 columns">
-                    	<label>Student #</label>
+                        <label>Password</label>
                     </div>
                     <div class="small-3 columns">
-                    	<input type="text" name="number" nameplaceholder="student#" value="<?php if(!empty($autonumber)){echo $autonumber;} ?>">
+                        <?php echo $password; ?>
+                    </div>
+                </div>
+
+                 <div class="row">
+                    <div class="small-2 columns">
+                        <label>Email</label>
+                    </div>
+                    <div class="small-4 small-push-1 columns">
+                        <?php echo $email ?>
+                    </div>
+                    <div class="small-2 small-push-1 columns">
+                        <label>Student #</label>
+                    </div>
+                    <div class="small-3 columns">
+                        <?php echo $studentnum; ?>
+                    </div>
+                </div>
+
+                <div class="row">
+                	<div class="small-2 columns">
+                    	<label>Phone</label>
+                    </div>
+                    <div class="small-4 small-push-1 columns">
+                    	<?php echo $phone; ?>
+                    </div>
+                    <div class="small-2 small-push-1 columns">
+                    	<label>Cell Phone</label>
+                    </div>
+                    <div class="small-3 columns">
+                    	<?php echo $cellphone; ?>
                     </div>
                 </div>
                 <div class="row">
-                	<div class="small-2 columns">
-                    	<label>build/floor/room</label>
+                    <div class="small-2 columns">
+                        <label>Building</label>
+                    </div>
+                    <div class="small-4 small-push-1 columns">
+                        <?php echo $building; ?>
+                    </div>
+                    <div class="small-2 small-push-1 columns">
+                        <label>Room Number</label>
+                    </div>
+                    <div class="small-3 columns">
+                        <?php echo $roomnum; ?>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-2 columns">
+                        <label>address</label>
                     </div>
                     <div class="small-9 columns">
-                    	<input type="text" name="address" placeholder="building/floor/room" value="<?php if(!empty($autoaddress)){echo $autoaddress;} ?>">
+                        <?php echo $address; ?>
                     </div>
                 </div>
             	<div class="row">
@@ -88,7 +118,7 @@
                     	<label>Facebook</label>
                     </div>
                     <div class="small-10 columns">
-                    	<input type="text" name="fb" placeholder="www.facebook.com" >
+                    	<?php echo $facebook; ?>
                     </div>
                 </div>
                 <div class="row">
@@ -96,7 +126,7 @@
                     	<label>Twitter</label>
                     </div>
                     <div class="small-10 columns">
-                    	<input type="text" name="tw" placeholder="www.twitter.com">
+                    	<?php echo $twitter; ?>
                     </div>
                 </div>
                 <div class="row">
@@ -104,7 +134,7 @@
                     	<label>LinkedIn</label>
                     </div>
                     <div class="small-10 columns">
-                    	<input type="text" name="ln" placeholder="www.linkedin.com">
+                    	<?php echo $linkedin; ?>
                     </div>
                 <div class="row">
                 	<div class="small-3 push-9 columns">
