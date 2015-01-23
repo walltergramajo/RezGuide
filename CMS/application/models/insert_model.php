@@ -90,24 +90,6 @@ class Insert_model extends CI_Model {
 	*	Insert Building contests to tbl_contests, and Building events to tbl_events
 	*/
 
-	// public function bld_contest() {
-	// 	$startdate = $_POST['s_year'] . "-" . $_POST['s_month'] . "-" . $_POST['s_day'];
-	// 	$enddate = $_POST['e_year'] . "-" . $_POST['e_month'] . "-" . $_POST['e_day'];
-	// 	$caldate = $_POST['s_year'] . "-" . $_POST['s_month'] . "-" . $_POST['s_day'];
-	// 	$record = array(
-	// 				'contests_title' => $_POST['name'],
-	// 				'contests_description' => $_POST['desc'],
-	// 				'contests_location' => $_POST['location'],
-	// 				'contests_startdate' => $startdate,
-	// 				'contests_enddate' => $enddate,
-	// 				'contests_link' => $_POST['link'],
-	// 				'contests_whoenter' => $_POST['who'],
-	// 				'contestCat_id' => $_POST['contest_category']
-	// 	);
-
-	// 	$this->db->insert('tbl_contests', $record); 
-	// }
-
 	// public function fsu_event() {
 	// 	$startdate = $_POST['s_year'] . "-" . $_POST['s_month'] . "-" . $_POST['s_day'];
 	// 	$enddate = $_POST['e_year'] . "-" . $_POST['e_month'] . "-" . $_POST['e_day'];
@@ -129,34 +111,52 @@ class Insert_model extends CI_Model {
 	// 	$this->db->insert('tbl_events', $record); 
 	// }
 
-	// public function bld_program() {
-	// 	$startdate = $_POST['s_year'] . "-" . $_POST['s_month'] . "-" . $_POST['s_day'];
-	// 	$enddate = $_POST['e_year'] . "-" . $_POST['e_month'] . "-" . $_POST['e_day'];
-	// 	$caldate = $_POST['s_year'] . "-" . $_POST['s_month'] . "-" . $_POST['s_day'];
-	// 	$record = array(
-	// 				'events_title' => $_POST['name'],
-	// 				'events_description' => $_POST['desc'],
-	// 				'events_location' => $_POST['location'],
-	// 				'events_startdate' => $startdate,
-	// 				'events_caldate' => $startdate,
-	// 				'events_enddate' => $enddate,
-	// 				'events_link' => $_POST['link'],
-	// 				'events_whocome' => $_POST['who'],
-	// 				'eventsCat_id' => $_POST['events_category']
-	// 	);
+	public function bld_contest() {
+		$startdate = $_POST['s_year'] . "-" . $_POST['s_month'] . "-" . $_POST['s_day'];
+		$enddate = $_POST['e_year'] . "-" . $_POST['e_month'] . "-" . $_POST['e_day'];
+		$caldate = $_POST['s_year'] . "-" . $_POST['s_month'] . "-" . $_POST['s_day'];
+		$record = array(
+					'contests_title' => $_POST['name'],
+					'contests_description' => $_POST['desc'],
+					'contests_location' => $_POST['location'],
+					'contests_startdate' => $startdate,
+					'contests_enddate' => $enddate,
+					'contests_link' => $_POST['link'],
+					'contests_whoenter' => $_POST['who'],
+					'contestCat_id' => $_POST['contest_category']
+		);
 
-	// 	$this->db->insert('tbl_events', $record); 
-	// }
+		$this->db->insert('tbl_contests', $record); 
+	}
 
-	// public function bld_rule() {
-	// 	$record = array(
-	// 				'rules_title' => $_POST['name'],
-	// 				'rules_description' => $_POST['desc'],
-	// 				'rules_date' => date('F jS\, Y')
-	// 			);
+	public function bld_program() {
+		$startdate = $_POST['s_year'] . "-" . $_POST['s_month'] . "-" . $_POST['s_day'];
+		$enddate = $_POST['e_year'] . "-" . $_POST['e_month'] . "-" . $_POST['e_day'];
+		$caldate = $_POST['s_year'] . "-" . $_POST['s_month'] . "-" . $_POST['s_day'];
+		$record = array(
+					'events_title' => $_POST['name'],
+					'events_description' => $_POST['desc'],
+					'events_location' => $_POST['location'],
+					'events_startdate' => $startdate,
+					'events_caldate' => $startdate,
+					'events_enddate' => $enddate,
+					'events_link' => $_POST['link'],
+					'events_whocome' => $_POST['who'],
+					'eventsCat_id' => $_POST['events_category']
+		);
 
-	// 	$this->db->insert('tbl_rules', $record);
-	// }
+		$this->db->insert('tbl_events', $record); 
+	}
+
+	public function bld_rule() {
+		$record = array(
+					'rules_title' => $_POST['name'],
+					'rules_description' => $_POST['desc'],
+					'rules_date' => date('F jS\, Y')
+				);
+
+		$this->db->insert('tbl_rules', $record);
+	}
 
 	public function stud_info() {
 		switch($_POST['building']){
