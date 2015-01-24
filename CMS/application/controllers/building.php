@@ -131,7 +131,7 @@ class Building extends CI_Controller {
 				$this->load->view('templates/add_edit');
 				$this->load->view('building/building_contests_edit_select');
 				$this->load->view('templates/footer');
-				$this->load->view('deletescript.php');
+				$this->load->view('deletescript');
 				$this->load->view('templates/close');
 			}
 		}else{
@@ -357,7 +357,7 @@ class Building extends CI_Controller {
 				$this->load->view('templates/add_edit');
 				$this->load->view('building/building_events_edit_select');
 				$this->load->view('templates/footer');
-				$this->load->view('deletescript.php');
+				$this->load->view('deletescript');
 				$this->load->view('templates/close');
 			}
 		}else{
@@ -609,7 +609,7 @@ class Building extends CI_Controller {
 				$this->load->view('templates/add_edit');
 				$this->load->view('building/building_events_edit_select');
 				$this->load->view('templates/footer');
-				$this->load->view('deletescript.php');
+				$this->load->view('deletescript');
 				$this->load->view('templates/close');
 			}
 		}else{
@@ -759,7 +759,7 @@ class Building extends CI_Controller {
 			$this->load->view('templates/delete_overlay');
 			$this->load->view('building/building_rules');
 			$this->load->view('templates/footer');
-			$this->load->view('deletescript.php');
+			$this->load->view('deletescript');
 			$this->load->view('templates/close');
 		}else{
 			$this->load->helper('text');
@@ -786,7 +786,7 @@ class Building extends CI_Controller {
 			$this->load->view('templates/delete_overlay');
 			$this->load->view('building/building_rules');
 			$this->load->view('templates/footer');
-			$this->load->view('deletescript.php');
+			$this->load->view('deletescript');
 			$this->load->view('templates/close');
 		}
 	}

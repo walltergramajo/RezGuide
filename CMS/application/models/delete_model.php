@@ -22,5 +22,9 @@ class Delete_model extends CI_Model {
 		$this->db->delete('tbl_rules', array('rules_id' => $record));
 	}
 
+	public function user($record) {
+		$this->db->delete('tbl_admins', array('admins_id' => $record));
+	}
+
 
 }

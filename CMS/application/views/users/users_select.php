@@ -23,8 +23,8 @@
             	<p class="users"><?php echo $row->admins_firstname . " " . $row->admins_lastname; ?></p>
             </div>
             <div class="small-3 columns">
-            	<a href="#">
-                	<img class="delete" src="<?php echo base_url(); ?>img/CMS_delete.png" alt="Delete" >
+            	<a class="del" href="#" data-record="<?php echo $row->admins_id; ?>" data-controller="<?php echo $controller_uri; ?>">
+                    <img class="delete" src="<?php echo base_url(); ?>img/CMS_delete.png" alt="Delete" >
                 </a>
             </div>
         </div>

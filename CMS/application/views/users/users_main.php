@@ -4,7 +4,7 @@
             	<div class=" menu">
                     <ul class="menu-icons">
                         <li>
-                            <a class="botAnchor" href="<?php base_url(); ?>users/dd">
+                            <a class="botAnchor" href="<?php base_url(); ?>users/add">
                             <div class="small-4 columns">
                                 <img onMouseOver="swapDark('0')" onMouseOut="swapLight('0')" class="botImg" src="<?php echo base_url(); ?>img/CMS_addLrg.png" alt="Add">
                             </div>

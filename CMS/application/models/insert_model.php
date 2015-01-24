@@ -195,5 +195,20 @@ class Insert_model extends CI_Model {
 		$this->db->insert('tbl_students', $record);
 	}
 
+	public function user() {
+		$record = array(
+				'admins_username' => $_POST['username'],
+				'admins_password' => $_POST['password'],
+				'admins_firstname' => $_POST['firstname'],
+				'admins_lastname' => $_POST['lastname'],
+				'admins_email' => $_POST['email'],
+				'admins_level' => $_POST['adminlevel'],
+				'admins_empnumber' => $_POST['empnum'],
+				'admins_position' => $_POST['position'],
+			);
+
+		$this->db->insert('tbl_admins', $record);
+	}
+
 
 }
